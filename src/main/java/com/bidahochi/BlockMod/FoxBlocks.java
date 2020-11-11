@@ -38,18 +38,18 @@ public class FoxBlocks
             }
         };
 
-
-
-
-
-
-
-
+registerBlocks();
     }
 
     public void registerBlocks() {
-        EnumBlocks.bauxiteOre.leBlock = new BauxiteOre(Material.rock);;
+        EnumBlocks.bauxiteOre.leBlock = new BauxiteOre(Material.rock);
         EnumBlocks.bauxiteOre.bloccName = "Bauxite Ore";
+        EnumBlocks.rawConcrete.leBlock = new RawConcrete(Material.rock);
+        EnumBlocks.rawConcrete.bloccName = "Raw Concrete";
+        EnumBlocks.peagravel_snow.leBlock = new SnowyPeaGravel(Material.sand);
+        EnumBlocks.peagravel_snow.bloccName = "Snowy Pea Gravel";
+        EnumBlocks.peagravel.leBlock = new PeaGravel(Material.sand);
+        EnumBlocks.peagravel.bloccName = "Pea Gravel";
 
         //Leave this part alone. Put your blocks in the above part. :D
         for (EnumBlocks blocc : EnumBlocks.values()) {

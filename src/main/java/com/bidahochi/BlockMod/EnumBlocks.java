@@ -5,7 +5,11 @@ import net.minecraft.item.ItemBlock;
 
 public enum EnumBlocks {
 
-    bauxiteOre();
+    bauxiteOre(),
+    rawConcrete(),
+    peagravel_snow(),
+    peagravel(),
+    ;
 
     public Block leBlock;
     public ItemBlock leItemBlock;
