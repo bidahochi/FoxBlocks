@@ -18,11 +18,12 @@ public class BlockMod
     public static final String VERSION = "1.0";
     public static CreativeTabs blockModTab;
     public static Logger blockLogger = LogManager.getLogger("BlockMod");
+    public static BauxiteOre bauxiteOre = new BauxiteOre(Material.rock);
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         blockLogger.info("Block Mod Starting");
-        GameRegistry.registerBlock(new BauxiteOre(Material.rock), ItemBlockBauxiteOre.class, "Bauxite Ore");
+        GameRegistry.registerBlock(bauxiteOre, ItemBlockBauxiteOre.class, "Bauxite Ore");
         blockModTab = new BlockModTab(CreativeTabs.getNextID(),"Block Mod");
     }
 }
