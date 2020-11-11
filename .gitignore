@@ -17,8 +17,6 @@ run/
 
 eclipse/.metadata/.plugins/org.eclipse.debug.ui/
 
-gradle/wrapper/
-
 out/
 
 eclipse/
