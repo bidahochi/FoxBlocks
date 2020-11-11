@@ -23,7 +23,7 @@ public class BlockMod
         }
 
         public String getTranslatedTabLabel() {
-            return "test tab"; //name of the tab you want to display when hovering
+            return "FoxBlocks"; //name of the tab you want to display when hovering
         }
     };
     public static Logger blockLogger = LogManager.getLogger("BlockMod");
