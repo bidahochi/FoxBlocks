@@ -18,15 +18,13 @@ public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.1";
     public static CreativeTabs foxBlocksCreativeTab;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
         //Initalize bloccs.
-
         blockLogger.info("FoxBlocks starting with it's big floofy tail");
         foxBlocksCreativeTab = new CreativeTabs("FoxBlocks") {
             public Item getTabIconItem() {
@@ -50,6 +48,8 @@ registerBlocks();
         EnumBlocks.peagravel_snow.bloccName = "Snowy Pea Gravel";
         EnumBlocks.peagravel.leBlock = new PeaGravel(Material.sand);
         EnumBlocks.peagravel.bloccName = "Pea Gravel";
+        EnumBlocks.although.leBlock = new Although(Material.clay);
+        EnumBlocks.although.bloccName = "Although";
 
         //Leave this part alone. Put your blocks in the above part. :D
         for (EnumBlocks blocc : EnumBlocks.values()) {

@@ -9,6 +9,7 @@ public enum EnumBlocks {
     rawConcrete(),
     peagravel_snow(),
     peagravel(),
+    although(),
     ;
 
     public Block leBlock;
