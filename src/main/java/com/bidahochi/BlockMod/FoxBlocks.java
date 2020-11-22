@@ -50,8 +50,15 @@ registerBlocks();
         EnumBlocks.peagravel.bloccName = "Pea Gravel";
         EnumBlocks.although.leBlock = new Although(Material.clay);
         EnumBlocks.although.bloccName = "Although";
+        EnumBlocks.metalSiding_White.leBlock = new MetalSiding_White(Material.iron);
+        EnumBlocks.metalSiding_White.bloccName = "White Metal Siding";
+        EnumBlocks.metalSiding_LightGrey.leBlock = new MetalSiding_LightGrey(Material.iron);
+        EnumBlocks.metalSiding_LightGrey.bloccName = "Light Grey Metal Siding";
+        EnumBlocks.metalSiding_Grey.leBlock = new MetalSiding_Grey(Material.iron);
+        EnumBlocks.metalSiding_Grey.bloccName = "Grey Metal Siding";
+        EnumBlocks.metalSiding_Black.leBlock = new MetalSiding_Black(Material.iron);
+        EnumBlocks.metalSiding_Black.bloccName = "Black Metal Siding";
 
-        //Leave this part alone. Put your blocks in the above part. :D
         for (EnumBlocks blocc : EnumBlocks.values()) {
             blocc.leBlock.setCreativeTab(foxBlocksCreativeTab);
             if (blocc.leItemBlock != null) {

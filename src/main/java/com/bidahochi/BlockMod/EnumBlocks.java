@@ -10,6 +10,10 @@ public enum EnumBlocks {
     peagravel_snow(),
     peagravel(),
     although(),
+    metalSiding_White(),
+    metalSiding_LightGrey(),
+    metalSiding_Grey(),
+    metalSiding_Black(),
     ;
 
     public Block leBlock;
