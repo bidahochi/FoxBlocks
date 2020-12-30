@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 public enum EnumBlocks {
@@ -14,6 +15,7 @@ public enum EnumBlocks {
     metalSiding_LightGrey(),
     metalSiding_Grey(),
     metalSiding_Black(),
+    BlockmetalSiding(),
     ;
 
     public Block leBlock;

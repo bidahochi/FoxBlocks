@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod;
 
+import com.bidahochi.BlockMod.EnumBlocks.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -38,6 +39,7 @@ public class FoxBlocks
             public String getTranslatedTabLabel() {
                 return "FoxBlocks";
             }
+
         };
 
         //BlockProperties.registerBlocks();
@@ -65,6 +67,8 @@ public class FoxBlocks
         EnumBlocks.metalSiding_Grey.bloccName = "Grey Metal Siding";
         EnumBlocks.metalSiding_Black.leBlock = new MetalSiding_Black(Material.iron);
         EnumBlocks.metalSiding_Black.bloccName = "Black Metal Siding";
+        EnumBlocks.BlockmetalSiding.leBlock = new BlockmetalSiding();
+        EnumBlocks.BlockmetalSiding.bloccName = "Metal Siding";
 
 
         for (EnumBlocks blocc : EnumBlocks.values()) {
@@ -75,7 +79,6 @@ public class FoxBlocks
                 GameRegistry.registerBlock(blocc.leBlock, blocc.bloccName);
             }
         }
-
 
     }
 
