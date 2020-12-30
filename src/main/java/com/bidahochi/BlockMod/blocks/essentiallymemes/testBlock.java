@@ -1,5 +1,11 @@
 package com.bidahochi.BlockMod.blocks.essentiallymemes;
 
+/**
+ *  Test block featuring multi sided textures
+ *
+ *  -hariesh
+ */
+
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

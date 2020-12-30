@@ -10,6 +10,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
+/**
+ *  Multi textures on a single block
+ *
+ *  -hariesh
+ *
+ */
 public class dryWall extends Block {
 
     public IIcon[] textures = new IIcon[6];
@@ -17,7 +23,7 @@ public class dryWall extends Block {
     public dryWall(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("testblock");
-        setBlockTextureName(FoxBlocks.MODID+":drywall");
+        setBlockTextureName(FoxBlocks.MODID+":drywall/drywall");
     }
 
     public void registerBlockIcons(IIconRegister reg) {

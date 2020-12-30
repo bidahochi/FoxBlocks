@@ -1,4 +1,10 @@
 package com.bidahochi.BlockMod.blocks.aggregates;
+/**
+ *  ItemBlock for dryWall
+ *
+ *  -hariesh
+ *
+ */
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlockWithMetadata;
