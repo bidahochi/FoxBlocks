@@ -6,8 +6,10 @@ import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import com.bidahochi.BlockMod.EnumBlocks;
+import com.bidahochi.BlockMod.BlockIDs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -26,15 +28,15 @@ public class FoxBlocks
     public static final String VERSION = "1.1";
     public static CreativeTabs foxBlocksCreativeTab;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
-    
+
     @EventHandler
-    public void preInit()
+    public void init(FMLPreInitializationEvent event)
     {
         //Initalize bloccs.
         blockLogger.info("FoxBlocks starting with it's big floofy tail");
         foxBlocksCreativeTab = new CreativeTabs("FoxBlocks") {
             public Item getTabIconItem() {
-                return  Item.getItemFromBlock(EnumBlocks.bauxiteOre.leBlock);
+                return  Item.getItemFromBlock(BlockIDs.bauxiteOre.block);
             }
 
             public String getTranslatedTabLabel() {
@@ -49,32 +51,51 @@ public class FoxBlocks
     }
 
     public void registerBlocks() {
-        EnumBlocks.bauxiteOre.leBlock = new BauxiteOre(Material.rock).setHardness(1F).setStepSound(Block.soundTypeMetal);
-        EnumBlocks.rawConcrete.leBlock = new RawConcrete(Material.rock);
-        EnumBlocks.peagravel_snow.leBlock = new SnowyPeaGravel(Material.sand);
-        EnumBlocks.peagravel.leBlock = new PeaGravel(Material.sand);
-        EnumBlocks.although.leBlock = new Although(Material.clay).setLightLevel(3F).setStepSound(Block.soundTypeAnvil).setResistance(4F).setHardness(2F);
-        EnumBlocks.metalSiding_White.leBlock = new MetalSiding_White(Material.iron);
-        EnumBlocks.metalSiding_LightGrey.leBlock = new MetalSiding_LightGrey(Material.iron);
-        EnumBlocks.metalSiding_Grey.leBlock = new MetalSiding_Grey(Material.iron);
-        EnumBlocks.metalSiding_Black.leBlock = new MetalSiding_Black(Material.iron);
-        EnumBlocks.BlockmetalSiding.leBlock = new BlockmetalSiding();
+        BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock).setHardness(1F).setStepSound(Block.soundTypeMetal);
+        BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
+        BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
+        BlockIDs.peagravel.block = new PeaGravel(Material.sand);
+        BlockIDs.although.block = new Although(Material.clay).setLightLevel(3F).setStepSound(Block.soundTypeAnvil).setResistance(4F).setHardness(2F);
+        BlockIDs.metalSiding_White.block = new MetalSiding_White(Material.iron);
+        BlockIDs.metalSiding_LightGrey.block = new MetalSiding_LightGrey(Material.iron);
+        BlockIDs.metalSiding_Grey.block = new MetalSiding_Grey(Material.iron);
+        BlockIDs.metalSiding_Black.block = new MetalSiding_Black(Material.iron);
+        //BlockIDs.BlockmetalSiding.block = new BlockmetalSiding();
 
-
-        for (EnumBlocks blocc : EnumBlocks.values()) {
-            blocc.leBlock.setCreativeTab(foxBlocksCreativeTab);
+        /*
+        for (BlockIDs blocc : BlockIDs.values()) {
+            blocc.block.setCreativeTab(foxBlocksCreativeTab);
             if (blocc.leItemBlock != null) {
-                GameRegistry.registerBlock(blocc.leBlock, blocc.leItemBlock.getClass(), blocc.bloccName);
+                GameRegistry.registerBlock(blocc.block, blocc.leItemBlock.getClass(), blocc.bloccName);
             } else {
-                GameRegistry.registerBlock(blocc.leBlock, blocc.bloccName);
+                GameRegistry.registerBlock(blocc.block, blocc.bloccName);
             }
         }
 
+         */
+
+
+        for (BlockIDs block : BlockIDs.values()) {
+            if (block.hasItemBlock == false) {
+                GameRegistry.registerBlock(block.block, block.blockName);
+                block.block.setCreativeTab(foxBlocksCreativeTab);
+            } else {
+                GameRegistry.registerBlock(block.block, block.itemBlockClass, block.blockName);
+                block.block.setCreativeTab(foxBlocksCreativeTab);
+
+            }
+        }
+
+        /*
+        GameRegistry.registerBlock(BlockIDs.bauxiteOre.block, BlockIDs.bauxiteOre.blockName);
+        BlockIDs.bauxiteOre.block.setCreativeTab(foxBlocksCreativeTab);
+
+         */
     }
 
     public void registerRecipe() {
-        GameRegistry.addShapelessRecipe(new ItemStack(EnumBlocks.peagravel.leBlock, 1), Blocks.gravel);
-        GameRegistry.addShapelessRecipe(new ItemStack(EnumBlocks.peagravel_snow.leBlock, 1),  new ItemStack(EnumBlocks.peagravel.leBlock, 1), Items.snowball, new ItemStack(EnumBlocks.peagravel.leBlock, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_snow.block, 1),  new ItemStack(BlockIDs.peagravel.block, 1), Items.snowball, new ItemStack(BlockIDs.peagravel.block, 1));
     }
 
 }
