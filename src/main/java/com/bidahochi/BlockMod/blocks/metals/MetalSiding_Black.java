@@ -3,7 +3,9 @@ package com.bidahochi.BlockMod.blocks.metals;
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.Explosion;
+import net.minecraft.world.World;
 
 
 public class MetalSiding_Black extends Block {
@@ -15,11 +17,8 @@ public class MetalSiding_Black extends Block {
         setBlockTextureName(FoxBlocks.MODID+":MetalSiding_Black");
 
     }
-   /* public Block.SoundType soundTypeMetal = new Block.SoundType("stone", 1.0F, 1.5F);
-
     @Override
-    public Block setStepSound(Block.SoundType p_149672_1_) {
-        this.stepSound = Stone;
-        return this;
-    }*/
+    protected void dropBlockAsItem(World p_149642_1_, int p_149642_2_, int p_149642_3_, int p_149642_4_, ItemStack p_149642_5_) {
+        super.dropBlockAsItem(p_149642_1_, p_149642_2_, p_149642_3_, p_149642_4_, p_149642_5_);
+    }
 }
