@@ -1,4 +1,27 @@
-package com.bidahochi.BlockMod;
+package com.bidahochi.BlockMod.core.handler;
+
+/***************************
+ *
+ *  BlockIDs by -hariesh
+ *
+ *  This Folder is to register Blocks to FOXBLOCKS
+ *  MAKE SURE YOU REGISTER BLOCKS TO MINECRAFT IN blockHandler at com.bidahochi.BlockMod.core.handler;
+ *
+ *  This file allows you to set if the block has an itemBlockversion, where it is and the name of the block!
+ *
+ *  Under BlockIDs{} use this format:
+ *
+ *  blockname(false,null,"finalblockname"),
+ *
+ *  The finalblockname will stop you from having to write an en_US.lang file for the block as it will be already written through this file!
+ *
+ *  This file is also used to pull into many other files, dont screw this one up!
+ *
+ *  Any questions just ping or dm me on the discord!
+ *
+ *  -hariesh
+ *
+ ****************************/
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;

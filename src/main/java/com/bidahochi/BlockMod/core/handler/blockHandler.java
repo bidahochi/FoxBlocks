@@ -4,7 +4,8 @@ package com.bidahochi.BlockMod.core.handler;
  *
  *  blockHander  by -hariesh
  *
- *  This file allows you to register your blocks to the mod without cluttering up Foxblocks.java
+ *  This file allows you to register your blocks to MINECRAFT without cluttering up Foxblocks.java
+ *  MAKE SURE YOU REGISTER THEM TO FOXBLOCKS IN BlockIDs.java  in com.bidahochi.BlockMod.core.handler;
  *
  *  This file is ONLY for registering blocks to the mod. Do not try to add properties like hardness here
  *
@@ -26,12 +27,9 @@ import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
-import com.bidahochi.BlockMod.BlockIDs;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 
 public class blockHandler {
     public static CreativeTabs foxBlocksCreativeTab;
