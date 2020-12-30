@@ -11,10 +11,10 @@ public class PeaGravel extends BlockFalling {
     public PeaGravel(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Pea Gravel");
-        setHardness(0.3F);
+        setHardness(0.5F);
+        setResistance(0.1F);
         setHarvestLevel("shovel", 0);
         setStepSound(soundTypeGravel);
-        setResistance(0.1F);
         setBlockTextureName(FoxBlocks.MODID+":peagravel_generic");
     }
 

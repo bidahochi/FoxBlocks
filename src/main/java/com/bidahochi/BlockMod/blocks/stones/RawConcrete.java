@@ -6,15 +6,16 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-
 public class RawConcrete extends Block {
 
     public RawConcrete(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Raw Concrete");
-
+        setHardness(2.0F);
+        setResistance(12.5F);
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypePiston);
         setBlockTextureName(FoxBlocks.MODID+":raw_concrete");
-
     }
 
     @Override

@@ -15,6 +15,7 @@ public enum EnumBlocks {
     metalSiding_LightGrey(),
     metalSiding_Grey(),
     metalSiding_Black(),
+    BrownTile(),
     //BlockmetalSiding(),
     ;
 

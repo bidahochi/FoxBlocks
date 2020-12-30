@@ -12,8 +12,10 @@ public class BauxiteOre extends Block {
     public BauxiteOre(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Bauxite Ore");
-        setHardness(1F);
-        setStepSound(Block.soundTypeMetal);
+        setHardness(3.5F);
+        setResistance(6.0F);
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypePiston);
         setBlockTextureName(FoxBlocks.MODID+":bauxite_ore");
 
     }

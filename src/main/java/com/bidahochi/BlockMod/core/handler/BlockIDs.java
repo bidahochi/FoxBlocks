@@ -37,10 +37,11 @@ public enum BlockIDs {
     metalSiding_White(false,null, "metalwhite"),
     metalSiding_LightGrey(false,null, "metalgray"),
     metalSiding_Grey(false,null, "metalgraygary"),
-    metalSiding_Black(false,null, "metal bloack"),
+    metalSiding_Black(false,null, "metal block"),
     //BlockmetalSiding(false,null,"metalsiding"),
     testblock(false,null,"Test Block"),
-    dryWall(true,ItemBlockdryWall.class,"Dry Wall")
+    dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
+    brownTile(false, null, "Brown Tile")
     ;
 
     public Block block;
