@@ -24,7 +24,6 @@ public enum EnumBlocks {
 
 
     EnumBlocks() {
-
     }
 
     EnumBlocks(Block leBlock, String bloccName) {
