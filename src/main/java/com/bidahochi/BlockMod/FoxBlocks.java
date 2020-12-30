@@ -1,13 +1,11 @@
 package com.bidahochi.BlockMod;
 
 
-import com.bidahochi.BlockMod.core.handler.oreDictHandler;
-import com.bidahochi.BlockMod.core.handler.blockHandler;
+import com.bidahochi.BlockMod.core.handler.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
-import com.bidahochi.BlockMod.core.handler.recipeHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.apache.logging.log4j.LogManager;
@@ -41,6 +39,7 @@ public class FoxBlocks
         blockHandler.initBlockRegister();
         recipeHandler.initBlockRecipes();
         oreDictHandler.registerOreDict();
+        GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
     }
 
 
