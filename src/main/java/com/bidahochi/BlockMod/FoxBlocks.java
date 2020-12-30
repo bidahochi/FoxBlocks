@@ -1,5 +1,7 @@
 package com.bidahochi.BlockMod;
 
+
+import com.bidahochi.BlockMod.core.handler.oreDictHandler;
 import com.bidahochi.BlockMod.core.handler.blockHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -38,6 +40,7 @@ public class FoxBlocks
 
         blockHandler.initBlockRegister();
         recipeHandler.initBlockRecipes();
+        oreDictHandler.registerOreDict();
     }
 
 

@@ -30,11 +30,14 @@ import com.bidahochi.BlockMod.blocks.stones.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import org.apache.logging.log4j.Logger;
 
 public class blockHandler {
     public static CreativeTabs foxBlocksCreativeTab;
 
     public static void initBlockRegister(){
+
+        FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
         BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
         BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
@@ -57,6 +60,8 @@ public class blockHandler {
 
             }
         }
+
+        FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
     }
 }

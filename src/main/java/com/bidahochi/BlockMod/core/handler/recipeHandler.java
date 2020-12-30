@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod.core.handler;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -63,6 +64,10 @@ public class recipeHandler {
     }
 
     public static void initBlockRecipes() {
+
+        FoxBlocks.blockLogger.info("BlockRecipe's Pre Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
+
+
         ArrayList<ItemStack> iron = OreDictionary.getOres("ingotIron");
 
         ArrayList<ItemStack> dyeBlack = OreDictionary.getOres("dyeBlack");
@@ -89,5 +94,9 @@ public class recipeHandler {
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_snow.block, 1),  new ItemStack(BlockIDs.peagravel.block, 1), Items.snowball, new ItemStack(BlockIDs.peagravel.block, 1));
+
+        FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
+
+
     }
 }
