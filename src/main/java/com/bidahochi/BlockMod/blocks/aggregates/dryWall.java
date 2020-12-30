@@ -22,7 +22,7 @@ public class dryWall extends Block {
 
     public dryWall(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("testblock");
+        setBlockName("dryWall");
         setBlockTextureName(FoxBlocks.MODID+":drywall/drywall");
     }
 
