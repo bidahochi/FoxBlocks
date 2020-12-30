@@ -1,5 +1,6 @@
-package com.bidahochi.BlockMod;
+package com.bidahochi.BlockMod.blocks.metals;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.Explosion;
@@ -7,7 +8,7 @@ import net.minecraft.world.Explosion;
 
 public class MetalSiding_Black extends Block {
 
-    protected MetalSiding_Black(Material p_i45394_1_) {
+    public MetalSiding_Black(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("MetalSiding_Black");
 

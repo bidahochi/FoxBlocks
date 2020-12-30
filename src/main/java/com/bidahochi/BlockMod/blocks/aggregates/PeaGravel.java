@@ -1,5 +1,6 @@
-package com.bidahochi.BlockMod;
+package com.bidahochi.BlockMod.blocks.aggregates;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
@@ -7,7 +8,7 @@ import net.minecraft.world.World;
 
 public class PeaGravel extends BlockFalling {
 
-    protected PeaGravel(Material p_i45394_1_) {
+    public PeaGravel(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Pea Gravel");
         setHardness(0.3F);

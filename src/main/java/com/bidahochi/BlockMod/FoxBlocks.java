@@ -3,20 +3,17 @@ package com.bidahochi.BlockMod;
 import com.bidahochi.BlockMod.EnumBlocks.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import com.bidahochi.BlockMod.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 
 @Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME)
 public class FoxBlocks
@@ -46,7 +43,6 @@ public class FoxBlocks
         registerBlocks();
         registerRecipe();
     }
-
 
     public void registerBlocks() {
         EnumBlocks.bauxiteOre.leBlock = new BauxiteOre(Material.rock).setHardness(1F).setStepSound(Block.soundTypeMetal);
