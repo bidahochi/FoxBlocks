@@ -1,5 +1,27 @@
 package com.bidahochi.BlockMod.core.handler;
 
+/**
+ *  oreGenerationHandler by -hariesh
+ *
+ *  This file is responsible for making ores below spawn in the world
+ *  This file lets you tweak the spawn rate, where the block will spawn, what block it will spawn in and how often
+ *
+ *  You can also add an ore block to each dimension, the End, Overworld or the Nether
+ *
+ *  To add an ore to the overworld,  look under generateOverworld
+ *
+ *  Use format:
+ *      generateOre(BlockIDs.blockname.block, world, rand, x, z, minveinsize, maxveinsize, chanceofspawning , minYlevel, maxYlevel, blockToSpawnInto);
+ *
+ *  I suggest you dont touch anything in this folder as you probably wont be adding too many ores anyway
+ *
+ *  Any questions feel free to ping or dm me on the discord!
+ *
+ *  -hariesh
+ *  
+ */
+
+
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
