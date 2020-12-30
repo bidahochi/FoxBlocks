@@ -50,8 +50,8 @@ public class blockHandler {
         BlockIDs.metalSiding_Black.block = new MetalSiding_Black(Material.iron);
         BlockIDs.testblock.block = new testBlock(Material.iron);
         BlockIDs.dryWall.block = new dryWall(Material.clay);
-        //BlockIDs.BlockmetalSiding.block = new BlockmetalSiding();
         BlockIDs.brownTile.block = new BrownTile(Material.rock);
+        BlockIDs.fiberGlass.block = new fiberGlass(Material.glass);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

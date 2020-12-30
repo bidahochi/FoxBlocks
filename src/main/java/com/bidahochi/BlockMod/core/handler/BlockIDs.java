@@ -24,6 +24,7 @@ package com.bidahochi.BlockMod.core.handler;
  ****************************/
 
 import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockdryWall;
+import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockfiberGlass;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -41,7 +42,8 @@ public enum BlockIDs {
     //BlockmetalSiding(false,null,"metalsiding"),
     testblock(false,null,"Test Block"),
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
-    brownTile(false, null, "Brown Tile")
+    brownTile(false, null, "Brown Tile"),
+    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass")
     ;
 
     public Block block;
