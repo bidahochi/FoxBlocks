@@ -8,8 +8,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,7 +42,7 @@ public class FoxBlocks
 
         //BlockProperties.registerBlocks();
         registerBlocks();
-
+        registerRecipe();
     }
 
 
@@ -64,7 +67,6 @@ public class FoxBlocks
         EnumBlocks.metalSiding_Black.bloccName = "Black Metal Siding";
 
 
-
         for (EnumBlocks blocc : EnumBlocks.values()) {
             blocc.leBlock.setCreativeTab(foxBlocksCreativeTab);
             if (blocc.leItemBlock != null) {
@@ -77,5 +79,9 @@ public class FoxBlocks
 
     }
 
+    public void registerRecipe() {
+        GameRegistry.addShapelessRecipe(new ItemStack(EnumBlocks.peagravel.leBlock, 1), Blocks.gravel);
+        GameRegistry.addShapelessRecipe(new ItemStack(EnumBlocks.peagravel_snow.leBlock, 1),  new ItemStack(EnumBlocks.peagravel.leBlock, 1), Items.snowball, new ItemStack(EnumBlocks.peagravel.leBlock, 1));
+    }
 
 }
