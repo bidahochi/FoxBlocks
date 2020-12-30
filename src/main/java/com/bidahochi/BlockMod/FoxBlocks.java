@@ -6,6 +6,7 @@ import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import com.bidahochi.BlockMod.core.handler.recipeHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -47,7 +48,7 @@ public class FoxBlocks
 
         //BlockProperties.registerBlocks();
         registerBlocks();
-        registerRecipe();
+        recipeHandler.initBlockRecipes();
     }
 
     public void registerBlocks() {
