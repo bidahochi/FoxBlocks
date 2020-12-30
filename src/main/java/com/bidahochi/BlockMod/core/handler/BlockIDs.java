@@ -23,6 +23,7 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ****************************/
 
+import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockdryWall;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -38,6 +39,8 @@ public enum BlockIDs {
     metalSiding_Grey(false,null, "metalgraygary"),
     metalSiding_Black(false,null, "metal bloack"),
     //BlockmetalSiding(false,null,"metalsiding"),
+    testblock(false,null,"Test Block"),
+    dryWall(true,ItemBlockdryWall.class,"Dry Wall")
     ;
 
     public Block block;
