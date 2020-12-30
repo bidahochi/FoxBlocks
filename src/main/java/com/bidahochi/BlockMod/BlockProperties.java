@@ -1,50 +1,19 @@
 package com.bidahochi.BlockMod;
 
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import com.bidahochi.BlockMod.EnumBlocks.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraft.init.Blocks;
+
+public class BlockProperties {
+/*
+    public static CreativeTabs foxBlocksCreativeTab ;
 
 
-@Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME)
-public class FoxBlocks
-{
-    public static final String MODID = "foxblocks";
-    public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.1";
-    public static CreativeTabs foxBlocksCreativeTab;
-    public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        //Initalize bloccs.
-        blockLogger.info("FoxBlocks starting with it's big floofy tail");
-        foxBlocksCreativeTab = new CreativeTabs("FoxBlocks") {
-            public Item getTabIconItem() {
-                return  Item.getItemFromBlock(EnumBlocks.bauxiteOre.leBlock);
-            }
-
-            public String getTranslatedTabLabel() {
-                return "FoxBlocks";
-            }
-        };
-
-        //BlockProperties.registerBlocks();
-        registerBlocks();
-
-    }
-
-
-    public void registerBlocks() {
-        EnumBlocks.bauxiteOre.leBlock = new BauxiteOre(Material.rock).setHardness(1F).setStepSound(Block.soundTypeMetal);
+    public static void registerBlocks() {
+        EnumBlocks.bauxiteOre.leBlock = new BauxiteOre(Material.rock).setHardness(1F).setStepSound(Block.soundTypeMetal).setLightLevel(1F);
         EnumBlocks.bauxiteOre.bloccName = "Bauxite Ore";
         EnumBlocks.rawConcrete.leBlock = new RawConcrete(Material.rock);
         EnumBlocks.rawConcrete.bloccName = "Raw Concrete";
@@ -52,7 +21,7 @@ public class FoxBlocks
         EnumBlocks.peagravel_snow.bloccName = "Snowy Pea Gravel";
         EnumBlocks.peagravel.leBlock = new PeaGravel(Material.sand);
         EnumBlocks.peagravel.bloccName = "Pea Gravel";
-        EnumBlocks.although.leBlock = new Although(Material.clay).setLightLevel(3F).setStepSound(Block.soundTypeAnvil).setResistance(4F).setHardness(2F);
+        EnumBlocks.although.leBlock = new Although(Material.clay);
         EnumBlocks.although.bloccName = "Although";
         EnumBlocks.metalSiding_White.leBlock = new MetalSiding_White(Material.iron);
         EnumBlocks.metalSiding_White.bloccName = "White Metal Siding";
@@ -64,7 +33,9 @@ public class FoxBlocks
         EnumBlocks.metalSiding_Black.bloccName = "Black Metal Siding";
 
 
-
+        GameRegistry.registerBlock(EnumBlocks.metalSiding_Grey.leBlock, "MetalSiding Gray");
+        GameRegistry.re
+        /*
         for (EnumBlocks blocc : EnumBlocks.values()) {
             blocc.leBlock.setCreativeTab(foxBlocksCreativeTab);
             if (blocc.leItemBlock != null) {
@@ -75,7 +46,8 @@ public class FoxBlocks
         }
 
 
-    }
-
-
+    }*/
 }
+
+
+
