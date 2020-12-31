@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.aggregates;
+package com.bidahochi.BlockMod.blocks.constructionmaterials;
 
 import net.minecraft.item.Item;
 import java.util.List;

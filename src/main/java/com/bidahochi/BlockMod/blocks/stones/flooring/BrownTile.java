@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.stones;
+package com.bidahochi.BlockMod.blocks.stones.flooring;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
