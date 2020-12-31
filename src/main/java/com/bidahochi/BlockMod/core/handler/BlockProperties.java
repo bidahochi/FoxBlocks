@@ -14,6 +14,12 @@ import net.minecraft.item.ItemBlock;
 
 import static net.minecraft.block.Block.*;
 
+/**
+ *  This file is not active. Please ignore until we figure it out
+ *
+ *  -hariesh
+ */
+
 public enum BlockProperties {
 
 
@@ -45,4 +51,5 @@ public enum BlockProperties {
         this.sound = sound;
         this.textureLocation = textureLocation;
     }
+
 }

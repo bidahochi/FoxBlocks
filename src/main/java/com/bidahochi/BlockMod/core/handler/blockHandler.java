@@ -21,8 +21,7 @@ package com.bidahochi.BlockMod.core.handler;
  ********************/
 
 
-
-import com.bidahochi.BlockMod.EnumBlocks;
+import com.bidahochi.BlockMod.core.handler.BlockProperties;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.fiberGlass;
@@ -34,6 +33,7 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -71,9 +71,6 @@ public class blockHandler {
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
         BlockIDs.emberStoneStair.block = new emberStoneStair(BlockIDs.emberStone.block, 0);
 
-        for (BlockProperties block : BlockProperties.values()) {
-
-        }
 
 
         for (BlockIDs block : BlockIDs.values()) {
@@ -89,5 +86,21 @@ public class blockHandler {
 
         FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
+    }
+
+
+    //The code below is not active. Do not touch unless you know how to fix and your fix works! -hariesh
+    public static void blockpropertyregister() {
+
+
+        for (BlockProperties blockReg : BlockProperties.values()) {
+            String nameOfBlock = blockReg.blockName;
+            Block blockOfReg = blockReg.block;
+            BlockProperties.valueOf(nameOfBlock).block = new baseBlock(blockReg.blockName,blockReg.hardness,blockReg.resistance,blockReg.harvestTool,blockReg.harvestLevel,blockReg.material,blockReg.sound,blockReg.textureLocation);
+        }
+
+        for (BlockProperties blockReg : BlockProperties.values()){
+            GameRegistry.registerBlock(blockReg.block, blockReg.blockName);
+        }
     }
 }

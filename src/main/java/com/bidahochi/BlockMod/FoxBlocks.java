@@ -37,6 +37,7 @@ public class FoxBlocks
         };
 
         blockHandler.initBlockRegister();
+        //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         itemHandler.initItemRegister();
         recipeHandler.initBlockRecipes();
         oreDictHandler.registerOreDict();
