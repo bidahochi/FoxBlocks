@@ -26,6 +26,7 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockdryWall;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockfiberGlass;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockwallPaper;
+import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalSiding;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -36,11 +37,6 @@ public enum BlockIDs {
     peagravel_snow(false,null, "peagravelsnow"),
     peagravel(false,null, "peagravel"),
     although(false,null, "alothi"),
-    metalSiding_White(false,null, "metalwhite"),
-    metalSiding_LightGrey(false,null, "metalgray"),
-    metalSiding_Grey(false,null, "metalgraygary"),
-    metalSiding_Black(false,null, "metal block"),
-    //BlockmetalSiding(false,null,"metalsiding"),
     testblock(false,null,"Test Block"),
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
@@ -53,6 +49,7 @@ public enum BlockIDs {
     testSlab(false,null,"TestSlab"),
     unfinishedDrywall(false,null,"unfinishedDrywall"),
     testStair(false,null,"TestStair"),
+    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding")
     ;
 
     public Block block;

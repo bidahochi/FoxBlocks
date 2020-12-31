@@ -48,10 +48,6 @@ public class blockHandler {
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
         BlockIDs.peagravel.block = new PeaGravel(Material.sand);
         BlockIDs.although.block = new Although(Material.clay);
-        BlockIDs.metalSiding_White.block = new MetalSiding_White(Material.iron);
-        BlockIDs.metalSiding_LightGrey.block = new MetalSiding_LightGrey(Material.iron);
-        BlockIDs.metalSiding_Grey.block = new MetalSiding_Grey(Material.iron);
-        BlockIDs.metalSiding_Black.block = new MetalSiding_Black(Material.iron);
         BlockIDs.testblock.block = new testBlock(Material.iron);
         BlockIDs.dryWall.block = new dryWall(Material.clay);
         BlockIDs.wallPaper.block = new wallPaper(Material.cloth);
@@ -64,6 +60,8 @@ public class blockHandler {
         BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
         BlockIDs.testSlab.block = new testSlab(false, Material.iron);
         BlockIDs.testStair.block = new testStair(BlockIDs.emberStone.block, 0);
+        BlockIDs.metalSiding.block = new metalSiding(Material.iron);
+
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

@@ -89,7 +89,7 @@ public class recipeHandler {
 
 
         for (ItemStack dyeblack : dyeBlack) {
-            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.metalSiding_Black.block, 1),  Blocks.iron_block, dyeblack);
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.metalSiding.block, 1,0),  Blocks.iron_block, dyeblack);
         }
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
