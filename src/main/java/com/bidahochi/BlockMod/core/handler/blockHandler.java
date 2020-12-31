@@ -63,6 +63,7 @@ public class blockHandler {
         BlockIDs.darkEmberStone.block = new darkEmberStone(Material.rock);
         BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
         BlockIDs.testSlab.block = new testSlab(false, Material.iron);
+        BlockIDs.testStair.block = new testStair(BlockIDs.emberStone.block, 0);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

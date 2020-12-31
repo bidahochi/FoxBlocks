@@ -52,6 +52,7 @@ public enum BlockIDs {
     testPane(false, null, "TestPane"),
     testSlab(false,null,"TestSlab"),
     unfinishedDrywall(false,null,"unfinishedDrywall"),
+    testStair(false,null,"TestStair"),
     ;
 
     public Block block;
