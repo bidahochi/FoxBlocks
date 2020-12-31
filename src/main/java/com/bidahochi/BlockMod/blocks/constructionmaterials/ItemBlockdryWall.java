@@ -1,12 +1,18 @@
-package com.bidahochi.BlockMod.blocks.aggregates;
+package com.bidahochi.BlockMod.blocks.constructionmaterials;
+/**
+ *  ItemBlock for dryWall
+ *
+ *  -hariesh
+ *
+ */
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlockWithMetadata;
 import net.minecraft.item.ItemStack;
 
-public class ItemBlockfiberGlass extends ItemBlockWithMetadata{
+public class ItemBlockdryWall extends ItemBlockWithMetadata {
 
-    public ItemBlockfiberGlass(Block block) {
+    public ItemBlockdryWall(Block block) {
         super(block, block);
     }
 
@@ -14,4 +20,3 @@ public class ItemBlockfiberGlass extends ItemBlockWithMetadata{
         return this.getUnlocalizedName() + "_" + item.getItemDamage();
     }
 }
-

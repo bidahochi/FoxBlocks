@@ -23,8 +23,8 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ****************************/
 
-import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockdryWall;
-import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockfiberGlass;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockdryWall;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockfiberGlass;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
