@@ -23,16 +23,14 @@ package com.bidahochi.BlockMod.core.handler;
 
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.dryWall;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.fiberGlass;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
-import com.bidahochi.BlockMod.blocks.stones.flooring.BrownTile;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import org.apache.logging.log4j.Logger;
 
 public class blockHandler {
     public static CreativeTabs foxBlocksCreativeTab;
