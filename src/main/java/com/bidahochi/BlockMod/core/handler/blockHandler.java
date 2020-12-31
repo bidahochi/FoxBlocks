@@ -64,6 +64,7 @@ public class blockHandler {
         BlockIDs.soapStoneMagmatic.block = new soapStoneMagmatic(Material.rock);
         BlockIDs.soapStoneDeco.block = new soapStoneDeco(Material.rock);
         BlockIDs.soapStoneEmerald.block = new soapStoneEmerald(Material.rock);
+        BlockIDs.metalSiding.block = new metalSiding(Material.iron);
 
 
         for (BlockIDs block : BlockIDs.values()) {
