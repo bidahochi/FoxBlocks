@@ -13,7 +13,7 @@ import java.util.List;
 
 public class wallPaper extends Block {
 
-    int varia=4;
+    int varia=16;
     public IIcon[] textures = new IIcon[varia];
 
     public wallPaper(Material p_i45394_1_) {
