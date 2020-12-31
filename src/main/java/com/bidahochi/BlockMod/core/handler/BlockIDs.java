@@ -45,11 +45,10 @@ public enum BlockIDs {
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     brownTile(false, null, "Brown Tile"),
     fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
-    fireBrick(false, null, "fireBrick");
-    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
+    fireBrick(false, null, "fireBrick"),
     metalFenceBlock(true, ItemBlockmetalFenceBlock.class, "Metal Fence Block"),
     darkEmberStone(false, null, "Dark Ember Stone"),
-    emberStone(false,null,"Ember Stone"),
+    emberStone(false,null,"Ember Stone")
     ;
 
     public Block block;
