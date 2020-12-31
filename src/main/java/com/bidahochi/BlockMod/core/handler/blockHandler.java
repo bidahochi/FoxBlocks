@@ -71,6 +71,11 @@ public class blockHandler {
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
         BlockIDs.emberStoneStair.block = new emberStoneStair(BlockIDs.emberStone.block, 0);
 
+        for (BlockProperties block : BlockProperties.values()) {
+
+        }
+
+
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {
                 GameRegistry.registerBlock(block.block, block.blockName);
