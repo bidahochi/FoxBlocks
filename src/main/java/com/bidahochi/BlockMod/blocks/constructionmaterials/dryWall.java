@@ -23,7 +23,12 @@ public class dryWall extends Block {
     public dryWall(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("dryWall");
+        setHardness(2.2F);
+        setResistance(6.5F);
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/drywall/drywall");
+
     }
 
     public void registerBlockIcons(IIconRegister reg) {

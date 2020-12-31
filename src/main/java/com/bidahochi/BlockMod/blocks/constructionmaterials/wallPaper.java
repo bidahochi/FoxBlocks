@@ -18,6 +18,9 @@ public class wallPaper extends Block {
     public wallPaper(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("wallPaper");
+        setHardness(0.5F);
+        setResistance(0.25F);
+        setStepSound(soundTypeCloth);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wallpapers/wallpaper");
     }
 

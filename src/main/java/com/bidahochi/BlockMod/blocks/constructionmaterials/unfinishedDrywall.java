@@ -10,6 +10,10 @@ public class unfinishedDrywall extends Block {
     public unfinishedDrywall(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("unfinishedDrywall");
+        setHardness(2.2F);
+        setResistance(6.5F);
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/specialdrywall/unfinishedDrywall");
     }
 
