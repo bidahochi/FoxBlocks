@@ -48,6 +48,7 @@ public enum BlockIDs {
     darkEmberStone(false, null, "Dark Ember Stone"),
     emberStone(false,null,"Ember Stone"),
     testPane(false, null, "TestPane"),
+    testSlab(false,null,"TestSlab"),
     ;
 
     public Block block;
