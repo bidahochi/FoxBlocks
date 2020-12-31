@@ -25,6 +25,8 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.dryWall;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.fiberGlass;
+import com.bidahochi.BlockMod.blocks.hell.darkEmberStone;
+import com.bidahochi.BlockMod.blocks.hell.emberStone;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
@@ -53,6 +55,8 @@ public class blockHandler {
         BlockIDs.dryWall.block = new dryWall(Material.clay);
         BlockIDs.brownTile.block = new BrownTile(Material.rock);
         BlockIDs.fiberGlass.block = new fiberGlass(Material.glass);
+        BlockIDs.emberStone.block = new emberStone(Material.rock);
+        BlockIDs.darkEmberStone.block = new darkEmberStone(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {
