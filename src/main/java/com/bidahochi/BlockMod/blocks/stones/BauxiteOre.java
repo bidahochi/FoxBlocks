@@ -16,7 +16,7 @@ public class BauxiteOre extends Block {
         setResistance(6.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypePiston);
-        setBlockTextureName(FoxBlocks.MODID+":bauxite_ore");
+        setBlockTextureName(FoxBlocks.MODID+":stones/bauxite_ore");
 
     }
 

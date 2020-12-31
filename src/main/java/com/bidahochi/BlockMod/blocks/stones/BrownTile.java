@@ -15,7 +15,7 @@ public class BrownTile extends Block {
         setResistance(7.0F);
         setHarvestLevel("pickaxe", 0);
         setStepSound(soundTypePiston);
-        setBlockTextureName(FoxBlocks.MODID+":BrownTile");
+        setBlockTextureName(FoxBlocks.MODID+":stones/flooring/BrownTile");
     }
     @Override
     protected void dropBlockAsItem(World p_149642_1_, int p_149642_2_, int p_149642_3_, int p_149642_4_, ItemStack p_149642_5_) {

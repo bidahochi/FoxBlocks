@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.aggregates;
+package com.bidahochi.BlockMod.blocks.constructionmaterials;
 
 import net.minecraft.item.Item;
 import java.util.List;
@@ -19,7 +19,7 @@ public class fiberGlass extends Block{
     public fiberGlass(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("fiberglass");
-        setBlockTextureName(FoxBlocks.MODID+":fiberglass/insulation");
+        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/fiberglass/insulation");
     }
 
     public void registerBlockIcons(IIconRegister reg) {

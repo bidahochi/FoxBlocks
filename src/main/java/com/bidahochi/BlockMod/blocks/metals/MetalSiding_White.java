@@ -13,10 +13,9 @@ public class MetalSiding_White extends Block {
         super(p_i45394_1_);
         setBlockName("MetalSiding_White");
 
-        setBlockTextureName(FoxBlocks.MODID+":MetalSiding_White");
+        setBlockTextureName(FoxBlocks.MODID+":metals/MetalSiding_White");
 
     }
-
     @Override
     protected void dropBlockAsItem(World p_149642_1_, int p_149642_2_, int p_149642_3_, int p_149642_4_, ItemStack p_149642_5_) {
         super.dropBlockAsItem(p_149642_1_, p_149642_2_, p_149642_3_, p_149642_4_, p_149642_5_);

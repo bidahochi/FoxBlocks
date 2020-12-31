@@ -15,7 +15,7 @@ public class PeaGravel extends BlockFalling {
         setResistance(0.1F);
         setHarvestLevel("shovel", 0);
         setStepSound(soundTypeGravel);
-        setBlockTextureName(FoxBlocks.MODID+":peagravel_generic");
+        setBlockTextureName(FoxBlocks.MODID+":aggregates/peagravel_generic");
     }
 
     @Override

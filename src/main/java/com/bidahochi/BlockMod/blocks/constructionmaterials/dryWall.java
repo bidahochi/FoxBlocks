@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.aggregates;
+package com.bidahochi.BlockMod.blocks.constructionmaterials;
 
 import net.minecraft.item.Item;
 import java.util.List;
@@ -23,7 +23,7 @@ public class dryWall extends Block {
     public dryWall(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("dryWall");
-        setBlockTextureName(FoxBlocks.MODID+":drywall/drywall");
+        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/drywall/drywall");
     }
 
     public void registerBlockIcons(IIconRegister reg) {

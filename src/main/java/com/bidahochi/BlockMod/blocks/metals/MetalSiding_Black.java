@@ -14,7 +14,7 @@ public class MetalSiding_Black extends Block {
         super(p_i45394_1_);
         setBlockName("MetalSiding_Black");
 
-        setBlockTextureName(FoxBlocks.MODID+":MetalSiding_Black");
+        setBlockTextureName(FoxBlocks.MODID+":metals/MetalSiding_Black");
 
     }
     @Override
