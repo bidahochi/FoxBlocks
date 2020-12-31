@@ -25,6 +25,7 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockdryWall;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockfiberGlass;
+import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalFenceBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -44,6 +45,7 @@ public enum BlockIDs {
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     brownTile(false, null, "Brown Tile"),
     fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
+    metalFenceBlock(true, ItemBlockmetalFenceBlock.class, "Metal Fence Block"),
     darkEmberStone(false, null, "Dark Ember Stone"),
     emberStone(false,null,"Ember Stone"),
     ;
