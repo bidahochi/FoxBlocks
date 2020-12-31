@@ -54,7 +54,8 @@ public enum BlockIDs {
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
     unfinishedDrywall(false,null,"unfinishedDrywall"),
     testStair(false,null,"TestStair"),
-    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding")
+    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
+    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh")
     ;
 
     public Block block;
