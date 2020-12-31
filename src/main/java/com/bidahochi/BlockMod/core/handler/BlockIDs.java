@@ -25,6 +25,7 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockdryWall;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockfiberGlass;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlocksoapStoneDeco;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockwallPaper;
 import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalSiding;
 import net.minecraft.block.Block;
@@ -47,6 +48,10 @@ public enum BlockIDs {
     emberStone(false,null,"Ember Stone"),
     testPane(false, null, "TestPane"),
     testSlab(false,null,"TestSlab"),
+    soapStone(false, null, "Soapstone"),
+    soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco"),
+    soapStoneMagmatic(false, null, "Magmatic Soapstone"),
+    soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
     unfinishedDrywall(false,null,"unfinishedDrywall"),
     testStair(false,null,"TestStair"),
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding")

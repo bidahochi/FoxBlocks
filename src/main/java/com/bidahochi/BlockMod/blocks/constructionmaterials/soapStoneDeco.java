@@ -11,37 +11,39 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class wallPaper extends Block {
+/**
+ *  Multi textures on a single block
+ *
+ *  -hariesh
+ *
+ */
+public class soapStoneDeco extends Block {
 
-    int varia=16;
-    public IIcon[] textures = new IIcon[varia];
+    public IIcon[] textures = new IIcon[4];
 
-    public wallPaper(Material p_i45394_1_) {
+    public soapStoneDeco(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("wallPaper");
-        setHardness(0.5F);
-        setResistance(0.25F);
-        setStepSound(soundTypeCloth);
-        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wallpapers/wallpaper");
+        setBlockName("Soapstone Deco");
+        setHardness(6.5F);
+        setResistance(30.0F);
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypeStone);
+        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/soapstonedeco/soapstone_deco");
     }
-
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < varia ; i++) {
+        for ( int i = 0; i < 4 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
-
     public IIcon getIcon ( int side, int meta){
-        if (meta > varia-1 ) meta = 0;
+        if (meta > 3 ) meta = 0;
         return this.textures[meta];
     }
-
     public int damageDropped( int oldmeta){
         return oldmeta;
     }
-
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < varia; i++){
+        for (int i = 0; i < 4; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }
