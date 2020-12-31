@@ -13,7 +13,10 @@ public class MetalSiding_Black extends Block {
     public MetalSiding_Black(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("MetalSiding_Black");
-
+        setHardness(0.5F);
+        setResistance(0.1F);
+        setHarvestLevel("shovel", 0);
+        setStepSound(soundTypeGravel);
         setBlockTextureName(FoxBlocks.MODID+":metals/MetalSiding_Black");
 
     }

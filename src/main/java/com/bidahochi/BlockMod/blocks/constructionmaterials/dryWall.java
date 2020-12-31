@@ -18,7 +18,7 @@ import net.minecraft.util.IIcon;
  */
 public class dryWall extends Block {
 
-    public IIcon[] textures = new IIcon[6];
+    public IIcon[] textures = new IIcon[7];
 
     public dryWall(Material p_i45394_1_) {
         super(p_i45394_1_);
@@ -27,13 +27,13 @@ public class dryWall extends Block {
     }
 
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 6 ; i++) {
+        for ( int i = 0; i < 7 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
 
     public IIcon getIcon ( int side, int meta){
-        if (meta > 5 ) meta = 0;
+        if (meta > 6 ) meta = 0;
         return this.textures[meta];
     }
 
@@ -42,7 +42,7 @@ public class dryWall extends Block {
     }
 
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 6; i++){
+        for (int i = 0; i < 7; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }

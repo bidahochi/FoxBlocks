@@ -43,8 +43,8 @@ public enum BlockIDs {
     testblock(false,null,"Test Block"),
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     brownTile(false, null, "Brown Tile"),
-    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass")
-    ;
+    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
+    fireBrick(false, null, "fireBrick");
 
     public Block block;
     public boolean hasItemBlock;
