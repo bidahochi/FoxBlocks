@@ -63,8 +63,8 @@ public class oreGenerationHandler implements IWorldGenerator {
     public void generateNether(World world, Random rand, int x, int z){
         generateOre(BlockIDs.emberStone.block, world, rand, x, z, 10, 20, 15, 20, 80, Blocks.netherrack);
         generateOre(BlockIDs.darkEmberStone.block, world, rand, x, z, 5, 15, 15, 20, 80, Blocks.nether_brick);
-        generateOre(BlockIDs.soapStone.block, world, rand, x, z, 65, 136, 7, 40, 133, Blocks.netherrack);
-        generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 45, 4, 123, BlockIDs.soapStone.block);
+        //generateOre(BlockIDs.soapStone.block, world, rand, x, z, 65, 136, 7, 40, 133, Blocks.netherrack);
+        //generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 45, 4, 123, BlockIDs.soapStone.block);
     }
 
     public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block generateIn) {

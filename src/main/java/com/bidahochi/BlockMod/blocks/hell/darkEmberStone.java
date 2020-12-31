@@ -14,7 +14,7 @@ public class darkEmberStone extends Block {
         setHardness(3.0F);
         setResistance(30.0F);
         setHarvestLevel("pickaxe", 3);
-        setStepSound(soundTypeCloth);
+        setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":hell/darkEmberStone");
     }
     @Override

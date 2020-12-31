@@ -28,6 +28,7 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.fiberGlass;
 import com.bidahochi.BlockMod.blocks.hell.darkEmberStone;
 import com.bidahochi.BlockMod.blocks.hell.emberStone;
+import com.bidahochi.BlockMod.blocks.hell.emberStoneStair;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
@@ -59,7 +60,7 @@ public class blockHandler {
         BlockIDs.darkEmberStone.block = new darkEmberStone(Material.rock);
         BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
         BlockIDs.testSlab.block = new testSlab(false, Material.iron);
-        BlockIDs.testStair.block = new testStair(BlockIDs.emberStone.block, 0);
+        BlockIDs.testStair.block = new testStair(BlockIDs.bauxiteOre.block, 0);
         BlockIDs.soapStone.block = new SoapStone(Material.rock);
         BlockIDs.soapStoneMagmatic.block = new soapStoneMagmatic(Material.rock);
         BlockIDs.soapStoneDeco.block = new soapStoneDeco(Material.rock);
@@ -68,7 +69,7 @@ public class blockHandler {
         BlockIDs.harieshHead.block = new harieshHead(Material.dragonEgg);
         BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
-
+        BlockIDs.emberStoneStair.block = new emberStoneStair(BlockIDs.emberStone.block, 0);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

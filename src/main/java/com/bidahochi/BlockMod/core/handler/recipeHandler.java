@@ -218,6 +218,8 @@ public class recipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GRG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('R'), Blocks.stone);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.layeredConcrete.block, 3), " C ", " C ", " C ", Character.valueOf('C'), BlockIDs.rawConcrete.block);
 
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.harieshHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
+
         FoxBlocks.blockLogger.info("Hi Mom!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }

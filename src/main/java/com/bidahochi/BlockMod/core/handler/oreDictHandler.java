@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler;
 
-/*
+/**
+ *
  *  oreDictHandler by -hariesh
  *
  *  This file gives your blocks OreDictionary compatibility!
