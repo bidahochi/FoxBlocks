@@ -1,39 +1,34 @@
 package com.bidahochi.BlockMod.blocks.constructionmaterials;
 
-import net.minecraft.item.Item;
-import java.util.List;
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
-/**
- *  Multi textures on a single block
- *
- *  -hariesh
- *
- */
-public class dryWall extends Block {
+import java.util.List;
 
-    public IIcon[] textures = new IIcon[16];
+public class wallPaper extends Block {
 
-    public dryWall(Material p_i45394_1_) {
+    public IIcon[] textures = new IIcon[2];
+
+    public wallPaper(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("dryWall");
-        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/drywall/drywall");
+        setBlockName("wallPaper");
+        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wallpapers/wallpaper");
     }
 
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 16 ; i++) {
+        for ( int i = 0; i < 2 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
 
     public IIcon getIcon ( int side, int meta){
-        if (meta > 15 ) meta = 0;
+        if (meta > 1 ) meta = 0;
         return this.textures[meta];
     }
 
@@ -42,7 +37,7 @@ public class dryWall extends Block {
     }
 
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 16; i++){
+        for (int i = 0; i < 2; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }
