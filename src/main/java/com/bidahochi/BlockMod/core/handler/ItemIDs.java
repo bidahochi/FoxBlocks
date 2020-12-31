@@ -4,7 +4,9 @@ import net.minecraft.item.Item;
 
 public enum ItemIDs {
 
-    test("test","test","test");
+    test("test","test","test"),
+    jarate("jarate","jarate","Jarate!"),
+    ;
 
     public Item item;
     public String className;
