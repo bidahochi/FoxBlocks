@@ -1,6 +1,6 @@
 package com.bidahochi.BlockMod.core.handler;
 
-/**
+/*
  *  oreDictHandler by -hariesh
  *
  *  This file gives your blocks OreDictionary compatibility!
@@ -31,7 +31,6 @@ public class oreDictHandler {
 
         OreDictionary.registerOre("oreAluminium", new ItemStack(BlockIDs.bauxiteOre.block) );
         OreDictionary.registerOre("gravel", new ItemStack(BlockIDs.peagravel.block) );
-
 
         FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
