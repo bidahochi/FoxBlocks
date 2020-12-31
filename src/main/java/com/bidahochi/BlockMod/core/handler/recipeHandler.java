@@ -92,6 +92,12 @@ public class recipeHandler {
         for (ItemStack dyeblack : dyeBlack) {
             GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.metalSiding.block, 1,0),  Blocks.iron_block, dyeblack);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,3), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyeblack);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,15), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyeblack);
+        }
+
+        for (ItemStack dyewhite : dyeWhite)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,0), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyewhite);
 
         }
 
@@ -102,6 +108,7 @@ public class recipeHandler {
 
         for (ItemStack dyelightblue : dyeLightBlue)
         {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,4), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyelightblue);
             for (ItemStack dyeblue : dyeBlue)
             {
                 GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4, 14), "AAA", "AEA", "ABA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyeblue, Character.valueOf('B'), dyelightblue);
@@ -115,11 +122,13 @@ public class recipeHandler {
         for (ItemStack dyeblue : dyeBlue)
         {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,5), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyeblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,1), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyeblue);
         }
 
         for (ItemStack dyered : dyeRed)
         {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,6), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyered);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,14), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyered);
             for (ItemStack dyelime : dyeLime)
             {
                 GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,13), "AAA", "AEA", "ABA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyelime, Character.valueOf('B'), dyered);
@@ -128,6 +137,7 @@ public class recipeHandler {
 
         for (ItemStack dyeyellow : dyeYellow)
         {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,5), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyeyellow);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,7), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyeyellow);
             GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.jarate.item, 1,0),  Items.water_bucket, dyeyellow);
         }
@@ -135,11 +145,53 @@ public class recipeHandler {
         for (ItemStack dyegreen : dyeGreen)
         {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,8), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyegreen);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,13), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyegreen);
         }
 
         for (ItemStack dyecyan : dyeCyan)
         {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,9), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), dyecyan);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,10), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyecyan);
+        }
+
+        for (ItemStack dyeorange : dyeOrange)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,2), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyeorange);
+        }
+
+        for (ItemStack dyemagenta : dyeMagenta)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,3), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyemagenta);
+        }
+
+        for (ItemStack dyelime : dyeLime)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,6), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyelime);
+        }
+
+        for (ItemStack dyepink : dyePink)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,7), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyepink);
+        }
+
+        for (ItemStack dyegray : dyeGray)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,8), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyegray);
+        }
+
+        for (ItemStack dyelightgray : dyeLightGray)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,9), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyelightgray);
+        }
+
+        for (ItemStack dyepurple : dyePurple)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,11), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyepurple);
+        }
+
+        for (ItemStack dyebrown : dyeBrown)
+        {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,12), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyebrown);
         }
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
@@ -149,7 +201,7 @@ public class recipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,2), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.apple);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,4), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), new ItemStack(Blocks.grass,1,2));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,12), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), ItemIDs.jarate.item);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,15), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.ender_eye);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.unfinishedDrywall.block, 4), "BBA", "BBA", "AAA", Character.valueOf('B'), BlockIDs.gypsum.block);
 
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
 

@@ -55,7 +55,8 @@ public enum BlockIDs {
     unfinishedDrywall(false,null,"unfinishedDrywall"),
     testStair(false,null,"TestStair"),
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
-    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh")
+    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
+    gypsum(false,null,"gypsum"),
     ;
 
     public Block block;
