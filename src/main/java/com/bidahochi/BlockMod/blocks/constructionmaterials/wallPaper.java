@@ -13,7 +13,8 @@ import java.util.List;
 
 public class wallPaper extends Block {
 
-    public IIcon[] textures = new IIcon[2];
+    int varia=2;
+    public IIcon[] textures = new IIcon[varia];
 
     public wallPaper(Material p_i45394_1_) {
         super(p_i45394_1_);
@@ -25,13 +26,13 @@ public class wallPaper extends Block {
     }
 
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 2 ; i++) {
+        for ( int i = 0; i < varia ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
 
     public IIcon getIcon ( int side, int meta){
-        if (meta > 1 ) meta = 0;
+        if (meta > varia-1 ) meta = 0;
         return this.textures[meta];
     }
 
@@ -40,7 +41,7 @@ public class wallPaper extends Block {
     }
 
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 2; i++){
+        for (int i = 0; i < varia; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }
