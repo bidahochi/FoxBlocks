@@ -37,6 +37,7 @@ public class FoxBlocks
         };
 
         blockHandler.initBlockRegister();
+        itemHandler.initItemRegister();
         recipeHandler.initBlockRecipes();
         oreDictHandler.registerOreDict();
         GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
