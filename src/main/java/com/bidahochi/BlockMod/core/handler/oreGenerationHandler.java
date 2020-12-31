@@ -56,6 +56,8 @@ public class oreGenerationHandler implements IWorldGenerator {
     }
 
     public void generateNether(World world, Random rand, int x, int z){
+        generateOre(BlockIDs.emberStone.block, world, rand, x, z, 10, 20, 15, 20, 80, Blocks.netherrack);
+        generateOre(BlockIDs.darkEmberStone.block, world, rand, x, z, 5, 15, 15, 20, 80, Blocks.nether_brick);
 
     }
 
