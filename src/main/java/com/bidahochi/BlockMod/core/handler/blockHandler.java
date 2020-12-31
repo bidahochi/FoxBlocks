@@ -64,6 +64,10 @@ public class blockHandler {
         BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
         BlockIDs.testSlab.block = new testSlab(false, Material.iron);
         BlockIDs.testStair.block = new testStair(BlockIDs.emberStone.block, 0);
+        BlockIDs.soapStone.block = new SoapStone(Material.rock);
+        BlockIDs.soapStoneMagmatic.block = new soapStoneMagmatic(Material.rock);
+        BlockIDs.soapStoneDeco.block = new soapStoneDeco(Material.rock);
+        BlockIDs.soapStoneEmerald.block = new soapStoneEmerald(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {
