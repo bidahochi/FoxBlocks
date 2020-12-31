@@ -28,9 +28,14 @@ public class oreDictHandler {
 
         FoxBlocks.blockLogger.info("oreDict compatibility pre Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
-
         OreDictionary.registerOre("oreAluminium", new ItemStack(BlockIDs.bauxiteOre.block) );
         OreDictionary.registerOre("gravel", new ItemStack(BlockIDs.peagravel.block) );
+        OreDictionary.registerOre("oreEmerald", new ItemStack(BlockIDs.soapStoneEmerald.block));
+        OreDictionary.registerOre("stone", new ItemStack(BlockIDs.soapStone.block));
+        OreDictionary.registerOre("cropNetherWart", new ItemStack(BlockIDs.harieshHead.block));
+        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.rawConcrete.block));
+        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.layeredConcrete.block));
+        //OreDictionary.registerOre("gypsumDust", new ItemIDs.gypsumDust.item); //doesnt want to work for whatever reason
 
         FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 

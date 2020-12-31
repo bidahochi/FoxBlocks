@@ -15,7 +15,7 @@ public class Although extends Block {
         setResistance(30.0F);
         setHarvestLevel("hoe", 3);
         setStepSound(soundTypeCloth);
-        setLightLevel(0.5F);
+        setLightLevel(1.5F);
         setBlockTextureName(FoxBlocks.MODID+":although");
     }
     @Override

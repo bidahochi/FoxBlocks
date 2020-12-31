@@ -1,13 +1,18 @@
 <!-- ## BLOCK ## -->
 tile.Bauxite Ore.name=Bauxite Ore
+tile.Gypsum.name=Raw Gypsum
+
 tile.Raw Concrete.name=Raw Concrete
+tile.Layered Concrete.name=Layered Concrete
+
 tile.Snowy Pea Gravel.name=Snowy Pea Gravel
 tile.Pea Gravel.name=Pea Gravel
-tile.Although.name=Although...
-tile.MetalSiding_White.name=White Metal Siding
-tile.MetalSiding_LightGrey.name=Light Grey Metal Siding
-tile.MetalSiding_Grey.name=Grey Metal Siding
-tile.MetalSiding_Black.name=Black Metal Siding
+
+tile.metalSiding_3.name=White Sheet Metal Siding
+tile.metalSiding_2.name=Light Sheet Grey Metal Siding
+tile.metalSiding_1.name=Grey Sheet Metal Siding
+tile.metalSiding_0.name=Black Sheet Metal Siding
+
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Blue Drywall
 tile.dryWall_2.name=Orange Drywall
@@ -24,10 +29,14 @@ tile.dryWall_12.name=Brown Drywall
 tile.dryWall_13.name=Green Drywall
 tile.dryWall_14.name=Red Drywall
 tile.dryWall_15.name=Black Drywall
+tile.unfinishedDrywall.name=Unfinished Drywall
+
 tile.Brown Tile.name=Brown Tile
+
 tile.fiberglass_0.name=Horizontal Contained Fibreglass
 tile.fiberglass_1.name=Vertical Contained Fibreglass
 tile.fiberglass_2.name=Fibreglass Insulation
+
 tile.wallPaper_0.name=Cherry Wallpaper
 tile.wallPaper_1.name=Broccoli Wallpaper
 tile.wallPaper_2.name=Apple Wallpaper
@@ -44,8 +53,9 @@ tile.wallPaper_12.name=Jarate Wallpaper
 tile.wallPaper_13.name=Seafoam Column Wallpaper
 tile.wallPaper_14.name=Wavy Wallpaper
 tile.wallPaper_15.name=Ender Wallpaper
-tile.fireBrick.name=Firebrick
-tile.unfinishedDrywall.name=Unfinished Drywall
+
+tile.fireBrick.name=Firebrick Block
+
 tile.Soapstone.name=Soapstone
 tile.Soapstone Deco_0.name=Soapstone Bricks
 tile.Soapstone Deco_1.name=Large Soapstone Bricks
@@ -53,5 +63,14 @@ tile.Soapstone Deco_2.name=Smooth(er) Soapstone
 tile.Soapstone Deco_3.name=Coarse Soapstone
 tile.Magmatic Soapstone.name= Magmatic Soapstone
 tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
+
+tile.Ember Stone.name=Ember Stone
+tile.Dark Ember Stone.name=Dark Ember Stone
+
+tile.TestSlab.name=Ember Stone Slab
+tile.testStair.name=Ember Stone Stair
+tile.hariesh.name=funny brit cubeoid blocc
+tile.Although.name=Although...
+
 item.foxblocks:Jarate!.name=Jar-Based Karate
-tile.Gypsum.name=Gypsum
+item.foxblocks:GypsumDust.name=Gypsum Dust

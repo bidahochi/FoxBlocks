@@ -26,6 +26,6 @@ public class testPane extends BlockPane {
 
     public testPane(String string, Material material, Boolean bool) {
         super(string, string, material, bool);
-        setBlockName("testPane");
+        setBlockName("test");
     }
 }

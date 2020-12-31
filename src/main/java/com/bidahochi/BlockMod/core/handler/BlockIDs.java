@@ -56,6 +56,7 @@ public enum BlockIDs {
     testStair(false,null,"TestStair"),
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
     harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
+    layeredConcrete(false, null, "Layered Concrete"),
     gypsum(false,null,"gypsum"),
     ;
 

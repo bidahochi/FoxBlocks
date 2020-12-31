@@ -6,6 +6,7 @@ public enum ItemIDs {
 
     test("test","test","test"),
     jarate("jarate","jarate","Jarate!"),
+    gypsumDust("gypsumDust", "gypsumdust", "GypsumDust")
     ;
 
     public Item item;

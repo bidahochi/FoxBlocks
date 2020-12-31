@@ -16,7 +16,7 @@ public class Gypsum extends Block {
         setResistance(2.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
-        setBlockTextureName(FoxBlocks.MODID+":stones/gypsum");
+        setBlockTextureName(FoxBlocks.MODID+":stones/rawgypsum");
 
     }
 
