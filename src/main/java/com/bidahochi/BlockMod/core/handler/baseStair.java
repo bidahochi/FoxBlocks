@@ -1,17 +1,19 @@
-package com.bidahochi.BlockMod.blocks.hell;
+package com.bidahochi.BlockMod.core.handler;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class emberStoneStair extends BlockStairs {
-
-    public emberStoneStair(Block p_i45428_1_, int p_i45428_2_ ) {
+public class baseStair extends BlockStairs {
+    
+    protected baseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, SoundType stepSound) {
         super(p_i45428_1_, p_i45428_2_);
-        setBlockName("Ember Stair");
-        setHardness(3F);
-
+        setBlockName(name);
+        setHardness(hardness);
+        setBlockTextureName(FoxBlocks.MODID +":"+textureName);
+        setStepSound(stepSound);
     }
 
     @Override

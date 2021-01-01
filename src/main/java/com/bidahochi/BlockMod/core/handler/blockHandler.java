@@ -70,7 +70,7 @@ public class blockHandler {
         BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
         BlockIDs.emberStoneStair.block = new emberStoneStair(BlockIDs.emberStone.block, 0);
-
+        BlockIDs.darkEmberStoneStair.block = new baseStair(BlockIDs.darkEmberStone.block, 0,BlockIDs.darkEmberStoneStair.blockName,2F,Block.soundTypeCloth);
 
 
         for (BlockIDs block : BlockIDs.values()) {

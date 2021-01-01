@@ -59,6 +59,7 @@ public enum BlockIDs {
     layeredConcrete(false, null, "Layered Concrete"),
     gypsum(false,null,"gypsum"),
     emberStoneStair(false,null,"EmberStone Stair"),
+    darkEmberStoneStair(false,null,"Dark EmberStone Stair")
     ;
 
     public Block block;
