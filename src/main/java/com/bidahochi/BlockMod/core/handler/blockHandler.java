@@ -76,7 +76,7 @@ public class blockHandler {
         BlockIDs.emberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone");
         BlockIDs.darkEmberStoneSlab.block = new baseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone");
 
-
+        BlockIDs.tile4.block = new tile4(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

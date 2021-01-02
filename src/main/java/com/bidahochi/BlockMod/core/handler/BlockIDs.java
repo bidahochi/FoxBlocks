@@ -23,10 +23,7 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ****************************/
 
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockdryWall;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockfiberGlass;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlocksoapStoneDeco;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockwallPaper;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalSiding;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -62,6 +59,7 @@ public enum BlockIDs {
     darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
     emberStoneSlab(false,null,"EmberStone Slab"),
     darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
+    tile4(true, ItemBlocktile4.class,"tile4"),
     ;
 
     public Block block;
