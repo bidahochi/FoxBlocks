@@ -12,7 +12,6 @@ public class baseStair extends BlockStairs{
         super(p_i45428_1_, p_i45428_2_);
         setBlockName(name);
         setHardness(hardness);
-        setBlockTextureName(FoxBlocks.MODID +":"+textureName);
         setStepSound(stepSound);
         setHarvestLevel(harvestTool, harvestLevel);
         setResistance(blockResistance);

@@ -46,20 +46,22 @@ public enum BlockIDs {
     fireBrick(false, null, "fireBrick"),
     darkEmberStone(false, null, "Dark Ember Stone"),
     emberStone(false,null,"Ember Stone"),
-    testPane(false, null, "TestPane"),
-    testSlab(false,null,"TestSlab"),
+    //testPane(false, null, "TestPane"),
+    //testSlab(false,null,"TestSlab"),
     soapStone(false, null, "Soapstone"),
     soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco"),
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
     unfinishedDrywall(false,null,"unfinishedDrywall"),
-    testStair(false,null,"TestStair"),
+    //testStair(false,null,"TestStair"),
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
     harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
     layeredConcrete(false, null, "Layered Concrete"),
     gypsum(false,null,"gypsum"),
     emberStoneStair(false,null,"EmberStone Stair"),
-    darkEmberStoneStair(false,null,"Dark EmberStone Stair")
+    darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
+    emberStoneSlab(false,null,"EmberStone Slab"),
+    darkEmberStoneSlab(false,null,"Dark EmberStone Stair"),
     ;
 
     public Block block;

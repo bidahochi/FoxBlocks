@@ -58,9 +58,9 @@ public class blockHandler {
         BlockIDs.fireBrick.block = new fireBrick(Material.rock);
         BlockIDs.emberStone.block = new emberStone(Material.rock);
         BlockIDs.darkEmberStone.block = new darkEmberStone(Material.rock);
-        BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
-        BlockIDs.testSlab.block = new testSlab(false, Material.iron);
-        BlockIDs.testStair.block = new testStair(BlockIDs.bauxiteOre.block, 0);
+        //BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
+        //BlockIDs.testSlab.block = new testSlab(false, Material.iron);
+        //BlockIDs.testStair.block = new testStair(BlockIDs.bauxiteOre.block, 0);
         BlockIDs.soapStone.block = new SoapStone(Material.rock);
         BlockIDs.soapStoneMagmatic.block = new soapStoneMagmatic(Material.rock);
         BlockIDs.soapStoneDeco.block = new soapStoneDeco(Material.rock);
@@ -71,6 +71,10 @@ public class blockHandler {
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
         BlockIDs.emberStoneStair.block = new emberStoneStair(BlockIDs.emberStone.block, 0);
         BlockIDs.darkEmberStoneStair.block = new baseStair(BlockIDs.darkEmberStone.block, 0,BlockIDs.darkEmberStoneStair.blockName,2F, 2F,Block.soundTypeCloth, "pickaxe",2, 0);
+
+        BlockIDs.emberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone");
+        BlockIDs.darkEmberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.darkEmberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone");
+
 
 
         for (BlockIDs block : BlockIDs.values()) {
