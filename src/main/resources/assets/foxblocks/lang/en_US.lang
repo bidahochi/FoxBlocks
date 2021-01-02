@@ -54,6 +54,27 @@ tile.wallPaper_13.name=Seafoam Column Wallpaper
 tile.wallPaper_14.name=Wavy Wallpaper
 tile.wallPaper_15.name=Ender Wallpaper
 
+tile.tile4_0.name=White 4x4 Tile
+tile.tile4_1.name=Orange 4x4 Tile
+tile.tile4_2.name=Magenta 4x4 Tile
+tile.tile4_3.name=Light Blue 4x4 Tile
+tile.tile4_4.name=Yellow 4x4 Tile
+tile.tile4_5.name=Lime 4x4 Tile
+tile.tile4_6.name=Pink 4x4 Tile
+tile.tile4_7.name=Gray 4x4 Tile
+tile.tile4_8.name=Light Gray 4x4 Tile
+tile.tile4_9.name=Cyan 4x4 Tile
+tile.tile4_10.name=Purple 4x4 Tile
+tile.tile4_11.name=Blue 4x4 Tile
+tile.tile4_12.name=Brown 4x4 Tile
+tile.tile4_13.name=Green 4x4 Tile
+tile.tile4_14.name=Red 4x4 Tile
+tile.tile4_15.name=Black 4x4 Tile
+
+
+
+
+
 tile.fireBrick.name=Firebrick Block
 
 tile.Soapstone.name=Soapstone
