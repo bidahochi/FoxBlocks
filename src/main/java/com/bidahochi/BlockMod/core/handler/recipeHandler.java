@@ -87,6 +87,7 @@ public class recipeHandler {
         ArrayList<ItemStack> dyeMagenta = OreDictionary.getOres("dyeMagenta");
         ArrayList<ItemStack> dyeOrange = OreDictionary.getOres("dyeOrange");
         ArrayList<ItemStack> dyeWhite = OreDictionary.getOres("dyeWhite");
+        ArrayList<ItemStack> plateIron = OreDictionary.getOres("plateIron");
 
         //Wallpapers and Drywalls
         for (ItemStack dyeblack : dyeBlack) {
@@ -184,27 +185,38 @@ public class recipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,15), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.ender_eye);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.unfinishedDrywall.block, 4), "BBA", "BBA", "AAA", Character.valueOf('B'), ItemIDs.gypsumDust.item, Character.valueOf('A'), Items.paper);
 
-        //peagravels
+        //aggregates
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_snow.block, 2),  new ItemStack(BlockIDs.peagravel.block, 1), Items.snowball, new ItemStack(BlockIDs.peagravel.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_snow.block, 2), new ItemStack(BlockIDs.peagravel.block, 1), Items.snowball, new ItemStack(BlockIDs.peagravel.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_shit.block, 2), new ItemStack(BlockIDs.peagravel.block, 1), Blocks.dirt);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.gravel_shit.block, 2), new ItemStack(BlockIDs.gravel_shit.block, 1), Blocks.dirt);
 
-        //sheet metal sidings - is it possible to use oredict plateIron instead of iron ingot?
+        //sheet metal sidings - oredictionary plateIron doesnt seem to work, please look into
+        for (ItemStack plateiron : plateIron) {
+            for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyewhite); }
+            for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyelightgray); }
+            for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyegray); }
+            for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyeblack); }
+        }
         for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite); }
-        for (ItemStack dyelightgray : dyeLightGray){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray);}
-        for (ItemStack dyegray : dyeGray){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray);}
-        for (ItemStack dyeblack : dyeBlack){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack);}
+        for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray); }
+        for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray); }
+        for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack); }
 
         //soapstone bs - CUSTOM CRAFTING TABLE WITH MULTIPLE OUTPUTS WHENNN aaaaa
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 0), BlockIDs.soapStone.block, BlockIDs.soapStone.block);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 1), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 0), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 0));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 2), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 1), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 3), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 2), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 2));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.soapStoneStair.block, 6), "  S", " SS", "SSS", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.soapStoneSlab.block, 6), "   ", "   ", "SSS", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block));
 
         //other things
         for (ItemStack dyeyellow : dyeYellow){ GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.jarate.item, 1,0),  Items.water_bucket, dyeyellow);}
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.gypsumDust.item, 8), BlockIDs.gypsum.block);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.fireBrick.block, 4), "SBS", "BSB", "SBS", Character.valueOf('S'), Blocks.sand, Character.valueOf('B'), Items.brick);
-        for (ItemStack dyebrown : dyeBrown){ GameRegistry.addRecipe(new ItemStack(BlockIDs.brownTile.block, 2), "SSB", "   ", "   ", Character.valueOf('S'), BlockIDs.soapStone.block, Character.valueOf('B'), dyebrown); }
+        //for (ItemStack dyebrown : dyeBrown){ GameRegistry.addRecipe(new ItemStack(BlockIDs.brownTile.block, 2), "SSB", "   ", "   ", Character.valueOf('S'), BlockIDs.soapStone.block, Character.valueOf('B'), dyebrown); }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.harieshHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
 
         //fibregloss
         GameRegistry.addRecipe(new ItemStack(BlockIDs.fiberGlass.block, 6, 2), "WGW", "GWG", "WGW", Character.valueOf('W'), Blocks.wool, Character.valueOf('G'), Blocks.glass_pane);
@@ -217,19 +229,49 @@ public class recipeHandler {
 
         //concretes
         GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GRG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('R'), Blocks.stone);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.layeredConcrete.block, 3), " C ", " C ", " C ", Character.valueOf('C'), BlockIDs.rawConcrete.block);
-
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.layeredConcrete.block, 3), " C ", " C ", " C ", Character.valueOf('C'), BlockIDs.smoothCrete.block);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.smoothCrete.block, 4), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1));
 
         //hariesh hell blocks
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.harieshHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
-
         GameRegistry.addRecipe(new ItemStack(BlockIDs.emberStoneSlab.block,6), "   ","   ","EEE",Character.valueOf('E'), new ItemStack(BlockIDs.emberStone.block,1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.emberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.emberStone.block,1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.darkEmberStoneSlab.block,6), "   ","   ","EEE",Character.valueOf('E'), new ItemStack(BlockIDs.darkEmberStone.block,1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.darkEmberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.darkEmberStone.block,1));
-
         GameRegistry.addSmelting(BlockIDs.emberStone.block, new ItemStack(BlockIDs.darkEmberStone.block,1),1F);
 
+        //tiles
+        for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 0), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyewhite);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 0), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyewhite);}
+        for (ItemStack dyelightgrey : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 1), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyelightgrey);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 8), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyelightgrey);}
+        for (ItemStack dyegrey : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 2), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyegrey);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 7), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyegrey);}
+        for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 3), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeblack);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 15), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeblack);}
+        for (ItemStack dyebrown : dyeBrown) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 4), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyebrown);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 12), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyebrown);}
+        for (ItemStack dyered : dyeRed) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 5), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyered);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 14), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyered);}
+        for (ItemStack dyeorange : dyeOrange) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 6), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeorange);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 1), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeorange);}
+        for (ItemStack dyeyellow : dyeYellow) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 7), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeyellow);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 4), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeyellow);}
+        for (ItemStack dyelime : dyeLime) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 8), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyelime);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 5), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyelime);}
+        for (ItemStack dyegreen : dyeGreen) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 9), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyegreen);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 13), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyegreen);}
+        for (ItemStack dyelightblue : dyeLightBlue) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 10), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyelightblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 3), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyelightblue);}
+        for (ItemStack dyeblue : dyeBlue) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 11), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 11), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyeblue);}
+        for (ItemStack dyecyan : dyeCyan) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 12), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyecyan);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 9), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyecyan);}
+        for (ItemStack dyepink : dyePink) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 13), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyepink);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 6), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyepink);}
+        for (ItemStack dyemagenta : dyeMagenta) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 14), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyemagenta);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 2), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyemagenta);}
+        for (ItemStack dyepurple : dyePurple) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 15), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyepurple);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 10), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block, 1), Character.valueOf('D'), dyepurple);}
 
         FoxBlocks.blockLogger.info("Hi Mom!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");

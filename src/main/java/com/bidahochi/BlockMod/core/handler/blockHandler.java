@@ -48,12 +48,14 @@ public class blockHandler {
         BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
         BlockIDs.peagravel.block = new PeaGravel(Material.sand);
+        BlockIDs.peagravel_shit.block = new PeaGravelDirty(Material.sand);
+        BlockIDs.gravel_shit.block = new GravelDirty(Material.sand);
         BlockIDs.although.block = new Although(Material.clay);
         BlockIDs.testblock.block = new testBlock(Material.iron);
         BlockIDs.dryWall.block = new dryWall(Material.clay);
         BlockIDs.wallPaper.block = new wallPaper(Material.cloth);
         BlockIDs.unfinishedDrywall.block = new unfinishedDrywall(Material.clay);
-        BlockIDs.brownTile.block = new BrownTile(Material.rock);
+        //BlockIDs.brownTile.block = new BrownTile(Material.rock);
         BlockIDs.fiberGlass.block = new fiberGlass(Material.glass);
         BlockIDs.fireBrick.block = new fireBrick(Material.rock);
         BlockIDs.emberStone.block = new emberStone(Material.rock);
@@ -68,15 +70,19 @@ public class blockHandler {
         BlockIDs.metalSiding.block = new metalSiding(Material.iron);
         BlockIDs.harieshHead.block = new harieshHead(Material.dragonEgg);
         BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
+        BlockIDs.smoothCrete.block = new Smoothcrete(Material.rock);
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
 
         BlockIDs.emberStoneStair.block = new baseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F,Block.soundTypeStone,"pickaxe",2,0);
         BlockIDs.darkEmberStoneStair.block = new baseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F,Block.soundTypeStone, "pickaxe",2, 0);
+        BlockIDs.soapStoneStair.block = new baseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0);
 
         BlockIDs.emberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone");
         BlockIDs.darkEmberStoneSlab.block = new baseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone");
+        BlockIDs.soapStoneSlab.block = new baseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, "stones/soapstone");
 
         BlockIDs.tile4.block = new tile4(Material.rock);
+        BlockIDs.tile2x2.block = new tile2x2(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

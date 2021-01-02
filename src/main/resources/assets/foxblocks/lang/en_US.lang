@@ -4,9 +4,12 @@ tile.Gypsum.name=Raw Gypsum
 
 tile.Raw Concrete.name=Raw Concrete
 tile.Layered Concrete.name=Layered Concrete
+tile.Smoothcrete.name=Smooth-Crete
 
 tile.Snowy Pea Gravel.name=Snowy Pea Gravel
 tile.Pea Gravel.name=Pea Gravel
+tile.Dirty Pea Gravel.name=Dirty Pea Gravel
+tile.Dirty Gravel.name=Dirty Gravel
 
 tile.metalSiding_3.name=White Sheet Metal Siding
 tile.metalSiding_2.name=Light Sheet Grey Metal Siding
@@ -71,29 +74,45 @@ tile.tile4_13.name=Green 4x4 Tile
 tile.tile4_14.name=Red 4x4 Tile
 tile.tile4_15.name=Black 4x4 Tile
 
-
-
-
+tile.Tile 2x2_0.name=Bone White 2x2 Tile
+tile.Tile 2x2_1.name=Generic Gray 2x2 Tile
+tile.Tile 2x2_2.name=Darkerish Gray 2x2 Tile
+tile.Tile 2x2_3.name=Ink Black 2x2 Tile
+tile.Tile 2x2_4.name=Mud Brown 2x2 Tile
+tile.Tile 2x2_5.name=Deep Red 2x2 Tile
+tile.Tile 2x2_6.name=Dark Orange 2x2 Tile
+tile.Tile 2x2_7.name=Armor Yellow 2x2 Tile
+tile.Tile 2x2_8.name=Bitter Taste of Defeat and Lime 2x2 Tile
+tile.Tile 2x2_9.name=Dense Forest Green 2x2 Tile
+tile.Tile 2x2_10.name=Icey Light Blue 2x2 Tile
+tile.Tile 2x2_11.name=A Nice Solid Blue 2x2 Tile
+tile.Tile 2x2_12.name=Calming Cyan 2x2 Tile
+tile.Tile 2x2_13.name=Pink Gum 2x2 Tile
+tile.Tile 2x2_14.name=Magenta Lavender 2x2 Tile
+tile.Tile 2x2_15.name=Thanos Chin Purple 2x2 Tile
 
 tile.fireBrick.name=Firebrick Block
 
-tile.Soapstone.name=Soapstone
+tile.Soapstone.name=Raw Soapstone
 tile.Soapstone Deco_0.name=Soapstone Bricks
 tile.Soapstone Deco_1.name=Large Soapstone Bricks
 tile.Soapstone Deco_2.name=Smooth(er) Soapstone
 tile.Soapstone Deco_3.name=Coarse Soapstone
 tile.Magmatic Soapstone.name= Magmatic Soapstone
 tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
+tile.Soapstone Stair.name=Raw Soapstone Stair
+tile.Soapstone Slab.name=Raw Soapstone Slab
 
 tile.Ember Stone.name=Ember Stone
 tile.Dark Ember Stone.name=Dark Ember Stone
-
 tile.EmberStone Slab.name=Ember Stone Slab
 tile.EmberStone Stair.name=Ember Stone Stair
 tile.Dark EmberStone Slab.name=Dark EmberStone Slab
 tile.Dark EmberStone Stair.name=Dark EmberStone Stair
+
 tile.hariesh.name=funny brit cubeoid blocc
 tile.Although.name=Although...
+tile.testblock.name=testBlock Tile (no touch)
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

@@ -34,11 +34,13 @@ public enum BlockIDs {
     rawConcrete(false,null,"Concrete"),
     peagravel_snow(false,null, "peagravelsnow"),
     peagravel(false,null, "peagravel"),
+    peagravel_shit(false, null, "Dirty Pea Gravel"),
+    gravel_shit(false, null, "Dirty Gravel"),
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
-    brownTile(false, null, "Brown Tile"),
+    //brownTile(false, null, "Brown Tile"),
     fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
     fireBrick(false, null, "fireBrick"),
     darkEmberStone(false, null, "Dark Ember Stone"),
@@ -54,12 +56,19 @@ public enum BlockIDs {
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
     harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
     layeredConcrete(false, null, "Layered Concrete"),
+    smoothCrete(false, null, "Smoothcrete"),
     gypsum(false,null,"gypsum"),
+
     emberStoneStair(false,null,"EmberStone Stair"),
     darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
+    soapStoneStair(false, null, "Soapstone Stair"),
+
     emberStoneSlab(false,null,"EmberStone Slab"),
     darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
+    soapStoneSlab(false, null, "Soapstone Slab"),
+
     tile4(true, ItemBlocktile4.class,"tile4"),
+    tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2"),
     ;
 
     public Block block;
