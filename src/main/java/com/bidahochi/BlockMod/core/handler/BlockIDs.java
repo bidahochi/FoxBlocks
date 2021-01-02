@@ -61,7 +61,7 @@ public enum BlockIDs {
     emberStoneStair(false,null,"EmberStone Stair"),
     darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
     emberStoneSlab(false,null,"EmberStone Slab"),
-    darkEmberStoneSlab(false,null,"Dark EmberStone Stair"),
+    darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
     ;
 
     public Block block;

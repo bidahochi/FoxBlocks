@@ -69,11 +69,12 @@ public class blockHandler {
         BlockIDs.harieshHead.block = new harieshHead(Material.dragonEgg);
         BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
-        BlockIDs.emberStoneStair.block = new emberStoneStair(BlockIDs.emberStone.block, 0);
-        BlockIDs.darkEmberStoneStair.block = new baseStair(BlockIDs.darkEmberStone.block, 0,BlockIDs.darkEmberStoneStair.blockName,2F, 2F,Block.soundTypeCloth, "pickaxe",2, 0);
+
+        BlockIDs.emberStoneStair.block = new baseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F,Block.soundTypeStone,"pickaxe",2,0);
+        BlockIDs.darkEmberStoneStair.block = new baseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F,Block.soundTypeStone, "pickaxe",2, 0);
 
         BlockIDs.emberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone");
-        BlockIDs.darkEmberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.darkEmberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone");
+        BlockIDs.darkEmberStoneSlab.block = new baseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone");
 
 
 

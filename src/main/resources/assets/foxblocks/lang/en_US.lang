@@ -67,8 +67,10 @@ tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
 tile.Ember Stone.name=Ember Stone
 tile.Dark Ember Stone.name=Dark Ember Stone
 
-tile.TestSlab.name=Ember Stone Slab
-tile.testStair.name=Ember Stone Stair
+tile.EmberStone Slab.name=Ember Stone Slab
+tile.EmberStone Stair.name=Ember Stone Stair
+tile.Dark EmberStone Slab.name=Dark EmberStone Slab
+tile.Dark EmberStone Stair.name=Dark EmberStone Stair
 tile.hariesh.name=funny brit cubeoid blocc
 tile.Although.name=Although...
 
