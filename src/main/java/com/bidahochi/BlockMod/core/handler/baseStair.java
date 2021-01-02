@@ -6,14 +6,17 @@ import net.minecraft.block.BlockStairs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class baseStair extends BlockStairs {
-    
-    protected baseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, SoundType stepSound) {
+public class baseStair extends BlockStairs{
+
+    protected baseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, float blockResistance ,SoundType stepSound, String harvestTool, int harvestLevel, float lightValue) {
         super(p_i45428_1_, p_i45428_2_);
         setBlockName(name);
         setHardness(hardness);
         setBlockTextureName(FoxBlocks.MODID +":"+textureName);
         setStepSound(stepSound);
+        setHarvestLevel(harvestTool, harvestLevel);
+        setResistance(blockResistance);
+        setLightLevel(lightValue);
     }
 
     @Override
