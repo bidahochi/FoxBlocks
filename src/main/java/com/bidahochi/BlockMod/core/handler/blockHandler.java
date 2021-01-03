@@ -83,6 +83,7 @@ public class blockHandler {
 
         BlockIDs.tile4.block = new tile4(Material.rock);
         BlockIDs.tile2x2.block = new tile2x2(Material.rock);
+        BlockIDs.diamondTile.block = new diamondTile(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {
