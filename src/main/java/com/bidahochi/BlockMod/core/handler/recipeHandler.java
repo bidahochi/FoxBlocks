@@ -274,8 +274,10 @@ public class recipeHandler {
         for (ItemStack dyepurple : dyePurple) { GameRegistry.addRecipe(new ItemStack(BlockIDs.tile2x2.block, 6, 15), " S ", "SDS", " S ", Character.valueOf('S'), new ItemStack(ItemIDs.ceramic.item, 1), Character.valueOf('D'), dyepurple);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.tile4.block, 6, 15), "S S", "SDS", "S S", Character.valueOf('S'), new ItemStack(ItemIDs.ceramic.item, 1), Character.valueOf('D'), dyepurple);}
 
-        //enriched clay recipe
+        //enriched clay recipes
         GameRegistry.addRecipe(new ItemStack(ItemIDs.enrichedClay.item,8,0),"ABA","BCB","ABA",Character.valueOf('A'),new ItemStack(Blocks.dirt),Character.valueOf('B'),new ItemStack(Items.clay_ball),Character.valueOf('C'),new ItemStack(Items.water_bucket));
+        GameRegistry.addRecipe(new ItemStack(ItemIDs.enrichedClay.item,8,0),"ABA","BCB","ABA",Character.valueOf('A'),new ItemStack(Blocks.dirt),Character.valueOf('B'),new ItemStack(Items.clay_ball),Character.valueOf('C'),new ItemStack(Blocks.ice));
+
         //ceramic recipe
         GameRegistry.addSmelting(ItemIDs.enrichedClay.item, new ItemStack(ItemIDs.ceramic.item,1),2F);
 
