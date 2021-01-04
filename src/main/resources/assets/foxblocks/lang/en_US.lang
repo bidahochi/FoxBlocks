@@ -116,3 +116,5 @@ tile.testblock.name=testBlock Tile (no touch)
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
+item.foxblocks:enrichedClay.name=Enriched Clay
+item.foxblocks:ceramic.name=Ceramic
