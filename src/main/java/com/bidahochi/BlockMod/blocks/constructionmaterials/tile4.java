@@ -28,7 +28,7 @@ public class tile4 extends Block {
         setHardness(2.0F);
         setResistance(2.5F);
         setHarvestLevel("pickaxe", 0);
-        setStepSound(soundTypeStone);
+        setStepSound(soundTypeGlass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/4by4tiles/tile");
 
     }

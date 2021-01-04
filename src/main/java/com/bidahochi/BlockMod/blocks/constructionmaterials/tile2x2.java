@@ -27,7 +27,7 @@ public class tile2x2 extends Block {
         setHardness(1.3F);
         setResistance(3.0F);
         setHarvestLevel("pickaxe", 1);
-        setStepSound(soundTypeStone);
+        setStepSound(soundTypeGlass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/2by2tiles/tile8");
     }
     public void registerBlockIcons(IIconRegister reg) {

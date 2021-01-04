@@ -16,7 +16,7 @@ public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.1";
+    public static final String VERSION = "1.0.2";
     public static CreativeTabs foxBlocksCreativeTab;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
 

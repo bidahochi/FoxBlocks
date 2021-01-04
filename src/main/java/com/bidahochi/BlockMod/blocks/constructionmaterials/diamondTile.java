@@ -19,6 +19,10 @@ public class diamondTile extends Block {
     public diamondTile(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("diamond Tile");
+        setHardness(2.0F);
+        setResistance(2.5F);
+        setHarvestLevel("pickaxe", 0);
+        setStepSound(soundTypeGlass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/diamondtile/diamond");
     }
 
