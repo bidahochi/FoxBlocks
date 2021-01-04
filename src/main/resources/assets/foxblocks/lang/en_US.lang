@@ -91,6 +91,24 @@ tile.Tile 2x2_13.name=Pink Gum 2x2 Tile
 tile.Tile 2x2_14.name=Magenta Lavender 2x2 Tile
 tile.Tile 2x2_15.name=Thanos Chin Purple 2x2 Tile
 
+tile.diamond Tile_0.name=White Diamond Tile
+tile.diamond Tile_1.name=Gray Diamond Tile
+tile.diamond Tile_2.name=Dark Gray Diamond Tile
+tile.diamond Tile_3.name=Black Diamond Tile
+tile.diamond Tile_4.name=Brown Diamond Tile
+tile.diamond Tile_5.name=Red Diamond Tile
+tile.diamond Tile_6.name=Orange Diamond Tile
+tile.diamond Tile_7.name=Yellow Diamond Tile
+tile.diamond Tile_8.name=Lime Diamond Tile
+tile.diamond Tile_9.name=Green Diamond Tile
+tile.diamond Tile_10.name=Light Blue Diamond Tile
+tile.diamond Tile_11.name=Blue Diamond Tile
+tile.diamond Tile_12.name=Cyan Diamond Tile
+tile.diamond Tile_13.name=Pink Diamond Tile
+tile.diamond Tile_14.name=Magenta Diamond Tile
+tile.diamond Tile_15.name=Purple Diamond Tile
+
+
 tile.fireBrick.name=Firebrick Block
 
 tile.Soapstone.name=Raw Soapstone
