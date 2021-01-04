@@ -11,10 +11,22 @@ tile.Pea Gravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
 tile.Dirty Gravel.name=Dirty Gravel
 
-tile.metalSiding_3.name=White Sheet Metal Siding
-tile.metalSiding_2.name=Light Sheet Grey Metal Siding
-tile.metalSiding_1.name=Grey Sheet Metal Siding
-tile.metalSiding_0.name=Black Sheet Metal Siding
+tile.metalSiding_3.name=White Vertical Sheet Metal Siding
+tile.metalSiding_2.name=Light Vertical Sheet Grey Metal Siding
+tile.metalSiding_1.name=Grey Vertical Sheet Metal Siding
+tile.metalSiding_0.name=Black Vertical Sheet Metal Siding
+tile.metalSiding_4.name=Brown Vertical Sheet Metal Siding
+tile.metalSiding_5.name=Red Vertical Sheet Metal Siding
+tile.metalSiding_6.name=Orange Vertical Sheet Metal Siding
+tile.metalSiding_7.name=Yellow Vertical Sheet Metal Siding
+tile.metalSiding_8.name=Lime Vertical Sheet Metal Siding
+tile.metalSiding_9.name=Green Vertical Sheet Metal Siding
+tile.metalSiding_10.name=Light Vertical Blue Sheet Metal Siding
+tile.metalSiding_11.name=Blue Vertical Sheet Metal Siding
+tile.metalSiding_12.name=Cyan Vertical Sheet Metal Siding
+tile.metalSiding_13.name=Pink Vertical Sheet Metal Siding
+tile.metalSiding_14.name=Magenta Vertical Sheet Metal Siding
+tile.metalSiding_15.name=Purple Vertical Sheet Metal Siding
 
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Light Gray Drywall

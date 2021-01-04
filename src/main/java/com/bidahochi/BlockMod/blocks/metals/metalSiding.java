@@ -13,24 +13,24 @@ import java.util.List;
 
 public class metalSiding extends Block {
 
-    public IIcon[] textures = new IIcon[4];
+    public IIcon[] textures = new IIcon[16];
 
     public metalSiding(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("metalSiding");
-        setBlockTextureName(FoxBlocks.MODID+":metals/metalsiding");
+        setBlockTextureName(FoxBlocks.MODID+":metals/metalsiding/metalsiding");
         setStepSound(soundTypeGlass);
     }
 
 
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 4 ; i++) {
+        for ( int i = 0; i < 16 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
 
     public IIcon getIcon (int side, int meta){
-        if (meta > 3 ) meta = 0;
+        if (meta > 15 ) meta = 0;
         return this.textures[meta];
     }
 
@@ -39,7 +39,7 @@ public class metalSiding extends Block {
     }
 
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 16; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }
