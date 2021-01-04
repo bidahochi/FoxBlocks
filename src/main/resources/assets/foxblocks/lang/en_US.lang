@@ -103,6 +103,23 @@ tile.Tile 2x2_13.name=Pink Gum 2x2 Tile
 tile.Tile 2x2_14.name=Magenta Lavender 2x2 Tile
 tile.Tile 2x2_15.name=Thanos Chin Purple 2x2 Tile
 
+tile.Tile 2x2 Smooth_0.name=White 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_1.name=Gray 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_2.name=Gray 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_3.name=Black 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_4.name=Brown 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_5.name=Red 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_6.name=Orange 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_7.name=Yellow 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_8.name=Lime 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_9.name=Green 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_10.name=Light Blue 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_11.name=Cyan 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_12.name=Blue 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_13.name=Pink 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_14.name=Magenta 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_15.name=Purple 2x2 Bubble Tile
+
 tile.diamond Tile_0.name=White Diamond Tile
 tile.diamond Tile_1.name=Gray Diamond Tile
 tile.diamond Tile_2.name=Dark Gray Diamond Tile

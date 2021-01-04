@@ -69,6 +69,7 @@ public enum BlockIDs {
 
     tile4(true, ItemBlocktile4.class,"tile4"),
     tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2"),
+    tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth"),
     diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile"),
     ;
 
