@@ -325,7 +325,8 @@ public class recipeHandler {
         //ceramic recipe
         GameRegistry.addSmelting(ItemIDs.enrichedClay.item, new ItemStack(ItemIDs.ceramic.item,1),2F);
 
-
+        //Cobalt Smelting
+        GameRegistry.addSmelting(BlockIDs.cobaltOre.block, new ItemStack(ItemIDs.cobaltIngot.item,1),1F);
         FoxBlocks.blockLogger.info("Hi Mom!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }

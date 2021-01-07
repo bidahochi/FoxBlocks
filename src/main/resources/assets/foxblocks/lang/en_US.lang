@@ -1,6 +1,7 @@
 <!-- ## BLOCK ## -->
 tile.Bauxite Ore.name=Bauxite Ore
 tile.Gypsum.name=Raw Gypsum
+tile.Cobalt Ore.name=Cobalt Ore
 
 tile.Raw Concrete.name=Raw Concrete
 tile.Layered Concrete.name=Layered Concrete
@@ -164,3 +165,4 @@ item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
 item.foxblocks:enrichedClay.name=Enriched Clay
 item.foxblocks:ceramic.name=Ceramic
+item.foxblocks:cobalt_ingot.name=Cobalt Ingot

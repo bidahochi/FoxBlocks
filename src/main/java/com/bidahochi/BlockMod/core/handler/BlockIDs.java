@@ -31,6 +31,7 @@ import net.minecraft.item.ItemBlock;
 public enum BlockIDs {
 
     bauxiteOre(false,null, "Bauxite"),
+    cobaltOre(false,null,"CobaltOre"),
     rawConcrete(false,null,"Concrete"),
     peagravel_snow(false,null, "peagravelsnow"),
     peagravel(false,null, "peagravel"),

@@ -16,6 +16,7 @@ public class itemHandler {
         ItemIDs.gypsumDust.item = new gypsumDust();
         ItemIDs.enrichedClay.item = new enrichedClay();
         ItemIDs.ceramic.item = new ceramic();
+        ItemIDs.cobaltIngot.item = new cobaltIngot();
 
         for (ItemIDs items : ItemIDs.values()) {
             items.item.setUnlocalizedName(FoxBlocks.MODID + ":" + items.itemName);

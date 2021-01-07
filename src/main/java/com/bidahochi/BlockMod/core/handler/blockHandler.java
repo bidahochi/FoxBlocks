@@ -44,7 +44,11 @@ public class blockHandler {
 
         FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
+
+        //ores
         BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
+        BlockIDs.cobaltOre.block = new cobaltOre(Material.rock);
+
         BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
         BlockIDs.peagravel.block = new PeaGravel(Material.sand);

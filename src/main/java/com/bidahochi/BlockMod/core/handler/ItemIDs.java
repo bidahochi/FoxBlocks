@@ -9,6 +9,7 @@ public enum ItemIDs {
     gypsumDust("gypsumDust", "gypsumdust", "GypsumDust"),
     enrichedClay("enrichedClay","enrichedClay","enrichedClay"),
     ceramic("ceramic","ceramic","ceramic"),
+    cobaltIngot("cobalt_ingot","cobalt_ingot","cobalt_ingot"),
     ;
 
     public Item item;
