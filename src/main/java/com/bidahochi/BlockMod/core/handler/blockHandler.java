@@ -21,6 +21,7 @@ package com.bidahochi.BlockMod.core.handler;
  ********************/
 
 
+import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.core.handler.BlockProperties;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
@@ -89,6 +90,13 @@ public class blockHandler {
         BlockIDs.tile2x2.block = new tile2x2(Material.rock);
         BlockIDs.tile2x2smooth.block = new tile2x2smooth(Material.rock);
         BlockIDs.diamondTile.block = new diamondTile(Material.rock);
+
+        //cobalt deco blocks
+        BlockIDs.cobaltBlock.block = new cobaltBlock(Material.iron);
+        BlockIDs.cobaltPanel.block = new cobaltPanel(Material.iron);
+        BlockIDs.cobaltPanel2.block = new cobaltPanel2(Material.iron);
+        BlockIDs.cobaltBrick.block = new cobaltBrick(Material.iron);
+        BlockIDs.largeCobaltBrick.block = new largeCobaltBrick(Material.iron);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

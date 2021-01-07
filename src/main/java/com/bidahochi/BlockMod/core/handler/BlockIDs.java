@@ -23,6 +23,8 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ****************************/
 
+import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
+import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalSiding;
 import net.minecraft.block.Block;
@@ -72,6 +74,12 @@ public enum BlockIDs {
     tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2"),
     tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth"),
     diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile"),
+
+    cobaltBlock(false,null,"cobaltBlock"),
+    cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
+    cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2"),
+    cobaltBrick(false,null,"cobaltBrick"),
+    largeCobaltBrick(false,null,"largeCobaltBrick"),
     ;
 
     public Block block;

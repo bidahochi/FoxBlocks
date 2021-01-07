@@ -157,6 +157,34 @@ tile.EmberStone Stair.name=Ember Stone Stair
 tile.Dark EmberStone Slab.name=Dark EmberStone Slab
 tile.Dark EmberStone Stair.name=Dark EmberStone Stair
 
+tile.cobaltBlock.name=Cobalt Block
+tile.cobaltBrick.name=Small Cobalt Bricks
+tile.largeCobaltBrick.name=Large Cobalt Bricks
+tile.cobaltPanel_0.name=Horizontal Cobalt Panel
+tile.cobaltPanel_1.name=Vertical Cobalt Panel
+tile.cobaltPanel_2.name=Cross Cobalt Panel
+tile.cobaltPanel_3.name=T Cobalt Panel 1
+tile.cobaltPanel_4.name=T Cobalt Panel 2
+tile.cobaltPanel_5.name=T Cobalt Panel 3
+tile.cobaltPanel_6.name=T Cobalt Panel 4
+tile.cobaltPanel_7.name=Edge Cobalt Panel 1
+tile.cobaltPanel_8.name=Edge Cobalt Panel 2
+tile.cobaltPanel_9.name=Edge Cobalt Panel 3
+tile.cobaltPanel_10.name=Edge Cobalt Panel 4
+tile.cobaltPanel_11.name=Corner Cobalt Panel 1
+tile.cobaltPanel_12.name=Corner Cobalt Panel 2
+tile.cobaltPanel_13.name=Corner Cobalt Panel 3
+tile.cobaltPanel_14.name=Corner Cobalt Panel 4
+tile.cobaltPanel_15.name=Boxed-In Cobalt Panel
+tile.cobaltPanel2_0.name=End Cobalt Panel 1
+tile.cobaltPanel2_1.name=End Cobalt Panel 2
+tile.cobaltPanel2_2.name=End Cobalt Panel 3
+tile.cobaltPanel2_3.name=End Cobalt Panel 4
+tile.cobaltPanel2_4.name=Double Horizontal Cobalt Panel
+tile.cobaltPanel2_5.name=Double Vertical Cobalt Panel
+
+
+
 tile.hariesh.name=funny brit cubeoid blocc
 tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)

@@ -327,6 +327,10 @@ public class recipeHandler {
 
         //Cobalt Smelting
         GameRegistry.addSmelting(BlockIDs.cobaltOre.block, new ItemStack(ItemIDs.cobaltIngot.item,1),1F);
+
+        //cobalt deco blocks
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltBlock.block, 1, 0),"AAA","AAA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
+
         FoxBlocks.blockLogger.info("Hi Mom!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }
