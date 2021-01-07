@@ -92,11 +92,11 @@ public class blockHandler {
         BlockIDs.diamondTile.block = new diamondTile(Material.rock);
 
         //cobalt deco blocks
-        BlockIDs.cobaltBlock.block = new cobaltBlock(Material.iron);
-        BlockIDs.cobaltPanel.block = new cobaltPanel(Material.iron);
-        BlockIDs.cobaltPanel2.block = new cobaltPanel2(Material.iron);
-        BlockIDs.cobaltBrick.block = new cobaltBrick(Material.iron);
-        BlockIDs.largeCobaltBrick.block = new largeCobaltBrick(Material.iron);
+        BlockIDs.cobaltBlock.block = new cobaltBlock(Material.rock);
+        BlockIDs.cobaltPanel.block = new cobaltPanel(Material.rock);
+        BlockIDs.cobaltPanel2.block = new cobaltPanel2(Material.rock);
+        BlockIDs.cobaltBrick.block = new cobaltBrick(Material.rock);
+        BlockIDs.largeCobaltBrick.block = new largeCobaltBrick(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
             if (block.hasItemBlock == false) {

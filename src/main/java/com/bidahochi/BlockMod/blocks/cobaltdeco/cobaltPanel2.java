@@ -22,7 +22,7 @@ public class cobaltPanel2 extends Block {
         setHardness(2.0F);
         setResistance(2.5F);
         setHarvestLevel("pickaxe", 1);
-        setStepSound(soundTypeGlass);
+        setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/cobaltdeco/cobalt_panel2");
     }
 
