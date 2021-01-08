@@ -15,6 +15,7 @@ public class largeCobaltBrick extends Block {
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/cobaltdeco/large_cobalt_brick");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

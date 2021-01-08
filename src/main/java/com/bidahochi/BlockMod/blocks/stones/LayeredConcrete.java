@@ -15,6 +15,7 @@ public class LayeredConcrete extends Block {
 
         setBlockName("Layered Concrete");
         setBlockTextureName(FoxBlocks.MODID+":stones/layercrete/Layered_concrete");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     public void registerBlockIcons(IIconRegister reg) {

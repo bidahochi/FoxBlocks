@@ -23,6 +23,7 @@ public class wallPaper extends Block {
         setResistance(0.25F);
         setStepSound(soundTypeCloth);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wallpapers/wallpaper");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     public void registerBlockIcons(IIconRegister reg) {

@@ -11,6 +11,7 @@ public class ceramic extends Item {
         super();
         setMaxStackSize(64);
         setUnlocalizedName("ceramic");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override

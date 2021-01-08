@@ -15,6 +15,7 @@ public class unfinishedDrywall extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/specialdrywall/unfinishedDrywall");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     @Override

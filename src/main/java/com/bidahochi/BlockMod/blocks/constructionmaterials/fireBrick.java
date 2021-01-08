@@ -16,6 +16,7 @@ public class fireBrick extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/bricks/fireBrick");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

@@ -29,6 +29,7 @@ public class soapStoneDeco extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/soapstonedeco/soapstone_deco");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
     public void registerBlockIcons(IIconRegister reg) {
         for ( int i = 0; i < 4 ; i++) {

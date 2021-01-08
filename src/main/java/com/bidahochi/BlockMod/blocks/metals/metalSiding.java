@@ -20,6 +20,7 @@ public class metalSiding extends Block {
         setBlockName("metalSiding");
         setBlockTextureName(FoxBlocks.MODID+":metals/metalsiding/metalsiding");
         setStepSound(soundTypeMetal);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
     }
 
 

@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod.blocks.hell;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.item.ItemStack;
@@ -11,7 +12,7 @@ public class emberStoneStair extends BlockStairs {
         super(p_i45428_1_, p_i45428_2_);
         setBlockName("Ember Stair");
         setHardness(3F);
-
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

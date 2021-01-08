@@ -16,6 +16,7 @@ public class emberStone extends Block {
         setHarvestLevel("pickaxe", 3);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":hell/emberStone");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
         
     }
     @Override

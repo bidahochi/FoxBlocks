@@ -30,7 +30,7 @@ public class dryWall extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/drywall/drywall");
-
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     public void registerBlockIcons(IIconRegister reg) {

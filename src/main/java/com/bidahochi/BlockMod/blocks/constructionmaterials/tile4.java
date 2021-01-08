@@ -30,7 +30,7 @@ public class tile4 extends Block {
         setHarvestLevel("pickaxe", 0);
         setStepSound(soundTypeGlass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/4by4tiles/tile");
-
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     public void registerBlockIcons(IIconRegister reg) {

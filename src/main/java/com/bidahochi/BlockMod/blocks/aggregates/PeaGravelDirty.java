@@ -16,6 +16,7 @@ public class PeaGravelDirty extends BlockFalling {
         setHarvestLevel("shovel", 0);
         setStepSound(soundTypeGravel);
         setBlockTextureName(FoxBlocks.MODID+":aggregates/peagravel_dirty");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

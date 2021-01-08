@@ -18,23 +18,44 @@ public class FoxBlocks
     public static final String NAME = "FoxBlocks";
     public static final String VERSION = "1.0.2";
     public static CreativeTabs foxBlocksCreativeTab;
+    public static CreativeTabs foxBlocksCreativeTabRock;
+    public static CreativeTabs foxBlocksCreativeTabHome;
+    public static CreativeTabs foxBlocksCreativeTabFactory;
+    public static CreativeTabs foxBlocksCreativeTabItems;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
 
     @EventHandler
     public void init(FMLPreInitializationEvent event)
     {
-        //Initalize bloccs.
+        //Initalize blocc tabs.
         blockLogger.info("FoxBlocks starting with it's big floofy tail");
-        foxBlocksCreativeTab = new CreativeTabs("FoxBlocks") {
+
+        foxBlocksCreativeTabRock = new CreativeTabs("FoxBlocks - Rock Hard") {
             public Item getTabIconItem() {
-                return  Item.getItemFromBlock(BlockIDs.bauxiteOre.block);
-            }
+                return  Item.getItemFromBlock(BlockIDs.fireBrick.block); }
+            public String getTranslatedTabLabel() { return "FoxBlocks - Rock Hard"; }};
 
+        foxBlocksCreativeTabHome = new CreativeTabs("FoxBlocks - Happy Homes") {
+            public Item getTabIconItem() {
+                return  Item.getItemFromBlock(BlockIDs.tile2x2.block); }
+            public String getTranslatedTabLabel() { return "FoxBlocks - Happy Homes"; }};
+
+        foxBlocksCreativeTabFactory = new CreativeTabs("FoxBlocks - Fox Factory") {
+            public Item getTabIconItem() {
+                return  Item.getItemFromBlock(BlockIDs.metalSiding.block); }
+            public String getTranslatedTabLabel() { return "FoxBlocks - Fox Factory"; }};
+
+        foxBlocksCreativeTabItems = new CreativeTabs("FoxBlocks - Obligatory Items Tab") {
+            public Item getTabIconItem() {
+                return  ItemIDs.jarate.item; }
+            public String getTranslatedTabLabel() { return "FoxBlocks - Obligatory Items Tab"; }};
+
+        foxBlocksCreativeTab = new CreativeTabs("FoxBlocks - Unsorted") {
+            public Item getTabIconItem() {
+                return  Item.getItemFromBlock(BlockIDs.bauxiteOre.block); }
             public String getTranslatedTabLabel() {
-                return "FoxBlocks";
-            }
-
-        };
+                return "FoxBlocks - Unsorted";
+            }};
 
         blockHandler.initBlockRegister();
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)

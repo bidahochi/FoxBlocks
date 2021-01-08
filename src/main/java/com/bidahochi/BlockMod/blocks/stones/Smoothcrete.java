@@ -16,6 +16,7 @@ public class Smoothcrete extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypePiston);
         setBlockTextureName(FoxBlocks.MODID+":stones/layercrete/Layered_concrete_0");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

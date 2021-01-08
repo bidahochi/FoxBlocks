@@ -13,6 +13,7 @@ public class test extends Item {
         super();
         setMaxStackSize(1);
         setUnlocalizedName("testItem");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override

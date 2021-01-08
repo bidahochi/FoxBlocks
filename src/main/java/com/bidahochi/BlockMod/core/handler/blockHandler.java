@@ -99,14 +99,17 @@ public class blockHandler {
         BlockIDs.largeCobaltBrick.block = new largeCobaltBrick(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
-            if (block.hasItemBlock == false) {
-                GameRegistry.registerBlock(block.block, block.blockName);
+
+            if (block.block.getCreativeTabToDisplayOn() == null){
                 block.block.setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
+            }
+            if (!block.hasItemBlock) {
+                GameRegistry.registerBlock(block.block, block.blockName);
             } else {
                 GameRegistry.registerBlock(block.block, block.itemBlockClass, block.blockName);
-                block.block.setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
 
             }
+
         }
 
         FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");

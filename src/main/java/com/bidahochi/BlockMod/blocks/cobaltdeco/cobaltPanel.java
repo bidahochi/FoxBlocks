@@ -24,6 +24,7 @@ public class cobaltPanel extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/cobaltdeco/cobalt_panel");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
 

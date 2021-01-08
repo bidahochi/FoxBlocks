@@ -11,6 +11,7 @@ public class cobaltIngot extends Item {
         super();
         setMaxStackSize(64);
         setUnlocalizedName("cobaltIngot");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override

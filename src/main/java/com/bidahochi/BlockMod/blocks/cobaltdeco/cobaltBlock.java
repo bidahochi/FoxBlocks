@@ -16,6 +16,7 @@ public class cobaltBlock extends Block {
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/cobaltdeco/cobalt_block");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

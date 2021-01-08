@@ -24,6 +24,7 @@ public class diamondTile extends Block {
         setHarvestLevel("pickaxe", 0);
         setStepSound(soundTypeGlass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/diamondtile/diamond");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
 

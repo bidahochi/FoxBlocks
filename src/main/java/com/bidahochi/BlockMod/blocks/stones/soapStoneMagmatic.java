@@ -18,6 +18,7 @@ public class soapStoneMagmatic extends Block {
         setStepSound(soundTypeStone);
         setLightLevel(0.5F);
         setBlockTextureName(FoxBlocks.MODID+":stones/soapstone_magmatic");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

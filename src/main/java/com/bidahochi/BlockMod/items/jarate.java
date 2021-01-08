@@ -13,6 +13,7 @@ public class jarate extends Item {
         super();
         setMaxStackSize(1);
         setUnlocalizedName("jarate");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override

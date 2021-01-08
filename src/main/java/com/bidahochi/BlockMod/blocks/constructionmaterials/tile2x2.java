@@ -29,6 +29,7 @@ public class tile2x2 extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeGlass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/2by2tiles/tile8");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
     public void registerBlockIcons(IIconRegister reg) {
         for ( int i = 0; i < 16 ; i++) {

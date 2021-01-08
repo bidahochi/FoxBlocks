@@ -12,6 +12,7 @@ public class gypsumDust extends Item {
         super();
         setMaxStackSize(32);
         setUnlocalizedName("gypsumDust");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override

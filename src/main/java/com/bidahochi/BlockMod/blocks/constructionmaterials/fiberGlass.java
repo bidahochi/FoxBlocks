@@ -20,6 +20,8 @@ public class fiberGlass extends Block{
         super(p_i45394_1_);
         setBlockName("fiberglass");
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/fiberglass/insulation");
+        setStepSound(soundTypeGlass);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     public void registerBlockIcons(IIconRegister reg) {

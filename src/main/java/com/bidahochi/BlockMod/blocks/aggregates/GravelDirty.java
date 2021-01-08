@@ -16,6 +16,7 @@ public class GravelDirty extends BlockFalling {
         setHarvestLevel("shovel", 0);
         setStepSound(soundTypeGravel);
         setBlockTextureName(FoxBlocks.MODID+":aggregates/gravel_dirty");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

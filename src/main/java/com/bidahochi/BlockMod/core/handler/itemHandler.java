@@ -18,10 +18,14 @@ public class itemHandler {
         ItemIDs.ceramic.item = new ceramic();
         ItemIDs.cobaltIngot.item = new cobaltIngot();
 
+
         for (ItemIDs items : ItemIDs.values()) {
+            if (items.item.getCreativeTab() == null){
+                items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
+            }
             items.item.setUnlocalizedName(FoxBlocks.MODID + ":" + items.itemName);
             GameRegistry.registerItem(items.item, items.name());
-            items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
+
         }
     }
 }

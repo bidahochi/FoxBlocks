@@ -11,6 +11,7 @@ public class enrichedClay extends Item {
         super();
         setMaxStackSize(64);
         setUnlocalizedName("enrichedClay");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override

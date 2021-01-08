@@ -17,7 +17,7 @@ public class cobaltOre extends Block {
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":stones/cobalt_ore");
-
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override

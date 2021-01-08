@@ -16,6 +16,7 @@ public class RawConcrete extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypePiston);
         setBlockTextureName(FoxBlocks.MODID+":stones/raw_concrete");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
     @Override
