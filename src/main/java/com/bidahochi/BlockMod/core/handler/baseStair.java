@@ -3,12 +3,13 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 public class baseStair extends BlockStairs{
 
-    protected baseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, float blockResistance ,SoundType stepSound, String harvestTool, int harvestLevel, float lightValue) {
+    public baseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, float blockResistance , SoundType stepSound, String harvestTool, int harvestLevel, float lightValue, CreativeTabs creativeTabs) {
         super(p_i45428_1_, p_i45428_2_);
         setBlockName(name);
         setHardness(hardness);
@@ -16,6 +17,7 @@ public class baseStair extends BlockStairs{
         setHarvestLevel(harvestTool, harvestLevel);
         setResistance(blockResistance);
         setLightLevel(lightValue);
+        setCreativeTab(creativeTabs);
     }
 
     @Override

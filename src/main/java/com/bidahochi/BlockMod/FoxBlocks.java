@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 @Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME)
 public class FoxBlocks
 {
@@ -63,5 +64,6 @@ public class FoxBlocks
         recipeHandler.initBlockRecipes();
         oreDictHandler.registerOreDict();
         GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
+
     }
 }
