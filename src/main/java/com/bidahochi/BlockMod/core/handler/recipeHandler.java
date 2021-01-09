@@ -355,6 +355,7 @@ public class recipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 3),"AAA","ABB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 4),"AAA","BBB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 5),"ABA","ABA","ABA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 6),"ABA","AAA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
 
 
         FoxBlocks.blockLogger.info("Hi Mom!");
