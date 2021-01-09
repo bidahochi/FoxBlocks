@@ -27,6 +27,9 @@ import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalSiding;
+import com.bidahochi.BlockMod.blocks.metals.ItemBlockpannelBlack;
+import com.bidahochi.BlockMod.blocks.metals.ItemBlockpannelExtra;
+import com.bidahochi.BlockMod.blocks.metals.ItemBlockpannelWhite;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -50,13 +53,20 @@ public enum BlockIDs {
     emberStone(false,null,"Ember Stone"),
     //testPane(false, null, "TestPane"),
     //testSlab(false,null,"TestSlab"),
+
     soapStone(false, null, "Soapstone"),
     soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco"),
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
+
     unfinishedDrywall(false,null,"unfinishedDrywall"),
     //testStair(false,null,"TestStair"),
+
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
+    pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack"),
+    pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite"),
+    pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra"),
+
     harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
     layeredConcrete(false, null, "Layered Concrete"),
     smoothCrete(false, null, "Smoothcrete"),

@@ -64,6 +64,4 @@ public class FoxBlocks
         oreDictHandler.registerOreDict();
         GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
     }
-
-
 }

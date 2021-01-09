@@ -11,18 +11,18 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class metalSiding extends Block {
+public class pannelBlack extends Block {
 
     public IIcon[] textures = new IIcon[16];
 
-    public metalSiding(Material p_i45394_1_) {
+    public pannelBlack(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("metalSiding");
-        setBlockTextureName(FoxBlocks.MODID+":metals/metalsiding/metalsiding");
+        setBlockName("pannelBlack");
+        setBlockTextureName(FoxBlocks.MODID+":metals/pannels/pannel_black");
         setStepSound(soundTypeMetal);
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
-        setHardness(1.5F);
-        setResistance(25.0F);
+        setHardness(2F);
+        setResistance(15.0F);
         setHarvestLevel("pickaxe", 2);
     }
 
