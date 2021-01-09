@@ -330,6 +330,32 @@ public class recipeHandler {
 
         //cobalt deco blocks
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltBlock.block, 1, 0),"AAA","AAA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltBrick.block, 1, 0),"AA ","AA ","   ",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.largeCobaltBrick.block, 4, 0),"AA ","AA ","   ",Character.valueOf('A'), new ItemStack(BlockIDs.cobaltBrick.block));
+            //cobalt panels
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 0),"BBB","AAA","BBB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 1),"BAB","BAB","BAB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 2),"BAB","AAA","BAB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 3),"BAB","AAA","BBB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 4),"BAB","BAA","BAB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 5),"BBB","AAA","BAB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 6),"BAB","AAB","BAB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 7),"AAA","BBB","BBB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 8),"BBA","BBA","BBA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 9),"BBB","BBB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 10),"ABB","ABB","ABB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 11),"AAA","BBA","BBA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 12),"BBA","BBA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 13),"ABB","ABB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 14),"AAA","ABB","ABB",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel.block, 8, 15),"AAA","ABA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 0),"AAA","ABA","ABA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 1),"AAA","BBA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 2),"ABA","ABA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 3),"AAA","ABB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 4),"AAA","BBB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 5),"ABA","ABA","ABA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
+
 
         FoxBlocks.blockLogger.info("Hi Mom!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
