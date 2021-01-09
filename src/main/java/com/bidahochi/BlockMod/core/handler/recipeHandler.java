@@ -355,10 +355,52 @@ public class recipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 3),"AAA","ABB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 4),"AAA","BBB","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 5),"ABA","ABA","ABA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item),Character.valueOf('B'), new ItemStack(BlockIDs.cobaltBlock.block));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 6),"ABA","AAA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltPanel2.block, 8, 6),"AAA","AAA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
 
+        //p2 themed panneling
+        GameRegistry.addSmelting(BlockIDs.soapStone.block, new ItemStack(ItemIDs.lowDensityCompound.item, 4), 2F);
+            //white pannels
+        for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 0), "LLL", "LDL", "LLL", Character.valueOf('L'), new ItemStack(ItemIDs.lowDensityCompound.item), Character.valueOf('D'), dyewhite); }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 15), "PPP","P P","PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 1), "PCP", "PCP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 2), "PPP", "PCP", "PCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 3), "PCP", "PCP", "PCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 4), "PCC", "PCC", "PCC", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 5), "CCP", "CCP", "CCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 6), "PPP", "CCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 7), "PPP", "CCC", "CCC", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 8), "CCC", "CCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 9), "PPP", "PCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 10), "PPP", "CCP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 11), "PCC", "PCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 12), "PPP", "PCC", "PCC", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 13), "CCP", "CCP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelWhite.block, 8, 14), "PPP", "CCP", "CCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 1), "PC ","CP ", "   ", Character.valueOf('P'), new ItemStack(BlockIDs.pannelWhite.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+            //blacc pannels
+        for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 0), "LLL", "LDL", "LLL", Character.valueOf('L'), new ItemStack(ItemIDs.lowDensityCompound.item), Character.valueOf('D'), dyeblack); }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 15), "PPP","P P","PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 1), "PCP", "PCP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 2), "PPP", "PCP", "PCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 3), "PCP", "PCP", "PCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 4), "PCC", "PCC", "PCC", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 5), "CCP", "CCP", "CCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 6), "PPP", "CCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 7), "PPP", "CCC", "CCC", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 8), "CCC", "CCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 9), "PPP", "PCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 10), "PPP", "CCP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 11), "PCC", "PCC", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 12), "PPP", "PCC", "PCC", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 13), "CCP", "CCP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelBlack.block, 8, 14), "PPP", "CCP", "CCP", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 0), "PC ","CP ", "   ", Character.valueOf('P'), new ItemStack(BlockIDs.pannelBlack.block, 15), Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));
+            //extras
+        for (ItemStack dyewhite : dyeWhite){GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 3), "DC ","CD ", "   ", Character.valueOf('D'), dyewhite, Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));}
+        for (ItemStack dyeyellow : dyeYellow){GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 2), "DC ","CD ", "   ", Character.valueOf('D'), dyeyellow, Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));}
+        for (ItemStack dyered : dyeRed){GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 4), "DC ","CD ", "   ", Character.valueOf('D'), dyered, Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));}
 
-        FoxBlocks.blockLogger.info("Hi Mom!");
+        FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }
 }

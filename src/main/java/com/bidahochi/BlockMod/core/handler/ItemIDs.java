@@ -10,6 +10,7 @@ public enum ItemIDs {
     enrichedClay("enrichedClay","enrichedClay","enrichedClay"),
     ceramic("ceramic","ceramic","ceramic"),
     cobaltIngot("cobalt_ingot","cobalt_ingot","cobalt_ingot"),
+    lowDensityCompound("compound", "lowdensitycompound", "lowdensitycompound"),
     ;
 
     public Item item;
