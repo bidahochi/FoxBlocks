@@ -106,9 +106,6 @@ public class blockHandler {
 
         for (BlockIDs block : BlockIDs.values()) {
 
-            if (block.block.getCreativeTabToDisplayOn() == null){
-                block.block.setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
-            }
             if (!block.hasItemBlock) {
                 GameRegistry.registerBlock(block.block, block.blockName);
             } else {

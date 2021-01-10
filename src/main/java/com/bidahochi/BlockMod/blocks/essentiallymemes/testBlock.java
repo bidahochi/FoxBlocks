@@ -23,6 +23,7 @@ public class testBlock extends Block {
 
         setBlockName("testblock");
         setBlockTextureName(FoxBlocks.MODID + ":testblock");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
     }
 
     public void registerBlockIcons(IIconRegister reg) {
