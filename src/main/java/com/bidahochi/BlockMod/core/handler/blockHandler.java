@@ -103,6 +103,9 @@ public class blockHandler {
         BlockIDs.cobaltPanel2.block = new cobaltPanel2(Material.rock);
         BlockIDs.cobaltBrick.block = new cobaltBrick(Material.rock);
         BlockIDs.largeCobaltBrick.block = new largeCobaltBrick(Material.rock);
+        BlockIDs.blue.block = new baseBlock("Blue Block",1F,1F,"pickaxe",0,Material.glass, Block.soundTypeGlass, "colour/blue");
+        BlockIDs.green.block = new baseBlock("Green Block",1F,1F,"pickaxe",0,Material.glass, Block.soundTypeGlass, "colour/green");
+
 
         for (BlockIDs block : BlockIDs.values()) {
 

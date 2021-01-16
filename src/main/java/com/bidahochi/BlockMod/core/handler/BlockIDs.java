@@ -90,6 +90,8 @@ public enum BlockIDs {
     cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2"),
     cobaltBrick(false,null,"cobaltBrick"),
     largeCobaltBrick(false,null,"largeCobaltBrick"),
+    blue(false,null,"Blue"),
+    green(false,null,"Green"),
     ;
 
     public Block block;
