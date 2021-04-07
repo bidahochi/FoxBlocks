@@ -68,6 +68,7 @@ public class blockHandler {
         //BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
         //BlockIDs.testSlab.block = new testSlab(false, Material.iron);
         //BlockIDs.testStair.block = new testStair(BlockIDs.bauxiteOre.block, 0);
+        BlockIDs.blockLavaBucket.block = new blockLavaBucket(Material.iron);
 
         BlockIDs.soapStone.block = new SoapStone(Material.rock);
         BlockIDs.soapStoneMagmatic.block = new soapStoneMagmatic(Material.rock);
@@ -78,6 +79,7 @@ public class blockHandler {
         BlockIDs.pannelBlack.block = new pannelBlack(Material.iron);
         BlockIDs.pannelWhite.block = new pannelWhite(Material.iron);
         BlockIDs.pannelExtra.block = new pannelExtra(Material.iron);
+        BlockIDs.rustBeam.block = new rustBeam(Material.iron);
 
         BlockIDs.harieshHead.block = new harieshHead(Material.dragonEgg);
         BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);

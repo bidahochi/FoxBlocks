@@ -190,9 +190,10 @@ public class recipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_snow.block, 2), new ItemStack(BlockIDs.peagravel.block, 1), Items.snowball, new ItemStack(BlockIDs.peagravel.block, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_shit.block, 2), new ItemStack(BlockIDs.peagravel.block, 1), Blocks.dirt);
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.gravel_shit.block, 2), new ItemStack(BlockIDs.gravel_shit.block, 1), Blocks.dirt);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.gravel_shit.block, 2), Blocks.gravel, Blocks.dirt);
 
         //sheet metal sidings - oredictionary plateIron doesnt seem to work, please look into
+        //apparently the plateiron recipe works on servers but not singleplayer?
         for (ItemStack plateiron : plateIron) {
             for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyewhite); }
             for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyelightgray); }
@@ -230,6 +231,8 @@ public class recipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.fireBrick.block, 4), "SBS", "BSB", "SBS", Character.valueOf('S'), Blocks.sand, Character.valueOf('B'), Items.brick);
         //for (ItemStack dyebrown : dyeBrown){ GameRegistry.addRecipe(new ItemStack(BlockIDs.brownTile.block, 2), "SSB", "   ", "   ", Character.valueOf('S'), BlockIDs.soapStone.block, Character.valueOf('B'), dyebrown); }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.harieshHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.blockLavaBucket.block, 1), Items.lava_bucket,Items.lava_bucket,Items.lava_bucket,Items.lava_bucket);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 16), Items.water_bucket, Items.iron_ingot);
 
         //fibregloss
         GameRegistry.addRecipe(new ItemStack(BlockIDs.fiberGlass.block, 6, 2), "WGW", "GWG", "WGW", Character.valueOf('W'), Blocks.wool, Character.valueOf('G'), Blocks.glass_pane);
@@ -399,6 +402,14 @@ public class recipeHandler {
         for (ItemStack dyewhite : dyeWhite){GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 3), "DC ","CD ", "   ", Character.valueOf('D'), dyewhite, Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));}
         for (ItemStack dyeyellow : dyeYellow){GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 2), "DC ","CD ", "   ", Character.valueOf('D'), dyeyellow, Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));}
         for (ItemStack dyered : dyeRed){GameRegistry.addRecipe(new ItemStack(BlockIDs.pannelExtra.block, 4, 4), "DC ","CD ", "   ", Character.valueOf('D'), dyered, Character.valueOf('C'), new ItemStack(ItemIDs.lowDensityCompound.item));}
+        //rust beams
+        for (ItemStack dyeyellow : dyeYellow) {GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 0), "RDR", "III", "RDR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyeyellow,Character.valueOf('I'), Items.iron_ingot);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 1), "RIR", "DID", "RIR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyeyellow,Character.valueOf('I'), Items.iron_ingot);}
+        for (ItemStack dyeblue : dyeBlue) {GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 2), "RDR", "III", "RDR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyeblue,Character.valueOf('I'), Items.iron_ingot);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 3), "RIR", "DID", "RIR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyeblue,Character.valueOf('I'), Items.iron_ingot);}
+        for (ItemStack dyered : dyeRed) {GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 4), "RDR", "III", "RDR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyered,Character.valueOf('I'), Items.iron_ingot);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 5), "RIR", "DID", "RIR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyered,Character.valueOf('I'), Items.iron_ingot);}
+
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");

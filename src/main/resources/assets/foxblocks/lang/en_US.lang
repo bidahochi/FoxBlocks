@@ -69,6 +69,13 @@ tile.pannelExtra_2.name=Yellow Backpanel
 tile.pannelExtra_3.name=White Backpanel
 tile.pannelExtra_4.name=Reddish Backpanel
 
+tile.rustBeam_0.name=Yellow Horizontal Rusty Beam
+tile.rustBeam_1.name=Yellow Vertical Rusty Beam
+tile.rustBeam_2.name=Blue Horizontal Rusty Beam
+tile.rustBeam_3.name=Blue Vertical Rusty Beam
+tile.rustBeam_4.name=Red Horizontal Rusty Beam
+tile.rustBeam_5.name=Red Vertical Rusty Beam
+
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Light Gray Drywall
 tile.dryWall_2.name=Gray Drywall
@@ -227,6 +234,7 @@ tile.cobaltPanel2_6.name=Borderless Cobalt Panel
 tile.hariesh.name=funny brit cubeoid blocc
 tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)
+tile.BlockOLavaBucket.name=Block of Lava Bucket
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
@@ -234,3 +242,4 @@ item.foxblocks:enrichedClay.name=Enriched Clay
 item.foxblocks:ceramic.name=Ceramic
 item.foxblocks:cobalt_ingot.name=Cobalt Ingot
 item.foxblocks:lowdensitycompound.name=Soapstone-Based Low Density Moonrock Compound Substitute
+item.foxblocks:rust.name=Artificial Rust

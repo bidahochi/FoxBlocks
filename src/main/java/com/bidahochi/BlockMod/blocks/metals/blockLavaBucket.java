@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.stones;
+package com.bidahochi.BlockMod.blocks.metals;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
@@ -7,17 +7,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 
-public class SoapStone extends Block {
+public class blockLavaBucket extends Block {
 
-    public SoapStone(Material p_i45394_1_) {
+    public blockLavaBucket(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("Soapstone");
-        setHardness(3F);
-        setResistance(15.0F);
-        setHarvestLevel("pickaxe", 1);
+        setBlockName("BlockOLavaBucket");
+        setHardness(1F);
+        setResistance(5.0F);
+        setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
-        setBlockTextureName(FoxBlocks.MODID+":stones/soapstone");
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
+        setLightLevel(3F);
+        setBlockTextureName(FoxBlocks.MODID+":metals/block_o_lava_bucket");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
     }
 
     @Override
