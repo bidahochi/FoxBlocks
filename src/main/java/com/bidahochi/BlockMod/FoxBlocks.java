@@ -58,12 +58,14 @@ public class FoxBlocks
                 return "FoxBlocks - Unsorted";
             }};
 
+        //registration os things that run things
         blockHandler.initBlockRegister();
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         itemHandler.initItemRegister();
         recipeHandler.initBlockRecipes();
         oreDictHandler.registerOreDict();
         GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
+
 
     }
 }

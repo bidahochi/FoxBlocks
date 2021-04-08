@@ -29,6 +29,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import com.bidahochi.BlockMod.core.handler.BlockIDs;
 
 import java.util.Random;
 
@@ -41,6 +42,7 @@ public class oreGenerationHandler implements IWorldGenerator {
                 break;
             case 0:
                 generateOverworld(world, random, chunkX, chunkZ);
+                generateOverworld2(world, random, chunkX, chunkZ);
                 break;
             case -1:
                 generateNether(world, random, chunkX, chunkZ);
@@ -56,9 +58,11 @@ public class oreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.bauxiteOre.block, world, rand, x, z, 3, 10, 5, 20, 80, Blocks.stone);
         generateOre(BlockIDs.cobaltOre.block, world, rand, x, z, 2, 7, 6, 40, 80, Blocks.stone);
         generateOre(BlockIDs.soapStone.block, world, rand, x, z, 45, 74, 5, 5, 128, Blocks.stone);
-        generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 145, 1, 85, BlockIDs.soapStone.block);
-        generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 1, 2, 150, 4, 31, BlockIDs.soapStone.block);
         generateOre(BlockIDs.gypsum.block, world, rand, x, z, 6, 15, 15, 55, 75, Blocks.stone);
+    }
+    public void generateOverworld2(World world, Random rand, int x, int z){
+        generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 5, 1, 85, BlockIDs.soapStone.block);
+        generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 1, 2, 5, 4, 31, BlockIDs.soapStone.block);
     }
 
     public void generateNether(World world, Random rand, int x, int z){
