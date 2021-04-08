@@ -32,6 +32,14 @@
   <component name="JavadocGenerationManager">
     <option name="OTHER_OPTIONS" value="" />
   </component>
+  <component name="ProjectCodeStyleConfiguration">
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+    <code_scheme name="Project" version="173">
+      <ScalaCodeStyleSettings>
+        <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+      </ScalaCodeStyleSettings>
+    </code_scheme>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FoxBlocks.iml" filepath="$PROJECT_DIR$/FoxBlocks.iml" />
@@ -45,6 +53,22 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="CodeChickenLib-1.7.10-1.1.3.138-universal">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/src/main/java/com/bidahochi/BlockMod/lib/CodeChickenLib-1.7.10-1.1.3.138-universal.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ForgeMultipart-1.7.10-1.2.0.345-universal">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/src/main/java/com/bidahochi/BlockMod/lib/ForgeMultipart-1.7.10-1.2.0.345-universal.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
   <component name="masterDetails">
     <states>

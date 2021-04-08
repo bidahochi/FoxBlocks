@@ -691,5 +691,25 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/java/com/bidahochi/BlockMod/lib/CodeChickenLib-1.7.10-1.1.3.138-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/java/com/bidahochi/BlockMod/lib/ForgeMultipart-1.7.10-1.2.0.345-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="ForgeMultipart-1.7.10-1.2.0.345-universal" level="project" />
+    <orderEntry type="library" name="CodeChickenLib-1.7.10-1.1.3.138-universal" level="project" />
   </component>
 </module>

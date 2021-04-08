@@ -25,6 +25,7 @@ public class FoxBlocks
     public static CreativeTabs foxBlocksCreativeTabItems;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
 
+    
     @EventHandler
     public void init(FMLPreInitializationEvent event)
     {
