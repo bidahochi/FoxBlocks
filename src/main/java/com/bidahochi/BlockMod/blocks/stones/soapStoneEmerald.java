@@ -13,8 +13,8 @@ public class soapStoneEmerald extends Block {
     public soapStoneEmerald(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Emerald Soapstone Ore");
-        setHardness(5F);
-        setResistance(15.0F);
+        setHardness(2.5F);
+        setResistance(5.0F);
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":stones/soapstone_emerald");

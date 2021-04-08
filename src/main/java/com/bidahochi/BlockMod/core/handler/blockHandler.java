@@ -76,6 +76,7 @@ public class blockHandler {
         BlockIDs.soapStoneEmerald.block = new soapStoneEmerald(Material.rock);
 
         BlockIDs.metalSiding.block = new metalSiding(Material.iron);
+        BlockIDs.metalSiding2.block = new metalSiding2(Material.iron);
         BlockIDs.pannelBlack.block = new pannelBlack(Material.iron);
         BlockIDs.pannelWhite.block = new pannelWhite(Material.iron);
         BlockIDs.pannelExtra.block = new pannelExtra(Material.iron);
@@ -108,6 +109,8 @@ public class blockHandler {
         BlockIDs.blue.block = new baseBlock("Blue Block",1F,1F,"pickaxe",0,Material.glass, Block.soundTypeGlass, "colour/blue");
         BlockIDs.green.block = new baseBlock("Green Block",1F,1F,"pickaxe",0,Material.glass, Block.soundTypeGlass, "colour/green");
 
+        BlockIDs.widePlank.block = new widePlank(Material.wood);
+        BlockIDs.widePlank2.block = new widePlank2(Material.wood);
 
         for (BlockIDs block : BlockIDs.values()) {
 

@@ -12,8 +12,8 @@ public class SoapStone extends Block {
     public SoapStone(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Soapstone");
-        setHardness(3F);
-        setResistance(15.0F);
+        setHardness(1.5F);
+        setResistance(7.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":stones/soapstone");

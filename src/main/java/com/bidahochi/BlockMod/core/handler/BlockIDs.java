@@ -61,6 +61,7 @@ public enum BlockIDs {
     //testStair(false,null,"TestStair"),
 
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
+    metalSiding2(true, ItemBlockmetalSiding2.class, "Metal Siding2"),
     pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack"),
     pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite"),
     pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra"),
@@ -91,6 +92,9 @@ public enum BlockIDs {
     largeCobaltBrick(false,null,"largeCobaltBrick"),
     blue(false,null,"Blue"),
     green(false,null,"Green"),
+
+    widePlank(true, ItemBlockwidePlank.class, "widePlank"),
+    widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
     ;
 
     public Block block;

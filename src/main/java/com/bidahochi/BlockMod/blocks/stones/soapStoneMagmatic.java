@@ -12,11 +12,11 @@ public class soapStoneMagmatic extends Block {
     public soapStoneMagmatic(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Magmatic Soapstone");
-        setHardness(5F);
-        setResistance(15.0F);
+        setHardness(2F);
+        setResistance(5.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
-        setLightLevel(0.5F);
+        setLightLevel(0.7F);
         setBlockTextureName(FoxBlocks.MODID+":stones/soapstone_magmatic");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }

@@ -200,22 +200,38 @@ public class recipeHandler {
             for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyegray); }
             for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyeblack); }
         }
-        for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite); }
-        for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray); }
-        for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray); }
-        for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack); }
-        for (ItemStack dyebrown : dyeBrown) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 4), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyebrown); }
-        for (ItemStack dyered : dyeRed) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 5), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyered); }
-        for (ItemStack dyeorange : dyeOrange) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 6), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeorange);}
-        for (ItemStack dyeyellow : dyeYellow) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 7), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeyellow);}
-        for (ItemStack dyelime : dyeLime) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 8), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelime);}
-        for (ItemStack dyegreen : dyeGreen){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 9), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegreen);}
-        for (ItemStack dyelightblue : dyeLightBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 10), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightblue);}
-        for (ItemStack dyeblue : dyeBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 11), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblue);}
-        for (ItemStack dyecyan : dyeCyan){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 12), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyecyan);}
-        for (ItemStack dyepink : dyePink){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 13), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepink);}
-        for (ItemStack dyemagenta : dyeMagenta){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 14), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyemagenta);}
-        for (ItemStack dyepurple : dyePurple){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 15), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepurple);}
+        for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 3), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite);}
+        for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 2), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray);}
+        for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 1), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray); }
+        for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 0), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack); }
+        for (ItemStack dyebrown : dyeBrown) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 4), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyebrown);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 4), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyebrown); }
+        for (ItemStack dyered : dyeRed) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 5), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyered);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 5), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyered); }
+        for (ItemStack dyeorange : dyeOrange) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 6), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeorange);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 6), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeorange); }
+        for (ItemStack dyeyellow : dyeYellow) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 7), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeyellow);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 7), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeyellow); }
+        for (ItemStack dyelime : dyeLime) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 8), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelime);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 8), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelime); }
+        for (ItemStack dyegreen : dyeGreen){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 9), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegreen);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 9), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegreen); }
+        for (ItemStack dyelightblue : dyeLightBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 10), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 10), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightblue); }
+        for (ItemStack dyeblue : dyeBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 11), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 11), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblue); }
+        for (ItemStack dyecyan : dyeCyan){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 12), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyecyan);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 12), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyecyan); }
+        for (ItemStack dyepink : dyePink){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 13), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepink);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 13), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepink); }
+        for (ItemStack dyemagenta : dyeMagenta){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 14), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyemagenta);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 14), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyemagenta); }
+        for (ItemStack dyepurple : dyePurple){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 15), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepurple);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 15), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepurple); }
 
         //soapstone bs - CUSTOM CRAFTING TABLE WITH MULTIPLE OUTPUTS WHENNN aaaaa
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 0), BlockIDs.soapStone.block, BlockIDs.soapStone.block);
@@ -409,6 +425,40 @@ public class recipeHandler {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 3), "RIR", "DID", "RIR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyeblue,Character.valueOf('I'), Items.iron_ingot);}
         for (ItemStack dyered : dyeRed) {GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 4), "RDR", "III", "RDR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyered,Character.valueOf('I'), Items.iron_ingot);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.rustBeam.block, 3, 5), "RIR", "DID", "RIR", Character.valueOf('R'), new ItemStack(ItemIDs.rust.item), Character.valueOf('D'), dyered,Character.valueOf('I'), Items.iron_ingot);}
+
+        //wide planks
+        for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 0), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyewhite);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 0), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyewhite);}
+        for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 1), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyelightgray);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 1), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyelightgray);}
+        for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 2), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyegray);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 2), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyegray); }
+        for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 3), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeblack);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 3), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeblack); }
+        for (ItemStack dyebrown : dyeBrown) { GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 4), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyebrown);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 4), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyebrown); }
+        for (ItemStack dyered : dyeRed) { GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 5), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyered);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 5), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyered); }
+        for (ItemStack dyeorange : dyeOrange) {GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 6), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeorange);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 6), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeorange); }
+        for (ItemStack dyeyellow : dyeYellow) {GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 7), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeyellow);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 7), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeyellow); }
+        for (ItemStack dyelime : dyeLime) {GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 8), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyelime);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 8), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyelime); }
+        for (ItemStack dyegreen : dyeGreen){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 9), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyegreen);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 9), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyegreen); }
+        for (ItemStack dyelightblue : dyeLightBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 10), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyelightblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 10), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyelightblue); }
+        for (ItemStack dyeblue : dyeBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 11), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeblue);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 11), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyeblue); }
+        for (ItemStack dyecyan : dyeCyan){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 12), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyecyan);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 12), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyecyan); }
+        for (ItemStack dyepink : dyePink){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 13), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyepink);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 13), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyepink); }
+        for (ItemStack dyemagenta : dyeMagenta){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 14), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyemagenta);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 14), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyemagenta); }
+        for (ItemStack dyepurple : dyePurple){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 15), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyepurple);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 15), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyepurple); }
 
 
         FoxBlocks.blockLogger.info("Hi Dad!");
