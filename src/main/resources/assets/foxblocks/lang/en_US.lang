@@ -111,8 +111,6 @@ tile.dryWall_14.name=Magenta Drywall
 tile.dryWall_15.name=Purple Drywall
 tile.unfinishedDrywall.name=Unfinished Drywall
 
-tile.Brown Tile.name=Brown Tile
-
 tile.fiberglass_0.name=Horizontal Contained Fibreglass
 tile.fiberglass_1.name=Vertical Contained Fibreglass
 tile.fiberglass_2.name=Fibreglass Insulation
@@ -286,6 +284,7 @@ tile.hariesh.name=funny brit cubeoid blocc
 tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)
 tile.BlockOLavaBucket.name=Block of Lava Bucket
+tile.T Hanos.name=T Hanos Cube
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

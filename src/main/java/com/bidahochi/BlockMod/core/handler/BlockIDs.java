@@ -39,8 +39,11 @@ public enum BlockIDs {
     peagravel(false,null, "peagravel"),
     peagravel_shit(false, null, "Dirty Pea Gravel"),
     gravel_shit(false, null, "Dirty Gravel"),
+
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
+    tHanos(false,null,"T Hanos"),
+
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
     //brownTile(false, null, "Brown Tile"),
