@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod;
 
 
 import com.bidahochi.BlockMod.core.handler.*;
+import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -66,6 +67,6 @@ public class FoxBlocks
         oreDictHandler.registerOreDict();
         GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
 
-
+        GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.harieshHead.block, 0, 200, 15, 7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
     }
 }

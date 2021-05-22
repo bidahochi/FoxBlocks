@@ -38,6 +38,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
+
 public class blockHandler {
     public static CreativeTabs foxBlocksCreativeTab;
 
@@ -145,4 +146,5 @@ public class blockHandler {
             GameRegistry.registerBlock(blockReg.block, blockReg.blockName);
         }
     }
+
 }

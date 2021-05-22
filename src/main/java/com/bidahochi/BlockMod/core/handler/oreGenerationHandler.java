@@ -24,12 +24,14 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import com.bidahochi.BlockMod.core.handler.OreGen;
 
 import java.util.Random;
 
@@ -59,6 +61,7 @@ public class oreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.cobaltOre.block, world, rand, x, z, 2, 7, 6, 40, 80, Blocks.stone);
         generateOre(BlockIDs.soapStone.block, world, rand, x, z, 45, 74, 5, 5, 128, Blocks.stone);
         generateOre(BlockIDs.gypsum.block, world, rand, x, z, 6, 15, 15, 55, 75, Blocks.stone);
+
     }
     public void generateOverworld2(World world, Random rand, int x, int z){
         generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 5, 1, 85, BlockIDs.soapStone.block);
@@ -71,6 +74,7 @@ public class oreGenerationHandler implements IWorldGenerator {
         //generateOre(BlockIDs.soapStone.block, world, rand, x, z, 65, 136, 7, 40, 133, Blocks.netherrack);
         //generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 45, 4, 123, BlockIDs.soapStone.block);
     }
+
 
     public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block generateIn) {
         int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);
