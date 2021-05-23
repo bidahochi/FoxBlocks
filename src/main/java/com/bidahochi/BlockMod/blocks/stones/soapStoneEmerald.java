@@ -9,9 +9,9 @@ import net.minecraft.world.World;
 
 
 public class soapStoneEmerald extends Block {
-
     public soapStoneEmerald(Material p_i45394_1_) {
         super(p_i45394_1_);
+
         setBlockName("Emerald Soapstone Ore");
         setHardness(2.5F);
         setResistance(5.0F);

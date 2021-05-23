@@ -53,7 +53,8 @@ public class OreGen implements IWorldGenerator{
 		return this;
 	}
 
-	public void registerOreGen(OreGen veinConfig, int priority){
+	public static void registerOreGen(OreGen veinConfig, int priority){
+		GameRegistry.registerWorldGenerator(veinConfig,priority);
 	}
 
 	@Override

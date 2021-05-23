@@ -57,7 +57,8 @@ public class FoxBlocks
                 return  Item.getItemFromBlock(BlockIDs.bauxiteOre.block); }
             public String getTranslatedTabLabel() {
                 return "FoxBlocks - Unsorted";
-            }};
+                }
+        };
 
         //registration os things that run things
         blockHandler.initBlockRegister();
@@ -65,8 +66,13 @@ public class FoxBlocks
         itemHandler.initItemRegister();
         recipeHandler.initBlockRecipes();
         oreDictHandler.registerOreDict();
-        GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
 
-        GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.harieshHead.block, 0, 200, 15, 7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
+        GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
+        GameRegistry.registerWorldGenerator(new oreGenerationHandler2(), 10);
+
+
+
+        GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0,255,15,7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null), 7);
+        //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.harieshHead.block, 0, 200, 15, 7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
     }
 }
