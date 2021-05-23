@@ -39,6 +39,7 @@ public enum BlockIDs {
     peagravel(false,null, "peagravel"),
     peagravel_shit(false, null, "Dirty Pea Gravel"),
     gravel_shit(false, null, "Dirty Gravel"),
+    specialDirt(false, null, "SpecialDirt"),
 
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),

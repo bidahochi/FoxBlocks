@@ -11,6 +11,7 @@ tile.Snowy Pea Gravel.name=Snowy Pea Gravel
 tile.Pea Gravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
 tile.Dirty Gravel.name=Dirty Gravel
+tile.SpecialDirt.name=Ungrowable Dirt
 
 tile.metalSiding_3.name=White Vertical Sheet Metal Siding
 tile.metalSiding_2.name=Light Vertical Sheet Grey Metal Siding
@@ -111,8 +112,8 @@ tile.dryWall_14.name=Magenta Drywall
 tile.dryWall_15.name=Purple Drywall
 tile.unfinishedDrywall.name=Unfinished Drywall
 
-tile.fiberglass_0.name=Horizontal Contained Fibreglass
-tile.fiberglass_1.name=Vertical Contained Fibreglass
+tile.fiberglass_0.name=Vertical Contained Fibreglass
+tile.fiberglass_1.name=Horizontal Contained Fibreglass
 tile.fiberglass_2.name=Fibreglass Insulation
 
 tile.wallPaper_0.name=Cherry Wallpaper
