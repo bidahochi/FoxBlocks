@@ -2,6 +2,7 @@
 tile.Bauxite Ore.name=Bauxite Ore
 tile.Gypsum.name=Raw Gypsum
 tile.Cobalt Ore.name=Cobalt Ore
+tile.PlaceholderOre.name=Placeholder Ore (WIP)
 
 tile.Raw Concrete.name=Raw Concrete
 tile.Layered Concrete.name=Layered Concrete
@@ -12,6 +13,7 @@ tile.Pea Gravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
 tile.Dirty Gravel.name=Dirty Gravel
 tile.SpecialDirt.name=Ungrowable Dirt
+tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
 
 tile.metalSiding_3.name=White Vertical Sheet Metal Siding
 tile.metalSiding_2.name=Light Vertical Sheet Grey Metal Siding

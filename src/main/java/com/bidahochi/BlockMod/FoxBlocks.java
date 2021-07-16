@@ -8,6 +8,7 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +19,7 @@ public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.0.3";
+    public static final String VERSION = "1.0.4";
     public static CreativeTabs foxBlocksCreativeTab;
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
@@ -70,9 +71,10 @@ public class FoxBlocks
         GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
         GameRegistry.registerWorldGenerator(new oreGenerationHandler2(), 10);
 
-
-
         GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0,255,15,7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null), 7);
-        //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.harieshHead.block, 0, 200, 15, 7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
+        //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0, 200, 25, 2,10).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
+        //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneMagmatic.block, 0, 200, 25, 5,2).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
+        //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneMagmatic.block, 0, 200, 15, 7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
+        //GameRegistry.registerWorldGenerator(new OreGen(Blocks.air, 0, 200, 25, 32,1).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
     }
 }

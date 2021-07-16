@@ -50,6 +50,7 @@ public class blockHandler {
         //ores
         BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
         BlockIDs.cobaltOre.block = new cobaltOre(Material.rock);
+        BlockIDs.placeholderOre.block = new PlaceholderOre(Material.rock);
 
         BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
@@ -57,6 +58,7 @@ public class blockHandler {
         BlockIDs.peagravel_shit.block = new PeaGravelDirty(Material.sand);
         BlockIDs.gravel_shit.block = new GravelDirty(Material.sand);
         BlockIDs.specialDirt.block = new specialDirt(Material.ground);
+        BlockIDs.peagravelBallast.block = new PeaGravelBallast(Material.sand);
 
         BlockIDs.although.block = new Although(Material.clay);
         BlockIDs.testblock.block = new testBlock(Material.iron);

@@ -192,6 +192,9 @@ public class recipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel_shit.block, 2), new ItemStack(BlockIDs.peagravel.block, 1), Blocks.dirt);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.gravel_shit.block, 2), Blocks.gravel, Blocks.dirt);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.specialDirt.block, 2), Blocks.dirt, Blocks.dirt);
+        for (ItemStack dyeblack : dyeBlack){
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravelBallast.block, 1), BlockIDs.peagravel.block, dyeblack);
+        }
 
         //sheet metal sidings - oredictionary plateIron doesnt seem to work, please look into
         //apparently the plateiron recipe works on servers but not singleplayer?
