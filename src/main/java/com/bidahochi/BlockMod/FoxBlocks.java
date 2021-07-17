@@ -55,7 +55,7 @@ public class FoxBlocks
 
         foxBlocksCreativeTab = new CreativeTabs("FoxBlocks - Unsorted") {
             public Item getTabIconItem() {
-                return  Item.getItemFromBlock(BlockIDs.bauxiteOre.block); }
+                return  Item.getItemFromBlock(BlockIDs.tHanos.block); }
             public String getTranslatedTabLabel() {
                 return "FoxBlocks - Unsorted";
                 }

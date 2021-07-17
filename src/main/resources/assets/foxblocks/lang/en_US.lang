@@ -283,6 +283,52 @@ tile.widePlank2_13.name=Horizontal Wide Pink Planking
 tile.widePlank2_14.name=Horizontal Wide Magenta Planking
 tile.widePlank2_15.name=Horizontal Wide Purple Planking
 
+tile.widePlank3_0.name=Vertical Wide Oak Planks
+tile.widePlank3_1.name=Vertical Wide Birch Planks
+tile.widePlank3_2.name=Vertical Wide Spruce Planks
+tile.widePlank3_3.name=Vertical Wide Jungle Planks
+tile.widePlank3_4.name=Vertical Wide Dark Oak Planks
+tile.widePlank3_5.name=Vertical Wide Acacia Planks
+tile.widePlank3_6.name=Horizontal Wide Oak Planks
+tile.widePlank3_7.name=Horizontal Wide Birch Planks
+tile.widePlank3_8.name=Horizontal Wide Spruce Planks
+tile.widePlank3_9.name=Horizontal Wide Jungle Planks
+tile.widePlank3_10.name=Horizontal Wide Dark Oak Planks
+tile.widePlank3_11.name=Horizontal Wide Acacia Planks
+
+tile.plasteredConcrete_0.name=Plain Wall Plaster
+tile.plasteredConcrete_1.name=Blu Wall Plaster
+tile.plasteredConcrete_2.name=Thick Blu Trim Wall Plaster
+tile.plasteredConcrete_3.name=Thin Blu Trim Wall Plaster
+tile.plasteredConcrete_4.name=Red Wall Plaster
+tile.plasteredConcrete_5.name=Thick Red Trim Wall Plaster
+tile.plasteredConcrete_6.name=Thin Red Wall Plaster
+tile.plasteredConcrete_7.name=Burgundy Wall Plaster
+tile.plasteredConcrete_8.name=Sad Lame Greyish Wall Plaster
+
+tile.concreteFloor_0.name=Tan Concrete Flooring
+tile.concreteFloor_1.name=Rough Concrete Flooring
+tile.concreteFloor_2.name=Red Concrete Flooring
+tile.concreteFloor_3.name=Blu Concrete Flooring
+tile.concreteFloor_4.name=Stale Grey Concrete Flooring
+
+tile.concreteBrick_0.name=Blu Team Concrete Brick
+tile.concreteBrick_1.name=Red Team Concrete Brick
+tile.concreteBrick_2.name=Blu Team Trimmed Concrete Brick
+tile.concreteBrick_3.name=Red Team Trimmed Concrete Brick
+tile.concreteBrick_4.name=Stacked Concrete Brick
+tile.concreteBrick_5.name=Blu Team Stacked Concrete Brick
+tile.concreteBrick_6.name=Red Team Stacked Concrete Brick
+
+tile.labwalllight_0.name=Light Labwall Tile
+tile.labwalllight_1.name=Light Labwall Double Tile
+tile.labwalllight_2.name=Light Labwall Tripple Tile
+tile.labwalllight_3.name=Light Labwall Sextuple Tile
+tile.labwalldark_0.name=Dark Labwall Tile
+tile.labwalldark_1.name=Dark Labwall Horizontal Framed Tile
+tile.labwalldark_2.name=Dark Labwall Vertical Framed Tile
+tile.labwalldark_3.name=Dark Labwall Half Tile
+
 tile.hariesh.name=funny brit cubeoid blocc
 tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)

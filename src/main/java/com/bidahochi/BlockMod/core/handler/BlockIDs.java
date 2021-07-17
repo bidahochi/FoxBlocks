@@ -102,6 +102,13 @@ public enum BlockIDs {
 
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
     widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
+    widePlank3(true, ItemBlockwidePlank3.class, "widePlank3"),
+
+    concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick"),
+    plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete"),
+    concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor"),
+    labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
+    labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
     ;
 
     public Block block;

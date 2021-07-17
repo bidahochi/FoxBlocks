@@ -118,6 +118,13 @@ public class blockHandler {
 
         BlockIDs.widePlank.block = new widePlank(Material.wood);
         BlockIDs.widePlank2.block = new widePlank2(Material.wood);
+        BlockIDs.widePlank3.block = new widePlank3(Material.wood);
+
+        BlockIDs.concreteBrick.block = new concreteBrick(Material.rock);
+        BlockIDs.concreteFlooring.block = new concreteFloor(Material.rock);
+        BlockIDs.plasteredConcrete.block = new plasteredConcrete(Material.rock);
+        BlockIDs.labwallDark.block = new labwallDark(Material.rock);
+        BlockIDs.labwallLight.block = new labwallLight(Material.rock);
 
         for (BlockIDs block : BlockIDs.values()) {
 
