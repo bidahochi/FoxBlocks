@@ -44,7 +44,7 @@ public class oreGenerationHandler implements IWorldGenerator {
                 break;
             case 0:
                 generateOverworld(world, random, chunkX, chunkZ);
-                generateOverworld2(world, random, chunkX, chunkZ);
+                //generateOverworld2(world, random, chunkX, chunkZ);
                 break;
             case -1:
                 generateNether(world, random, chunkX, chunkZ);
@@ -65,10 +65,10 @@ public class oreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.placeholderOre.block, world, rand, x, z, 20, 45, 2, 2, 80, Blocks.stone);
 
     }
-    public void generateOverworld2(World world, Random rand, int x, int z){
+    /*public void generateOverworld2(World world, Random rand, int x, int z){
         generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 7, 1, 85, BlockIDs.soapStone.block);
         generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 1, 2, 7, 4, 31, BlockIDs.soapStone.block);
-    }
+    }*/
 
     public void generateNether(World world, Random rand, int x, int z){
         generateOre(BlockIDs.emberStone.block, world, rand, x, z, 10, 20, 15, 20, 80, Blocks.netherrack);

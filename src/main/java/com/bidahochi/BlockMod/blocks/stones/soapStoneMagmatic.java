@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 
 public class soapStoneMagmatic extends Block {
-
     public soapStoneMagmatic(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Magmatic Soapstone");
