@@ -2,13 +2,11 @@ package com.bidahochi.BlockMod;
 
 
 import com.bidahochi.BlockMod.core.handler.*;
-import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -62,14 +60,14 @@ public class FoxBlocks
         };
 
         //registration os things that run things
-        blockHandler.initBlockRegister();
+        BlockHandler.initBlockRegister();
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
-        itemHandler.initItemRegister();
-        recipeHandler.initBlockRecipes();
-        oreDictHandler.registerOreDict();
+        ItemHandler.initItemRegister();
+        RecipeHandler.initBlockRecipes();
+        OreDictHandler.registerOreDict();
 
-        GameRegistry.registerWorldGenerator(new oreGenerationHandler(), 0);
-        GameRegistry.registerWorldGenerator(new oreGenerationHandler2(), 10);
+        GameRegistry.registerWorldGenerator(new OreGenerationHandler(), 0);
+        GameRegistry.registerWorldGenerator(new OreGenerationHandler2(), 10);
 
         GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0,255,15,7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null), 7);
         //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0, 200, 25, 2,10).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
