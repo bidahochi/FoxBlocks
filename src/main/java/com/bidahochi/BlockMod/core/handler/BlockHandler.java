@@ -31,6 +31,7 @@ import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
+import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -111,8 +112,8 @@ public class BlockHandler {
         BlockIDs.cobaltPanel2.block = new CobaltPanel2(Material.rock);
         BlockIDs.cobaltBrick.block = new CobaltBrick(Material.rock);
         BlockIDs.largeCobaltBrick.block = new LargeCobaltBrick(Material.rock);
-        BlockIDs.blue.block = new BaseBlock("Blue Block",1F,1F,"pickaxe",0,Material.glass, Block.soundTypeGlass, "colour/blue");
-        BlockIDs.green.block = new BaseBlock("Green Block",1F,1F,"pickaxe",0,Material.glass, Block.soundTypeGlass, "colour/green");
+        BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
+        BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
 
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
         BlockIDs.widePlank2.block = new WidePlank2(Material.wood);
@@ -123,6 +124,9 @@ public class BlockHandler {
         BlockIDs.plasteredConcrete.block = new PlasteredConcrete(Material.rock);
         BlockIDs.labwallDark.block = new LabwallDark(Material.rock);
         BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
+        BlockIDs.breakerBox.block = new BreakerBox(Material.rock);
+        GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new TileBreakerBox.RenderBreakerBox());
 
         for (BlockIDs block : BlockIDs.values()) {
 
@@ -147,7 +151,7 @@ public class BlockHandler {
         for (BlockProperties blockReg : BlockProperties.values()) {
             String nameOfBlock = blockReg.blockName;
             Block blockOfReg = blockReg.block;
-            BlockProperties.valueOf(nameOfBlock).block = new BaseBlock(blockReg.blockName,blockReg.hardness,blockReg.resistance,blockReg.harvestTool,blockReg.harvestLevel,blockReg.material,blockReg.sound,blockReg.textureLocation);
+            BlockProperties.valueOf(nameOfBlock).block = new BaseBlock(blockReg.material, blockReg.blockName, blockReg.hardness, blockReg.resistance, blockReg.harvestTool, blockReg.harvestLevel, blockReg.sound, blockReg.textureLocation);
         }
 
         for (BlockProperties blockReg : BlockProperties.values()){

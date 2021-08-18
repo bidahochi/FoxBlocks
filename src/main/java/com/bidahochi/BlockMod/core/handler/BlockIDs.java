@@ -109,6 +109,8 @@ public enum BlockIDs {
     concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor"),
     labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
     labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
+
+    breakerBox(false, null, "breakerBox"),
     ;
 
     public Block block;

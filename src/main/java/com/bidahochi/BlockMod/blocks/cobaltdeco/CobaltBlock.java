@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 public class CobaltBlock extends BaseBlock {
 
     public CobaltBlock(Material material) {
-        super("cobaltBlock", 10F, 8.5F, "pickaxe", 2, material, soundTypeStone, FoxBlocks.MODID + ":constructionmaterials/cobaltdeco/cobalt_block");
+        super(material, "cobaltBlock", 10F, 8.5F, "pickaxe", 2, soundTypeStone, FoxBlocks.MODID + ":constructionmaterials/cobaltdeco/cobalt_block");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
 
