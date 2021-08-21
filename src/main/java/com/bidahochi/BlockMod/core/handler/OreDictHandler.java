@@ -40,6 +40,7 @@ public class OreDictHandler {
         OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.smoothCrete.block));
         OreDictionary.registerOre("gypsumDust", new ItemStack(ItemIDs.gypsumDust.item));
         OreDictionary.registerOre("ceramic", new ItemStack(ItemIDs.ceramic.item));
+        OreDictionary.registerOre("oreVietnam", new ItemStack(BlockIDs.tHanos.block));
 
         FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 

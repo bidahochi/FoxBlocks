@@ -2,7 +2,8 @@
 tile.Bauxite Ore.name=Bauxite Ore
 tile.Gypsum.name=Raw Gypsum
 tile.Cobalt Ore.name=Cobalt Ore
-tile.PlaceholderOre.name=Placeholder Ore (WIP)
+tile.PlaceholderOre.name=Aragonite Ore
+tile.AragoniteOre.name=Aragonite Ore
 
 tile.Raw Concrete.name=Raw Concrete
 tile.Layered Concrete.name=Layered Concrete
@@ -334,6 +335,8 @@ tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)
 tile.BlockOLavaBucket.name=Block of Lava Bucket
 tile.T Hanos.name=T Hanos Cube
+
+tile.breakerBox.name=Electrical Breaker Box
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

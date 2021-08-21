@@ -11,13 +11,13 @@ public class PlaceholderOre extends Block {
 
     public PlaceholderOre(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("PlaceholderOre");
+        setBlockName("AragoniteOre");
         setHardness(2F);
-        setResistance(3.0F);
-        setHarvestLevel("pickaxe", 4);
+        setResistance(1.5F);
+        setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypePiston);
-        setBlockTextureName(FoxBlocks.MODID+":Placeholder");
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
+        setBlockTextureName(FoxBlocks.MODID+":stones/aragonite_ore");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
 
     }
 

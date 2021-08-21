@@ -59,10 +59,10 @@ public class OreGenerationHandler implements IWorldGenerator {
     public void generateOverworld(World world, Random rand, int x, int z){
         generateOre(BlockIDs.bauxiteOre.block, world, rand, x, z, 3, 10, 7, 20, 80, Blocks.stone);
         generateOre(BlockIDs.cobaltOre.block, world, rand, x, z, 2, 7, 10, 40, 80, Blocks.stone);
-        generateOre(BlockIDs.soapStone.block, world, rand, x, z, 45, 74, 5, 5, 128, Blocks.stone);
+        generateOre(BlockIDs.soapStone.block, world, rand, x, z, 45, 74, 4, 5, 128, Blocks.stone);
         generateOre(BlockIDs.gypsum.block, world, rand, x, z, 6, 15, 15, 55, 75, Blocks.stone);
         //generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 4,8,25 ,5,128, BlockIDs.soapStone.block);
-        generateOre(BlockIDs.placeholderOre.block, world, rand, x, z, 20, 45, 2, 2, 80, Blocks.stone);
+        generateOre(BlockIDs.placeholderOre.block, world, rand, x, z, 20, 45, 1, 2, 80, Blocks.stone);
 
     }
     /*public void generateOverworld2(World world, Random rand, int x, int z){

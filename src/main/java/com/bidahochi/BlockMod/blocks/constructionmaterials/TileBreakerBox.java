@@ -31,30 +31,49 @@ public class TileBreakerBox extends TileEntity {
            // GL11.glTranslated(x + 0.25, y - 1, z + 0.5);
             //GL11.glTranslated(x, y - 1, z);
             //GL11.glTranslated(5, 0 , 0);
-           /* int dir = ((TileBreakerBox)tileEntity).dir;
+            int dir = ((TileBreakerBox)tileEntity).dir;
             System.out.println(dir);
             switch(dir) {
-                case 0:
-                case 3: {
-                    GL11.glRotatef(180F, 1F, 0F, 0F);
-                    //GL11.glRotatef(0F, 1F, 0F, 1F);
+                case 0:{//west
+                    //GL11.glRotated(180,0,0,1);
+                    GL11.glRotated(180,0,1,0);
+                   // GL11.glTranslated(-0.5,0,0.0);//to be centered
+                    GL11.glTranslated(-0.25,0,0.0);
                     break;
                 }
-                case 1: {
-                    GL11.glRotatef(180F, 1F, 0F, 1F);
+                case 3: {//south?
+                    //-GL11.glRotatef(180F, 1F, 0F, 0F);
                     //GL11.glRotatef(0F, 1F, 0F, 1F);
+                    //GL11.glRotated(180,0,1,0);
+                    GL11.glRotated(90,0,1,0);
+                   // GL11.glTranslated(-0.25,0,0.25);//to be centered
+                    GL11.glTranslated(0.0,0,0.25);
                     break;
                 }
-                case 2: {
-                    GL11.glRotatef(180, 1, 0, 0);
+                case 1: {//north
+                    //-GL11.glRotatef(180F, 1F, 0F, 1F);
+                    //GL11.glRotatef(0F, 1F, 0F, 1F);
+                    //GL11.glRotated(180,0,0,1);
+                    GL11.glRotated(270,0,1,0);
+                    //GL11.glTranslated(-0.25,0,-0.25);//to be centered
+                    GL11.glTranslated(-0.0,0,-0.25);
+                    break;
+                }
+                case 2: {//east
+                    //-GL11.glRotatef(180, 1, 0, 0);
                    // GL11.glRotatef(90, 0, 0, 1);
-                   *//* GL11.glRotatef(180, 1F, 0F, 0F);
-                    GL11.glRotatef(180, -1F, 0F, 0F);*//*
+                   // GL11.glRotatef(180, 1F, 0F, 0F);
+                    //-GL11.glRotatef(180, -1F, 0F, 0F);
                     //GL11.glRotatef(0F, 1F, 0F, 1F);
+                    GL11.glRotated(180,0,1,0);
+                    GL11.glRotated(180,0,1,0);
+                    //GL11.glTranslated(0,0,0);//to be centered
+                    GL11.glTranslated(0.25,0,-0.0);
                     break;
                 }
             }
-            //GL11.glTranslated(-5, 0 , 0);*/
+
+            //GL11.glTranslated(-5, 0 , 0);
             breakerBox.render(null, 0, 0, 0, 0, 0, 0.0625f);
             GL11.glPopMatrix();
         }
