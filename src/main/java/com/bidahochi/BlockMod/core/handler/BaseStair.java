@@ -7,9 +7,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class baseStair extends BlockStairs{
+public class BaseStair extends BlockStairs{
 
-    public baseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, float blockResistance , SoundType stepSound, String harvestTool, int harvestLevel, float lightValue, CreativeTabs creativeTabs) {
+    public BaseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, float blockResistance , SoundType stepSound, String harvestTool, int harvestLevel, float lightValue, CreativeTabs creativeTabs) {
         super(p_i45428_1_, p_i45428_2_);
         setBlockName(name);
         setHardness(hardness);

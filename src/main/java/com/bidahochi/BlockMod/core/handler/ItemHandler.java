@@ -19,6 +19,7 @@ public class ItemHandler {
         ItemIDs.cobaltIngot.item = new cobaltIngot();
         ItemIDs.lowDensityCompound.item = new lowDensityCompound();
         ItemIDs.rust.item = new rust();
+        ItemIDs.aragoniteClump.item = new aragoniteClump();
 
 
         for (ItemIDs items : ItemIDs.values()) {

@@ -6,10 +6,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class baseBlock extends Block {
+public class BaseBlock extends Block {
 
 
-    public baseBlock(Material material, String name, float hardness, float resistance, String harvestTool, int harvestLevel, Block.SoundType stepSound, String textureLocation) {
+    public BaseBlock(Material material, String name, float hardness, float resistance, String harvestTool, int harvestLevel, Block.SoundType stepSound, String textureLocation) {
         super(material);
         setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
         setBlockName(name);

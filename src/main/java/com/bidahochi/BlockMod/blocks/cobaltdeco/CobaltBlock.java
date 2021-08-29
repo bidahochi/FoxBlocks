@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.cobaltdeco;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.baseBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;

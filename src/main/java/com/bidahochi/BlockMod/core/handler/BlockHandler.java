@@ -93,18 +93,19 @@ public class BlockHandler {
         BlockIDs.smoothCrete.block = new Smoothcrete(Material.rock);
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
 
-        BlockIDs.emberStoneStair.block = new baseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F,Block.soundTypeStone,"pickaxe",2,0, FoxBlocks.foxBlocksCreativeTabRock);
-        BlockIDs.darkEmberStoneStair.block = new baseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F,Block.soundTypeStone, "pickaxe",2, 0, FoxBlocks.foxBlocksCreativeTabRock);
-        BlockIDs.soapStoneStair.block = new baseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, FoxBlocks.foxBlocksCreativeTabRock);
+        BlockIDs.emberStoneStair.block = new BaseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F,Block.soundTypeStone,"pickaxe",2,0, FoxBlocks.foxBlocksCreativeTabRock);
+        BlockIDs.darkEmberStoneStair.block = new BaseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F,Block.soundTypeStone, "pickaxe",2, 0, FoxBlocks.foxBlocksCreativeTabRock);
+        BlockIDs.soapStoneStair.block = new BaseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, FoxBlocks.foxBlocksCreativeTabRock);
 
-        BlockIDs.emberStoneSlab.block = new baseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone", FoxBlocks.foxBlocksCreativeTabRock);
-        BlockIDs.darkEmberStoneSlab.block = new baseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone", FoxBlocks.foxBlocksCreativeTabRock);
-        BlockIDs.soapStoneSlab.block = new baseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, "stones/soapstone", FoxBlocks.foxBlocksCreativeTabRock);
+        BlockIDs.emberStoneSlab.block = new BaseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone", FoxBlocks.foxBlocksCreativeTabRock);
+        BlockIDs.darkEmberStoneSlab.block = new BaseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone", FoxBlocks.foxBlocksCreativeTabRock);
+        BlockIDs.soapStoneSlab.block = new BaseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, "stones/soapstone", FoxBlocks.foxBlocksCreativeTabRock);
 
         BlockIDs.tile4.block = new Tile4(Material.rock);
         BlockIDs.tile2x2.block = new Tile2x2(Material.rock);
         BlockIDs.tile2x2smooth.block = new Tile2x2smooth(Material.rock);
         BlockIDs.diamondTile.block = new DiamondTile(Material.rock);
+        BlockIDs.subTile.block = new SubTile(Material.rock);
 
         //cobalt deco blocks
         BlockIDs.cobaltBlock.block = new CobaltBlock(Material.rock);
@@ -112,12 +113,13 @@ public class BlockHandler {
         BlockIDs.cobaltPanel2.block = new CobaltPanel2(Material.rock);
         BlockIDs.cobaltBrick.block = new CobaltBrick(Material.rock);
         BlockIDs.largeCobaltBrick.block = new LargeCobaltBrick(Material.rock);
-        BlockIDs.blue.block = new baseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
-        BlockIDs.green.block = new baseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
+        BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
+        BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
 
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
         BlockIDs.widePlank2.block = new WidePlank2(Material.wood);
         BlockIDs.widePlank3.block = new WidePlank3(Material.wood);
+        BlockIDs.amtrak.block = new Amtrak(Material.wood);
 
         BlockIDs.concreteBrick.block = new ConcreteBrick(Material.rock);
         BlockIDs.concreteFlooring.block = new ConcreteFloor(Material.rock);
@@ -151,7 +153,7 @@ public class BlockHandler {
         for (BlockProperties blockReg : BlockProperties.values()) {
             String nameOfBlock = blockReg.blockName;
             Block blockOfReg = blockReg.block;
-            BlockProperties.valueOf(nameOfBlock).block = new baseBlock(blockReg.material, blockReg.blockName, blockReg.hardness, blockReg.resistance, blockReg.harvestTool, blockReg.harvestLevel, blockReg.sound, blockReg.textureLocation);
+            BlockProperties.valueOf(nameOfBlock).block = new BaseBlock(blockReg.material, blockReg.blockName, blockReg.hardness, blockReg.resistance, blockReg.harvestTool, blockReg.harvestLevel, blockReg.sound, blockReg.textureLocation);
         }
 
         for (BlockProperties blockReg : BlockProperties.values()){

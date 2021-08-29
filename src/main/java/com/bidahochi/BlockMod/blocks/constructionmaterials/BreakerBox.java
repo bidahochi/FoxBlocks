@@ -26,10 +26,10 @@ public class BreakerBox extends BlockContainer {
         return new TileBreakerBox(dir);
     }
 
-    @Override
+   /* @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack) {
         dir = MathHelper.floor_double((player.rotationYaw * 4F) / 360F + 0.5D) & 3;
-    }
+    }*/
 
     @Override
     public boolean hasTileEntity(int metadata) {
@@ -49,5 +49,16 @@ public class BreakerBox extends BlockContainer {
     @Override
     public boolean renderAsNormalBlock(){
         return false;
+    }
+
+    @Override
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
+        super.onBlockPlacedBy(world, x, y, z, entity, stack);
+        //force tile spawn manually and override any existing tile at the space
+        world.setTileEntity(x,y,z,createNewTileEntity(world,0));
+        if(world.getTileEntity(x,y,z) instanceof TileBreakerBox){
+            ((TileBreakerBox) world.getTileEntity(x,y,z)).setFacing(
+                    MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3);
+        }
     }
 }

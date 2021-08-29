@@ -9,9 +9,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-public class baseSlab extends BlockSlab {
+public class BaseSlab extends BlockSlab {
 
-    public baseSlab(boolean p_i45410_1_, Material p_i45410_2_, String name, float hardness, float blockResistance , SoundType stepSound, String harvestTool, int harvestLevel, float lightValue, String textureName, CreativeTabs creativeTabs) {
+    public BaseSlab(boolean p_i45410_1_, Material p_i45410_2_, String name, float hardness, float blockResistance , SoundType stepSound, String harvestTool, int harvestLevel, float lightValue, String textureName, CreativeTabs creativeTabs) {
         super(p_i45410_1_, p_i45410_2_);
         setBlockName(name);
         setHardness(hardness);

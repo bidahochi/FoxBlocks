@@ -204,6 +204,12 @@ tile.diamond Tile_13.name=Pink Diamond Tile
 tile.diamond Tile_14.name=Magenta Diamond Tile
 tile.diamond Tile_15.name=Purple Diamond Tile
 
+tile.SubTile_0.name=Sub-Terrain Tile (2x3, Borderless)
+tile.SubTile_1.name=Sub-Terrain Tile (2x3, Bordered)
+tile.SubTile_2.name=Sub-Terrain Tile (Brick)
+tile.SubTile_3.name=Sub-Terrain Tile (2x2 Dark)
+tile.SubTile_4.name=Sub-Terrain Tile (2x2 Light)
+
 tile.fireBrick.name=Firebrick Block
 
 tile.Soapstone.name=Raw Soapstone
@@ -297,6 +303,10 @@ tile.widePlank3_9.name=Horizontal Wide Jungle Planks
 tile.widePlank3_10.name=Horizontal Wide Dark Oak Planks
 tile.widePlank3_11.name=Horizontal Wide Acacia Planks
 
+tile.Amshak_0.name=Grey Planks of the Amshack
+tile.Amshak_1.name=Blue Striped Planks of the Amshack
+tile.Amshak_2.name=Red Striped Planks of the Amshack
+
 tile.plasteredConcrete_0.name=Plain Wall Plaster
 tile.plasteredConcrete_1.name=Blu Wall Plaster
 tile.plasteredConcrete_2.name=Thick Blu Trim Wall Plaster
@@ -345,3 +355,4 @@ item.foxblocks:ceramic.name=Ceramic
 item.foxblocks:cobalt_ingot.name=Cobalt Ingot
 item.foxblocks:lowdensitycompound.name=Soapstone-Based Low Density Moonrock Compound Substitute
 item.foxblocks:rust.name=Artificial Rust
+item.foxblocks:aragoniteClump.name=Clump of Aragonite

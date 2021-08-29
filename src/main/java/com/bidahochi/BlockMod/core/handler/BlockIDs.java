@@ -91,6 +91,7 @@ public enum BlockIDs {
     tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2"),
     tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth"),
     diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile"),
+    subTile(true, ItemBlockSubTile.class,"SubTile"),
 
     cobaltBlock(false,null,"cobaltBlock"),
     cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
@@ -103,6 +104,7 @@ public enum BlockIDs {
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
     widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
     widePlank3(true, ItemBlockwidePlank3.class, "widePlank3"),
+    amtrak(true, ItemBlockAmtrak.class, "amshak"),
 
     concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick"),
     plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete"),

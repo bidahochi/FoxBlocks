@@ -12,6 +12,7 @@ public enum ItemIDs {
     cobaltIngot("cobalt_ingot","cobalt_ingot","cobalt_ingot"),
     lowDensityCompound("compound", "lowdensitycompound", "lowdensitycompound"),
     rust("rust", "rust", "rust"),
+    aragoniteClump("aragoniteClump", "aragoniteClump", "aragoniteClump"),
     ;
 
     public Item item;
