@@ -71,6 +71,7 @@ public class TileBreakerBox extends TileEntity {
                     //GL11.glRotatef(0F, 1F, 0F, 1F);
                     GL11.glRotated(180,0,1,0);
                     GL11.glRotated(180,0,1,0);
+                    //GL11.glRotated(90,0,0,1);
                     //GL11.glTranslated(0,0,0);//to be centered
                     GL11.glTranslated(0.0,0,0.25);
                     break;
