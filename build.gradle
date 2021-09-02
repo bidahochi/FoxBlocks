@@ -1,24 +1,19 @@
 buildscript {
-    repositories {
-        maven { url = "https://repo1.maven.org/maven2/" }
-        maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
-    }
-    dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-
-    }
+	repositories {
+		mavenCentral()
+		maven {
+			name = "gt"
+			url = "https://gregtech.overminddl1.com/"
+		}
+	}
+	dependencies {
+		classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+	}
 }
 
 apply plugin: 'forge'
 
-version = "1.0.7"
+version = "1.0.8"
 group= "com.bidahochi.foxblocks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "foxblocks"
 
