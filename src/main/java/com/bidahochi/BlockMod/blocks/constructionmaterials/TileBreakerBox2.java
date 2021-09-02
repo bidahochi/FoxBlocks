@@ -5,87 +5,63 @@ import com.bidahochi.BlockMod.render.models.ModelBreakerBox;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
-import sun.security.ssl.Debug;
 
-public class TileBreakerBox extends TileEntity {
+public class TileBreakerBox2 extends TileEntity {
     public int dir=0;
 
-    public TileBreakerBox(int dir) {
+    public TileBreakerBox2(int dir) {
         super();
         this.dir = dir;
     }
 
-    public TileBreakerBox() {}
+    public TileBreakerBox2() {}
 
     @Override
-    public boolean shouldRenderInPass(int pass){ return pass==0; }
+    public boolean shouldRenderInPass(int pass){
+        return pass==0;
+    }
 
     @SideOnly(Side.CLIENT)
-    public static class RenderBreakerBox extends TileEntitySpecialRenderer {
+    public static class RenderBreakerBox2 extends TileEntitySpecialRenderer {
         private ResourceLocation texture = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/constructionmaterials/breakerbox/breakerbox.png");
         private ModelBreakerBox breakerBox = new ModelBreakerBox();
 
         @Override
         public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
-            if(!(tileEntity instanceof TileBreakerBox)){return;}
+            if(!(tileEntity instanceof TileBreakerBox2)){return;}
             GL11.glPushMatrix();
             Tessellator.bindTexture(texture);
             GL11.glTranslated(x + 0.25, y, z + 0.5);
             GL11.glRotatef(180F, 1F, 0F, 0F);
             GL11.glRotatef(90F, 0F, 1F, 0F);
-           // GL11.glTranslated(x + 0.25, y - 1, z + 0.5);
-            //GL11.glTranslated(x, y - 1, z);
-            //GL11.glTranslated(5, 0 , 0);
-            int dir = ((TileBreakerBox)tileEntity).dir;
+
+            int dir = ((TileBreakerBox2)tileEntity).dir;
             //System.out.println(dir);
             switch(dir) {
-                case 0:{//west // north
-                    //GL11.glRotated(180,0,0,1);
+                case 0:{//north
                     GL11.glRotated(180,0,1,0);
-                   // GL11.glTranslated(-0.5,0,0.0);//to be centered
-                    GL11.glTranslated(-0.0,0,-0.25);
+                    GL11.glTranslated(0.375,0,-0.25);
                     break;
                 }
-                case 3: {//south? //west
-                    //-GL11.glRotatef(180F, 1F, 0F, 0F);
-                    //GL11.glRotatef(0F, 1F, 0F, 1F);
-                    //GL11.glRotated(180,0,1,0);
+                case 3: {//west
                     GL11.glRotated(90,0,1,0);
-                   // GL11.glTranslated(-0.25,0,0.25);//to be centered
-                    GL11.glTranslated(-0.25,0,0.0);
+                    GL11.glTranslated(0.125,0,0.0);
                     break;
                 }
-                case 1: {//north //east
-                    //-GL11.glRotatef(180F, 1F, 0F, 1F);
-                    //GL11.glRotatef(0F, 1F, 0F, 1F);
-                    //GL11.glRotated(180,0,0,1);
+                case 1: {//east
                     GL11.glRotated(270,0,1,0);
-                    //GL11.glTranslated(-0.25,0,-0.25);//to be centered
-                    GL11.glTranslated(0.25,0,-0.0);
+                    GL11.glTranslated(0.625,0,-0.0);
                     break;
                 }
-                case 2: {//east //south
-                    //-GL11.glRotatef(180, 1, 0, 0);
-                   // GL11.glRotatef(90, 0, 0, 1);
-                   // GL11.glRotatef(180, 1F, 0F, 0F);
-                    //-GL11.glRotatef(180, -1F, 0F, 0F);
-                    //GL11.glRotatef(0F, 1F, 0F, 1F);
-                    GL11.glRotated(180,0,1,0);
-                    GL11.glRotated(180,0,1,0);
-                    //GL11.glRotated(90,0,0,1);
-                    //GL11.glTranslated(0,0,0);//to be centered
-                    GL11.glTranslated(0.0,0,0.25);
+                case 2: {//south
+                    GL11.glTranslated(0.375,0,0.25);
                     break;
                 }
             }
@@ -125,7 +101,7 @@ public class TileBreakerBox extends TileEntity {
         }
     }
 
-    public TileBreakerBox setFacing(int direction){
+    public TileBreakerBox2 setFacing(int direction){
         dir=(byte) direction;
         this.markDirty();
         return this;

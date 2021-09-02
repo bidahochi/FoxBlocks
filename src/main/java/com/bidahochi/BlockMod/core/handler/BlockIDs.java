@@ -113,6 +113,7 @@ public enum BlockIDs {
     labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
 
     breakerBox(false, null, "breakerBox"),
+    breakerBox2(false, null, "breakerBox2"),
     ;
 
     public Block block;

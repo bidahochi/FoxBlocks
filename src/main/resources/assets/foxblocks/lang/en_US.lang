@@ -346,7 +346,8 @@ tile.testblock.name=testBlock Tile (no touch)
 tile.BlockOLavaBucket.name=Block of Lava Bucket
 tile.T Hanos.name=T Hanos Cube
 
-tile.breakerBox.name=Electrical Breaker Box
+tile.breakerBox.name=Electrical Breaker Box (Block Centered)
+tile.breakerBox2.name=Electrical Breaker Box (Fence Centered)
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

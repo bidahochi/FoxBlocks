@@ -32,6 +32,7 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -41,7 +42,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class BlockHandler {
     public static CreativeTabs foxBlocksCreativeTab;
 
-    public static void initBlockRegister(){
+    public static void initBlockRegister(FMLInitializationEvent e){
 
         FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
@@ -127,8 +128,16 @@ public class BlockHandler {
         BlockIDs.labwallDark.block = new LabwallDark(Material.rock);
         BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
         BlockIDs.breakerBox.block = new BreakerBox(Material.rock);
+        BlockIDs.breakerBox2.block = new BreakerBox2(Material.rock);
+
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
-        ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new TileBreakerBox.RenderBreakerBox());
+        if(e.getSide().isClient()) {
+            ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new TileBreakerBox.RenderBreakerBox());
+        }
+        GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
+        if(e.getSide().isClient()) {
+            ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox2.class, new TileBreakerBox2.RenderBreakerBox2());
+        }
 
         for (BlockIDs block : BlockIDs.values()) {
 

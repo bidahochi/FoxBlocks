@@ -4,6 +4,7 @@ package com.bidahochi.BlockMod;
 import com.bidahochi.BlockMod.core.handler.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
@@ -26,8 +27,7 @@ public class FoxBlocks
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
 
     @EventHandler
-    public void init(FMLPreInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
         //Initalize blocc tabs.
         blockLogger.info("FoxBlocks starting with it's big floofy tail");
 
@@ -60,7 +60,7 @@ public class FoxBlocks
         };
 
         //registration os things that run things
-        BlockHandler.initBlockRegister();
+        BlockHandler.initBlockRegister(event);
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         ItemHandler.initItemRegister();
         RecipeHandler.initBlockRecipes();

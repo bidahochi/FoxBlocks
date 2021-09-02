@@ -9,10 +9,10 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class BreakerBox extends BlockContainer {
-    public BreakerBox(Material p_i45394_1_) {
+public class BreakerBox2 extends BlockContainer {
+    public BreakerBox2(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("breakerBox");
+        setBlockName("breakerBox2");
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 2);
@@ -22,7 +22,7 @@ public class BreakerBox extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileBreakerBox();
+        return new TileBreakerBox2();
     }
 
     @Override
@@ -58,6 +58,6 @@ public class BreakerBox extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileBreakerBox(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileBreakerBox2(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 }
