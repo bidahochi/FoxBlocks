@@ -486,6 +486,11 @@ public class RecipeHandler {
                 }
             }
         }
+        //breaker boxes, replace aragonite with electronic circuit eventually
+        for (ItemStack dye1 : dyeLightGray){
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "III", "IAI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), ItemIDs.aragoniteClump, Character.valueOf('D'), dye1);
+        }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.breakerBox2.block, 1), new ItemStack(BlockIDs.breakerBox.block, 1));
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
