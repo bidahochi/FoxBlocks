@@ -59,6 +59,7 @@ public class BlockHandler {
         BlockIDs.gravel_shit.block = new GravelDirty(Material.sand);
         BlockIDs.specialDirt.block = new SpecialDirt(Material.ground);
         BlockIDs.peagravelBallast.block = new PeaGravelBallast(Material.sand);
+        BlockIDs.peagravelWhitestone.block = new PeaGravelWhitestone(Material.sand);
 
         BlockIDs.although.block = new Although(Material.clay);
         BlockIDs.testblock.block = new TestBlock(Material.iron);
