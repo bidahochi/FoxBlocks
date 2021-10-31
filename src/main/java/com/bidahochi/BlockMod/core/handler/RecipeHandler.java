@@ -488,7 +488,7 @@ public class RecipeHandler {
         }
         //breaker boxes, replace aragonite with electronic circuit eventually
         for (ItemStack dye1 : dyeLightGray){
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "III", "IAI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), ItemIDs.aragoniteClump, Character.valueOf('D'), dye1);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "III", "IAI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'),new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('D'), dye1);
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.breakerBox2.block, 1), new ItemStack(BlockIDs.breakerBox.block, 1));
 
