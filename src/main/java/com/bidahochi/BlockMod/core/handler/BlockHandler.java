@@ -133,7 +133,7 @@ public class BlockHandler {
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         if(e.getSide().isClient()) {
-            ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new TileBreakerBox.RenderBreakerBox());
+            ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new RenderBreakerBox());
         }
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
         if(e.getSide().isClient()) {
