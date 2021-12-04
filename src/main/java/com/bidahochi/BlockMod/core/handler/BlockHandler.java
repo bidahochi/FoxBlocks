@@ -132,13 +132,7 @@ public class BlockHandler {
         BlockIDs.breakerBox2.block = new BreakerBox2(Material.rock);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
-        if(e.getSide().isClient()) {
-            ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new RenderBreakerBox());
-        }
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
-        if(e.getSide().isClient()) {
-            ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox2.class, new TileBreakerBox2.RenderBreakerBox2());
-        }
 
         for (BlockIDs block : BlockIDs.values()) {
 
@@ -149,6 +143,10 @@ public class BlockHandler {
 
             }
 
+        }
+
+        if(e.getSide().isClient()) {
+            RenderBlockHandler.initializeCustomModels();
         }
 
         FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");

@@ -1,21 +1,10 @@
 package com.bidahochi.BlockMod.blocks.constructionmaterials;
 
-import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.ModelBreakerBox;
-import com.bidahochi.BlockMod.render.tmt.Tessellator;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.TextureManager;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.entity.player.EntityPlayerMP;
+
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
-import org.lwjgl.opengl.GL11;
 
 public class TileBreakerBox extends TileEntity {
     public int dir=0;
