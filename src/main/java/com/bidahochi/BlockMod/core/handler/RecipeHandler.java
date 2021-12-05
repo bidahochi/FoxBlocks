@@ -254,7 +254,8 @@ public class RecipeHandler {
         //for (ItemStack dyebrown : dyeBrown){ GameRegistry.addRecipe(new ItemStack(BlockIDs.brownTile.block, 2), "SSB", "   ", "   ", Character.valueOf('S'), BlockIDs.soapStone.block, Character.valueOf('B'), dyebrown); }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.harieshHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.blockLavaBucket.block, 1), Items.lava_bucket,Items.lava_bucket,Items.lava_bucket,Items.lava_bucket);
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 16), Items.water_bucket, Items.iron_ingot);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 4), Items.water_bucket, Items.iron_ingot);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 16), Items.water_bucket, new ItemStack(ItemIDs.ironSlice.item, 1));
 
         //fibregloss
         GameRegistry.addRecipe(new ItemStack(BlockIDs.fiberGlass.block, 6, 2), "WGW", "GWG", "WGW", Character.valueOf('W'), Blocks.wool, Character.valueOf('G'), Blocks.glass_pane);
@@ -488,11 +489,22 @@ public class RecipeHandler {
                 }
             }
         }
+        GameRegistry.addRecipe(new ItemStack(ItemIDs.ironRod.item, 8), "  I", "AIA", "I  ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
+        GameRegistry.addRecipe(new ItemStack(ItemIDs.ironSlice.item, 8), "IAI", "A A", "IAI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
+
         //breaker boxes, replace aragonite with electronic circuit eventually
         for (ItemStack dye1 : dyeLightGray){
             GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "III", "IAI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'),new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('D'), dye1);
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.breakerBox2.block, 1), new ItemStack(BlockIDs.breakerBox.block, 1));
+        for (ItemStack dye1 : dyeBlue){
+            for (ItemStack dye2 : dyeYellow) {
+                GameRegistry.addRecipe(new ItemStack(BlockIDs.clampOnSignDerail.block, 1), " PB", "YS ", "S  ", Character.valueOf('P'), new ItemStack(ItemIDs.ironSlice.item), Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('B'), dye1, Character.valueOf('Y'), dye2);
+            }
+        }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignStop1.block, 1), new ItemStack(BlockIDs.clampOnSignDerail.block,1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignStop2.block, 1), new ItemStack(BlockIDs.clampOnSignStop1.block,1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignDerail.block, 1), new ItemStack(BlockIDs.clampOnSignStop2.block,1));
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");

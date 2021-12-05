@@ -13,6 +13,8 @@ public enum ItemIDs {
     lowDensityCompound("compound", "lowdensitycompound", "lowdensitycompound"),
     rust("rust", "rust", "rust"),
     aragoniteClump("aragoniteClump", "aragoniteClump", "aragoniteClump"),
+    ironRod("ironRod", "ironRod", "ironRod"),
+    ironSlice("ironSlice", "ironSlice", "ironSlice"),
     ;
 
     public Item item;

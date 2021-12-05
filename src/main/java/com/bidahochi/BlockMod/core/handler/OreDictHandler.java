@@ -30,7 +30,7 @@ public class OreDictHandler {
         FoxBlocks.blockLogger.info("oreDict compatibility pre Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
         OreDictionary.registerOre("oreAluminium", new ItemStack(BlockIDs.bauxiteOre.block) );
-        OreDictionary.registerOre("oreCobalt", new ItemStack(BlockIDs.cobaltOre.block) );
+        //OreDictionary.registerOre("oreCobalt", new ItemStack(BlockIDs.cobaltOre.block) );//bUt ItS nOt BaLaNcEd EnOuGh To HaVe
         OreDictionary.registerOre("gravel", new ItemStack(BlockIDs.peagravel.block) );
         OreDictionary.registerOre("oreEmerald", new ItemStack(BlockIDs.soapStoneEmerald.block));
         OreDictionary.registerOre("stone", new ItemStack(BlockIDs.soapStone.block));
@@ -42,6 +42,8 @@ public class OreDictHandler {
         OreDictionary.registerOre("ceramic", new ItemStack(ItemIDs.ceramic.item));
         OreDictionary.registerOre("oreVietnam", new ItemStack(BlockIDs.tHanos.block));
         OreDictionary.registerOre("oreAragonite", new ItemStack(BlockIDs.placeholderOre.block));
+        OreDictionary.registerOre("rodIron", new ItemStack(ItemIDs.ironRod.item));
+        OreDictionary.registerOre("plateIron", new ItemStack(ItemIDs.ironSlice.item));
 
         FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
