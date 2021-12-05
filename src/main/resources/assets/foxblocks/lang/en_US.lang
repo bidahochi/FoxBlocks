@@ -352,6 +352,9 @@ tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)
 tile.clampOnSignDerail.name=Clamp-On Rail Sign (DERAIL)
 tile.clampOnSignStop1.name=Clamp-On Rail Sign (STOP 1)
 tile.clampOnSignStop2.name=Clamp-On Rail Sign (STOP 2)
+tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
+tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
+tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
 
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

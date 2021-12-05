@@ -27,6 +27,8 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.FiberGlass;
 import com.bidahochi.BlockMod.blocks.hell.DarkEmberStone;
 import com.bidahochi.BlockMod.blocks.hell.EmberStone;
+import com.bidahochi.BlockMod.blocks.lighting.NeonCageLampRoof;
+import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
@@ -134,12 +136,14 @@ public class BlockHandler {
         BlockIDs.clampOnSignDerail.block = new ClampOnSignDerail(Material.iron);
         BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
         BlockIDs.clampOnSignStop2.block = new ClampOnSignStop2(Material.iron);
+        BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
         GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
         GameRegistry.registerTileEntity(TileClampOnSignStop1.class, "clampOnSignStop1.tile");
         GameRegistry.registerTileEntity(TileClampOnSignStop2.class, "clampOnSignStop2.tile");
+        GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
 
         for (BlockIDs block : BlockIDs.values()) {
 

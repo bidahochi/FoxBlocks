@@ -27,6 +27,7 @@ public class ModelClampOnRailSign extends ModelConverter //Same as Filename
 
 
 		flipAll();
+		//fixRotation(bodyModel);
 	}
 
 	private void initbodyModel_1()
