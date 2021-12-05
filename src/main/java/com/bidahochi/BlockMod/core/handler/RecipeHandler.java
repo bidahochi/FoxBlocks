@@ -491,10 +491,9 @@ public class RecipeHandler {
         }
         GameRegistry.addRecipe(new ItemStack(ItemIDs.ironRod.item, 8), "  I", "AIA", "I  ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
         GameRegistry.addRecipe(new ItemStack(ItemIDs.ironSlice.item, 8), "IAI", "A A", "IAI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
-
-        //breaker boxes, replace aragonite with electronic circuit eventually
+        
         for (ItemStack dye1 : dyeLightGray){
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "III", "IAI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'),new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('D'), dye1);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "IAI", "ICI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'),new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('D'), dye1, Character.valueOf('C'), new ItemStack(ItemIDs.computerizedCircuit.item, 1));
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.breakerBox2.block, 1), new ItemStack(BlockIDs.breakerBox.block, 1));
         for (ItemStack dye1 : dyeBlue){

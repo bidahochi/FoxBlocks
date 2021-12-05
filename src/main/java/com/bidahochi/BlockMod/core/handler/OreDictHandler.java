@@ -44,6 +44,7 @@ public class OreDictHandler {
         OreDictionary.registerOre("oreAragonite", new ItemStack(BlockIDs.placeholderOre.block));
         OreDictionary.registerOre("rodIron", new ItemStack(ItemIDs.ironRod.item));
         OreDictionary.registerOre("plateIron", new ItemStack(ItemIDs.ironSlice.item));
+        OreDictionary.registerOre("circuitBasic", new ItemStack(ItemIDs.computerizedCircuit.item));
 
         FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 

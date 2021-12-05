@@ -22,6 +22,7 @@ public class ItemHandler {
         ItemIDs.aragoniteClump.item = new aragoniteClump();
         ItemIDs.ironRod.item = new IronRod();
         ItemIDs.ironSlice.item = new IronSlice();
+        ItemIDs.computerizedCircuit.item = new computerizedCircuit();
 
 
         for (ItemIDs items : ItemIDs.values()) {

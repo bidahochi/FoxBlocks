@@ -15,6 +15,7 @@ public enum ItemIDs {
     aragoniteClump("aragoniteClump", "aragoniteClump", "aragoniteClump"),
     ironRod("ironRod", "ironRod", "ironRod"),
     ironSlice("ironSlice", "ironSlice", "ironSlice"),
+    computerizedCircuit("computerizedCircuit", "computerizedCircuit", "computerizedCircuit"),
     ;
 
     public Item item;
