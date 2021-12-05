@@ -115,6 +115,9 @@ public enum BlockIDs {
 
     breakerBox(false, null, "breakerBox"),
     breakerBox2(false, null, "breakerBox2"),
+    clampOnSignDerail(false, null, "clampOnSignDerail"),
+    clampOnSignStop1(false, null, "clampOnSignStop1"),
+    clampOnSignStop2(false, null, "clampOnSignStop2"),
     ;
 
     public Block block;

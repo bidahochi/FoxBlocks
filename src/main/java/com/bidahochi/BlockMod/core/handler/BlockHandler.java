@@ -30,6 +30,7 @@ import com.bidahochi.BlockMod.blocks.hell.EmberStone;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
+import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -130,9 +131,15 @@ public class BlockHandler {
         BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
         BlockIDs.breakerBox.block = new BreakerBox(Material.rock);
         BlockIDs.breakerBox2.block = new BreakerBox2(Material.rock);
+        BlockIDs.clampOnSignDerail.block = new ClampOnSignDerail(Material.iron);
+        BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
+        BlockIDs.clampOnSignStop2.block = new ClampOnSignStop2(Material.iron);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
+        GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
+        GameRegistry.registerTileEntity(TileClampOnSignStop1.class, "clampOnSignStop1.tile");
+        GameRegistry.registerTileEntity(TileClampOnSignStop2.class, "clampOnSignStop2.tile");
 
         for (BlockIDs block : BlockIDs.values()) {
 
