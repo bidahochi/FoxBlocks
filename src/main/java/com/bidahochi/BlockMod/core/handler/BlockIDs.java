@@ -119,6 +119,10 @@ public enum BlockIDs {
     clampOnSignStop1(false, null, "clampOnSignStop1"),
     clampOnSignStop2(false, null, "clampOnSignStop2"),
     neonCageLightRoof(false, null, "neonCageLightRoof"),
+    foxglass(false,null,"foxglass"),
+
+
+
     ;
 
     public Block block;

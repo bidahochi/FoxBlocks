@@ -137,6 +137,11 @@ public class BlockHandler {
         BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
         BlockIDs.clampOnSignStop2.block = new ClampOnSignStop2(Material.iron);
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
+        BlockIDs.foxglass.block = new foxglass(Material.glass);
+
+
+
+
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
