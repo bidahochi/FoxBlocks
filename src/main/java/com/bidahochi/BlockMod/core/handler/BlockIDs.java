@@ -26,6 +26,7 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
+import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -48,6 +49,7 @@ public enum BlockIDs {
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
     tHanos(false,null,"T Hanos"),
+    booBlox(true, ItemBlockBooBlox.class, "BooBlox"),
 
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
     wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
@@ -76,6 +78,7 @@ public enum BlockIDs {
     rustBeam(true, ItemBlockrustBeam.class, "rustBeam"),
 
     harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
+    foxglass(false,null,"foxglass"),
     layeredConcrete(false, null, "Layered Concrete"),
     smoothCrete(false, null, "Smoothcrete"),
     gypsum(false,null,"gypsum"),
@@ -93,6 +96,7 @@ public enum BlockIDs {
     tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth"),
     diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile"),
     subTile(true, ItemBlockSubTile.class,"SubTile"),
+    terrocottaTiles(true, ItemBlockTerrocottaTiles.class, "TerrocottaTiles"),
 
     cobaltBlock(false,null,"cobaltBlock"),
     cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
@@ -119,9 +123,6 @@ public enum BlockIDs {
     clampOnSignStop1(false, null, "clampOnSignStop1"),
     clampOnSignStop2(false, null, "clampOnSignStop2"),
     neonCageLightRoof(false, null, "neonCageLightRoof"),
-    foxglass(false,null,"foxglass"),
-
-
 
     ;
 

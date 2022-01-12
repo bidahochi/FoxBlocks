@@ -211,6 +211,23 @@ tile.SubTile_2.name=Sub-Terrain Tile (Brick)
 tile.SubTile_3.name=Sub-Terrain Tile (2x2 Dark)
 tile.SubTile_4.name=Sub-Terrain Tile (2x2 Light)
 
+tile.TerrocottaTiles_0.name=White Terrocotta Tiles
+tile.TerrocottaTiles_1.name=Light Gray Terrocotta Tiles
+tile.TerrocottaTiles_2.name=Gray Terrocotta Tiles
+tile.TerrocottaTiles_3.name=Black Terrocotta Tiles
+tile.TerrocottaTiles_4.name=Brown Terrocotta Tiles
+tile.TerrocottaTiles_5.name=Red Terrocotta Tiles
+tile.TerrocottaTiles_6.name=Orange Terrocotta Tiles
+tile.TerrocottaTiles_7.name=Yellow Terrocotta Tiles
+tile.TerrocottaTiles_8.name=Lime Terrocotta Tiles
+tile.TerrocottaTiles_9.name=Green Terrocotta Tiles
+tile.TerrocottaTiles_10.name=Light Blue Terrocotta Tiles
+tile.TerrocottaTiles_11.name=Blue Terrocotta Tiles
+tile.TerrocottaTiles_12.name=Cyan Terrocotta Tiles
+tile.TerrocottaTiles_13.name=Pink Terrocotta Tiles
+tile.TerrocottaTiles_14.name=Magenta Terrocotta Tiles
+tile.TerrocottaTiles_15.name=Purple Terrocotta Tiles
+
 tile.fireBrick.name=Firebrick Block
 
 tile.Soapstone.name=Raw Soapstone
@@ -346,6 +363,13 @@ tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)
 tile.BlockOLavaBucket.name=Block of Lava Bucket
 tile.T Hanos.name=T Hanos Cube
+
+tile.BooBlox_0.name=Boo 1
+tile.BooBlox_1.name=Boo 2
+tile.BooBlox_2.name=Angry Boo 1
+tile.BooBlox_3.name=Angry Boo 2
+tile.BooBlox_4.name=Tongue Boo 1
+tile.BooBlox_5.name=Tongue Boo 2
 
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
 tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)

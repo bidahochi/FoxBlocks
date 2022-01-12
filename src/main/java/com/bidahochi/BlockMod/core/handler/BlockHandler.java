@@ -40,6 +40,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.event.terraingen.TerrainGen;
 
 
 public class BlockHandler {
@@ -67,6 +68,7 @@ public class BlockHandler {
         BlockIDs.although.block = new Although(Material.clay);
         BlockIDs.testblock.block = new TestBlock(Material.iron);
         BlockIDs.tHanos.block = new Thanos(Material.sponge);
+        BlockIDs.booBlox.block = new BooBlox(Material.cloth);
 
         BlockIDs.dryWall.block = new DryWall(Material.clay);
         BlockIDs.wallPaper.block = new WallPaper(Material.cloth);
@@ -111,6 +113,8 @@ public class BlockHandler {
         BlockIDs.tile2x2smooth.block = new Tile2x2smooth(Material.rock);
         BlockIDs.diamondTile.block = new DiamondTile(Material.rock);
         BlockIDs.subTile.block = new SubTile(Material.rock);
+        BlockIDs.foxglass.block = new foxglass(Material.glass);
+        BlockIDs.terrocottaTiles.block = new TerrocottaTiles(Material.rock);
 
         //cobalt deco blocks
         BlockIDs.cobaltBlock.block = new CobaltBlock(Material.rock);
@@ -137,9 +141,6 @@ public class BlockHandler {
         BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
         BlockIDs.clampOnSignStop2.block = new ClampOnSignStop2(Material.iron);
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
-        BlockIDs.foxglass.block = new foxglass(Material.glass);
-
-
 
 
 
