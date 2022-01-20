@@ -23,7 +23,7 @@ public class ItemHandler {
         ItemIDs.ironRod.item = new IronRod();
         ItemIDs.ironSlice.item = new IronSlice();
         ItemIDs.computerizedCircuit.item = new computerizedCircuit();
-
+        ItemIDs.throwablePoo.item = new throwablePoo();
 
         for (ItemIDs items : ItemIDs.values()) {
             items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
