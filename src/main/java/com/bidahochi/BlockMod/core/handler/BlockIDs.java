@@ -23,6 +23,7 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ****************************/
 
+import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockFakeSnow;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
@@ -45,6 +46,7 @@ public enum BlockIDs {
     specialDirt(false, null, "SpecialDirt"),
     peagravelBallast(false,null, "peagravelBallast"),
     peagravelWhitestone(false, null, "Peagravel Whitestone"),
+    fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),
 
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),

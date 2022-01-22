@@ -16,6 +16,7 @@ tile.Dirty Gravel.name=Dirty Gravel
 tile.SpecialDirt.name=Ungrowable Dirt
 tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
 tile.Peagravel Whitestone.name=Whitestone Pea Gravel
+tile.FakeSnow_0.name=Fake Snow "Block"
 
 tile.metalSiding_3.name=White Vertical Sheet Metal Siding
 tile.metalSiding_2.name=Light Vertical Sheet Grey Metal Siding

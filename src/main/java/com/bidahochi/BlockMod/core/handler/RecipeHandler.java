@@ -507,6 +507,9 @@ public class RecipeHandler {
         for (ItemStack dye : dyeLightBlue) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), "SGS", "DGD", "SGS", Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye, Character.valueOf('G'), Blocks.glowstone);
         }
+
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fakeSnow.block, 4), Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow);
+
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }
