@@ -364,6 +364,9 @@ public class RecipeHandler {
 
         //Cobalt Smelting
         GameRegistry.addSmelting(BlockIDs.cobaltOre.block, new ItemStack(ItemIDs.cobaltIngot.item,1),1F);
+        for (ItemStack dye : dyeBlue) {
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.cobaltIngot.item,2), Items.iron_ingot, Items.iron_ingot, dye);
+        }
 
         //cobalt deco blocks
         GameRegistry.addRecipe(new ItemStack(BlockIDs.cobaltBlock.block, 1, 0),"AAA","AAA","AAA",Character.valueOf('A'), new ItemStack(ItemIDs.cobaltIngot.item));
@@ -510,6 +513,54 @@ public class RecipeHandler {
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fakeSnow.block, 4), Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow);
 
+        //wall plaster
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 0), "GAG", "AGA", "GAG", Character.valueOf('G'), new ItemStack(ItemIDs.gypsumDust.item), Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item));
+        for (ItemStack dye : dyeLightBlue) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 1), "PPP", "PDP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 3, 2), "   ", "D D", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 3, 3), "   ", " D ", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+        }//full color, thick, thin
+        for (ItemStack dye : dyeRed) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 4), "PPP", "PDP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 3, 5), "   ", "D D", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 3, 6), "   ", " D ", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+        }
+        for (ItemStack dye : dyeRed) {
+            for (ItemStack dye2 : dyeBrown) {
+                GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 7, 7), "PDP", "PPP", "PBP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye, Character.valueOf('B'), dye2);
+            }
+        }
+        for (ItemStack dye : dyeLightGray) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 8), "PPP", "PDP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
+        }
+
+        //tf2 concrete bricks
+        for (ItemStack dye : dyeBlue) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.concreteBrick.block, 8, 0), "CCC", "CDC", "CCC", Character.valueOf('C'), new ItemStack(BlockIDs.smoothCrete.block), Character.valueOf('D'), dye);
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteBrick.block, 2, 2), new ItemStack(BlockIDs.concreteBrick.block, 1, 0), new ItemStack(BlockIDs.concreteBrick.block, 1, 0), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.concreteBrick.block, 8, 5), "CCC", "CDC", "CCC", Character.valueOf('C'), new ItemStack(BlockIDs.concreteBrick.block, 1, 4), Character.valueOf('D'), dye);
+        }
+        for (ItemStack dye : dyeRed) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.concreteBrick.block, 8, 1), "CCC", "CDC", "CCC", Character.valueOf('C'), new ItemStack(BlockIDs.smoothCrete.block), Character.valueOf('D'), dye);
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteBrick.block, 2, 3), new ItemStack(BlockIDs.concreteBrick.block, 1, 0), new ItemStack(BlockIDs.concreteBrick.block, 1, 0), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.concreteBrick.block, 8, 6), "CCC", "CDC", "CCC", Character.valueOf('C'), new ItemStack(BlockIDs.concreteBrick.block, 1, 4), Character.valueOf('D'), dye);
+        }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.concreteBrick.block, 8, 4), "CCC", "C C", "CCC", Character.valueOf('C'), new ItemStack(BlockIDs.layeredConcrete.block));
+
+        //kronkcrete floorin
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 0), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 1), new ItemStack(BlockIDs.smoothCrete.block, 2), new ItemStack(BlockIDs.rawConcrete.block, 2), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.rawConcrete.block, 2));
+        for (ItemStack dye : dyeRed) {
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 2), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+        }
+        for (ItemStack dye : dyeBlue) {
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 3), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+        }
+        for (ItemStack dye : dyeGray) {
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 4), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+        }
+
+        
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }
