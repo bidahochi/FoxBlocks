@@ -560,7 +560,21 @@ public class RecipeHandler {
             GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 4), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
         }
 
-        
+        //labwall
+        for (ItemStack dye : dyeWhite) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallLight.block, 8, 0), "SAS", "ADA", "SAS", Character.valueOf('S'), ItemIDs.lowDensityCompound.item, Character.valueOf('A'), ItemIDs.aragoniteClump.item, Character.valueOf('D'), dye);
+        }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallLight.block, 4, 1), "L L", "L L", "   ", Character.valueOf('L'), new ItemStack(BlockIDs.labwallLight.block, 1, 0));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallLight.block, 6, 2), "LLL", "   ", "LLL", Character.valueOf('L'), new ItemStack(BlockIDs.labwallLight.block, 1, 0));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallLight.block, 7, 3), "LLL", " V ", "LLL", Character.valueOf('L'), new ItemStack(BlockIDs.labwallLight.block, 1, 0), Character.valueOf('V'), new ItemStack(BlockIDs.labwallLight.block, 1, 1));
+        for (ItemStack dye : dyeLightGray) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallDark.block, 8, 0), "SAS", "ADA", "SAS", Character.valueOf('S'), ItemIDs.lowDensityCompound.item, Character.valueOf('A'), ItemIDs.aragoniteClump.item, Character.valueOf('D'), dye);
+        }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallDark.block, 6, 1), "LLL", "   ", "LLL", Character.valueOf('L'), new ItemStack(BlockIDs.labwallDark.block, 1, 0));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallDark.block, 6, 2), "L L", "L L", "L L", Character.valueOf('L'), new ItemStack(BlockIDs.labwallDark.block, 1, 0));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallDark.block, 4, 3), "V V", "V V", "   ", Character.valueOf('V'), new ItemStack(BlockIDs.labwallDark.block, 1, 2));
+
+
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }
