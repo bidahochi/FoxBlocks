@@ -124,7 +124,10 @@ public enum BlockIDs {
     clampOnSignDerail(false, null, "clampOnSignDerail"),
     clampOnSignStop1(false, null, "clampOnSignStop1"),
     clampOnSignStop2(false, null, "clampOnSignStop2"),
+
     neonCageLightRoof(false, null, "neonCageLightRoof"),
+    neonCageLightWallV(false, null, "neonCageLightWallV"),
+    neonCageLightWallH(false, null, "neonCageLightWallH"),
 
     ;
 

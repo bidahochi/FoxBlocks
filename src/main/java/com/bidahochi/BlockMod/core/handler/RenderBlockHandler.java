@@ -5,6 +5,7 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox2;
 import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
+import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.props.*;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -19,5 +20,7 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileClampOnSignStop2.class, new RenderClampOnSignStop2());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallV.class, new RenderNeonCageLampWallV());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallH.class, new RenderNeonCageLampWallH());
     }
 }

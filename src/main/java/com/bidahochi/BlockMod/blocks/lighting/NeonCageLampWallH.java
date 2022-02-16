@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.lighting;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.props.TileClampOnSignDerail;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
@@ -19,10 +18,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class NeonCageLampRoof extends BlockContainer {
-    public NeonCageLampRoof(Material p_i45394_1_) {
+public class NeonCageLampWallH extends BlockContainer {
+    public NeonCageLampWallH(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("neonCageLampRoof");
+        setBlockName("neonCageLampWallH");
         setHardness(2F);
         setResistance(6.0F);
         setHarvestLevel("pickaxe", 1);
@@ -35,7 +34,7 @@ public class NeonCageLampRoof extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileNeonCageLampRoof();
+        return new TileNeonCageLampWallH();
     }
 
     @Override
@@ -58,30 +57,6 @@ public class NeonCageLampRoof extends BlockContainer {
         this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
     }
 
-    /*public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        //cover if tile isn't a thing
-        if(world == null || !(world.getTileEntity(x,y,z) instanceof TileClampOnSignDerail)){
-            super.setBlockBoundsBasedOnState(world,x,y,z);
-            return;
-        }
-        //return based on tile data
-        switch(((TileClampOnSignDerail)world.getTileEntity(x,y,z)).dir){
-            case 0:
-            case 1:
-            case 3://smort
-            case 2: {this.setBlockBounds(1F, 1F, 1F, 1F, 1F, 1F); return;}
-        }
-
-        //fallback if rotation wasn't understood
-        super.setBlockBoundsBasedOnState(world,x,y,z);
-        return;
-    }*/
-
-    /*@Override //this doesn't need changing but it needs inclusion
-    public void addCollisionBoxesToList(World world, int x, int y, int z, AxisAlignedBB hitboxSelf, List hitboxesOther, Entity collidingEntity) {
-        this.setBlockBoundsBasedOnState(world, x, y, z);
-        super.addCollisionBoxesToList(world, x, y, z, hitboxSelf, hitboxesOther, collidingEntity);
-    }*/
     @Override
     public void addCollisionBoxesToList(World p_149743_1_, int p_149743_2_, int p_149743_3_, int p_149743_4_, AxisAlignedBB p_149743_5_, List p_149743_6_, Entity p_149743_7_)
     { }
@@ -110,7 +85,7 @@ public class NeonCageLampRoof extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileNeonCageLampRoof(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileNeonCageLampWallH(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -123,6 +98,6 @@ public class NeonCageLampRoof extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":neonCageLampRoof_icon");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":neonCageLampWallH_icon");
     }
 }
