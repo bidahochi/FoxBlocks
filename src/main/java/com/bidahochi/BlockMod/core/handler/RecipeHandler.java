@@ -507,9 +507,14 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignStop1.block, 1), new ItemStack(BlockIDs.clampOnSignDerail.block,1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignStop2.block, 1), new ItemStack(BlockIDs.clampOnSignStop1.block,1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignDerail.block, 1), new ItemStack(BlockIDs.clampOnSignStop2.block,1));
+
+        //cage lamps
         for (ItemStack dye : dyeLightBlue) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), "SGS", "DGD", "SGS", Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye, Character.valueOf('G'), Blocks.glowstone);
         }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightWallV.block, 1),  new ItemStack(BlockIDs.neonCageLightRoof.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightWallH.block, 1), new ItemStack(BlockIDs.neonCageLightWallV.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), new ItemStack(BlockIDs.neonCageLightWallH.block, 1));
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fakeSnow.block, 4), Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow);
 
