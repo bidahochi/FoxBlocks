@@ -14,19 +14,27 @@ import net.minecraft.world.WorldType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 @Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME)
 public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.0.4";
+    public static final String VERSION = "1.1.0";
     public static CreativeTabs foxBlocksCreativeTab;
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
     public static CreativeTabs foxBlocksCreativeTabFactory;
     public static CreativeTabs foxBlocksCreativeTabItems;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
+
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent PreEvent){
+
+    }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
@@ -79,10 +87,6 @@ public class FoxBlocks
 
 
 
-    }
-
-    @EventHandler
-    public void PreLoad(FMLPreInitializationEvent PreEvent){
     }
 
     @EventHandler
