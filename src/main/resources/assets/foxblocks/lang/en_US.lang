@@ -17,6 +17,7 @@ tile.SpecialDirt.name=Ungrowable Dirt
 tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
 tile.Peagravel Whitestone.name=Whitestone Pea Gravel
 tile.FakeSnow_0.name=Fake Snow "Block"
+tile.Dirt_4.name=4tress Dirt
 
 tile.metalSiding_3.name=White Vertical Sheet Metal Siding
 tile.metalSiding_2.name=Light Vertical Sheet Grey Metal Siding
@@ -371,6 +372,40 @@ tile.BooBlox_2.name=Angry Boo 1
 tile.BooBlox_3.name=Angry Boo 2
 tile.BooBlox_4.name=Tongue Boo 1
 tile.BooBlox_5.name=Tongue Boo 2
+
+tile.mortarBrick_0.name=Mortar Brick (Brown)
+tile.mortarBrick_1.name=Mortar Brick (Grey)
+tile.mortarBrick_2.name=Mortar Brick (Light Grey)
+tile.mortarBrick_3.name=Mortar Brick (Seamless Brown)
+tile.mortarBrick_4.name=Mortar Brick (Seamless Grey)
+tile.mortarBrick_5.name=Mortar Brick (Seamless Cream)
+tile.mortarBrick_6.name=Mortar Brick (Bright Mixed)
+tile.mortarBrick_7.name=Mortar Brick (Dark Mixed)
+tile.mortarBrick_8.name=Mortar Brick (Grayscale Mixed)
+
+tile.glassAssorted_0.name=Row Glass (Horizontal)
+tile.glassAssorted_1.name=Row Glass (Vertical)
+tile.glassAssorted_2.name=3x3 Worn Factory Glass
+tile.glassAssorted_3.name=2x2 Worn Factory Glass
+
+tile.tarmac_0.name=Tarmac Road Fullblock
+tile.tarmac_1.name=Fine Tarmac Road Fullblock
+tile.tarmac_2.name=Dark Tarmac Road Fullblock
+tile.tarmac_3.name=Light Tarmac Road Fullblock
+tile.tarmac_4.name=Grey Concrete Road Fullblock
+tile.tarmac_5.name=Pale Concrete Fullblock
+tile.tarmac_6.name=Pale Tarmac Road Fullblock
+tile.tarmac_7.name=Mud (Dry) Road Fullblock
+tile.tarmac_8.name=Mud (Wet) Road Fullblock
+tile.tarmac_9.name=Blue Tarmac Road Fullblock
+tile.tarmac_10.name=Green Tarmac Road Fullblock
+tile.tarmac_11.name=Red Tarmac Road Fullblock
+tile.tarmac_12.name=White Tarmac Road Fullblock
+tile.tarmac_13.name=Yellow Tarmac Road Fullblock
+
+tile.OriginStuff_0.name=Origin Cobblestone
+tile.OriginStuff_1.name=Origin Mossy Cobblestone
+tile.OriginStuff_2.name=Origin Brick
 
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
 tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)

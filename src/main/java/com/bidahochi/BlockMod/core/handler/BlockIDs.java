@@ -47,6 +47,7 @@ public enum BlockIDs {
     peagravelBallast(false,null, "peagravelBallast"),
     peagravelWhitestone(false, null, "Peagravel Whitestone"),
     fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),
+    dirt_4(false, null, "Dirt_4"),
 
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
@@ -107,6 +108,7 @@ public enum BlockIDs {
     largeCobaltBrick(false,null,"largeCobaltBrick"),
     blue(false,null,"Blue"),
     green(false,null,"Green"),
+    mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick"),
 
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
     widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
@@ -118,6 +120,10 @@ public enum BlockIDs {
     concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor"),
     labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
     labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
+    tarmac(true, ItemBlockTarmac.class, "tarmac"),
+    originStuff(true, ItemBlockOriginStuff.class, "OriginStuff"),
+
+    glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted"),
 
     breakerBox(false, null, "breakerBox"),
     breakerBox2(false, null, "breakerBox2"),

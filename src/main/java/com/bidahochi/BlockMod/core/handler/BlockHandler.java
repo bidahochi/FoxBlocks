@@ -33,13 +33,11 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
-import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.event.terraingen.TerrainGen;
 
 
 public class BlockHandler {
@@ -64,6 +62,7 @@ public class BlockHandler {
         BlockIDs.peagravelBallast.block = new PeaGravelBallast(Material.sand);
         BlockIDs.peagravelWhitestone.block = new PeaGravelWhitestone(Material.sand);
         BlockIDs.fakeSnow.block = new FakeSnow(Material.snow);
+        BlockIDs.dirt_4.block = new Dirt_4(Material.sand);
 
         BlockIDs.although.block = new Although(Material.clay);
         BlockIDs.testblock.block = new TestBlock(Material.iron);
@@ -124,6 +123,7 @@ public class BlockHandler {
         BlockIDs.largeCobaltBrick.block = new LargeCobaltBrick(Material.rock);
         BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
         BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
+        BlockIDs.mortarBrick.block = new MortarBrick(Material.rock);
 
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
         BlockIDs.widePlank2.block = new WidePlank2(Material.wood);
@@ -135,6 +135,11 @@ public class BlockHandler {
         BlockIDs.plasteredConcrete.block = new PlasteredConcrete(Material.rock);
         BlockIDs.labwallDark.block = new LabwallDark(Material.rock);
         BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
+        BlockIDs.tarmac.block = new Tarmac(Material.rock);
+        BlockIDs.originStuff.block = new OriginStuff(Material.rock);
+
+        BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
+
         BlockIDs.breakerBox.block = new BreakerBox(Material.rock);
         BlockIDs.breakerBox2.block = new BreakerBox2(Material.rock);
         BlockIDs.clampOnSignDerail.block = new ClampOnSignDerail(Material.iron);
