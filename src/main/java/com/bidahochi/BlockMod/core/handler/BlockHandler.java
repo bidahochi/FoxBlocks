@@ -21,6 +21,7 @@ package com.bidahochi.BlockMod.core.handler;
  ********************/
 
 
+import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
@@ -150,6 +151,10 @@ public class BlockHandler {
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
         BlockIDs.neonCageLightWallH.block = new NeonCageLampWallH(Material.iron);
 
+        BlockIDs.bridgeA_Center.block = new BridgeA_Center(Material.wood);
+        BlockIDs.bridgeA_X_Side_Top.block = new BridgeA_X_Side_top(Material.wood);
+        BlockIDs.bridgeA_Side_Top.block = new BridgeA_Side_Top(Material.wood);
+        BlockIDs.bridgeA_Side_Bottom.block = new BridgeA_Side_Bottom(Material.wood);
 
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
@@ -161,6 +166,11 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallH.class, "neonCageLightWallH.tile");
+
+        GameRegistry.registerTileEntity(TileBridgeA_Center.class, "bridgeA_Center.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top.class, "bridgeA_X_Side_Center_Top.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_Side_Top.class, "bridgeA_Side_Top.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_Side_Bottom.class, "bridgeA_Side_Bottom.tile");
 
         for (BlockIDs block : BlockIDs.values()) {
 

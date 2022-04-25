@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod.core.handler;
 
+import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox;
@@ -22,5 +23,10 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallV.class, new RenderNeonCageLampWallV());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallH.class, new RenderNeonCageLampWallH());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Center.class, new RenderBridgeA_Center());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Top.class, new RenderBridgeA_X_Side_Top());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_Top.class, new RenderBridgeA_Side_Top());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_Bottom.class, new RenderBridgeA_Side_Bottom());
     }
 }
