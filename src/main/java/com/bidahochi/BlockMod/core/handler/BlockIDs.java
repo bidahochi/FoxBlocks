@@ -137,6 +137,7 @@ public enum BlockIDs {
 
     bridgeA_Center(false, null, "bridgeA_Center"),
     bridgeA_X_Side_Top(false, null, "bridgeA_X_Side_Top"),
+    bridgeA_X_Side_Bottom(false, null, "bridgeA_X_Side_Bottom"),
     bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
     ;

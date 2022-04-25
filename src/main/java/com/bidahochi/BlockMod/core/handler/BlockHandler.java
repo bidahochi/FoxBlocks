@@ -153,6 +153,7 @@ public class BlockHandler {
 
         BlockIDs.bridgeA_Center.block = new BridgeA_Center(Material.wood);
         BlockIDs.bridgeA_X_Side_Top.block = new BridgeA_X_Side_top(Material.wood);
+        BlockIDs.bridgeA_X_Side_Bottom.block = new BridgeA_X_Side_Bottom(Material.wood);
         BlockIDs.bridgeA_Side_Top.block = new BridgeA_Side_Top(Material.wood);
         BlockIDs.bridgeA_Side_Bottom.block = new BridgeA_Side_Bottom(Material.wood);
 
@@ -169,6 +170,7 @@ public class BlockHandler {
 
         GameRegistry.registerTileEntity(TileBridgeA_Center.class, "bridgeA_Center.tile");
         GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top.class, "bridgeA_X_Side_Center_Top.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Bottom.class, "bridgeA_X_Side_Center_Bottom.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Top.class, "bridgeA_Side_Top.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Bottom.class, "bridgeA_Side_Bottom.tile");
 
