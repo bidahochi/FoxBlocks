@@ -18,6 +18,7 @@ tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
 tile.Peagravel Whitestone.name=Whitestone Pea Gravel
 tile.FakeSnow_0.name=Fake Snow "Block"
 tile.Dirt_4.name=4tress Dirt
+tile.CreamCityClay.name=Cream City Clay
 
 tile.metalSiding_3.name=White Vertical Sheet Metal Siding
 tile.metalSiding_2.name=Light Vertical Sheet Grey Metal Siding
@@ -406,6 +407,21 @@ tile.tarmac_13.name=Yellow Tarmac Road Fullblock
 tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone
 tile.OriginStuff_2.name=Origin Brick
+
+tile.JolietLimestoneRaw.name=Raw Joliet Limestone
+tile.JolietLimestone_0.name=Joliet Limestone Bricks
+tile.JolietLimestone_1.name=Irregular Joliet Limestone Bricks
+tile.JolietLimestone_2.name=Large Joliet Limestone Bricks
+
+tile.CreamCity_0.name=Cream City Bricks
+tile.CreamCity_1.name=Dirty Cream City Bricks
+tile.CreamCity_2.name=Polluted Cream City Bricks
+
+tile.bridgeA_Center.name=Modular Bridge A (Center Post)
+tile.bridgeA_Side_Top.name=Modular Bridge A (Side Post Top)
+tile.bridgeA_Side_Bottom.name=Modular Bridge A (Side Post Bottom)
+tile.bridgeA_X_Side_Top.name=Modular Bridge A (Side X Beams Top)
+tile.bridgeA_X_Side_Bottom.name=Modular Bridge A (Side X Beams Bottom)
 
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
 tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)

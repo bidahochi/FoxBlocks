@@ -48,6 +48,7 @@ public enum BlockIDs {
     peagravelWhitestone(false, null, "Peagravel Whitestone"),
     fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),
     dirt_4(false, null, "Dirt_4"),
+    creamCityClay(false, null, "CreamCityClay"),
 
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
@@ -109,6 +110,9 @@ public enum BlockIDs {
     blue(false,null,"Blue"),
     green(false,null,"Green"),
     mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick"),
+    creamCity(true, ItemBlockCreamCity.class, "creamcity"),
+    jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone"),
+    jolietLimestoneRaw(false, null, "jolietlimestoneraw"),
 
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
     widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),

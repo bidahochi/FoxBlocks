@@ -64,6 +64,8 @@ public class BlockHandler {
         BlockIDs.peagravelWhitestone.block = new PeaGravelWhitestone(Material.sand);
         BlockIDs.fakeSnow.block = new FakeSnow(Material.snow);
         BlockIDs.dirt_4.block = new Dirt_4(Material.sand);
+        BlockIDs.creamCityClay.block = new CreamCityClay(Material.clay);
+        BlockIDs.jolietLimestoneRaw.block = new JolietLimestoneRaw(Material.rock);
 
         BlockIDs.although.block = new Although(Material.clay);
         BlockIDs.testblock.block = new TestBlock(Material.iron);
@@ -125,6 +127,8 @@ public class BlockHandler {
         BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
         BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
         BlockIDs.mortarBrick.block = new MortarBrick(Material.rock);
+        BlockIDs.creamCity.block = new CreamCity(Material.rock);
+        BlockIDs.jolietLimestone.block = new JolietLimestone(Material.rock);
 
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
         BlockIDs.widePlank2.block = new WidePlank2(Material.wood);

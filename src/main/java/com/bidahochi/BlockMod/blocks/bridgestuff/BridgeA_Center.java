@@ -103,7 +103,7 @@ public class BridgeA_Center extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":props/");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":props/ModBridgeA");
     }
 
 
