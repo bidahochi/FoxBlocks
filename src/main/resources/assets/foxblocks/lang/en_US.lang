@@ -420,8 +420,10 @@ tile.CreamCity_2.name=Polluted Cream City Bricks
 tile.bridgeA_Center.name=Modular Bridge A (Center Post)
 tile.bridgeA_Side_Top.name=Modular Bridge A (Side Post Top)
 tile.bridgeA_Side_Bottom.name=Modular Bridge A (Side Post Bottom)
-tile.bridgeA_X_Side_Top.name=Modular Bridge A (Side X Beams Top)
-tile.bridgeA_X_Side_Bottom.name=Modular Bridge A (Side X Beams Bottom)
+tile.bridgeA_X_Side_Top.name=Modular Bridge A (Side X Beams Top (3 long))
+tile.bridgeA_X_Side_Bottom.name=Modular Bridge A (Side X Beams Bottom (3 long))
+tile.bridgeA_X_Side_Top2.name=Modular Bridge A (Side X Beams Top (5 long))
+tile.bridgeA_X_Side_Bottom2.name=Modular Bridge A (Side X Beams Bottom (5 long))
 
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
 tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)
