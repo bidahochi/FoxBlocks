@@ -691,5 +691,32 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/java/com/ForgeMultipart-1.7.10-1.2.0.345-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/java/com/CodeChickenCore-1.7.10-1.0.7.48-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/src/main/java/com/CodeChickenLib-master.zip!/CodeChickenLib-master/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

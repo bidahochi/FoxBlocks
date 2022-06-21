@@ -1,7 +1,9 @@
 package com.bidahochi.BlockMod;
 
 
+import com.bidahochi.BlockMod.compat.FMPCompat;
 import com.bidahochi.BlockMod.core.handler.*;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -33,8 +35,12 @@ public class FoxBlocks
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent PreEvent){
-
+        if (Loader.isModLoaded("ForgeMultipart")) {
+            (new FMPCompat()).init();
+        }
     }
+
+
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
