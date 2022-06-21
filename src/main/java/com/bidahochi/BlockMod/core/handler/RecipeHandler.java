@@ -579,6 +579,31 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallDark.block, 6, 2), "L L", "L L", "L L", Character.valueOf('L'), new ItemStack(BlockIDs.labwallDark.block, 1, 0));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.labwallDark.block, 4, 3), "V V", "V V", "   ", Character.valueOf('V'), new ItemStack(BlockIDs.labwallDark.block, 1, 2));
 
+        //glass blocks
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 3, 0), "   ", "GGG", "   ", Character.valueOf('G'), new ItemStack(Blocks.glass));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 3, 1), " G ", " G ", " G ", Character.valueOf('G'), new ItemStack(Blocks.glass));
+        for (ItemStack dye : dyeBrown) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 2), "GGG", "GDG", "GGG", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 4, 3), " G ", "GDG", " G ", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
+        }
+
+        //wide vanilla planks
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 0), " P ", " P ", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 0));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 1), " P ", " P ", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 2));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 2), " P ", " P ", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 1));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 3), " P ", " P ", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 3));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 4), " P ", " P ", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 5));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 5), " P ", " P ", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 4));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 6), "   ", "PPP", "   ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 0));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 7), "   ", "PPP", "   ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 2));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 8), "   ", "PPP", "   ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 1));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 9), "   ", "PPP", "   ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 3));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 10), "   ", "PPP", "   ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 5));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 11), "   ", "PPP", "   ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 4));
+
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 0), new ItemStack(ItemIDs.enrichedClay.item), Blocks.cobblestone, Blocks.cobblestone);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 1), new ItemStack(ItemIDs.enrichedClay.item), Blocks.mossy_cobblestone, Blocks.mossy_cobblestone);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 2), new ItemStack(ItemIDs.enrichedClay.item), Blocks.brick_block, Blocks.brick_block);
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
