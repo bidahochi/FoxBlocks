@@ -23,7 +23,6 @@ public class ItemHandler {
         ItemIDs.ironRod.item = new IronRod();
         ItemIDs.ironSlice.item = new IronSlice();
         ItemIDs.computerizedCircuit.item = new computerizedCircuit();
-        ItemIDs.throwablePoo.item = new throwablePoo();
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

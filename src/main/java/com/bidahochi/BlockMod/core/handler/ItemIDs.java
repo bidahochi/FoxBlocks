@@ -16,7 +16,6 @@ public enum ItemIDs {
     ironRod("ironRod", "ironRod", "ironRod"),
     ironSlice("ironSlice", "ironSlice", "ironSlice"),
     computerizedCircuit("computerizedCircuit", "computerizedCircuit", "computerizedCircuit"),
-    throwablePoo("throwablePoo","throwablepoo","throwablepoo"),
 
     record_piss2("record_piss2", "record_piss", "record_piss"),
     record_rodney("record_rodney", "record_rodney", "record_rodney"),
