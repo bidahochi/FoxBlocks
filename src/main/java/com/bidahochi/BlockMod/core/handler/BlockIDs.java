@@ -34,11 +34,13 @@ import net.minecraft.item.ItemBlock;
 
 public enum BlockIDs {
 
+    //ores
     bauxiteOre(false,null, "Bauxite"),
     cobaltOre(false,null,"CobaltOre"),
-    placeholderOre(false, null, "PLaceholderOre"),
+    aragoniteOre(false, null, "AragoniteOre"),
+    gypsum(false,null,"gypsum"),
 
-    rawConcrete(false,null,"Concrete"),
+    //raw
     peagravel_snow(false,null, "peagravelsnow"),
     peagravel(false,null, "peagravel"),
     peagravel_shit(false, null, "Dirty Pea Gravel"),
@@ -50,51 +52,35 @@ public enum BlockIDs {
     dirt_4(false, null, "Dirt_4"),
     creamCityClay(false, null, "CreamCityClay"),
 
-    although(false,null, "alothi"),
-    testblock(false,null,"Test Block"),
-    tHanos(false,null,"T Hanos"),
-    booBlox(true, ItemBlockBooBlox.class, "BooBlox"),
+    //concrete
+    rawConcrete(false,null,"Concrete"),
+    layeredConcrete(false, null, "Layered Concrete"),
+    smoothCrete(false, null, "Smoothcrete"),
+    concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick"),
+    concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor"),
+    plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete"),
 
-    dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
-    wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
-    //brownTile(false, null, "Brown Tile"),
-    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
-    fireBrick(false, null, "fireBrick"),
-    darkEmberStone(false, null, "Dark Ember Stone"),
-    emberStone(false,null,"Ember Stone"),
-    //testPane(false, null, "TestPane"),
-    //testSlab(false,null,"TestSlab"),
-    blockLavaBucket(false, null, "BlockOLavaBucket"),
-
+    //stones
     soapStone(false, null, "Soapstone"),
     soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco"),
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
 
-    unfinishedDrywall(false,null,"unfinishedDrywall"),
-    //testStair(false,null,"TestStair"),
+    jolietLimestoneRaw(false, null, "jolietlimestoneraw"),
 
-    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
-    metalSiding2(true, ItemBlockmetalSiding2.class, "Metal Siding2"),
-    pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack"),
-    pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite"),
-    pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra"),
-    rustBeam(true, ItemBlockrustBeam.class, "rustBeam"),
+    //bricks
+    fireBrick(false, null, "fireBrick"),
+    mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick"),
+    creamCity(true, ItemBlockCreamCity.class, "creamcity"),
+    jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone"),
 
-    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
-    foxglass(false,null,"foxglass"),
-    layeredConcrete(false, null, "Layered Concrete"),
-    smoothCrete(false, null, "Smoothcrete"),
-    gypsum(false,null,"gypsum"),
+    cobaltBlock(false,null,"cobaltBlock"),
+    cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
+    cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2"),
+    cobaltBrick(false,null,"cobaltBrick"),
+    largeCobaltBrick(false,null,"largeCobaltBrick"),
 
-    emberStoneStair(false,null,"EmberStone Stair"),
-    darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
-    soapStoneStair(false, null, "Soapstone Stair"),
-
-    emberStoneSlab(false,null,"EmberStone Slab"),
-    darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
-    soapStoneSlab(false, null, "Soapstone Slab"),
-
+    //tiles
     tile4(true, ItemBlocktile4.class,"tile4"),
     tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2"),
     tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth"),
@@ -102,43 +88,74 @@ public enum BlockIDs {
     subTile(true, ItemBlockSubTile.class,"SubTile"),
     terrocottaTiles(true, ItemBlockTerrocottaTiles.class, "TerrocottaTiles"),
 
-    cobaltBlock(false,null,"cobaltBlock"),
-    cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
-    cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2"),
-    cobaltBrick(false,null,"cobaltBrick"),
-    largeCobaltBrick(false,null,"largeCobaltBrick"),
+    //fun
+    although(false,null, "alothi"),
+    testblock(false,null,"Test Block"),
+    tHanos(false,null,"T Hanos"),
+    booBlox(true, ItemBlockBooBlox.class, "BooBlox"),
+    blockLavaBucket(false, null, "BlockOLavaBucket"),
+    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
+    foxglass(false,null,"foxglass"),
     blue(false,null,"Blue"),
     green(false,null,"Green"),
-    mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick"),
-    creamCity(true, ItemBlockCreamCity.class, "creamcity"),
-    jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone"),
-    jolietLimestoneRaw(false, null, "jolietlimestoneraw"),
 
+    //woods
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
     widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
     widePlank3(true, ItemBlockwidePlank3.class, "widePlank3"),
     amtrak(true, ItemBlockAmtrak.class, "amshak"),
 
-    concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick"),
-    plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete"),
-    concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor"),
-    labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
-    labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
-    tarmac(true, ItemBlockTarmac.class, "tarmac"),
+    //other building mats
+    dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
+    wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
+    unfinishedDrywall(false,null,"unfinishedDrywall"),
+    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
+
     originStuff(true, ItemBlockOriginStuff.class, "OriginStuff"),
 
     glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted"),
 
+    tarmac(true, ItemBlockTarmac.class, "tarmac"),
+
+    //metals
+    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
+    metalSiding2(true, ItemBlockmetalSiding2.class, "Metal Siding2"),
+    pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack"),
+    pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite"),
+    pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra"),
+    rustBeam(true, ItemBlockrustBeam.class, "rustBeam"),
+    labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
+    labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
+
+    //hell
+    darkEmberStone(false, null, "Dark Ember Stone"),
+    emberStone(false,null,"Ember Stone"),
+
+    //additional
+    emberStoneStair(false,null,"EmberStone Stair"),
+    darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
+    soapStoneStair(false, null, "Soapstone Stair"),
+    //testPane(false, null, "TestPane"),
+    //testSlab(false,null,"TestSlab"),
+    //testStair(false,null,"TestStair"),
+    emberStoneSlab(false,null,"EmberStone Slab"),
+    darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
+    soapStoneSlab(false, null, "Soapstone Slab"),
+
+    //props
     breakerBox(false, null, "breakerBox"),
     breakerBox2(false, null, "breakerBox2"),
+
     clampOnSignDerail(false, null, "clampOnSignDerail"),
     clampOnSignStop1(false, null, "clampOnSignStop1"),
     clampOnSignStop2(false, null, "clampOnSignStop2"),
 
+    //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
     neonCageLightWallV(false, null, "neonCageLightWallV"),
     neonCageLightWallH(false, null, "neonCageLightWallH"),
 
+    //modular bridges
     bridgeA_Center(false, null, "bridgeA_Center"),
     bridgeA_X_Side_Top(false, null, "bridgeA_X_Side_Top"),
     bridgeA_X_Side_Bottom(false, null, "bridgeA_X_Side_Bottom"),
@@ -146,6 +163,7 @@ public enum BlockIDs {
     bridgeA_X_Side_Bottom2(false, null, "bridgeA_X_Side_Bottom2"),
     bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
+
     ;
 
     public Block block;

@@ -3,7 +3,6 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.ItemStack;
 
 public class ItemHandler {
 
@@ -23,6 +22,7 @@ public class ItemHandler {
         ItemIDs.ironRod.item = new IronRod();
         ItemIDs.ironSlice.item = new IronSlice();
         ItemIDs.computerizedCircuit.item = new computerizedCircuit();
+        ItemIDs.woodSealant.item = new woodSealant();
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

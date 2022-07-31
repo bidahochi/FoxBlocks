@@ -7,9 +7,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 
-public class PlaceholderOre extends Block {
+public class AragoniteOre extends Block {
 
-    public PlaceholderOre(Material p_i45394_1_) {
+    public AragoniteOre(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("AragoniteOre");
         setHardness(2F);

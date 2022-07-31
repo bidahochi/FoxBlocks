@@ -13,6 +13,9 @@ public class LayeredConcrete extends Block {
     public LayeredConcrete(Material p_i45394_1_) {
         super(p_i45394_1_);
 
+        setHardness(2.0F);
+        setResistance(12.5F);
+        setHarvestLevel("pickaxe", 1);
         setBlockName("Layered Concrete");
         setBlockTextureName(FoxBlocks.MODID+":stones/layercrete/Layered_concrete");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);

@@ -41,7 +41,7 @@ public class OreDictHandler {
         OreDictionary.registerOre("gypsumDust", new ItemStack(ItemIDs.gypsumDust.item));
         OreDictionary.registerOre("ceramic", new ItemStack(ItemIDs.ceramic.item));
         OreDictionary.registerOre("oreVietnam", new ItemStack(BlockIDs.tHanos.block));
-        OreDictionary.registerOre("oreAragonite", new ItemStack(BlockIDs.placeholderOre.block));
+        OreDictionary.registerOre("oreAragonite", new ItemStack(BlockIDs.aragoniteOre.block));
         OreDictionary.registerOre("rodIron", new ItemStack(ItemIDs.ironRod.item));
         OreDictionary.registerOre("plateIron", new ItemStack(ItemIDs.ironSlice.item));
         OreDictionary.registerOre("circuitBasic", new ItemStack(ItemIDs.computerizedCircuit.item));

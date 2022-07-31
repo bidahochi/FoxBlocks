@@ -482,7 +482,7 @@ public class RecipeHandler {
         for (ItemStack dyepurple : dyePurple){GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank.block, 7, 15), "WWW", "DWD", "WWW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyepurple);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank2.block, 7, 15), "WDW", "WWW", "WDW", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dyepurple); }
 
-        GameRegistry.addSmelting(BlockIDs.placeholderOre.block, new ItemStack(ItemIDs.aragoniteClump.item, 2), 3F);
+        GameRegistry.addSmelting(BlockIDs.aragoniteOre.block, new ItemStack(ItemIDs.aragoniteClump.item, 2), 3F);
 
         for (ItemStack dye1 : dyeGray){
             GameRegistry.addRecipe(new ItemStack(BlockIDs.amtrak.block, 6, 0), "WDW", "W W", "W W", Character.valueOf('W'), Blocks.planks, Character.valueOf('D'), dye1);

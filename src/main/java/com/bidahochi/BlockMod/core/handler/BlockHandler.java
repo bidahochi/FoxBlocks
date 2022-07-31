@@ -46,15 +46,16 @@ public class BlockHandler {
 
     public static void initBlockRegister(FMLInitializationEvent e){
 
-        FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
+        //FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
 
         //ores
         BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
         BlockIDs.cobaltOre.block = new CobaltOre(Material.rock);
-        BlockIDs.placeholderOre.block = new PlaceholderOre(Material.rock);
+        BlockIDs.aragoniteOre.block = new AragoniteOre(Material.rock);
+        BlockIDs.gypsum.block = new Gypsum(Material.rock);
 
-        BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
+        //raw
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
         BlockIDs.peagravel.block = new PeaGravel(Material.sand);
         BlockIDs.peagravel_shit.block = new PeaGravelDirty(Material.sand);
@@ -62,99 +63,117 @@ public class BlockHandler {
         BlockIDs.specialDirt.block = new SpecialDirt(Material.ground);
         BlockIDs.peagravelBallast.block = new PeaGravelBallast(Material.sand);
         BlockIDs.peagravelWhitestone.block = new PeaGravelWhitestone(Material.sand);
-        BlockIDs.fakeSnow.block = new FakeSnow(Material.snow);
+        BlockIDs.fakeSnow.block = new FakeSnow(Material.ground);
         BlockIDs.dirt_4.block = new Dirt_4(Material.sand);
         BlockIDs.creamCityClay.block = new CreamCityClay(Material.clay);
-        BlockIDs.jolietLimestoneRaw.block = new JolietLimestoneRaw(Material.rock);
 
-        BlockIDs.although.block = new Although(Material.clay);
-        BlockIDs.testblock.block = new TestBlock(Material.iron);
-        BlockIDs.tHanos.block = new Thanos(Material.sponge);
-        BlockIDs.booBlox.block = new BooBlox(Material.cloth);
+        //concretes
+        BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
+        BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
+        BlockIDs.smoothCrete.block = new Smoothcrete(Material.rock);
+        BlockIDs.concreteBrick.block = new ConcreteBrick(Material.rock);
+        BlockIDs.concreteFlooring.block = new ConcreteFloor(Material.rock);
+        BlockIDs.plasteredConcrete.block = new PlasteredConcrete(Material.rock);
 
-        BlockIDs.dryWall.block = new DryWall(Material.clay);
-        BlockIDs.wallPaper.block = new WallPaper(Material.cloth);
-        BlockIDs.unfinishedDrywall.block = new UnfinishedDrywall(Material.clay);
-        //BlockIDs.brownTile.block = new BrownTile(Material.rock);
-        BlockIDs.fiberGlass.block = new FiberGlass(Material.glass);
-        BlockIDs.fireBrick.block = new FireBrick(Material.rock);
-        BlockIDs.emberStone.block = new EmberStone(Material.rock);
-        BlockIDs.darkEmberStone.block = new DarkEmberStone(Material.rock);
-        //BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
-        //BlockIDs.testSlab.block = new testSlab(false, Material.iron);
-        //BlockIDs.testStair.block = new testStair(BlockIDs.bauxiteOre.block, 0);
-        BlockIDs.blockLavaBucket.block = new BlockLavaBucket(Material.iron);
-
+        //stones
         BlockIDs.soapStone.block = new SoapStone(Material.rock);
         BlockIDs.soapStoneMagmatic.block = new soapStoneMagmatic(Material.rock);
         BlockIDs.soapStoneDeco.block = new SoapStoneDeco(Material.rock);
         BlockIDs.soapStoneEmerald.block = new soapStoneEmerald(Material.rock);
 
+        BlockIDs.jolietLimestoneRaw.block = new JolietLimestoneRaw(Material.rock);
+
+        //bricks
+        BlockIDs.fireBrick.block = new FireBrick(Material.rock);
+        BlockIDs.mortarBrick.block = new MortarBrick(Material.rock);
+        BlockIDs.creamCity.block = new CreamCity(Material.rock);
+        BlockIDs.jolietLimestone.block = new JolietLimestone(Material.rock);
+
+        BlockIDs.cobaltBlock.block = new CobaltBlock(Material.rock);
+        BlockIDs.cobaltPanel.block = new CobaltPanel(Material.rock);
+        BlockIDs.cobaltPanel2.block = new CobaltPanel2(Material.rock);
+        BlockIDs.cobaltBrick.block = new CobaltBrick(Material.rock);
+        BlockIDs.largeCobaltBrick.block = new LargeCobaltBrick(Material.rock);
+
+        //tiles
+        BlockIDs.tile4.block = new Tile4(Material.rock);
+        BlockIDs.tile2x2.block = new Tile2x2(Material.rock);
+        BlockIDs.tile2x2smooth.block = new Tile2x2smooth(Material.rock);
+        BlockIDs.diamondTile.block = new DiamondTile(Material.rock);
+        BlockIDs.subTile.block = new SubTile(Material.rock);
+        BlockIDs.terrocottaTiles.block = new TerrocottaTiles(Material.rock);
+
+        //fun
+        BlockIDs.although.block = new Although(Material.clay);
+        BlockIDs.testblock.block = new TestBlock(Material.iron);
+        BlockIDs.tHanos.block = new Thanos(Material.sponge);
+        BlockIDs.booBlox.block = new BooBlox(Material.cloth);
+        BlockIDs.blockLavaBucket.block = new BlockLavaBucket(Material.iron);
+        BlockIDs.harieshHead.block = new HarieshHead(Material.gourd);
+        BlockIDs.foxglass.block = new foxglass(Material.glass);
+        BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
+        BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
+
+
+        //woods
+        BlockIDs.widePlank.block = new WidePlank(Material.wood);
+        BlockIDs.widePlank2.block = new WidePlank2(Material.wood);
+        BlockIDs.widePlank3.block = new WidePlank3(Material.wood);
+        BlockIDs.amtrak.block = new Amtrak(Material.wood);
+
+        //other building materials
+        BlockIDs.dryWall.block = new DryWall(Material.clay);
+        BlockIDs.wallPaper.block = new WallPaper(Material.cloth);
+        BlockIDs.unfinishedDrywall.block = new UnfinishedDrywall(Material.clay);
+        BlockIDs.fiberGlass.block = new FiberGlass(Material.glass);
+
+        BlockIDs.originStuff.block = new OriginStuff(Material.rock);
+
+        BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
+
+        BlockIDs.tarmac.block = new Tarmac(Material.rock);
+
+
+        //metals
         BlockIDs.metalSiding.block = new MetalSiding(Material.iron);
         BlockIDs.metalSiding2.block = new MetalSiding2(Material.iron);
         BlockIDs.pannelBlack.block = new PannelBlack(Material.iron);
         BlockIDs.pannelWhite.block = new PannelWhite(Material.iron);
         BlockIDs.pannelExtra.block = new PannelExtra(Material.iron);
         BlockIDs.rustBeam.block = new RustBeam(Material.iron);
+        BlockIDs.labwallDark.block = new LabwallDark(Material.rock);
+        BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
 
-        BlockIDs.harieshHead.block = new HarieshHead(Material.dragonEgg);
-        BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
-        BlockIDs.smoothCrete.block = new Smoothcrete(Material.rock);
-        BlockIDs.gypsum.block = new Gypsum(Material.rock);
+        //hekk
+        BlockIDs.emberStone.block = new EmberStone(Material.rock);
+        BlockIDs.darkEmberStone.block = new DarkEmberStone(Material.rock);
 
+        //additional
         BlockIDs.emberStoneStair.block = new BaseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F,Block.soundTypeStone,"pickaxe",2,0, FoxBlocks.foxBlocksCreativeTabRock);
         BlockIDs.darkEmberStoneStair.block = new BaseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F,Block.soundTypeStone, "pickaxe",2, 0, FoxBlocks.foxBlocksCreativeTabRock);
         BlockIDs.soapStoneStair.block = new BaseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, FoxBlocks.foxBlocksCreativeTabRock);
-
+        //BlockIDs.testPane.block = new testPane(BlockIDs.testPane.blockName, Material.iron, true);
+        //BlockIDs.testSlab.block = new testSlab(false, Material.iron);
+        //BlockIDs.testStair.block = new testStair(BlockIDs.bauxiteOre.block, 0);
         BlockIDs.emberStoneSlab.block = new BaseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/emberStone", FoxBlocks.foxBlocksCreativeTabRock);
         BlockIDs.darkEmberStoneSlab.block = new BaseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F,Block.soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone", FoxBlocks.foxBlocksCreativeTabRock);
         BlockIDs.soapStoneSlab.block = new BaseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, Block.soundTypeStone, "pickaxe", 1, 0, "stones/soapstone", FoxBlocks.foxBlocksCreativeTabRock);
 
-        BlockIDs.tile4.block = new Tile4(Material.rock);
-        BlockIDs.tile2x2.block = new Tile2x2(Material.rock);
-        BlockIDs.tile2x2smooth.block = new Tile2x2smooth(Material.rock);
-        BlockIDs.diamondTile.block = new DiamondTile(Material.rock);
-        BlockIDs.subTile.block = new SubTile(Material.rock);
-        BlockIDs.foxglass.block = new foxglass(Material.glass);
-        BlockIDs.terrocottaTiles.block = new TerrocottaTiles(Material.rock);
-
-        //cobalt deco blocks
-        BlockIDs.cobaltBlock.block = new CobaltBlock(Material.rock);
-        BlockIDs.cobaltPanel.block = new CobaltPanel(Material.rock);
-        BlockIDs.cobaltPanel2.block = new CobaltPanel2(Material.rock);
-        BlockIDs.cobaltBrick.block = new CobaltBrick(Material.rock);
-        BlockIDs.largeCobaltBrick.block = new LargeCobaltBrick(Material.rock);
-        BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
-        BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
-        BlockIDs.mortarBrick.block = new MortarBrick(Material.rock);
-        BlockIDs.creamCity.block = new CreamCity(Material.rock);
-        BlockIDs.jolietLimestone.block = new JolietLimestone(Material.rock);
-
-        BlockIDs.widePlank.block = new WidePlank(Material.wood);
-        BlockIDs.widePlank2.block = new WidePlank2(Material.wood);
-        BlockIDs.widePlank3.block = new WidePlank3(Material.wood);
-        BlockIDs.amtrak.block = new Amtrak(Material.wood);
-
-        BlockIDs.concreteBrick.block = new ConcreteBrick(Material.rock);
-        BlockIDs.concreteFlooring.block = new ConcreteFloor(Material.rock);
-        BlockIDs.plasteredConcrete.block = new PlasteredConcrete(Material.rock);
-        BlockIDs.labwallDark.block = new LabwallDark(Material.rock);
-        BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
-        BlockIDs.tarmac.block = new Tarmac(Material.rock);
-        BlockIDs.originStuff.block = new OriginStuff(Material.rock);
-
-        BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
+        //props
 
         BlockIDs.breakerBox.block = new BreakerBox(Material.rock);
         BlockIDs.breakerBox2.block = new BreakerBox2(Material.rock);
+
         BlockIDs.clampOnSignDerail.block = new ClampOnSignDerail(Material.iron);
         BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
         BlockIDs.clampOnSignStop2.block = new ClampOnSignStop2(Material.iron);
 
+        //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
         BlockIDs.neonCageLightWallH.block = new NeonCageLampWallH(Material.iron);
 
+        //modular bridge
         BlockIDs.bridgeA_Center.block = new BridgeA_Center(Material.wood);
         BlockIDs.bridgeA_X_Side_Top.block = new BridgeA_X_Side_top(Material.wood);
         BlockIDs.bridgeA_X_Side_Bottom.block = new BridgeA_X_Side_Bottom(Material.wood);
@@ -197,7 +216,7 @@ public class BlockHandler {
             RenderBlockHandler.initializeCustomModels();
         }
 
-        FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
+        //FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
     }
 

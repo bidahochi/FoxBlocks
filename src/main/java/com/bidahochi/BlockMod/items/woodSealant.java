@@ -11,24 +11,23 @@ import net.minecraft.util.EnumChatFormatting;
 
 import java.util.List;
 
-public class lowDensityCompound extends Item {
-    public lowDensityCompound() {
+public class woodSealant extends Item {
+    public woodSealant() {
         super();
-        setMaxStackSize(32);
-        setUnlocalizedName("compound");
+        setMaxStackSize(64);
+        setUnlocalizedName("woodSealant");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(FoxBlocks.MODID.toLowerCase() + ":lowdensitycompound");
+        this.itemIcon = iconRegister.registerIcon(FoxBlocks.MODID.toLowerCase() + ":woodSealant");
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        //par3List.add("\u00a77" + EnumChatFormatting.GRAY + "And guess what? Ground-up Soapstone is pure poison. I am deathly ill. ");
-        par3List.add("\u00a77" + EnumChatFormatting.GRAY + "Still, it turns out they're a great portal conductor!");
+        par3List.add("\u00a77" + EnumChatFormatting.GOLD + "I could varnish my deck with this!");
     }
 }
