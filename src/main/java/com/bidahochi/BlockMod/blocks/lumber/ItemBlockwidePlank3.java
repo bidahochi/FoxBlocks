@@ -1,12 +1,12 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials;
+package com.bidahochi.BlockMod.blocks.lumber;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlockWithMetadata;
 import net.minecraft.item.ItemStack;
 
-public class ItemBlockwidePlank extends ItemBlockWithMetadata {
+public class ItemBlockwidePlank3 extends ItemBlockWithMetadata {
 
-    public ItemBlockwidePlank(Block block) {
+    public ItemBlockwidePlank3(Block block) {
         super(block, block);
     }
 

@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials;
+package com.bidahochi.BlockMod.blocks.lumber;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;

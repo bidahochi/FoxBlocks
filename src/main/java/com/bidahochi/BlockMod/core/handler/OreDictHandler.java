@@ -27,7 +27,7 @@ public class OreDictHandler {
 
     public static void registerOreDict() {
 
-        FoxBlocks.blockLogger.info("oreDict compatibility pre Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
+        //FoxBlocks.blockLogger.info("oreDict compatibility pre Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
         OreDictionary.registerOre("oreAluminium", new ItemStack(BlockIDs.bauxiteOre.block) );
         //OreDictionary.registerOre("oreCobalt", new ItemStack(BlockIDs.cobaltOre.block) );//bUt ItS nOt BaLaNcEd EnOuGh To HaVe
@@ -47,8 +47,9 @@ public class OreDictHandler {
         OreDictionary.registerOre("circuitBasic", new ItemStack(ItemIDs.computerizedCircuit.item));
         OreDictionary.registerOre("drywallUnfinished", new ItemStack(BlockIDs.unfinishedDrywall.block));
         OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block));
+        OreDictionary.registerOre("logWood", new ItemStack(BlockIDs.logs.block));
 
-        FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
+        //FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
     }
 }

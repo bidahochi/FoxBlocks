@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials;
+package com.bidahochi.BlockMod.blocks.lumber;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.block.Block;
@@ -11,37 +11,40 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class WidePlank3 extends Block {
+public class WidePlank extends Block {
 
     int varia=16;
 
     public IIcon[] textures = new IIcon[varia];
 
-    public WidePlank3(Material p_i45394_1_) {
+    public WidePlank(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("widePlank3");
+        setBlockName("widePlank");
         setHardness(2F);
         setResistance(5F);
-        setHarvestLevel("axe", 0);
+        setHarvestLevel("axe", 1);
         setStepSound(soundTypeWood);
-        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wideplank3/wideplank3");
+        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wideplank/wideplank");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 12 ; i++) {
+        for ( int i = 0; i < varia ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
+
     public IIcon getIcon ( int side, int meta){
-        if (meta > 11 ) meta = 0;
+        if (meta > varia-1 ) meta = 0;
         return this.textures[meta];
     }
+
     public int damageDropped( int oldmeta){
         return oldmeta;
     }
+
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 12; i++){
+        for (int i = 0; i < varia; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }

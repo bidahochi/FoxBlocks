@@ -25,15 +25,15 @@ import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.FiberGlass;
-import com.bidahochi.BlockMod.blocks.hell.DarkEmberStone;
-import com.bidahochi.BlockMod.blocks.hell.EmberStone;
+import com.bidahochi.BlockMod.blocks.hell.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;
+import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -115,11 +115,13 @@ public class BlockHandler {
         BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
 
 
-        //woods
+        //lumber
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
         BlockIDs.widePlank2.block = new WidePlank2(Material.wood);
         BlockIDs.widePlank3.block = new WidePlank3(Material.wood);
         BlockIDs.amtrak.block = new Amtrak(Material.wood);
+        BlockIDs.logs.block = new Logs(Material.wood);
+        BlockIDs.leaves.block = new Leaves();
 
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);

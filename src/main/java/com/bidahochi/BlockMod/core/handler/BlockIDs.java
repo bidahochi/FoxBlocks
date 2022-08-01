@@ -28,6 +28,7 @@ import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
+import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -99,11 +100,13 @@ public enum BlockIDs {
     blue(false,null,"Blue"),
     green(false,null,"Green"),
 
-    //woods
+    //lumber
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
     widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
     widePlank3(true, ItemBlockwidePlank3.class, "widePlank3"),
     amtrak(true, ItemBlockAmtrak.class, "amshak"),
+    logs(true, ItemBlockLogs.class, "logs"),
+    leaves(true, ItemBlockLeaves.class, "leaves"),
 
     //other building mats
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
