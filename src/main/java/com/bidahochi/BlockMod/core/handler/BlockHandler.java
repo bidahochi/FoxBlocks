@@ -121,7 +121,7 @@ public class BlockHandler {
         BlockIDs.widePlank3.block = new WidePlank3(Material.wood);
         BlockIDs.amtrak.block = new Amtrak(Material.wood);
         BlockIDs.logs.block = new Logs(Material.wood);
-        BlockIDs.leaves.block = new Leaves();
+        BlockIDs.leaves.block = new Leaves(Material.leaves);
 
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);

@@ -420,6 +420,9 @@ tile.CreamCity_2.name=Polluted Cream City Bricks
 tile.logs_0.name=Douglas Fir Log
 tile.logs_1.name=Sitka Spruce Log
 tile.logs_2.name=Western Red Cedar Log
+tile.leaves_0.name=Douglas Fir Leaves
+tile.leaves_1.name=Sitka Spruce Leaves
+tile.leaves_2.name=Western Red Cedar Leaves
 
 tile.bridgeA_Center.name=Modular Bridge A (Center Post)
 tile.bridgeA_Side_Top.name=Modular Bridge A (Side Post Top)
