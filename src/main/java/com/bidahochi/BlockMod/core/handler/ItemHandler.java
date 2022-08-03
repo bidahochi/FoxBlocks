@@ -8,7 +8,7 @@ public class ItemHandler {
 
     public static void initItemRegister(){
 
-        FoxBlocks.blockLogger.info("ItemRegister Pre Init at com.bidahochi.BlockMod.core.handler.itemHandler");
+        //FoxBlocks.blockLogger.info("ItemRegister Pre Init at com.bidahochi.BlockMod.core.handler.itemHandler");
 
         ItemIDs.test.item = new test();
         ItemIDs.jarate.item = new jarate();
@@ -23,6 +23,9 @@ public class ItemHandler {
         ItemIDs.ironSlice.item = new IronSlice();
         ItemIDs.computerizedCircuit.item = new computerizedCircuit();
         ItemIDs.woodSealant.item = new woodSealant();
+        ItemIDs.taconiteCrushed.item = new taconiteCrushed();
+        ItemIDs.taconitePellets.item = new taconitePellets();
+        ItemIDs.quicklime.item = new quicklime();
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

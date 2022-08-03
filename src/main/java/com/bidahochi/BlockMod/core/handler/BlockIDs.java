@@ -40,6 +40,8 @@ public enum BlockIDs {
     cobaltOre(false,null,"CobaltOre"),
     aragoniteOre(false, null, "AragoniteOre"),
     gypsum(false,null,"gypsum"),
+    taconite(false,null,"taconite"),
+    hematite(false,null,"hematite"),
 
     //raw
     peagravel_snow(false,null, "peagravelsnow"),
@@ -68,6 +70,7 @@ public enum BlockIDs {
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
 
     jolietLimestoneRaw(false, null, "jolietlimestoneraw"),
+    limestone(false, null, "limestone"),
 
     //bricks
     fireBrick(false, null, "fireBrick"),

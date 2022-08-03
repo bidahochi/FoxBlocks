@@ -4,6 +4,8 @@ tile.Gypsum.name=Raw Gypsum
 tile.Cobalt Ore.name=Cobalt Ore
 tile.PlaceholderOre.name=Aragonite Ore
 tile.AragoniteOre.name=Aragonite Ore
+tile.Hematite.name=Hematite
+tile.Taconite.name=Taconite
 
 tile.Raw Concrete.name=Raw Concrete
 tile.Layered Concrete.name=Layered Concrete
@@ -408,7 +410,7 @@ tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone
 tile.OriginStuff_2.name=Origin Brick
 
-tile.JolietLimestoneRaw.name=Raw Joliet Limestone
+tile.JolietLimestoneRaw.name=Niagaran Dolomite (Joliet Limestone)
 tile.JolietLimestone_0.name=Joliet Limestone Bricks
 tile.JolietLimestone_1.name=Irregular Joliet Limestone Bricks
 tile.JolietLimestone_2.name=Large Joliet Limestone Bricks
@@ -441,6 +443,8 @@ tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
 
+tile.limestone.name=Lower Pennsylvanian Limestone
+
 item.foxblocks:Jarate!.name=Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
 item.foxblocks:enrichedClay.name=Enriched Clay
@@ -453,6 +457,9 @@ item.foxblocks:ironRod.name=Iron Rod
 item.foxblocks:ironSlice.name=Iron Slice
 item.foxblocks:computerizedCircuit.name=Computerized Circuit Chip
 item.foxblocks:woodSealant.name=Organic Wood-Seal Product
+item.foxblocks:taconiteCrushed.name=Crushed Taconite
+item.foxblocks:taconitePellets.name=Taconite Pellets
+item.foxblocks:quicklime.name=Quicklime
 
 item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
 item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable

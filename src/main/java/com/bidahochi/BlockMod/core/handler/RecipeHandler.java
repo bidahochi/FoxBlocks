@@ -67,7 +67,7 @@ public class RecipeHandler {
 
     public static void initBlockRecipes() {
 
-        FoxBlocks.blockLogger.info("BlockRecipe's Pre Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
+        //FoxBlocks.blockLogger.info("BlockRecipe's Pre Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
 
 
         ArrayList<ItemStack> iron = OreDictionary.getOres("ingotIron");
@@ -609,7 +609,15 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 1), new ItemStack(ItemIDs.enrichedClay.item), Blocks.mossy_cobblestone, Blocks.mossy_cobblestone);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 2), new ItemStack(ItemIDs.enrichedClay.item), Blocks.brick_block, Blocks.brick_block);
 
+        //ore processing
+        GameRegistry.addSmelting(BlockIDs.hematite.block, new ItemStack(Items.iron_ingot, 3), 3F);//hematite to ingot
+        GameRegistry.addSmelting(BlockIDs.limestone.block, new ItemStack(ItemIDs.quicklime.item, 2), 0F);//limestone to quicklime
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.taconitePellets.item, 2), new ItemStack(ItemIDs.taconiteCrushed.item, 1), Items.clay_ball);// crushed taconite to taconite pellets
+        GameRegistry.addSmelting(ItemIDs.taconitePellets.item, new ItemStack(Items.iron_ingot, 1), 2F);//pellets to ingots
+
+
+
         FoxBlocks.blockLogger.info("Hi Dad!");
-        FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
+        //FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
     }
 }

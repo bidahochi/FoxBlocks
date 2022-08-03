@@ -54,6 +54,8 @@ public class BlockHandler {
         BlockIDs.cobaltOre.block = new CobaltOre(Material.rock);
         BlockIDs.aragoniteOre.block = new AragoniteOre(Material.rock);
         BlockIDs.gypsum.block = new Gypsum(Material.rock);
+        BlockIDs.taconite.block = new Taconite(Material.rock);
+        BlockIDs.hematite.block = new Hematite(Material.rock);
 
         //raw
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
@@ -82,6 +84,7 @@ public class BlockHandler {
         BlockIDs.soapStoneEmerald.block = new soapStoneEmerald(Material.rock);
 
         BlockIDs.jolietLimestoneRaw.block = new JolietLimestoneRaw(Material.rock);
+        BlockIDs.limestone.block = new Limestone(Material.rock);
 
         //bricks
         BlockIDs.fireBrick.block = new FireBrick(Material.rock);

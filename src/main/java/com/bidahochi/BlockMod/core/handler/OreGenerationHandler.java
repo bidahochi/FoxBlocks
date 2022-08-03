@@ -66,11 +66,11 @@ public class OreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.creamCityClay.block, world, rand, x, z, 2, 8, 8, 60, 80, Blocks.sand);
         generateOre(BlockIDs.jolietLimestoneRaw.block, world, rand, x ,z ,5, 12, 8, 40, 70, Blocks.stone);
 
+        generateOre(BlockIDs.limestone.block, world, rand, x ,z ,10, 30, 7, 40, 150, Blocks.stone);
+        generateOre(BlockIDs.taconite.block, world, rand, x ,z ,15, 25, 5, 25, 128, Blocks.stone);
+        //generateOre(BlockIDs.hematite.block, world, rand, x ,z ,1, 10, 3, 25, 128, Blocks.stone);
+
     }
-    /*public void generateOverworld2(World world, Random rand, int x, int z){
-        generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 7, 1, 85, BlockIDs.soapStone.block);
-        generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 1, 2, 7, 4, 31, BlockIDs.soapStone.block);
-    }*/
 
     public void generateNether(World world, Random rand, int x, int z){
         generateOre(BlockIDs.emberStone.block, world, rand, x, z, 10, 20, 15, 20, 80, Blocks.netherrack);
@@ -78,7 +78,6 @@ public class OreGenerationHandler implements IWorldGenerator {
         //generateOre(BlockIDs.soapStone.block, world, rand, x, z, 65, 136, 7, 40, 133, Blocks.netherrack);
         //generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 45, 4, 123, BlockIDs.soapStone.block);
     }
-
 
     public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block generateIn) {
         int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);

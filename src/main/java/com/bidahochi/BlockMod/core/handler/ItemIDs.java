@@ -17,6 +17,9 @@ public enum ItemIDs {
     ironSlice("ironSlice", "ironSlice", "ironSlice"),
     computerizedCircuit("computerizedCircuit", "computerizedCircuit", "computerizedCircuit"),
     woodSealant("woodSealant", "woodSealant", "woodSealant"),
+    taconiteCrushed("taconiteCrushed", "taconiteCrushed", "taconiteCrushed"),
+    taconitePellets("taconitePellets", "taconitePellets", "taconitePellets"),
+    quicklime("quicklime","quicklime_1","quicklime"),
 
     record_piss2("record_piss2", "record_piss", "record_piss"),
     record_rodney("record_rodney", "record_rodney", "record_rodney"),
