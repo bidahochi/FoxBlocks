@@ -48,6 +48,10 @@ public class OreDictHandler {
         OreDictionary.registerOre("drywallUnfinished", new ItemStack(BlockIDs.unfinishedDrywall.block));
         OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block));
         OreDictionary.registerOre("logWood", new ItemStack(BlockIDs.logs.block));
+        OreDictionary.registerOre("oreHematite", new ItemStack(BlockIDs.hematite.block));
+        OreDictionary.registerOre("oreTaconite", new ItemStack(BlockIDs.taconite.block));
+        OreDictionary.registerOre("oreCrushedTaconite", new ItemStack(ItemIDs.taconiteCrushed.item));
+        OreDictionary.registerOre("dustTaconite", new ItemStack(ItemIDs.taconitePellets.item));
 
         //FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
