@@ -21,6 +21,8 @@ public enum ItemIDs {
     taconitePellets("taconitePellets", "taconitePellets", "taconitePellets"),
     quicklime("quicklime","quicklime_1","quicklime"),
 
+    doorA("doorAitem","doorA_icon","doorAitem"),
+
     record_piss2("record_piss2", "record_piss", "record_piss"),
     record_rodney("record_rodney", "record_rodney", "record_rodney"),
     ;

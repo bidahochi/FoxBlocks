@@ -5,6 +5,8 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox2;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.RenderRoadCover0;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
 import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
@@ -31,5 +33,14 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Bottom2.class, new RenderBridgeA_X_Side_Bottom2());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_Top.class, new RenderBridgeA_Side_Top());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_Bottom.class, new RenderBridgeA_Side_Bottom());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover0.class, new RenderRoadCover0());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover1.class, new RenderRoadCover1());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover2.class, new RenderRoadCover2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover3.class, new RenderRoadCover3());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover4.class, new RenderRoadCover4());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover5.class, new RenderRoadCover5());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover6.class, new RenderRoadCover6());
+
     }
 }

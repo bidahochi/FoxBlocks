@@ -30,6 +30,8 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
+import com.bidahochi.BlockMod.blocks.props.ItemBlockDoorA;
+import com.bidahochi.BlockMod.items.doorA1item;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -47,6 +49,8 @@ public enum BlockIDs {
     peagravel_snow(false,null, "peagravelsnow"),
     peagravel(false,null, "peagravel"),
     peagravel_shit(false, null, "Dirty Pea Gravel"),
+    peagravel_volcanic(false, null, "Volcanic Cinder Peagravel"),
+    gravel_volcanic(false, null, "Volcanic Cinder Gravel"),
     gravel_shit(false, null, "Dirty Gravel"),
     specialDirt(false, null, "SpecialDirt"),
     peagravelBallast(false,null, "peagravelBallast"),
@@ -122,6 +126,13 @@ public enum BlockIDs {
     glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted"),
 
     tarmac(true, ItemBlockTarmac.class, "tarmac"),
+    roadcover_tarmac0(false, null, "roadcover_tarmac_0"),
+    roadcover_tarmac1(false, null, "roadcover_tarmac_1"),
+    roadcover_tarmac2(false, null, "roadcover_tarmac_2"),
+    roadcover_tarmac3(false, null, "roadcover_tarmac_3"),
+    roadcover_tarmac4(false, null, "roadcover_tarmac_4"),
+    roadcover_tarmac5(false, null, "roadcover_tarmac_5"),
+    roadcover_tarmac6(false, null, "roadcover_tarmac_6"),
 
     //metals
     metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
@@ -169,6 +180,8 @@ public enum BlockIDs {
     bridgeA_X_Side_Bottom2(false, null, "bridgeA_X_Side_Bottom2"),
     bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
+
+    doorA(true, ItemBlockDoorA.class, "doorAblock"),
 
     ;
 

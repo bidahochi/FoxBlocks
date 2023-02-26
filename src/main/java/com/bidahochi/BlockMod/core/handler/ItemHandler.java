@@ -3,6 +3,7 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.material.Material;
 
 public class ItemHandler {
 
@@ -26,6 +27,8 @@ public class ItemHandler {
         ItemIDs.taconiteCrushed.item = new taconiteCrushed();
         ItemIDs.taconitePellets.item = new taconitePellets();
         ItemIDs.quicklime.item = new quicklime();
+
+        ItemIDs.doorA.item = new doorAitem(Material.wood);
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

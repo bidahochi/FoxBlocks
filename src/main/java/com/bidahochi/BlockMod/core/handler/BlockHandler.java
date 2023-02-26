@@ -25,6 +25,7 @@ import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
 import com.bidahochi.BlockMod.blocks.hell.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
@@ -61,6 +62,8 @@ public class BlockHandler {
         BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
         BlockIDs.peagravel.block = new PeaGravel(Material.sand);
         BlockIDs.peagravel_shit.block = new PeaGravelDirty(Material.sand);
+        BlockIDs.peagravel_volcanic.block = new PeaGravelVolcanic(Material.rock);
+        BlockIDs.gravel_volcanic.block = new GravelVolcanic(Material.rock);
         BlockIDs.gravel_shit.block = new GravelDirty(Material.sand);
         BlockIDs.specialDirt.block = new SpecialDirt(Material.ground);
         BlockIDs.peagravelBallast.block = new PeaGravelBallast(Material.sand);
@@ -137,6 +140,13 @@ public class BlockHandler {
         BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
 
         BlockIDs.tarmac.block = new Tarmac(Material.rock);
+        BlockIDs.roadcover_tarmac0.block = new RoadCover0(Material.rock);
+        BlockIDs.roadcover_tarmac1.block = new RoadCover1(Material.rock);
+        BlockIDs.roadcover_tarmac2.block = new RoadCover2(Material.rock);
+        BlockIDs.roadcover_tarmac3.block = new RoadCover3(Material.rock);
+        BlockIDs.roadcover_tarmac4.block = new RoadCover4(Material.rock);
+        BlockIDs.roadcover_tarmac5.block = new RoadCover5(Material.rock);
+        BlockIDs.roadcover_tarmac6.block = new RoadCover6(Material.rock);
 
 
         //metals
@@ -166,8 +176,8 @@ public class BlockHandler {
 
         //props
 
-        BlockIDs.breakerBox.block = new BreakerBox(Material.rock);
-        BlockIDs.breakerBox2.block = new BreakerBox2(Material.rock);
+        BlockIDs.breakerBox.block = new BreakerBox(Material.iron);
+        BlockIDs.breakerBox2.block = new BreakerBox2(Material.iron);
 
         BlockIDs.clampOnSignDerail.block = new ClampOnSignDerail(Material.iron);
         BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
@@ -187,6 +197,8 @@ public class BlockHandler {
         BlockIDs.bridgeA_Side_Top.block = new BridgeA_Side_Top(Material.wood);
         BlockIDs.bridgeA_Side_Bottom.block = new BridgeA_Side_Bottom(Material.wood);
 
+        BlockIDs.doorA.block = new DoorA1(Material.wood);
+        //BlockIDs.doorA.block = (Block)Block.blockRegistry.getObject("wooden_door");
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
@@ -205,6 +217,14 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Bottom2.class, "bridgeA_X_Side_Center_Bottom2.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Top.class, "bridgeA_Side_Top.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Bottom.class, "bridgeA_Side_Bottom.tile");
+
+        GameRegistry.registerTileEntity(TileRoadCover0.class, "roadcover0.tile");
+        GameRegistry.registerTileEntity(TileRoadCover1.class, "roadcover1.tile");
+        GameRegistry.registerTileEntity(TileRoadCover2.class, "roadcover2.tile");
+        GameRegistry.registerTileEntity(TileRoadCover3.class, "roadcover3.tile");
+        GameRegistry.registerTileEntity(TileRoadCover4.class, "roadcover4.tile");
+        GameRegistry.registerTileEntity(TileRoadCover5.class, "roadcover5.tile");
+        GameRegistry.registerTileEntity(TileRoadCover6.class, "roadcover6.tile");
 
         for (BlockIDs block : BlockIDs.values()) {
 

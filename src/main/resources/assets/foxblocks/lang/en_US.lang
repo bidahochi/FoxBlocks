@@ -14,6 +14,8 @@ tile.Smoothcrete.name=Smooth-Crete
 tile.Snowy Pea Gravel.name=Snowy Pea Gravel
 tile.Pea Gravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
+tile.Volcanic Cinder Peagravel.name=Volcanic Cinder Peagravel
+tile.Volcanic Cinder Gravel.name=Volcanic Cinder Gravel
 tile.Dirty Gravel.name=Dirty Gravel
 tile.SpecialDirt.name=Ungrowable Dirt
 tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
@@ -405,6 +407,14 @@ tile.tarmac_10.name=Green Tarmac Road Fullblock
 tile.tarmac_11.name=Red Tarmac Road Fullblock
 tile.tarmac_12.name=White Tarmac Road Fullblock
 tile.tarmac_13.name=Yellow Tarmac Road Fullblock
+
+tile.roadcover_tarmac_0.name=Tarmac Roadcover
+tile.roadcover_tarmac_1.name=Fine Tarmac Roadcover
+tile.roadcover_tarmac_2.name=Dark Tarmac Roadcover
+tile.roadcover_tarmac_3.name=Light Tarmac Roadcover
+tile.roadcover_tarmac_4.name=Grey Concrete Roadcover
+tile.roadcover_tarmac_5.name=Pale Concrete Roadcover
+tile.roadcover_tarmac_6.name=Pale Tarmac Roadcover
 
 tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone
