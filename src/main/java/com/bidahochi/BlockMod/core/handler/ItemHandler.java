@@ -28,7 +28,7 @@ public class ItemHandler {
         ItemIDs.taconitePellets.item = new taconitePellets();
         ItemIDs.quicklime.item = new quicklime();
 
-        ItemIDs.doorA.item = new doorAitem(Material.wood);
+        ItemIDs.doorA.item = new itemDoor(Material.wood).setUnlocalizedName("doorA").setTextureName("doorA");
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

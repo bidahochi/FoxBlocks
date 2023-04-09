@@ -197,7 +197,7 @@ public class BlockHandler {
         BlockIDs.bridgeA_Side_Top.block = new BridgeA_Side_Top(Material.wood);
         BlockIDs.bridgeA_Side_Bottom.block = new BridgeA_Side_Bottom(Material.wood);
 
-        BlockIDs.doorA.block = new DoorA1(Material.wood);
+        BlockIDs.doorA.block = new baseDoor(Material.wood).setBlockName("doorA").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_a").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         //BlockIDs.doorA.block = (Block)Block.blockRegistry.getObject("wooden_door");
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
