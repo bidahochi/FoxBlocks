@@ -1,10 +1,13 @@
 package com.bidahochi.BlockMod.blocks.bridgestuff;
 
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.AxisAlignedBB;
 
 public class TileBridgeA_Center extends TileEntity {
     public int dir=0;
@@ -55,4 +58,10 @@ public class TileBridgeA_Center extends TileEntity {
         return this;
     }
 
+    @SideOnly(Side.CLIENT)
+    @Override
+    public AxisAlignedBB getRenderBoundingBox()
+    {
+        return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-5, zCoord-1, xCoord + 1, yCoord + 1, zCoord + 1);
+    }
 }
