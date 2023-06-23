@@ -70,6 +70,7 @@ public class OreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.taconite.block, world, rand, x ,z ,15, 25, 5, 25, 128, Blocks.stone);
         //generateOre(BlockIDs.hematite.block, world, rand, x ,z ,1, 10, 3, 25, 128, Blocks.stone);
 
+        generateOre(Blocks.sand, world, rand, x, z, 6, 10, 6, 36, 77, Blocks.stone);
     }
 
     public void generateNether(World world, Random rand, int x, int z){
