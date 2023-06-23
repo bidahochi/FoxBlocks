@@ -46,14 +46,16 @@ public class itemDoor extends Item {
             y++;
             Block block;
             /** Here you can define your doors, just make more if statements for each nea door (use the unlocalised name)
-             *
-            if (this.getUnlocalizedName() == "doorA"){
+             */
+            if (this.getUnlocalizedName() == "doorAitem"){
                 block = BlockIDs.doorA.block;
             }
-
-            else {*/
-                block = BlockIDs.doorA.block;
-          // }
+            else if (this.getUnlocalizedName() == "doorBitem"){
+                block = BlockIDs.doorB.block;
+            }
+            else {
+                return false;
+            }
 
 
 

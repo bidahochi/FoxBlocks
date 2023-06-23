@@ -125,24 +125,24 @@ public class baseDoor extends BlockDoor {
     public Item getItemDropped(int itemDropped, Random p_149650_2_, int p_149650_3_)
     {
         Item droppedItem;
-        //if (this.getUnlocalizedName() == "doorA"){
+        if (this.getUnlocalizedName() == "doorA"){
         droppedItem = ItemIDs.doorA.item;
-        //}
-        //else {
-        //    droppedItem = ItemIDs.doorA.item;
-        //}
+        }
+        else {
+        droppedItem = ItemIDs.doorB.item;
+        }
         return (itemDropped & 8) != 0 ? null : droppedItem;
     }
 
     @Override
     public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z, EntityPlayer player) {
         Item pickblock;
-        //if (this.getUnlocalizedName() == "doorA"){
+        if (this.getUnlocalizedName() == "doorA"){
         pickblock = ItemIDs.doorA.item;
-        //}
-        //else {
-        //    pickblock = ItemIDs.doorA.item;
-        //}
+        }
+        else {
+        pickblock = ItemIDs.doorB.item;
+        }
         return new ItemStack(pickblock);
     }
 

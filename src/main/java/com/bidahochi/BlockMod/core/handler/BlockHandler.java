@@ -182,6 +182,10 @@ public class BlockHandler {
         BlockIDs.clampOnSignDerail.block = new ClampOnSignDerail(Material.iron);
         BlockIDs.clampOnSignStop1.block = new ClampOnSignStop1(Material.iron);
         BlockIDs.clampOnSignStop2.block = new ClampOnSignStop2(Material.iron);
+        BlockIDs.waysideWarningSignGreen.block = new WaysideWarningSignGreen(Material.iron);
+        BlockIDs.waysideWarningSignRed.block = new WaysideWarningSignRed(Material.iron);
+        BlockIDs.waysideWarningSignYellow.block = new WaysideWarningSignYellow(Material.iron);
+        BlockIDs.waysideWarningSignYellowRed.block = new WaysideWarningSignYellowRed(Material.iron);
 
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
@@ -198,6 +202,7 @@ public class BlockHandler {
         BlockIDs.bridgeA_Side_Bottom.block = new BridgeA_Side_Bottom(Material.wood);
 
         BlockIDs.doorA.block = new baseDoor(Material.wood).setBlockName("doorA").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_a").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
+        BlockIDs.doorB.block = new baseDoor(Material.wood).setBlockName("doorB").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_b").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         //BlockIDs.doorA.block = (Block)Block.blockRegistry.getObject("wooden_door");
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
@@ -205,6 +210,10 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
         GameRegistry.registerTileEntity(TileClampOnSignStop1.class, "clampOnSignStop1.tile");
         GameRegistry.registerTileEntity(TileClampOnSignStop2.class, "clampOnSignStop2.tile");
+        GameRegistry.registerTileEntity(TileWaysideWarningSignGreen.class, "waysideWarningSignGreen.tile");
+        GameRegistry.registerTileEntity(TileWaysideWarningSignRed.class, "waysideWarningSignRed.tile");
+        GameRegistry.registerTileEntity(TileWaysideWarningSignYellow.class, "waysideWarningSignYellow.tile");
+        GameRegistry.registerTileEntity(TileWaysideWarningSignYellowRed.class, "waysideWarningSignYellowRed.tile");
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");

@@ -267,7 +267,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fiberGlass.block, 1, 0), new ItemStack(BlockIDs.fiberGlass.block, 1, 1));
 
         //concretes
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GRG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('R'), Blocks.stone);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GRG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('R'), new ItemStack(ItemIDs.quicklime.item, 1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GAG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.layeredConcrete.block, 3), " C ", " C ", " C ", Character.valueOf('C'), BlockIDs.smoothCrete.block);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.smoothCrete.block, 4), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1));
@@ -503,6 +503,8 @@ public class RecipeHandler {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "IAI", "ICI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'),new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('D'), dye1, Character.valueOf('C'), new ItemStack(ItemIDs.computerizedCircuit.item, 1));
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.breakerBox2.block, 1), new ItemStack(BlockIDs.breakerBox.block, 1));
+
+        //signage
         for (ItemStack dye1 : dyeBlue){
             for (ItemStack dye2 : dyeYellow) {
                 GameRegistry.addRecipe(new ItemStack(BlockIDs.clampOnSignDerail.block, 1), " PB", "YS ", "S  ", Character.valueOf('P'), new ItemStack(ItemIDs.ironSlice.item), Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('B'), dye1, Character.valueOf('Y'), dye2);
@@ -511,6 +513,21 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignStop1.block, 1), new ItemStack(BlockIDs.clampOnSignDerail.block,1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignStop2.block, 1), new ItemStack(BlockIDs.clampOnSignStop1.block,1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.clampOnSignDerail.block, 1), new ItemStack(BlockIDs.clampOnSignStop2.block,1));
+        //wayside warnings
+        for (ItemStack dye: dyeGreen) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.waysideWarningSignGreen.block, 1), "DPD", " S ", " S ", Character.valueOf('P'), new ItemStack(ItemIDs.ironSlice.item), Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye);
+        }
+        for (ItemStack dye: dyeRed) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.waysideWarningSignRed.block, 1), "DPD", " S ", " S ", Character.valueOf('P'), new ItemStack(ItemIDs.ironSlice.item), Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye);
+        }
+        for (ItemStack dye: dyeYellow) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.waysideWarningSignYellow.block, 1), "DPD", " S ", " S ", Character.valueOf('P'), new ItemStack(ItemIDs.ironSlice.item), Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye);
+        }
+        for (ItemStack dye: dyeYellow) {
+            for (ItemStack dye2: dyeRed) {
+                GameRegistry.addRecipe(new ItemStack(BlockIDs.waysideWarningSignYellowRed.block, 1), "DPH", " S ", " S ", Character.valueOf('P'), new ItemStack(ItemIDs.ironSlice.item), Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye, Character.valueOf('H'), dye2);
+            }
+        }
 
         //cage lamps
         for (ItemStack dye : dyeLightBlue) {
@@ -523,7 +540,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fakeSnow.block, 4), Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow);
 
         //wall plaster
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 0), "GAG", "AGA", "GAG", Character.valueOf('G'), new ItemStack(ItemIDs.gypsumDust.item), Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 0), "GAG", "AQA", "GAG", Character.valueOf('G'), new ItemStack(ItemIDs.gypsumDust.item), Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item), Character.valueOf('Q'), new ItemStack(ItemIDs.quicklime.item));
         for (ItemStack dye : dyeLightBlue) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 1), "PPP", "PDP", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 3, 2), "   ", "D D", "PPP", Character.valueOf('P'), new ItemStack(BlockIDs.plasteredConcrete.block, 1, 0), Character.valueOf('D'), dye);
@@ -587,8 +604,8 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 3, 0), "   ", "GGG", "   ", Character.valueOf('G'), new ItemStack(Blocks.glass));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 3, 1), " G ", " G ", " G ", Character.valueOf('G'), new ItemStack(Blocks.glass));
         for (ItemStack dye : dyeBrown) {
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 2), "GGG", "GDG", "GGG", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 4, 3), " G ", "GDG", " G ", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 2), "GDG", "GGG", "GGG", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 3), "GDG", "GGG", "GGG", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
         }
 
         //wide vanilla planks

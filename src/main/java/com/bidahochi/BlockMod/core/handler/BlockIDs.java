@@ -30,8 +30,7 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
-import com.bidahochi.BlockMod.blocks.props.ItemBlockDoorA;
-import com.bidahochi.BlockMod.items.doorA1item;
+import com.bidahochi.BlockMod.blocks.props.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -166,6 +165,10 @@ public enum BlockIDs {
     clampOnSignDerail(false, null, "clampOnSignDerail"),
     clampOnSignStop1(false, null, "clampOnSignStop1"),
     clampOnSignStop2(false, null, "clampOnSignStop2"),
+    waysideWarningSignGreen(false, null, "waysideWarningSignGreen"),
+    waysideWarningSignRed(false, null, "waysideWarningSignRed"),
+    waysideWarningSignYellow(false, null, "waysideWarningSignYellow"),
+    waysideWarningSignYellowRed(false, null, "waysideWarningSignYellowRed"),
 
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
@@ -182,6 +185,7 @@ public enum BlockIDs {
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
 
     doorA(true, ItemBlockDoorA.class, "doorAblock"),
+    doorB(true, ItemBlockDoorB.class, "doorBblock"),
 
     ;
 

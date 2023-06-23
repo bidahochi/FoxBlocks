@@ -365,11 +365,12 @@ tile.labwalldark_1.name=Dark Labwall Horizontal Framed Tile
 tile.labwalldark_2.name=Dark Labwall Vertical Framed Tile
 tile.labwalldark_3.name=Dark Labwall Half Tile
 
-tile.hariesh.name=funny brit cubeoid blocc
+tile.hariesh.name=the foxblock
 tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)
 tile.BlockOLavaBucket.name=Block of Lava Bucket
 tile.T Hanos.name=T Hanos Cube
+tile.harieshseethrough.name=Pingascube
 
 tile.BooBlox_0.name=Boo 1
 tile.BooBlox_1.name=Boo 2
@@ -446,9 +447,15 @@ tile.bridgeA_X_Side_Bottom2.name=Modular Bridge A (Side X Beams Bottom (5 long))
 
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
 tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)
+
 tile.clampOnSignDerail.name=Clamp-On Rail Sign (DERAIL)
 tile.clampOnSignStop1.name=Clamp-On Rail Sign (STOP 1)
 tile.clampOnSignStop2.name=Clamp-On Rail Sign (STOP 2)
+tile.waysideWarningSignGreen.name=Wayside Warning Sign (Green)
+tile.waysideWarningSignRed.name=Wayside Warning Sign (Red)
+tile.waysideWarningSignYellow.name=Wayside Warning Sign (Yellow)
+tile.waysideWarningSignYellowRed.name=Wayside Warning Sign (Yellow over Red)
+
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
@@ -475,3 +482,6 @@ item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
 item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable
 item.foxblocks:record_rodney.name=Empties East
 item.record.record_rodney.desc=What a stupid fuckin operation
+
+item.foxblocks:doorAitem.name=Office Door (Brown)
+item.foxblocks:doorBitem.name=Office Door (Yellow)
