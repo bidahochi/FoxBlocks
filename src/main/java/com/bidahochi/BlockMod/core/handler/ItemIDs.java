@@ -20,6 +20,9 @@ public enum ItemIDs {
     taconiteCrushed("taconiteCrushed", "taconiteCrushed", "taconiteCrushed"),
     taconitePellets("taconitePellets", "taconitePellets", "taconitePellets"),
     quicklime("quicklime","quicklime_1","quicklime"),
+    roadTar("roadTar", "roadTar", "roadTar"),
+    bulb("bulb", "bulb", "bulb"),
+    bulbLong("bulbLong", "bulblong", "bulbLong"),
 
     doorA("doorAitem","doorA_icon","doorAitem"),
     doorB("doorBitem","doorB_icon","doorBitem"),

@@ -1,29 +1,23 @@
 package com.bidahochi.BlockMod.blocks.essentiallymemes;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 
-import java.util.List;
-
-public class HarieshHead extends Block {
-    public HarieshHead(Material p_i45394_1_) {
+public class Fofblock extends Block {
+    public Fofblock(Material p_i45394_1_) {
         super(p_i45394_1_);
 
-        setBlockName("hariesh");
-        setBlockTextureName(FoxBlocks.MODID+":meme/rigg_head");
+        setBlockName("fofblock");
+        setBlockTextureName(FoxBlocks.MODID+":meme/fof");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
-        setStepSound(soundTypeAnvil);
+        setStepSound(soundTypeLadder);
         setHardness(4);
         setResistance(10);
         setHarvestLevel("pickaxe",4);
-        setLightLevel(1);
+        //setLightLevel(1);
     }
 
     @Override

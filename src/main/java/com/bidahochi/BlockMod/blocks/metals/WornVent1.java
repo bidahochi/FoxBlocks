@@ -1,25 +1,35 @@
-package com.bidahochi.BlockMod.blocks.essentiallymemes;
+package com.bidahochi.BlockMod.blocks.metals;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockBreakable;
-import net.minecraft.block.BlockGlass;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Facing;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 
-public class foxglass extends Block {
 
-    public foxglass(Material p_i45394_1_) {
+public class WornVent1 extends Block {
+
+    public WornVent1(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockTextureName(FoxBlocks.MODID+":meme/bidahuh");
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
-        setBlockName("harieshseethrough");
+        setBlockName("WornVent1");
+        setHardness(1F);
+        setResistance(2.0F);
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypeMetal);
+        setBlockTextureName(FoxBlocks.MODID+":metals/worn_vent");
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
     }
 
+    @Override
+    protected void dropBlockAsItem(World p_149642_1_, int p_149642_2_, int p_149642_3_, int p_149642_4_, ItemStack p_149642_5_) {
+        super.dropBlockAsItem(p_149642_1_, p_149642_2_, p_149642_3_, p_149642_4_, p_149642_5_);
+    }
+
+    //transparency go brr
 
     @Override
     public Block setLightOpacity(int p_149713_1_) {
@@ -67,5 +77,4 @@ public class foxglass extends Block {
 
         return !false && block == this ? false : super.shouldSideBeRendered(p_149646_1_, p_149646_2_, p_149646_3_, p_149646_4_, p_149646_5_);
     }
-
 }

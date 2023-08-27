@@ -119,7 +119,8 @@ public class BlockHandler {
         BlockIDs.foxglass.block = new foxglass(Material.glass);
         BlockIDs.blue.block = new BaseBlock(Material.glass, "Blue Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/blue");
         BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
-
+        BlockIDs.fofblock.block = new Fofblock(Material.cake);
+        BlockIDs.pingascube.block = new Pingascube(Material.glass);
 
         //lumber
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
@@ -148,7 +149,6 @@ public class BlockHandler {
         BlockIDs.roadcover_tarmac5.block = new RoadCover5(Material.rock);
         BlockIDs.roadcover_tarmac6.block = new RoadCover6(Material.rock);
 
-
         //metals
         BlockIDs.metalSiding.block = new MetalSiding(Material.iron);
         BlockIDs.metalSiding2.block = new MetalSiding2(Material.iron);
@@ -158,6 +158,8 @@ public class BlockHandler {
         BlockIDs.rustBeam.block = new RustBeam(Material.iron);
         BlockIDs.labwallDark.block = new LabwallDark(Material.rock);
         BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
+        BlockIDs.wornVent.block = new WornVent1(Material.iron);
+        BlockIDs.wornVent2.block = new WornVent2(Material.iron);
 
         //hekk
         BlockIDs.emberStone.block = new EmberStone(Material.rock);
@@ -191,6 +193,7 @@ public class BlockHandler {
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
         BlockIDs.neonCageLightWallH.block = new NeonCageLampWallH(Material.iron);
+        BlockIDs.ExteriorLightSquare.block = new ExteriorLightSquare(Material.iron);
 
         //modular bridge
         BlockIDs.bridgeA_Center.block = new BridgeA_Center(Material.wood);
@@ -218,6 +221,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallH.class, "neonCageLightWallH.tile");
+        GameRegistry.registerTileEntity(TileExteriorLightSquare.class, "ExteriorLightSquare.tile");
 
         GameRegistry.registerTileEntity(TileBridgeA_Center.class, "bridgeA_Center.tile");
         GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top.class, "bridgeA_X_Side_Center_Top.tile");

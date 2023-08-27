@@ -105,6 +105,9 @@ tile.rustBeam_3.name=Blue Vertical Rusty Beam
 tile.rustBeam_4.name=Red Horizontal Rusty Beam
 tile.rustBeam_5.name=Red Vertical Rusty Beam
 
+tile.WornVent1.name=Worn Vent (Transparent)
+tile.WornVent2.name=Worn Vent
+
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Light Gray Drywall
 tile.dryWall_2.name=Gray Drywall
@@ -130,7 +133,7 @@ tile.fiberglass_2.name=Fibreglass Insulation
 tile.wallPaper_0.name=Cherry Wallpaper
 tile.wallPaper_1.name=Broccoli Wallpaper
 tile.wallPaper_2.name=Apple Wallpaper
-tile.wallPaper_3.name=Leopard Print Wallpaper (Smexy)
+tile.wallPaper_3.name=Leopard Print Wallpaper
 tile.wallPaper_4.name=Alpine Wallpaper
 tile.wallPaper_5.name=Speckled Wallpaper
 tile.wallPaper_6.name=Red Rivet Wallpaper
@@ -365,12 +368,14 @@ tile.labwalldark_1.name=Dark Labwall Horizontal Framed Tile
 tile.labwalldark_2.name=Dark Labwall Vertical Framed Tile
 tile.labwalldark_3.name=Dark Labwall Half Tile
 
-tile.hariesh.name=the foxblock
+tile.hariesh.name=Wuff Block
 tile.Although.name=Although...
 tile.testblock.name=testBlock Tile (no touch)
 tile.BlockOLavaBucket.name=Block of Lava Bucket
 tile.T Hanos.name=T Hanos Cube
-tile.harieshseethrough.name=Pingascube
+tile.harieshseethrough.name=THE (Other) Fox Block
+tile.fofblock.name=The FoxBlock
+tile.pingascube.name=Robotnik Pingascube
 
 tile.BooBlox_0.name=Boo 1
 tile.BooBlox_1.name=Boo 2
@@ -459,10 +464,11 @@ tile.waysideWarningSignYellowRed.name=Wayside Warning Sign (Yellow over Red)
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
+tile.ExteriorLightSquare.name=Exterior Light (Square)
 
 tile.limestone.name=Lower Pennsylvanian Limestone
 
-item.foxblocks:Jarate!.name=Jar-Based Karate
+item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
 item.foxblocks:enrichedClay.name=Enriched Clay
 item.foxblocks:ceramic.name=Ceramic
@@ -477,6 +483,9 @@ item.foxblocks:woodSealant.name=Organic Wood-Seal Product
 item.foxblocks:taconiteCrushed.name=Crushed Taconite
 item.foxblocks:taconitePellets.name=Taconite Pellets
 item.foxblocks:quicklime.name=Quicklime
+item.foxblocks:roadTar.name=Road-Tar
+item.foxblocks:bulb.name=Lightbulb
+item.foxblocks:bulbLong.name=Tube Lightbulb
 
 item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
 item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable

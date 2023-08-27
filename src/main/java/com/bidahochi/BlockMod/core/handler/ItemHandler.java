@@ -27,6 +27,9 @@ public class ItemHandler {
         ItemIDs.taconiteCrushed.item = new taconiteCrushed();
         ItemIDs.taconitePellets.item = new taconitePellets();
         ItemIDs.quicklime.item = new quicklime();
+        ItemIDs.roadTar.item=new roadTar();
+        ItemIDs.bulb.item=new bulb();
+        ItemIDs.bulbLong.item=new bulbLong();
 
         ItemIDs.doorA.item = new itemDoor(Material.wood).setUnlocalizedName("doorA").setTextureName("doorA");
         ItemIDs.doorB.item = new itemDoor(Material.wood).setUnlocalizedName("doorB").setTextureName("doorB");

@@ -101,10 +101,12 @@ public enum BlockIDs {
     tHanos(false,null,"T Hanos"),
     booBlox(true, ItemBlockBooBlox.class, "BooBlox"),
     blockLavaBucket(false, null, "BlockOLavaBucket"),
-    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"),
+    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"), //why does this have itemblockmetalsiding yet is false anyway?
     foxglass(false,null,"foxglass"),
     blue(false,null,"Blue"),
     green(false,null,"Green"),
+    fofblock(false, null, "fofblock"),
+    pingascube(false, null ,"pingascube"),
 
     //lumber
     widePlank(true, ItemBlockwidePlank.class, "widePlank"),
@@ -142,6 +144,8 @@ public enum BlockIDs {
     rustBeam(true, ItemBlockrustBeam.class, "rustBeam"),
     labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
     labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
+    wornVent(false, null, "WornVent1"),
+    wornVent2(false, null, "WornVent2"),
 
     //hell
     darkEmberStone(false, null, "Dark Ember Stone"),
@@ -174,6 +178,7 @@ public enum BlockIDs {
     neonCageLightRoof(false, null, "neonCageLightRoof"),
     neonCageLightWallV(false, null, "neonCageLightWallV"),
     neonCageLightWallH(false, null, "neonCageLightWallH"),
+    ExteriorLightSquare(false, null, "ExteriorLightSquare"),
 
     //modular bridges
     bridgeA_Center(false, null, "bridgeA_Center"),

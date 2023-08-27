@@ -4,20 +4,17 @@ import com.bidahochi.BlockMod.FoxBlocks;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockBreakable;
-import net.minecraft.block.BlockGlass;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.Facing;
 import net.minecraft.world.IBlockAccess;
 
-public class foxglass extends Block {
+public class Pingascube extends Block {
 
-    public foxglass(Material p_i45394_1_) {
+    public Pingascube(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockTextureName(FoxBlocks.MODID+":meme/bidahuh");
+        setBlockTextureName(FoxBlocks.MODID+":meme/pingascube");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
-        setBlockName("harieshseethrough");
+        setBlockName("pingascube");
     }
 
 
