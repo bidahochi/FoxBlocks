@@ -146,6 +146,7 @@ public enum BlockIDs {
     labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
     wornVent(false, null, "WornVent1"),
     wornVent2(false, null, "WornVent2"),
+    scaffold(false, null, "Scaffold"),
 
     //hell
     darkEmberStone(false, null, "Dark Ember Stone"),

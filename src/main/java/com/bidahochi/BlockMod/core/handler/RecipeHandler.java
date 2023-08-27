@@ -523,7 +523,7 @@ public class RecipeHandler {
                 }
             }
         }
-        GameRegistry.addRecipe(new ItemStack(ItemIDs.ironRod.item, 8), "  I", "AIA", "I  ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
+        GameRegistry.addRecipe(new ItemStack(ItemIDs.ironRod.item, 16), "  I", "AIA", "I  ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
         GameRegistry.addRecipe(new ItemStack(ItemIDs.ironSlice.item, 8), "IAI", "A A", "IAI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 4), Items.glass_bottle, Items.water_bucket, new ItemStack(ItemIDs.enrichedClay.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 4), Items.glass_bottle, Blocks.ice, new ItemStack(ItemIDs.enrichedClay.item, 1));
@@ -654,6 +654,7 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 10), "   ", "PPP", " W ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 5), Character.valueOf('W'), new ItemStack(ItemIDs.woodSealant.item, 1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 11), "   ", "PPP", " W ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 4), Character.valueOf('W'), new ItemStack(ItemIDs.woodSealant.item, 1));
 
+        //origin stuff
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 0), new ItemStack(ItemIDs.enrichedClay.item), Blocks.cobblestone, Blocks.cobblestone);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 1), new ItemStack(ItemIDs.enrichedClay.item), Blocks.mossy_cobblestone, Blocks.mossy_cobblestone);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.originStuff.block, 2, 2), new ItemStack(ItemIDs.enrichedClay.item), Blocks.brick_block, Blocks.brick_block);
@@ -728,6 +729,7 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wornVent.block, 8), "PPP","RRR","PPP", 'P', new ItemStack(ItemIDs.ironSlice.item, 1), 'R', new ItemStack(ItemIDs.ironRod.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.wornVent2.block, 2), new ItemStack(BlockIDs.wornVent.block, 1), new ItemStack(BlockIDs.wornVent.block, 1));
 
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.scaffold.block, 8), "RPR","PRP","RPR", 'P', new ItemStack(ItemIDs.ironSlice.item, 1), 'R', new ItemStack(ItemIDs.ironRod.item, 1));
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         //FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");

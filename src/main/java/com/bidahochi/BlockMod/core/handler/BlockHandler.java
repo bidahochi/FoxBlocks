@@ -160,6 +160,7 @@ public class BlockHandler {
         BlockIDs.labwallLight.block = new LabwallLight(Material.rock);
         BlockIDs.wornVent.block = new WornVent1(Material.iron);
         BlockIDs.wornVent2.block = new WornVent2(Material.iron);
+        BlockIDs.scaffold.block = new Scaffold(Material.iron);
 
         //hekk
         BlockIDs.emberStone.block = new EmberStone(Material.rock);
