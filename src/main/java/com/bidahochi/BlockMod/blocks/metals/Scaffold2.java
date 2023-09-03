@@ -13,16 +13,16 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
 
-public class Scaffold extends Block {
+public class Scaffold2 extends Block {
 
-    public Scaffold(Material p_i45394_1_) {
+    public Scaffold2(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("Scaffold");
+        setBlockName("Scaffold2");
         setHardness(3F);
         setResistance(15.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeMetal);
-        setBlockTextureName(FoxBlocks.MODID + ":metals/scaffold_transparent_thicc");
+        setBlockTextureName(FoxBlocks.MODID + ":metals/scaffold_transparent_thiccer");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
     }
 
@@ -60,28 +60,32 @@ public class Scaffold extends Block {
         return true;
     }
 
-    //@SideOnly(Side.CLIENT)
+    @SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered(IBlockAccess world, int x, int y, int z, int side)
     {
        /* if (world.getBlock(x, y, z)==this){
             return true;
         }
         return super.shouldSideBeRendered(world, x, y, z, side);*/
-        //Block block = world.getBlock(x, y, z);
-        Block block = world.getBlock(x+(side==4?1:side==5?-1:0),y+(side==0?1:side==1?-1:0),z+(side==2?1:side==3?-1:0));
+        Block block = world.getBlock(x, y, z);
 
-            //if (world.getBlockMetadata(x, y, z) != world.getBlockMetadata(x - Facing.offsetsXForSide[side], y - Facing.offsetsYForSide[side], z - Facing.offsetsZForSide[side]))
-            if(block instanceof Scaffold && world.getBlock(x,y,z) == this)
+        if (true)
+        {
+            if (world.getBlockMetadata(x, y, z) != world.getBlockMetadata(x - Facing.offsetsXForSide[side], y - Facing.offsetsYForSide[side], z - Facing.offsetsZForSide[side]))
             {
-                return false;
-            }
-
-            /*if (block == this)
-            {
-                return true;// false renders like glass, true renders like IE but inverted lol
-            }//TODO make this render correct like IE scaffold*/
+                if (block != BlockIDs.scaffold.block){
+                    return false;
+                }
 
 
-        return /*(block != this) &&*/ super.shouldSideBeRendered(world, x, y, z, side);
+            //}
+
+            //if (block == this)
+           // {
+                //return true;// false renders like glass, true renders like IE but inverted lol
+            }//TODO make this render correct like IE scaffold
+        }
+
+        return (block != this) && super.shouldSideBeRendered(world, x, y, z, side);
     }
 }

@@ -108,7 +108,8 @@ tile.rustBeam_5.name=Red Vertical Rusty Beam
 tile.WornVent1.name=Worn Vent (Transparent)
 tile.WornVent2.name=Worn Vent
 
-tile.Scaffold.name=Scaffold Block
+tile.Scaffold.name=Scaffold Block (Thin Frame)
+tile.Scaffold2.name=Scaffold Block (Thick Frame)
 
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Light Gray Drywall

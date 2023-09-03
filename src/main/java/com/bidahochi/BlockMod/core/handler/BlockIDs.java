@@ -147,6 +147,7 @@ public enum BlockIDs {
     wornVent(false, null, "WornVent1"),
     wornVent2(false, null, "WornVent2"),
     scaffold(false, null, "Scaffold"),
+    scaffold2(false, null, "Scaffold2"),
 
     //hell
     darkEmberStone(false, null, "Dark Ember Stone"),
