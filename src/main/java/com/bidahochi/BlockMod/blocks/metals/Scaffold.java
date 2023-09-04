@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.metals;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import com.bidahochi.BlockMod.core.handler.RenderBlockHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -24,6 +25,7 @@ public class Scaffold extends Block {
         setStepSound(soundTypeMetal);
         setBlockTextureName(FoxBlocks.MODID + ":metals/scaffold_transparent_thicc");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
+
     }
 
     @Override
@@ -53,6 +55,11 @@ public class Scaffold extends Block {
      */
     public boolean renderAsNormalBlock() {
         return false;
+    }
+
+    @Override
+    public int getRenderType() {
+        return RenderBlockHandler.scaffoldRenderId;
     }
 
     @Override

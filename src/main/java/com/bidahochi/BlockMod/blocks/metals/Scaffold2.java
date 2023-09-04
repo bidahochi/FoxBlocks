@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.metals;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import com.bidahochi.BlockMod.core.handler.RenderBlockHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -58,6 +59,11 @@ public class Scaffold2 extends Block {
     @Override
     public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side){
         return true;
+    }
+
+    @Override
+    public int getRenderType() {
+        return RenderBlockHandler.scaffoldRenderId;
     }
 
     @SideOnly(Side.CLIENT)

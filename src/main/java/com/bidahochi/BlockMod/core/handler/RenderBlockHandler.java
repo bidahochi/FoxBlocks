@@ -10,10 +10,14 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
 import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
+import com.bidahochi.BlockMod.blocks.metals.Scaffold;
 import com.bidahochi.BlockMod.blocks.props.*;
+import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class RenderBlockHandler {
+    public static int scaffoldRenderId = RenderingRegistry.getNextAvailableRenderId();
     public static void initializeCustomModels() {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new RenderBreakerBox());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox2.class, new RenderBreakerBox2());
@@ -46,6 +50,6 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover4.class, new RenderRoadCover4());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover5.class, new RenderRoadCover5());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover6.class, new RenderRoadCover6());
-
+        RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }
 }
