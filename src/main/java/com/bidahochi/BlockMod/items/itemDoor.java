@@ -1,36 +1,23 @@
 package com.bidahochi.BlockMod.items;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.BlockHandler;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemDoor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-import static com.bidahochi.BlockMod.items.doorA1item.placeDoorBlock;
-
 public class itemDoor extends Item {
 
-    private Material doorMaterial;
-
-    public itemDoor(Material material)
+    public itemDoor()
     {
-        this.doorMaterial = material;
         this.maxStackSize = 1;
         this.setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
 
     }
 
-    /*public void setDoorBlock(Block doorAblock) {
-        this.doorAblock = doorAblock;
-    }
     /**
      * Callback for item usage. If the item does something special on right clicking, he will have one of those. Return
      * True if something happen and false if it don't. This is for ITEMS, not BLOCKS
@@ -45,21 +32,16 @@ public class itemDoor extends Item {
         {
             y++;
             Block block;
-            /** Here you can define your doors, just make more if statements for each nea door (use the unlocalised name)
-             */
-            if (this.getUnlocalizedName() == "doorAitem"){
+            /* Here you can define your doors, just make more if statements for each nea door (use the unlocalised name) */
+            if (this.getUnlocalizedName().equals("item.foxblocks:doorAitem")){
                 block = BlockIDs.doorA.block;
             }
-            else if (this.getUnlocalizedName() == "doorBitem"){
+            else if (this.getUnlocalizedName().equals("item.foxblocks:doorBitem")){
                 block = BlockIDs.doorB.block;
             }
             else {
                 return false;
             }
-
-
-
-
             if (player.canPlayerEdit(x, y, z, itemInt4, item) && player.canPlayerEdit(x, y + 1, z, itemInt4, item))
             {
                 if (!block.canPlaceBlockAt(world, x, y, z))//null pointer??
