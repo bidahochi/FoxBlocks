@@ -52,6 +52,7 @@ public class OreDictHandler {
         OreDictionary.registerOre("oreTaconite", new ItemStack(BlockIDs.taconite.block));
         OreDictionary.registerOre("oreCrushedTaconite", new ItemStack(ItemIDs.taconiteCrushed.item));
         OreDictionary.registerOre("dustTaconite", new ItemStack(ItemIDs.taconitePellets.item));
+        //OreDictionary.registerOre("ingotIron", new ItemStack(ItemIDs.bulb.item));//for testing
 
         //FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 

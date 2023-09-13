@@ -70,7 +70,7 @@ public class RecipeHandler {
         //FoxBlocks.blockLogger.info("BlockRecipe's Pre Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
 
 
-        ArrayList<ItemStack> iron = OreDictionary.getOres("ingotIron");
+        ArrayList<ItemStack> iron = OreDictionary.getOres("ingotIron");//does this work?
 
         ArrayList<ItemStack> dyeBlack = OreDictionary.getOres("dyeBlack");
         ArrayList<ItemStack> dyeRed = OreDictionary.getOres("dyeRed");
@@ -183,7 +183,7 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,2), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.apple);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,4), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), new ItemStack(Blocks.grass,1,2));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,12), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), ItemIDs.jarate.item);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,15), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.ender_eye);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,15), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.ender_pearl);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.unfinishedDrywall.block, 4), "BBA", "BBA", "AAA", Character.valueOf('B'), ItemIDs.gypsumDust.item, Character.valueOf('A'), Items.paper);
 
         //aggregates
@@ -198,46 +198,51 @@ public class RecipeHandler {
         for (ItemStack dyewhite : dyeWhite) {
             GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravelWhitestone.block, 2), BlockIDs.peagravel.block, BlockIDs.peagravel.block, dyewhite);
         }
+        GameRegistry.addSmelting(BlockIDs.peagravel_volcanic.block, new ItemStack(BlockIDs.peagravel.block,1),1F);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.gravel_volcanic.block, 2), new ItemStack(BlockIDs.peagravel_volcanic.block, 1), new ItemStack(BlockIDs.peagravel_volcanic.block, 1));
+        //GameRegistry.addSmelting(BlockIDs.gravel_volcanic.block, Blocks.gravel,1F);
+
+
         //sheet metal sidings - oredictionary plateIron doesnt seem to work, please look into
         //apparently the plateiron recipe works on servers but not singleplayer?
         for (ItemStack plateiron : plateIron) {
-            for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyewhite); }
-            for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyelightgray); }
-            for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyegray); }
-            for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyeblack); }
+            for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 8, 3), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyewhite); }
+            for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 8, 2), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyelightgray); }
+            for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 8, 1), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyegray); }
+            for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 8, 0), " I ", "IDI", " I ", Character.valueOf('I'), plateiron, Character.valueOf('D'), dyeblack); }
         }
         for (ItemStack dyewhite : dyeWhite) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 3), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 3), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite);}
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 3), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyewhite);}
         for (ItemStack dyelightgray : dyeLightGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 2), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 2), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray);}
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 2), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightgray);}
         for (ItemStack dyegray : dyeGray) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 1), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 1), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 1), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegray); }
         for (ItemStack dyeblack : dyeBlack) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 0), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 0), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 0), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblack); }
         for (ItemStack dyebrown : dyeBrown) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 4), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyebrown);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 4), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyebrown); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 4), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyebrown); }
         for (ItemStack dyered : dyeRed) { GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 5), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyered);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 5), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyered); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 5), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyered); }
         for (ItemStack dyeorange : dyeOrange) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 6), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeorange);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 6), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeorange); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 6), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeorange); }
         for (ItemStack dyeyellow : dyeYellow) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 7), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeyellow);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 7), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeyellow); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 7), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeyellow); }
         for (ItemStack dyelime : dyeLime) {GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 8), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelime);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 8), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelime); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 8), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelime); }
         for (ItemStack dyegreen : dyeGreen){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 9), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegreen);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 9), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegreen); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 9), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyegreen); }
         for (ItemStack dyelightblue : dyeLightBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 10), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightblue);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 10), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightblue); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 10), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyelightblue); }
         for (ItemStack dyeblue : dyeBlue){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 11), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblue);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 11), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblue); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 11), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyeblue); }
         for (ItemStack dyecyan : dyeCyan){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 12), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyecyan);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 12), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyecyan); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 12), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyecyan); }
         for (ItemStack dyepink : dyePink){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 13), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepink);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 13), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepink); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 13), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepink); }
         for (ItemStack dyemagenta : dyeMagenta){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 14), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyemagenta);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 14), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyemagenta); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 14), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyemagenta); }
         for (ItemStack dyepurple : dyePurple){GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding.block, 4, 15), " I ", "IDI", " I ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepurple);
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 4, 15), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepurple); }
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.metalSiding2.block, 8, 15), "I I", " D ", "I I", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('D'), dyepurple); }
 
         //soapstone bs - CUSTOM CRAFTING TABLE WITH MULTIPLE OUTPUTS WHENNN aaaaa
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 0), BlockIDs.soapStone.block, BlockIDs.soapStone.block);
@@ -524,13 +529,15 @@ public class RecipeHandler {
             }
         }
         GameRegistry.addRecipe(new ItemStack(ItemIDs.ironRod.item, 16), "  I", "AIA", "I  ", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
-        GameRegistry.addRecipe(new ItemStack(ItemIDs.ironSlice.item, 8), "IAI", "A A", "IAI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 4), Items.glass_bottle, Items.water_bucket, new ItemStack(ItemIDs.enrichedClay.item, 1));
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 4), Items.glass_bottle, Blocks.ice, new ItemStack(ItemIDs.enrichedClay.item, 1));
-        GameRegistry.addShapedRecipe(new ItemStack(ItemIDs.computerizedCircuit.item, 1), "RAI","CRC","ARI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('C'), new ItemStack(ItemIDs.ceramic.item, 1), Character.valueOf('R'), Items.redstone);
+        GameRegistry.addRecipe(new ItemStack(ItemIDs.ironSlice.item, 16), "IAI", "A A", "IAI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 16), Items.glass_bottle, Items.water_bucket, new ItemStack(ItemIDs.enrichedClay.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 16), Items.glass_bottle, Blocks.ice, new ItemStack(ItemIDs.enrichedClay.item, 1));
+        GameRegistry.addShapedRecipe(new ItemStack(ItemIDs.computerizedCircuit.item, 4), "RAI","CRC","ARI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('C'), new ItemStack(ItemIDs.ceramic.item, 1), Character.valueOf('R'), Items.redstone);
 
         for (ItemStack dye1 : dyeLightGray){
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "IAI", "ICI", "IDI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'),new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('D'), dye1, Character.valueOf('C'), new ItemStack(ItemIDs.computerizedCircuit.item, 1));
+            for (ItemStack ironoredict : iron){
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.breakerBox.block, 1), "IAI", "ICI", "IDI", 'I', ironoredict, 'A',new ItemStack(ItemIDs.aragoniteClump.item, 1), 'D', dye1, 'C', new ItemStack(ItemIDs.computerizedCircuit.item, 1));
+            }
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.breakerBox2.block, 1), new ItemStack(BlockIDs.breakerBox.block, 1));
 

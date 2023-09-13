@@ -1,16 +1,12 @@
-<!-- ## BLOCK ## -->
+<!-- ## ORES ## -->
 tile.Bauxite Ore.name=Bauxite Ore
-tile.Gypsum.name=Raw Gypsum
 tile.Cobalt Ore.name=Cobalt Ore
-tile.PlaceholderOre.name=Aragonite Ore
 tile.AragoniteOre.name=Aragonite Ore
-tile.Hematite.name=Hematite
+tile.Gypsum.name=Raw Gypsum
 tile.Taconite.name=Taconite
+tile.Hematite.name=Hematite
 
-tile.Raw Concrete.name=Raw Concrete
-tile.Layered Concrete.name=Layered Concrete
-tile.Smoothcrete.name=Smooth-Crete
-
+<!-- ## RAW ## -->
 tile.Snowy Pea Gravel.name=Snowy Pea Gravel
 tile.Pea Gravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
@@ -24,132 +20,90 @@ tile.FakeSnow_0.name=Fake Snow "Block"
 tile.Dirt_4.name=4tress Dirt
 tile.CreamCityClay.name=Cream City Clay
 
-tile.metalSiding_3.name=White Vertical Sheet Metal Siding
-tile.metalSiding_2.name=Light Grey Vertical Sheet Metal Siding
-tile.metalSiding_1.name=Grey Vertical Sheet Metal Siding
-tile.metalSiding_0.name=Black Vertical Sheet Metal Siding
-tile.metalSiding_4.name=Brown Vertical Sheet Metal Siding
-tile.metalSiding_5.name=Red Vertical Sheet Metal Siding
-tile.metalSiding_6.name=Orange Vertical Sheet Metal Siding
-tile.metalSiding_7.name=Yellow Vertical Sheet Metal Siding
-tile.metalSiding_8.name=Lime Vertical Sheet Metal Siding
-tile.metalSiding_9.name=Green Vertical Sheet Metal Siding
-tile.metalSiding_10.name=Light Blue Vertical Sheet Metal Siding
-tile.metalSiding_11.name=Blue Vertical Sheet Metal Siding
-tile.metalSiding_12.name=Cyan Vertical Sheet Metal Siding
-tile.metalSiding_13.name=Pink Vertical Sheet Metal Siding
-tile.metalSiding_14.name=Magenta Vertical Sheet Metal Siding
-tile.metalSiding_15.name=Purple Vertical Sheet Metal Siding
+<!-- ## CONCRETE ## -->
+tile.Raw Concrete.name=Raw Concrete
+tile.Layered Concrete.name=Layered Concrete
+tile.Smoothcrete.name=Smooth-Crete
+tile.concreteBrick_0.name=Blu Team Concrete Brick
+tile.concreteBrick_1.name=Red Team Concrete Brick
+tile.concreteBrick_2.name=Blu Team Trimmed Concrete Brick
+tile.concreteBrick_3.name=Red Team Trimmed Concrete Brick
+tile.concreteBrick_4.name=Stacked Concrete Brick
+tile.concreteBrick_5.name=Blu Team Stacked Concrete Brick
+tile.concreteBrick_6.name=Red Team Stacked Concrete Brick
+tile.concreteFloor_0.name=Tan Concrete Flooring
+tile.concreteFloor_1.name=Rough Concrete Flooring
+tile.concreteFloor_2.name=Red Concrete Flooring
+tile.concreteFloor_3.name=Blu Concrete Flooring
+tile.concreteFloor_4.name=Stale Grey Concrete Flooring
+tile.plasteredConcrete_0.name=Plain Wall Plaster
+tile.plasteredConcrete_1.name=Blu Wall Plaster
+tile.plasteredConcrete_2.name=Thick Blu Trim Wall Plaster
+tile.plasteredConcrete_3.name=Thin Blu Trim Wall Plaster
+tile.plasteredConcrete_4.name=Red Wall Plaster
+tile.plasteredConcrete_5.name=Thick Red Trim Wall Plaster
+tile.plasteredConcrete_6.name=Thin Red Wall Plaster
+tile.plasteredConcrete_7.name=Burgundy Wall Plaster
+tile.plasteredConcrete_8.name=Sad Lame Greyish Wall Plaster
 
-tile.metalSiding2_3.name=White Horizontal Sheet Metal Siding
-tile.metalSiding2_2.name=Light Grey Horizontal Sheet Metal Siding
-tile.metalSiding2_1.name=Grey Horizontal Sheet Metal Siding
-tile.metalSiding2_0.name=Black Horizontal Sheet Metal Siding
-tile.metalSiding2_4.name=Brown Horizontal Sheet Metal Siding
-tile.metalSiding2_5.name=Red Horizontal Sheet Metal Siding
-tile.metalSiding2_6.name=Orange Horizontal Sheet Metal Siding
-tile.metalSiding2_7.name=Yellow Horizontal Sheet Metal Siding
-tile.metalSiding2_8.name=Lime Horizontal Sheet Metal Siding
-tile.metalSiding2_9.name=Green Horizontal Sheet Metal Siding
-tile.metalSiding2_10.name=Light Blue Horizontal Sheet Metal Siding
-tile.metalSiding2_11.name=Blue Horizontal Sheet Metal Siding
-tile.metalSiding2_12.name=Cyan Horizontal Sheet Metal Siding
-tile.metalSiding2_13.name=Pink Horizontal Sheet Metal Siding
-tile.metalSiding2_14.name=Magenta Horizontal Sheet Metal Siding
-tile.metalSiding2_15.name=Purple Horizontal Sheet Metal Siding
+<!-- ## STONES ## -->
+tile.Soapstone.name=Raw Soapstone
+tile.Soapstone Deco_0.name=Soapstone Bricks
+tile.Soapstone Deco_1.name=Large Soapstone Bricks
+tile.Soapstone Deco_2.name=Smooth(er) Soapstone
+tile.Soapstone Deco_3.name=Coarse Soapstone
+tile.Magmatic Soapstone.name= Magmatic Soapstone
+tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
 
-tile.pannelBlack_0.name=Black Panel
-tile.pannelBlack_1.name=Black Panel Bottom
-tile.pannelBlack_2.name=Black Panel Top
-tile.pannelBlack_3.name=Black Panel Vertical
-tile.pannelBlack_4.name=Black Panel Vertical Left
-tile.pannelBlack_5.name=Black Panel Vertical Right
-tile.pannelBlack_6.name=Black Panel Horizontal
-tile.pannelBlack_7.name=Black Panel Horizontal Top
-tile.pannelBlack_8.name=Black Panel Horizontal Bottom
-tile.pannelBlack_9.name=Black Panel Left
-tile.pannelBlack_10.name=Black Panel Right
-tile.pannelBlack_11.name=Black Panel Left Bottom
-tile.pannelBlack_12.name=Black Panel Left Top
-tile.pannelBlack_13.name=Black Panel Right Bottom
-tile.pannelBlack_14.name=Black Panel Right Top
-tile.pannelBlack_15.name=Black Panel Edgeless
+tile.JolietLimestoneRaw.name=Niagaran Dolomite (Joliet Limestone)
+tile.limestone.name=Lower Pennsylvanian Limestone
 
-tile.pannelWhite_0.name=White Panel
-tile.pannelWhite_1.name=White Panel Bottom
-tile.pannelWhite_2.name=White Panel Top
-tile.pannelWhite_3.name=White Panel Vertical
-tile.pannelWhite_4.name=White Panel Vertical Left
-tile.pannelWhite_5.name=White Panel Vertical Right
-tile.pannelWhite_6.name=White Panel Horizontal
-tile.pannelWhite_7.name=White Panel Horizontal Top
-tile.pannelWhite_8.name=White Panel Horizontal Bottom
-tile.pannelWhite_9.name=White Panel Left
-tile.pannelWhite_10.name=White Panel Right
-tile.pannelWhite_11.name=White Panel Left Bottom
-tile.pannelWhite_12.name=White Panel Left Top
-tile.pannelWhite_13.name=White Panel Right Bottom
-tile.pannelWhite_14.name=White Panel Right Top
-tile.pannelWhite_15.name=White Panel Edgeless
+<!-- ## BRICKS ## -->
+tile.fireBrick.name=Firebrick Block
+tile.mortarBrick_0.name=Mortar Brick (Brown)
+tile.mortarBrick_1.name=Mortar Brick (Grey)
+tile.mortarBrick_2.name=Mortar Brick (Light Grey)
+tile.mortarBrick_3.name=Mortar Brick (Seamless Brown)
+tile.mortarBrick_4.name=Mortar Brick (Seamless Grey)
+tile.mortarBrick_5.name=Mortar Brick (Seamless Cream)
+tile.mortarBrick_6.name=Mortar Brick (Bright Mixed)
+tile.mortarBrick_7.name=Mortar Brick (Dark Mixed)
+tile.mortarBrick_8.name=Mortar Brick (Grayscale Mixed)
+tile.CreamCity_0.name=Cream City Bricks
+tile.CreamCity_1.name=Dirty Cream City Bricks
+tile.CreamCity_2.name=Polluted Cream City Bricks
+tile.JolietLimestone_0.name=Joliet Limestone Bricks
+tile.JolietLimestone_1.name=Irregular Joliet Limestone Bricks
+tile.JolietLimestone_2.name=Large Joliet Limestone Bricks
 
-tile.pannelExtra_0.name=Black 2x2 Panel
-tile.pannelExtra_1.name=White 2x2 Panel
-tile.pannelExtra_2.name=Yellow Backpanel
-tile.pannelExtra_3.name=White Backpanel
-tile.pannelExtra_4.name=Reddish Backpanel
+tile.cobaltBlock.name=Cobalt Block
+tile.cobaltBrick.name=Small Cobalt Bricks
+tile.largeCobaltBrick.name=Large Cobalt Bricks
+tile.cobaltPanel_0.name=Horizontal Cobalt Panel
+tile.cobaltPanel_1.name=Vertical Cobalt Panel
+tile.cobaltPanel_2.name=Cross Cobalt Panel
+tile.cobaltPanel_3.name=T Cobalt Panel 1
+tile.cobaltPanel_4.name=T Cobalt Panel 2
+tile.cobaltPanel_5.name=T Cobalt Panel 3
+tile.cobaltPanel_6.name=T Cobalt Panel 4
+tile.cobaltPanel_7.name=Edge Cobalt Panel 1
+tile.cobaltPanel_8.name=Edge Cobalt Panel 2
+tile.cobaltPanel_9.name=Edge Cobalt Panel 3
+tile.cobaltPanel_10.name=Edge Cobalt Panel 4
+tile.cobaltPanel_11.name=Corner Cobalt Panel 1
+tile.cobaltPanel_12.name=Corner Cobalt Panel 2
+tile.cobaltPanel_13.name=Corner Cobalt Panel 3
+tile.cobaltPanel_14.name=Corner Cobalt Panel 4
+tile.cobaltPanel_15.name=Boxed-In Cobalt Panel
+tile.cobaltPanel2_0.name=End Cobalt Panel 1
+tile.cobaltPanel2_1.name=End Cobalt Panel 2
+tile.cobaltPanel2_2.name=End Cobalt Panel 3
+tile.cobaltPanel2_3.name=End Cobalt Panel 4
+tile.cobaltPanel2_4.name=Double Horizontal Cobalt Panel
+tile.cobaltPanel2_5.name=Double Vertical Cobalt Panel
+tile.cobaltPanel2_6.name=Borderless Cobalt Panel
 
-tile.rustBeam_0.name=Yellow Horizontal Rusty Beam
-tile.rustBeam_1.name=Yellow Vertical Rusty Beam
-tile.rustBeam_2.name=Blue Horizontal Rusty Beam
-tile.rustBeam_3.name=Blue Vertical Rusty Beam
-tile.rustBeam_4.name=Red Horizontal Rusty Beam
-tile.rustBeam_5.name=Red Vertical Rusty Beam
-
-tile.WornVent1.name=Worn Vent (Transparent)
-tile.WornVent2.name=Worn Vent
-
-tile.Scaffold.name=Scaffold Block (Thin Frame)
-tile.Scaffold2.name=Scaffold Block (Thick Frame)
-
-tile.dryWall_0.name=White Drywall
-tile.dryWall_1.name=Light Gray Drywall
-tile.dryWall_2.name=Gray Drywall
-tile.dryWall_3.name=Black Drywall
-tile.dryWall_4.name=Brown Drywall
-tile.dryWall_5.name=Red Drywall
-tile.dryWall_6.name=Orange Drywall
-tile.dryWall_7.name=Yellow Drywall
-tile.dryWall_8.name=Lime Drywall
-tile.dryWall_9.name=Green Drywall
-tile.dryWall_10.name=Light Blue Drywall
-tile.dryWall_11.name=Blue Drywall
-tile.dryWall_12.name=Cyan Drywall
-tile.dryWall_13.name=Pink Drywall
-tile.dryWall_14.name=Magenta Drywall
-tile.dryWall_15.name=Purple Drywall
-tile.unfinishedDrywall.name=Unfinished Drywall
-
-tile.fiberglass_0.name=Vertical Contained Fibreglass
-tile.fiberglass_1.name=Horizontal Contained Fibreglass
-tile.fiberglass_2.name=Fibreglass Insulation
-
-tile.wallPaper_0.name=Cherry Wallpaper
-tile.wallPaper_1.name=Broccoli Wallpaper
-tile.wallPaper_2.name=Apple Wallpaper
-tile.wallPaper_3.name=Leopard Print Wallpaper
-tile.wallPaper_4.name=Alpine Wallpaper
-tile.wallPaper_5.name=Speckled Wallpaper
-tile.wallPaper_6.name=Red Rivet Wallpaper
-tile.wallPaper_7.name=Yellow Stripe Wallpaper
-tile.wallPaper_8.name=Green Weave Wallpaper
-tile.wallPaper_9.name=Blue Dot Wallpaper
-tile.wallPaper_10.name=Pastel Stripe Wallpaper
-tile.wallPaper_11.name=Gray Square Wallpaper
-tile.wallPaper_12.name=Jarate Wallpaper
-tile.wallPaper_13.name=Seafoam Column Wallpaper
-tile.wallPaper_14.name=Wavy Wallpaper
-tile.wallPaper_15.name=Ender Wallpaper
-
+<!-- ## TILES ## -->
 tile.tile4_0.name=White 4x4 Tile
 tile.tile4_1.name=Light Gray 4x4 Tile
 tile.tile4_2.name=Gray 4x4 Tile
@@ -241,52 +195,24 @@ tile.TerrocottaTiles_13.name=Pink Terrocotta Tiles
 tile.TerrocottaTiles_14.name=Magenta Terrocotta Tiles
 tile.TerrocottaTiles_15.name=Purple Terrocotta Tiles
 
-tile.fireBrick.name=Firebrick Block
+<!-- ## FUN ## -->
+tile.Although.name=Although...
+tile.testblock.name=testBlock Tile (no touch)
+tile.T Hanos.name=T. Hanos Cube
+tile.BooBlox_0.name=Boo 1
+tile.BooBlox_1.name=Boo 2
+tile.BooBlox_2.name=Angry Boo 1
+tile.BooBlox_3.name=Angry Boo 2
+tile.BooBlox_4.name=Tongue Boo 1
+tile.BooBlox_5.name=Tongue Boo 2
+tile.BlockOLavaBucket.name=Block of Lava Bucket
+tile.hariesh.name=Wuff Block
+tile.harieshseethrough.name=THE (Other) Fox Block
 
-tile.Soapstone.name=Raw Soapstone
-tile.Soapstone Deco_0.name=Soapstone Bricks
-tile.Soapstone Deco_1.name=Large Soapstone Bricks
-tile.Soapstone Deco_2.name=Smooth(er) Soapstone
-tile.Soapstone Deco_3.name=Coarse Soapstone
-tile.Magmatic Soapstone.name= Magmatic Soapstone
-tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
-tile.Soapstone Stair.name=Raw Soapstone Stair
-tile.Soapstone Slab.name=Raw Soapstone Slab
+tile.fofblock.name=The FoxBlock
+tile.pingascube.name=Robotnik Pingascube
 
-tile.Ember Stone.name=Ember Stone
-tile.Dark Ember Stone.name=Dark Ember Stone
-tile.EmberStone Slab.name=Ember Stone Slab
-tile.EmberStone Stair.name=Ember Stone Stair
-tile.Dark EmberStone Slab.name=Dark EmberStone Slab
-tile.Dark EmberStone Stair.name=Dark EmberStone Stair
-
-tile.cobaltBlock.name=Cobalt Block
-tile.cobaltBrick.name=Small Cobalt Bricks
-tile.largeCobaltBrick.name=Large Cobalt Bricks
-tile.cobaltPanel_0.name=Horizontal Cobalt Panel
-tile.cobaltPanel_1.name=Vertical Cobalt Panel
-tile.cobaltPanel_2.name=Cross Cobalt Panel
-tile.cobaltPanel_3.name=T Cobalt Panel 1
-tile.cobaltPanel_4.name=T Cobalt Panel 2
-tile.cobaltPanel_5.name=T Cobalt Panel 3
-tile.cobaltPanel_6.name=T Cobalt Panel 4
-tile.cobaltPanel_7.name=Edge Cobalt Panel 1
-tile.cobaltPanel_8.name=Edge Cobalt Panel 2
-tile.cobaltPanel_9.name=Edge Cobalt Panel 3
-tile.cobaltPanel_10.name=Edge Cobalt Panel 4
-tile.cobaltPanel_11.name=Corner Cobalt Panel 1
-tile.cobaltPanel_12.name=Corner Cobalt Panel 2
-tile.cobaltPanel_13.name=Corner Cobalt Panel 3
-tile.cobaltPanel_14.name=Corner Cobalt Panel 4
-tile.cobaltPanel_15.name=Boxed-In Cobalt Panel
-tile.cobaltPanel2_0.name=End Cobalt Panel 1
-tile.cobaltPanel2_1.name=End Cobalt Panel 2
-tile.cobaltPanel2_2.name=End Cobalt Panel 3
-tile.cobaltPanel2_3.name=End Cobalt Panel 4
-tile.cobaltPanel2_4.name=Double Horizontal Cobalt Panel
-tile.cobaltPanel2_5.name=Double Vertical Cobalt Panel
-tile.cobaltPanel2_6.name=Borderless Cobalt Panel
-
+<!-- ## LUMBER ## -->
 tile.widePlank_0.name=Vertical Wide White Planking
 tile.widePlank_1.name=Vertical Wide Light Grey Planking
 tile.widePlank_2.name=Vertical Wide Dark Grey Planking
@@ -338,64 +264,65 @@ tile.Amshak_0.name=Grey Planks of the Amshack
 tile.Amshak_1.name=Blue Striped Planks of the Amshack
 tile.Amshak_2.name=Red Striped Planks of the Amshack
 
-tile.plasteredConcrete_0.name=Plain Wall Plaster
-tile.plasteredConcrete_1.name=Blu Wall Plaster
-tile.plasteredConcrete_2.name=Thick Blu Trim Wall Plaster
-tile.plasteredConcrete_3.name=Thin Blu Trim Wall Plaster
-tile.plasteredConcrete_4.name=Red Wall Plaster
-tile.plasteredConcrete_5.name=Thick Red Trim Wall Plaster
-tile.plasteredConcrete_6.name=Thin Red Wall Plaster
-tile.plasteredConcrete_7.name=Burgundy Wall Plaster
-tile.plasteredConcrete_8.name=Sad Lame Greyish Wall Plaster
+tile.logs_0.name=Douglas Fir Log
+tile.logs_1.name=Sitka Spruce Log
+tile.logs_2.name=Western Red Cedar Log
+tile.leaves_0.name=Douglas Fir Leaves
+tile.leaves_1.name=Sitka Spruce Leaves
+tile.leaves_2.name=Western Red Cedar Leaves
 
-tile.concreteFloor_0.name=Tan Concrete Flooring
-tile.concreteFloor_1.name=Rough Concrete Flooring
-tile.concreteFloor_2.name=Red Concrete Flooring
-tile.concreteFloor_3.name=Blu Concrete Flooring
-tile.concreteFloor_4.name=Stale Grey Concrete Flooring
+tile.plywood_0.name=Oak Plywood
+tile.plywood_1.name=Birch Plywood
+tile.plywood_2.name=Spruce Plywood
+tile.plywood_3.name=Jungle Plywood
+tile.plywood_4.name=Dark Oak Plywood
+tile.plywood_5.name=Acacia Plywood
+tile.plywood_6.name=Pine Plywood
+tile.plywood_7.name=Redwood Plywood
 
-tile.concreteBrick_0.name=Blu Team Concrete Brick
-tile.concreteBrick_1.name=Red Team Concrete Brick
-tile.concreteBrick_2.name=Blu Team Trimmed Concrete Brick
-tile.concreteBrick_3.name=Red Team Trimmed Concrete Brick
-tile.concreteBrick_4.name=Stacked Concrete Brick
-tile.concreteBrick_5.name=Blu Team Stacked Concrete Brick
-tile.concreteBrick_6.name=Red Team Stacked Concrete Brick
+<!-- ## OTHER BUILDING MATS ## -->
+tile.dryWall_0.name=White Drywall
+tile.dryWall_1.name=Light Gray Drywall
+tile.dryWall_2.name=Gray Drywall
+tile.dryWall_3.name=Black Drywall
+tile.dryWall_4.name=Brown Drywall
+tile.dryWall_5.name=Red Drywall
+tile.dryWall_6.name=Orange Drywall
+tile.dryWall_7.name=Yellow Drywall
+tile.dryWall_8.name=Lime Drywall
+tile.dryWall_9.name=Green Drywall
+tile.dryWall_10.name=Light Blue Drywall
+tile.dryWall_11.name=Blue Drywall
+tile.dryWall_12.name=Cyan Drywall
+tile.dryWall_13.name=Pink Drywall
+tile.dryWall_14.name=Magenta Drywall
+tile.dryWall_15.name=Purple Drywall
+tile.unfinishedDrywall.name=Unfinished Drywall
 
-tile.labwalllight_0.name=Light Labwall Tile
-tile.labwalllight_1.name=Light Labwall Double Tile
-tile.labwalllight_2.name=Light Labwall Tripple Tile
-tile.labwalllight_3.name=Light Labwall Sextuple Tile
-tile.labwalldark_0.name=Dark Labwall Tile
-tile.labwalldark_1.name=Dark Labwall Horizontal Framed Tile
-tile.labwalldark_2.name=Dark Labwall Vertical Framed Tile
-tile.labwalldark_3.name=Dark Labwall Half Tile
+tile.wallPaper_0.name=Cherry Wallpaper
+tile.wallPaper_1.name=Broccoli Wallpaper
+tile.wallPaper_2.name=Apple Wallpaper
+tile.wallPaper_3.name=Leopard Print Wallpaper
+tile.wallPaper_4.name=Alpine Wallpaper
+tile.wallPaper_5.name=Speckled Wallpaper
+tile.wallPaper_6.name=Red Rivet Wallpaper
+tile.wallPaper_7.name=Yellow Stripe Wallpaper
+tile.wallPaper_8.name=Green Weave Wallpaper
+tile.wallPaper_9.name=Blue Dot Wallpaper
+tile.wallPaper_10.name=Pastel Stripe Wallpaper
+tile.wallPaper_11.name=Gray Square Wallpaper
+tile.wallPaper_12.name=Jarate Wallpaper
+tile.wallPaper_13.name=Seafoam Column Wallpaper
+tile.wallPaper_14.name=Wavy Wallpaper
+tile.wallPaper_15.name=Ender Wallpaper
 
-tile.hariesh.name=Wuff Block
-tile.Although.name=Although...
-tile.testblock.name=testBlock Tile (no touch)
-tile.BlockOLavaBucket.name=Block of Lava Bucket
-tile.T Hanos.name=T Hanos Cube
-tile.harieshseethrough.name=THE (Other) Fox Block
-tile.fofblock.name=The FoxBlock
-tile.pingascube.name=Robotnik Pingascube
+tile.fiberglass_0.name=Vertical Contained Fibreglass
+tile.fiberglass_1.name=Horizontal Contained Fibreglass
+tile.fiberglass_2.name=Fibreglass Insulation
 
-tile.BooBlox_0.name=Boo 1
-tile.BooBlox_1.name=Boo 2
-tile.BooBlox_2.name=Angry Boo 1
-tile.BooBlox_3.name=Angry Boo 2
-tile.BooBlox_4.name=Tongue Boo 1
-tile.BooBlox_5.name=Tongue Boo 2
-
-tile.mortarBrick_0.name=Mortar Brick (Brown)
-tile.mortarBrick_1.name=Mortar Brick (Grey)
-tile.mortarBrick_2.name=Mortar Brick (Light Grey)
-tile.mortarBrick_3.name=Mortar Brick (Seamless Brown)
-tile.mortarBrick_4.name=Mortar Brick (Seamless Grey)
-tile.mortarBrick_5.name=Mortar Brick (Seamless Cream)
-tile.mortarBrick_6.name=Mortar Brick (Bright Mixed)
-tile.mortarBrick_7.name=Mortar Brick (Dark Mixed)
-tile.mortarBrick_8.name=Mortar Brick (Grayscale Mixed)
+tile.OriginStuff_0.name=Origin Cobblestone
+tile.OriginStuff_1.name=Origin Mossy Cobblestone
+tile.OriginStuff_2.name=Origin Brick
 
 tile.glassAssorted_0.name=Row Glass (Horizontal)
 tile.glassAssorted_1.name=Row Glass (Vertical)
@@ -425,34 +352,120 @@ tile.roadcover_tarmac_4.name=Grey Concrete Roadcover
 tile.roadcover_tarmac_5.name=Pale Concrete Roadcover
 tile.roadcover_tarmac_6.name=Pale Tarmac Roadcover
 
-tile.OriginStuff_0.name=Origin Cobblestone
-tile.OriginStuff_1.name=Origin Mossy Cobblestone
-tile.OriginStuff_2.name=Origin Brick
+<!-- ## METALS ## -->
+tile.metalSiding_3.name=White Vertical Sheet Metal Siding
+tile.metalSiding_2.name=Light Grey Vertical Sheet Metal Siding
+tile.metalSiding_1.name=Grey Vertical Sheet Metal Siding
+tile.metalSiding_0.name=Black Vertical Sheet Metal Siding
+tile.metalSiding_4.name=Brown Vertical Sheet Metal Siding
+tile.metalSiding_5.name=Red Vertical Sheet Metal Siding
+tile.metalSiding_6.name=Orange Vertical Sheet Metal Siding
+tile.metalSiding_7.name=Yellow Vertical Sheet Metal Siding
+tile.metalSiding_8.name=Lime Vertical Sheet Metal Siding
+tile.metalSiding_9.name=Green Vertical Sheet Metal Siding
+tile.metalSiding_10.name=Light Blue Vertical Sheet Metal Siding
+tile.metalSiding_11.name=Blue Vertical Sheet Metal Siding
+tile.metalSiding_12.name=Cyan Vertical Sheet Metal Siding
+tile.metalSiding_13.name=Pink Vertical Sheet Metal Siding
+tile.metalSiding_14.name=Magenta Vertical Sheet Metal Siding
+tile.metalSiding_15.name=Purple Vertical Sheet Metal Siding
 
-tile.JolietLimestoneRaw.name=Niagaran Dolomite (Joliet Limestone)
-tile.JolietLimestone_0.name=Joliet Limestone Bricks
-tile.JolietLimestone_1.name=Irregular Joliet Limestone Bricks
-tile.JolietLimestone_2.name=Large Joliet Limestone Bricks
+tile.metalSiding2_3.name=White Horizontal Sheet Metal Siding
+tile.metalSiding2_2.name=Light Grey Horizontal Sheet Metal Siding
+tile.metalSiding2_1.name=Grey Horizontal Sheet Metal Siding
+tile.metalSiding2_0.name=Black Horizontal Sheet Metal Siding
+tile.metalSiding2_4.name=Brown Horizontal Sheet Metal Siding
+tile.metalSiding2_5.name=Red Horizontal Sheet Metal Siding
+tile.metalSiding2_6.name=Orange Horizontal Sheet Metal Siding
+tile.metalSiding2_7.name=Yellow Horizontal Sheet Metal Siding
+tile.metalSiding2_8.name=Lime Horizontal Sheet Metal Siding
+tile.metalSiding2_9.name=Green Horizontal Sheet Metal Siding
+tile.metalSiding2_10.name=Light Blue Horizontal Sheet Metal Siding
+tile.metalSiding2_11.name=Blue Horizontal Sheet Metal Siding
+tile.metalSiding2_12.name=Cyan Horizontal Sheet Metal Siding
+tile.metalSiding2_13.name=Pink Horizontal Sheet Metal Siding
+tile.metalSiding2_14.name=Magenta Horizontal Sheet Metal Siding
+tile.metalSiding2_15.name=Purple Horizontal Sheet Metal Siding
 
-tile.CreamCity_0.name=Cream City Bricks
-tile.CreamCity_1.name=Dirty Cream City Bricks
-tile.CreamCity_2.name=Polluted Cream City Bricks
+tile.pannelBlack_0.name=Black Panel
+tile.pannelBlack_1.name=Black Panel Bottom
+tile.pannelBlack_2.name=Black Panel Top
+tile.pannelBlack_3.name=Black Panel Vertical
+tile.pannelBlack_4.name=Black Panel Vertical Left
+tile.pannelBlack_5.name=Black Panel Vertical Right
+tile.pannelBlack_6.name=Black Panel Horizontal
+tile.pannelBlack_7.name=Black Panel Horizontal Top
+tile.pannelBlack_8.name=Black Panel Horizontal Bottom
+tile.pannelBlack_9.name=Black Panel Left
+tile.pannelBlack_10.name=Black Panel Right
+tile.pannelBlack_11.name=Black Panel Left Bottom
+tile.pannelBlack_12.name=Black Panel Left Top
+tile.pannelBlack_13.name=Black Panel Right Bottom
+tile.pannelBlack_14.name=Black Panel Right Top
+tile.pannelBlack_15.name=Black Panel Edgeless
 
-tile.logs_0.name=Douglas Fir Log
-tile.logs_1.name=Sitka Spruce Log
-tile.logs_2.name=Western Red Cedar Log
-tile.leaves_0.name=Douglas Fir Leaves
-tile.leaves_1.name=Sitka Spruce Leaves
-tile.leaves_2.name=Western Red Cedar Leaves
+tile.pannelWhite_0.name=White Panel
+tile.pannelWhite_1.name=White Panel Bottom
+tile.pannelWhite_2.name=White Panel Top
+tile.pannelWhite_3.name=White Panel Vertical
+tile.pannelWhite_4.name=White Panel Vertical Left
+tile.pannelWhite_5.name=White Panel Vertical Right
+tile.pannelWhite_6.name=White Panel Horizontal
+tile.pannelWhite_7.name=White Panel Horizontal Top
+tile.pannelWhite_8.name=White Panel Horizontal Bottom
+tile.pannelWhite_9.name=White Panel Left
+tile.pannelWhite_10.name=White Panel Right
+tile.pannelWhite_11.name=White Panel Left Bottom
+tile.pannelWhite_12.name=White Panel Left Top
+tile.pannelWhite_13.name=White Panel Right Bottom
+tile.pannelWhite_14.name=White Panel Right Top
+tile.pannelWhite_15.name=White Panel Edgeless
 
-tile.bridgeA_Center.name=Modular Bridge A (Center Post)
-tile.bridgeA_Side_Top.name=Modular Bridge A (Side Post Top)
-tile.bridgeA_Side_Bottom.name=Modular Bridge A (Side Post Bottom)
-tile.bridgeA_X_Side_Top.name=Modular Bridge A (Side X Beams Top (3 long))
-tile.bridgeA_X_Side_Bottom.name=Modular Bridge A (Side X Beams Bottom (3 long))
-tile.bridgeA_X_Side_Top2.name=Modular Bridge A (Side X Beams Top (5 long))
-tile.bridgeA_X_Side_Bottom2.name=Modular Bridge A (Side X Beams Bottom (5 long))
+tile.pannelExtra_0.name=Black 2x2 Panel
+tile.pannelExtra_1.name=White 2x2 Panel
+tile.pannelExtra_2.name=Yellow Backpanel
+tile.pannelExtra_3.name=White Backpanel
+tile.pannelExtra_4.name=Reddish Backpanel
 
+tile.rustBeam_0.name=Yellow Horizontal Rusty Beam
+tile.rustBeam_1.name=Yellow Vertical Rusty Beam
+tile.rustBeam_2.name=Blue Horizontal Rusty Beam
+tile.rustBeam_3.name=Blue Vertical Rusty Beam
+tile.rustBeam_4.name=Red Horizontal Rusty Beam
+tile.rustBeam_5.name=Red Vertical Rusty Beam
+
+tile.labwalllight_0.name=Light Labwall Tile
+tile.labwalllight_1.name=Light Labwall Double Tile
+tile.labwalllight_2.name=Light Labwall Tripple Tile
+tile.labwalllight_3.name=Light Labwall Sextuple Tile
+tile.labwalldark_0.name=Dark Labwall Tile
+tile.labwalldark_1.name=Dark Labwall Horizontal Framed Tile
+tile.labwalldark_2.name=Dark Labwall Vertical Framed Tile
+tile.labwalldark_3.name=Dark Labwall Half Tile
+
+tile.WornVent1.name=Worn Vent (Transparent)
+tile.WornVent2.name=Worn Vent
+
+tile.Scaffold.name=Scaffold Block (Thin Frame)
+tile.Scaffold2.name=Scaffold Block (Thick Frame)
+
+<!-- ## HELL ## -->
+tile.Ember Stone.name=Ember Stone
+tile.Dark Ember Stone.name=Dark Ember Stone
+
+<!-- ## ADDITIONAL ## -->
+tile.Soapstone Stair.name=Raw Soapstone Stair
+tile.Soapstone Slab.name=Raw Soapstone Slab
+
+tile.EmberStone Slab.name=Ember Stone Slab
+tile.EmberStone Stair.name=Ember Stone Stair
+tile.Dark EmberStone Slab.name=Dark EmberStone Slab
+tile.Dark EmberStone Stair.name=Dark EmberStone Stair
+
+item.foxblocks:doorAitem.name=Office Door (Brown)
+item.foxblocks:doorBitem.name=Office Door (Yellow)
+
+<!-- ## PROPS ## -->
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
 tile.breakerBox2.name=Electrical Breaker Box (Fence Aligned)
 
@@ -464,13 +477,22 @@ tile.waysideWarningSignRed.name=Wayside Warning Sign (Red)
 tile.waysideWarningSignYellow.name=Wayside Warning Sign (Yellow)
 tile.waysideWarningSignYellowRed.name=Wayside Warning Sign (Yellow over Red)
 
+<!-- ## LIGHTING ## -->
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
 tile.ExteriorLightSquare.name=Exterior Light (Square)
 
-tile.limestone.name=Lower Pennsylvanian Limestone
+<!-- ## MOD. BRIDGES ## -->
+tile.bridgeA_Center.name=Modular Bridge A (Center Post)
+tile.bridgeA_Side_Top.name=Modular Bridge A (Side Post Top)
+tile.bridgeA_Side_Bottom.name=Modular Bridge A (Side Post Bottom)
+tile.bridgeA_X_Side_Top.name=Modular Bridge A (Side X Beams Top (3 long))
+tile.bridgeA_X_Side_Bottom.name=Modular Bridge A (Side X Beams Bottom (3 long))
+tile.bridgeA_X_Side_Top2.name=Modular Bridge A (Side X Beams Top (5 long))
+tile.bridgeA_X_Side_Bottom2.name=Modular Bridge A (Side X Beams Bottom (5 long))
 
+<!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
 item.foxblocks:enrichedClay.name=Enriched Clay
@@ -494,6 +516,3 @@ item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
 item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable
 item.foxblocks:record_rodney.name=Empties East
 item.record.record_rodney.desc=What a stupid fuckin operation
-
-item.foxblocks:doorAitem.name=Office Door (Brown)
-item.foxblocks:doorBitem.name=Office Door (Yellow)

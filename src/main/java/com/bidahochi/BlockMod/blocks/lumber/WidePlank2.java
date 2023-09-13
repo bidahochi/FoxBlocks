@@ -24,7 +24,7 @@ public class WidePlank2 extends Block {
         setResistance(5F);
         setHarvestLevel("axe", 1);
         setStepSound(soundTypeWood);
-        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/wideplank2/wideplank");
+        setBlockTextureName(FoxBlocks.MODID+":lumber/wideplank2/wideplank");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 

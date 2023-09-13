@@ -11,40 +11,37 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class WidePlank extends Block {
+public class Plywood extends Block {
 
     int varia=16;
 
     public IIcon[] textures = new IIcon[varia];
 
-    public WidePlank(Material p_i45394_1_) {
+    public Plywood(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("widePlank");
-        setHardness(2F);
-        setResistance(5F);
-        setHarvestLevel("axe", 1);
+        setBlockName("plywood");
+        setHardness(1F);
+        setResistance(3F);
+        setHarvestLevel("axe", 0);
         setStepSound(soundTypeWood);
-        setBlockTextureName(FoxBlocks.MODID+":lumber/wideplank/wideplank");
+        setBlockTextureName(FoxBlocks.MODID+":lumber/plywood/plywood");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < varia ; i++) {
+        for ( int i = 0; i < 8 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
-
     public IIcon getIcon ( int side, int meta){
-        if (meta > varia-1 ) meta = 0;
+        if (meta > 7 ) meta = 0;
         return this.textures[meta];
     }
-
     public int damageDropped( int oldmeta){
         return oldmeta;
     }
-
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < varia; i++){
+        for (int i = 0; i < 8; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }

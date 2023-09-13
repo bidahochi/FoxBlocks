@@ -114,6 +114,7 @@ public enum BlockIDs {
     amtrak(true, ItemBlockAmtrak.class, "amshak"),
     logs(true, ItemBlockLogs.class, "logs"),
     leaves(true, ItemBlockLeaves.class, "leaves"),
+    plywood(true, ItemBlockPlywood.class, "plywood"),
 
     //other building mats
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),

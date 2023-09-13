@@ -64,5 +64,4 @@ public class Pingascube extends Block {
 
         return !false && block == this ? false : super.shouldSideBeRendered(p_149646_1_, p_149646_2_, p_149646_3_, p_149646_4_, p_149646_5_);
     }
-
 }
