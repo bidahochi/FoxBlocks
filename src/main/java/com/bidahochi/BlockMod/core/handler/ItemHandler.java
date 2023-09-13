@@ -3,7 +3,6 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.material.Material;
 
 public class ItemHandler {
 
@@ -31,8 +30,8 @@ public class ItemHandler {
         ItemIDs.bulb.item=new bulb();
         ItemIDs.bulbLong.item=new bulbLong();
 
-        ItemIDs.doorA.item = new itemDoor(Material.wood).setUnlocalizedName("doorA").setTextureName("doorA");
-        ItemIDs.doorB.item = new itemDoor(Material.wood).setUnlocalizedName("doorB").setTextureName("doorB");
+        ItemIDs.doorA.item = new itemDoor().setUnlocalizedName("doorA").setTextureName(FoxBlocks.MODID + ":doorA_icon");
+        ItemIDs.doorB.item = new itemDoor().setUnlocalizedName("doorB").setTextureName(FoxBlocks.MODID + ":doorB_icon");
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

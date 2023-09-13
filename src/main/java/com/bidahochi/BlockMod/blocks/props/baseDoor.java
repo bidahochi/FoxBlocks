@@ -1,23 +1,17 @@
 package com.bidahochi.BlockMod.blocks.props;
 
-import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.ItemIDs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.IconFlipped;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -45,6 +39,7 @@ public class baseDoor extends BlockDoor {
     }
 
 
+    @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(IBlockAccess p_149673_1_, int p_149673_2_, int p_149673_3_, int p_149673_4_, int p_149673_5_)
     {
@@ -125,11 +120,11 @@ public class baseDoor extends BlockDoor {
     public Item getItemDropped(int itemDropped, Random p_149650_2_, int p_149650_3_)
     {
         Item droppedItem;
-        if (this.getUnlocalizedName() == "doorA"){
-        droppedItem = ItemIDs.doorA.item;
+        if (this.getUnlocalizedName().equals("tile.doorA")) {
+            droppedItem = ItemIDs.doorA.item;
         }
         else {
-        droppedItem = ItemIDs.doorB.item;
+            droppedItem = ItemIDs.doorB.item;
         }
         return (itemDropped & 8) != 0 ? null : droppedItem;
     }
@@ -137,11 +132,11 @@ public class baseDoor extends BlockDoor {
     @Override
     public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z, EntityPlayer player) {
         Item pickblock;
-        if (this.getUnlocalizedName() == "doorA"){
-        pickblock = ItemIDs.doorA.item;
+        if (this.getUnlocalizedName().equals("tile.doorA")) {
+            pickblock = ItemIDs.doorA.item;
         }
         else {
-        pickblock = ItemIDs.doorB.item;
+            pickblock = ItemIDs.doorB.item;
         }
         return new ItemStack(pickblock);
     }

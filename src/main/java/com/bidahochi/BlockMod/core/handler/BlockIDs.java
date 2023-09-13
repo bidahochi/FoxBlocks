@@ -30,7 +30,6 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
-import com.bidahochi.BlockMod.blocks.props.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -191,8 +190,8 @@ public enum BlockIDs {
     bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
 
-    doorA(true, ItemBlockDoorA.class, "doorAblock"),
-    doorB(true, ItemBlockDoorB.class, "doorBblock"),
+    doorA(true, null, "doorAblock"),
+    doorB(true, null, "doorBblock"),
 
     ;
 
