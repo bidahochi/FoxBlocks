@@ -181,6 +181,7 @@ public enum BlockIDs {
     neonCageLightWallV(false, null, "neonCageLightWallV"),
     neonCageLightWallH(false, null, "neonCageLightWallH"),
     ExteriorLightSquare(false, null, "ExteriorLightSquare"),
+    ExteriorLightSquare2(false, null, "ExteriorLightSquare2"),
 
     //modular bridges
     bridgeA_Center(false, null, "bridgeA_Center"),

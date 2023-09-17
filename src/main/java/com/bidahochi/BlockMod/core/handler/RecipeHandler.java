@@ -575,6 +575,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), new ItemStack(BlockIDs.neonCageLightWallH.block, 1));
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.ExteriorLightSquare.block, 1), new ItemStack(ItemIDs.ironSlice.item, 1), new ItemStack(ItemIDs.bulb.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.ExteriorLightSquare2.block, 1), new ItemStack(ItemIDs.ironSlice.item, 1), new ItemStack(ItemIDs.bulb.item, 1), new ItemStack(ItemIDs.ironSlice.item, 1));
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fakeSnow.block, 4), Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow);
 

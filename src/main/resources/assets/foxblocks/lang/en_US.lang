@@ -482,6 +482,7 @@ tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
 tile.ExteriorLightSquare.name=Exterior Light (Small)
+tile.ExteriorLightSquare2.name=Exterior Light (Large)
 
 <!-- ## MOD. BRIDGES ## -->
 tile.bridgeA_Center.name=Modular Bridge A (Center Post)
@@ -498,7 +499,8 @@ item.foxblocks:GypsumDust.name=Gypsum Dust
 item.foxblocks:enrichedClay.name=Enriched Clay
 item.foxblocks:ceramic.name=Ceramic
 item.foxblocks:cobalt_ingot.name=Cobalt Ingot
-item.foxblocks:lowdensitycompound.name=Soapstone-Based Low Density Moonrock Compound Substitute
+item.foxblocks:lowdensitycompound.name=SBLDM Compound
+Soapstone-Based Low Density Moonrock Compound Substitute
 item.foxblocks:rust.name=Artificial Rust
 item.foxblocks:aragoniteClump.name=Clump of Aragonite
 item.foxblocks:ironRod.name=Iron Rod

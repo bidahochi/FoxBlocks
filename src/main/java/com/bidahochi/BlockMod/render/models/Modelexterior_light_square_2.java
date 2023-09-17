@@ -4,8 +4,8 @@
 
 // Model: 
 // Model Creator: bida
-// Created on: 08.01.2022 - 20:59:29
-// Last changed on: 08.01.2022 - 20:59:29
+// Created on: 17.09.2023 - 10:50:00
+// Last changed on: 17.09.2023 - 10:50:00
 
 package com.bidahochi.BlockMod.render.models; //Path where the model is located
 
@@ -14,12 +14,12 @@ import com.bidahochi.BlockMod.render.tmt.ModelRendererTurbo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 
-public class Modelexterior_light_square extends ModelConverter//Same as Filename
+public class Modelexterior_light_square_2 extends ModelConverter //Same as Filename
 {
 	int textureX = 32;
 	int textureY = 32;
 
-	public Modelexterior_light_square() //Same as Filename
+	public Modelexterior_light_square_2() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[3];
 
@@ -34,17 +34,17 @@ public class Modelexterior_light_square extends ModelConverter//Same as Filename
 	private void initbodyModel_1()
 	{
 		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 1
-		bodyModel[1] = new ModelRendererTurbo(this, 15, 7, textureX, textureY); // Box 2
-		bodyModel[2] = new ModelRendererTurbo(this, 2, 7, textureX, textureY, "lamp"); // Box 3 lamp part
+		bodyModel[1] = new ModelRendererTurbo(this, 16, 16, textureX, textureY); // Box 2
+		bodyModel[2] = new ModelRendererTurbo(this, 2, 10, textureX, textureY, "lamp"); // Box 3 lamp part
 
-		bodyModel[0].addBox(0F, 0F, 0F, 3, 1, 4, 0F); // Box 1
-		bodyModel[0].setRotationPoint(5F, 0F, -2F);
+		bodyModel[0].addShapeBox(0F, 0F, 0F, 4, 2, 6, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 1
+		bodyModel[0].setRotationPoint(4F, -1F, -3F);
 
-		bodyModel[1].addBox(0F, 0F, 0F, 1, 3, 4, 0F); // Box 2
-		bodyModel[1].setRotationPoint(7F, 1F, -2F);
+		bodyModel[1].addBox(0F, 0F, 0F, 1, 5, 6, 0F); // Box 2
+		bodyModel[1].setRotationPoint(7F, 1F, -3F);
 
-		bodyModel[2].addShapeBox(0F, 0F, 0F, 2, 3, 4, 0F,-0.125F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.125F, -0.125F, -0.125F); // Box 3 lamp part
-		bodyModel[2].setRotationPoint(5F, 1F, -2F);
+		bodyModel[2].addShapeBox(0F, 0F, 0F, 3, 5, 6, 0F,-0.125F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.125F, -0.125F, -0.125F); // Box 3 lamp part
+		bodyModel[2].setRotationPoint(4F, 1F, -3F);
 	}
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
