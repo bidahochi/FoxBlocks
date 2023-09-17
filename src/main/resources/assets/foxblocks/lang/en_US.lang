@@ -139,7 +139,7 @@ tile.Tile 2x2_14.name=Magenta Lavender 2x2 Tile
 tile.Tile 2x2_15.name=Thanos Chin Purple 2x2 Tile
 
 tile.Tile 2x2 Smooth_0.name=White 2x2 Bubble Tile
-tile.Tile 2x2 Smooth_1.name=Gray 2x2 Bubble Tile
+tile.Tile 2x2 Smooth_1.name=Light Gray 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_2.name=Gray 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_3.name=Black 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_4.name=Brown 2x2 Bubble Tile
@@ -462,8 +462,8 @@ tile.EmberStone Stair.name=Ember Stone Stair
 tile.Dark EmberStone Slab.name=Dark EmberStone Slab
 tile.Dark EmberStone Stair.name=Dark EmberStone Stair
 
-item.foxblocks:doorAitem.name=Office Door (Brown)
-item.foxblocks:doorBitem.name=Office Door (Yellow)
+item.foxblocks:doorAitem.name=Office Door (Red Tint)
+item.foxblocks:doorBitem.name=Office Door (Brown Tint)
 
 <!-- ## PROPS ## -->
 tile.breakerBox.name=Electrical Breaker Box (Block Aligned)
@@ -481,7 +481,7 @@ tile.waysideWarningSignYellowRed.name=Wayside Warning Sign (Yellow over Red)
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
-tile.ExteriorLightSquare.name=Exterior Light (Square)
+tile.ExteriorLightSquare.name=Exterior Light (Small)
 
 <!-- ## MOD. BRIDGES ## -->
 tile.bridgeA_Center.name=Modular Bridge A (Center Post)
