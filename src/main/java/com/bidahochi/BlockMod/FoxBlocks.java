@@ -28,6 +28,7 @@ public class FoxBlocks
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
     public static CreativeTabs foxBlocksCreativeTabFactory;
+    public static CreativeTabs foxBlocksCreativeTabRoadRail;
     public static CreativeTabs foxBlocksCreativeTabItems;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
 
@@ -60,6 +61,11 @@ public class FoxBlocks
             public Item getTabIconItem() {
                 return  ItemIDs.jarate.item; }
             public String getTranslatedTabLabel() { return "FoxBlocks - Obligatory Items Tab"; }};
+
+        foxBlocksCreativeTabRoadRail = new CreativeTabs("FoxBlocks - Roads 'n' Rails") {
+            public Item getTabIconItem() {
+                return   Item.getItemFromBlock(BlockIDs.bridgeA_Center.block); }
+            public String getTranslatedTabLabel() { return "FoxBlocks - Roads 'n' Rails"; }};
 
         foxBlocksCreativeTab = new CreativeTabs("FoxBlocks - Unsorted") {
             public Item getTabIconItem() {

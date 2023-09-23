@@ -26,7 +26,7 @@ public class BridgeA_X_Side_top extends BlockContainer {
         setResistance(6.0F);
         setHarvestLevel("axe", 1);
         setStepSound(soundTypeWood);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
         //this.setBlockBounds(0.0F, 0.0F, 0.0F, 0.5F, 1F, 0.5F);
     }
     //public AxisAlignedBB getCollisionBoundingBoxFromPool(World )

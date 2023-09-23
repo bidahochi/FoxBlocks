@@ -23,7 +23,7 @@ public class Tarmac extends Block {
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/tarmac/tarmac");
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
     public void registerBlockIcons(IIconRegister reg) {
         for ( int i = 0; i < 14 ; i++) {

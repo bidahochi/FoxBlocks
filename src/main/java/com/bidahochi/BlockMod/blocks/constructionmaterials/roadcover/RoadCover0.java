@@ -27,7 +27,7 @@ public class RoadCover0 extends BlockContainer {
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabFactory);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
     @Override
