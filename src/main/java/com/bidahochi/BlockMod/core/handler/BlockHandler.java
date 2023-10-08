@@ -131,6 +131,11 @@ public class BlockHandler {
         BlockIDs.leaves.block = new Leaves(Material.leaves);
         BlockIDs.plywood.block = new Plywood(Material.wood);
         BlockIDs.woodchips.block = new Woodchips(Material.wood);
+        BlockIDs.wrappedwood1.block = new WrappedWood1(Material.wood);
+        BlockIDs.wrappedwood2.block = new WrappedWood2(Material.wood);
+        BlockIDs.wrappedwood3.block = new WrappedWood3(Material.wood);
+        BlockIDs.wrappedwood4.block = new WrappedWood4(Material.wood);
+        BlockIDs.wrappedwood5.block = new WrappedWood5(Material.wood);
 
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);
@@ -246,6 +251,12 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileRoadCover4.class, "roadcover4.tile");
         GameRegistry.registerTileEntity(TileRoadCover5.class, "roadcover5.tile");
         GameRegistry.registerTileEntity(TileRoadCover6.class, "roadcover6.tile");
+
+        GameRegistry.registerTileEntity(TileWrappedWood1.class, "wrappedwood1.tile");
+        GameRegistry.registerTileEntity(TileWrappedWood2.class, "wrappedwood2.tile");
+        GameRegistry.registerTileEntity(TileWrappedWood3.class, "wrappedwood3.tile");
+        GameRegistry.registerTileEntity(TileWrappedWood4.class, "wrappedwood4.tile");
+        GameRegistry.registerTileEntity(TileWrappedWood5.class, "wrappedwood5.tile");
 
         for (BlockIDs block : BlockIDs.values()) {
 

@@ -116,6 +116,11 @@ public enum BlockIDs {
     leaves(true, ItemBlockLeaves.class, "leaves"),
     plywood(true, ItemBlockPlywood.class, "plywood"),
     woodchips(false, null, "woodchips"),
+    wrappedwood1(false, null, "wrappedwood1"),
+    wrappedwood2(false, null, "wrappedwood2"),
+    wrappedwood3(false, null, "wrappedwood3"),
+    wrappedwood4(false, null, "wrappedwood4"),
+    wrappedwood5(false, null, "wrappedwood5"),
 
     //other building mats
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),

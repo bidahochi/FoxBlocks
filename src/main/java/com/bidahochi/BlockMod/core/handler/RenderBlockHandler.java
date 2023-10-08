@@ -10,6 +10,7 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
 import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
+import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.Scaffold;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
@@ -51,6 +52,12 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover4.class, new RenderRoadCover4());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover5.class, new RenderRoadCover5());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCover6.class, new RenderRoadCover6());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood1.class, new RenderWrappedWood1());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood2.class, new RenderWrappedWood2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood3.class, new RenderWrappedWood3());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood4.class, new RenderWrappedWood4());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood5.class, new RenderWrappedWood5());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }

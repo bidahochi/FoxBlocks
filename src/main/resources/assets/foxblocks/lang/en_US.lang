@@ -281,6 +281,12 @@ tile.plywood_6.name=Pine Plywood
 tile.plywood_7.name=Redwood Plywood
 
 tile.woodchips.name=Block of Woodchips
+tile.WrappedWood1.name=Wrapped Lumber (Blank Cover)
+tile.WrappedWood2.name=Wrapped Lumber (Canfor Cover)
+tile.WrappedWood3.name=Wrapped Lumber (Tolko Cover)
+tile.WrappedWood4.name=Wrapped Lumber (Washaska Cover)
+tile.WrappedWood5.name=Wrapped Lumber (Washaska Cover (Open Ends))
+
 <!-- ## OTHER BUILDING MATS ## -->
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Light Gray Drywall
