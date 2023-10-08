@@ -744,6 +744,8 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(ItemIDs.doorA.item, 1), "WW ", "WWS", "WW ", 'W', new ItemStack(Blocks.planks), 'S', new ItemStack(ItemIDs.woodSealant.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.doorB.item, 1), new ItemStack(ItemIDs.doorA.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.doorA.item, 1), new ItemStack(ItemIDs.doorB.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.doorC.item, 1),Items.iron_door);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.doorD.item, 1),new ItemStack(ItemIDs.doorC.item, 1));
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         //FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");

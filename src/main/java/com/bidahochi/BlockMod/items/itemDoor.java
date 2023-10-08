@@ -39,6 +39,12 @@ public class itemDoor extends Item {
             else if (this.getUnlocalizedName().equals("item.foxblocks:doorBitem")){
                 block = BlockIDs.doorB.block;
             }
+            else if (this.getUnlocalizedName().equals("item.foxblocks:doorCitem")){
+                block = BlockIDs.doorC.block;
+            }
+            else if (this.getUnlocalizedName().equals("item.foxblocks:doorDitem")){
+                block = BlockIDs.doorD.block;
+            }
             else {
                 return false;
             }

@@ -130,6 +130,7 @@ public class BlockHandler {
         BlockIDs.logs.block = new Logs(Material.wood);
         BlockIDs.leaves.block = new Leaves(Material.leaves);
         BlockIDs.plywood.block = new Plywood(Material.wood);
+        BlockIDs.woodchips.block = new Woodchips(Material.wood);
 
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);
@@ -210,7 +211,9 @@ public class BlockHandler {
 
         BlockIDs.doorA.block = new baseDoor(Material.wood).setBlockName("doorA").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_a").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         BlockIDs.doorB.block = new baseDoor(Material.wood).setBlockName("doorB").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_b").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
-        //BlockIDs.doorA.block = (Block)Block.blockRegistry.getObject("wooden_door");
+        BlockIDs.doorC.block = new baseDoor(Material.wood).setBlockName("doorC").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_c").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
+        BlockIDs.doorD.block = new baseDoor(Material.wood).setBlockName("doorD").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_d").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
+
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");

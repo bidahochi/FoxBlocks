@@ -22,7 +22,6 @@ public class baseDoor extends BlockDoor {
     public IIcon[] iiconA;
     @SideOnly(Side.CLIENT)
     public IIcon[] iiconB;
-    public Item doorAitem;
 
     public baseDoor(Material mat) {
         super(mat);
@@ -123,9 +122,15 @@ public class baseDoor extends BlockDoor {
         if (this.getUnlocalizedName().equals("tile.doorA")) {
             droppedItem = ItemIDs.doorA.item;
         }
-        else {
+        else if(this.getUnlocalizedName().equals("tile.doorB")){
             droppedItem = ItemIDs.doorB.item;
         }
+        else if(this.getUnlocalizedName().equals("tile.doorC")){
+            droppedItem = ItemIDs.doorC.item;
+        }
+        else {
+        droppedItem = ItemIDs.doorD.item;
+    }
         return (itemDropped & 8) != 0 ? null : droppedItem;
     }
 
@@ -135,8 +140,14 @@ public class baseDoor extends BlockDoor {
         if (this.getUnlocalizedName().equals("tile.doorA")) {
             pickblock = ItemIDs.doorA.item;
         }
-        else {
+        else if(this.getUnlocalizedName().equals("tile.doorB")){
             pickblock = ItemIDs.doorB.item;
+        }
+        else if(this.getUnlocalizedName().equals("tile.doorC")){
+            pickblock = ItemIDs.doorC.item;
+        }
+        else {
+            pickblock = ItemIDs.doorD.item;
         }
         return new ItemStack(pickblock);
     }

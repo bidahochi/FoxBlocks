@@ -115,6 +115,7 @@ public enum BlockIDs {
     logs(true, ItemBlockLogs.class, "logs"),
     leaves(true, ItemBlockLeaves.class, "leaves"),
     plywood(true, ItemBlockPlywood.class, "plywood"),
+    woodchips(false, null, "woodchips"),
 
     //other building mats
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
@@ -194,6 +195,8 @@ public enum BlockIDs {
 
     doorA(true, null, "doorAblock"),
     doorB(true, null, "doorBblock"),
+    doorC(true, null, "doorCblock"),
+    doorD(true, null, "doorDblock"),
 
     ;
 
