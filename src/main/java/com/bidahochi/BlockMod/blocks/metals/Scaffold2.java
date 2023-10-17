@@ -61,6 +61,7 @@ public class Scaffold2 extends Block {
         return true;
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public int getRenderType() {
         return RenderBlockHandler.scaffoldRenderId;

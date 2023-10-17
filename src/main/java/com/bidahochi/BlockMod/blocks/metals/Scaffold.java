@@ -1,14 +1,12 @@
 package com.bidahochi.BlockMod.blocks.metals;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.RenderBlockHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Facing;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
@@ -57,6 +55,7 @@ public class Scaffold extends Block {
         return false;
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public int getRenderType() {
         return RenderBlockHandler.scaffoldRenderId;

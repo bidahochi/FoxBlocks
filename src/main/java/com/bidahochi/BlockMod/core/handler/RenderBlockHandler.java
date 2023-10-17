@@ -11,7 +11,6 @@ import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lumber.*;
-import com.bidahochi.BlockMod.blocks.metals.Scaffold;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
