@@ -115,6 +115,6 @@ public class WrappedWood5 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":WrappedWood5");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":wrappedwood5");
     }
 }
