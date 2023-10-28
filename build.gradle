@@ -23,8 +23,10 @@ buildscript {
 
 apply plugin: 'forge'
 apply plugin: 'idea'
+sourceCompatibility = targetCompatibility = "1.7"
+compileJava { sourceCompatibility = targetCompatibility = "1.7" }
 
-version = "1.1.0"
+version = "1.2.0"
 group= "com.bidahochi.foxblocks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "foxblocks"
 
