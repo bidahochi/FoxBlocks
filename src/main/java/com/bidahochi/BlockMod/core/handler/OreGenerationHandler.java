@@ -73,6 +73,8 @@ public class OreGenerationHandler implements IWorldGenerator {
         generateOre(Blocks.sand, world, rand, x, z, 6, 10, 6, 36, 77, Blocks.stone);
         generateOre(BlockIDs.pingascube.block, world, rand, x, z, 2, 3, 3, 4, 69, Blocks.stone);
 
+        generateOre(BlockIDs.redrock.block, world, rand, x ,z, 10, 28, 5, 20, 128, Blocks.hardened_clay);
+
     }
 
     public void generateNether(World world, Random rand, int x, int z){

@@ -48,6 +48,7 @@ public enum BlockIDs {
     peagravel(false,null, "peagravel"),
     peagravel_shit(false, null, "Dirty Pea Gravel"),
     peagravel_volcanic(false, null, "Volcanic Cinder Peagravel"),
+    peagravel_redrock(false, null, "Red Rock Peagravel"),
     gravel_volcanic(false, null, "Volcanic Cinder Gravel"),
     gravel_shit(false, null, "Dirty Gravel"),
     specialDirt(false, null, "SpecialDirt"),
@@ -70,6 +71,7 @@ public enum BlockIDs {
     soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco"),
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
+    redrock(false, null, "Redrock"),
 
     jolietLimestoneRaw(false, null, "jolietlimestoneraw"),
     limestone(false, null, "limestone"),
@@ -79,6 +81,7 @@ public enum BlockIDs {
     mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick"),
     creamCity(true, ItemBlockCreamCity.class, "creamcity"),
     jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone"),
+    redrockDeco(true, ItemBlockRedrockDeco.class, "RedrockDeco"),
 
     cobaltBlock(false,null,"cobaltBlock"),
     cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
@@ -154,6 +157,8 @@ public enum BlockIDs {
     wornVent2(false, null, "WornVent2"),
     scaffold(false, null, "Scaffold"),
     scaffold2(false, null, "Scaffold2"),
+    classicMetals(false, null, "ClassicIron"),
+    classicGold(false, null, "ClassicGold"),
 
     //hell
     darkEmberStone(false, null, "Dark Ember Stone"),
@@ -197,6 +202,21 @@ public enum BlockIDs {
     bridgeA_X_Side_Bottom2(false, null, "bridgeA_X_Side_Bottom2"),
     bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
+
+    //overhead wires
+    overhead_pole_curve_3(false, null, "overhead_pole_curve_3"),
+    overhead_pole_curve_5(false, null, "overhead_pole_curve_5"),
+    overhead_pole_curve_10(false, null, "overhead_pole_curve_10"),
+    overhead_pole_curve_16(false, null, "overhead_pole_curve_16"),
+    overhead_pole_scurve_8(false, null, "overhead_pole_scurve_8"),
+    overhead_pole_scurve_12(false, null, "overhead_pole_scurve_12"),
+    overhead_pole_scurve_16(false, null, "overhead_pole_scurve_16"),
+    overhead_pole_slope_6(false, null, "overhead_pole_slope_6"),
+    overhead_pole_slope_12(false, null, "overhead_pole_slope_12"),
+    overhead_pole_slope_18(false, null, "overhead_pole_slope_18"),
+    overhead_pole_straight_6(false, null, "overhead_pole_straight_6"),
+    overhead_pole_switch_6(false, null, "overhead_pole_switch_6"),
+    overhead_pole_switch_parallel(false, null, "overhead_pole_switch_parallel"),
 
     doorA(true, null, "doorAblock"),
     doorB(true, null, "doorBblock"),

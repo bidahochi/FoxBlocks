@@ -11,6 +11,7 @@ tile.Snowy Pea Gravel.name=Snowy Pea Gravel
 tile.Pea Gravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
 tile.Volcanic Cinder Peagravel.name=Volcanic Cinder Peagravel
+tile.Red Rock Peagravel.name=Redrock Peagravel
 tile.Volcanic Cinder Gravel.name=Volcanic Cinder Gravel
 tile.Dirty Gravel.name=Dirty Gravel
 tile.SpecialDirt.name=Ungrowable Dirt
@@ -52,8 +53,10 @@ tile.Soapstone Deco_0.name=Soapstone Bricks
 tile.Soapstone Deco_1.name=Large Soapstone Bricks
 tile.Soapstone Deco_2.name=Smooth(er) Soapstone
 tile.Soapstone Deco_3.name=Coarse Soapstone
+tile.Soapstone Deco_4.name=Smooth(est) Soapstone
 tile.Magmatic Soapstone.name= Magmatic Soapstone
 tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
+tile.Redrock.name=Redrock
 
 tile.JolietLimestoneRaw.name=Niagaran Dolomite (Joliet Limestone)
 tile.limestone.name=Lower Pennsylvanian Limestone
@@ -75,6 +78,10 @@ tile.CreamCity_2.name=Polluted Cream City Bricks
 tile.JolietLimestone_0.name=Joliet Limestone Bricks
 tile.JolietLimestone_1.name=Irregular Joliet Limestone Bricks
 tile.JolietLimestone_2.name=Large Joliet Limestone Bricks
+tile.RedrockDeco_0.name=Redrock Cobblestone
+tile.RedrockDeco_1.name=Redrock Bricks
+tile.RedrockDeco_2.name=Long Redrock Bricks
+tile.RedrockDeco_3.name=Large Redrock Bricks
 
 tile.cobaltBlock.name=Cobalt Block
 tile.cobaltBrick.name=Small Cobalt Bricks
@@ -455,6 +462,8 @@ tile.WornVent2.name=Worn Vent
 
 tile.Scaffold.name=Scaffold Block (Thin Frame)
 tile.Scaffold2.name=Scaffold Block (Thick Frame)
+tile.ClassicIron.name=Classic Iron Block
+tile.ClassicGold.name=Classic Gold Block
 
 <!-- ## HELL ## -->
 tile.Ember Stone.name=Ember Stone
