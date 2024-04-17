@@ -511,6 +511,22 @@ tile.bridgeA_X_Side_Bottom.name=Modular Bridge A (Side X Beams Bottom (3 long))
 tile.bridgeA_X_Side_Top2.name=Modular Bridge A (Side X Beams Top (5 long))
 tile.bridgeA_X_Side_Bottom2.name=Modular Bridge A (Side X Beams Bottom (5 long))
 
+<!-- ## OVERHEADS (dear god) ## -->
+tile.overhead_pole_curve_3.name=Overhead Wire (3x3 Curve, Outside Post)
+tile.overhead_pole_curve_5.name=Overhead Wire (5x5 Curve, Outside Post)
+tile.overhead_pole_curve_10.name=Overhead Wire (10x10 Curve, Outside Post)
+tile.overhead_pole_curve_16.name=Overhead Wire (16x16 Curve, Outside Post)
+tile.overhead_pole_scurve_8.name=Overhead Wire (2x8 Parallel Curve, Right Post)
+tile.overhead_pole_scurve_12.name=Overhead Wire (3x12 Parallel Curve, Right Post)
+tile.overhead_pole_scurve_16.name=Overhead Wire (4x16 Parallel Curve, Right Post)
+tile.overhead_pole_slope_6.name=Overhead Wire (1x6 Slope, Right Post)
+tile.overhead_pole_slope_12.name=Overhead Wire (1x12 Slope, Right Post)
+tile.overhead_pole_slope_18.name=Overhead Wire (1x18 Slope, Right Post)
+tile.overhead_pole_straight_6.name=Overhead Wire (1x6 Straight W/ Post)
+tile.overhead_pole_switch_6.name=Overhead Wire (6x6 Switch Left)
+tile.overhead_pole_switch_parallel.name=Overhead Wire (Parallel Switch Left)
+tile.overhead_pole_
+
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust
