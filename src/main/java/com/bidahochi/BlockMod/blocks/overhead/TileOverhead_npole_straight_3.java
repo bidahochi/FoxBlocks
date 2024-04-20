@@ -9,15 +9,15 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 
-public class TileOverhead_pole_scurve_16 extends TileEntity {
+public class TileOverhead_npole_straight_3 extends TileEntity {
     public int dir=0;
 
-    public TileOverhead_pole_scurve_16(int dir) {
+    public TileOverhead_npole_straight_3(int dir) {
         super();
         this.dir = dir;
     }
 
-    public TileOverhead_pole_scurve_16() {}
+    public TileOverhead_npole_straight_3() {}
 
     @Override
     public boolean shouldRenderInPass(int pass){ return pass==0; }
@@ -52,7 +52,7 @@ public class TileOverhead_pole_scurve_16 extends TileEntity {
         }
     }
 
-    public TileOverhead_pole_scurve_16 setFacing(int direction){
+    public TileOverhead_npole_straight_3 setFacing(int direction){
         dir=(byte) direction;
         this.markDirty();
         return this;
@@ -64,13 +64,14 @@ public class TileOverhead_pole_scurve_16 extends TileEntity {
     {
         //z is n/s, x is e/w
         if (dir==0){// north
-            return AxisAlignedBB.getBoundingBox(xCoord-2, yCoord, zCoord-16, xCoord + 4, yCoord + 5, zCoord+1);
+            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord-3, xCoord + 1, yCoord + 5, zCoord+1);
         }else if(dir==1){//east
-            return AxisAlignedBB.getBoundingBox(xCoord, yCoord, zCoord-1, xCoord+16, yCoord + 5, zCoord + 4);
+            return AxisAlignedBB.getBoundingBox(xCoord, yCoord, zCoord-1, xCoord+3, yCoord + 5, zCoord + 1);
         }else if(dir==2){//south
-            return AxisAlignedBB.getBoundingBox(xCoord-4, yCoord, zCoord, xCoord + 2, yCoord + 5, zCoord + 16);
+            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord, xCoord + 1, yCoord + 5, zCoord + 3);
         }else{//west
-            return AxisAlignedBB.getBoundingBox(xCoord-16, yCoord, zCoord-4, xCoord+1, yCoord + 5, zCoord + 2);
+            return AxisAlignedBB.getBoundingBox(xCoord-3, yCoord, zCoord-1, xCoord+1, yCoord + 5, zCoord + 2);
         }
     }
+
 }

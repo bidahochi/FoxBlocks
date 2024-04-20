@@ -527,6 +527,13 @@ tile.overhead_pole_switch_6.name=Overhead Wire (6x6 Switch Left)
 tile.overhead_pole_switch_parallel.name=Overhead Wire (Parallel Switch Left)
 tile.overhead_pole_
 
+tile.overhead_npole_straight_1.name=Overhead Wire (1x1 Straight W/O Post)
+tile.overhead_npole_straight_3.name=Overhead Wire (1x3 Straight W/O Post)
+tile.overhead_npole_straight_6.name=Overhead Wire (1x6 Straight W/O Post)
+tile.overhead_npole_slope_6.name=Overhead Wire (1x6 Slope, No Post)
+tile.overhead_npole_slope_12.name=Overhead Wire (1x12 Slope, No Post)
+tile.overhead_npole_slope_18.name=Overhead Wire (1x18 Slope, No Post)
+
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

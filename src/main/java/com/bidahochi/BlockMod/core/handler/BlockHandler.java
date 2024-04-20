@@ -234,6 +234,15 @@ public class BlockHandler {
         BlockIDs.overhead_pole_switch_6.block = new Overhead_pole_switch_6(Material.wood);
         BlockIDs.overhead_pole_switch_parallel.block = new Overhead_pole_switch_parallel(Material.wood);
 
+        BlockIDs.overhead_npole_straight_1.block = new Overhead_npole_straight_1(Material.wood);
+        BlockIDs.overhead_npole_straight_3.block = new Overhead_npole_straight_3(Material.wood);
+        BlockIDs.overhead_npole_straight_6.block = new Overhead_npole_straight_6(Material.wood);
+        BlockIDs.overhead_npole_slope_6.block = new Overhead_npole_slope_6(Material.wood);
+        BlockIDs.overhead_npole_slope_12.block = new Overhead_npole_slope_12(Material.wood);
+        BlockIDs.overhead_npole_slope_18.block = new Overhead_npole_slope_18(Material.wood);
+        BlockIDs.overhead_npole_x.block = new Overhead_npole_x(Material.wood);
+
+        //doors
         BlockIDs.doorA.block = new baseDoor(Material.wood).setBlockName("doorA").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_a").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         BlockIDs.doorB.block = new baseDoor(Material.wood).setBlockName("doorB").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_b").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         BlockIDs.doorC.block = new baseDoor(Material.wood).setBlockName("doorC").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_c").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
@@ -278,6 +287,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileWrappedWood4.class, "wrappedwood4.tile");
         GameRegistry.registerTileEntity(TileWrappedWood5.class, "wrappedwood5.tile");
 
+        //overheads
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_3.class, "overhead_pole_curve_3.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_5.class, "overhead_pole_curve_5.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_10.class, "overhead_pole_curve_10.tile");
@@ -291,6 +301,16 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileOverhead_pole_straight_6.class, "overhead_pole_straight_6.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_switch_6.class, "overhead_pole_switch_6.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_switch_parallel.class, "overhead_pole_switch_parallel.tile");
+
+        GameRegistry.registerTileEntity(TileOverhead_npole_straight_1.class, "overhead_npole_straight_1.tile");
+        GameRegistry.registerTileEntity(TileOverhead_npole_straight_3.class, "overhead_npole_straight_3.tile");
+        GameRegistry.registerTileEntity(TileOverhead_npole_straight_6.class, "overhead_npole_straight_6.tile");
+        GameRegistry.registerTileEntity(TileOverhead_npole_slope_6.class, "overhead_npole_slope_6.tile");
+        GameRegistry.registerTileEntity(TileOverhead_npole_slope_12.class, "overhead_npole_slope_12.tile");
+        GameRegistry.registerTileEntity(TileOverhead_npole_slope_18.class, "overhead_npole_slope_18.tile");
+        GameRegistry.registerTileEntity(TileOverhead_npole_x.class, "overhead_npole_x.tile");
+
+
 
         for (BlockIDs block : BlockIDs.values()) {
 

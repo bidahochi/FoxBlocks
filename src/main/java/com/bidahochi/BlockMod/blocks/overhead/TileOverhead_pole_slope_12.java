@@ -64,13 +64,13 @@ public class TileOverhead_pole_slope_12 extends TileEntity {
     {
         //z is n/s, x is e/w
         if (dir==0){// north
-            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord-12, xCoord + 1, yCoord + 6, zCoord);
+            return AxisAlignedBB.getBoundingBox(xCoord-2, yCoord, zCoord-12, xCoord + 1, yCoord + 6, zCoord+1);
         }else if(dir==1){//east
             return AxisAlignedBB.getBoundingBox(xCoord, yCoord, zCoord-1, xCoord+12, yCoord + 6, zCoord + 1);
         }else if(dir==2){//south
-            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord, xCoord + 1, yCoord + 6, zCoord + 12);
+            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord, xCoord + 2, yCoord + 6, zCoord + 12);
         }else{//west
-            return AxisAlignedBB.getBoundingBox(xCoord-12, yCoord, zCoord-1, xCoord, yCoord + 6, zCoord + 1);
+            return AxisAlignedBB.getBoundingBox(xCoord-12, yCoord, zCoord-1, xCoord+1, yCoord + 6, zCoord + 2);
         }
     }
 }

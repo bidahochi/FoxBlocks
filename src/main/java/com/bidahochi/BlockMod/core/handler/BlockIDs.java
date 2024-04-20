@@ -218,6 +218,14 @@ public enum BlockIDs {
     overhead_pole_switch_6(false, null, "overhead_pole_switch_6"),
     overhead_pole_switch_parallel(false, null, "overhead_pole_switch_parallel"),
 
+    overhead_npole_straight_1(false, null, "overhead_npole_straight_1"),
+    overhead_npole_straight_3(false, null, "overhead_npole_straight_3"),
+    overhead_npole_straight_6(false, null, "overhead_npole_straight_6"),
+    overhead_npole_slope_6(false, null, "overhead_npole_slope_6"),
+    overhead_npole_slope_12(false, null, "overhead_npole_slope_12"),
+    overhead_npole_slope_18(false, null, "overhead_npole_slope_18"),
+    overhead_npole_x(false, null, "overhead_npole_x"),
+
     doorA(true, null, "doorAblock"),
     doorB(true, null, "doorBblock"),
     doorC(true, null, "doorCblock"),

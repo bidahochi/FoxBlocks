@@ -108,6 +108,20 @@ public class TileRoadCover0 extends TileEntity {
         //return AxisAlignedBB.getBoundingBox(xCoord-1+ecks, yCoord-1, zCoord-1+zee, xCoord + 1+ecks, yCoord + 1, zCoord + 1+zee);
         return AxisAlignedBB.getBoundingBox(xCoord-2+ecks, yCoord-2, zCoord-2+zee, xCoord+2+ecks, yCoord+2, zCoord+2+zee);
     }
-
+    /*@SideOnly(Side.CLIENT) //try to get this working someday
+    @Override
+    public AxisAlignedBB getRenderBoundingBox()
+    {
+        //z is n/s, x is e/w
+        if (dir==0){// north
+            return AxisAlignedBB.getBoundingBox(xCoord-0, yCoord-1, zCoord-1, xCoord+0, yCoord+1, zCoord);
+        }else if(dir==1){//east
+            return AxisAlignedBB.getBoundingBox(xCoord, yCoord, zCoord-3, xCoord+3, yCoord + 5, zCoord + 1);
+        }else if(dir==2){//south
+            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord, xCoord + 3, yCoord + 5, zCoord + 3);
+        }else{//west
+            return AxisAlignedBB.getBoundingBox(xCoord-3, yCoord, zCoord-1, xCoord, yCoord + 5, zCoord + 3);
+        }
+    }*/
 
 }

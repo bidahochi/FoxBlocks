@@ -64,14 +64,29 @@ public class TileOverhead_pole_scurve_12 extends TileEntity {
     {
         //z is n/s, x is e/w
         if (dir==0){// north
-            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord-12, xCoord + 3, yCoord + 5, zCoord);
+            return AxisAlignedBB.getBoundingBox(xCoord-2, yCoord, zCoord-12, xCoord + 3, yCoord + 5, zCoord+1);
         }else if(dir==1){//east
             return AxisAlignedBB.getBoundingBox(xCoord, yCoord, zCoord-1, xCoord+12, yCoord + 5, zCoord + 3);
         }else if(dir==2){//south
-            return AxisAlignedBB.getBoundingBox(xCoord-3, yCoord, zCoord, xCoord + 1, yCoord + 5, zCoord + 12);
+            return AxisAlignedBB.getBoundingBox(xCoord-3, yCoord, zCoord, xCoord + 2, yCoord + 5, zCoord + 12);
         }else{//west
-            return AxisAlignedBB.getBoundingBox(xCoord-12, yCoord, zCoord-3, xCoord, yCoord + 5, zCoord + 1);
+            return AxisAlignedBB.getBoundingBox(xCoord-12, yCoord, zCoord-3, xCoord+1, yCoord + 5, zCoord + 2);
         }
 
     }
+    /*@Override //supposedly this would be faster, if it worked
+    public AxisAlignedBB getRenderBoundingBox()
+    {
+        //z is n/s, x is e/w
+        switch(dir) {
+            case 1:// north
+                return AxisAlignedBB.getBoundingBox(xCoord - 1, yCoord, zCoord - 12, xCoord + 3, yCoord + 5, zCoord);
+            case 2://east
+                return AxisAlignedBB.getBoundingBox(xCoord, yCoord, zCoord - 1, xCoord + 12, yCoord + 5, zCoord + 3);
+            case 3://south
+                return AxisAlignedBB.getBoundingBox(xCoord - 3, yCoord, zCoord, xCoord + 1, yCoord + 5, zCoord + 12);
+            default://west
+                return AxisAlignedBB.getBoundingBox(xCoord - 12, yCoord, zCoord - 3, xCoord, yCoord + 5, zCoord + 1);
+        }
+    }*/
 }

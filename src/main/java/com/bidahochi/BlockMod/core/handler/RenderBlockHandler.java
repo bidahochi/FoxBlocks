@@ -74,6 +74,13 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_6.class, new RenderOverhead_pole_switch_6());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_parallel.class, new RenderOverhead_pole_switch_parallel());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_straight_1.class, new RenderOverhead_npole_straight_1());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_straight_3.class, new RenderOverhead_npole_straight_3());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_straight_6.class, new RenderOverhead_npole_straight_6());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_slope_6.class, new RenderOverhead_npole_slope_6());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_slope_12.class, new RenderOverhead_npole_slope_12());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_slope_18.class, new RenderOverhead_npole_slope_18());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_x.class, new RenderOverhead_npole_x());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }
