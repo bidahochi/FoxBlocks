@@ -533,6 +533,7 @@ tile.overhead_npole_straight_6.name=Overhead Wire (1x6 Straight W/O Post)
 tile.overhead_npole_slope_6.name=Overhead Wire (1x6 Slope, No Post)
 tile.overhead_npole_slope_12.name=Overhead Wire (1x12 Slope, No Post)
 tile.overhead_npole_slope_18.name=Overhead Wire (1x18 Slope, No Post)
+tile.overhead_npole_x.name=Overhead Wire (Diamond)
 
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
