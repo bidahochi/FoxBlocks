@@ -65,14 +65,19 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_10.class, new RenderOverhead_pole_curve_10());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_16.class, new RenderOverhead_pole_curve_16());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_8.class, new RenderOverhead_pole_scurve_8());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_8alt.class, new RenderOverhead_pole_scurve_8alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_12.class, new RenderOverhead_pole_scurve_12());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_12alt.class, new RenderOverhead_pole_scurve_12alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_16.class, new RenderOverhead_pole_scurve_16());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_16alt.class, new RenderOverhead_pole_scurve_16alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_6.class, new RenderOverhead_pole_slope_6());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_12.class, new RenderOverhead_pole_slope_12());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_18.class, new RenderOverhead_pole_slope_18());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_straight_6.class, new RenderOverhead_pole_straight_6());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_6.class, new RenderOverhead_pole_switch_6());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_6alt.class, new RenderOverhead_pole_switch_6alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_parallel.class, new RenderOverhead_pole_switch_parallel());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_parallelalt.class, new RenderOverhead_pole_switch_parallelalt());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_straight_1.class, new RenderOverhead_npole_straight_1());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_straight_3.class, new RenderOverhead_npole_straight_3());

@@ -95,7 +95,7 @@ public class Overhead_pole_scurve_8 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":Placeholder");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/2x8_p");
     }
 
 

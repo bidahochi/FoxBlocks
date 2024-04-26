@@ -73,4 +73,9 @@ public class TileOverhead_npole_slope_18 extends TileEntity {
             return AxisAlignedBB.getBoundingBox(xCoord-18, yCoord, zCoord-1, xCoord+1, yCoord + 6, zCoord + 2);
         }
     }
+
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
+    }
 }

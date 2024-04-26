@@ -74,4 +74,9 @@ public class TileOverhead_pole_scurve_8 extends TileEntity {
         }
 
     }
+
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
+    }
 }

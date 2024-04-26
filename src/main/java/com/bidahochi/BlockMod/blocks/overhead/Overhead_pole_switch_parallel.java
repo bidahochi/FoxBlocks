@@ -95,7 +95,7 @@ public class Overhead_pole_switch_parallel extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":Placeholder");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/4x11_p");
     }
 
 

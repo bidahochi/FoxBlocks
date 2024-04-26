@@ -74,4 +74,8 @@ public class TileOverhead_npole_straight_3 extends TileEntity {
         }
     }
 
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
+    }
 }

@@ -100,7 +100,7 @@ public class Overhead_pole_curve_10 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":Placeholder");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/10x10_p");
     }
 
 

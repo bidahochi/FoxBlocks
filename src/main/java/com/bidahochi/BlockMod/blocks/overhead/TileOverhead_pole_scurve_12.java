@@ -89,4 +89,9 @@ public class TileOverhead_pole_scurve_12 extends TileEntity {
                 return AxisAlignedBB.getBoundingBox(xCoord - 12, yCoord, zCoord - 3, xCoord, yCoord + 5, zCoord + 1);
         }
     }*/
+
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
+    }
 }
