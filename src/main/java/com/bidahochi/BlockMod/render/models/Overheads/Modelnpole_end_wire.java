@@ -13,12 +13,12 @@ import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.ModelRendererTurbo;
 
 
-public class Modelnopole_end_wire extends ModelConverter //Same as Filename
+public class Modelnpole_end_wire extends ModelConverter //Same as Filename
 {
 	int textureX = 128;
 	int textureY = 32;
 
-	public Modelnopole_end_wire() //Same as Filename
+	public Modelnpole_end_wire() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[14];
 

@@ -140,6 +140,7 @@ public class BlockHandler {
         BlockIDs.wrappedwood3.block = new WrappedWood3(Material.wood);
         BlockIDs.wrappedwood4.block = new WrappedWood4(Material.wood);
         BlockIDs.wrappedwood5.block = new WrappedWood5(Material.wood);
+        BlockIDs.wrappedwood6.block = new WrappedWood6(Material.wood);
 
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);
@@ -221,9 +222,13 @@ public class BlockHandler {
 
         //overhead wires
         BlockIDs.overhead_pole_curve_3.block = new Overhead_pole_curve_3(Material.wood);
+        BlockIDs.overhead_pole_curve_3alt.block = new Overhead_pole_curve_3alt(Material.wood);
         BlockIDs.overhead_pole_curve_5.block = new Overhead_pole_curve_5(Material.wood);
+        BlockIDs.overhead_pole_curve_5alt.block = new Overhead_pole_curve_5alt(Material.wood);
         BlockIDs.overhead_pole_curve_10.block = new Overhead_pole_curve_10(Material.wood);
+        BlockIDs.overhead_pole_curve_10alt.block = new Overhead_pole_curve_10alt(Material.wood);
         BlockIDs.overhead_pole_curve_16.block = new Overhead_pole_curve_16(Material.wood);
+        BlockIDs.overhead_pole_curve_16alt.block = new Overhead_pole_curve_16alt(Material.wood);
         BlockIDs.overhead_pole_scurve_8.block = new Overhead_pole_scurve_8(Material.wood);
         BlockIDs.overhead_pole_scurve_8alt.block = new Overhead_pole_scurve_8alt(Material.wood);
         BlockIDs.overhead_pole_scurve_12.block = new Overhead_pole_scurve_12(Material.wood);
@@ -231,13 +236,19 @@ public class BlockHandler {
         BlockIDs.overhead_pole_scurve_16.block = new Overhead_pole_scurve_16(Material.wood);
         BlockIDs.overhead_pole_scurve_16alt.block = new Overhead_pole_scurve_16alt(Material.wood);
         BlockIDs.overhead_pole_slope_6.block = new Overhead_pole_slope_6(Material.wood);
+        BlockIDs.overhead_pole_slope_6alt.block = new Overhead_pole_slope_6alt(Material.wood);
         BlockIDs.overhead_pole_slope_12.block = new Overhead_pole_slope_12(Material.wood);
+        BlockIDs.overhead_pole_slope_12alt.block = new Overhead_pole_slope_12alt(Material.wood);
         BlockIDs.overhead_pole_slope_18.block = new Overhead_pole_slope_18(Material.wood);
+        BlockIDs.overhead_pole_slope_18alt.block = new Overhead_pole_slope_18alt(Material.wood);
         BlockIDs.overhead_pole_straight_6.block = new Overhead_pole_straight_6(Material.wood);
         BlockIDs.overhead_pole_switch_6.block = new Overhead_pole_switch_6(Material.wood);
         BlockIDs.overhead_pole_switch_6alt.block = new Overhead_pole_switch_6alt(Material.wood);
         BlockIDs.overhead_pole_switch_parallel.block = new Overhead_pole_switch_parallel(Material.wood);
         BlockIDs.overhead_pole_switch_parallelalt.block = new Overhead_pole_switch_parallelalt(Material.wood);
+        BlockIDs.overhead_pole.block = new Overhead_pole(Material.wood);
+        BlockIDs.overhead_pole_end.block = new Overhead_pole_end(Material.wood);
+        BlockIDs.overhead_hanger_end.block = new Overhead_hanger_end(Material.wood);
 
         BlockIDs.overhead_hanger_curve_3.block = new Overhead_hanger_curve_3(Material.wood);
         BlockIDs.overhead_hanger_curve_5.block = new Overhead_hanger_curve_5(Material.wood);
@@ -310,12 +321,17 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileWrappedWood3.class, "wrappedwood3.tile");
         GameRegistry.registerTileEntity(TileWrappedWood4.class, "wrappedwood4.tile");
         GameRegistry.registerTileEntity(TileWrappedWood5.class, "wrappedwood5.tile");
+        GameRegistry.registerTileEntity(TileWrappedWood6.class, "wrappedwood6.tile");
 
         //overheads
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_3.class, "overhead_pole_curve_3.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_curve_3alt.class, "overhead_pole_curve_3alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_5.class, "overhead_pole_curve_5.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_curve_5alt.class, "overhead_pole_curve_5alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_10.class, "overhead_pole_curve_10.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_curve_10alt.class, "overhead_pole_curve_10alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_16.class, "overhead_pole_curve_16.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_curve_16alt.class, "overhead_pole_curve_16alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_scurve_8.class, "overhead_pole_scurve_8.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_scurve_8alt.class, "overhead_pole_scurve_8alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_scurve_12.class, "overhead_pole_scurve_12.tile");
@@ -323,13 +339,19 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileOverhead_pole_scurve_16.class, "overhead_pole_scurve_16.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_scurve_16alt.class, "overhead_pole_scurve_16alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_slope_6.class, "overhead_pole_slope_6.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_slope_6alt.class, "overhead_pole_slope_6alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_slope_12.class, "overhead_pole_slope_12.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_slope_12alt.class, "overhead_pole_slope_12alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_slope_18.class, "overhead_pole_slope_18.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_slope_18alt.class, "overhead_pole_slope_18alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_straight_6.class, "overhead_pole_straight_6.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_switch_6.class, "overhead_pole_switch_6.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_switch_6alt.class, "overhead_pole_switch_6alt.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_switch_parallel.class, "overhead_pole_switch_parallel.tile");
         GameRegistry.registerTileEntity(TileOverhead_pole_switch_parallelalt.class, "overhead_pole_switch_parallelalt.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole.class, "overhead_pole.tile");
+        GameRegistry.registerTileEntity(TileOverhead_pole_end.class, "overhead_pole_end.tile");
+        GameRegistry.registerTileEntity(TileOverhead_hanger_end.class, "overhead_hanger_end.tile");
 
         GameRegistry.registerTileEntity(TileOverhead_hanger_curve_3.class, "overhead_hanger_curve_3.tile");
         GameRegistry.registerTileEntity(TileOverhead_hanger_curve_5.class, "overhead_hanger_curve_5.tile");

@@ -124,6 +124,7 @@ public enum BlockIDs {
     wrappedwood3(false, null, "wrappedwood3"),
     wrappedwood4(false, null, "wrappedwood4"),
     wrappedwood5(false, null, "wrappedwood5"),
+    wrappedwood6(false, null, "wrappedwood6"),
 
     //other building mats
     dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
@@ -205,9 +206,13 @@ public enum BlockIDs {
 
     //overhead wires
     overhead_pole_curve_3(false, null, "overhead_pole_curve_3"),
+    overhead_pole_curve_3alt(false, null, "overhead_pole_curve_3alt"),
     overhead_pole_curve_5(false, null, "overhead_pole_curve_5"),
+    overhead_pole_curve_5alt(false, null, "overhead_pole_curve_5alt"),
     overhead_pole_curve_10(false, null, "overhead_pole_curve_10"),
+    overhead_pole_curve_10alt(false, null, "overhead_pole_curve_10alt"),
     overhead_pole_curve_16(false, null, "overhead_pole_curve_16"),
+    overhead_pole_curve_16alt(false, null, "overhead_pole_curve_16alt"),
     overhead_pole_scurve_8(false, null, "overhead_pole_scurve_8"),
     overhead_pole_scurve_8alt(false, null, "overhead_pole_scurve_8alt"),
     overhead_pole_scurve_12(false, null, "overhead_pole_scurve_12"),
@@ -215,13 +220,19 @@ public enum BlockIDs {
     overhead_pole_scurve_16(false, null, "overhead_pole_scurve_16"),
     overhead_pole_scurve_16alt(false, null, "overhead_pole_scurve_16alt"),
     overhead_pole_slope_6(false, null, "overhead_pole_slope_6"),
+    overhead_pole_slope_6alt(false, null, "overhead_pole_slope_6alt"),
     overhead_pole_slope_12(false, null, "overhead_pole_slope_12"),
+    overhead_pole_slope_12alt(false, null, "overhead_pole_slope_12alt"),
     overhead_pole_slope_18(false, null, "overhead_pole_slope_18"),
+    overhead_pole_slope_18alt(false, null, "overhead_pole_slope_18alt"),
     overhead_pole_straight_6(false, null, "overhead_pole_straight_6"),
     overhead_pole_switch_6(false, null, "overhead_pole_switch_6"),
     overhead_pole_switch_6alt(false, null, "overhead_pole_switch_6alt"),
     overhead_pole_switch_parallel(false, null, "overhead_pole_switch_parallel"),
     overhead_pole_switch_parallelalt(false, null, "overhead_pole_switch_parallelalt"),
+    overhead_pole(false, null, "overhead_pole"),
+    overhead_pole_end(false, null, "overhead_pole_end"),
+    overhead_hanger_end(false, null, "overhead_hanger_end"),
 
     overhead_hanger_curve_3(false, null, "overhead_hanger_curve_3"),
     overhead_hanger_curve_5(false, null, "overhead_hanger_curve_5"),

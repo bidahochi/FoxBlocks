@@ -11,7 +11,6 @@ import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lumber.*;
-import com.bidahochi.BlockMod.blocks.metals.Scaffold;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
@@ -59,11 +58,16 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood3.class, new RenderWrappedWood3());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood4.class, new RenderWrappedWood4());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood5.class, new RenderWrappedWood5());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood6.class, new RenderWrappedWood6());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_3.class, new RenderOverhead_pole_curve_3());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_3alt.class, new RenderOverhead_pole_curve_3alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_5.class, new RenderOverhead_pole_curve_5());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_5alt.class, new RenderOverhead_pole_curve_5alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_10.class, new RenderOverhead_pole_curve_10());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_10alt.class, new RenderOverhead_pole_curve_10alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_16.class, new RenderOverhead_pole_curve_16());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_16alt.class, new RenderOverhead_pole_curve_16alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_8.class, new RenderOverhead_pole_scurve_8());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_8alt.class, new RenderOverhead_pole_scurve_8alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_12.class, new RenderOverhead_pole_scurve_12());
@@ -71,13 +75,19 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_16.class, new RenderOverhead_pole_scurve_16());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_scurve_16alt.class, new RenderOverhead_pole_scurve_16alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_6.class, new RenderOverhead_pole_slope_6());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_6alt.class, new RenderOverhead_pole_slope_6alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_12.class, new RenderOverhead_pole_slope_12());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_12alt.class, new RenderOverhead_pole_slope_12alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_18.class, new RenderOverhead_pole_slope_18());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_slope_18alt.class, new RenderOverhead_pole_slope_18alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_straight_6.class, new RenderOverhead_pole_straight_6());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_6.class, new RenderOverhead_pole_switch_6());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_6alt.class, new RenderOverhead_pole_switch_6alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_parallel.class, new RenderOverhead_pole_switch_parallel());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_switch_parallelalt.class, new RenderOverhead_pole_switch_parallelalt());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole.class, new RenderOverhead_pole());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_end.class, new RenderOverhead_pole_end());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_hanger_end.class, new RenderOverhead_hanger_end());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_hanger_curve_3.class, new RenderOverhead_hanger_curve_3());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_hanger_curve_5.class, new RenderOverhead_hanger_curve_5());

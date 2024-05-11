@@ -293,6 +293,7 @@ tile.WrappedWood2.name=Wrapped Lumber (Canfor Cover)
 tile.WrappedWood3.name=Wrapped Lumber (Tolko Cover)
 tile.WrappedWood4.name=Wrapped Lumber (Washaska Cover)
 tile.WrappedWood5.name=Wrapped Lumber (Washaska Cover (Open Ends))
+tile.WrappedWood6.name=Wrapped Lumber (Foggy River Lumber Co. Cover)
 
 <!-- ## OTHER BUILDING MATS ## -->
 tile.dryWall_0.name=White Drywall
@@ -513,9 +514,13 @@ tile.bridgeA_X_Side_Bottom2.name=Modular Bridge A (Side X Beams Bottom (5 long))
 
 <!-- ## OVERHEADS (dear god) ## -->
 tile.overhead_pole_curve_3.name=Overhead Wire (3x3 Curve, Outside Post)
+tile.overhead_pole_curve_3alt.name=Overhead Wire (3x3 Curve, Inside Post)
 tile.overhead_pole_curve_5.name=Overhead Wire (5x5 Curve, Outside Post)
+tile.overhead_pole_curve_5alt.name=Overhead Wire (5x5 Curve, Inside Post)
 tile.overhead_pole_curve_10.name=Overhead Wire (10x10 Curve, Outside Post)
+tile.overhead_pole_curve_10alt.name=Overhead Wire (10x10 Curve, Inside Post)
 tile.overhead_pole_curve_16.name=Overhead Wire (16x16 Curve, Outside Post)
+tile.overhead_pole_curve_16alt.name=Overhead Wire (16x16 Curve, Inside Post)
 tile.overhead_pole_scurve_8.name=Overhead Wire (2x8 Parallel Curve, Right Post)
 tile.overhead_pole_scurve_8alt.name=Overhead Wire (2x8 Parallel Curve, Left Post)
 tile.overhead_pole_scurve_12.name=Overhead Wire (3x12 Parallel Curve, Right Post)
@@ -523,14 +528,19 @@ tile.overhead_pole_scurve_12alt.name=Overhead Wire (3x12 Parallel Curve, Left Po
 tile.overhead_pole_scurve_16.name=Overhead Wire (4x16 Parallel Curve, Right Post)
 tile.overhead_pole_scurve_16alt.name=Overhead Wire (4x16 Parallel Curve, Left Post)
 tile.overhead_pole_slope_6.name=Overhead Wire (1x6 Slope, Right Post)
+tile.overhead_pole_slope_6alt.name=Overhead Wire (1x6 Slope, Left Post)
 tile.overhead_pole_slope_12.name=Overhead Wire (1x12 Slope, Right Post)
+tile.overhead_pole_slope_12alt.name=Overhead Wire (1x12 Slope, Left Post)
 tile.overhead_pole_slope_18.name=Overhead Wire (1x18 Slope, Right Post)
+tile.overhead_pole_slope_18alt.name=Overhead Wire (1x18 Slope, Left Post)
 tile.overhead_pole_straight_6.name=Overhead Wire (1x6 Straight W/ Post)
 tile.overhead_pole_switch_6.name=Overhead Wire (6x6 Switch Left)
 tile.overhead_pole_switch_6alt.name=Overhead Wire (6x6 Switch Right)
 tile.overhead_pole_switch_parallel.name=Overhead Wire (Parallel Switch Left)
 tile.overhead_pole_switch_parallelalt.name=Overhead Wire (Parallel Switch Right)
-tile.overhead_pole_
+tile.overhead_pole.name=Overhead Wire Pole (Standalone)
+tile.overhead_pole_end.name=Overhead Wire End Pole (Painted)
+tile.overhead_hanger_end.name=Overhead Wire End Hanger (Painted)
 
 tile.overhead_hanger_curve_3.name=Overhead Wire (3x3 Curve, Hanger)
 tile.overhead_hanger_curve_5.name=Overhead Wire (5x5 Curve, Hanger)
