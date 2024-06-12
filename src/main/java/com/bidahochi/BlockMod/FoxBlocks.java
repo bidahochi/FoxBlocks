@@ -1,7 +1,10 @@
 package com.bidahochi.BlockMod;
 
 
+import codechicken.microblock.BlockMicroMaterial;
+import codechicken.microblock.MicroMaterialRegistry;
 import com.bidahochi.BlockMod.core.handler.*;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -10,15 +13,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.world.WorldType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.HashMap;
-import java.util.Map;
 
-
-@Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME)
+@Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME, dependencies = "after:ForgeMultipart")
 public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
@@ -77,6 +76,9 @@ public class FoxBlocks
 
         //registration os things that run things
         BlockHandler.initBlockRegister(event);
+        LoadForgeMultiparts();
+
+
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         ItemHandler.initItemRegister();
         RecipeHandler.initBlockRecipes();
@@ -92,7 +94,20 @@ public class FoxBlocks
         //GameRegistry.registerWorldGenerator(new OreGen(Blocks.air, 0, 200, 25, 32,1).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
         //do these even need to still exist?
 
+    }
 
+    private void LoadForgeMultiparts()
+    {
+        if (Loader.isModLoaded("ForgeMultipart"))
+        {
+            for (BlockIDs block : BlockIDs.values())
+            {
+                for(int i = 0; i < 16; i++)
+                {
+                    MicroMaterialRegistry.registerMaterial(new BlockMicroMaterial(block.block, i), BlockMicroMaterial.materialKey(block.block, i));
+                }
+            }
+        }
     }
 
     @EventHandler

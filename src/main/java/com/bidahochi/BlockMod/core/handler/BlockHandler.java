@@ -20,7 +20,8 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ********************/
 
-
+import codechicken.microblock.BlockMicroMaterial;
+import codechicken.microblock.MicroMaterialRegistry;
 import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
@@ -36,12 +37,12 @@ import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-
 
 public class BlockHandler {
     public static CreativeTabs foxBlocksCreativeTab;
@@ -388,17 +389,17 @@ public class BlockHandler {
                 GameRegistry.registerBlock(block.block, block.blockName);
             } else {
                 GameRegistry.registerBlock(block.block, block.itemBlockClass, block.blockName);
-
             }
-
         }
 
         if(e.getSide().isClient()) {
             RenderBlockHandler.initializeCustomModels();
+
         }
 
-        //FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
+
+        //FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
     }
 
 
