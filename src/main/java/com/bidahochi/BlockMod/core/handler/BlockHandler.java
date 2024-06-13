@@ -20,8 +20,6 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ********************/
 
-import codechicken.microblock.BlockMicroMaterial;
-import codechicken.microblock.MicroMaterialRegistry;
 import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
@@ -37,7 +35,6 @@ import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
