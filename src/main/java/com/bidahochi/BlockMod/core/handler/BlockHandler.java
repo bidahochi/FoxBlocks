@@ -2,7 +2,7 @@ package com.bidahochi.BlockMod.core.handler;
 
 /********************
  *
- *  blockHander  by -hariesh
+ *  blockHander
  *
  *  This file allows you to register your blocks to MINECRAFT without cluttering up Foxblocks.java
  *  MAKE SURE YOU REGISTER THEM TO FOXBLOCKS IN BlockIDs.java  in com.bidahochi.BlockMod.core.handler;
@@ -15,9 +15,6 @@ package com.bidahochi.BlockMod.core.handler;
  *      BlockIDs.blockname.block = new BlockName(materialOfBlock);
  *
  *  Any Questions feel free to DM me or Ping Me in discord!
- *
- *  -hariesh
- *
  ********************/
 
 import com.bidahochi.BlockMod.blocks.bridgestuff.*;
@@ -394,11 +391,8 @@ public class BlockHandler {
 
         }
 
-
-
         //FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
     }
-
 
     //The code below is not active. Do not touch unless you know how to fix and your fix works! -hariesh
     public static void blockpropertyregister() {

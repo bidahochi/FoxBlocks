@@ -1,9 +1,7 @@
 package com.bidahochi.BlockMod;
 
-
-import codechicken.microblock.BlockMicroMaterial;
-import codechicken.microblock.MicroMaterialRegistry;
 import com.bidahochi.BlockMod.core.handler.*;
+import com.bidahochi.BlockMod.plugins.fmp.ForgeMultiPart;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -76,8 +74,6 @@ public class FoxBlocks
 
         //registration os things that run things
         BlockHandler.initBlockRegister(event);
-        LoadForgeMultiparts();
-
 
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         ItemHandler.initItemRegister();
@@ -94,19 +90,9 @@ public class FoxBlocks
         //GameRegistry.registerWorldGenerator(new OreGen(Blocks.air, 0, 200, 25, 32,1).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
         //do these even need to still exist?
 
-    }
-
-    private void LoadForgeMultiparts()
-    {
         if (Loader.isModLoaded("ForgeMultipart"))
         {
-            for (BlockIDs block : BlockIDs.values())
-            {
-                for(int i = 0; i < 16; i++)
-                {
-                    MicroMaterialRegistry.registerMaterial(new BlockMicroMaterial(block.block, i), BlockMicroMaterial.materialKey(block.block, i));
-                }
-            }
+            ForgeMultiPart.registerBlocks();
         }
     }
 
