@@ -1,7 +1,8 @@
 package com.bidahochi.BlockMod;
 
-
 import com.bidahochi.BlockMod.core.handler.*;
+import com.bidahochi.BlockMod.plugins.fmp.ForgeMultiPart;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -10,20 +11,16 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.world.WorldType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.HashMap;
-import java.util.Map;
 
-
-@Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME)
+@Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME, dependencies = "after:ForgeMultipart")
 public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.1.0";
+    public static final String VERSION = "1.1.1";
     public static CreativeTabs foxBlocksCreativeTab;
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
@@ -77,6 +74,7 @@ public class FoxBlocks
 
         //registration os things that run things
         BlockHandler.initBlockRegister(event);
+
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         ItemHandler.initItemRegister();
         RecipeHandler.initBlockRecipes();
@@ -92,7 +90,10 @@ public class FoxBlocks
         //GameRegistry.registerWorldGenerator(new OreGen(Blocks.air, 0, 200, 25, 32,1).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
         //do these even need to still exist?
 
-
+        if (Loader.isModLoaded("ForgeMultipart"))
+        {
+            ForgeMultiPart.registerBlocks();
+        }
     }
 
     @EventHandler

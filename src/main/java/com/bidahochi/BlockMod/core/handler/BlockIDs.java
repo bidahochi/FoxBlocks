@@ -2,7 +2,7 @@ package com.bidahochi.BlockMod.core.handler;
 
 /***************************
  *
- *  BlockIDs by -hariesh
+ *  BlockIDs
  *
  *  This Folder is to register Blocks to FOXBLOCKS
  *  MAKE SURE YOU REGISTER BLOCKS TO MINECRAFT IN blockHandler at com.bidahochi.BlockMod.core.handler;
@@ -19,7 +19,7 @@ package com.bidahochi.BlockMod.core.handler;
  *
  *  Any questions just ping or dm me on the discord!
  *
- *  -hariesh
+ *  IT IS HIGHLY IMPORTANT THAT MaxMetatData is correct this can cause game crashing in the creative menu if wrong when not in a Dev Environment
  *
  ****************************/
 
@@ -33,8 +33,8 @@ import com.bidahochi.BlockMod.blocks.metals.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
-public enum BlockIDs {
-
+public enum BlockIDs
+{
     //ores
     bauxiteOre(false,null, "Bauxite"),
     cobaltOre(false,null,"CobaltOre"),
@@ -62,13 +62,13 @@ public enum BlockIDs {
     rawConcrete(false,null,"Concrete"),
     layeredConcrete(false, null, "Layered Concrete"),
     smoothCrete(false, null, "Smoothcrete"),
-    concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick"),
-    concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor"),
-    plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete"),
+    concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick", 6),
+    concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor", 4),
+    plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete", 8),
 
     //stones
-    soapStone(false, null, "Soapstone"),
-    soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco"),
+    soapStone(false, null, "Soapstone"), // Raw Soapstone
+    soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco", 4), // Soapstone Bricks
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
     redrock(false, null, "Redrock"),
@@ -78,46 +78,51 @@ public enum BlockIDs {
 
     //bricks
     fireBrick(false, null, "fireBrick"),
-    mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick"),
+    mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick", 8), // 8
     creamCity(true, ItemBlockCreamCity.class, "creamcity"),
-    jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone"),
-    redrockDeco(true, ItemBlockRedrockDeco.class, "RedrockDeco"),
+    jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone", 2), // Limestone Bricks
+    redrockDeco(true, ItemBlockRedrockDeco.class, "RedrockDeco", 3), // 3
 
+    // region Cobalt
     cobaltBlock(false,null,"cobaltBlock"),
-    cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel"),
-    cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2"),
-    cobaltBrick(false,null,"cobaltBrick"),
-    largeCobaltBrick(false,null,"largeCobaltBrick"),
+    cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel", 15), // ?
+    cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2", 6), // Ma
+    cobaltBrick(false,null,"cobaltBrick"), // Small Cobalt Bricks
+    largeCobaltBrick(false,null,"largeCobaltBrick"), // Large Cobalt Bricks
+    // endregion Cobalt
 
-    //tiles
-    tile4(true, ItemBlocktile4.class,"tile4"),
-    tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2"),
-    tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth"),
-    diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile"),
-    subTile(true, ItemBlockSubTile.class,"SubTile"),
-    terrocottaTiles(true, ItemBlockTerrocottaTiles.class, "TerrocottaTiles"),
+    // region tiles
+    tile4(true, ItemBlocktile4.class,"tile4", 15), // Purple 4x4 Tile
+    tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2", 15), // Thanos Chin Purple 2x2 Tile
+    tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth", 15), // Purple 2x2 Bubble Tile
+    diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile", 15), // Purple Diamond Tile
+    subTile(true, ItemBlockSubTile.class,"SubTile", 4), // Terrain Tile (2x2 Light)
+    terrocottaTiles(true, ItemBlockTerrocottaTiles.class, "TerrocottaTiles", 15), // Purple Terrocotta Tiles
+    // endregion Titles
 
-    //fun
+    //region fun
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
     tHanos(false,null,"T Hanos"),
-    booBlox(true, ItemBlockBooBlox.class, "BooBlox"),
+    booBlox(true, ItemBlockBooBlox.class, "BooBlox", 5),
     blockLavaBucket(false, null, "BlockOLavaBucket"),
+    // THIS IS ACTUALLY RIGGS
     harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"), //why does this have itemblockmetalsiding yet is false anyway?
     foxglass(false,null,"foxglass"),
     blue(false,null,"Blue"),
     green(false,null,"Green"),
     fofblock(false, null, "fofblock"),
     pingascube(false, null ,"pingascube"),
+    //endregion fun
 
-    //lumber
-    widePlank(true, ItemBlockwidePlank.class, "widePlank"),
-    widePlank2(true, ItemBlockwidePlank2.class, "widePlank2"),
-    widePlank3(true, ItemBlockwidePlank3.class, "widePlank3"),
-    amtrak(true, ItemBlockAmtrak.class, "amshak"),
-    logs(true, ItemBlockLogs.class, "logs"),
-    leaves(true, ItemBlockLeaves.class, "leaves"),
-    plywood(true, ItemBlockPlywood.class, "plywood"),
+    //region lumber
+    widePlank(true, ItemBlockwidePlank.class, "widePlank", 15),
+    widePlank2(true, ItemBlockwidePlank2.class, "widePlank2", 15),
+    widePlank3(true, ItemBlockwidePlank3.class, "widePlank3", 11),
+    amtrak(true, ItemBlockAmtrak.class, "amshak", 2),
+    logs(true, ItemBlockLogs.class, "logs", 2),
+    leaves(true, ItemBlockLeaves.class, "leaves", 2),
+    plywood(true, ItemBlockPlywood.class, "plywood", 7),
     woodchips(false, null, "woodchips"),
     wrappedwood1(false, null, "wrappedwood1"),
     wrappedwood2(false, null, "wrappedwood2"),
@@ -125,18 +130,20 @@ public enum BlockIDs {
     wrappedwood4(false, null, "wrappedwood4"),
     wrappedwood5(false, null, "wrappedwood5"),
     wrappedwood6(false, null, "wrappedwood6"),
+    //endregion lumber
 
     //other building mats
-    dryWall(true,ItemBlockdryWall.class,"Dry Wall"),
-    wallPaper(true, ItemBlockwallPaper.class,"wallPaper"),
+    dryWall(true,ItemBlockdryWall.class,"Dry Wall", 15),
+    wallPaper(true, ItemBlockwallPaper.class,"wallPaper", 15),
     unfinishedDrywall(false,null,"unfinishedDrywall"),
-    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass"),
+    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass", 2),
 
-    originStuff(true, ItemBlockOriginStuff.class, "OriginStuff"),
+    originStuff(true, ItemBlockOriginStuff.class, "OriginStuff", 2),
 
-    glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted"),
+    glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted", 3),
 
-    tarmac(true, ItemBlockTarmac.class, "tarmac"),
+    //region Roads
+    tarmac(true, ItemBlockTarmac.class, "tarmac", 13),
     roadcover_tarmac0(false, null, "roadcover_tarmac_0"),
     roadcover_tarmac1(false, null, "roadcover_tarmac_1"),
     roadcover_tarmac2(false, null, "roadcover_tarmac_2"),
@@ -144,26 +151,29 @@ public enum BlockIDs {
     roadcover_tarmac4(false, null, "roadcover_tarmac_4"),
     roadcover_tarmac5(false, null, "roadcover_tarmac_5"),
     roadcover_tarmac6(false, null, "roadcover_tarmac_6"),
+    //endregion Roads
 
-    //metals
-    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding"),
-    metalSiding2(true, ItemBlockmetalSiding2.class, "Metal Siding2"),
-    pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack"),
-    pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite"),
-    pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra"),
-    rustBeam(true, ItemBlockrustBeam.class, "rustBeam"),
-    labwallDark(true, ItemBlocklabwallDark.class, "labwallDark"),
-    labwallLight(true, ItemBlocklabwallLight.class, "labwallLight"),
+    //region Metals
+    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding", 15), // Vertical
+    metalSiding2(true, ItemBlockmetalSiding2.class, "Metal Siding2", 15), // Horizontal
+    pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack", 15), // Black Panel Edgeless #15
+    pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite", 15), // White Panel Edgeless #15
+    pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra", 4),
+    rustBeam(true, ItemBlockrustBeam.class, "rustBeam", 5),
+    labwallDark(true, ItemBlocklabwallDark.class, "labwallDark", 3),
+    labwallLight(true, ItemBlocklabwallLight.class, "labwallLight", 3),
     wornVent(false, null, "WornVent1"),
     wornVent2(false, null, "WornVent2"),
     scaffold(false, null, "Scaffold"),
     scaffold2(false, null, "Scaffold2"),
     classicMetals(false, null, "ClassicIron"),
     classicGold(false, null, "ClassicGold"),
+    //endregion Metals
 
-    //hell
+    //region Hell
     darkEmberStone(false, null, "Dark Ember Stone"),
     emberStone(false,null,"Ember Stone"),
+    //endregion Hell
 
     //additional
     emberStoneStair(false,null,"EmberStone Stair"),
@@ -261,22 +271,48 @@ public enum BlockIDs {
     overhead_npole_slope_18(false, null, "overhead_npole_slope_18"),
     overhead_npole_x(false, null, "overhead_npole_x"),
 
-    doorA(true, null, "doorAblock"),
-    doorB(true, null, "doorBblock"),
-    doorC(true, null, "doorCblock"),
-    doorD(true, null, "doorDblock"),
+    doorA(true, null, "doorAblock", -1),
+    doorB(true, null, "doorBblock", -1),
+    doorC(true, null, "doorCblock", -1),
+    doorD(true, null, "doorDblock", -1),
 
     ;
+
 
     public Block block;
     public boolean hasItemBlock;
     public Class itemBlockClass;
     public String blockName;
+    /** MaxMetaData for Multipart
+     * -1 Disables the use of Multipart on the block
+     * 0 Enabled the use of multipart on the block and will allow for only the base block to use Multipart
+     */
+    public byte MaxMetadata;
 
+    /**
+     * Construct a BlockID that has metaData
+     * @param hasItemBlock
+     * @param itemBlockClass Class
+     * @param blockName name of the block
+     * @param maxMetadata how many blocks with the same baseID should be generated for Forge Multipart
+     */
+    BlockIDs(boolean hasItemBlock, Class<? extends ItemBlock> itemBlockClass, String blockName, int maxMetadata) {
+        this.hasItemBlock = hasItemBlock;
+        this.itemBlockClass = itemBlockClass;
+        this.blockName = blockName;
+        this.MaxMetadata = ((byte) maxMetadata);
+    }
 
+    /**
+     * Construct a BlockID that does not have metaData
+     * @param hasItemBlock
+     * @param itemBlockClass
+     * @param blockName
+     */
     BlockIDs(boolean hasItemBlock, Class<? extends ItemBlock> itemBlockClass, String blockName) {
         this.hasItemBlock = hasItemBlock;
         this.itemBlockClass = itemBlockClass;
         this.blockName = blockName;
+        this.MaxMetadata = 0;
     }
 }
