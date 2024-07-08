@@ -21,6 +21,7 @@ import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
+import com.bidahochi.BlockMod.blocks.StallParts.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
 import com.bidahochi.BlockMod.blocks.hell.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;
@@ -120,6 +121,7 @@ public class BlockHandler {
         BlockIDs.green.block = new BaseBlock(Material.glass, "Green Block", 1F, 1F, "pickaxe", 0, Block.soundTypeGlass, "colour/green");
         BlockIDs.fofblock.block = new Fofblock(Material.cake);
         BlockIDs.pingascube.block = new Pingascube(Material.glass);
+        BlockIDs.invisiblock.block = new Invisiblock(Material.wood);
 
         //lumber
         BlockIDs.widePlank.block = new WidePlank(Material.wood);
@@ -199,6 +201,8 @@ public class BlockHandler {
         BlockIDs.waysideWarningSignYellow.block = new WaysideWarningSignYellow(Material.iron);
         BlockIDs.waysideWarningSignYellowRed.block = new WaysideWarningSignYellowRed(Material.iron);
 
+        BlockIDs.toilet.block = new Toilet(Material.iron);
+
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
@@ -277,7 +281,17 @@ public class BlockHandler {
         BlockIDs.doorB.block = new baseDoor(Material.wood).setBlockName("doorB").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_b").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         BlockIDs.doorC.block = new baseDoor(Material.wood).setBlockName("doorC").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_c").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         BlockIDs.doorD.block = new baseDoor(Material.wood).setBlockName("doorD").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_d").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
+        BlockIDs.doorE.block = new baseDoor(Material.wood).setBlockName("doorD").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_e").setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
 
+        //modular stall parts
+        BlockIDs.stallPart_T.block = new StallPart_T(Material.iron);
+        BlockIDs.stallPart_Straight.block = new StallPart_Straight(Material.iron);
+        BlockIDs.stallPart_Edge1.block = new StallPart_Edge1(Material.iron);
+        BlockIDs.stallPart_Edge2.block = new StallPart_Edge2(Material.iron);
+        BlockIDs.stallPart_TB.block = new StallPart_TB(Material.iron);
+        BlockIDs.stallPart_StraightB.block = new StallPart_StraightB(Material.iron);
+        BlockIDs.stallPart_Edge1B.block = new StallPart_Edge1B(Material.iron);
+        BlockIDs.stallPart_Edge2B.block = new StallPart_Edge2B(Material.iron);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
@@ -288,6 +302,8 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileWaysideWarningSignRed.class, "waysideWarningSignRed.tile");
         GameRegistry.registerTileEntity(TileWaysideWarningSignYellow.class, "waysideWarningSignYellow.tile");
         GameRegistry.registerTileEntity(TileWaysideWarningSignYellowRed.class, "waysideWarningSignYellowRed.tile");
+
+        GameRegistry.registerTileEntity(TileToilet.class, "toilet.tile");
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");
@@ -374,6 +390,15 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileOverhead_npole_slope_12.class, "overhead_npole_slope_12.tile");
         GameRegistry.registerTileEntity(TileOverhead_npole_slope_18.class, "overhead_npole_slope_18.tile");
         GameRegistry.registerTileEntity(TileOverhead_npole_x.class, "overhead_npole_x.tile");
+
+        GameRegistry.registerTileEntity(TileStallPart_T.class, "stallPart_T.tile");
+        GameRegistry.registerTileEntity(TileStallPart_Straight.class, "stallPart_Straight.tile");
+        GameRegistry.registerTileEntity(TileStallPart_Edge1.class, "stallPart_Edge1.tile");
+        GameRegistry.registerTileEntity(TileStallPart_Edge2.class, "stallPart_Edge2.tile");
+        GameRegistry.registerTileEntity(TileStallPart_TB.class, "stallPart_TB.tile");
+        GameRegistry.registerTileEntity(TileStallPart_StraightB.class, "stallPart_StraightB.tile");
+        GameRegistry.registerTileEntity(TileStallPart_Edge1B.class, "stallPart_Edge1B.tile");
+        GameRegistry.registerTileEntity(TileStallPart_Edge2B.class, "stallPart_Edge2B.tile");
 
 
 

@@ -34,6 +34,7 @@ public class ItemHandler {
         ItemIDs.doorB.item = new itemDoor().setUnlocalizedName("doorB").setTextureName(FoxBlocks.MODID + ":doorB_icon");
         ItemIDs.doorC.item = new itemDoor().setUnlocalizedName("doorC").setTextureName(FoxBlocks.MODID + ":doorC_icon");
         ItemIDs.doorD.item = new itemDoor().setUnlocalizedName("doorD").setTextureName(FoxBlocks.MODID + ":doorD_icon");
+        ItemIDs.doorE.item = new itemDoor().setUnlocalizedName("doorE").setTextureName(FoxBlocks.MODID + ":doorE_icon");
 
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");

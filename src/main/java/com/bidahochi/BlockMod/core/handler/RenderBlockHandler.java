@@ -3,13 +3,12 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox2;
+import com.bidahochi.BlockMod.blocks.StallParts.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.RenderRoadCover0;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
-import com.bidahochi.BlockMod.blocks.lighting.RenderNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lighting.*;
-import com.bidahochi.BlockMod.blocks.lighting.TileNeonCageLampRoof;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
@@ -30,6 +29,8 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignRed.class, new RenderWaysideWarningSignRed());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignYellow.class, new RenderWaysideWarningSignYellow());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignYellowRed.class, new RenderWaysideWarningSignYellowRed());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileToilet.class, new RenderToilet());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallV.class, new RenderNeonCageLampWallV());
@@ -115,6 +116,15 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_slope_12.class, new RenderOverhead_npole_slope_12());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_slope_18.class, new RenderOverhead_npole_slope_18());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_npole_x.class, new RenderOverhead_npole_x());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_T.class, new RenderStallPart_T());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Straight.class, new RenderStallPart_Straight());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Edge1.class, new RenderStallPart_Edge1());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Edge2.class, new RenderStallPart_Edge2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_TB.class, new RenderStallPart_TB());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_StraightB.class, new RenderStallPart_StraightB());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Edge1B.class, new RenderStallPart_Edge1B());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Edge2B.class, new RenderStallPart_Edge2B());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }

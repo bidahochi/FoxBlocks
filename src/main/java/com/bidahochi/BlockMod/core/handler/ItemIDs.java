@@ -28,6 +28,7 @@ public enum ItemIDs {
     doorB("doorBitem","doorB_icon","doorBitem"),
     doorC("doorCitem","doorC_icon","doorCitem"),
     doorD("doorDitem","doorD_icon","doorDitem"),
+    doorE("doorEitem","doorE_icon","doorEitem"),
 
     record_piss2("record_piss2", "record_piss", "record_piss"),
     record_rodney("record_rodney", "record_rodney", "record_rodney"),

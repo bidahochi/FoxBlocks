@@ -113,6 +113,7 @@ public enum BlockIDs
     green(false,null,"Green"),
     fofblock(false, null, "fofblock"),
     pingascube(false, null ,"pingascube"),
+    invisiblock(false, null, "invisiblock"),
     //endregion fun
 
     //region lumber
@@ -198,6 +199,8 @@ public enum BlockIDs
     waysideWarningSignYellow(false, null, "waysideWarningSignYellow"),
     waysideWarningSignYellowRed(false, null, "waysideWarningSignYellowRed"),
 
+    toilet(false, null, "toilet"),
+
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
     neonCageLightWallV(false, null, "neonCageLightWallV"),
@@ -271,10 +274,22 @@ public enum BlockIDs
     overhead_npole_slope_18(false, null, "overhead_npole_slope_18"),
     overhead_npole_x(false, null, "overhead_npole_x"),
 
-    doorA(true, null, "doorAblock", -1),
-    doorB(true, null, "doorBblock", -1),
-    doorC(true, null, "doorCblock", -1),
-    doorD(true, null, "doorDblock", -1),
+    //doors
+    doorA(true, null, "doorAblock", -1),//office door red
+    doorB(true, null, "doorBblock", -1),//office door brown
+    doorC(true, null, "doorCblock", -1),//metal door
+    doorD(true, null, "doorDblock", -1),//glados door
+    doorE(true, null, "doorEblock", -1),//stall door
+
+    //modular stall parts
+    stallPart_T(false, null, "stallPart_T"),
+    stallPart_Straight(false, null, "stallPart_Straight"),
+    stallPart_Edge1(false, null, "stallPart_Edge1"),
+    stallPart_Edge2(false, null, "stallPart_Edge2"),
+    stallPart_TB(false, null, "stallPart_TB"),
+    stallPart_StraightB(false, null, "stallPart_StraightB"),
+    stallPart_Edge1B(false, null, "stallPart_Edge1B"),
+    stallPart_Edge2B(false, null, "stallPart_Edge2B"),
 
     ;
 

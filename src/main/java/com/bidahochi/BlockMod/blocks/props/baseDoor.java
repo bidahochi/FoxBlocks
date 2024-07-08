@@ -128,6 +128,9 @@ public class baseDoor extends BlockDoor {
         else if(this.getUnlocalizedName().equals("tile.doorC")){
             droppedItem = ItemIDs.doorC.item;
         }
+        else if(this.getUnlocalizedName().equals("tile.doorE")){
+            droppedItem = ItemIDs.doorE.item;
+        }
         else {
         droppedItem = ItemIDs.doorD.item;
     }
@@ -145,6 +148,9 @@ public class baseDoor extends BlockDoor {
         }
         else if(this.getUnlocalizedName().equals("tile.doorC")){
             pickblock = ItemIDs.doorC.item;
+        }
+        else if(this.getUnlocalizedName().equals("tile.doorE")){
+            pickblock = ItemIDs.doorE.item;
         }
         else {
             pickblock = ItemIDs.doorD.item;
