@@ -25,7 +25,7 @@ import org.lwjgl.opengl.GL11;
             //GL11.glTranslated(x + 0.25, y + 0.62, z + 0.45);
             //GL11.glTranslated(x + 0.0, y + 0.62, z + 0.0);
 
-            GL11.glTranslated(x + 0.5, y + 0.62, z + 0.5);
+            GL11.glTranslated(x + 0.5, y + 0.625, z + 0.5);
 
             GL11.glRotatef(180F, 1F, 0F, 0F);
             GL11.glRotatef(90F, 0F, 1F, 0F);

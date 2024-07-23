@@ -12,6 +12,7 @@ import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.*;
 import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -125,6 +126,12 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_StraightB.class, new RenderStallPart_StraightB());
         ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Edge1B.class, new RenderStallPart_Edge1B());
         ClientRegistry.bindTileEntitySpecialRenderer(TileStallPart_Edge2B.class, new RenderStallPart_Edge2B());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_s.class, new RenderRpb_cy_s());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_r.class, new RenderRpb_cy_r());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_s2.class, new RenderRpb_cy_s2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_r2.class, new RenderRpb_cy_r2());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }

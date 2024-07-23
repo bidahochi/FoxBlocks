@@ -291,6 +291,13 @@ public enum BlockIDs
     stallPart_Edge1B(false, null, "stallPart_Edge1B"),
     stallPart_Edge2B(false, null, "stallPart_Edge2B"),
 
+    //roadpaints
+    rpb_cy_s(false, null, "rpb_cy_s"),
+    rpb_cy_r(false, null, "rpb_cy_r"),
+
+    rpb_cy_s2(false, null, "rpb_cy_s2"),
+    rpb_cy_r2(false, null, "rpb_cy_r2"),
+
     ;
 
 

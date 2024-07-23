@@ -31,6 +31,7 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.*;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -293,6 +294,13 @@ public class BlockHandler {
         BlockIDs.stallPart_Edge1B.block = new StallPart_Edge1B(Material.iron);
         BlockIDs.stallPart_Edge2B.block = new StallPart_Edge2B(Material.iron);
 
+        //roadpaint blocks
+        BlockIDs.rpb_cy_s.block = new Rpb_cy_s(Material.rock);
+        BlockIDs.rpb_cy_r.block = new Rpb_cy_r(Material.rock);
+
+        BlockIDs.rpb_cy_s2.block = new Rpb_cy_s2(Material.rock);
+        BlockIDs.rpb_cy_r2.block = new Rpb_cy_r2(Material.rock);
+
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
         GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
@@ -399,6 +407,12 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileStallPart_StraightB.class, "stallPart_StraightB.tile");
         GameRegistry.registerTileEntity(TileStallPart_Edge1B.class, "stallPart_Edge1B.tile");
         GameRegistry.registerTileEntity(TileStallPart_Edge2B.class, "stallPart_Edge2B.tile");
+
+        GameRegistry.registerTileEntity(TileRpb_cy_s.class, "rpb_cy_s.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_r.class, "rpb_cy_r.tile");
+
+        GameRegistry.registerTileEntity(TileRpb_cy_s2.class, "rpb_cy_s2.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_r2.class, "rpb_cy_r2.tile");
 
 
 
