@@ -97,6 +97,6 @@ public class StallPart_Edge1 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":stallParts");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/stallPartsE1");
     }
 }
