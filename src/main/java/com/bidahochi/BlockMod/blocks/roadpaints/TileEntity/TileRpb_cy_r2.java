@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.roadpaints;
+package com.bidahochi.BlockMod.blocks.roadpaints.TileEntity;
 
 
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;

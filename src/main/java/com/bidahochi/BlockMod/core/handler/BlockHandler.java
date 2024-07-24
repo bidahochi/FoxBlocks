@@ -32,6 +32,14 @@ import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.Rpb_cy_r;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.Rpb_cy_r2;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.Rpb_cy_s;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.Rpb_cy_s2;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_r;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_r2;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_s;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_s2;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
