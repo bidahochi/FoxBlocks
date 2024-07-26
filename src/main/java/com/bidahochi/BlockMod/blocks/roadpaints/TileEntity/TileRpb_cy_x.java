@@ -6,17 +6,18 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.AxisAlignedBB;
 
-public class TileRpb_cy_r extends BaseTileEntity
+public class TileRpb_cy_x extends BaseTileEntity
 {
-    public TileRpb_cy_r(int dir)
+    public TileRpb_cy_x(int dir)
     {
         super(dir);
     }
 
-    public TileRpb_cy_r()
+    public TileRpb_cy_x()
     {
 
     }
+
     @SideOnly(Side.CLIENT)
     @Override
     public AxisAlignedBB getRenderBoundingBox()

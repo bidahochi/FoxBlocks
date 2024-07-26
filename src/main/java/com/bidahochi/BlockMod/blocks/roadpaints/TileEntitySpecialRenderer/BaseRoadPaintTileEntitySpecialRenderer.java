@@ -10,9 +10,9 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 /**
- * RPB  Road Paint Bloc
- * CY
- * R road block
+ * RPB - Road Paint Bloc
+ * XX - Position of line, Color of line (ex, CY is Centered, Yellow)
+ * X - Line Shape (ex, R - Right Angle, S - Straight, T - Tee Junction, ect)
  */
 public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRenderer
 {

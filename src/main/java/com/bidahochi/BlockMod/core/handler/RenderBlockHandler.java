@@ -12,14 +12,8 @@ import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_r;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_r2;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_s;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRpb_cy_s2;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RenderRpb_cy_r;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RenderRpb_cy_r2;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RenderRpb_cy_s;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RenderRpb_cy_s2;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.*;
 import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -136,9 +130,13 @@ public class RenderBlockHandler {
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_s.class, new RenderRpb_cy_s());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_r.class, new RenderRpb_cy_r());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_t.class, new RenderRpb_cy_t());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_x.class, new RenderRpb_cy_x());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_s2.class, new RenderRpb_cy_s2());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_r2.class, new RenderRpb_cy_r2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_t2.class, new RenderRpb_cy_t2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_x2.class, new RenderRpb_cy_x2());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }

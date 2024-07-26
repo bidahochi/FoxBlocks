@@ -6,14 +6,14 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.AxisAlignedBB;
 
-public class TileRpb_cy_r extends BaseTileEntity
+public class TileRpb_cy_t extends BaseTileEntity
 {
-    public TileRpb_cy_r(int dir)
+    public TileRpb_cy_t(int dir)
     {
         super(dir);
     }
 
-    public TileRpb_cy_r()
+    public TileRpb_cy_t()
     {
 
     }
