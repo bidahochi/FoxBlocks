@@ -583,6 +583,23 @@ tile.stallPart_Edge1B.name=Modular StallWall Part (Left Corner, Top)
 tile.stallPart_Edge2.name=Modular StallWall Part (Right Corner, Bottom)
 tile.stallPart_Edge2B.name=Modular StallWall Part (Right Corner, Top)
 
+<!-- ## Roadpaints ## -->
+tile.rpb_cy_s.name=Roadpaint (Centered, Yellow, Straight)
+tile.rpb_cy_r.name=Roadpaint (Centered, Yellow, Right Angle)
+tile.rpb_cy_t.name=Roadpaint (Centered, Yellow, T Junction)
+tile.rpb_cy_x.name=Roadpaint (Centered, Yellow, X Junction)
+tile.rpb_cy_d.name=Roadpaint (Centered, Yellow, Diagonal)
+tile.rpb_cy_dtl.name=Roadpaint (Centered, Yellow, Diagonal Transition Left)
+tile.rpb_cy_dtr.name=Roadpaint (Centered, Yellow, Diagonal Transition Right)
+
+tile.rpb_cy_s2.name=Roadpaint Slab (Centered, Yellow, Straight)
+tile.rpb_cy_r2.name=Roadpaint Slab (Centered, Yellow, Right Angle)
+tile.rpb_cy_t2.name=Roadpaint Slab (Centered, Yellow, T Junction)
+tile.rpb_cy_x2.name=Roadpaint Slab (Centered, Yellow, X Junction)
+tile.rpb_cy_d2.name=Roadpaint Slab (Centered, Yellow, Diagonal)
+tile.rpb_cy_dtl2.name=Roadpaint Slab (Centered, Yellow, Diagonal Transition Left)
+tile.rpb_cy_dtr2.name=Roadpaint Slab (Centered, Yellow, Diagonal Transition Right)
+
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

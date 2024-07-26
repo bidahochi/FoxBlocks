@@ -21,6 +21,6 @@ public class TileRpb_cy_s2 extends BaseTileEntity
     @Override
     public AxisAlignedBB getRenderBoundingBox()
     {
-        return AxisAlignedBB.getBoundingBox(xCoord, yCoord-2, zCoord, xCoord, yCoord, zCoord);
+        return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-2, zCoord-1, xCoord+1, yCoord, zCoord+1);
     }
 }

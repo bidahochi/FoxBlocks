@@ -300,11 +300,17 @@ public class BlockHandler {
         BlockIDs.rpb_cy_r.block = new Rpb_cy_r(Material.rock);
         BlockIDs.rpb_cy_t.block = new Rpb_cy_t(Material.rock);
         BlockIDs.rpb_cy_x.block = new Rpb_cy_x(Material.rock);
+        BlockIDs.rpb_cy_d.block = new Rpb_cy_d(Material.rock);
+        BlockIDs.rpb_cy_dtl.block = new Rpb_cy_dtl(Material.rock);
+        BlockIDs.rpb_cy_dtr.block = new Rpb_cy_dtr(Material.rock);
 
         BlockIDs.rpb_cy_s2.block = new Rpb_cy_s2(Material.rock);
         BlockIDs.rpb_cy_r2.block = new Rpb_cy_r2(Material.rock);
         BlockIDs.rpb_cy_t2.block = new Rpb_cy_t2(Material.rock);
         BlockIDs.rpb_cy_x2.block = new Rpb_cy_x2(Material.rock);
+        BlockIDs.rpb_cy_d2.block = new Rpb_cy_d2(Material.rock);
+        BlockIDs.rpb_cy_dtl2.block = new Rpb_cy_dtl2(Material.rock);
+        BlockIDs.rpb_cy_dtr2.block = new Rpb_cy_dtr2(Material.rock);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
@@ -417,11 +423,17 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileRpb_cy_r.class, "rpb_cy_r.tile");
         GameRegistry.registerTileEntity(TileRpb_cy_t.class, "rpb_cy_t.tile");
         GameRegistry.registerTileEntity(TileRpb_cy_x.class, "rpb_cy_x.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_d.class, "rpb_cy_d.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_dtl.class, "rpb_cy_dtl.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_dtr.class, "rpb_cy_dtr.tile");
 
         GameRegistry.registerTileEntity(TileRpb_cy_s2.class, "rpb_cy_s2.tile");
         GameRegistry.registerTileEntity(TileRpb_cy_r2.class, "rpb_cy_r2.tile");
         GameRegistry.registerTileEntity(TileRpb_cy_t2.class, "rpb_cy_t2.tile");
         GameRegistry.registerTileEntity(TileRpb_cy_x2.class, "rpb_cy_x2.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_d2.class, "rpb_cy_d2.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_dtl2.class, "rpb_cy_dtl2.tile");
+        GameRegistry.registerTileEntity(TileRpb_cy_dtr2.class, "rpb_cy_dtr2.tile");
 
 
 

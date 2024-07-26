@@ -13,7 +13,7 @@ public class Rpb_cy_r2 extends BaseRoadPaintBlockContainer
     {
         super(p_i45394_1_);
         setBlockName("rpb_cy_r2");
-        setNameOfIcon("rpb_cy_r_icon");
+        setNameOfIcon("rpb_cy_r_icon2");
     }
 
     @Override
