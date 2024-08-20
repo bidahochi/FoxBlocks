@@ -45,8 +45,25 @@ public class OreDictHandler {
         OreDictionary.registerOre("rodIron", new ItemStack(ItemIDs.ironRod.item));
         OreDictionary.registerOre("plateIron", new ItemStack(ItemIDs.ironSlice.item));
         OreDictionary.registerOre("circuitBasic", new ItemStack(ItemIDs.computerizedCircuit.item));
+
         OreDictionary.registerOre("drywallUnfinished", new ItemStack(BlockIDs.unfinishedDrywall.block));
-        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 0));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 1));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 2));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 3));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 4));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 5));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 6));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 7));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 8));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 9));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 10));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 11));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 12));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 13));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 14));
+        OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 15));
+
         OreDictionary.registerOre("logWood", new ItemStack(BlockIDs.logs.block));
         OreDictionary.registerOre("oreHematite", new ItemStack(BlockIDs.hematite.block));
         OreDictionary.registerOre("oreTaconite", new ItemStack(BlockIDs.taconite.block));
