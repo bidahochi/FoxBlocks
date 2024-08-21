@@ -199,6 +199,9 @@ public enum BlockIDs
     waysideWarningSignYellow(false, null, "waysideWarningSignYellow"),
     waysideWarningSignYellowRed(false, null, "waysideWarningSignYellowRed"),
 
+    coil_centered(false, null, "Coil_centered"),
+    coil_pair(false,null,"coil_pair"),
+
     toilet(false, null, "toilet"),
 
     //lighting

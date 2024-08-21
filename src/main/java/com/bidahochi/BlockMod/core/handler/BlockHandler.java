@@ -203,7 +203,10 @@ public class BlockHandler {
         BlockIDs.waysideWarningSignYellow.block = new WaysideWarningSignYellow(Material.iron);
         BlockIDs.waysideWarningSignYellowRed.block = new WaysideWarningSignYellowRed(Material.iron);
 
-        BlockIDs.toilet.block = new Toilet(Material.iron);
+        BlockIDs.coil_centered.block = new Coil_centered(Material.iron);
+        BlockIDs.coil_pair.block = new Coil_pair(Material.iron);
+
+        BlockIDs.toilet.block = new Toilet(Material.clay);
 
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
@@ -321,6 +324,9 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileWaysideWarningSignRed.class, "waysideWarningSignRed.tile");
         GameRegistry.registerTileEntity(TileWaysideWarningSignYellow.class, "waysideWarningSignYellow.tile");
         GameRegistry.registerTileEntity(TileWaysideWarningSignYellowRed.class, "waysideWarningSignYellowRed.tile");
+
+        GameRegistry.registerTileEntity(TileCoil_centered.class, "coil_centered.tile");
+        GameRegistry.registerTileEntity(TileCoil_pair.class, "coil_pair.tile");
 
         GameRegistry.registerTileEntity(TileToilet.class, "toilet.tile");
 

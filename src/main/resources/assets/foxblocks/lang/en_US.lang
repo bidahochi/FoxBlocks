@@ -498,6 +498,9 @@ tile.waysideWarningSignRed.name=Wayside Warning Sign (Red)
 tile.waysideWarningSignYellow.name=Wayside Warning Sign (Yellow)
 tile.waysideWarningSignYellowRed.name=Wayside Warning Sign (Yellow over Red)
 
+tile.Coil_centered.name=Steel Sheet Coil (Singular)
+tile.Coil_pair.name=Steel Sheet Coil (Pair)
+
 tile.toilet.name=Wall Mounted Toilet
 
 <!-- ## LIGHTING ## -->

@@ -32,6 +32,9 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignYellow.class, new RenderWaysideWarningSignYellow());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignYellowRed.class, new RenderWaysideWarningSignYellowRed());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileCoil_centered.class, new RenderCoil_centered());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileCoil_pair.class, new RenderCoil_pair());
+
         ClientRegistry.bindTileEntitySpecialRenderer(TileToilet.class, new RenderToilet());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
