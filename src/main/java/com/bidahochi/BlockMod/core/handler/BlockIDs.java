@@ -131,7 +131,16 @@ public enum BlockIDs
     wrappedwood4(false, null, "wrappedwood4"),
     wrappedwood5(false, null, "wrappedwood5"),
     wrappedwood6(false, null, "wrappedwood6"),
-    //endregion lumber
+
+    unwrappedwood1(false, null, "unwrappedwood1"),
+    unwrappedwood2(false, null, "unwrappedwood2"),
+    unwrappedwood3(false, null, "unwrappedwood3"),
+    unwrappedwood4(false, null, "unwrappedwood4"),
+    unwrappedwood5(false, null, "unwrappedwood5"),
+    unwrappedwood6(false, null, "unwrappedwood6"),
+    unwrappedwood7(false, null, "unwrappedwood7"),
+    unwrappedwood8(false, null, "unwrappedwood8"),
+
 
     //other building mats
     dryWall(true,ItemBlockdryWall.class,"Dry Wall", 15),

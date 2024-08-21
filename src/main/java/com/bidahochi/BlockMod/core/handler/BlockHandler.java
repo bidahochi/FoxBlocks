@@ -141,6 +141,15 @@ public class BlockHandler {
         BlockIDs.wrappedwood5.block = new WrappedWood5(Material.wood);
         BlockIDs.wrappedwood6.block = new WrappedWood6(Material.wood);
 
+        BlockIDs.unwrappedwood1.block = new UnWrappedWood1(Material.wood);
+        BlockIDs.unwrappedwood2.block = new UnWrappedWood2(Material.wood);
+        BlockIDs.unwrappedwood3.block = new UnWrappedWood3(Material.wood);
+        BlockIDs.unwrappedwood4.block = new UnWrappedWood4(Material.wood);
+        BlockIDs.unwrappedwood5.block = new UnWrappedWood5(Material.wood);
+        BlockIDs.unwrappedwood6.block = new UnWrappedWood6(Material.wood);
+        BlockIDs.unwrappedwood7.block = new UnWrappedWood7(Material.wood);
+        BlockIDs.unwrappedwood8.block = new UnWrappedWood8(Material.wood);
+
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);
         BlockIDs.wallPaper.block = new WallPaper(Material.cloth);
@@ -358,6 +367,15 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileWrappedWood4.class, "wrappedwood4.tile");
         GameRegistry.registerTileEntity(TileWrappedWood5.class, "wrappedwood5.tile");
         GameRegistry.registerTileEntity(TileWrappedWood6.class, "wrappedwood6.tile");
+
+        GameRegistry.registerTileEntity(TileUnWrappedWood1.class, "unwrappedwood1.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood2.class, "unwrappedwood2.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood3.class, "unwrappedwood3.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood4.class, "unwrappedwood4.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood5.class, "unwrappedwood5.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood6.class, "unwrappedwood6.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood7.class, "unwrappedwood7.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood8.class, "unwrappedwood8.tile");
 
         //overheads
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_3.class, "overhead_pole_curve_3.tile");

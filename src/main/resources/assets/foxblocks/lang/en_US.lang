@@ -296,6 +296,15 @@ tile.WrappedWood4.name=Wrapped Lumber (Washaska Cover)
 tile.WrappedWood5.name=Wrapped Lumber (Washaska Cover (Open Ends))
 tile.WrappedWood6.name=Wrapped Lumber (Foggy River Lumber Co. Cover)
 
+tile.UnWrappedWood1.name=Unwrapped Lumber (Oak)
+tile.UnWrappedWood2.name=Unwrapped Lumber (Spruce)
+tile.UnWrappedWood3.name=Unwrapped Lumber (Birch)
+tile.UnWrappedWood4.name=Unwrapped Lumber (Jungle)
+tile.UnWrappedWood5.name=Unwrapped Lumber (Acacia)
+tile.UnWrappedWood6.name=Unwrapped Lumber (Dark Oak)
+tile.UnWrappedWood7.name=Unwrapped Lumber (Pine)
+tile.UnWrappedWood8.name=Unwrapped Lumber (Redwood)
+
 <!-- ## OTHER BUILDING MATS ## -->
 tile.dryWall_0.name=White Drywall
 tile.dryWall_1.name=Light Gray Drywall

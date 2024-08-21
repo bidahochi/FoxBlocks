@@ -66,6 +66,15 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood5.class, new RenderWrappedWood5());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood6.class, new RenderWrappedWood6());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood1.class, new RenderUnWrappedWood1());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood2.class, new RenderUnWrappedWood2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood3.class, new RenderUnWrappedWood3());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood4.class, new RenderUnWrappedWood4());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood5.class, new RenderUnWrappedWood5());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood6.class, new RenderUnWrappedWood6());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood7.class, new RenderUnWrappedWood7());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood8.class, new RenderUnWrappedWood8());
+
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_3.class, new RenderOverhead_pole_curve_3());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_3alt.class, new RenderOverhead_pole_curve_3alt());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_5.class, new RenderOverhead_pole_curve_5());
