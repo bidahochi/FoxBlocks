@@ -65,6 +65,7 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood4.class, new RenderWrappedWood4());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood5.class, new RenderWrappedWood5());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood6.class, new RenderWrappedWood6());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWrappedWood7.class, new RenderWrappedWood7());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood1.class, new RenderUnWrappedWood1());
         ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood2.class, new RenderUnWrappedWood2());

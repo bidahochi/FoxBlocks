@@ -140,6 +140,7 @@ public class BlockHandler {
         BlockIDs.wrappedwood4.block = new WrappedWood4(Material.wood);
         BlockIDs.wrappedwood5.block = new WrappedWood5(Material.wood);
         BlockIDs.wrappedwood6.block = new WrappedWood6(Material.wood);
+        BlockIDs.wrappedwood7.block = new WrappedWood7(Material.wood);
 
         BlockIDs.unwrappedwood1.block = new UnWrappedWood1(Material.wood);
         BlockIDs.unwrappedwood2.block = new UnWrappedWood2(Material.wood);
@@ -367,6 +368,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileWrappedWood4.class, "wrappedwood4.tile");
         GameRegistry.registerTileEntity(TileWrappedWood5.class, "wrappedwood5.tile");
         GameRegistry.registerTileEntity(TileWrappedWood6.class, "wrappedwood6.tile");
+        GameRegistry.registerTileEntity(TileWrappedWood7.class, "wrappedwood7.tile");
 
         GameRegistry.registerTileEntity(TileUnWrappedWood1.class, "unwrappedwood1.tile");
         GameRegistry.registerTileEntity(TileUnWrappedWood2.class, "unwrappedwood2.tile");

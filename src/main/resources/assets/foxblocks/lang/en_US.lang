@@ -292,9 +292,10 @@ tile.woodchips.name=Block of Woodchips
 tile.WrappedWood1.name=Wrapped Lumber (Blank Cover)
 tile.WrappedWood2.name=Wrapped Lumber (Canfor Cover)
 tile.WrappedWood3.name=Wrapped Lumber (Tolko Cover)
-tile.WrappedWood4.name=Wrapped Lumber (Washaska Cover)
-tile.WrappedWood5.name=Wrapped Lumber (Washaska Cover (Open Ends))
+tile.WrappedWood4.name=Wrapped Lumber (Washaska Resources Cover)
+tile.WrappedWood5.name=Wrapped Lumber (Washaska Resources Cover (Open Ends))
 tile.WrappedWood6.name=Wrapped Lumber (Foggy River Lumber Co. Cover)
+tile.WrappedWood7.name=Wrapped Lumber (Thick & Thin Lumber Co. Cover)
 
 tile.UnWrappedWood1.name=Unwrapped Lumber (Oak)
 tile.UnWrappedWood2.name=Unwrapped Lumber (Spruce)
@@ -341,9 +342,9 @@ tile.wallPaper_13.name=Seafoam Column Wallpaper
 tile.wallPaper_14.name=Wavy Wallpaper
 tile.wallPaper_15.name=Ender Wallpaper
 
-tile.fiberglass_0.name=Vertical Contained Fibreglass
-tile.fiberglass_1.name=Horizontal Contained Fibreglass
-tile.fiberglass_2.name=Fibreglass Insulation
+tile.fiberglass_0.name=Vertical Contained Fiberglass
+tile.fiberglass_1.name=Horizontal Contained Fiberglass
+tile.fiberglass_2.name=Fiberglass Insulation
 
 tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone

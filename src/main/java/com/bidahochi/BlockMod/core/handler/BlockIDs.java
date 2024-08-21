@@ -131,6 +131,7 @@ public enum BlockIDs
     wrappedwood4(false, null, "wrappedwood4"),
     wrappedwood5(false, null, "wrappedwood5"),
     wrappedwood6(false, null, "wrappedwood6"),
+    wrappedwood7(false, null, "wrappedwood7"),
 
     unwrappedwood1(false, null, "unwrappedwood1"),
     unwrappedwood2(false, null, "unwrappedwood2"),
