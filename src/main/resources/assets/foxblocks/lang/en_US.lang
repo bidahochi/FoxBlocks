@@ -305,6 +305,7 @@ tile.UnWrappedWood5.name=Unwrapped Lumber (Acacia)
 tile.UnWrappedWood6.name=Unwrapped Lumber (Dark Oak)
 tile.UnWrappedWood7.name=Unwrapped Lumber (Pine)
 tile.UnWrappedWood8.name=Unwrapped Lumber (Redwood)
+tile.UnWrappedWood9.name=Unwrapped Lumber (Fir)
 
 <!-- ## OTHER BUILDING MATS ## -->
 tile.dryWall_0.name=White Drywall

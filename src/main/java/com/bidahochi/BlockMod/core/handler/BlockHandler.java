@@ -150,6 +150,7 @@ public class BlockHandler {
         BlockIDs.unwrappedwood6.block = new UnWrappedWood6(Material.wood);
         BlockIDs.unwrappedwood7.block = new UnWrappedWood7(Material.wood);
         BlockIDs.unwrappedwood8.block = new UnWrappedWood8(Material.wood);
+        BlockIDs.unwrappedwood9.block = new UnWrappedWood9(Material.wood);
 
         //other building materials
         BlockIDs.dryWall.block = new DryWall(Material.clay);
@@ -378,6 +379,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileUnWrappedWood6.class, "unwrappedwood6.tile");
         GameRegistry.registerTileEntity(TileUnWrappedWood7.class, "unwrappedwood7.tile");
         GameRegistry.registerTileEntity(TileUnWrappedWood8.class, "unwrappedwood8.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood9.class, "unwrappedwood9.tile");
 
         //overheads
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_3.class, "overhead_pole_curve_3.tile");

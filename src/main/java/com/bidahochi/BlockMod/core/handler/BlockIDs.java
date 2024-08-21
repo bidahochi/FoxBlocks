@@ -141,6 +141,7 @@ public enum BlockIDs
     unwrappedwood6(false, null, "unwrappedwood6"),
     unwrappedwood7(false, null, "unwrappedwood7"),
     unwrappedwood8(false, null, "unwrappedwood8"),
+    unwrappedwood9(false, null, "unwrappedwood9"),
 
 
     //other building mats

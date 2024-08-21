@@ -75,6 +75,7 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood6.class, new RenderUnWrappedWood6());
         ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood7.class, new RenderUnWrappedWood7());
         ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood8.class, new RenderUnWrappedWood8());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileUnWrappedWood9.class, new RenderUnWrappedWood9());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_3.class, new RenderOverhead_pole_curve_3());
         ClientRegistry.bindTileEntitySpecialRenderer(TileOverhead_pole_curve_3alt.class, new RenderOverhead_pole_curve_3alt());
