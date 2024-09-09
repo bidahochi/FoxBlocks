@@ -4,6 +4,8 @@ import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
 import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -45,6 +47,10 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
                 GL11.glRotated(180,0,1,0);
                 break;
             }
+        }
+        Block block = tileEntity.getWorldObj().getBlock(tileEntity.xCoord,tileEntity.yCoord-1,tileEntity.zCoord);
+        if(block instanceof BlockSlab) {
+            GL11.glTranslatef(0, 0.5f, 0);
         }
         model.render(null, 0, 0, 0, 0, 0, 0.0625f);
         GL11.glPopMatrix();
