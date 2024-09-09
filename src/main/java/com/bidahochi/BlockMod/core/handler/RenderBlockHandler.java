@@ -12,8 +12,8 @@ import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.*;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.centered_yellow.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.centered_yellow.*;
 import com.bidahochi.BlockMod.render.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -149,14 +149,6 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_d.class, new RenderRpb_cy_d());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_dtl.class, new RenderRpb_cy_dtl());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_dtr.class, new RenderRpb_cy_dtr());
-
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_s2.class, new RenderRpb_cy_s2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_r2.class, new RenderRpb_cy_r2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_t2.class, new RenderRpb_cy_t2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_x2.class, new RenderRpb_cy_x2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_d2.class, new RenderRpb_cy_d2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_dtl2.class, new RenderRpb_cy_dtl2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileRpb_cy_dtr2.class, new RenderRpb_cy_dtr2());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }

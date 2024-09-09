@@ -305,7 +305,7 @@ public enum BlockIDs
     stallPart_Edge1B(false, null, "stallPart_Edge1B"),
     stallPart_Edge2B(false, null, "stallPart_Edge2B"),
 
-    //roadpaints - "2" versions are for slabs - centered, yellow
+    //roadpaints - centered, yellow
     rpb_cy_s(false, null, "rpb_cy_s"),
     rpb_cy_r(false, null, "rpb_cy_r"),
     rpb_cy_t(false, null, "rpb_cy_t"),
@@ -313,15 +313,6 @@ public enum BlockIDs
     rpb_cy_d(false, null, "rpb_cy_d"),
     rpb_cy_dtl(false, null, "rpb_cy_dtl"),
     rpb_cy_dtr(false, null, "rpb_cy_dtr"),
-
-    rpb_cy_s2(false, null, "rpb_cy_s2"),
-    rpb_cy_r2(false, null, "rpb_cy_r2"),
-    rpb_cy_t2(false, null, "rpb_cy_t2"),
-    rpb_cy_x2(false, null, "rpb_cy_x2"),
-    rpb_cy_d2(false, null, "rpb_cy_d2"),
-    rpb_cy_dtl2(false, null, "rpb_cy_dtl2"),
-    rpb_cy_dtr2(false, null, "rpb_cy_dtr2"),
-
     ;
 
 
