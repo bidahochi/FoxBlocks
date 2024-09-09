@@ -49,7 +49,7 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
             }
         }
         Block block = tileEntity.getWorldObj().getBlock(tileEntity.xCoord,tileEntity.yCoord-1,tileEntity.zCoord);
-        if(block instanceof BlockSlab &&  ((BlockSlab)block).renderAsNormalBlock() == false)
+        if(block instanceof BlockSlab && block.renderAsNormalBlock() == false)
         {
             GL11.glTranslatef(0, 0.5f, 0);
         }
