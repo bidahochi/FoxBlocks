@@ -31,8 +31,9 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.centered_yellow.*;
-import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.centered_yellow.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.RPBWhite;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.RPBYellow;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -310,13 +311,8 @@ public class BlockHandler {
         BlockIDs.stallPart_Edge2B.block = new StallPart_Edge2B(Material.iron);
 
         //roadpaint blocks
-        BlockIDs.rpb_cy_s.block = new Rpb_cy_s(Material.rock);
-        BlockIDs.rpb_cy_r.block = new Rpb_cy_r(Material.rock);
-        BlockIDs.rpb_cy_t.block = new Rpb_cy_t(Material.rock);
-        BlockIDs.rpb_cy_x.block = new Rpb_cy_x(Material.rock);
-        BlockIDs.rpb_cy_d.block = new Rpb_cy_d(Material.rock);
-        BlockIDs.rpb_cy_dtl.block = new Rpb_cy_dtl(Material.rock);
-        BlockIDs.rpb_cy_dtr.block = new Rpb_cy_dtr(Material.rock);
+        BlockIDs.rpb_cy.block = new RPBYellow(Material.rock);
+        BlockIDs.rpb_cw.block = new RPBWhite(Material.rock);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
@@ -439,13 +435,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileStallPart_Edge1B.class, "stallPart_Edge1B.tile");
         GameRegistry.registerTileEntity(TileStallPart_Edge2B.class, "stallPart_Edge2B.tile");
 
-        GameRegistry.registerTileEntity(TileRpb_cy_s.class, "rpb_cy_s.tile");
-        GameRegistry.registerTileEntity(TileRpb_cy_r.class, "rpb_cy_r.tile");
-        GameRegistry.registerTileEntity(TileRpb_cy_t.class, "rpb_cy_t.tile");
-        GameRegistry.registerTileEntity(TileRpb_cy_x.class, "rpb_cy_x.tile");
-        GameRegistry.registerTileEntity(TileRpb_cy_d.class, "rpb_cy_d.tile");
-        GameRegistry.registerTileEntity(TileRpb_cy_dtl.class, "rpb_cy_dtl.tile");
-        GameRegistry.registerTileEntity(TileRpb_cy_dtr.class, "rpb_cy_dtr.tile");
+        GameRegistry.registerTileEntity(TileRPB.class, "rpb.tile");
 
 
         for (BlockIDs block : BlockIDs.values()) {

@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import net.minecraft.block.Block;
@@ -23,6 +24,12 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
+        if (texture2 != ((TileRPB) tileEntity).texture2) {
+            texture2 = ((TileRPB) tileEntity).texture2;
+        }
+        if (model != ((TileRPB) tileEntity).model) {
+            model = ((TileRPB) tileEntity).model;
+        }
         GL11.glPushMatrix();
         Tessellator.bindTexture(texture2);
         GL11.glTranslated(x + 0.5, y + 0.625, z + 0.5);
@@ -61,7 +68,6 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
     {
         this.model = model;
     }
-
     public void setTexture2(String nameOfTexture)
     {
         texture2 =  new ResourceLocation(FoxBlocks.MODID, "textures/blocks/roadpaints/" + nameOfTexture);
