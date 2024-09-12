@@ -31,7 +31,9 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
             model = ((TileRPB) tileEntity).model;
         }
         GL11.glPushMatrix();
-        Tessellator.bindTexture(texture2);
+        if (texture2 != null) {
+            Tessellator.bindTexture(texture2);
+        }
         GL11.glTranslated(x + 0.5, y + 0.625, z + 0.5);
         GL11.glRotatef(180F, 1F, 0F, 0F);
         GL11.glRotatef(90F, 0F, 1F, 0F);
