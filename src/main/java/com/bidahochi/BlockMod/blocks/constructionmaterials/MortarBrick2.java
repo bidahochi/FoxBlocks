@@ -11,34 +11,34 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class MortarBrick extends Block {
+public class MortarBrick2 extends Block {
 
-    public IIcon[] textures = new IIcon[16];
+    public IIcon[] textures = new IIcon[1];
 
-    public MortarBrick(Material p_i45394_1_) {
+    public MortarBrick2(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("mortarBrick");
+        setBlockName("mortarBrick2");
         setHardness(2F);
         setResistance(10.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
-        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/mortarBrick/mortarBrick");
+        setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/mortarBrick2/mortarBrick");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 16 ; i++) {
+        for ( int i = 0; i < 1 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
     public IIcon getIcon ( int side, int meta){
-        if (meta > 16 ) meta = 0;
+        if (meta > 1 ) meta = 0;
         return this.textures[meta];
     }
     public int damageDropped( int oldmeta){
         return oldmeta;
     }
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 16; i++){
+        for (int i = 0; i < 1; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }

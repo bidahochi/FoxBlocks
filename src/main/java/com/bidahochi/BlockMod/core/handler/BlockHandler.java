@@ -93,6 +93,7 @@ public class BlockHandler {
         //bricks
         BlockIDs.fireBrick.block = new FireBrick(Material.rock);
         BlockIDs.mortarBrick.block = new MortarBrick(Material.rock);
+        BlockIDs.mortarBrick2.block = new MortarBrick2(Material.rock);
         BlockIDs.creamCity.block = new CreamCity(Material.rock);
         BlockIDs.jolietLimestone.block = new JolietLimestone(Material.rock);
         BlockIDs.redrockDeco.block = new RedrockDeco(Material.rock);

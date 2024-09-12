@@ -731,7 +731,15 @@ public class RecipeHandler {
         }
         for (ItemStack dye : dyeWhite) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.mortarBrick.block, 16, 8), "BCB", "CDC", "BCB", 'B', new ItemStack(Items.brick), 'D', dye, 'C', new ItemStack(ItemIDs.ceramic.item, 1));
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.mortarBrick.block, 8, 11), "BBB", "BWB", "BBB", 'B', new ItemStack(Items.brick), 'W', dye);
         }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick.block, 4, 9), new ItemStack(Blocks.sandstone), new ItemStack(Blocks.brick_block), new ItemStack(Blocks.sandstone), new ItemStack(Blocks.brick_block));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick.block, 1, 10), new ItemStack(BlockIDs.mortarBrick.block,1,9));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick.block, 1, 12), new ItemStack(BlockIDs.mortarBrick.block,1,11));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick.block, 4, 13), new ItemStack(Blocks.brick_block), new ItemStack(Blocks.brick_block), new ItemStack(Blocks.brick_block), new ItemStack(Blocks.brick_block));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick.block, 1, 14), new ItemStack(BlockIDs.mortarBrick.block,1,13));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick.block, 4, 15), new ItemStack(BlockIDs.mortarBrick.block,1,13), new ItemStack(BlockIDs.mortarBrick.block,1,13), new ItemStack(BlockIDs.mortarBrick.block,1,13), new ItemStack(BlockIDs.mortarBrick.block,1,13));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.mortarBrick2.block, 1, 0), new ItemStack(BlockIDs.mortarBrick.block,1,15));
 
         //vents
         GameRegistry.addRecipe(new ItemStack(BlockIDs.wornVent.block, 8), "PPP","RRR","PPP", 'P', new ItemStack(ItemIDs.ironSlice.item, 1), 'R', new ItemStack(ItemIDs.ironRod.item, 1));
