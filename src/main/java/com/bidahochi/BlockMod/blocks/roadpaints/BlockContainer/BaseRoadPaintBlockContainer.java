@@ -212,6 +212,9 @@ public abstract class BaseRoadPaintBlockContainer extends BlockContainer
         else if (directions.contains(RoadDirections.WEST) || directions.contains(RoadDirections.EAST)) {
             world.setTileEntity(x,y,z, new TileRPB(1, color,"straight",offset));
         }
+        else if (directions.contains(RoadDirections.NORTH) || directions.contains(RoadDirections.SOUTH)) {
+            world.setTileEntity(x,y,z, new TileRPB(0, color,"straight",offset));
+        }
         else {
             world.setTileEntity(x,y,z, new TileRPB(getDir(entity), color,"straight",offset));
         }

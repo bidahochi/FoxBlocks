@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer;
 
+import codechicken.multipart.BlockMultipart;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
@@ -58,7 +59,7 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
             }
         }
         Block block = tileEntity.getWorldObj().getBlock(tileEntity.xCoord,tileEntity.yCoord-1,tileEntity.zCoord);
-        if(block instanceof BlockSlab && block.renderAsNormalBlock() == false)
+        if((block instanceof BlockSlab || block instanceof BlockMultipart) && !block.isNormalCube())
         {
             GL11.glTranslatef(0, 0.5f, 0);
         }
