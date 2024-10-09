@@ -27,6 +27,7 @@ import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockFakeSnow;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
 import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemRoadCoverDynamic;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
@@ -156,6 +157,7 @@ public enum BlockIDs
 
     //region Roads
     tarmac(true, ItemBlockTarmac.class, "tarmac", 13),
+    roadcover_dynamic(true, ItemRoadCoverDynamic.class, "roadcover_dynamic"),
     roadcover_tarmac0(false, null, "roadcover_tarmac_0"),
     roadcover_tarmac1(false, null, "roadcover_tarmac_1"),
     roadcover_tarmac2(false, null, "roadcover_tarmac_2"),

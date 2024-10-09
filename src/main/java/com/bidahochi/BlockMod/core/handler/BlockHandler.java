@@ -163,6 +163,7 @@ public class BlockHandler {
         BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
 
         BlockIDs.tarmac.block = new Tarmac(Material.rock);
+        BlockIDs.roadcover_dynamic.block = new RoadCoverDynamic(Material.rock);
         BlockIDs.roadcover_tarmac0.block = new RoadCover0(Material.rock);
         BlockIDs.roadcover_tarmac1.block = new RoadCover1(Material.rock);
         BlockIDs.roadcover_tarmac2.block = new RoadCover2(Material.rock);
@@ -347,6 +348,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileBridgeA_Side_Top.class, "bridgeA_Side_Top.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Bottom.class, "bridgeA_Side_Bottom.tile");
 
+        GameRegistry.registerTileEntity(TileRoadCoverDynamic.class, "roadcoverdyanmic.tile");
         GameRegistry.registerTileEntity(TileRoadCover0.class, "roadcover0.tile");
         GameRegistry.registerTileEntity(TileRoadCover1.class, "roadcover1.tile");
         GameRegistry.registerTileEntity(TileRoadCover2.class, "roadcover2.tile");
