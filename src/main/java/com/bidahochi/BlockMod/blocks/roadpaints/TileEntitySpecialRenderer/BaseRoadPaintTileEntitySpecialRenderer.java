@@ -63,7 +63,9 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
         {
             GL11.glTranslatef(0, 0.5f, 0);
         }
-        model.render(null, 0, 0, 0, 0, 0, 0.0625f);
+        if (model!= null) {
+            model.render(null, 0, 0, 0, 0, 0, 0.0625f);
+        }
         GL11.glPopMatrix();
     }
 

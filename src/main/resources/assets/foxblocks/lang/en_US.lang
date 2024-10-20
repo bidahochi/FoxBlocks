@@ -600,6 +600,7 @@ tile.stallPart_Edge2B.name=Modular StallWall Part (Right Corner, Top)
 <!-- ## Roadpaints ## -->
 tile.rpb_cy.name=Roadpaint (Centered, Yellow)
 tile.rpb_cw.name=Roadpaint (Centered, White)
+tile.rpb_oy.name=Roadpaint (Offset, Yellow)
 
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
