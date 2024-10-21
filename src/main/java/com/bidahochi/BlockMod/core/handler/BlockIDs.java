@@ -308,7 +308,8 @@ public enum BlockIDs
 
     //roadpaints - centered, yellow
     rpb_cy(false, null, "rpb_cy"),
-    rpb_oy(false, null, "rpb_oiy"), //offset inside yellow
+    rpb_oyd(false, null, "rpb_oyd"), //offset yellow diagonal
+    rpb_oys(false, null, "rpb_oys"),
     rpb_cw(false, null, "rpb_cw"), //center yellow
 
     ;

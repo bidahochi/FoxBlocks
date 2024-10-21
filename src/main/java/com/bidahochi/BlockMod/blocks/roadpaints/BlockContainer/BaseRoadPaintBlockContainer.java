@@ -78,7 +78,6 @@ public abstract class BaseRoadPaintBlockContainer extends BlockContainer {
             }
         }
         updateTile(world, x, y, z, entity);
-
     }
 
     public LinkedList<Vec3f> getSurrounding(World world, int x, int y, int z) {
