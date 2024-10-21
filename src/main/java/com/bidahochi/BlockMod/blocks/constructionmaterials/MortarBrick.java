@@ -26,19 +26,19 @@ public class MortarBrick extends Block {
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }
     public void registerBlockIcons(IIconRegister reg) {
-        for ( int i = 0; i < 9 ; i++) {
+        for ( int i = 0; i < 16 ; i++) {
             this.textures[i] = reg.registerIcon(this.textureName+"_"+ i);
         }
     }
     public IIcon getIcon ( int side, int meta){
-        if (meta > 8 ) meta = 0;
+        if (meta > 15 ) meta = 0;
         return this.textures[meta];
     }
     public int damageDropped( int oldmeta){
         return oldmeta;
     }
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 9; i++){
+        for (int i = 0; i < 16; i++){
             list.add(new ItemStack(item, 1, i));
         }
     }
