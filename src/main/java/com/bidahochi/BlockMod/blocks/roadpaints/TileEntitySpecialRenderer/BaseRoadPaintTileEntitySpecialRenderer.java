@@ -1,7 +1,9 @@
 package com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer;
 
+import codechicken.multipart.BlockMultipart;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
+import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import net.minecraft.block.Block;
@@ -23,8 +25,16 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
+        if (texture2 != ((TileRPB) tileEntity).texture2) {
+            texture2 = ((TileRPB) tileEntity).texture2;
+        }
+        if (model != ((TileRPB) tileEntity).model) {
+            model = ((TileRPB) tileEntity).model;
+        }
         GL11.glPushMatrix();
-        Tessellator.bindTexture(texture2);
+        if (texture2 != null) {
+            Tessellator.bindTexture(texture2);
+        }
         GL11.glTranslated(x + 0.5, y + 0.625, z + 0.5);
         GL11.glRotatef(180F, 1F, 0F, 0F);
         GL11.glRotatef(90F, 0F, 1F, 0F);
@@ -49,11 +59,13 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
             }
         }
         Block block = tileEntity.getWorldObj().getBlock(tileEntity.xCoord,tileEntity.yCoord-1,tileEntity.zCoord);
-        if(block instanceof BlockSlab && block.renderAsNormalBlock() == false)
+        if((block instanceof BlockSlab || block instanceof BlockMultipart) && !block.isNormalCube())
         {
             GL11.glTranslatef(0, 0.5f, 0);
         }
-        model.render(null, 0, 0, 0, 0, 0, 0.0625f);
+        if (model!= null) {
+            model.render(null, 0, 0, 0, 0, 0, 0.0625f);
+        }
         GL11.glPopMatrix();
     }
 
@@ -61,7 +73,6 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
     {
         this.model = model;
     }
-
     public void setTexture2(String nameOfTexture)
     {
         texture2 =  new ResourceLocation(FoxBlocks.MODID, "textures/blocks/roadpaints/" + nameOfTexture);

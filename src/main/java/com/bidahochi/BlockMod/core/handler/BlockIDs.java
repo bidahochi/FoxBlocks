@@ -307,13 +307,10 @@ public enum BlockIDs
     stallPart_Edge2B(false, null, "stallPart_Edge2B"),
 
     //roadpaints - centered, yellow
-    rpb_cy_s(false, null, "rpb_cy_s"),
-    rpb_cy_r(false, null, "rpb_cy_r"),
-    rpb_cy_t(false, null, "rpb_cy_t"),
-    rpb_cy_x(false, null, "rpb_cy_x"),
-    rpb_cy_d(false, null, "rpb_cy_d"),
-    rpb_cy_dtl(false, null, "rpb_cy_dtl"),
-    rpb_cy_dtr(false, null, "rpb_cy_dtr"),
+    rpb_cy(false, null, "rpb_cy"),
+    rpb_oy(false, null, "rpb_oiy"), //offset inside yellow
+    rpb_cw(false, null, "rpb_cw"), //center yellow
+
     ;
 
 

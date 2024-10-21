@@ -606,13 +606,9 @@ tile.stallPart_Edge2.name=Modular StallWall Part (Right Corner, Bottom)
 tile.stallPart_Edge2B.name=Modular StallWall Part (Right Corner, Top)
 
 <!-- ## Roadpaints ## -->
-tile.rpb_cy_s.name=Roadpaint (Centered, Yellow, Straight)
-tile.rpb_cy_r.name=Roadpaint (Centered, Yellow, Right Angle)
-tile.rpb_cy_t.name=Roadpaint (Centered, Yellow, T Junction)
-tile.rpb_cy_x.name=Roadpaint (Centered, Yellow, X Junction)
-tile.rpb_cy_d.name=Roadpaint (Centered, Yellow, Diagonal)
-tile.rpb_cy_dtl.name=Roadpaint (Centered, Yellow, Diagonal Transition Left)
-tile.rpb_cy_dtr.name=Roadpaint (Centered, Yellow, Diagonal Transition Right)
+tile.rpb_cy.name=Roadpaint (Centered, Yellow)
+tile.rpb_cw.name=Roadpaint (Centered, White)
+tile.rpb_oy.name=Roadpaint (Offset, Yellow)
 
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
