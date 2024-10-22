@@ -46,9 +46,15 @@ public class TileRPB extends BaseTileEntity {
     {
         super.writeToNBT(tag);
         tag.setInteger("direction", dir);
-        tag.setString("color",color);
-        tag.setString("shape",shape);
-        tag.setString("offset",offset);
+        if (color != null) {
+            tag.setString("color", color);
+        }
+        if (shape != null) {
+            tag.setString("shape", shape);
+        }
+        if (offset!= null) {
+            tag.setString("offset", offset);
+        }
     }
 
     @Override
