@@ -33,6 +33,8 @@ import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideDiagonal;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
@@ -318,6 +320,8 @@ public class BlockHandler {
         BlockIDs.rpb_cw.block = new RPBWhiteCenter(Material.rock);
         BlockIDs.rpb_oyd.block = new RPBYellowOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_oys.block = new RPBYellowOffsetInsideStraight(Material.rock);
+        BlockIDs.rpb_owd.block = new RPBWhiteOffsetInsideDiagonal(Material.rock);
+        BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");

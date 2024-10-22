@@ -310,6 +310,8 @@ public enum BlockIDs
     rpb_cy(false, null, "rpb_cy"),
     rpb_oyd(false, null, "rpb_oyd"), //offset yellow diagonal
     rpb_oys(false, null, "rpb_oys"),
+    rpb_owd(false, null, "rpb_owd"), //offset yellow diagonal
+    rpb_ows(false, null, "rpb_ows"),
     rpb_cw(false, null, "rpb_cw"), //center yellow
 
     ;

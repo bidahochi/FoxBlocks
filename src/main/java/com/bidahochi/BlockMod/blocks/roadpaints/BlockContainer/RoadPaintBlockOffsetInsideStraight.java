@@ -20,15 +20,14 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
 
     @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
-        world.setTileEntity(x, y, z, new TileRPB(getDir(entity), color, "straight", offset));
         LinkedList<Vec3f> blocks = getSurrounding(world, x, y, z);
+        updateTile(world, x, y, z, entity);
         for (Vec3f offsets : blocks) {
             Block temp = world.getBlock((int) (x + offsets.xCoord), (int) (y + offsets.yCoord), (int) (z + offsets.zCoord));
             if (temp instanceof RoadPaintBlockOffsetInsideStraight) {
                 ((RoadPaintBlockOffsetInsideStraight) temp).updateTile(world, (int) (x + offsets.xCoord), (int) (y + offsets.yCoord), (int) (z + offsets.zCoord), entity);
             }
         }
-        updateTile(world, x, y, z, entity);
     }
 
     @Override
@@ -90,7 +89,7 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
                 return;
             }
 
-            if (directionMap.get(RoadDirections.NORTH) == 2 && directionMap.get(RoadDirections.EAST) == 1) {
+            if (directionMap.get(RoadDirections.NORTH) == 2 && (directionMap.get(RoadDirections.EAST) == 1 || directionMap.get(RoadDirections.EAST) == 2)) {
                 world.setTileEntity(x, y, z, new TileRPB(1, color, "turn", offset));
                 return;
             }
@@ -100,8 +99,8 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
                 world.setTileEntity(x, y, z, new TileRPB(3, color, "turn2", offset));
                 return;
             }
-
-            if (directionMap.get(RoadDirections.NORTH) == 0 && directionMap.get(RoadDirections.WEST) == 1) {
+            if ((directionMap.get(RoadDirections.NORTH) == 1 || directionMap.get(RoadDirections.NORTH) == 0)
+                    && directionMap.get(RoadDirections.WEST) == 1) {
                 world.setTileEntity(x, y, z, new TileRPB(0, color, "turn", offset));
                 return;
             }
@@ -111,8 +110,7 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
                 world.setTileEntity(x, y, z, new TileRPB(1, color, "turn2", offset));
                 return;
             }
-
-            if (directionMap.get(RoadDirections.SOUTH) == 2 && directionMap.get(RoadDirections.EAST) == 3) {
+            if ((directionMap.get(RoadDirections.SOUTH) == 2 || directionMap.get(RoadDirections.SOUTH) == 3) && directionMap.get(RoadDirections.EAST) == 3) {
                 world.setTileEntity(x, y, z, new TileRPB(2, color, "turn", offset));
                 return;
             }
@@ -123,7 +121,7 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
                 return;
             }
 
-            if (directionMap.get(RoadDirections.SOUTH) == 0 && directionMap.get(RoadDirections.WEST) == 3) {
+            if (directionMap.get(RoadDirections.SOUTH) == 0 && (directionMap.get(RoadDirections.WEST) == 3|| directionMap.get(RoadDirections.WEST) == 0)) {
                 world.setTileEntity(x, y, z, new TileRPB(3, color, "turn", offset));
                 return;
             }
@@ -138,6 +136,9 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
             if (getDir(entity) == 3) {
                 world.setTileEntity(x, y, z, new TileRPB(3, color, "straight", offset));
             }
+            else {
+                world.setTileEntity(x, y, z, new TileRPB(getDir(entity), color, "straight", offset));
+            }
         }
         else if (directions.contains(RoadDirections.NORTH) || directions.contains(RoadDirections.SOUTH)) {
             if (getDir(entity) == 0) {
@@ -146,6 +147,9 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
             }
             if (getDir(entity) == 2) {
                 world.setTileEntity(x, y, z, new TileRPB(2, color, "straight", offset));
+            }
+            else {
+                world.setTileEntity(x, y, z, new TileRPB(getDir(entity), color, "straight", offset));
             }
         }
         else {

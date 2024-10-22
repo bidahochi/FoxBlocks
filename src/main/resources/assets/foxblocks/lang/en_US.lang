@@ -619,6 +619,8 @@ tile.rpb_cy.name=Dynamic Roadpaint (Centered, Yellow)
 tile.rpb_cw.name=Dynamic Roadpaint (Centered, White)
 tile.rpb_oys.name=Straight Roadpaint (Offset, Yellow)
 tile.rpb_oyd.name=Diagonal Roadpaint (Offset, Yellow)
+tile.rpb_ows.name=Straight Roadpaint (Offset, White)
+tile.rpb_owd.name=Diagonal Roadpaint (Offset, White)
 
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate

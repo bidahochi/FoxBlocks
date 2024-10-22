@@ -84,7 +84,6 @@ public class RoadPaintBlockOffsetInsideDiagonal extends BaseRoadPaintBlockContai
             }
         }
 
-        System.out.println(getDir(entity));
         if (directions.contains(RoadDirections.NORTH)) {
             if (getDir(entity) == 2) {
                 world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal2", offset));
