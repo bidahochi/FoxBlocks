@@ -20,7 +20,7 @@ public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.3.0";
+    public static final String VERSION = "1.3.0.1";
     public static CreativeTabs foxBlocksCreativeTab;
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
