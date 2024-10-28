@@ -1,4 +1,5 @@
 {
   "records.record_piss": {"category": "master", "sounds": [{"name": "record_piss","stream": true}]},
-  "records.record_rodney": {"category": "master", "sounds": [{"name": "record_rodney","stream": true}]}
+  "records.record_rodney": {"category": "master", "sounds": [{"name": "record_rodney","stream": true}]},
+  "records.record_penguin": {"category": "master", "sounds": [{"name": "record_penguin","stream": true}]}
   }
