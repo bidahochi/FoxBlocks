@@ -80,7 +80,7 @@ public enum BlockIDs
     fireBrick(false, null, "fireBrick"),
     mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick", 15),
     mortarBrick2(true, ItemBlockmortarBrick2.class, "mortarBrick2", 7),
-    creamCity(true, ItemBlockCreamCity.class, "creamcity"),
+    creamCity(true, ItemBlockCreamCity.class, "creamcity", 2),
     jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone", 4), // Limestone Bricks
     redrockDeco(true, ItemBlockRedrockDeco.class, "RedrockDeco", 3), // 3
 
