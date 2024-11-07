@@ -371,6 +371,10 @@ tile.tarmac_11.name=Red Tarmac Road Fullblock
 tile.tarmac_12.name=White Tarmac Road Fullblock
 tile.tarmac_13.name=Yellow Tarmac Road Fullblock
 
+tile.roadcover_dynamic_1x1_0.name=Dynamic 1x1 Roadcover
+tile.roadcover_dynamic_1x2_0.name=Dynamic 1x2 Roadcover
+tile.roadcover_dynamic_1x3_0.name=Dynamic 1x3 Roadcover
+
 tile.roadcover_tarmac_0.name=Tarmac Roadcover
 tile.roadcover_tarmac_1.name=Fine Tarmac Roadcover
 tile.roadcover_tarmac_2.name=Dark Tarmac Roadcover

@@ -22,7 +22,8 @@ import com.bidahochi.BlockMod.blocks.cobaltdeco.*;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.StallParts.*;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.*;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer.*;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.*;
 import com.bidahochi.BlockMod.blocks.hell.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
@@ -163,7 +164,11 @@ public class BlockHandler {
         BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
 
         BlockIDs.tarmac.block = new Tarmac(Material.rock);
-        BlockIDs.roadcover_dynamic.block = new RoadCoverDynamic(Material.rock);
+
+        BlockIDs.roadcover_dynamic1x1.block = new RoadCoverDynamic1X1(Material.rock);
+        BlockIDs.roadcover_dynamic1x2.block = new RoadCoverDynamic1X2(Material.rock);
+        BlockIDs.roadcover_dynamic1x3.block = new RoadCoverDynamic1X3(Material.rock);
+
         BlockIDs.roadcover_tarmac0.block = new RoadCover0(Material.rock);
         BlockIDs.roadcover_tarmac1.block = new RoadCover1(Material.rock);
         BlockIDs.roadcover_tarmac2.block = new RoadCover2(Material.rock);
@@ -348,7 +353,9 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileBridgeA_Side_Top.class, "bridgeA_Side_Top.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Bottom.class, "bridgeA_Side_Bottom.tile");
 
-        GameRegistry.registerTileEntity(TileRoadCoverDynamic.class, "roadcoverdyanmic.tile");
+        GameRegistry.registerTileEntity(TileRoadCoverDynamic1X1.class, "roadcoverdyanmic1X1.tile");
+        GameRegistry.registerTileEntity(TileRoadCoverDynamic1X2.class, "roadcoverdyanmic1X2.tile");
+        GameRegistry.registerTileEntity(TileRoadCoverDynamic1X3.class, "roadcoverdyanmic1X3.tile");
         GameRegistry.registerTileEntity(TileRoadCover0.class, "roadcover0.tile");
         GameRegistry.registerTileEntity(TileRoadCover1.class, "roadcover1.tile");
         GameRegistry.registerTileEntity(TileRoadCover2.class, "roadcover2.tile");
