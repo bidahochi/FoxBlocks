@@ -1,7 +1,8 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover;
+package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntitySpecialRenderer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.ModelRoadCover;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileRoadCover6;
+import com.bidahochi.BlockMod.render.models.RoadCovers.ModelRoadCover;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -11,13 +12,13 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
-    public class RenderRoadCover2 extends TileEntitySpecialRenderer {
-        private ResourceLocation texture = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/constructionmaterials/tarmac/roadcover_tarmac_2.png");
+    public class RenderRoadCover6 extends TileEntitySpecialRenderer {
+        private ResourceLocation texture = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/constructionmaterials/tarmac/roadcover_tarmac_6.png");
     private ModelRoadCover model = new ModelRoadCover();
 
         @Override
         public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
-            if(!(tileEntity instanceof TileRoadCover2)){return;}
+            if(!(tileEntity instanceof TileRoadCover6)){return;}
             GL11.glPushMatrix();
             Tessellator.bindTexture(texture);
             GL11.glTranslated(x + 0.25, y + 0.625, z + 0.5);
@@ -26,7 +27,7 @@ import org.lwjgl.opengl.GL11;
            // GL11.glTranslated(x + 0.25, y - 1, z + 0.5);
             //GL11.glTranslated(x, y - 1, z);
             //GL11.glTranslated(5, 0 , 0);
-            int dir = ((TileRoadCover2)tileEntity).dir;
+            int dir = ((TileRoadCover6)tileEntity).dir;
             //System.out.println(dir);
             switch(dir) {
                 case 0:{//west // north

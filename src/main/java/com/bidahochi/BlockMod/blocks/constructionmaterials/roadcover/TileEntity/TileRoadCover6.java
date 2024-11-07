@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover;
+package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity;
 
 
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
@@ -6,14 +6,14 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.AxisAlignedBB;
 
-public class TileRoadCover2 extends BaseTileEntity
+public class TileRoadCover6 extends BaseTileEntity
 {
-    public TileRoadCover2(int dir)
+    public TileRoadCover6(int dir)
     {
         super(dir);
     }
 
-    public TileRoadCover2()
+    public TileRoadCover6()
     {
 
     }

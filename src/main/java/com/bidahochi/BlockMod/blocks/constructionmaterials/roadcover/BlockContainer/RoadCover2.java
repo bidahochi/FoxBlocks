@@ -1,6 +1,7 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover;
+package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileRoadCover2;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
@@ -18,10 +19,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class RoadCover1 extends BlockContainer {
-    public RoadCover1(Material p_i45394_1_) {
+public class RoadCover2 extends BlockContainer {
+    public RoadCover2(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("roadcover_tarmac_1");
+        setBlockName("roadcover_tarmac_2");
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
@@ -31,7 +32,7 @@ public class RoadCover1 extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileRoadCover1();
+        return new TileRoadCover2();
     }
 
     @Override
@@ -56,12 +57,12 @@ public class RoadCover1 extends BlockContainer {
 
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
         //cover if tile isn't a thing
-        if(world == null || !(world.getTileEntity(x,y,z) instanceof TileRoadCover1)){
+        if(world == null || !(world.getTileEntity(x,y,z) instanceof TileRoadCover2)){
             super.setBlockBoundsBasedOnState(world,x,y,z);
             return;
         }
         //return based on tile data
-        switch(((TileRoadCover1)world.getTileEntity(x,y,z)).dir){
+        switch(((TileRoadCover2)world.getTileEntity(x,y,z)).dir){
             case 0:
             case 1:
             case 2:
@@ -103,7 +104,7 @@ public class RoadCover1 extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileRoadCover1(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileRoadCover2(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -116,6 +117,6 @@ public class RoadCover1 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":constructionmaterials/tarmac/tarmac_1");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":constructionmaterials/tarmac/tarmac_2");
     }
 }

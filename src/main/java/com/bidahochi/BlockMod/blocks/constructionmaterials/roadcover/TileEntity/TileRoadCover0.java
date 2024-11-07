@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover;
+package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity;
 
 
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
