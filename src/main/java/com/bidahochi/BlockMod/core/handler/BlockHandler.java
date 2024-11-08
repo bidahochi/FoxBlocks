@@ -167,6 +167,7 @@ public class BlockHandler {
         BlockIDs.originStuff.block = new OriginStuff(Material.rock);
 
         BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
+        BlockIDs.glassAssortedPane.block = new GlassAssortedPane();
 
         BlockIDs.tarmac.block = new Tarmac(Material.rock);
         BlockIDs.roadcover_tarmac0.block = new RoadCover0(Material.rock);

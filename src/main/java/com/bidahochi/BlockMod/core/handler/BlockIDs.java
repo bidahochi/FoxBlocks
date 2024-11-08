@@ -154,6 +154,7 @@ public enum BlockIDs
     originStuff(true, ItemBlockOriginStuff.class, "OriginStuff", 2),
 
     glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted", 3),
+    glassAssortedPane(true, ItemBlockGlassAssortedPane.class, "glassAssortedPane", -1),
 
     //region Roads
     tarmac(true, ItemBlockTarmac.class, "tarmac", 13),

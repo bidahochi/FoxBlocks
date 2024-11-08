@@ -373,6 +373,11 @@ tile.glassAssorted_1.name=Row Glass (Vertical)
 tile.glassAssorted_2.name=3x3 Worn Factory Glass
 tile.glassAssorted_3.name=2x2 Worn Factory Glass
 
+tile.glassAssortedPane_0.name=Row Glass Pane (Horizontal)
+tile.glassAssortedPane_1.name=Row Glass Pane (Vertical)
+tile.glassAssortedPane_2.name=3x3 Worn Factory Glass Pane
+tile.glassAssortedPane_3.name=2x2 Worn Factory Glass Pane
+
 tile.tarmac_0.name=Tarmac Road Fullblock
 tile.tarmac_1.name=Fine Tarmac Road Fullblock
 tile.tarmac_2.name=Dark Tarmac Road Fullblock
