@@ -25,8 +25,8 @@ public class GlassAssorted extends Block {
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
         setBlockName("glassAssorted");
         setHardness(0.4F);
+        setStepSound(Block.soundTypeGlass);
     }
-
 
     @Override
     public Block setLightOpacity(int p_149713_1_) {
