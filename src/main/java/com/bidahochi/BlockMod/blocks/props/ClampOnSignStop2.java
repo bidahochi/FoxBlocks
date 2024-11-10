@@ -26,7 +26,7 @@ public class ClampOnSignStop2 extends BlockContainer {
         setResistance(1.0F);
         setHarvestLevel("pickaxe", 0);
         setStepSound(soundTypeMetal);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabPropperProps);
         //this.setBlockBounds(0.0F, 0.0F, 0.0F, 0.5F, 1F, 0.5F);
     }
     //public AxisAlignedBB getCollisionBoundingBoxFromPool(World )

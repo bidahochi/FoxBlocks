@@ -237,6 +237,9 @@ tile.fofblock.name=The FoxBlock
 tile.pingascube.name=Robotnik Pingascube
 tile.invisiblock.name=Invisiblock
 
+tile.Blue Block.name=Blue Screen Block
+tile.Green Block.name=Green Screen Block
+
 <!-- ## LUMBER ## -->
 tile.widePlank_0.name=Vertical Wide White Planking
 tile.widePlank_1.name=Vertical Wide Light Grey Planking
@@ -630,6 +633,12 @@ tile.rpb_oys.name=Straight Roadpaint (Offset, Yellow)
 tile.rpb_oyd.name=Diagonal Roadpaint (Offset, Yellow)
 tile.rpb_ows.name=Straight Roadpaint (Offset, White)
 tile.rpb_owd.name=Diagonal Roadpaint (Offset, White)
+
+<!-- ## Xmas :D ## -->
+tile.XmasLights1_top_white.name=Christmas Lights (Top Aligned, White)
+tile.XmasLights1_bottom_white.name=Christmas Lights (Bottom Aligned, White)
+tile.XmasLights1_top_rainbow.name=Christmas Lights (Top Aligned, Rainbow)
+tile.XmasLights1_bottom_rainbow.name=Christmas Lights (Bottom Aligned, Rainbow)
 
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate

@@ -321,6 +321,12 @@ public enum BlockIDs
     rpb_ows(false, null, "rpb_ows"),
     rpb_cw(false, null, "rpb_cw"), //center yellow
 
+    //xmas
+    xmasLights1_top_white(false, null, "XmasLights1_top_white"),
+    xmasLights1_bottom_white(false, null, "XmasLights1_bottom_white"),
+    xmasLights1_top_rainbow(false, null, "XmasLights1_top_rainbow"),
+    xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),
+
     ;
 
 

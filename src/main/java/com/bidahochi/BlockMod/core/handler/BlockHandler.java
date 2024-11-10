@@ -330,6 +330,12 @@ public class BlockHandler {
         BlockIDs.rpb_owd.block = new RPBWhiteOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
 
+        //xmas
+        BlockIDs.xmasLights1_top_white.block = new XmasLights1_top_white(Material.circuits);
+        BlockIDs.xmasLights1_bottom_white.block = new XmasLights1_bottom_white(Material.circuits);
+        BlockIDs.xmasLights1_top_rainbow.block = new XmasLights1_top_rainbow(Material.circuits);
+        BlockIDs.xmasLights1_bottom_rainbow.block = new XmasLights1_bottom_rainbow(Material.circuits);
+
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
         GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
@@ -455,6 +461,11 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileStallPart_Edge2B.class, "stallPart_Edge2B.tile");
 
         GameRegistry.registerTileEntity(TileRPB.class, "rpb.tile");
+
+        GameRegistry.registerTileEntity(TileXmasLights1_top_white.class, "XmasLights1_top_white");
+        GameRegistry.registerTileEntity(TileXmasLights1_bottom_white.class, "XmasLights1_bottom_white");
+        GameRegistry.registerTileEntity(TileXmasLights1_top_rainbow.class, "XmasLights1_top_rainbow");
+        GameRegistry.registerTileEntity(TileXmasLights1_bottom_rainbow.class, "XmasLights1_bottom_rainbow");
 
 
         for (BlockIDs block : BlockIDs.values()) {

@@ -1,0 +1,25 @@
+# FoxBlocks Mod License v1.0
+Copyright Bidahochi 2020-2024
+
+
+## Distribution
+- Excluding modpacks, you CANNOT distribute official FoxBlocks builds on any other site without written permission from Bidahochi.
+
+## Source, Derivatives, & Usage
+- You CANNOT use FoxBlocks assets of any kind outside of the project without written permission from the asset's original creator or Bidahochi. Assets being block/prop textures and models.
+- You CAN remix, transform, or build upon the sources material, but you MUST distribute your contributions under the same license as the original (This one) WITHOUT modifying the license or copyright. Your source must also remain publicly accessible and link back to the original source.
+- You CANNOT use any source material for commercial purposes without written permission from Bidahochi.
+- You CANNOT sell/earn revenue from the mod, or any parts of the mod, without written permission from Bidahochi.
+
+## Public Mod Packs, Multiplayer Servers, and Revenue
+- You CAN use the mod in any modpack, credit is not required but it is appreciated :)
+- You CAN use the mod on a multiplayer server (public or otherwise), and earn revenue as you desire from server usage fees, donations, sold services, and the likes (As long as the revenue gained is not against Minecraft's EULA).
+- You CAN create and publish videos/blogs/screenshots/maps/ect that contain FoxBlocks assets, and can earn revenue from such adventures (As long as the revenue gained is not against Minecraft's EULA). Credit is not required but it is appreciated :)
+- You CAN create and publish texturepacks/resourcepacks that CANNOT contain FoxBlocks assets, and can earn revenue from such adventures (As long as the revenue gained is not against Minecraft's EULA). Credit is required (Just post a link back to the original source).
+
+## Warranty & Liability
+- Bidahochi, or any of the contributers to the FoxBlocks project, are not responsible for any damage, corruption, explosions, melted computers, angry reactions, or any other bad things that may occur due to usage of this mod or its parts.
+- FoxBlocks has no Warranty of any sort and probably never will.
+
+Signed by
+©Bidahochi
