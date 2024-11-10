@@ -26,7 +26,7 @@ public class FoxBlocks
     public static CreativeTabs foxBlocksCreativeTabHome;
     public static CreativeTabs foxBlocksCreativeTabFactory;
     public static CreativeTabs foxBlocksCreativeTabRoadRail;
-    public static CreativeTabs foxBlocksCreativeTabPropperProps;
+    public static CreativeTabs foxBlocksCreativeTabProperProps;
     public static CreativeTabs foxBlocksCreativeTabItems;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
 
@@ -65,10 +65,10 @@ public class FoxBlocks
                 return   Item.getItemFromBlock(BlockIDs.bridgeA_Center.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Roads 'n' Rails"; }};
 
-        foxBlocksCreativeTabPropperProps = new CreativeTabs("FoxBlocks - Propper Props") {
+        foxBlocksCreativeTabProperProps = new CreativeTabs("FoxBlocks - Proper Props") {
             public Item getTabIconItem() {
                 return   Item.getItemFromBlock(BlockIDs.xmasLights1_top_rainbow.block); }
-            public String getTranslatedTabLabel() { return "FoxBlocks - Propper Props"; }};
+            public String getTranslatedTabLabel() { return "FoxBlocks - Proper Props"; }};
 
         foxBlocksCreativeTab = new CreativeTabs("FoxBlocks - Unsorted") {
             public Item getTabIconItem() {

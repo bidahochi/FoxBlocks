@@ -26,7 +26,7 @@ public class Toilet extends BlockContainer {
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabPropperProps);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
     }
 
     @Override

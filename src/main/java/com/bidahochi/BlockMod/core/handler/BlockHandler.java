@@ -451,6 +451,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileOverhead_npole_slope_18.class, "overhead_npole_slope_18.tile");
         GameRegistry.registerTileEntity(TileOverhead_npole_x.class, "overhead_npole_x.tile");
 
+        //stalls
         GameRegistry.registerTileEntity(TileStallPart_T.class, "stallPart_T.tile");
         GameRegistry.registerTileEntity(TileStallPart_Straight.class, "stallPart_Straight.tile");
         GameRegistry.registerTileEntity(TileStallPart_Edge1.class, "stallPart_Edge1.tile");

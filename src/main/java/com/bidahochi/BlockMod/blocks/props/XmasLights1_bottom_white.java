@@ -25,7 +25,7 @@ public class XmasLights1_bottom_white extends BlockContainer {
         setHardness(1F);
         setResistance(1.0F);
         setStepSound(soundTypeGlass);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabPropperProps);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
     }
 
     @Override

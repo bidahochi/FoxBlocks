@@ -26,7 +26,7 @@ public class StallPart_T extends BlockContainer {
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeMetal);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabPropperProps);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
     }
 
     @Override

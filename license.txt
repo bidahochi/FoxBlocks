@@ -18,8 +18,8 @@ Copyright Bidahochi 2020-2024
 - You CAN create and publish texturepacks/resourcepacks that CANNOT contain FoxBlocks assets, and can earn revenue from such adventures (As long as the revenue gained is not against Minecraft's EULA). Credit is required (Just post a link back to the original source).
 
 ## Warranty & Liability
-- Bidahochi, or any of the contributers to the FoxBlocks project, are not responsible for any damage, corruption, explosions, melted computers, angry reactions, or any other bad things that may occur due to usage of this mod or its parts.
+- Bidahochi, or any of the contributors to the FoxBlocks project, are not responsible for any damage, corruption, explosions, melted computers, angry reactions, or any other bad things that may occur due to usage of this mod or its parts.
 - FoxBlocks has no Warranty of any sort and probably never will.
 
 Signed by
-©Bidahochi
+-Bidahochi
