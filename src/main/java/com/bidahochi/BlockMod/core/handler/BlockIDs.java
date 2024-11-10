@@ -315,6 +315,7 @@ public enum BlockIDs
 
     //roadpaints - centered, yellow
     rpb_cy(false, null, "rpb_cy"),
+    rpb_cy2(false, null, "rpb_cy2"),
     rpb_oyd(false, null, "rpb_oyd"), //offset yellow diagonal
     rpb_oys(false, null, "rpb_oys"),
     rpb_owd(false, null, "rpb_owd"), //offset yellow diagonal

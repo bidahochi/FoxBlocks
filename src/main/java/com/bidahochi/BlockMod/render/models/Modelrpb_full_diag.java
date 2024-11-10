@@ -20,7 +20,7 @@ public class Modelrpb_full_diag extends ModelConverter //Same as Filename
 
 	public Modelrpb_full_diag() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[3];
+		bodyModel = new ModelRendererTurbo[5];
 
 		initbodyModel_1();
 
@@ -35,6 +35,8 @@ public class Modelrpb_full_diag extends ModelConverter //Same as Filename
 		bodyModel[0] = new ModelRendererTurbo(this, 0, 0, textureX, textureY); // Box 1
 		bodyModel[1] = new ModelRendererTurbo(this, 8, 12, textureX, textureY); // Box 1
 		bodyModel[2] = new ModelRendererTurbo(this, 8, 12, textureX, textureY); // Box 2
+		bodyModel[3] = new ModelRendererTurbo(this, 2, 7, textureX, textureY); // Box 3
+		bodyModel[4] = new ModelRendererTurbo(this, 2, 7, textureX, textureY); // Box 5
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 16, 16, 16, 0F,0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F); // Box 1
 		bodyModel[0].setRotationPoint(-8F, 10F, -8F);
@@ -44,5 +46,11 @@ public class Modelrpb_full_diag extends ModelConverter //Same as Filename
 
 		bodyModel[2].addBox(0F, 0F, 0F, 2, 0, 2, 0F); // Box 2
 		bodyModel[2].setRotationPoint(7F, 9.98F, 7F);
+
+		bodyModel[3].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 3
+		bodyModel[3].setRotationPoint(6F, 9.98F, 6F);
+
+		bodyModel[4].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 5
+		bodyModel[4].setRotationPoint(-10F, 9.98F, -10F);
 	}
 }

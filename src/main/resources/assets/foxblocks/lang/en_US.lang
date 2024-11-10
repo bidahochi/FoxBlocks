@@ -628,6 +628,7 @@ tile.stallPart_Edge2B.name=Modular StallWall Part (Right Corner, Top)
 
 <!-- ## Roadpaints ## -->
 tile.rpb_cy.name=Dynamic Roadpaint (Centered, Yellow)
+tile.rpb_cy2.name=Dynamic Roadpaint (Centered Double Line, Yellow)
 tile.rpb_cw.name=Dynamic Roadpaint (Centered, White)
 tile.rpb_oys.name=Straight Roadpaint (Offset, Yellow)
 tile.rpb_oyd.name=Diagonal Roadpaint (Offset, Yellow)

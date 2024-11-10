@@ -34,6 +34,7 @@ import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideDiagonal;
@@ -324,6 +325,7 @@ public class BlockHandler {
 
         //roadpaint blocks
         BlockIDs.rpb_cy.block = new RPBYellowCenter(Material.rock);
+        BlockIDs.rpb_cy2.block = new RPBYellowCenter2(Material.rock);
         BlockIDs.rpb_cw.block = new RPBWhiteCenter(Material.rock);
         BlockIDs.rpb_oyd.block = new RPBYellowOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_oys.block = new RPBYellowOffsetInsideStraight(Material.rock);
