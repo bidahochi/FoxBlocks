@@ -20,8 +20,7 @@ import org.lwjgl.opengl.GL11;
             if(!(tileEntity instanceof TileStallPart_TB)){return;}
             GL11.glPushMatrix();
             Tessellator.bindTexture(texture2);
-            GL11.glTranslated(x + 0.2, y + 0.62, z + 0.45);
-            //GL11.glTranslated(x + 0.5, y + 0.62, z + 0.5);
+            GL11.glTranslated(x + 0.5, y + 0.62, z + 0.5);
             GL11.glRotatef(180F, 1F, 0F, 0F);
             GL11.glRotatef(90F, 0F, 1F, 0F);
             int dir = ((TileStallPart_TB)tileEntity).dir;
@@ -29,23 +28,19 @@ import org.lwjgl.opengl.GL11;
             switch(dir) {
                 case 0:{//west // north
                     GL11.glRotated(180,0,1,0);
-                    GL11.glTranslated(-0.05,0,-0.3);
                     break;
                 }
                 case 3: {//south? //west
                     GL11.glRotated(90,0,1,0);
-                    GL11.glTranslated(-0.25,0,0.0);
                     break;
                 }
                 case 1: {//north //east
                     GL11.glRotated(270,0,1,0);
-                    GL11.glTranslated(0.25,0,-0.1);
                     break;
                 }
                 case 2: {//east //south
                     GL11.glRotated(180,0,1,0);
                     GL11.glRotated(180,0,1,0);
-                    GL11.glTranslated(0.05,0,0.2);
                     break;
                 }
             }
