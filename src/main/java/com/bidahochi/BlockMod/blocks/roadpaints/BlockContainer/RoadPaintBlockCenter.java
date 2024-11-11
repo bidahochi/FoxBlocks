@@ -56,6 +56,10 @@ public class RoadPaintBlockCenter extends BaseRoadPaintBlockContainer{
         if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.WEST)) {
             world.setTileEntity(x, y, z, new TileRPB(0, color, "plus", offset));
         }
+        else if (directions.contains(RoadDirections.NORTHEAST) && directions.contains(RoadDirections.NORTHWEST) &&
+        directions.contains(RoadDirections.SOUTHEAST) && directions.contains(RoadDirections.SOUTHWEST)) {
+            world.setTileEntity(x, y, z, new TileRPB(0, color, "dplus", offset));
+        }
         //T
         else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTH)) {
             world.setTileEntity(x, y, z, new TileRPB(0, color, "t", offset));
@@ -66,6 +70,17 @@ public class RoadPaintBlockCenter extends BaseRoadPaintBlockContainer{
         } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.WEST)) {
             world.setTileEntity(x, y, z, new TileRPB(1, color, "t", offset));
         }
+
+        else if (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHWEST)) {
+            world.setTileEntity(x, y, z, new TileRPB(0, color, "y", offset));
+        } else if (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.SOUTHWEST)) {
+            world.setTileEntity(x, y, z, new TileRPB(3, color, "y", offset));
+        } else if (directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.SOUTHEAST)) {
+            world.setTileEntity(x, y, z, new TileRPB(2, color, "y", offset));
+        } else if (directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHEAST)) {
+            world.setTileEntity(x, y, z, new TileRPB(1, color, "y", offset));
+        }
+
         //90-turns
         else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST)) {
             world.setTileEntity(x, y, z, new TileRPB(3, color, "turn", offset));
