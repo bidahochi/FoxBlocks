@@ -101,7 +101,7 @@ public class TileRPB extends BaseTileEntity {
                     setOffset(new Vec3f(8.0f, 0, 0));
                 }
             }
-            else if (shape.toLowerCase().contains("diagonal")) {
+            else if (shape.toLowerCase().contains("diagonal") || shape.toLowerCase().contains("dplus")) {
                 setModel(new Modelrpb_full_diag());
             }
             else {
