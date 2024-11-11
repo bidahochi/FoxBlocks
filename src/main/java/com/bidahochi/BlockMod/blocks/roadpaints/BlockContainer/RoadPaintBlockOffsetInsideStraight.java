@@ -56,7 +56,8 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
         for (int i = -1; i < 2; i++) { //x
             for (int j = -1; j < 2; j++) { //y
                 for (int k = -1; k < 2; k++) { //z
-                    if (world.getBlock(x + i, y + j, z + k) instanceof RoadPaintBlockOffsetInsideStraight) {
+                    if (world.getBlock(x + i, y + j, z + k) instanceof RoadPaintBlockOffsetInsideStraight &&
+                    ((RoadPaintBlockCenter) world.getBlock(x + i, y + j, z + k)).color.equalsIgnoreCase(color)) {
                         //blocks.add(new Vec3f(i, j, k));
                         if (i < 0) {
                             if (k == 0 && !directions.contains(RoadDirections.WEST)) {
