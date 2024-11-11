@@ -33,24 +33,24 @@ public class Modelrpb_full_diag extends ModelConverter //Same as Filename
 	private void initbodyModel_1()
 	{
 		bodyModel[0] = new ModelRendererTurbo(this, 0, 0, textureX, textureY); // Box 1
-		bodyModel[1] = new ModelRendererTurbo(this, 8, 12, textureX, textureY); // Box 1
-		bodyModel[2] = new ModelRendererTurbo(this, 8, 12, textureX, textureY); // Box 2
-		bodyModel[3] = new ModelRendererTurbo(this, 2, 7, textureX, textureY); // Box 3
-		bodyModel[4] = new ModelRendererTurbo(this, 2, 7, textureX, textureY); // Box 5
+		bodyModel[1] = new ModelRendererTurbo(this, 2, 7, textureX, textureY); // Box 3
+		bodyModel[2] = new ModelRendererTurbo(this, 2, 7, textureX, textureY); // Box 5
+		bodyModel[3] = new ModelRendererTurbo(this, 2, 2, textureX, textureY); // Box 5
+		bodyModel[4] = new ModelRendererTurbo(this, 2, 2, textureX, textureY); // Box 6
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 16, 16, 16, 0F,0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F, 0.01F); // Box 1
 		bodyModel[0].setRotationPoint(-8F, 10F, -8F);
 
-		bodyModel[1].addBox(0F, 0F, 0F, 2, 0, 2, 0F); // Box 1
-		bodyModel[1].setRotationPoint(-9F, 9.98F, -9F);
+		bodyModel[1].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 3
+		bodyModel[1].setRotationPoint(6F, 9.98F, 6F);
 
-		bodyModel[2].addBox(0F, 0F, 0F, 2, 0, 2, 0F); // Box 2
-		bodyModel[2].setRotationPoint(7F, 9.98F, 7F);
+		bodyModel[2].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 5
+		bodyModel[2].setRotationPoint(-10F, 9.98F, -10F);
 
-		bodyModel[3].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 3
-		bodyModel[3].setRotationPoint(6F, 9.98F, 6F);
+		bodyModel[3].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 5
+		bodyModel[3].setRotationPoint(6F, 9.98F, -10F);
 
-		bodyModel[4].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 5
-		bodyModel[4].setRotationPoint(-10F, 9.98F, -10F);
+		bodyModel[4].addBox(0F, 0F, 0F, 4, 0, 4, 0F); // Box 6
+		bodyModel[4].setRotationPoint(-10F, 9.98F, 6F);;
 	}
 }
