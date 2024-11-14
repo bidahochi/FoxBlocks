@@ -59,30 +59,16 @@ public class TileRoadCoverDynamic1X3 extends BaseTileEntity
     @Override
     public AxisAlignedBB getRenderBoundingBox()
     {
-        int ecks =0;
-        int zee =0;
-        int why =0;
-
         switch(dir)
         {
-
-            case 0:{// north
-                zee = -2;
-                break;
-            }
-            case 1: {//east
-                ecks = 2;
-                break;
-            }
-            case 2: {//south
-                zee = 2;
-                break;
-            }
-            case 3: {//west
-                ecks = -2;
-                break;
-            }
+            case 2:  // north
+                return AxisAlignedBB.getBoundingBox(xCoord - 3, yCoord - 3, zCoord - 4, xCoord + 3, yCoord + 3, zCoord);
+            case 3:  // east
+                return AxisAlignedBB.getBoundingBox(xCoord - 1, yCoord - 3, zCoord - 2, xCoord + 5, yCoord + 3, zCoord + 2);
+            case 0:  // south
+                return AxisAlignedBB.getBoundingBox(xCoord - 3, yCoord - 3, zCoord, xCoord + 3, yCoord + 3, zCoord + 4);
+            default: // west
+                return AxisAlignedBB.getBoundingBox(xCoord - 5, yCoord - 3, zCoord - 2, xCoord + 3, yCoord + 3, zCoord + 2);
         }
-        return AxisAlignedBB.getBoundingBox(xCoord-2+ecks, yCoord-2, zCoord-2+zee, xCoord+2+ecks, yCoord+2, zCoord+2+zee);
     }
 }
