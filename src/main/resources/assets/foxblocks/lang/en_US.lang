@@ -507,6 +507,10 @@ tile.Scaffold2.name=Scaffold Block (Thick Frame)
 tile.ClassicIron.name=Classic Iron Block
 tile.ClassicGold.name=Classic Gold Block
 
+tile.metalFencing_0.name=Metal Fence 1
+tile.metalFencing_1.name=Metal Fence 2
+tile.metalFencing_2.name=Metal Fence 3
+
 <!-- ## HELL ## -->
 tile.Ember Stone.name=Ember Stone
 tile.Dark Ember Stone.name=Dark Ember Stone

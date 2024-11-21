@@ -188,6 +188,7 @@ public enum BlockIDs
     scaffold2(false, null, "Scaffold2"),
     classicMetals(false, null, "ClassicIron"),
     classicGold(false, null, "ClassicGold"),
+    metalFencing(true, ItemBlockMetalFencing.class, "metalFencing", -1),
     //endregion Metals
 
     //region Hell

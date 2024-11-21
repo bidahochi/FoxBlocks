@@ -779,9 +779,12 @@ public class RecipeHandler {
         for (ItemStack dye : dyeBlue) {
             GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.blue.block, 4), "DAD", "DBD", "   ", 'B', new ItemStack(ItemIDs.bulb.item, 1), 'D', new ItemStack(BlockIDs.unfinishedDrywall.block, 1), 'A', dye); }
 
+        //fences & panes
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.metalFencing.block, 16, 0), "III", "III", "   ", 'I', new ItemStack(ItemIDs.ironRod.item));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.metalFencing.block, 4, 1), new ItemStack(BlockIDs.metalFencing.block, 1, 0), new ItemStack(BlockIDs.metalFencing.block, 1, 0), new ItemStack(BlockIDs.metalFencing.block, 1, 0), new ItemStack(BlockIDs.metalFencing.block, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.metalFencing.block, 4, 2), new ItemStack(BlockIDs.metalFencing.block, 1, 1), new ItemStack(BlockIDs.metalFencing.block, 1, 1), new ItemStack(BlockIDs.metalFencing.block, 1, 1), new ItemStack(BlockIDs.metalFencing.block, 1, 1));
 
-
-
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.glassAssortedPane.block, 16, 0), "GGG", "GGG", "   ", 'G', new ItemStack(BlockIDs.glassAssorted.block, 1, 0));
 
 
 

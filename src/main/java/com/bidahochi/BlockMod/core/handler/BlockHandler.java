@@ -200,6 +200,7 @@ public class BlockHandler {
         BlockIDs.scaffold2.block = new Scaffold2(Material.iron);
         BlockIDs.classicMetals.block = new ClassicMetals(Material.iron);
         BlockIDs.classicGold.block = new ClassicGold(Material.iron);
+        BlockIDs.metalFencing.block = new MetalFencing();
 
         //hekk
         BlockIDs.emberStone.block = new EmberStone(Material.rock);
