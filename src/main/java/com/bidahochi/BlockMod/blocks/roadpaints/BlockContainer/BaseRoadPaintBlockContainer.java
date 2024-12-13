@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.roadpaints.RoadDirections;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
