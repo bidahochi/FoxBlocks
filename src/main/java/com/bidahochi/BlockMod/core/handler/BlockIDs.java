@@ -156,6 +156,8 @@ public enum BlockIDs
 
     originStuff(true, ItemBlockOriginStuff.class, "OriginStuff", 2),
 
+    classicwool(true, ItemBlockClassicWool.class, "Classic Wool", 15),
+
     glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted", 3),
     glassAssortedPane(true, ItemBlockGlassAssortedPane.class, "glassAssortedPane", -1),
 

@@ -371,6 +371,23 @@ tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone
 tile.OriginStuff_2.name=Origin Brick
 
+tile.ClassicWool_0.name=White Classic Wool
+tile.ClassicWool_1.name=Light Grey Classic Wool
+tile.ClassicWool_2.name=Grey Classic Wool
+tile.ClassicWool_3.name=Red Classic Wool
+tile.ClassicWool_4.name=Orange Classic Wool
+tile.ClassicWool_5.name=Yellow Classic Wool
+tile.ClassicWool_6.name=Chartreuse Classic Wool
+tile.ClassicWool_7.name=Green Classic Wool
+tile.ClassicWool_8.name=Spring Green Classic Wool
+tile.ClassicWool_9.name=Cyan Classic Wool
+tile.ClassicWool_10.name=Capri Classic Wool
+tile.ClassicWool_11.name=Ultramarine Classic Wool
+tile.ClassicWool_12.name=Violet Classic Wool
+tile.ClassicWool_13.name=Purple Classic Wool
+tile.ClassicWool_14.name=Magenta Classic Wool
+tile.ClassicWool_15.name=Rose Classic Wool
+
 tile.glassAssorted_0.name=Row Glass (Horizontal)
 tile.glassAssorted_1.name=Row Glass (Vertical)
 tile.glassAssorted_2.name=3x3 Worn Factory Glass
