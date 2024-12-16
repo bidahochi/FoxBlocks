@@ -24,7 +24,21 @@ public class TileRPB extends BaseTileEntity {
     public ModelConverter model;
     public TileRPB(int dir, String color, String shape, String offset) {
         super(dir);
-        this.dir = dir;
+        if (shape.equalsIgnoreCase("diagonal")) {
+            this.dir = (dir + 1) & 3;
+        }
+        else if (shape.equalsIgnoreCase("diagonal_left")) {
+            this.dir = (dir + 2) & 3;
+        }
+        else if (shape.equalsIgnoreCase("diagonal_right")) {
+            this.dir = (dir + 2) & 3;
+        }
+        else if (shape.equalsIgnoreCase("t")) {
+            this.dir = (dir + 1) & 3;
+        }
+        else {
+            this.dir = dir;
+        }
         this.color = color;
         this.shape = shape;
         this.offset = offset;

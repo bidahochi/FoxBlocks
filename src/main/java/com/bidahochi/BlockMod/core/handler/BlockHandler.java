@@ -35,6 +35,7 @@ import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter2;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SRPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideDiagonal;
@@ -334,6 +335,8 @@ public class BlockHandler {
         BlockIDs.rpb_oys.block = new RPBYellowOffsetInsideStraight(Material.rock);
         BlockIDs.rpb_owd.block = new RPBWhiteOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
+
+        BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);
 
         //xmas
         BlockIDs.xmasLights1_top_white.block = new XmasLights1_top_white(Material.circuits);

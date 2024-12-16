@@ -84,54 +84,102 @@ public class RoadPaintBlockOffsetInsideDiagonal extends BaseRoadPaintBlockContai
                 }
             }
         }
+        if (entity.isSneaking()) {
+            if (directions.contains(RoadDirections.NORTH)) {
+                if (getDir(entity) == 2) {
+                    world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal", offset));
+                    return;
+                }
+                if (getDir(entity) == 1) {
+                    world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal2", offset));
+                    return;
+                }
+                if (getDir(entity) == 3) {
+                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal", offset));
+                    return;
+                }
+            }
+            if (directions.contains(RoadDirections.SOUTH)) {
+                if (getDir(entity) == 3) {
+                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
+                    return;
+                }
+            }
+            if (directions.contains(RoadDirections.EAST)) {
+                if (getDir(entity) == 1) {
+                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal", offset));
+                    return;
+                }
+                if (getDir(entity) == 0) {
+                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal", offset));
+                    return;
+                }
+                if (getDir(entity) == 2) {
+                    world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal2", offset));
+                    return;
+                }
+            }
+            if (directions.contains(RoadDirections.WEST)) {
+                if (getDir(entity) == 1) {
+                    world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal", offset));
+                    return;
+                }
+                if (getDir(entity) == 0) {
+                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal2", offset));
+                    return;
+                }
+            }
+            world.setTileEntity(x, y, z, new TileRPB(getDir(entity)+1>3?((getDir(entity)+1)%3) :getDir(entity)+1, color, "diagonal_extended2", offset));
+        }
+        else {
+            if (directions.contains(RoadDirections.NORTH)) {
+                if (getDir(entity) == 2) {
+                    world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal2", offset));
+                    return;
+                }
+                if (getDir(entity) == 1) {
+                    world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal", offset));
+                    return;
+                }
+                if (getDir(entity) == 3) {
+                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
+                    return;
+                }
+            }
+            if (directions.contains(RoadDirections.SOUTH)) {
+                if (getDir(entity) == 3) {
+                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal", offset));
+                    return;
+                }
+            }
+            if (directions.contains(RoadDirections.EAST)) {
+                if (getDir(entity) == 1) {
+                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
+                    return;
+                }
+                if (getDir(entity) == 0) {
+                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal2", offset));
+                    return;
+                }
+                if (getDir(entity) == 2) {
+                    world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal", offset));
+                    return;
+                }
+            }
+            if (directions.contains(RoadDirections.WEST)) {
+                if (getDir(entity) == 1) {
+                    world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal2", offset));
+                    return;
+                }
+                if (getDir(entity) == 0) {
+                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal", offset));
+                    return;
+                }
+            }
+            world.setTileEntity(x, y, z, new TileRPB(getDir(entity)-1<0?3:getDir(entity)-1, color, "diagonal_extended", offset));
+        }
 
-        if (directions.contains(RoadDirections.NORTH)) {
-            if (getDir(entity) == 2) {
-                world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal2", offset));
-                return;
-            }
-            if (getDir(entity) == 1) {
-                world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal", offset));
-                return;
-            }
-            if (getDir(entity) == 3) {
-                world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
-                return;
-            }
-        }
-        if (directions.contains(RoadDirections.SOUTH)) {
-            if (getDir(entity) == 3) {
-                world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal", offset));
-                return;
-            }
-        }
-        if (directions.contains(RoadDirections.EAST)) {
-            if (getDir(entity) == 1) {
-                world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
-                return;
-            }
-            if (getDir(entity) == 0) {
-                world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal2", offset));
-                return;
-            }
-            if (getDir(entity) == 2) {
-                world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal", offset));
-                return;
-            }
-        }
-        if (directions.contains(RoadDirections.WEST)) {
-            if (getDir(entity) == 1) {
-                world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal2", offset));
-                return;
-            }
-            if (getDir(entity) == 0) {
-                world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal", offset));
-                return;
-            }
-        }
 
-
-        world.setTileEntity(x, y, z, new TileRPB(getDir(entity)-1<0?3:getDir(entity)-1, color, "diagonal_extended", offset));
 
 
 
