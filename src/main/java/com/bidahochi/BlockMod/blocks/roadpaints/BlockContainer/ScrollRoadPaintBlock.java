@@ -8,6 +8,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -28,7 +29,8 @@ import java.util.List;
 public abstract class ScrollRoadPaintBlock extends BlockContainer {
     public String offset;
     public String color;
-    public HashMap<EnumRoadShapes, IIcon> icons = new HashMap<>();
+    //public HashMap<EnumRoadShapes, IIcon> icons = new HashMap<>();
+    private IIcon[] textures;
     public HashMap<EnumRoadShapes, String> shapeTextures = new HashMap<>();
     public EnumRoadShapes currentShape = EnumRoadShapes.straight;
 
@@ -74,7 +76,7 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         if (shapeTextures.isEmpty()) {
-            world.setTileEntity(x, y, z, new TileRPB(getDir(entity), color, "straight", offset));
+            world.setTileEntity(x, y, z, new TileRPB(getDir(entity), color, "straight", offset, stack));
         }
         else {
             int dir = getDir(entity);
@@ -85,11 +87,11 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
                     case turn:
                     case diagonal:
                     case yIntersection:
-                        dir = dir + 1 % 3;
+                        dir = (dir + 1) % 4;
                         break;
                 }
             }
-            world.setTileEntity(x, y, z, new TileRPB(dir, color, shape, offset));
+            world.setTileEntity(x, y, z, new TileRPB(dir, color, shape, offset, stack));
         }
     }
 
@@ -116,48 +118,48 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        /*ItemStack stack = new ItemStack(Item.getItemFromBlock(this));
-        ItemBlock iBlock = (ItemBlock)stack.getItem();
-        EnumRoadShapes current = ((ScrollRoadPaintBlock)iBlock.field_150939_a).currentShape;*/
-/*        meta = stack.getItemDamage();
-        if (meta > icons.size()) meta = 0;
-        EnumRoadShapes t = null;
-        int i = 0;
-        for (EnumRoadShapes shape : icons.keySet()) {
-            if (meta == i) {
-                t = shape;
-                break;
+        if (meta > textures.length) meta = 0;
+        return textures[meta];
+
+        //Below is a potential stopgap until the icon issue can be resolved. commented out for now.
+/*        if (currentShape != null) {
+            for (IIcon texture : textures) {
+                if (texture.getIconName().contains(currentShape.type)) {
+                    return texture;
+                }
             }
-            i++;
         }
-        return t != null ? icons.get(t) : icons.get(EnumRoadShapes.straight);*/
-        return currentShape != null?icons.get(currentShape):icons.get(EnumRoadShapes.straight);
+        for (IIcon texture : textures) {
+            if (texture.getIconName().contains("straight")) {
+                return texture;
+            }
+        }
+        return textures[meta];
+        */
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        for (EnumRoadShapes shape : shapeTextures.keySet()) {
-            if (shape == null || this.getUnlocalizedName() == null || shape.type == null) {
-                continue;
-            }
-            String s = FoxBlocks.MODID + ":roadpaints/rp_icon/" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1) + "/" + shape.type;
-            IIcon icon = iconRegister.registerIcon(s);
-            icons.put(shape, icon);
+        this.textures = new IIcon[shapeTextures.size()];
+        for (int i = 0; i < shapeTextures.size(); i++) {
+            String s = FoxBlocks.MODID + ":roadpaints/rp_icon/" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1) + "/" + shapeTextures.keySet().toArray()[i];
+            this.textures[i] = iconRegister.registerIcon(s);
         }
     }
 
     @Override
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (int i = 0; i < 1; i++){
+        for (int i = 0; i < this.shapeTextures.size(); i++){
             list.add(new ItemStack(item, 1, i));
-/*            if (i != 0) {
-                ScrollRoadPaintBlock.getBlockFromItem(((ItemStack)list.get(i)).getItem()).setCreativeTab(null);
-            }*/
         }
         //ScrollRoadPaintBlock.getBlockFromItem(((ItemStack)list.get(0)).getItem()).setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
+    @Override
+    public int damageDropped(int metadata) {
+        return metadata;
+    }
 
     // Helper to get the Direction
     protected int getDir(EntityLivingBase entity) {

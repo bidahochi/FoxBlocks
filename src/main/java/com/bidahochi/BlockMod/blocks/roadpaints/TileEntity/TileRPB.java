@@ -9,6 +9,7 @@ import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
@@ -22,6 +23,31 @@ public class TileRPB extends BaseTileEntity {
 
     public ResourceLocation texture2;
     public ModelConverter model;
+
+    public TileRPB(int dir, String color, String shape, String offset, ItemStack stack) {
+        super(dir);
+        if (shape.equalsIgnoreCase("diagonal")) {
+            this.dir = (dir + 1) & 3;
+        }
+        else if (shape.equalsIgnoreCase("diagonal_left")) {
+            this.dir = (dir + 2) & 3;
+        }
+        else if (shape.equalsIgnoreCase("diagonal_right")) {
+            this.dir = (dir + 2) & 3;
+        }
+        else if (shape.equalsIgnoreCase("t")) {
+            this.dir = (dir + 1) & 3;
+        }
+        else {
+            this.dir = dir;
+        }
+        this.color = color;
+        this.shape = shape;
+        this.offset = offset;
+        this.blockMetadata = stack.getItemDamage();
+        getTextureAndModel(this);
+    }
+
     public TileRPB(int dir, String color, String shape, String offset) {
         super(dir);
         if (shape.equalsIgnoreCase("diagonal")) {

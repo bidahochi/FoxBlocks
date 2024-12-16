@@ -3,7 +3,7 @@ package com.bidahochi.BlockMod.blocks.roadpaints;
 public enum EnumRoadShapes {
     straight("straight"),
     turn("turn"),
-    tIntersection("t"),
+    tIntersection("tIntersection"),
     plus("plus"),
     diagonal("diagonal"),
     diagonalTurnLeft("diagonalTurnLeft"),

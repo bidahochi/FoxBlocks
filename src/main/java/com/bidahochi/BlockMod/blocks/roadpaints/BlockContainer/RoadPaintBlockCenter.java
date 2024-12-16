@@ -62,13 +62,13 @@ public class RoadPaintBlockCenter extends BaseRoadPaintBlockContainer{
         }
         //T
         else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTH)) {
-            world.setTileEntity(x, y, z, new TileRPB(0, color, "t", offset));
-        } else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.SOUTH)) {
-            world.setTileEntity(x, y, z, new TileRPB(2, color, "t", offset));
-        } else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.WEST)) {
             world.setTileEntity(x, y, z, new TileRPB(3, color, "t", offset));
-        } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.WEST)) {
+        } else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.SOUTH)) {
             world.setTileEntity(x, y, z, new TileRPB(1, color, "t", offset));
+        } else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.WEST)) {
+            world.setTileEntity(x, y, z, new TileRPB(2, color, "t", offset));
+        } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.WEST)) {
+            world.setTileEntity(x, y, z, new TileRPB(0, color, "t", offset));
         }
 
         else if (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHWEST)) {
@@ -93,21 +93,21 @@ public class RoadPaintBlockCenter extends BaseRoadPaintBlockContainer{
         }
         //45 turns
         else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.SOUTHEAST) && !directions.contains(RoadDirections.SOUTH)) {
-            world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal_right", offset));
-        } else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.SOUTHWEST) && !directions.contains(RoadDirections.SOUTH)) {
-            world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal_left", offset));
-        } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHEAST) && !directions.contains(RoadDirections.NORTH)) {
-            world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal_left", offset));
-        } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHWEST) && !directions.contains(RoadDirections.NORTH)) {
             world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal_right", offset));
+        } else if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.SOUTHWEST) && !directions.contains(RoadDirections.SOUTH)) {
+            world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal_left", offset));
+        } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHEAST) && !directions.contains(RoadDirections.NORTH)) {
+            world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal_left", offset));
+        } else if (directions.contains(RoadDirections.SOUTH) && directions.contains(RoadDirections.NORTHWEST) && !directions.contains(RoadDirections.NORTH)) {
+            world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal_right", offset));
         } else if (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.NORTHWEST) && !directions.contains(RoadDirections.WEST)) {
-            world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal_left", offset));
-        } else if (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTHWEST) && !directions.contains(RoadDirections.WEST)) {
-            world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal_right", offset));
-        } else if (directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.NORTHEAST) && !directions.contains(RoadDirections.EAST)) {
-            world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal_right", offset));
-        } else if (directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.SOUTHEAST) && !directions.contains(RoadDirections.EAST)) {
             world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal_left", offset));
+        } else if (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.SOUTHWEST) && !directions.contains(RoadDirections.WEST)) {
+            world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal_right", offset));
+        } else if (directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.NORTHEAST) && !directions.contains(RoadDirections.EAST)) {
+            world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal_right", offset));
+        } else if (directions.contains(RoadDirections.WEST) && directions.contains(RoadDirections.SOUTHEAST) && !directions.contains(RoadDirections.EAST)) {
+            world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal_left", offset));
         }
         //straights
         else if (((directions.contains(RoadDirections.NORTH) || directions.contains(RoadDirections.SOUTH)) && directions.size() == 1) || (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.SOUTH))) {
@@ -115,9 +115,9 @@ public class RoadPaintBlockCenter extends BaseRoadPaintBlockContainer{
         } else if (((directions.contains(RoadDirections.EAST) || directions.contains(RoadDirections.WEST)) && directions.size() == 1) || (directions.contains(RoadDirections.EAST) && directions.contains(RoadDirections.WEST))) {
             world.setTileEntity(x, y, z, new TileRPB(3, color, "straight", offset));
         } else if (((directions.contains(RoadDirections.NORTHEAST) || directions.contains(RoadDirections.SOUTHWEST)) && directions.size() == 1) || (directions.contains(RoadDirections.NORTHEAST) && directions.contains(RoadDirections.SOUTHWEST))) {
-            world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal", offset));
-        } else if (((directions.contains(RoadDirections.NORTHWEST) || directions.contains(RoadDirections.SOUTHEAST)) && directions.size() == 1) || (directions.contains(RoadDirections.NORTHWEST) && directions.contains(RoadDirections.SOUTHEAST))) {
             world.setTileEntity(x, y, z, new TileRPB(2, color, "diagonal", offset));
+        } else if (((directions.contains(RoadDirections.NORTHWEST) || directions.contains(RoadDirections.SOUTHEAST)) && directions.size() == 1) || (directions.contains(RoadDirections.NORTHWEST) && directions.contains(RoadDirections.SOUTHEAST))) {
+            world.setTileEntity(x, y, z, new TileRPB(1, color, "diagonal", offset));
         } else if (directions.contains(RoadDirections.WEST) || directions.contains(RoadDirections.EAST)) {
             world.setTileEntity(x, y, z, new TileRPB(1, color, "straight", offset));
         } else if (directions.contains(RoadDirections.NORTH) || directions.contains(RoadDirections.SOUTH)) {

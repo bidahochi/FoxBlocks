@@ -33,6 +33,7 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWi
 import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.ScrollingItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -324,7 +325,7 @@ public enum BlockIDs
     rpb_owd(false, null, "rpb_owd"), //offset yellow diagonal
     rpb_ows(false, null, "rpb_ows"),
     rpb_cw(false, null, "rpb_cw"),
-    srpb_cy(false, null, "srpb_cy"),//center yellow
+    srpb_cy(false, ScrollingItemBlock.class, "srpb_cy"),//center yellow
 
     //xmas
     xmasLights1_top_white(false, null, "XmasLights1_top_white"),
