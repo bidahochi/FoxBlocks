@@ -168,6 +168,8 @@ public class BlockHandler {
 
         BlockIDs.originStuff.block = new OriginStuff(Material.rock);
 
+        BlockIDs.classicwool.block = new ClassicWool(Material.cloth);
+
         BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
         BlockIDs.glassAssortedPane.block = new GlassAssortedPane();
 
