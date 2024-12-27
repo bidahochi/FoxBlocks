@@ -12,6 +12,8 @@ import net.minecraft.util.IIcon;
 
 import java.util.HashMap;
 
+import static com.bidahochi.BlockMod.blocks.roadpaints.EnumRoadShapes.*;
+
 public class SRPBYellowCenter extends ScrollRoadPaintBlock {
 
     public SRPBYellowCenter(Material mat) {
@@ -20,9 +22,14 @@ public class SRPBYellowCenter extends ScrollRoadPaintBlock {
         offset = "center";
         color = "yellow";
 
-        for (EnumRoadShapes shape: EnumRoadShapes.values())
-        {
-            shapeTextures.put(shape, shape.shortName);
-        }
+        shapeTextures.put(straight, straight.shortName);
+        shapeTextures.put(turn, turn.shortName);
+        shapeTextures.put(tIntersection, tIntersection.shortName);
+        shapeTextures.put(plus, tIntersection.shortName);
+        shapeTextures.put(diagonal, diagonal.shortName);
+        shapeTextures.put(diagonalTurnLeft, diagonalTurnLeft.shortName);
+        shapeTextures.put(diagonalTurnRight, diagonalTurnRight.shortName);
+        shapeTextures.put(yIntersection, yIntersection.shortName);
+        shapeTextures.put(diagonalPlus, diagonalPlus.shortName);
     }
 }
