@@ -3,10 +3,13 @@ package com.bidahochi.BlockMod.blocks.roadpaints;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlockWithMetadata;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.common.util.ForgeDirection;
+
+import java.util.List;
 
 public class ScrollingItemBlock extends ItemBlockWithMetadata {
 
@@ -28,5 +31,13 @@ public class ScrollingItemBlock extends ItemBlockWithMetadata {
     public String getUnlocalizedName(ItemStack itemStack) {
         int metadata = itemStack.getItemDamage();
         return String.format("%s.%d", this.block.getUnlocalizedName(), metadata);
+    }
+
+    @SideOnly(Side.CLIENT)
+    @Override
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List flavorText, boolean par4)
+    {
+        flavorText.add("\u00a77" + "Shift+Scroll to");
+        flavorText.add("\u00a77" + "Cycle Between Blocks");
     }
 }
