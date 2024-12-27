@@ -15,14 +15,13 @@ public class ScrollingItemBlock extends ItemBlockWithMetadata {
     public ScrollingItemBlock(Block block) {
         super(block, block);
         this.block = block;
-        this.setHasSubtypes(true);
-        this.setMaxDamage(EnumRoadShapes.values().length);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIconFromDamage(int metadata) {
-        return this.block.getIcon(ForgeDirection.UP.ordinal(), metadata);
+    public IIcon getIconFromDamage(int metadata)
+    {
+        return this.block.getIcon(2, metadata);
     }
 
     @Override

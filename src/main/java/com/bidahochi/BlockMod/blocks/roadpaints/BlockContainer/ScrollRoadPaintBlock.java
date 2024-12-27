@@ -24,6 +24,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public abstract class ScrollRoadPaintBlock extends BlockContainer {
@@ -31,7 +32,7 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
     public String color;
     //public HashMap<EnumRoadShapes, IIcon> icons = new HashMap<>();
     private IIcon[] textures;
-    public HashMap<EnumRoadShapes, String> shapeTextures = new HashMap<>();
+    public LinkedHashMap<EnumRoadShapes, String> shapeTextures = new LinkedHashMap<>();
     public EnumRoadShapes currentShape = EnumRoadShapes.straight;
 
     public ScrollRoadPaintBlock(Material p_i45394_1_) {
@@ -43,12 +44,13 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
-    public HashMap<EnumRoadShapes, String> getShapeTextures() {
+    public LinkedHashMap<EnumRoadShapes, String> getShapeTextures() {
         return shapeTextures;
     }
 
     @Override
-    public TileEntity createNewTileEntity(World world, int meta) {
+    public TileEntity createNewTileEntity(World world, int meta)
+    {
         return new TileRPB();
     }
 
@@ -140,15 +142,17 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister) {
+    public void registerBlockIcons(IIconRegister iconRegister)
+    {
         this.textures = new IIcon[shapeTextures.size()];
-        for (int i = 0; i < shapeTextures.size(); i++) {
+        for (int i = 0; i < shapeTextures.size(); i++)
+        {
             String s = FoxBlocks.MODID + ":roadpaints/rp_icon/" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".")+1) + "/" + shapeTextures.keySet().toArray()[i];
             this.textures[i] = iconRegister.registerIcon(s);
         }
     }
 
-    @Override
+    //@Override
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
         for (int i = 0; i < this.shapeTextures.size(); i++){
             list.add(new ItemStack(item, 1, i));
