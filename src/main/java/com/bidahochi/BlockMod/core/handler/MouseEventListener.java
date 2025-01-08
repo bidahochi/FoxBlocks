@@ -33,10 +33,10 @@ public class MouseEventListener {
                         event.setCanceled(true);
                         return;
                     }
-                    PacketHandler.sendPacketToServer(new PacketRPBSelect(entityPlayer.inventory.currentItem, event.dwheel < 0));
+                    PacketHandler.sendPacketToServer(new PacketRPBSelect(entityPlayer.inventory.currentItem, event.dwheel > 0));
                     lastScroll = System.currentTimeMillis();
+                    event.setCanceled(true);
                 }
-                event.setCanceled(true);
             }
         }
     }

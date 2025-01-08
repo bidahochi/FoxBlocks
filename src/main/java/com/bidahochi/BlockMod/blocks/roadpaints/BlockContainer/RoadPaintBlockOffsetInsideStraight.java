@@ -82,7 +82,6 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
                 }
             }
         }
-        System.out.println(getDir(entity));
         //turns
         if (directions.contains(RoadDirections.NORTH) && directions.contains(RoadDirections.EAST)) {
             if (directionMap.get(RoadDirections.NORTH) == 0 && directionMap.get(RoadDirections.EAST) == 3) {

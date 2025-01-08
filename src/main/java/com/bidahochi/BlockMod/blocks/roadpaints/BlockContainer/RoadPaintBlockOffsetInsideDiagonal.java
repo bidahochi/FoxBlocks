@@ -100,8 +100,8 @@ public class RoadPaintBlockOffsetInsideDiagonal extends BaseRoadPaintBlockContai
                 }
             }
             if (directions.contains(RoadDirections.SOUTH)) {
-                if (getDir(entity) == 3) {
-                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
+                if (getDir(entity) == 0) {
+                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal2", offset));
                     return;
                 }
             }
@@ -147,18 +147,14 @@ public class RoadPaintBlockOffsetInsideDiagonal extends BaseRoadPaintBlockContai
                 }
             }
             if (directions.contains(RoadDirections.SOUTH)) {
-                if (getDir(entity) == 3) {
-                    world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal", offset));
+                if (getDir(entity) == 0) {
+                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal2", offset));
                     return;
                 }
             }
             if (directions.contains(RoadDirections.EAST)) {
-                if (getDir(entity) == 1) {
+                if (getDir(entity) == 3 || getDir(entity) == 1) {
                     world.setTileEntity(x, y, z, new TileRPB(3, color, "diagonal2", offset));
-                    return;
-                }
-                if (getDir(entity) == 0) {
-                    world.setTileEntity(x, y, z, new TileRPB(0, color, "diagonal2", offset));
                     return;
                 }
                 if (getDir(entity) == 2) {

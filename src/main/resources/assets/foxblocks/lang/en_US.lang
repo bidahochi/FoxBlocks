@@ -656,6 +656,16 @@ tile.rpb_oyd.name=Diagonal Roadpaint (Offset, Yellow)
 tile.rpb_ows.name=Straight Roadpaint (Offset, White)
 tile.rpb_owd.name=Diagonal Roadpaint (Offset, White)
 
+tile.srpb_cy.0.name=Straight Roadpaint (Centered, Yellow)
+tile.srpb_cy.1.name=Turn Roadpaint (Centered, Yellow)
+tile.srpb_cy.2.name=3-Way Roadpaint (Centered, Yellow)
+tile.srpb_cy.3.name=All-Way (Centered, Yellow)
+tile.srpb_cy.4.name=Diagonal Roadpaint (Centered, Yellow)
+tile.srpb_cy.5.name=Diagonal Turn Right Roadpaint (Centered, Yellow)
+tile.srpb_cy.6.name=Diagonal Turn Left Roadpain (Centered, Yellow)
+tile.srpb_cy.7.name=Y Intersection Roadpaint (Centered, Yellow)
+tile.srpb_cy.8.name=X Intersection Roadpaint (Centered, Yellow)
+
 <!-- ## Xmas :D ## -->
 tile.XmasLights1_top_white.name=Christmas Lights (Top Aligned, White)
 tile.XmasLights1_bottom_white.name=Christmas Lights (Bottom Aligned, White)
