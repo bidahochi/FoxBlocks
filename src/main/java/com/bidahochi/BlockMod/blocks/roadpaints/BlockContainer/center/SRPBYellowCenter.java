@@ -25,7 +25,7 @@ public class SRPBYellowCenter extends ScrollRoadPaintBlock {
         shapeTextures.put(straight, straight.shortName);
         shapeTextures.put(turn, turn.shortName);
         shapeTextures.put(tIntersection, tIntersection.shortName);
-        shapeTextures.put(plus, tIntersection.shortName);
+        shapeTextures.put(plus, plus.shortName);
         shapeTextures.put(diagonal, diagonal.shortName);
         shapeTextures.put(diagonalTurnLeft, diagonalTurnLeft.shortName);
         shapeTextures.put(diagonalTurnRight, diagonalTurnRight.shortName);
