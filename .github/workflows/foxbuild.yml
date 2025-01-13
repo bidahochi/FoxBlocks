@@ -39,12 +39,19 @@ jobs:
       - name: Gradle Build
         run: ./gradlew build
 
+      # Credit to https://stackoverflow.com/questions/58033366/how-to-get-the-current-branch-within-github-actions
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+    
+
       # Upload the build artifacts
       # Uploaded jar will follow the following naming convention: foxblocks-<git_branch>-<git_sha>.jar
       # Jar output is in build/libs/foxblocks-<version>.jar (In theory, there should only ever be one file in this directory, so just upload everything)
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: foxblocks-${{ github.branch }}-${{ github.sha }}
+          name: foxblocks-${{ steps.extract_branch.outputs.branch }}-${{ github.sha }}
           path: build/libs/*
       
