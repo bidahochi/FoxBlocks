@@ -84,3 +84,5 @@ processResources
         exclude 'mcmod.info'
     }
 }
+
+buildScan { licenseAgreementUrl = 'https://gradle.com/terms-of-service'; licenseAgree = 'yes' }
