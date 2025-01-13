@@ -563,6 +563,7 @@ tile.Coil_centered.name=Steel Sheet Coil (Singular)
 tile.Coil_pair.name=Steel Sheet Coil (Pair)
 
 tile.toilet.name=Wall Mounted Toilet
+tile.wall_sink.name=Wall Mounted Sink (Dual Handles)
 
 <!-- ## LIGHTING ## -->
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)

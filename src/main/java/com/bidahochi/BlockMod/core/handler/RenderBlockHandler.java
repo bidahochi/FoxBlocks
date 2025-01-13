@@ -36,6 +36,7 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileCoil_pair.class, new RenderCoil_pair());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileToilet.class, new RenderToilet());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileWall_sink.class, new RenderWall_sink());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallV.class, new RenderNeonCageLampWallV());
