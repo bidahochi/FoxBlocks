@@ -236,6 +236,7 @@ public class BlockHandler {
         BlockIDs.coil_pair.block = new Coil_pair(Material.iron);
 
         BlockIDs.toilet.block = new Toilet(Material.clay);
+        BlockIDs.wall_sink.block = new Wall_sink(Material.clay);
 
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
@@ -358,6 +359,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileCoil_pair.class, "coil_pair.tile");
 
         GameRegistry.registerTileEntity(TileToilet.class, "toilet.tile");
+        GameRegistry.registerTileEntity(TileWall_sink.class, "wall_sink.tile");
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");

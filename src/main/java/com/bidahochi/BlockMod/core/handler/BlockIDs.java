@@ -226,6 +226,7 @@ public enum BlockIDs
     coil_pair(false,null,"coil_pair"),
 
     toilet(false, null, "toilet"),
+    wall_sink(false, null, "wall_sink"),
 
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
