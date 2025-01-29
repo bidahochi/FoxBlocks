@@ -32,6 +32,7 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.SRPBDetailsWhite1;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter2;
@@ -329,15 +330,17 @@ public class BlockHandler {
         BlockIDs.stallPart_Edge2B.block = new StallPart_Edge2B(Material.iron);
 
         //roadpaint blocks
-        BlockIDs.rpb_cy.block = new RPBYellowCenter(Material.rock);
-        BlockIDs.rpb_cy2.block = new RPBYellowCenter2(Material.rock);
-        BlockIDs.rpb_cw.block = new RPBWhiteCenter(Material.rock);
+        //dynamic blocks
+        BlockIDs.rpb_cy.block = new RPBYellowCenter(Material.rock);//centered yellow single
+        BlockIDs.rpb_cy2.block = new RPBYellowCenter2(Material.rock);//centered yellow double
+        BlockIDs.rpb_cw.block = new RPBWhiteCenter(Material.rock);//centered white single
         BlockIDs.rpb_oyd.block = new RPBYellowOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_oys.block = new RPBYellowOffsetInsideStraight(Material.rock);
         BlockIDs.rpb_owd.block = new RPBWhiteOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
-
-        BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);
+        //static blocks
+        BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);//centered yellow single
+        BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
 
         //xmas
         BlockIDs.xmasLights1_top_white.block = new XmasLights1_top_white(Material.circuits);

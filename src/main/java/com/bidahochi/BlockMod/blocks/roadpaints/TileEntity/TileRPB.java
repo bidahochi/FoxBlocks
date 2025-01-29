@@ -24,7 +24,7 @@ public class TileRPB extends BaseTileEntity {
     public ResourceLocation texture2;
     public ModelConverter model;
 
-    public TileRPB(int dir, String color, String shape, String offset, ItemStack stack) {
+    public TileRPB(int dir, String color, String shape, String offset, ItemStack stack) {//looking for shortName?
         super(dir);
         if (shape.equalsIgnoreCase("diagonal")) {
             this.dir = (dir + 1) & 3;
@@ -36,6 +36,10 @@ public class TileRPB extends BaseTileEntity {
             this.dir = (dir + 2) & 3;
         }
         else if (shape.equalsIgnoreCase("t")) {
+            this.dir = (dir + 1) & 3;
+        }
+        else if (shape.equalsIgnoreCase("dt1") || shape.equalsIgnoreCase("dt2") || shape.equalsIgnoreCase("dt3") || shape.equalsIgnoreCase("dt4")
+        || shape.equalsIgnoreCase("dt5") || shape.equalsIgnoreCase("dt6") || shape.equalsIgnoreCase("dt7") || shape.equalsIgnoreCase("dt8")) {
             this.dir = (dir + 1) & 3;
         }
         else {
@@ -60,6 +64,10 @@ public class TileRPB extends BaseTileEntity {
             this.dir = (dir + 2) & 3;
         }
         else if (shape.equalsIgnoreCase("t")) {
+            this.dir = (dir + 1) & 3;
+        }
+        else if (shape.equalsIgnoreCase("dt1") || shape.equalsIgnoreCase("dt2") || shape.equalsIgnoreCase("dt3") || shape.equalsIgnoreCase("dt4")
+                || shape.equalsIgnoreCase("dt5") || shape.equalsIgnoreCase("dt6") || shape.equalsIgnoreCase("dt7") || shape.equalsIgnoreCase("dt8")) {
             this.dir = (dir + 1) & 3;
         }
         else {

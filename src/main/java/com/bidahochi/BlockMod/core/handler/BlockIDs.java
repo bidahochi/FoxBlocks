@@ -318,15 +318,18 @@ public enum BlockIDs
     stallPart_Edge1B(false, null, "stallPart_Edge1B"),
     stallPart_Edge2B(false, null, "stallPart_Edge2B"),
 
-    //roadpaints - centered, yellow
-    rpb_cy(false, null, "rpb_cy"),
-    rpb_cy2(false, null, "rpb_cy2"),
+    //roadpaints
+    //dynamic
+    rpb_cy(false, null, "rpb_cy"),//centered yellow single
+    rpb_cy2(false, null, "rpb_cy2"),//centered yellow double
     rpb_oyd(false, null, "rpb_oyd"), //offset yellow diagonal
     rpb_oys(false, null, "rpb_oys"),
     rpb_owd(false, null, "rpb_owd"), //offset yellow diagonal
     rpb_ows(false, null, "rpb_ows"),
     rpb_cw(false, null, "rpb_cw"),
+    //static
     srpb_cy(true, ScrollingItemBlock.class, "srpb_cy"),//center yellow
+    srpb_dw1(true, ScrollingItemBlock.class, "srpb_dw1"),//details white 1
 
     //xmas
     xmasLights1_top_white(false, null, "XmasLights1_top_white"),
