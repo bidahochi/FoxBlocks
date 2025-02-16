@@ -1,7 +1,8 @@
 package com.bidahochi.BlockMod.network;
 
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.ScrollRoadPaintBlock;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.IScrollRoadPaintBlock;
 import com.bidahochi.BlockMod.blocks.roadpaints.EnumRoadShapes;
+import com.bidahochi.BlockMod.utils.HelperUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufInputStream;
 import net.minecraft.block.Block;
@@ -28,9 +29,10 @@ public class PacketRPBSelect implements IFoxBlocksPacket {
         boolean incDmg = bbis.readBoolean();
         ItemStack itemStack = entityPlayer.inventory.getStackInSlot(slot);
 
-        if (itemStack != null && Block.getBlockFromItem(itemStack.getItem()) instanceof ScrollRoadPaintBlock) {
-
-            int maxDmg = EnumRoadShapes.values().length - 1;
+        if (itemStack != null && Block.getBlockFromItem(itemStack.getItem()) instanceof IScrollRoadPaintBlock)
+        {
+            IScrollRoadPaintBlock theBlock = (IScrollRoadPaintBlock)Block.getBlockFromItem(itemStack.getItem());
+            int maxDmg = theBlock.getShapeTextures().size() - 1;
             int itemDmg = itemStack.getItemDamage();
             itemDmg += incDmg ? 1 : -1;
             if (itemDmg > maxDmg) {
@@ -38,18 +40,19 @@ public class PacketRPBSelect implements IFoxBlocksPacket {
             } else if (itemDmg < 0) {
                 itemDmg = maxDmg;
             }
-            EnumRoadShapes key = EnumRoadShapes.values()[itemDmg];
-            while (!((ScrollRoadPaintBlock)(Block.getBlockFromItem(itemStack.getItem()))).getShapeTextures().containsKey(key)) {
+            EnumRoadShapes key = HelperUtils.getKeyByIndex(theBlock.getShapeTextures(), itemDmg);
+            while (!theBlock.getShapeTextures().containsKey(key))
+            {
                 itemDmg += incDmg ? 1 : -1;
                 if (itemDmg > maxDmg) {
                     itemDmg = 0;
                 } else if (itemDmg < 0) {
                     itemDmg = maxDmg;
                 }
-                key = EnumRoadShapes.values()[itemDmg];
+                key = HelperUtils.getKeyByIndex(theBlock.getShapeTextures(), itemDmg);
             }
             itemStack.setItemDamage(itemDmg);
-            ((ScrollRoadPaintBlock) Block.getBlockFromItem(itemStack.getItem())).currentShape = key;
+            theBlock.SetCurrentShape(key);
         }
     }
     @Override

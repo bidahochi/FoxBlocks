@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.roadpaints;
 
-public enum EnumRoadShapes {
+public enum EnumRoadShapes
+{
     //regular lines
     straight("straight", "straight"),
     turn("turn", "turn"),
@@ -31,8 +32,6 @@ public enum EnumRoadShapes {
         this.type = type;
         this.shortName = shortName;
     }
-
-
 }
 
 
