@@ -83,6 +83,7 @@ public class BlockHandler {
 
         //concretes
         BlockIDs.rawConcrete.block = new RawConcrete(Material.rock);
+        //BlockIDs.rawConcreteDoubleSlab.block = new BaseSlab(BlockProperties.RawConcrete);
         BlockIDs.layeredConcrete.block = new LayeredConcrete(Material.rock);
         BlockIDs.smoothCrete.block = new Smoothcrete(Material.rock);
         BlockIDs.concreteBrick.block = new ConcreteBrick(Material.rock);
