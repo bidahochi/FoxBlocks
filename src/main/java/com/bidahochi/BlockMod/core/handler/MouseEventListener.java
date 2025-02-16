@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod.core.handler;
 
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.IScrollRoadPaintBlock;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.ScrollRoadPaintBlock;
 import com.bidahochi.BlockMod.network.PacketRPBSelect;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -28,7 +29,7 @@ public class MouseEventListener {
             if (entityPlayer != null && entityPlayer.isSneaking()) {
                 ItemStack itemStack = entityPlayer.getHeldItem();
                 if (itemStack != null && itemStack.getItem() instanceof ItemBlock &&
-                        Block.getBlockFromItem(itemStack.getItem()) instanceof ScrollRoadPaintBlock) {
+                        Block.getBlockFromItem(itemStack.getItem()) instanceof IScrollRoadPaintBlock) {
                     if (System.currentTimeMillis() - lastScroll < 300) { //limit how fast you can scroll through the items
                         event.setCanceled(true);
                         return;

@@ -23,11 +23,12 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 
-public abstract class ScrollRoadPaintBlock extends BlockContainer {
+import static com.bidahochi.BlockMod.utils.HelperUtils.getValueByIndex;
+
+public abstract class ScrollRoadPaintBlock extends BlockContainer implements IScrollRoadPaintBlock
+{
     public String offset;
     public String color;
     //public HashMap<EnumRoadShapes, IIcon> icons = new HashMap<>();
@@ -44,7 +45,13 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
-    public LinkedHashMap<EnumRoadShapes, String> getShapeTextures() {
+    public void SetCurrentShape(EnumRoadShapes enumRoadShape)
+    {
+        currentShape = enumRoadShape;
+    }
+
+    public LinkedHashMap<EnumRoadShapes, String> getShapeTextures()
+    {
         return shapeTextures;
     }
 
@@ -82,7 +89,7 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer {
         }
         else {
             int dir = getDir(entity);
-            String shape = shapeTextures.get(EnumRoadShapes.values()[stack.getItemDamage()]);
+            String shape = getValueByIndex(shapeTextures, stack.getItemDamage());
             EnumRoadShapes s = currentShape==null? EnumRoadShapes.straight:currentShape;
             if (entity.isSneaking()) {
                 switch (s) {
