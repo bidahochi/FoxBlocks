@@ -12,7 +12,7 @@ public class Gypsum extends Block {
     public Gypsum(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("Gypsum");
-        setHardness(4.5F);
+        setHardness(1.0F);
         setResistance(2.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeStone);
