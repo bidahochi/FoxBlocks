@@ -1,8 +1,10 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -276,15 +278,13 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fiberGlass.block, 1, 0), new ItemStack(BlockIDs.fiberGlass.block, 1, 1));
 
         //concretes
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GRG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('R'), new ItemStack(ItemIDs.quicklime.item, 1));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.rawConcrete.block, 8), "SGS", "GAG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.Concrete.block, 8), "SGS", "GRG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('R'), new ItemStack(ItemIDs.quicklime.item, 1));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.Concrete.block, 8), "SGS", "GAG", "SGS", Character.valueOf('S'), Blocks.sand, Character.valueOf('G'), Blocks.gravel, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.layeredConcrete.block, 3), " C ", " C ", " C ", Character.valueOf('C'), BlockIDs.smoothCrete.block);
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.smoothCrete.block, 4), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1), new ItemStack(BlockIDs.rawConcrete.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.smoothCrete.block, 4), new ItemStack(BlockIDs.Concrete.block, 1), new ItemStack(BlockIDs.Concrete.block, 1), new ItemStack(BlockIDs.Concrete.block, 1), new ItemStack(BlockIDs.Concrete.block, 1));
 
         //hariesh hell blocks
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.emberStoneSlab.block,6), "   ","   ","EEE",Character.valueOf('E'), new ItemStack(BlockIDs.emberStone.block,1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.emberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.emberStone.block,1));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.darkEmberStoneSlab.block,6), "   ","   ","EEE",Character.valueOf('E'), new ItemStack(BlockIDs.darkEmberStone.block,1));
         GameRegistry.addRecipe(new ItemStack(BlockIDs.darkEmberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.darkEmberStone.block,1));
         GameRegistry.addSmelting(BlockIDs.emberStone.block, new ItemStack(BlockIDs.darkEmberStone.block,1),1F);
 
@@ -606,16 +606,16 @@ public class RecipeHandler {
         GameRegistry.addRecipe(new ItemStack(BlockIDs.concreteBrick.block, 8, 4), "CCC", "C C", "CCC", Character.valueOf('C'), new ItemStack(BlockIDs.layeredConcrete.block));
 
         //kronkcrete floorin
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 0), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 1), new ItemStack(BlockIDs.smoothCrete.block, 2), new ItemStack(BlockIDs.rawConcrete.block, 2), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.rawConcrete.block, 2));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFloor.block, 4, 0), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFloor.block, 4, 1), new ItemStack(BlockIDs.smoothCrete.block, 2), new ItemStack(BlockIDs.Concrete.block, 2), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.Concrete.block, 2));
         for (ItemStack dye : dyeRed) {
-            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 2), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFloor.block, 4, 2), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
         }
         for (ItemStack dye : dyeBlue) {
-            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 3), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFloor.block, 4, 3), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
         }
         for (ItemStack dye : dyeGray) {
-            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFlooring.block, 4, 4), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.concreteFloor.block, 4, 4), new ItemStack(BlockIDs.smoothCrete.block), dye, new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block), new ItemStack(BlockIDs.smoothCrete.block));
         }
 
         //labwall
@@ -676,7 +676,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietLimestone.block, 4, 1), new ItemStack(BlockIDs.jolietLimestone.block, 1, 2), new ItemStack(BlockIDs.jolietLimestone.block, 1, 2), new ItemStack(BlockIDs.jolietLimestone.block, 1, 2), new ItemStack(BlockIDs.jolietLimestone.block, 1, 2));
 
         //road stuff
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.roadTar.item, 8), new ItemStack(Blocks.gravel), new ItemStack(BlockIDs.rawConcrete.block),new ItemStack(Blocks.sand),new ItemStack(Items.coal));
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.roadTar.item, 8), new ItemStack(Blocks.gravel), new ItemStack(BlockIDs.Concrete.block),new ItemStack(Blocks.sand),new ItemStack(Items.coal));
 
         GameRegistry.addRecipe(new ItemStack(BlockIDs.tarmac.block, 8, 0), "TTT", "GGG", "   ", Character.valueOf('G'), new ItemStack(Blocks.gravel), Character.valueOf('T'), new ItemStack(ItemIDs.roadTar.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.tarmac.block, 4, 1), new ItemStack(Blocks.stone), new ItemStack(BlockIDs.tarmac.block, 1, 0),new ItemStack(Blocks.stone), new ItemStack(BlockIDs.tarmac.block, 1, 0));
@@ -684,7 +684,7 @@ public class RecipeHandler {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.tarmac.block, 6, 2), "TTT", "GGG", " D ", Character.valueOf('G'), new ItemStack(Blocks.gravel), Character.valueOf('T'), new ItemStack(ItemIDs.roadTar.item, 1), Character.valueOf('D'), dye); }
         for (ItemStack dye : dyeGray) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.tarmac.block, 6, 3), "TTT", "GGG", " D ", Character.valueOf('G'), new ItemStack(Blocks.gravel), Character.valueOf('T'), new ItemStack(ItemIDs.roadTar.item, 1), Character.valueOf('D'), dye); }
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.tarmac.block, 4, 4), new ItemStack(BlockIDs.rawConcrete.block), new ItemStack(BlockIDs.tarmac.block, 1, 0),new ItemStack(BlockIDs.rawConcrete.block), new ItemStack(BlockIDs.tarmac.block, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.tarmac.block, 4, 4), new ItemStack(BlockIDs.Concrete.block), new ItemStack(BlockIDs.tarmac.block, 1, 0),new ItemStack(BlockIDs.Concrete.block), new ItemStack(BlockIDs.tarmac.block, 1, 0));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.tarmac.block, 4, 5), new ItemStack(BlockIDs.tarmac.block, 1, 4), new ItemStack(BlockIDs.tarmac.block, 1, 0),new ItemStack(BlockIDs.tarmac.block, 1, 4), new ItemStack(BlockIDs.tarmac.block, 1, 0));
         for (ItemStack dye : dyeLightGray) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.tarmac.block, 6, 6), "TTT", "GGG", " D ", Character.valueOf('G'), new ItemStack(Blocks.gravel), Character.valueOf('T'), new ItemStack(ItemIDs.roadTar.item, 1), Character.valueOf('D'), dye); }
@@ -786,7 +786,64 @@ public class RecipeHandler {
 
         GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.glassAssortedPane.block, 16, 0), "GGG", "GGG", "   ", 'G', new ItemStack(BlockIDs.glassAssorted.block, 1, 0));
 
+        // Auto Register Slab And Stair Recipes
+        for (BlockIDs block : BlockIDs.values())
+        {
+            if (block.MaxMetadata >= 0)
+            {
+                // Slabs can only go up to 7 as metadata is used for the bottom and top sate
+                if (block.MaxMetadata < 8)
+                {
+                    Block blockSlab = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName + "_Slab");
+                    if (blockSlab == null)
+                    {
+                        blockSlab  = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName.replace(" ", "") + "_Slab");
+                    }
 
+                    if (blockSlab != null)
+                    {
+                        for (int i = 0; i <= block.MaxMetadata; i++)
+                        {
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i));
+                            GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
+                        }
+                    }
+                }
+                else
+                {
+                    Block blockSlab = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName + "_Slab");
+                    if (blockSlab == null)
+                    {
+                        blockSlab  = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName.replace(" ", "") + "_Slab");
+                    }
+
+                    if (blockSlab != null)
+                    {
+                        for (int i = 0; i <= 7; i++)
+                        {
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i));
+                            GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
+                        }
+                    }
+
+                    Block blockSlabTwo = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName + "_2_Slab");
+                    if (blockSlabTwo == null)
+                    {
+                        blockSlabTwo  = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName.replace(" ", "") + "_2_Slab");
+                    }
+
+                    if (blockSlabTwo != null)
+                    {
+                        for (int i = 0; i <= block.MaxMetadata - 8; i++)
+                        {
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i + 8));
+                            GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i + 8), "   ", " I ", " I ", 'I', new ItemStack(blockSlabTwo, 1, i));
+                        }
+                    }
+                }
+
+            }
+        }
 
 
         FoxBlocks.blockLogger.info("Hi Dad!");

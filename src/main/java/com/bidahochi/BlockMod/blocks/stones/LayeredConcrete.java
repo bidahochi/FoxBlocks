@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.stones;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -16,7 +17,7 @@ public class LayeredConcrete extends Block {
         setHardness(2.0F);
         setResistance(12.5F);
         setHarvestLevel("pickaxe", 1);
-        setBlockName("Layered Concrete");
+        setBlockName(BlockIDs.layeredConcrete.blockName);
         setBlockTextureName(FoxBlocks.MODID+":stones/layercrete/Layered_concrete");
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabRock);
     }

@@ -1,15 +1,7 @@
 package com.bidahochi.BlockMod.core.handler;
 
-import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockdryWall;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockfiberGlass;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlocksoapStoneDeco;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.ItemBlockwallPaper;
-import com.bidahochi.BlockMod.blocks.metals.ItemBlockmetalSiding;
-import com.bidahochi.BlockMod.core.handler.BlockProperties;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 
 import static net.minecraft.block.Block.*;
@@ -20,6 +12,8 @@ import static net.minecraft.block.Block.*;
  *  -hariesh
  */
 
+
+@Deprecated
 public enum BlockProperties {
 
 
