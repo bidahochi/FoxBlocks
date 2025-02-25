@@ -37,8 +37,6 @@ public class BaseBlockSlab extends BlockSlab
         this.singleSlab = (BaseBlockSlab)singleSlab;
         BaseBlockName = blockProperty.BlockName;
 
-        System.out.println(BaseBlockName);
-
         if (BlockNumberStartingIndex == 0)
         {
             if (singleSlab == null)
