@@ -338,7 +338,6 @@ public enum BlockIDs
     xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),;
 
     public Block block;
-    public final boolean alternateShapeSupport = false;
     public final boolean hasItemBlock;
     public final Class itemBlockClass;
     public final String blockName;
