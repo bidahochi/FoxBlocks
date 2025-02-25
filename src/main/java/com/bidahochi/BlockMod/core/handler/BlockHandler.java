@@ -23,7 +23,6 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.StallParts.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.*;
-import com.bidahochi.BlockMod.blocks.hell.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
@@ -49,7 +48,6 @@ import com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -140,7 +138,7 @@ public class BlockHandler {
         { // plasteredConcrete
             BlockProperty property = new BlockProperty(BlockIDs.plasteredConcrete, Material.rock, 1.5F, 2.5F,
                     pickaxe, 2,
-                    soundTypeStone, 8,"constructionmaterials/plasteredconcrete/plasteredConcrete", foxBlocksCreativeTabRock, false);
+                    soundTypeStone, 9,"constructionmaterials/plasteredconcrete/plasteredConcrete", foxBlocksCreativeTabRock, false);
             BlockIDs.plasteredConcrete.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.plasteredConcrete, property);
         }
