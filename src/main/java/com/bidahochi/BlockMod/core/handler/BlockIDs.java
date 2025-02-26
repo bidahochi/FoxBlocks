@@ -24,16 +24,11 @@ package com.bidahochi.BlockMod.core.handler;
  ****************************/
 
 import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockFakeSnow;
-import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel;
-import com.bidahochi.BlockMod.blocks.cobaltdeco.ItemBlockcobaltPanel2;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X1;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X3;
-import com.bidahochi.BlockMod.blocks.essentiallymemes.ItemBlockBooBlox;
-import com.bidahochi.BlockMod.blocks.lumber.*;
-import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.ScrollingItemBlock;
+import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -63,16 +58,21 @@ public enum BlockIDs
     creamCityClay(false, null, "CreamCityClay"),
 
     //concrete
-    rawConcrete(false,null,"Concrete"),
-    layeredConcrete(false, null, "Layered Concrete"),
-    smoothCrete(false, null, "Smoothcrete"),
-    concreteBrick(true, ItemBlockconcreteBrick.class, "concreteBrick", 6),
-    concreteFlooring(true, ItemBlockconcreteFloor.class, "concreteFloor", 4),
-    plasteredConcrete(true, ItemBlockplasteredConcrete.class, "plasteredConcrete", 8),
+    Concrete(true,BaseItemBlock.class,"Concrete"),
+
+    layeredConcrete(true, BaseItemBlock.class, "Layered Concrete"),
+
+    smoothCrete(true, BaseItemBlock.class, "Smoothcrete"),
+
+    concreteBrick(true, BaseItemBlock.class, "concreteBrick", 6),
+
+    concreteFloor(true, BaseItemBlock.class, "concreteFloor", 4),
+
+    plasteredConcrete(true, BaseItemBlock.class, "plasteredConcrete", 8),
 
     //stones
     soapStone(false, null, "Soapstone"), // Raw Soapstone
-    soapStoneDeco(true, ItemBlocksoapStoneDeco.class, "Soapstone Deco", 4), // Soapstone Bricks
+    soapStoneDeco(true, BaseItemBlock.class, "Soapstone Deco", 4), // Soapstone Bricks
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
     redrock(false, null, "Redrock"),
@@ -81,55 +81,55 @@ public enum BlockIDs
     limestone(false, null, "limestone"),
 
     //bricks
-    fireBrick(false, null, "fireBrick"),
-    mortarBrick(true, ItemBlockmortarBrick.class, "mortarBrick", 15),
-    mortarBrick2(true, ItemBlockmortarBrick2.class, "mortarBrick2", 7),
-    creamCity(true, ItemBlockCreamCity.class, "creamcity", 2),
-    jolietLimestone(true, ItemBlockJolietLimestone.class, "jolietlimestone", 4), // Limestone Bricks
-    redrockDeco(true, ItemBlockRedrockDeco.class, "RedrockDeco", 3), // 3
+    fireBrick(true, BaseItemBlock.class, "fireBrick"),
+    mortarBrick(true, BaseItemBlock.class, "mortarBrick", 15),
+    mortarBrick2(true, BaseItemBlock.class, "mortarBrick2", 7),
+    creamCity(true, BaseItemBlock.class, "creamcity", 2),
+    jolietLimestone(true, BaseItemBlock.class, "jolietlimestone", 4), // Limestone Bricks
+    redrockDeco(true, BaseItemBlock.class, "RedrockDeco", 3), // 3
 
     // region Cobalt
-    cobaltBlock(false,null,"cobaltBlock"),
-    cobaltPanel(true, ItemBlockcobaltPanel.class,"cobaltPanel", 15), // ?
-    cobaltPanel2(true, ItemBlockcobaltPanel2.class,"cobaltPanel2", 6), // Ma
-    cobaltBrick(false,null,"cobaltBrick"), // Small Cobalt Bricks
-    largeCobaltBrick(false,null,"largeCobaltBrick"), // Large Cobalt Bricks
+    cobaltBlock(true,BaseItemBlock.class,"cobaltBlock"),
+    cobaltPanel(true, BaseItemBlock.class,"cobaltPanel", 15), // ?
+    cobaltPanel2(true, BaseItemBlock.class,"cobaltPanel2", 6), // Ma
+    cobaltBrick(true,BaseItemBlock.class,"cobaltBrick"), // Small Cobalt Bricks
+    largeCobaltBrick(true,BaseItemBlock.class,"largeCobaltBrick"), // Large Cobalt Bricks
     // endregion Cobalt
 
     // region tiles
-    tile4(true, ItemBlocktile4.class,"tile4", 15), // Purple 4x4 Tile
-    tile2x2(true, ItemBlockTile2x2.class, "Tile 2x2", 15), // Thanos Chin Purple 2x2 Tile
-    tile2x2smooth(true, ItemBlockTile2x2Smooth.class, "Tile 2x2 Smooth", 15), // Purple 2x2 Bubble Tile
-    diamondTile(true, ItemBlockdiamondTile.class,"Diamond Tile", 15), // Purple Diamond Tile
-    subTile(true, ItemBlockSubTile.class,"SubTile", 4), // Terrain Tile (2x2 Light)
-    terrocottaTiles(true, ItemBlockTerrocottaTiles.class, "TerrocottaTiles", 15), // Purple Terrocotta Tiles
+    tile4(true, BaseItemBlock.class,"tile4", 15), // Purple 4x4 Tile
+    tile2x2(true, BaseItemBlock.class, "Tile 2x2", 15), // Thanos Chin Purple 2x2 Tile
+    tile2x2smooth(true, BaseItemBlock.class, "Tile 2x2 Smooth", 15), // Purple 2x2 Bubble Tile
+    diamondTile(true, BaseItemBlock.class,"Diamond Tile", 15), // Purple Diamond Tile
+    subTile(true, BaseItemBlock.class,"SubTile", 4), // Terrain Tile (2x2 Light)
+    terrocottaTiles(true, BaseItemBlock.class, "TerrocottaTiles", 15), // Purple Terrocotta Tiles
     // endregion Titles
 
     //region fun
     although(false,null, "alothi"),
     testblock(false,null,"Test Block"),
     tHanos(false,null,"T Hanos"),
-    booBlox(true, ItemBlockBooBlox.class, "BooBlox", 5),
+    booBlox(true, BaseItemBlock.class, "BooBlox", 5),
     blockLavaBucket(false, null, "BlockOLavaBucket"),
     // THIS IS ACTUALLY RIGGS
-    harieshHead(false,ItemBlockmetalSiding.class, "-hariesh"), //why does this have itemblockmetalsiding yet is false anyway?
+    harieshHead(false,BaseItemBlock.class, "-hariesh"), //why does this have itemblockmetalsiding yet is false anyway?
     foxglass(false,null,"foxglass"),
-    blue(false,null,"Blue"),
-    green(false,null,"Green"),
+    blue(true, BaseItemBlock.class,"Blue"),
+    green(true, BaseItemBlock.class,"Green"),
     fofblock(false, null, "fofblock"),
     pingascube(false, null ,"pingascube"),
     invisiblock(false, null, "invisiblock"),
     //endregion fun
 
     //region lumber
-    widePlank(true, ItemBlockwidePlank.class, "widePlank", 15),
-    widePlank2(true, ItemBlockwidePlank2.class, "widePlank2", 15),
-    widePlank3(true, ItemBlockwidePlank3.class, "widePlank3", 11),
-    amtrak(true, ItemBlockAmtrak.class, "amshak", 2),
-    logs(true, ItemBlockLogs.class, "logs", 2),
-    leaves(true, ItemBlockLeaves.class, "leaves", 2),
-    plywood(true, ItemBlockPlywood.class, "plywood", 7),
-    woodchips(false, null, "woodchips"),
+    widePlank(true, BaseItemBlock.class, "widePlank", 15),
+    widePlank2(true, BaseItemBlock.class, "widePlank2", 15),
+    widePlank3(true, BaseItemBlock.class, "widePlank3", 11),
+    amtrak(true, BaseItemBlock.class, "amshak", 2),
+    logs(true, BaseItemBlock.class, "logs", 2),
+    leaves(true, BaseItemBlock.class, "leaves", 2),
+    plywood(true, BaseItemBlock.class, "plywood", 7),
+    woodchips(true, BaseItemBlock.class, "woodchips"),
     wrappedwood1(false, null, "wrappedwood1"),
     wrappedwood2(false, null, "wrappedwood2"),
     wrappedwood3(false, null, "wrappedwood3"),
@@ -150,20 +150,20 @@ public enum BlockIDs
 
 
     //other building mats
-    dryWall(true,ItemBlockdryWall.class,"Dry Wall", 15),
-    wallPaper(true, ItemBlockwallPaper.class,"wallPaper", 15),
-    unfinishedDrywall(false,null,"unfinishedDrywall"),
-    fiberGlass(true, ItemBlockfiberGlass.class, "Fiber Glass", 2),
+    dryWall(true,BaseItemBlock.class,"Dry Wall", 15),
+    wallPaper(true, BaseItemBlock.class,"wallPaper", 15),
+    unfinishedDrywall(true, BaseItemBlock.class,"unfinishedDrywall"),
+    fiberGlass(true, BaseItemBlock.class, "Fiber Glass", 2),
 
-    originStuff(true, ItemBlockOriginStuff.class, "OriginStuff", 2),
+    originStuff(true, BaseItemBlock.class, "OriginStuff", 2),
 
-    classicwool(true, ItemBlockClassicWool.class, "Classic Wool", 15),
+    classicwool(true, BaseItemBlock.class, "Classic Wool", 15),
 
-    glassAssorted(true, ItemBlockGlassAssorted.class, "glassAssorted", 3),
-    glassAssortedPane(true, ItemBlockGlassAssortedPane.class, "glassAssortedPane", -1),
+    glassAssorted(true, BaseItemBlock.class, "glassAssorted", 3),
+    glassAssortedPane(true, BaseItemBlock.class, "glassAssortedPane", -1),
 
     //region Roads
-    tarmac(true, ItemBlockTarmac.class, "tarmac", 13),
+    tarmac(true, BaseItemBlock.class, "tarmac", 13),
     roadcover_dynamic1x1(true, ItemRoadCoverDynamic1X1.class, "roadcover_dynamic1x1", -1),
     roadcover_dynamic1x2(true, ItemRoadCoverDynamic1X2.class, "roadcover_dynamic1x2", -1),
     roadcover_dynamic1x3(true, ItemRoadCoverDynamic1X3.class, "roadcover_dynamic1x3", -1),
@@ -177,21 +177,21 @@ public enum BlockIDs
     //endregion Roads
 
     //region Metals
-    metalSiding(true, ItemBlockmetalSiding.class, "Metal Siding", 15), // Vertical
-    metalSiding2(true, ItemBlockmetalSiding2.class, "Metal Siding2", 15), // Horizontal
-    pannelBlack(true, ItemBlockpannelBlack.class, "pannelBlack", 15), // Black Panel Edgeless #15
-    pannelWhite(true, ItemBlockpannelWhite.class, "pannelWhite", 15), // White Panel Edgeless #15
-    pannelExtra(true, ItemBlockpannelExtra.class, "pannelExtra", 4),
-    rustBeam(true, ItemBlockrustBeam.class, "rustBeam", 5),
-    labwallDark(true, ItemBlocklabwallDark.class, "labwallDark", 3),
-    labwallLight(true, ItemBlocklabwallLight.class, "labwallLight", 3),
+    metalSiding(true, BaseItemBlock.class, "Metal Siding", 15), // Vertical
+    metalSiding2(true, BaseItemBlock.class, "Metal Siding2", 15), // Horizontal
+    pannelBlack(true, BaseItemBlock.class, "pannelBlack", 15), // Black Panel Edgeless #15
+    pannelWhite(true, BaseItemBlock.class, "pannelWhite", 15), // White Panel Edgeless #15
+    pannelExtra(true, BaseItemBlock.class, "pannelExtra", 4),
+    rustBeam(true, BaseItemBlock.class, "rustBeam", 5),
+    labwallDark(true, BaseItemBlock.class, "labwallDark", 3),
+    labwallLight(true, BaseItemBlock.class, "labwallLight", 3),
     wornVent(false, null, "WornVent1"),
     wornVent2(false, null, "WornVent2"),
     scaffold(false, null, "Scaffold"),
     scaffold2(false, null, "Scaffold2"),
     classicMetals(false, null, "ClassicIron"),
     classicGold(false, null, "ClassicGold"),
-    metalFencing(true, ItemBlockMetalFencing.class, "metalFencing", -1),
+    metalFencing(true, BaseItemBlock.class, "metalFencing", -1),
     //endregion Metals
 
     //region Hell
@@ -335,20 +335,17 @@ public enum BlockIDs
     xmasLights1_top_white(false, null, "XmasLights1_top_white"),
     xmasLights1_bottom_white(false, null, "XmasLights1_bottom_white"),
     xmasLights1_top_rainbow(false, null, "XmasLights1_top_rainbow"),
-    xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),
-
-    ;
-
+    xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),;
 
     public Block block;
-    public boolean hasItemBlock;
-    public Class itemBlockClass;
-    public String blockName;
+    public final boolean hasItemBlock;
+    public final Class itemBlockClass;
+    public final String blockName;
     /** MaxMetaData for Multipart
      * -1 Disables the use of Multipart on the block
      * 0 Enabled the use of multipart on the block and will allow for only the base block to use Multipart
      */
-    public byte MaxMetadata;
+    public final byte MaxMetadata;
 
     /**
      * Construct a BlockID that has metaData
@@ -357,7 +354,8 @@ public enum BlockIDs
      * @param blockName name of the block
      * @param maxMetadata how many blocks with the same baseID should be generated for Forge Multipart
      */
-    BlockIDs(boolean hasItemBlock, Class<? extends ItemBlock> itemBlockClass, String blockName, int maxMetadata) {
+    BlockIDs(boolean hasItemBlock, Class<? extends ItemBlock> itemBlockClass, String blockName, int maxMetadata)
+    {
         this.hasItemBlock = hasItemBlock;
         this.itemBlockClass = itemBlockClass;
         this.blockName = blockName;
@@ -375,5 +373,15 @@ public enum BlockIDs
         this.itemBlockClass = itemBlockClass;
         this.blockName = blockName;
         this.MaxMetadata = 0;
+    }
+
+    public static <T extends Enum<?>> T searchEnum(Class<T> enumeration,
+                                                   String search) {
+        for (T each : enumeration.getEnumConstants()) {
+            if (each.name().compareToIgnoreCase(search) == 0) {
+                return each;
+            }
+        }
+        return null;
     }
 }

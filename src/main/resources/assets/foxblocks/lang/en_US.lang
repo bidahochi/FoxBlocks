@@ -22,9 +22,20 @@ tile.Dirt_4.name=4tress Dirt
 tile.CreamCityClay.name=Cream City Clay
 
 <!-- ## CONCRETE ## -->
-tile.Raw Concrete.name=Raw Concrete
-tile.Layered Concrete.name=Layered Concrete
-tile.Smoothcrete.name=Smooth-Crete
+tile.Concrete_0.name=Raw Concrete
+tile.Concrete_0_Stair.name=Raw Concrete Stairs
+tile.Concrete_Slab_0.name=Raw Concrete Slab
+
+tile.Layered Concrete_0.name=Layered Concrete
+<!-- Block -->
+tile.Smoothcrete_0.name=Smooth-Crete
+
+tile.Smoothcrete_0_Stair.name=Smooth-Crete Stairs
+
+<!-- Slab -->
+tile.Smoothcrete_Slab_0.name=Smooth-Crete
+
+<!-- Block -->
 tile.concreteBrick_0.name=Blu Team Concrete Brick
 tile.concreteBrick_1.name=Red Team Concrete Brick
 tile.concreteBrick_2.name=Blu Team Trimmed Concrete Brick
@@ -32,11 +43,44 @@ tile.concreteBrick_3.name=Red Team Trimmed Concrete Brick
 tile.concreteBrick_4.name=Stacked Concrete Brick
 tile.concreteBrick_5.name=Blu Team Stacked Concrete Brick
 tile.concreteBrick_6.name=Red Team Stacked Concrete Brick
+
+tile.concreteBrick_0_Stair.name=Blu Team Concrete Brick Stairs
+tile.concreteBrick_1_Stair.name=Red Team Concrete Brick Stairs
+tile.concreteBrick_2_Stair.name=Blu Team Trimmed Concrete Brick Stairs
+tile.concreteBrick_3_Stair.name=Red Team Trimmed Concrete Brick Stairs
+tile.concreteBrick_4_Stair.name=Stacked Concrete Brick Stairs
+tile.concreteBrick_5_Stair.name=Blu Team Stacked Concrete Brick Stairs
+tile.concreteBrick_6_Stair.name=Red Team Stacked Concrete Brick Stairs
+<!-- Slab -->
+tile.concreteBrick_Slab_0.name=Blu Team Concrete Brick Slab
+tile.concreteBrick_Slab_1.name=Red Team Concrete Brick Slab
+tile.concreteBrick_Slab_2.name=Blu Team Trimmed Concrete Brick Slab
+tile.concreteBrick_Slab_3.name=Red Team Trimmed Concrete Brick Slab
+tile.concreteBrick_Slab_4.name=Stacked Concrete Brick Slab
+tile.concreteBrick_Slab_5.name=Blu Team Stacked Concrete Brick Slab
+tile.concreteBrick_Slab_6.name=Red Team Stacked Concrete Brick Slab
+
+<!-- Block -->
 tile.concreteFloor_0.name=Tan Concrete Flooring
 tile.concreteFloor_1.name=Rough Concrete Flooring
 tile.concreteFloor_2.name=Red Concrete Flooring
 tile.concreteFloor_3.name=Blu Concrete Flooring
 tile.concreteFloor_4.name=Stale Grey Concrete Flooring
+
+tile.concreteFloor_0_Stair.name=Tan Concrete Flooring Stairs
+tile.concreteFloor_1_Stair.name=Rough Concrete Flooring Stairs
+tile.concreteFloor_2_Stair.name=Red Concrete Flooring Stairs
+tile.concreteFloor_3_Stair.name=Blu Concrete Flooring Stairs
+tile.concreteFloor_4_Stair.name=Stale Grey Concrete Flooring Stairs
+<!-- Slab -->
+tile.concreteFloor_Slab_0.name=Tan Concrete Flooring Slab
+tile.concreteFloor_Slab_1.name=Rough Concrete Flooring Slab
+tile.concreteFloor_Slab_2.name=Red Concrete Flooring Slab
+tile.concreteFloor_Slab_3.name=Blu Concrete Flooring Slab
+tile.concreteFloor_Slab_4.name=Stale Grey Concrete Flooring Slab
+
+
+<!-- Block -->
 tile.plasteredConcrete_0.name=Plain Wall Plaster
 tile.plasteredConcrete_1.name=Blu Wall Plaster
 tile.plasteredConcrete_2.name=Thick Blu Trim Wall Plaster
@@ -46,6 +90,27 @@ tile.plasteredConcrete_5.name=Thick Red Trim Wall Plaster
 tile.plasteredConcrete_6.name=Thin Red Wall Plaster
 tile.plasteredConcrete_7.name=Burgundy Wall Plaster
 tile.plasteredConcrete_8.name=Sad Lame Greyish Wall Plaster
+<!-- Stairs -->
+tile.plasteredConcrete_0_Stair.name=Plain Wall Plaster Stairs
+tile.plasteredConcrete_1_Stair.name=Blu Wall Plaster Stairs
+tile.plasteredConcrete_2_Stair.name=Thick Blu Trim Wall Plaster Stairs
+tile.plasteredConcrete_3_Stair.name=Thin Blu Trim Wall Plaster Stairs
+tile.plasteredConcrete_4_Stair.name=Red Wall Plaster Stairs
+tile.plasteredConcrete_5_Stair.name=Thick Red Trim Wall Plaster Stairs
+tile.plasteredConcrete_6_Stair.name=Thin Red Wall Plaster Stairs
+tile.plasteredConcrete_7_Stair.name=Burgundy Wall Plaster Stairs
+tile.plasteredConcrete_8_Stair.name=Sad Lame Greyish Wall Plaster Stairs
+<!-- Slab -->
+tile.plasteredConcrete_Slab_0.name=Plain Wall Plaster Slab
+tile.plasteredConcrete_Slab_1.name=Blu Wall Plaster Slab
+tile.plasteredConcrete_Slab_2.name=Thick Blu Trim Wall Plaster Slab
+tile.plasteredConcrete_Slab_3.name=Thin Blu Trim Wall Plaster Slab
+tile.plasteredConcrete_Slab_4.name=Red Wall Plaster Slab
+tile.plasteredConcrete_Slab_5.name=Thick Red Trim Wall Plaster Slab
+tile.plasteredConcrete_Slab_6.name=Thin Red Wall Plaster Slab
+tile.plasteredConcrete_Slab_7.name=Burgundy Wall Plaster Slab
+tile.plasteredConcrete_2_Slab_0.name=Sad Lame Greyish Wall Plaster Slab
+
 
 <!-- ## STONES ## -->
 tile.Soapstone.name=Raw Soapstone
@@ -54,15 +119,31 @@ tile.Soapstone Deco_1.name=Large Soapstone Bricks
 tile.Soapstone Deco_2.name=Smooth(er) Soapstone
 tile.Soapstone Deco_3.name=Coarse Soapstone
 tile.Soapstone Deco_4.name=Smooth(est) Soapstone
+
+tile.Soapstone Deco_0_Stair.name=Soapstone Bricks Stairs
+tile.Soapstone Deco_1_Stair.name=Large Soapstone Bricks Stairs
+tile.Soapstone Deco_2_Stair.name=Smooth(er) Soapstone Stairs
+tile.Soapstone Deco_3_Stair.name=Coarse Soapstone Stairs
+tile.Soapstone Deco_4_Stair.name=Smooth(est) Soapstone Stairs
+
+tile.Soapstone Deco_Slab_0.name=Soapstone Bricks Slab
+tile.Soapstone Deco_Slab_1.name=Large Soapstone Bricks Slab
+tile.Soapstone Deco_Slab_2.name=Smooth(er) Soapstone Slab
+tile.Soapstone Deco_Slab_3.name=Coarse Soapstone Slab
+tile.Soapstone Deco_Slab_4.name=Smooth(est) Soapstone Slab
+
 tile.Magmatic Soapstone.name= Magmatic Soapstone
 tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
 tile.Redrock.name=Redrock
 
-tile.JolietLimestoneRaw.name=Niagaran Dolomite (Joliet Limestone)
+tile.jolietlimestoneraw.name=Niagaran Dolomite (Joliet Limestone)
 tile.limestone.name=Lower Pennsylvanian Limestone
 
 <!-- ## BRICKS ## -->
-tile.fireBrick.name=Firebrick Block
+tile.fireBrick_0.name=Firebrick Block
+tile.fireBrick_0_Stair.name=Firebrick Block Stairs
+tile.fireBrick_Slab_0.name=Firebrick Block Slab
+
 tile.mortarBrick_0.name=Mortar Brick (Brown)
 tile.mortarBrick_1.name=Mortar Brick (Grey 1)
 tile.mortarBrick_2.name=Mortar Brick (Grey 2)
@@ -79,6 +160,41 @@ tile.mortarBrick_12.name=Mortar Brick (White)
 tile.mortarBrick_13.name=Mortar Brick (Pinkish)
 tile.mortarBrick_14.name=Mortar Brick (Orange)
 tile.mortarBrick_15.name=Mortar Brick (Long Orange)
+
+tile.mortarBrick_0_Stair.name=Mortar Brick Stairs (Brown)
+tile.mortarBrick_1_Stair.name=Mortar Brick Stairs (Grey 1)
+tile.mortarBrick_2_Stair.name=Mortar Brick Stairs (Grey 2)
+tile.mortarBrick_3_Stair.name=Mortar Brick Stairs (Seamless Brown)
+tile.mortarBrick_4_Stair.name=Mortar Brick Stairs (Seamless Grey)
+tile.mortarBrick_5_Stair.name=Mortar Brick Stairs (Seamless Cream)
+tile.mortarBrick_6_Stair.name=Mortar Brick Stairs (Bright Mixed)
+tile.mortarBrick_7_Stair.name=Mortar Brick Stairs (Dark Mixed)
+tile.mortarBrick_8_Stair.name=Mortar Brick Stairs (Greyscale Mixed)
+tile.mortarBrick_9_Stair.name=Mortar Brick Stairs (Deep Red-Brown)
+tile.mortarBrick_10_Stair.name=Mortar Brick Stairs (Dark Red)
+tile.mortarBrick_11_Stair.name=Mortar Brick Stairs (Grey 3)
+tile.mortarBrick_12_Stair.name=Mortar Brick Stairs (White)
+tile.mortarBrick_13_Stair.name=Mortar Brick Stairs (Pinkish)
+tile.mortarBrick_14_Stair.name=Mortar Brick Stairs (Orange)
+tile.mortarBrick_15_Stair.name=Mortar Brick Stairs (Long Orange)
+
+tile.mortarBrick_Slab_0.name=Mortar Brick Slab (Brown)
+tile.mortarBrick_Slab_1.name=Mortar Brick Slab (Grey 1)
+tile.mortarBrick_Slab_2.name=Mortar Brick Slab (Grey 2)
+tile.mortarBrick_Slab_3.name=Mortar Brick Slab (Seamless Brown)
+tile.mortarBrick_Slab_4.name=Mortar Brick Slab (Seamless Grey)
+tile.mortarBrick_Slab_5.name=Mortar Brick Slab (Seamless Cream)
+tile.mortarBrick_Slab_6.name=Mortar Brick Slab (Bright Mixed)
+tile.mortarBrick_Slab_7.name=Mortar Brick Slab (Dark Mixed)
+tile.mortarBrick_2_Slab_0.name=Mortar Brick Slab (Greyscale Mixed)
+tile.mortarBrick_2_Slab_1.name=Mortar Brick Slab (Deep Red-Brown)
+tile.mortarBrick_2_Slab_2.name=Mortar Brick Slab (Dark Red)
+tile.mortarBrick_2_Slab_3.name=Mortar Brick Slab (Grey 3)
+tile.mortarBrick_2_Slab_4.name=Mortar Brick Slab (White)
+tile.mortarBrick_2_Slab_5.name=Mortar Brick Slab (Pinkish)
+tile.mortarBrick_2_Slab_6.name=Mortar Brick Slab (Orange)
+tile.mortarBrick_2_Slab_7.name=Mortar Brick Slab (Long Orange)
+
 tile.mortarBrick2_0.name=Mortar Brick (Tan)
 tile.mortarBrick2_1.name=Mortar Brick (Rough Tan)
 tile.mortarBrick2_2.name=Mortar Brick (Pale)
@@ -87,22 +203,83 @@ tile.mortarBrick2_4.name=Mortar Brick (Red Mixed)
 tile.mortarBrick2_5.name=Mortar Brick (Rough Red Mixed)
 tile.mortarBrick2_6.name=Mortar Brick (Red)
 tile.mortarBrick2_7.name=Mortar Brick (Rough Red)
-tile.CreamCity_0.name=Cream City Bricks
-tile.CreamCity_1.name=Dirty Cream City Bricks
-tile.CreamCity_2.name=Polluted Cream City Bricks
-tile.JolietLimestone_0.name=Joliet Limestone Bricks
-tile.JolietLimestone_1.name=Irregular Joliet Limestone Bricks
-tile.JolietLimestone_2.name=Large Joliet Limestone Bricks
-tile.JolietLimestone_3.name=Large Joliet Limestone Bricks (Mossy)
-tile.JolietLimestone_4.name=Large Joliet Limestone Bricks (Weathered)
+
+tile.mortarBrick2_0_Stair.name=Mortar Brick Stairs (Tan)
+tile.mortarBrick2_1_Stair.name=Mortar Brick Stairs (Rough Tan)
+tile.mortarBrick2_2_Stair.name=Mortar Brick Stairs (Pale)
+tile.mortarBrick2_3_Stair.name=Mortar Brick Stairs (Rough Pale)
+tile.mortarBrick2_4_Stair.name=Mortar Brick Stairs (Red Mixed)
+tile.mortarBrick2_5_Stair.name=Mortar Brick Stairs (Rough Red Mixed
+tile.mortarBrick2_6_Stair.name=Mortar Brick Stairs (Red)
+tile.mortarBrick2_7_Stair.name=Mortar Brick Stairs (Rough Red)
+
+tile.mortarBrick2_Slab_0.name=Mortar Brick (Tan)
+tile.mortarBrick2_Slab_1.name=Mortar Brick (Rough Tan)
+tile.mortarBrick2_Slab_2.name=Mortar Brick (Pale)
+tile.mortarBrick2_Slab_3.name=Mortar Brick (Rough Pale)
+tile.mortarBrick2_Slab_4.name=Mortar Brick (Red Mixed)
+tile.mortarBrick2_Slab_5.name=Mortar Brick (Rough Red Mixed)
+tile.mortarBrick2_Slab_6.name=Mortar Brick (Red)
+tile.mortarBrick2_Slab_7.name=Mortar Brick (Rough Red)
+
+tile.creamcity_0.name=Cream City Bricks
+tile.creamcity_1.name=Dirty Cream City Bricks
+tile.creamcity_2.name=Polluted Cream City Bricks
+
+tile.creamcity_0_Stair.name=Cream City Bricks Stairs
+tile.creamcity_1_Stair.name=Dirty Cream City Bricks Stairs
+tile.creamcity_2_Stair.name=Polluted Cream City Bricks Stairs
+
+tile.creamcity_Slab_0.name=Cream City Bricks Slab
+tile.creamcity_Slab_1.name=Dirty Cream City Bricks Slab
+tile.creamcity_Slab_2.name=Polluted Cream City Bricks Slab
+
+tile.jolietlimestone_0.name=Joliet Limestone Bricks
+tile.jolietlimestone_1.name=Irregular Joliet Limestone Bricks
+tile.jolietlimestone_2.name=Large Joliet Limestone Bricks
+tile.jolietlimestone_3.name=Large Joliet Limestone Bricks (Mossy)
+tile.jolietlimestone_4.name=Large Joliet Limestone Bricks (Weathered)
+
+tile.jolietlimestone_0_Stair.name=Joliet Limestone Bricks Stairs
+tile.jolietlimestone_1_Stair.name=Irregular Joliet Limestone Bricks Stairs
+tile.jolietlimestone_2_Stair.name=Large Joliet Limestone Bricks Stairs
+tile.jolietlimestone_3_Stair.name=Large Joliet Limestone Bricks Stairs (Mossy)
+tile.jolietlimestone_4_Stair.name=Large Joliet Limestone Bricks Stairs (Weathered)
+
+tile.jolietlimestone_Slab_0.name=Joliet Limestone Bricks Slab
+tile.jolietlimestone_Slab_1.name=Irregular Joliet Limestone Bricks Slab
+tile.jolietlimestone_Slab_2.name=Large Joliet Limestone Bricks Slab
+tile.jolietlimestone_Slab_3.name=Large Joliet Limestone Bricks Slab (Mossy)
+tile.jolietlimestone_Slab_4.name=Large Joliet Limestone Bricks Slab (Weathered)
+
 tile.RedrockDeco_0.name=Redrock Cobblestone
 tile.RedrockDeco_1.name=Redrock Bricks
 tile.RedrockDeco_2.name=Long Redrock Bricks
 tile.RedrockDeco_3.name=Large Redrock Bricks
 
-tile.cobaltBlock.name=Cobalt Block
-tile.cobaltBrick.name=Small Cobalt Bricks
-tile.largeCobaltBrick.name=Large Cobalt Bricks
+tile.RedrockDeco_0_Stair.name=Redrock Cobblestone Stairs
+tile.RedrockDeco_1_Stair.name=Redrock Bricks Stairs
+tile.RedrockDeco_2_Stair.name=Long Redrock Bricks Stairs
+tile.RedrockDeco_3_Stair.name=Large Redrock Bricks Stairs
+
+tile.RedrockDeco_Slab_0.name=Redrock Cobblestone Slab
+tile.RedrockDeco_Slab_1.name=Redrock Bricks Slab
+tile.RedrockDeco_Slab_2.name=Long Redrock Bricks Slab
+tile.RedrockDeco_Slab_3.name=Large Redrock Bricks Slab
+
+tile.cobaltBlock_0.name=Cobalt Block
+tile.cobaltBlock_0_Stair.name=Cobalt Block Stairs
+tile.cobaltBlock_Slab_0.name=Cobalt Block Slab
+
+tile.cobaltBrick_0.name=Small Cobalt Bricks
+tile.cobaltBrick_0_Stair.name=Small Cobalt Bricks Stairs
+tile.cobaltBrick_Slab_0.name=Small Cobalt Bricks Slab
+
+tile.largeCobaltBrick_0.name=Large Cobalt Bricks
+tile.largeCobaltBrick_0_Stair.name=Large Cobalt Bricks Stairs
+tile.largeCobaltBrick_Slab_0.name=Large Cobalt Bricks
+
+<!-- Block -->
 tile.cobaltPanel_0.name=Horizontal Cobalt Panel
 tile.cobaltPanel_1.name=Vertical Cobalt Panel
 tile.cobaltPanel_2.name=Cross Cobalt Panel
@@ -119,6 +296,44 @@ tile.cobaltPanel_12.name=Corner Cobalt Panel 2
 tile.cobaltPanel_13.name=Corner Cobalt Panel 3
 tile.cobaltPanel_14.name=Corner Cobalt Panel 4
 tile.cobaltPanel_15.name=Boxed-In Cobalt Panel
+
+<!-- Stairs -->
+tile.cobaltPanel_0_Stair.name=Horizontal Cobalt Panel Stairs
+tile.cobaltPanel_1_Stair.name=Vertical Cobalt Panel Stairs
+tile.cobaltPanel_2_Stair.name=Cross Cobalt Panel Stairs
+tile.cobaltPanel_3_Stair.name=T Cobalt Panel 1 Stairs
+tile.cobaltPanel_4_Stair.name=T Cobalt Panel 2 Stairs
+tile.cobaltPanel_5_Stair.name=T Cobalt Panel 3 Stairs
+tile.cobaltPanel_6_Stair.name=T Cobalt Panel 4 Stairs
+tile.cobaltPanel_7_Stair.name=Edge Cobalt Panel 1 Stairs
+tile.cobaltPanel_8_Stair.name=Edge Cobalt Panel 2 Stairs
+tile.cobaltPanel_9_Stair.name=Edge Cobalt Panel 3 Stairs
+tile.cobaltPanel_10_Stair.name=Edge Cobalt Panel 4 Stairs
+tile.cobaltPanel_11_Stair.name=Corner Cobalt Panel 1 Stairs
+tile.cobaltPanel_12_Stair.name=Corner Cobalt Panel 2 Stairs
+tile.cobaltPanel_13_Stair.name=Corner Cobalt Panel 3 Stairs
+tile.cobaltPanel_14_Stair.name=Corner Cobalt Panel 4 Stairs
+tile.cobaltPanel_15_Stair.name=Boxed-In Cobalt Panel Stairs
+
+<!-- Slab -->
+tile.cobaltPanel_Slab_0.name=Horizontal Cobalt Panel Slab
+tile.cobaltPanel_Slab_1.name=Vertical Cobalt Panel Slab
+tile.cobaltPanel_Slab_2.name=Cross Cobalt Panel Slab
+tile.cobaltPanel_Slab_3.name=T Cobalt Panel 1 Slab
+tile.cobaltPanel_Slab_4.name=T Cobalt Panel 2 Slab
+tile.cobaltPanel_Slab_5.name=T Cobalt Panel 3 Slab
+tile.cobaltPanel_Slab_6.name=T Cobalt Panel 4 Slab
+tile.cobaltPanel_Slab_7.name=Edge Cobalt Panel 1 Slab
+tile.cobaltPanel_2_Slab_0.name=Edge Cobalt Panel 2 Slab
+tile.cobaltPanel_2_Slab_1.name=Edge Cobalt Panel 3 Slab
+tile.cobaltPanel_2_Slab_2.name=Edge Cobalt Panel 4 Slab
+tile.cobaltPanel_2_Slab_3.name=Corner Cobalt Panel 1 Slab
+tile.cobaltPanel_2_Slab_4.name=Corner Cobalt Panel 2 Slab
+tile.cobaltPanel_2_Slab_5.name=Corner Cobalt Panel 3 Slab
+tile.cobaltPanel_2_Slab_6.name=Corner Cobalt Panel 4 Slab
+tile.cobaltPanel_2_Slab_7.name=Boxed-In Cobalt Panel Slab
+
+<!-- Block -->
 tile.cobaltPanel2_0.name=End Cobalt Panel 1
 tile.cobaltPanel2_1.name=End Cobalt Panel 2
 tile.cobaltPanel2_2.name=End Cobalt Panel 3
@@ -127,7 +342,26 @@ tile.cobaltPanel2_4.name=Double Horizontal Cobalt Panel
 tile.cobaltPanel2_5.name=Double Vertical Cobalt Panel
 tile.cobaltPanel2_6.name=Borderless Cobalt Panel
 
+<!-- Stairs -->
+tile.cobaltPanel2_0_Stair.name=End Cobalt Panel 1 Stair
+tile.cobaltPanel2_1_Stair.name=End Cobalt Panel 2 Stair
+tile.cobaltPanel2_2_Stair.name=End Cobalt Panel 3 Stair
+tile.cobaltPanel2_3_Stair.name=End Cobalt Panel 4 Stair
+tile.cobaltPanel2_4_Stair.name=Double Horizontal Cobalt Panel Stair
+tile.cobaltPanel2_5_Stair.name=Double Vertical Cobalt Panel Stair
+tile.cobaltPanel2_6_Stair.name=Borderless Cobalt Panel Stair
+
+<!-- Slab -->
+tile.cobaltPanel2_Slab_0.name=End Cobalt Panel 1 Slab
+tile.cobaltPanel2_Slab_1.name=End Cobalt Panel 2 Slab
+tile.cobaltPanel2_Slab_2.name=End Cobalt Panel 3 Slab
+tile.cobaltPanel2_Slab_3.name=End Cobalt Panel 4 Slab
+tile.cobaltPanel2_Slab_4.name=Double Horizontal Cobalt Panel Slab
+tile.cobaltPanel2_Slab_5.name=Double Vertical Cobalt Panel Slab
+tile.cobaltPanel2_Slab_6.name=Borderless Cobalt Panel Slab
+
 <!-- ## TILES ## -->
+<!-- Block -->
 tile.tile4_0.name=White 4x4 Tile
 tile.tile4_1.name=Light Gray 4x4 Tile
 tile.tile4_2.name=Gray 4x4 Tile
@@ -145,6 +379,43 @@ tile.tile4_13.name=Pink 4x4 Tile
 tile.tile4_14.name=Magenta 4x4 Tile
 tile.tile4_15.name=Purple 4x4 Tile
 
+<!-- Stairs -->
+tile.tile4_0_Stair.name=White 4x4 Tile Stairs
+tile.tile4_1_Stair.name=Light Gray 4x4 Tile Stairs
+tile.tile4_2_Stair.name=Gray 4x4 Tile Stairs
+tile.tile4_3_Stair.name=Black 4x4 Tile Stairs
+tile.tile4_4_Stair.name=Brown 4x4 Tile Stairs
+tile.tile4_5_Stair.name=Red 4x4 Tile Stairs
+tile.tile4_6_Stair.name=Orange 4x4 Tile Stairs
+tile.tile4_7_Stair.name=Yellow 4x4 Tile Stairs
+tile.tile4_8_Stair.name=Lime 4x4 Tile Stairs
+tile.tile4_9_Stair.name=Green 4x4 Tile Stairs
+tile.tile4_10_Stair.name=Light Blue 4x4 Tile Stairs
+tile.tile4_11_Stair.name=Blue 4x4 Tile Stairs
+tile.tile4_12_Stair.name=Cyan 4x4 Tile Stairs
+tile.tile4_13_Stair.name=Pink 4x4 Tile Stairs
+tile.tile4_14_Stair.name=Magenta 4x4 Tile Stairs
+tile.tile4_15_Stair.name=Purple 4x4 Tile Stairs
+
+<!-- Slab -->
+tile.tile4_Slab_0.name=White 4x4 Tile Slab
+tile.tile4_Slab_1.name=Light Gray 4x4 Tile Slab
+tile.tile4_Slab_2.name=Gray 4x4 Tile Slab
+tile.tile4_Slab_3.name=Black 4x4 Tile Slab
+tile.tile4_Slab_4.name=Brown 4x4 Tile Slab
+tile.tile4_Slab_5.name=Red 4x4 Tile Slab
+tile.tile4_Slab_6.name=Orange 4x4 Tile Slab
+tile.tile4_Slab_7.name=Yellow 4x4 Tile Slab
+tile.tile4_2_Slab_0.name=Lime 4x4 Tile Slab
+tile.tile4_2_Slab_1.name=Green 4x4 Tile Slab
+tile.tile4_2_Slab_2.name=Light Blue 4x4 Tile Slab
+tile.tile4_2_Slab_3.name=Blue 4x4 Tile Slab
+tile.tile4_2_Slab_4.name=Cyan 4x4 Tile Slab
+tile.tile4_2_Slab_5.name=Pink 4x4 Tile Slab
+tile.tile4_2_Slab_6.name=Magenta 4x4 Tile Slab
+tile.tile4_2_Slab_7.name=Purple 4x4 Tile Slab
+
+<!-- Block -->
 tile.Tile 2x2_0.name=Bone White 2x2 Tile
 tile.Tile 2x2_1.name=Generic Gray 2x2 Tile
 tile.Tile 2x2_2.name=Darkerish Gray 2x2 Tile
@@ -162,6 +433,43 @@ tile.Tile 2x2_13.name=Pink Gum 2x2 Tile
 tile.Tile 2x2_14.name=Magenta Lavender 2x2 Tile
 tile.Tile 2x2_15.name=Thanos Chin Purple 2x2 Tile
 
+<!-- Stairs -->
+tile.Tile 2x2_0_Stair.name=Bone White 2x2 Tile Stairs
+tile.Tile 2x2_1_Stair.name=Generic Gray 2x2 Tile Stairs
+tile.Tile 2x2_2_Stair.name=Darkerish Gray 2x2 Tile Stairs
+tile.Tile 2x2_3_Stair.name=Ink Black 2x2 Tile Stairs
+tile.Tile 2x2_4_Stair.name=Mud Brown 2x2 Tile Stairs
+tile.Tile 2x2_5_Stair.name=Deep Red 2x2 Tile Stairs
+tile.Tile 2x2_6_Stair.name=Dark Orange 2x2 Tile Stairs
+tile.Tile 2x2_7_Stair.name=Armor Yellow 2x2 Tile Stairs
+tile.Tile 2x2_8_Stair.name=Bitter Taste of Defeat and Lime 2x2 Tile Stairs
+tile.Tile 2x2_9_Stair.name=Dense Forest Green 2x2 Tile Stairs
+tile.Tile 2x2_10_Stair.name=Icey Light Blue 2x2 Tile Stairs
+tile.Tile 2x2_11_Stair.name=A Nice Solid Blue 2x2 Tile Stairs
+tile.Tile 2x2_12_Stair.name=Calming Cyan 2x2 Tile Stairs
+tile.Tile 2x2_13_Stair.name=Pink Gum 2x2 Tile Stairs
+tile.Tile 2x2_14_Stair.name=Magenta Lavender 2x2 Tile Stairs
+tile.Tile 2x2_15_Stair.name=Thanos Chin Purple 2x2 Tile Stairs
+
+<!-- Slab -->
+tile.Tile 2x2_Slab_0.name=Bone White 2x2 Tile Slab
+tile.Tile 2x2_Slab_1.name=Generic Gray 2x2 Tile Slab
+tile.Tile 2x2_Slab_2.name=Darkerish Gray 2x2 Tile Slab
+tile.Tile 2x2_Slab_3.name=Ink Black 2x2 Tile Slab
+tile.Tile 2x2_Slab_4.name=Mud Brown 2x2 Tile Slab
+tile.Tile 2x2_Slab_5.name=Deep Red 2x2 Tile Slab
+tile.Tile 2x2_Slab_6.name=Dark Orange 2x2 Tile Slab
+tile.Tile 2x2_Slab_7.name=Armor Yellow 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_0.name=Bitter Taste of Defeat and Lime 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_1.name=Dense Forest Green 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_2.name=Icey Light Blue 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_3.name=A Nice Solid Blue 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_4.name=Calming Cyan 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_5.name=Pink Gum 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_6.name=Magenta Lavender 2x2 Tile Slab
+tile.Tile 2x2_2_Slab_7.name=Thanos Chin Purple 2x2 Tile Slab
+
+<!-- Block -->
 tile.Tile 2x2 Smooth_0.name=White 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_1.name=Light Gray 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_2.name=Gray 2x2 Bubble Tile
@@ -179,29 +487,118 @@ tile.Tile 2x2 Smooth_13.name=Pink 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_14.name=Magenta 2x2 Bubble Tile
 tile.Tile 2x2 Smooth_15.name=Purple 2x2 Bubble Tile
 
-tile.diamond Tile_0.name=White Diamond Tile
-tile.diamond Tile_1.name=Gray Diamond Tile
-tile.diamond Tile_2.name=Dark Gray Diamond Tile
-tile.diamond Tile_3.name=Black Diamond Tile
-tile.diamond Tile_4.name=Brown Diamond Tile
-tile.diamond Tile_5.name=Red Diamond Tile
-tile.diamond Tile_6.name=Orange Diamond Tile
-tile.diamond Tile_7.name=Yellow Diamond Tile
-tile.diamond Tile_8.name=Lime Diamond Tile
-tile.diamond Tile_9.name=Green Diamond Tile
-tile.diamond Tile_10.name=Light Blue Diamond Tile
-tile.diamond Tile_11.name=Blue Diamond Tile
-tile.diamond Tile_12.name=Cyan Diamond Tile
-tile.diamond Tile_13.name=Pink Diamond Tile
-tile.diamond Tile_14.name=Magenta Diamond Tile
-tile.diamond Tile_15.name=Purple Diamond Tile
+<!-- Stairs -->
+tile.Tile 2x2 Smooth_0_Stair.name=White 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_1_Stair.name=Light Gray 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_2_Stair.name=Gray 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_3_Stair.name=Black 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_4_Stair.name=Brown 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_5_Stair.name=Red 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_6_Stair.name=Orange 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_7_Stair.name=Yellow 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_8_Stair.name=Lime 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_9_Stair.name=Green 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_10_Stair.name=Light Blue 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_11_Stair.name=Cyan 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_12_Stair.name=Blue 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_13_Stair.name=Pink 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_14_Stair.name=Magenta 2x2 Bubble Tile Stairs
+tile.Tile 2x2 Smooth_15_Stair.name=Purple 2x2 Bubble Tile Stairs
 
+<!-- Slab -->
+tile.Tile 2x2 Smooth_Slab_0.name=White 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_1.name=Light Gray 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_2.name=Gray 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_3.name=Black 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_4.name=Brown 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_5.name=Red 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_6.name=Orange 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_Slab_7.name=Yellow 2x2 Bubble Tile SlabSlab
+tile.Tile 2x2 Smooth_2_Slab_0.name=Lime 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_1.name=Green 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_2.name=Light Blue 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_3.name=Cyan 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_4.name=Blue 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_5.name=Pink 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_6.name=Magenta 2x2 Bubble Tile Slab
+tile.Tile 2x2 Smooth_2_Slab_7.name=Purple 2x2 Bubble Tile Slab
+
+<!-- Block -->
+tile.Diamond Tile_0.name=White Diamond Tile
+tile.Diamond Tile_1.name=Gray Diamond Tile
+tile.Diamond Tile_2.name=Dark Gray Diamond Tile
+tile.Diamond Tile_3.name=Black Diamond Tile
+tile.Diamond Tile_4.name=Brown Diamond Tile
+tile.Diamond Tile_5.name=Red Diamond Tile
+tile.Diamond Tile_6.name=Orange Diamond Tile
+tile.Diamond Tile_7.name=Yellow Diamond Tile
+tile.Diamond Tile_8.name=Lime Diamond Tile
+tile.Diamond Tile_9.name=Green Diamond Tile
+tile.Diamond Tile_10.name=Light Blue Diamond Tile
+tile.Diamond Tile_11.name=Blue Diamond Tile
+tile.Diamond Tile_12.name=Cyan Diamond Tile
+tile.Diamond Tile_13.name=Pink Diamond Tile
+tile.Diamond Tile_14.name=Magenta Diamond Tile
+tile.Diamond Tile_15.name=Purple Diamond Tile
+
+<!-- Stairs -->
+tile.Diamond Tile_0_Stair.name=White Diamond Tile Stairs
+tile.Diamond Tile_1_Stair.name=Gray Diamond Tile Stairs
+tile.Diamond Tile_2_Stair.name=Dark Gray Diamond Tile Stairs
+tile.Diamond Tile_3_Stair.name=Black Diamond Tile Stairs
+tile.Diamond Tile_4_Stair.name=Brown Diamond Tile Stairs
+tile.Diamond Tile_5_Stair.name=Red Diamond Tile Stairs
+tile.Diamond Tile_6_Stair.name=Orange Diamond Tile Stairs
+tile.Diamond Tile_7_Stair.name=Yellow Diamond Tile Stairs
+tile.Diamond Tile_8_Stair.name=Lime Diamond Tile Stairs
+tile.Diamond Tile_9_Stair.name=Green Diamond Tile Stairs
+tile.Diamond Tile_10_Stair.name=Light Blue Diamond Til Stairse
+tile.Diamond Tile_11_Stair.name=Blue Diamond Tile Stairs
+tile.Diamond Tile_12_Stair.name=Cyan Diamond Tile Stairs
+tile.Diamond Tile_13_Stair.name=Pink Diamond Tile Stairs
+tile.Diamond Tile_14_Stair.name=Magenta Diamond Tile Stairs
+tile.Diamond Tile_15_Stair.name=Purple Diamond Tile Stairs
+
+<!-- Slab -->
+tile.Diamond Tile_Slab_0.name=White Diamond Tile Slab
+tile.Diamond Tile_Slab_1.name=Gray Diamond Tile Slab
+tile.Diamond Tile_Slab_2.name=Dark Gray Diamond Tile Slab
+tile.Diamond Tile_Slab_3.name=Black Diamond Tile Slab
+tile.Diamond Tile_Slab_4.name=Brown Diamond Tile Slab
+tile.Diamond Tile_Slab_5.name=Red Diamond Tile Slab
+tile.Diamond Tile_Slab_6.name=Orange Diamond Tile Slab
+tile.Diamond Tile_Slab_7.name=Yellow Diamond Tile Slab
+tile.Diamond Tile_2_Slab_0.name=Lime Diamond Tile Slab
+tile.Diamond Tile_2_Slab_1.name=Green Diamond Tile Slab
+tile.Diamond Tile_2_Slab_2.name=Light Blue Diamond Tile Slab
+tile.Diamond Tile_2_Slab_3.name=Blue Diamond Tile Slab
+tile.Diamond Tile_2_Slab_4.name=Cyan Diamond Tile Slab
+tile.Diamond Tile_2_Slab_5.name=Pink Diamond Tile Slab
+tile.Diamond Tile_2_Slab_6.name=Magenta Diamond Tile Slab
+tile.Diamond Tile_2_Slab_7.name=Purple Diamond Tile Slab
+
+<!-- Block -->
 tile.SubTile_0.name=Sub-Terrain Tile (2x3, Borderless)
 tile.SubTile_1.name=Sub-Terrain Tile (2x3, Bordered)
 tile.SubTile_2.name=Sub-Terrain Tile (Brick)
 tile.SubTile_3.name=Sub-Terrain Tile (2x2 Dark)
 tile.SubTile_4.name=Sub-Terrain Tile (2x2 Light)
 
+<!-- Stairs -->
+tile.SubTile_0_Stair.name=Sub-Terrain Tile Stairs (2x3, Borderless)
+tile.SubTile_1_Stair.name=Sub-Terrain Tile Stairs (2x3, Bordered)
+tile.SubTile_2_Stair.name=Sub-Terrain Tile Stairs (Brick)
+tile.SubTile_3_Stair.name=Sub-Terrain Tile Stairs (2x2 Dark)
+tile.SubTile_4_Stair.name=Sub-Terrain Tile Stairs (2x2 Light)
+
+<!-- Slab -->
+tile.SubTile_Slab_0.name=Sub-Terrain Tile Slab (2x3, Borderless)
+tile.SubTile_Slab_1.name=Sub-Terrain Tile Slab (2x3, Bordered)
+tile.SubTile_Slab_2.name=Sub-Terrain Tile Slab (Brick)
+tile.SubTile_Slab_3.name=Sub-Terrain Tile Slab (2x2 Dark)
+tile.SubTile_Slab_4.name=Sub-Terrain Tile Slab (2x2 Light)
+
+<!-- Block -->
 tile.TerrocottaTiles_0.name=White Terrocotta Tiles
 tile.TerrocottaTiles_1.name=Light Gray Terrocotta Tiles
 tile.TerrocottaTiles_2.name=Gray Terrocotta Tiles
@@ -218,6 +615,42 @@ tile.TerrocottaTiles_12.name=Cyan Terrocotta Tiles
 tile.TerrocottaTiles_13.name=Pink Terrocotta Tiles
 tile.TerrocottaTiles_14.name=Magenta Terrocotta Tiles
 tile.TerrocottaTiles_15.name=Purple Terrocotta Tiles
+
+<!-- Stairs -->
+tile.TerrocottaTiles_0_Stair.name=White Terrocotta Tiles Stairs
+tile.TerrocottaTiles_1_Stair.name=Light Gray Terrocotta Tiles Stairs
+tile.TerrocottaTiles_2_Stair.name=Gray Terrocotta Tiles Stairs
+tile.TerrocottaTiles_3_Stair.name=Black Terrocotta Tiles Stairs
+tile.TerrocottaTiles_4_Stair.name=Brown Terrocotta Tiles Stairs
+tile.TerrocottaTiles_5_Stair.name=Red Terrocotta Tiles Stairs
+tile.TerrocottaTiles_6_Stair.name=Orange Terrocotta Tiles Stairs
+tile.TerrocottaTiles_7_Stair.name=Yellow Terrocotta Tiles Stairs
+tile.TerrocottaTiles_8_Stair.name=Lime Terrocotta Tiles Stairs
+tile.TerrocottaTiles_9_Stair.name=Green Terrocotta Tiles Stairs
+tile.TerrocottaTiles_10_Stair.name=Light Blue Terrocotta Tiles Stairs
+tile.TerrocottaTiles_11_Stair.name=Blue Terrocotta Tiles Stairs
+tile.TerrocottaTiles_12_Stair.name=Cyan Terrocotta Tiles Stairs
+tile.TerrocottaTiles_13_Stair.name=Pink Terrocotta Tiles Stairs
+tile.TerrocottaTiles_14_Stair.name=Magenta Terrocotta Tiles Stairs
+tile.TerrocottaTiles_15_Stair.name=Purple Terrocotta Tiles Stairs
+
+<!-- Slab -->
+tile.TerrocottaTiles_Slab_0.name=White Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_1.name=Light Gray Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_2.name=Gray Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_3.name=Black Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_4.name=Brown Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_5.name=Red Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_6.name=Orange Terrocotta Tiles Slab
+tile.TerrocottaTiles_Slab_7.name=Yellow Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_0.name=Lime Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_1.name=Green Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_2.name=Light Blue Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_3.name=Blue Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_4.name=Cyan Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_5.name=Pink Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_6.name=Magenta Terrocotta Tiles Slab
+tile.TerrocottaTiles_2_Slab_7.name=Purple Terrocotta Tiles Slab
 
 <!-- ## FUN ## -->
 tile.Although.name=Although...
@@ -237,10 +670,15 @@ tile.fofblock.name=The FoxBlock
 tile.pingascube.name=Robotnik Pingascube
 tile.invisiblock.name=Invisiblock
 
-tile.Blue Block.name=Blue Screen Block
-tile.Green Block.name=Green Screen Block
+tile.Blue_0.name=Blue Screen Block
+tile.Blue_0_Stair.name=Blue Screen Stairs
+tile.Blue_Slab_0.name=Blue Screen Slab
+tile.Green_0.name=Green Screen Block
+tile.Green_0_Stair.name=Green Screen Stairs
+tile.Green_Slab_0.name=Green Screen Slab
 
 <!-- ## LUMBER ## -->
+<!-- Block -->
 tile.widePlank_0.name=Vertical Wide White Planking
 tile.widePlank_1.name=Vertical Wide Light Grey Planking
 tile.widePlank_2.name=Vertical Wide Dark Grey Planking
@@ -258,6 +696,43 @@ tile.widePlank_13.name=Vertical Wide Pink Planking
 tile.widePlank_14.name=Vertical Wide Magenta Planking
 tile.widePlank_15.name=Vertical Wide Purple Planking
 
+<!-- Stairs -->
+tile.widePlank_0_Stair.name=Vertical Wide White Planking Stairs
+tile.widePlank_1_Stair.name=Vertical Wide Light Grey Planking Stairs
+tile.widePlank_2_Stair.name=Vertical Wide Dark Grey Planking Stairs
+tile.widePlank_3_Stair.name=Vertical Wide Black Planking Stairs
+tile.widePlank_4_Stair.name=Vertical Wide Brown Planking Stairs
+tile.widePlank_5_Stair.name=Vertical Wide Red Planking Stairs
+tile.widePlank_6_Stair.name=Vertical Wide Orange Planking Stairs
+tile.widePlank_7_Stair.name=Vertical Wide Yellow Planking Stairs
+tile.widePlank_8_Stair.name=Vertical Wide Lime Planking Stairs
+tile.widePlank_9_Stair.name=Vertical Wide Green Planking Stairs
+tile.widePlank_10_Stair.name=Vertical Wide Light Blue Planking Stairs
+tile.widePlank_11_Stair.name=Vertical Wide Blue Planking Stairs
+tile.widePlank_12_Stair.name=Vertical Wide Cyan Planking Stairs
+tile.widePlank_13_Stair.name=Vertical Wide Pink Planking Stairs
+tile.widePlank_14_Stair.name=Vertical Wide Magenta Planking Stairs
+tile.widePlank_15_Stair.name=Vertical Wide Purple Planking Stairs
+
+<!-- Slab -->
+tile.widePlank_Slab_0.name=Vertical Wide White Planking Slab
+tile.widePlank_Slab_1.name=Vertical Wide Light Grey Planking Slab
+tile.widePlank_Slab_2.name=Vertical Wide Dark Grey Planking Slab
+tile.widePlank_Slab_3.name=Vertical Wide Black Planking Slab
+tile.widePlank_Slab_4.name=Vertical Wide Brown Planking Slab
+tile.widePlank_Slab_5.name=Vertical Wide Red Planking Slab
+tile.widePlank_Slab_6.name=Vertical Wide Orange Planking Slab
+tile.widePlank_Slab_7.name=Vertical Wide Yellow Planking Slab
+tile.widePlank_2_Slab_0.name=Vertical Wide Lime Planking Slab
+tile.widePlank_2_Slab_1.name=Vertical Wide Green Planking Slab
+tile.widePlank_2_Slab_2.name=Vertical Wide Light Blue Planking Slab
+tile.widePlank_2_Slab_3.name=Vertical Wide Blue Planking Slab
+tile.widePlank_2_Slab_4.name=Vertical Wide Cyan Planking Slab
+tile.widePlank_2_Slab_5.name=Vertical Wide Pink Planking Slab
+tile.widePlank_2_Slab_6.name=Vertical Wide Magenta Planking Slab
+tile.widePlank_2_Slab_7.name=Vertical Wide Purple Planking Slab
+
+<!-- Block -->
 tile.widePlank2_0.name=Horizontal Wide White Planking
 tile.widePlank2_1.name=Horizontal Wide Light Grey Planking
 tile.widePlank2_2.name=Horizontal Wide Dark Grey Planking
@@ -275,6 +750,43 @@ tile.widePlank2_13.name=Horizontal Wide Pink Planking
 tile.widePlank2_14.name=Horizontal Wide Magenta Planking
 tile.widePlank2_15.name=Horizontal Wide Purple Planking
 
+<!-- Stairs -->
+tile.widePlank2_0_Stair.name=Horizontal Wide White Planking Stairs
+tile.widePlank2_1_Stair.name=Horizontal Wide Light Grey Planking Stairs
+tile.widePlank2_2_Stair.name=Horizontal Wide Dark Grey Planking Stairs
+tile.widePlank2_3_Stair.name=Horizontal Wide Black Planking Stairs
+tile.widePlank2_4_Stair.name=Horizontal Wide Brown Planking Stairs
+tile.widePlank2_5_Stair.name=Horizontal Wide Red Planking Stairs
+tile.widePlank2_6_Stair.name=Horizontal Wide Orange Planking Stairs
+tile.widePlank2_7_Stair.name=Horizontal Wide Yellow Planking Stairs
+tile.widePlank2_8_Stair.name=Horizontal Wide Lime Planking Stairs
+tile.widePlank2_9_Stair.name=Horizontal Wide Green Planking Stairs
+tile.widePlank2_10_Stair.name=Horizontal Wide Light Blue Planking Stairs
+tile.widePlank2_11_Stair.name=Horizontal Wide Blue Planking Stairs
+tile.widePlank2_12_Stair.name=Horizontal Wide Cyan Planking Stairs
+tile.widePlank2_13_Stair.name=Horizontal Wide Pink Planking Stairs
+tile.widePlank2_14_Stair.name=Horizontal Wide Magenta Planking Stairs
+tile.widePlank2_15_Stair.name=Horizontal Wide Purple Planking Stairs
+
+<!-- Slab -->
+tile.widePlank2_Slab_0.name=Horizontal Wide White Planking Slab
+tile.widePlank2_Slab_1.name=Horizontal Wide Light Grey Planking Slab
+tile.widePlank2_Slab_2.name=Horizontal Wide Dark Grey Planking Slab
+tile.widePlank2_Slab_3.name=Horizontal Wide Black Planking Slab
+tile.widePlank2_Slab_4.name=Horizontal Wide Brown Planking Slab
+tile.widePlank2_Slab_5.name=Horizontal Wide Red Planking Slab
+tile.widePlank2_Slab_6.name=Horizontal Wide Orange Planking Slab
+tile.widePlank2_Slab_7.name=Horizontal Wide Yellow Planking Slab
+tile.widePlank2_2_Slab_0.name=Horizontal Wide Lime Planking Slab
+tile.widePlank2_2_Slab_1.name=Horizontal Wide Green Planking Slab
+tile.widePlank2_2_Slab_2.name=Horizontal Wide Light Blue Planking Slab
+tile.widePlank2_2_Slab_3.name=Horizontal Wide Blue Planking Slab
+tile.widePlank2_2_Slab_4.name=Horizontal Wide Cyan Planking Slab
+tile.widePlank2_2_Slab_5.name=Horizontal Wide Pink Planking Slab
+tile.widePlank2_2_Slab_6.name=Horizontal Wide Magenta Planking Slab
+tile.widePlank2_2_Slab_7.name=Horizontal Wide Purple Planking Slab
+
+<!-- Block -->
 tile.widePlank3_0.name=Vertical Wide Oak Planks
 tile.widePlank3_1.name=Vertical Wide Birch Planks
 tile.widePlank3_2.name=Vertical Wide Spruce Planks
@@ -288,9 +800,45 @@ tile.widePlank3_9.name=Horizontal Wide Jungle Planks
 tile.widePlank3_10.name=Horizontal Wide Dark Oak Planks
 tile.widePlank3_11.name=Horizontal Wide Acacia Planks
 
-tile.Amshak_0.name=Grey Planks of the Amshack
-tile.Amshak_1.name=Blue Striped Planks of the Amshack
-tile.Amshak_2.name=Red Striped Planks of the Amshack
+<!-- Stairs -->
+tile.widePlank3_0_Stair.name=Vertical Wide Oak Planks Stairs
+tile.widePlank3_1_Stair.name=Vertical Wide Birch Planks Stairs
+tile.widePlank3_2_Stair.name=Vertical Wide Spruce Planks Stairs
+tile.widePlank3_3_Stair.name=Vertical Wide Jungle Planks Stairs
+tile.widePlank3_4_Stair.name=Vertical Wide Dark Oak Planks Stairs
+tile.widePlank3_5_Stair.name=Vertical Wide Acacia Planks Stairs
+tile.widePlank3_6_Stair.name=Horizontal Wide Oak Planks Stairs
+tile.widePlank3_7_Stair.name=Horizontal Wide Birch Planks Stairs
+tile.widePlank3_8_Stair.name=Horizontal Wide Spruce Planks Stairs
+tile.widePlank3_9_Stair.name=Horizontal Wide Jungle Planks Stairs
+tile.widePlank3_10_Stair.name=Horizontal Wide Dark Oak Planks Stairs
+tile.widePlank3_11_Stair.name=Horizontal Wide Acacia Planks Stairs
+
+<!-- Slab -->
+tile.widePlank3_Slab_0.name=Vertical Wide Oak Planks Slab
+tile.widePlank3_Slab_1.name=Vertical Wide Birch Planks Slab
+tile.widePlank3_Slab_2.name=Vertical Wide Spruce Planks Slab
+tile.widePlank3_Slab_3.name=Vertical Wide Jungle Planks Slab
+tile.widePlank3_Slab_4.name=Vertical Wide Dark Oak Planks Slab
+tile.widePlank3_Slab_5.name=Vertical Wide Acacia Planks Slab
+tile.widePlank3_Slab_6.name=Horizontal Wide Oak Planks Slab
+tile.widePlank3_Slab_7.name=Horizontal Wide Birch Planks Slab
+tile.widePlank3_2_Slab_0.name=Horizontal Wide Spruce Planks Slab
+tile.widePlank3_2_Slab_1.name=Horizontal Wide Jungle Planks Slab
+tile.widePlank3_2_Slab_2.name=Horizontal Wide Dark Oak Planks Slab
+tile.widePlank3_2_Slab_3.name=Horizontal Wide Acacia Planks Slab
+
+tile.amshak_0.name=Grey Planks of the Amshack
+tile.amshak_1.name=Blue Striped Planks of the Amshack
+tile.amshak_2.name=Red Striped Planks of the Amshack
+
+tile.amshak_0_Stair.name=Grey Stairs Planks of the Amshack
+tile.amshak_1_Stair.name=Blue Striped Stairs Planks of the Amshack
+tile.amshak_2_Stair.name=Red Striped Stairs Planks of the Amshack
+
+tile.amshak_Slab_0.name=Grey Slab Planks of the Amshack
+tile.amshak_Slab_1.name=Blue Striped Slab Planks of the Amshack
+tile.amshak_Slab_2.name=Red Striped Slab Planks of the Amshack
 
 tile.logs_0.name=Douglas Fir Log
 tile.logs_1.name=Sitka Spruce Log
@@ -308,7 +856,26 @@ tile.plywood_5.name=Acacia Plywood
 tile.plywood_6.name=Pine Plywood
 tile.plywood_7.name=Redwood Plywood
 
-tile.woodchips.name=Block of Woodchips
+tile.plywood_0_Stair.name=Oak Plywood Stairs
+tile.plywood_1_Stair.name=Birch Plywood Stairs
+tile.plywood_2_Stair.name=Spruce Plywood Stairs
+tile.plywood_3_Stair.name=Jungle Plywood Stairs
+tile.plywood_4_Stair.name=Dark Oak Plywood Stairs
+tile.plywood_5_Stair.name=Acacia Plywood Stairs
+tile.plywood_6_Stair.name=Pine Plywood Stairs
+tile.plywood_7_Stair.name=Redwood Plywood Stairs
+
+tile.plywood_Slab_0.name=Oak Plywood Slab
+tile.plywood_Slab_1.name=Birch Plywood Slab
+tile.plywood_Slab_2.name=Spruce Plywood Slab
+tile.plywood_Slab_3.name=Jungle Plywood Slab
+tile.plywood_Slab_4.name=Dark Oak Plywood Slab
+tile.plywood_Slab_5.name=Acacia Plywood Slab
+tile.plywood_Slab_6.name=Pine Plywood Slab
+tile.plywood_Slab_7.name=Redwood Plywood Slab
+
+tile.woodchips_0.name=Block of Woodchips
+
 tile.WrappedWood1.name=Wrapped Lumber (Blank Cover)
 tile.WrappedWood2.name=Wrapped Lumber (Canfor Cover)
 tile.WrappedWood3.name=Wrapped Lumber (Tolko Cover)
@@ -328,23 +895,60 @@ tile.UnWrappedWood8.name=Unwrapped Lumber (Redwood)
 tile.UnWrappedWood9.name=Unwrapped Lumber (Fir)
 
 <!-- ## OTHER BUILDING MATS ## -->
-tile.dryWall_0.name=White Drywall
-tile.dryWall_1.name=Light Gray Drywall
-tile.dryWall_2.name=Gray Drywall
-tile.dryWall_3.name=Black Drywall
-tile.dryWall_4.name=Brown Drywall
-tile.dryWall_5.name=Red Drywall
-tile.dryWall_6.name=Orange Drywall
-tile.dryWall_7.name=Yellow Drywall
-tile.dryWall_8.name=Lime Drywall
-tile.dryWall_9.name=Green Drywall
-tile.dryWall_10.name=Light Blue Drywall
-tile.dryWall_11.name=Blue Drywall
-tile.dryWall_12.name=Cyan Drywall
-tile.dryWall_13.name=Pink Drywall
-tile.dryWall_14.name=Magenta Drywall
-tile.dryWall_15.name=Purple Drywall
-tile.unfinishedDrywall.name=Unfinished Drywall
+tile.Dry Wall_0.name=White Drywall
+tile.Dry Wall_1.name=Light Gray Drywall
+tile.Dry Wall_2.name=Gray Drywall
+tile.Dry Wall_3.name=Black Drywall
+tile.Dry Wall_4.name=Brown Drywall
+tile.Dry Wall_5.name=Red Drywall
+tile.Dry Wall_6.name=Orange Drywall
+tile.Dry Wall_7.name=Yellow Drywall
+tile.Dry Wall_8.name=Lime Drywall
+tile.Dry Wall_9.name=Green Drywall
+tile.Dry Wall_10.name=Light Blue Drywall
+tile.Dry Wall_11.name=Blue Drywall
+tile.Dry Wall_12.name=Cyan Drywall
+tile.Dry Wall_13.name=Pink Drywall
+tile.Dry Wall_14.name=Magenta Drywall
+tile.Dry Wall_15.name=Purple Drywall
+
+tile.Dry Wall_0_Stair.name=White Drywall Stairs
+tile.Dry Wall_1_Stair.name=Light Gray Drywall Stairs
+tile.Dry Wall_2_Stair.name=Gray Drywall Stairs
+tile.Dry Wall_3_Stair.name=Black Drywall Stairs
+tile.Dry Wall_4_Stair.name=Brown Drywall Stairs
+tile.Dry Wall_5_Stair.name=Red Drywall Stairs
+tile.Dry Wall_6_Stair.name=Orange Drywall Stairs
+tile.Dry Wall_7_Stair.name=Yellow Drywall Stairs
+tile.Dry Wall_8_Stair.name=Lime Drywall Stairs
+tile.Dry Wall_9_Stair.name=Green Drywall Stairs
+tile.Dry Wall_10_Stair.name=Light Blue Drywall Stairs
+tile.Dry Wall_11_Stair.name=Blue Drywall Stairs
+tile.Dry Wall_12_Stair.name=Cyan Drywall Stairs
+tile.Dry Wall_13_Stair.name=Pink Drywall Stairs
+tile.Dry Wall_14_Stair.name=Magenta Drywall Stairs
+tile.Dry Wall_15_Stair.name=Purple Drywall Stairs
+
+tile.Dry Wall_Slab_0.name=White Drywall Slab
+tile.Dry Wall_Slab_1.name=Light Gray Drywall Slab
+tile.Dry Wall_Slab_2.name=Gray Drywall Slab
+tile.Dry Wall_Slab_3.name=Black Drywall Slab
+tile.Dry Wall_Slab_4.name=Brown Drywall Slab
+tile.Dry Wall_Slab_5.name=Red Drywall Slab
+tile.Dry Wall_Slab_6.name=Orange Drywall Slab
+tile.Dry Wall_Slab_7.name=Yellow Drywall Slab
+tile.Dry Wall_2_Slab_0.name=Lime Drywall Slab
+tile.Dry Wall_2_Slab_1.name=Green Drywall Slab
+tile.Dry Wall_2_Slab_2.name=Light Blue Drywall Slab
+tile.Dry Wall_2_Slab_3.name=Blue Drywall Slab
+tile.Dry Wall_2_Slab_4.name=Cyan Drywall Slab
+tile.Dry Wall_2_Slab_5.name=Pink Drywall Slab
+tile.Dry Wall_2_Slab_6.name=Magenta Drywall Slab
+tile.Dry Wall_2_Slab_7.name=Purple Drywall Slab
+
+tile.unfinishedDrywall_0.name=Unfinished Drywall
+tile.unfinishedDrywall_0_Stair.name=Unfinished Drywall Stairs
+tile.unfinishedDrywall_Slab_0.name=Unfinished Drywall Slab
 
 tile.wallPaper_0.name=Cherry Wallpaper
 tile.wallPaper_1.name=Broccoli Wallpaper
@@ -363,13 +967,63 @@ tile.wallPaper_13.name=Seafoam Column Wallpaper
 tile.wallPaper_14.name=Wavy Wallpaper
 tile.wallPaper_15.name=Ender Wallpaper
 
-tile.fiberglass_0.name=Vertical Contained Fiberglass
-tile.fiberglass_1.name=Horizontal Contained Fiberglass
-tile.fiberglass_2.name=Fiberglass Insulation
+tile.wallPaper_0_Stair.name=Cherry Wallpaper Stairs
+tile.wallPaper_1_Stair.name=Broccoli Wallpaper Stairs
+tile.wallPaper_2_Stair.name=Apple Wallpaper Stairs
+tile.wallPaper_3_Stair.name=Leopard Print Wallpaper Stairs
+tile.wallPaper_4_Stair.name=Alpine Wallpaper Stairs
+tile.wallPaper_5_Stair.name=Speckled Wallpaper Stairs
+tile.wallPaper_6_Stair.name=Red Rivet Wallpaper Stairs
+tile.wallPaper_7_Stair.name=Yellow Stripe Wallpaper Stairs
+tile.wallPaper_8_Stair.name=Green Weave Wallpaper Stairs
+tile.wallPaper_9_Stair.name=Blue Dot Wallpaper Stairs
+tile.wallPaper_10_Stair.name=Pastel Stripe Wallpaper Stairs
+tile.wallPaper_11_Stair.name=Gray Square Wallpaper Stairs
+tile.wallPaper_12_Stair.name=Jarate Wallpaper Stairs
+tile.wallPaper_13_Stair.name=Seafoam Column Wallpaper Stairs
+tile.wallPaper_14_Stair.name=Wavy Wallpaper Stairs
+tile.wallPaper_15_Stair.name=Ender Wallpaper Stairs
+
+tile.wallPaper_Slab_0.name=Cherry Wallpaper Slab
+tile.wallPaper_Slab_1.name=Broccoli Wallpaper Slab
+tile.wallPaper_Slab_2.name=Apple Wallpaper Slab
+tile.wallPaper_Slab_3.name=Leopard Print Wallpaper Slab
+tile.wallPaper_Slab_4.name=Alpine Wallpaper Slab
+tile.wallPaper_Slab_5.name=Speckled Wallpaper Slab
+tile.wallPaper_Slab_6.name=Red Rivet Wallpaper Slab
+tile.wallPaper_Slab_7.name=Yellow Stripe Wallpaper Slab
+tile.wallPaper_2_Slab_0.name=Green Weave Wallpaper Slab
+tile.wallPaper_2_Slab_1.name=Blue Dot Wallpaper Slab
+tile.wallPaper_2_Slab_2.name=Pastel Stripe WallpaperSlab
+tile.wallPaper_2_Slab_3.name=Gray Square Wallpaper Slab
+tile.wallPaper_2_Slab_4.name=Jarate Wallpaper Slab
+tile.wallPaper_2_Slab_5.name=Seafoam Column Wallpaper Slab
+tile.wallPaper_2_Slab_6.name=Wavy Wallpaper Slab
+tile.wallPaper_2_Slab_7.name=Ender Wallpaper Slab
+
+tile.Fiber Glass_0.name=Vertical Contained Fiberglass
+tile.Fiber Glass_1.name=Horizontal Contained Fiberglass
+tile.Fiber Glass_2.name=Fiberglass Insulation
+
+tile.Fiber Glass_0_Stair.name=Vertical Contained Fiberglass Stairs
+tile.Fiber Glass_1_Stair.name=Horizontal Contained Fiberglass Stairs
+tile.Fiber Glass_2_Stair.name=Fiberglass Insulation Stairs
+
+tile.Fiber Glass_Slab_0.name=Vertical Contained Fiberglass Slab
+tile.Fiber Glass_Slab_1.name=Horizontal Contained Fiberglass Slab
+tile.Fiber Glass_Slab_2.name=Fiberglass Insulation Slab
 
 tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone
 tile.OriginStuff_2.name=Origin Brick
+
+tile.OriginStuff_0_Stair.name=Origin Cobblestone Stairs
+tile.OriginStuff_1_Stair.name=Origin Mossy Cobblestone Stairs
+tile.OriginStuff_2_Stair.name=Origin Brick Stairs
+
+tile.OriginStuff_Slab_0.name=Origin Cobblestone Slab
+tile.OriginStuff_Slab_1.name=Origin Mossy Cobblestone Slab
+tile.OriginStuff_Slab_2.name=Origin Brick Slab
 
 tile.ClassicWool_0.name=White Classic Wool
 tile.ClassicWool_1.name=Light Grey Classic Wool
@@ -413,6 +1067,36 @@ tile.tarmac_11.name=Red Tarmac Road Fullblock
 tile.tarmac_12.name=White Tarmac Road Fullblock
 tile.tarmac_13.name=Yellow Tarmac Road Fullblock
 
+tile.tarmac_0_Stair.name=Tarmac Road Stairs
+tile.tarmac_1_Stair.name=Fine Tarmac Road Stairs
+tile.tarmac_2_Stair.name=Dark Tarmac Road Stairs
+tile.tarmac_3_Stair.name=Light Tarmac Road Stairs
+tile.tarmac_4_Stair.name=Grey Concrete Road Stairs
+tile.tarmac_5_Stair.name=Pale Concrete Stairs
+tile.tarmac_6_Stair.name=Pale Tarmac Road Stairs
+tile.tarmac_7_Stair.name=Mud (Dry) Road Stairs
+tile.tarmac_8_Stair.name=Mud (Wet) Road Stairs
+tile.tarmac_9_Stair.name=Blue Tarmac Road Stairs
+tile.tarmac_10_Stair.name=Green Tarmac Road Stairs
+tile.tarmac_11_Stair.name=Red Tarmac Road Stairs
+tile.tarmac_12_Stair.name=White Tarmac Road Stairs
+tile.tarmac_13_Stair.name=Yellow Tarmac Road Stairs
+
+tile.tarmac_Slab_0.name=Tarmac Road Slab
+tile.tarmac_Slab_1.name=Fine Tarmac Road Slab
+tile.tarmac_Slab_2.name=Dark Tarmac Road Slab
+tile.tarmac_Slab_3.name=Light Tarmac Road Slab
+tile.tarmac_Slab_4.name=Grey Concrete Road Slab
+tile.tarmac_Slab_5.name=Pale Concrete Slab
+tile.tarmac_Slab_6.name=Pale Tarmac Road Slab
+tile.tarmac_Slab_7.name=Mud (Dry) Road Slab
+tile.tarmac_2_Slab_0.name=Mud (Wet) Road Slab
+tile.tarmac_2_Slab_1.name=Blue Tarmac Road Slab
+tile.tarmac_2_Slab_2.name=Green Tarmac Road Slab
+tile.tarmac_2_Slab_3.name=Red Tarmac Road Slab
+tile.tarmac_2_Slab_4.name=White Tarmac Road Slab
+tile.tarmac_2_Slab_5.name=Yellow Tarmac Road Slab
+
 tile.roadcover_dynamic_1x1_0.name=Dynamic 1x1 Roadcover
 tile.roadcover_dynamic_1x2_0.name=Dynamic 1x2 Roadcover
 tile.roadcover_dynamic_1x3_0.name=Dynamic 1x3 Roadcover
@@ -426,39 +1110,107 @@ tile.roadcover_tarmac_5.name=Pale Concrete Roadcover
 tile.roadcover_tarmac_6.name=Pale Tarmac Roadcover
 
 <!-- ## METALS ## -->
-tile.metalSiding_3.name=White Vertical Sheet Metal Siding
-tile.metalSiding_2.name=Light Grey Vertical Sheet Metal Siding
-tile.metalSiding_1.name=Grey Vertical Sheet Metal Siding
-tile.metalSiding_0.name=Black Vertical Sheet Metal Siding
-tile.metalSiding_4.name=Brown Vertical Sheet Metal Siding
-tile.metalSiding_5.name=Red Vertical Sheet Metal Siding
-tile.metalSiding_6.name=Orange Vertical Sheet Metal Siding
-tile.metalSiding_7.name=Yellow Vertical Sheet Metal Siding
-tile.metalSiding_8.name=Lime Vertical Sheet Metal Siding
-tile.metalSiding_9.name=Green Vertical Sheet Metal Siding
-tile.metalSiding_10.name=Light Blue Vertical Sheet Metal Siding
-tile.metalSiding_11.name=Blue Vertical Sheet Metal Siding
-tile.metalSiding_12.name=Cyan Vertical Sheet Metal Siding
-tile.metalSiding_13.name=Pink Vertical Sheet Metal Siding
-tile.metalSiding_14.name=Magenta Vertical Sheet Metal Siding
-tile.metalSiding_15.name=Purple Vertical Sheet Metal Siding
+tile.Metal Siding_0.name=Black Vertical Sheet Metal Siding
+tile.Metal Siding_1.name=Grey Vertical Sheet Metal Siding
+tile.Metal Siding_2.name=Light Grey Vertical Sheet Metal Siding
+tile.Metal Siding_3.name=White Vertical Sheet Metal Siding
+tile.Metal Siding_4.name=Brown Vertical Sheet Metal Siding
+tile.Metal Siding_5.name=Red Vertical Sheet Metal Siding
+tile.Metal Siding_6.name=Orange Vertical Sheet Metal Siding
+tile.Metal Siding_7.name=Yellow Vertical Sheet Metal Siding
+tile.Metal Siding_8.name=Lime Vertical Sheet Metal Siding
+tile.Metal Siding_9.name=Green Vertical Sheet Metal Siding
+tile.Metal Siding_10.name=Light Blue Vertical Sheet Metal Siding
+tile.Metal Siding_11.name=Blue Vertical Sheet Metal Siding
+tile.Metal Siding_12.name=Cyan Vertical Sheet Metal Siding
+tile.Metal Siding_13.name=Pink Vertical Sheet Metal Siding
+tile.Metal Siding_14.name=Magenta Vertical Sheet Metal Siding
+tile.Metal Siding_15.name=Purple Vertical Sheet Metal Siding
 
-tile.metalSiding2_3.name=White Horizontal Sheet Metal Siding
-tile.metalSiding2_2.name=Light Grey Horizontal Sheet Metal Siding
-tile.metalSiding2_1.name=Grey Horizontal Sheet Metal Siding
-tile.metalSiding2_0.name=Black Horizontal Sheet Metal Siding
-tile.metalSiding2_4.name=Brown Horizontal Sheet Metal Siding
-tile.metalSiding2_5.name=Red Horizontal Sheet Metal Siding
-tile.metalSiding2_6.name=Orange Horizontal Sheet Metal Siding
-tile.metalSiding2_7.name=Yellow Horizontal Sheet Metal Siding
-tile.metalSiding2_8.name=Lime Horizontal Sheet Metal Siding
-tile.metalSiding2_9.name=Green Horizontal Sheet Metal Siding
-tile.metalSiding2_10.name=Light Blue Horizontal Sheet Metal Siding
-tile.metalSiding2_11.name=Blue Horizontal Sheet Metal Siding
-tile.metalSiding2_12.name=Cyan Horizontal Sheet Metal Siding
-tile.metalSiding2_13.name=Pink Horizontal Sheet Metal Siding
-tile.metalSiding2_14.name=Magenta Horizontal Sheet Metal Siding
-tile.metalSiding2_15.name=Purple Horizontal Sheet Metal Siding
+tile.Metal Siding_0_Stair.name=Black Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_1_Stair.name=Grey Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_2_Stair.name=Light Grey Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_3_Stair.name=White Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_4_Stair.name=Brown Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_5_Stair.name=Red Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_6_Stair.name=Orange Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_7_Stair.name=Yellow Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_8_Stair.name=Lime Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_9_Stair.name=Green Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_10_Stair.name=Light Blue Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_11_Stair.name=Blue Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_12_Stair.name=Cyan Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_13_Stair.name=Pink Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_14_Stair.name=Magenta Vertical Sheet Metal Siding Stairs
+tile.Metal Siding_15_Stair.name=Purple Vertical Sheet Metal Siding Stairs
+
+tile.Metal Siding_Slab_0.name=Black Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_1.name=Grey Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_2.name=Light Grey Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_3.name=White Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_4.name=Brown Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_5.name=Red Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_6.name=Orange Vertical Sheet Metal Siding Slab
+tile.Metal Siding_Slab_7.name=Yellow Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_0.name=Lime Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_1.name=Green Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_2.name=Light Blue Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_3.name=Blue Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_4.name=Cyan Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_5.name=Pink Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_6.name=Magenta Vertical Sheet Metal Siding Slab
+tile.Metal Siding_2_Slab_7.name=Purple Vertical Sheet Metal Siding Slab
+
+tile.Metal Siding2_0.name=Black Horizontal Sheet Metal Siding
+tile.Metal Siding2_1.name=Grey Horizontal Sheet Metal Siding
+tile.Metal Siding2_2.name=Light Grey Horizontal Sheet Metal Siding
+tile.Metal Siding2_3.name=White Horizontal Sheet Metal Siding
+tile.Metal Siding2_4.name=Brown Horizontal Sheet Metal Siding
+tile.Metal Siding2_5.name=Red Horizontal Sheet Metal Siding
+tile.Metal Siding2_6.name=Orange Horizontal Sheet Metal Siding
+tile.Metal Siding2_7.name=Yellow Horizontal Sheet Metal Siding
+tile.Metal Siding2_8.name=Lime Horizontal Sheet Metal Siding
+tile.Metal Siding2_9.name=Green Horizontal Sheet Metal Siding
+tile.Metal Siding2_10.name=Light Blue Horizontal Sheet Metal Siding
+tile.Metal Siding2_11.name=Blue Horizontal Sheet Metal Siding
+tile.Metal Siding2_12.name=Cyan Horizontal Sheet Metal Siding
+tile.Metal Siding2_13.name=Pink Horizontal Sheet Metal Siding
+tile.Metal Siding2_14.name=Magenta Horizontal Sheet Metal Siding
+tile.Metal Siding2_15.name=Purple Horizontal Sheet Metal Siding
+
+tile.Metal Siding2_0_Stair.name=Black Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_1_Stair.name=Grey Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_2_Stair.name=Light Grey Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_3_Stair.name=White Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_4_Stair.name=Brown Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_5_Stair.name=Red Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_6_Stair.name=Orange Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_7_Stair.name=Yellow Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_8_Stair.name=Lime Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_9_Stair.name=Green Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_10_Stair.name=Light Blue Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_11_Stair.name=Blue Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_12_Stair.name=Cyan Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_13_Stair.name=Pink Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_14_Stair.name=Magenta Horizontal Sheet Metal Siding Stairs
+tile.Metal Siding2_15_Stair.name=Purple Horizontal Sheet Metal Siding Stairs
+
+tile.Metal Siding2_Slab_0.name=Black Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_1.name=Grey Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_2.name=Light Grey Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_3.name=White Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_4.name=Brown Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_5.name=Red Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_6.name=Orange Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_Slab_7.name=Yellow Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_0.name=Lime Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_1.name=Green Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_2.name=Light Blue Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_3.name=Blue Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_4.name=Cyan Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_5.name=Pink Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_6.name=Magenta Horizontal Sheet Metal Siding Slab
+tile.Metal Siding2_2_Slab_7.name=Purple Horizontal Sheet Metal Siding Slab
 
 tile.pannelBlack_0.name=Black Panel
 tile.pannelBlack_1.name=Black Panel Bottom
@@ -477,6 +1229,40 @@ tile.pannelBlack_13.name=Black Panel Right Bottom
 tile.pannelBlack_14.name=Black Panel Right Top
 tile.pannelBlack_15.name=Black Panel Edgeless
 
+tile.pannelBlack_0_Stair.name=Black Panel Stairs
+tile.pannelBlack_1_Stair.name=Black Panel Bottom Stairs
+tile.pannelBlack_2_Stair.name=Black Panel Top Stairs
+tile.pannelBlack_3_Stair.name=Black Panel Vertical Stairs
+tile.pannelBlack_4_Stair.name=Black Panel Vertical Left Stairs
+tile.pannelBlack_5_Stair.name=Black Panel Vertical Right Stairs
+tile.pannelBlack_6_Stair.name=Black Panel Horizontal Stairs
+tile.pannelBlack_7_Stair.name=Black Panel Horizontal Top Stairs
+tile.pannelBlack_8_Stair.name=Black Panel Horizontal Bottom Stairs
+tile.pannelBlack_9_Stair.name=Black Panel Left Stairs
+tile.pannelBlack_10_Stair.name=Black Panel Right Stairs
+tile.pannelBlack_11_Stair.name=Black Panel Left Bottom Stairs
+tile.pannelBlack_12_Stair.name=Black Panel Left Top Stairs
+tile.pannelBlack_13_Stair.name=Black Panel Right Bottom Stairs
+tile.pannelBlack_14_Stair.name=Black Panel Right Top Stairs
+tile.pannelBlack_15_Stair.name=Black Panel Edgeless Stairs
+
+tile.pannelBlack_Slab_0.name=Black Panel Slab
+tile.pannelBlack_Slab_1.name=Black Panel Bottom Slab
+tile.pannelBlack_Slab_2.name=Black Panel Top Slab
+tile.pannelBlack_Slab_3.name=Black Panel Vertical Slab
+tile.pannelBlack_Slab_4.name=Black Panel Vertical Left Slab
+tile.pannelBlack_Slab_5.name=Black Panel Vertical Right Slab
+tile.pannelBlack_Slab_6.name=Black Panel Horizontal Slab
+tile.pannelBlack_Slab_7.name=Black Panel Horizontal Top Slab
+tile.pannelBlack_2_Slab_0.name=Black Panel Horizontal Bottom Slab
+tile.pannelBlack_2_Slab_1.name=Black Panel Left Slab
+tile.pannelBlack_2_Slab_2.name=Black Panel Right Slab
+tile.pannelBlack_2_Slab_3.name=Black Panel Left Bottom Slab
+tile.pannelBlack_2_Slab_4.name=Black Panel Left Top Slab
+tile.pannelBlack_2_Slab_5.name=Black Panel Right Bottom Slab
+tile.pannelBlack_2_Slab_6.name=Black Panel Right Top Slab
+tile.pannelBlack_2_Slab_7.name=Black Panel Edgeless Slab
+
 tile.pannelWhite_0.name=White Panel
 tile.pannelWhite_1.name=White Panel Bottom
 tile.pannelWhite_2.name=White Panel Top
@@ -494,11 +1280,57 @@ tile.pannelWhite_13.name=White Panel Right Bottom
 tile.pannelWhite_14.name=White Panel Right Top
 tile.pannelWhite_15.name=White Panel Edgeless
 
+tile.pannelWhite_0_Stair.name=White Panel Stairs
+tile.pannelWhite_1_Stair.name=White Panel Bottom Stairs
+tile.pannelWhite_2_Stair.name=White Panel Top Stairs
+tile.pannelWhite_3_Stair.name=White Panel Vertical Stairs
+tile.pannelWhite_4_Stair.name=White Panel Vertical Left Stairs
+tile.pannelWhite_5_Stair.name=White Panel Vertical Right Stairs
+tile.pannelWhite_6_Stair.name=White Panel Horizontal Stairs
+tile.pannelWhite_7_Stair.name=White Panel Horizontal Top Stairs
+tile.pannelWhite_8_Stair.name=White Panel Horizontal Bottom Stairs
+tile.pannelWhite_9_Stair.name=White Panel Left Stairs
+tile.pannelWhite_10_Stair.name=White Panel Right Stairs
+tile.pannelWhite_11_Stair.name=White Panel Left Bottom Stairs
+tile.pannelWhite_12_Stair.name=White Panel Left Top Stairs
+tile.pannelWhite_13_Stair.name=White Panel Right Bottom Stairs
+tile.pannelWhite_14_Stair.name=White Panel Right Top Stairs
+tile.pannelWhite_15_Stair.name=White Panel Edgeless Stairs
+
+tile.pannelWhite_Slab_0.name=White Panel Slab
+tile.pannelWhite_Slab_1.name=White Panel Bottom Slab
+tile.pannelWhite_Slab_2.name=White Panel Top Slab
+tile.pannelWhite_Slab_3.name=White Panel Vertical Slab
+tile.pannelWhite_Slab_4.name=White Panel Vertical Left Slab
+tile.pannelWhite_Slab_5.name=White Panel Vertical Right Slab
+tile.pannelWhite_Slab_6.name=White Panel Horizontal Slab
+tile.pannelWhite_Slab_7.name=White Panel Horizontal Top Slab
+tile.pannelWhite_2_Slab_0.name=White Panel Horizontal Bottom Slab
+tile.pannelWhite_2_Slab_1.name=White Panel Left Slab
+tile.pannelWhite_2_Slab_2.name=White Panel Right Slab
+tile.pannelWhite_2_Slab_3.name=White Panel Left Bottom Slab
+tile.pannelWhite_2_Slab_4.name=White Panel Left Top Slab
+tile.pannelWhite_2_Slab_5.name=White Panel Right Bottom Slab
+tile.pannelWhite_2_Slab_6.name=White Panel Right Top Slab
+tile.pannelWhite_2_Slab_7.name=White Panel Edgeless Slab
+
 tile.pannelExtra_0.name=Black 2x2 Panel
 tile.pannelExtra_1.name=White 2x2 Panel
 tile.pannelExtra_2.name=Yellow Backpanel
 tile.pannelExtra_3.name=White Backpanel
 tile.pannelExtra_4.name=Reddish Backpanel
+
+tile.pannelExtra_0_Stair.name=Black 2x2 Panel Stairs
+tile.pannelExtra_1_Stair.name=White 2x2 Panel Stairs
+tile.pannelExtra_2_Stair.name=Yellow Backpanel Stairs
+tile.pannelExtra_3_Stair.name=White Backpanel Stairs
+tile.pannelExtra_4_Stair.name=Reddish Backpanel Stairs
+
+tile.pannelExtra_Slab_0.name=Black 2x2 Panel Slab
+tile.pannelExtra_Slab_1.name=White 2x2 Panel Slab
+tile.pannelExtra_Slab_2.name=Yellow Backpanel Slab
+tile.pannelExtra_Slab_3.name=White Backpanel Slab
+tile.pannelExtra_Slab_4.name=Reddish Backpanel Slab
 
 tile.rustBeam_0.name=Yellow Horizontal Rusty Beam
 tile.rustBeam_1.name=Yellow Vertical Rusty Beam
@@ -507,14 +1339,49 @@ tile.rustBeam_3.name=Blue Vertical Rusty Beam
 tile.rustBeam_4.name=Red Horizontal Rusty Beam
 tile.rustBeam_5.name=Red Vertical Rusty Beam
 
-tile.labwalllight_0.name=Light Labwall Tile
-tile.labwalllight_1.name=Light Labwall Double Tile
-tile.labwalllight_2.name=Light Labwall Tripple Tile
-tile.labwalllight_3.name=Light Labwall Sextuple Tile
-tile.labwalldark_0.name=Dark Labwall Tile
-tile.labwalldark_1.name=Dark Labwall Horizontal Framed Tile
-tile.labwalldark_2.name=Dark Labwall Vertical Framed Tile
-tile.labwalldark_3.name=Dark Labwall Half Tile
+tile.rustBeam_0_Stair.name=Yellow Horizontal Rusty Beam Stairs
+tile.rustBeam_1_Stair.name=Yellow Vertical Rusty Beam Stairs
+tile.rustBeam_2_Stair.name=Blue Horizontal Rusty Beam Stairs
+tile.rustBeam_3_Stair.name=Blue Vertical Rusty Beam Stairs
+tile.rustBeam_4_Stair.name=Red Horizontal Rusty Beam Stairs
+tile.rustBeam_5_Stair.name=Red Vertical Rusty Beam Stairs
+
+tile.rustBeam_Slab_0.name=Yellow Horizontal Rusty Beam Slab
+tile.rustBeam_Slab_1.name=Yellow Vertical Rusty Beam Slab
+tile.rustBeam_Slab_2.name=Blue Horizontal Rusty Beam Slab
+tile.rustBeam_Slab_3.name=Blue Vertical Rusty Beam Slab
+tile.rustBeam_Slab_4.name=Red Horizontal Rusty Beam Slab
+tile.rustBeam_Slab_5.name=Red Vertical Rusty Beam Slab
+
+tile.labwallLight_0.name=Light Labwall Tile
+tile.labwallLight_1.name=Light Labwall Double Tile
+tile.labwallLight_2.name=Light Labwall Tripple Tile
+tile.labwallLight_3.name=Light Labwall Sextuple Tile
+
+tile.labwallLight_0_Stair.name=Light Labwall Tile Stairs
+tile.labwallLight_1_Stair.name=Light Labwall Double Tile Stairs
+tile.labwallLight_2_Stair.name=Light Labwall Tripple Tile Stairs
+tile.labwallLight_3_Stair.name=Light Labwall Sextuple Tile Stairs
+
+tile.labwallLight_Slab_0.name=Light Labwall Tile Slab
+tile.labwallLight_Slab_1.name=Light Labwall Double Tile Slab
+tile.labwallLight_Slab_2.name=Light Labwall Tripple Tile Slab
+tile.labwallLight_Slab_3.name=Light Labwall Sextuple Tile Slab
+
+tile.labwallDark_0.name=Dark Labwall Tile
+tile.labwallDark_1.name=Dark Labwall Horizontal Framed Tile
+tile.labwallDark_2.name=Dark Labwall Vertical Framed Tile
+tile.labwallDark_3.name=Dark Labwall Half Tile
+
+tile.labwallDark_0_Stair.name=Dark Labwall Tile Stairs
+tile.labwallDark_1_Stair.name=Dark Labwall Horizontal Framed Tile Stairs
+tile.labwallDark_2_Stair.name=Dark Labwall Vertical Framed Tile Stairs
+tile.labwallDark_3_Stair.name=Dark Labwall Half Tile Stairs
+
+tile.labwallDark_Slab_0.name=Dark Labwall Tile Slab
+tile.labwallDark_Slab_1.name=Dark Labwall Horizontal Framed Tile Slab
+tile.labwallDark_Slab_2.name=Dark Labwall Vertical Framed Tile Slab
+tile.labwallDark_Slab_3.name=Dark Labwall Half Tile Slab
 
 tile.WornVent1.name=Worn Vent (Transparent)
 tile.WornVent2.name=Worn Vent

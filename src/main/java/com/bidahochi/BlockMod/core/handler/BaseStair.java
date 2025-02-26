@@ -7,6 +7,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
+@Deprecated
 public class BaseStair extends BlockStairs{
 
     public BaseStair(Block p_i45428_1_, int p_i45428_2_, String name, float hardness, float blockResistance , SoundType stepSound, String harvestTool, int harvestLevel, float lightValue, CreativeTabs creativeTabs) {
