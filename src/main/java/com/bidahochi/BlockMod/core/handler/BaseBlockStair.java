@@ -17,8 +17,9 @@ public class BaseBlockStair extends BlockStairs
     {
         super(block, metaData);
         ParentBlock = block;
+        Metadata = (byte) metaData;
         setCreativeTab(blockProperty.CreativeTab);
-        setBlockName(blockProperty.BlockName + "_Stair");
+        setBlockName(blockProperty.BlockName + "_" + Metadata + "_Stair");
         setHardness(blockProperty.BlockHardness);
         setBlockTextureName(blockProperty.TexturePath);
         setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
@@ -29,13 +30,7 @@ public class BaseBlockStair extends BlockStairs
         }
 
         this.useNeighborBrightness = true;
-        Metadata = (byte) metaData;
-    }
 
-    @Override
-    public String getUnlocalizedName()
-    {
-        return super.getUnlocalizedName() + "_" + Metadata;
     }
 
     @Override
