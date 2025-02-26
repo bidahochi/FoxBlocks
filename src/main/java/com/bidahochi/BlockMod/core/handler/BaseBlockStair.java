@@ -15,7 +15,7 @@ public class BaseBlockStair extends BlockStairs
 
     public BaseBlockStair(Block block, int metaData, BlockProperty blockProperty)
     {
-        super(block, metaData);
+        super(block, 3);
         ParentBlock = block;
         Metadata = (byte) metaData;
         setCreativeTab(blockProperty.CreativeTab);
@@ -28,9 +28,7 @@ public class BaseBlockStair extends BlockStairs
         {
             setStepSound(blockProperty.SoundType);
         }
-
         this.useNeighborBrightness = true;
-
     }
 
     @Override
