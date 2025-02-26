@@ -10,9 +10,4 @@ public class BaseItemStairBlock extends ItemBlockWithMetadata
     {
         super(block, block);
     }
-
-    public String getUnlocalizedName(ItemStack item)
-    {
-        return super.getUnlocalizedName() + "_" + item.getItemDamage();
-    }
 }

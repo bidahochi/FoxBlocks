@@ -869,6 +869,11 @@ public class BlockHandler {
                         GameRegistry.registerBlock(blockProperty.getSecondNewDoubleSlab(), com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab.class, blockProperty.BlockName + "_2_DoubleSlab");
                         GameRegistry.registerBlock(blockProperty.getSecondNewSingleSlab(), com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab.class, blockProperty.BlockName + "_2_Slab");
                     }
+
+                    for(int i = 0; i < blockProperty.TotalTextureCount; i++)
+                    {
+                        GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                    }
                 }
             }
         }

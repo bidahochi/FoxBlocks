@@ -4,18 +4,14 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
-import java.util.List;
 
 public class BaseBlockStair extends BlockStairs
 {
     Block ParentBlock;
     private boolean FirstBlockHasNoIndex = false;
-    public byte Metadata;
+    public final byte Metadata;
 
     public BaseBlockStair(Block block, int metaData, BlockProperty blockProperty)
     {
@@ -27,30 +23,24 @@ public class BaseBlockStair extends BlockStairs
         setBlockTextureName(blockProperty.TexturePath);
         setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
         setResistance(blockProperty.BlockResistance);
-        setStepSound(blockProperty.SoundType);
+        if (blockProperty.SoundType != null)
+        {
+            setStepSound(blockProperty.SoundType);
+        }
+
         this.useNeighborBrightness = true;
         Metadata = (byte) metaData;
     }
 
+    @Override
+    public String getUnlocalizedName()
+    {
+        return super.getUnlocalizedName() + "_" + Metadata;
+    }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
         return ParentBlock.getIcon(side, Metadata);
     }
-
-    public int damageDropped( int oldmeta)
-    {
-        return oldmeta;
-    }
-
-    /**
-     * returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
-     */
-    @SideOnly(Side.CLIENT)
-    public void getSubBlocks(Item item, CreativeTabs creativeTabs, List list)
-    {
-        list.add(new ItemStack(item, 1, Metadata));
-    }
-
 }
