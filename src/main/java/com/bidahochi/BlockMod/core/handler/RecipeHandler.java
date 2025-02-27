@@ -842,6 +842,19 @@ public class RecipeHandler {
                     }
                 }
 
+
+
+                for (int i = 0; i <= block.MaxMetadata; i++)
+                {
+                    Block blockStair = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName + "_" + i + "_Stair");
+                    if (blockStair == null)
+                    {
+                        blockStair = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName.replace(" ", "") + "_" + i + "_Stair");
+                    }
+
+
+                    GameRegistry.addShapedRecipe(new ItemStack(blockStair, 4, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block.block, 1, i));
+                }
             }
         }
 
