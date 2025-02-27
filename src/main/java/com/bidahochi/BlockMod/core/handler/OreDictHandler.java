@@ -35,7 +35,7 @@ public class OreDictHandler {
         OreDictionary.registerOre("oreEmerald", new ItemStack(BlockIDs.soapStoneEmerald.block));
         OreDictionary.registerOre("stone", new ItemStack(BlockIDs.soapStone.block));
         OreDictionary.registerOre("cropNetherWart", new ItemStack(BlockIDs.harieshHead.block));
-        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.rawConcrete.block));
+        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.Concrete.block));
         OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.layeredConcrete.block));
         OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.smoothCrete.block));
         OreDictionary.registerOre("gypsumDust", new ItemStack(ItemIDs.gypsumDust.item));
