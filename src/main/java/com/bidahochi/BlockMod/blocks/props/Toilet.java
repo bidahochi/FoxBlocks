@@ -1,9 +1,10 @@
 package com.bidahochi.BlockMod.blocks.props;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.core.handler.BaseBlockSittable;
+import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -18,25 +19,22 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class Toilet extends BlockContainer {
-    public Toilet(Material p_i45394_1_) {
-        super(p_i45394_1_);
+public class Toilet extends BaseBlockSittable
+{
+    public Toilet(Material material) {
+        super(material);
         setBlockName("toilet");
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 2);
         setStepSound(soundTypeStone);
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
+        setSeatPos(new Vec3f[]{new Vec3f(0,0.375,0)});
     }
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
         return new TileToilet();
-    }
-
-    @Override
-    public TileEntity createTileEntity(World world, int meta) {
-        return createNewTileEntity(world, meta);
     }
 
     @Override

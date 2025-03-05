@@ -61,4 +61,9 @@ public class Vec3f {
         yCoord-vec.yCoord,
         zCoord-vec.zCoord);
     }
+
+    public Vec3d toVec3D()
+    {
+        return new Vec3d(xCoord, yCoord, zCoord);
+    }
 }

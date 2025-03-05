@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod;
 
 import com.bidahochi.BlockMod.core.CommonProxy;
 import com.bidahochi.BlockMod.core.handler.*;
+import com.bidahochi.BlockMod.entities.EntityChair;
 import com.bidahochi.BlockMod.plugins.fmp.ForgeMultiPart;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -12,6 +13,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.FMLEventChannel;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -108,6 +110,7 @@ public class FoxBlocks
         //GameRegistry.registerWorldGenerator(new OreGen(Blocks.air, 0, 200, 25, 32,1).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
         //do these even need to still exist?
         //MinecraftForge.EVENT_BUS.register(ReMappingHandler.class);
+        EntityRegistry.registerModEntity(EntityChair.class, "EntityChair", 0, MODID, 80, 1, false);
 
         if (Loader.isModLoaded("ForgeMultipart"))
         {

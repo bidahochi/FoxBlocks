@@ -71,4 +71,9 @@ public class BaseTileEntity extends TileEntity
         this.markDirty();
         return this;
     }
+
+    public int getFacing()
+    {
+        return dir;
+    }
 }
