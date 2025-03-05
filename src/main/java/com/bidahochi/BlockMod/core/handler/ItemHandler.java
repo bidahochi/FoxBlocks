@@ -2,7 +2,10 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
+import com.bidahochi.BlockMod.items.BaseItems.BaseItemBucket;
+import com.bidahochi.BlockMod.items.Bucket.ItemBucketTBEA;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 
 public class ItemHandler {
 
@@ -39,6 +42,13 @@ public class ItemHandler {
         ItemIDs.record_piss2.item = new record_piss2("record_piss");
         ItemIDs.record_rodney.item = new record_rodney("record_rodney");
         ItemIDs.record_penguin.item = new record_penguin("record_penguin");
+
+        { // Creates the bucket and adds the item to the bucket registry so that buckets work on it
+            Block tempLiquidBlock = GameRegistry.findBlock(FoxBlocks.MODID, FluidIDs.liquid_tbea.blockName);
+            ItemIDs.bucket_of_tbea.item = new ItemBucketTBEA(tempLiquidBlock, ItemIDs.bucket_of_tbea.iconName);
+            BucketHandler.INSTANCE.buckets.put(tempLiquidBlock, ItemIDs.bucket_of_tbea.item);
+        }
+
 
         for (ItemIDs items : ItemIDs.values()) {
             items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
