@@ -1,5 +1,6 @@
-package com.bidahochi.BlockMod.blocks.aggregates;
+package com.bidahochi.BlockMod.blocks.aggregates.ItemBlockWithMetadata;
 
+import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -10,14 +11,10 @@ import net.minecraft.util.EnumChatFormatting;
 
 import java.util.List;
 
-public class ItemBlockFakeSnow extends ItemBlockWithMetadata {
-
+public class ItemBlockFakeSnow extends BaseItemBlock
+{
     public ItemBlockFakeSnow(Block block) {
-        super(block, block);
-    }
-
-    public String getUnlocalizedName( ItemStack item){
-        return this.getUnlocalizedName() + "_" + item.getItemDamage();
+        super(block);
     }
 
     @SideOnly(Side.CLIENT)

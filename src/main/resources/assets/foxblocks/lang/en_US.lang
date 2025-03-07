@@ -14,11 +14,31 @@ tile.Volcanic Cinder Peagravel.name=Volcanic Cinder Peagravel
 tile.Red Rock Peagravel.name=Redrock Peagravel
 tile.Volcanic Cinder Gravel.name=Volcanic Cinder Gravel
 tile.Dirty Gravel.name=Dirty Gravel
-tile.SpecialDirt.name=Ungrowable Dirt
+
+<!-- Block -->
+tile.SpecialDirt_0.name=Ungrowable Dirt
+<!-- Stairs -->
+tile.SpecialDirt_Slab_0.name=Ungrowable Dirt Slab
+<!-- Slab -->
+tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
+
 tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
 tile.Peagravel Whitestone.name=Whitestone Pea Gravel
+
+<!-- Block -->
 tile.FakeSnow_0.name=Fake Snow "Block"
-tile.Dirt_4.name=4tress Dirt
+<!-- Stairs -->
+tile.FakeSnow_Slab_0.name=Fake Snow "Slab"
+<!-- Slab -->
+tile.FakeSnow_0_Stair.name=Fake Snow "Stair"
+
+<!-- Block -->
+tile.Dirt_4_0.name=4tress Dirt
+<!-- Stairs -->
+tile.Dirt_4_0_Stair.name=4tress Dirt Stair
+<!-- Slab -->
+tile.Dirt_4_Slab_0.name=4tress Dirt Slab
+
 tile.CreamCityClay.name=Cream City Clay
 
 <!-- ## CONCRETE ## -->
@@ -66,7 +86,7 @@ tile.concreteFloor_1.name=Rough Concrete Flooring
 tile.concreteFloor_2.name=Red Concrete Flooring
 tile.concreteFloor_3.name=Blu Concrete Flooring
 tile.concreteFloor_4.name=Stale Grey Concrete Flooring
-
+<!-- Stairs -->
 tile.concreteFloor_0_Stair.name=Tan Concrete Flooring Stairs
 tile.concreteFloor_1_Stair.name=Rough Concrete Flooring Stairs
 tile.concreteFloor_2_Stair.name=Red Concrete Flooring Stairs
