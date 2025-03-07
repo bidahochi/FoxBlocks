@@ -33,6 +33,8 @@ public enum ItemIDs {
     record_piss2("record_piss2", "record_piss", "record_piss"),
     record_rodney("record_rodney", "record_rodney", "record_rodney"),
     record_penguin("record_rodney", "record_penguin", "record_penguin"),
+
+    bucket_of_tbea("bucket_of_tbea", "bucket_of_tbea","bucket_of_tbea")
     ;
 
     public Item item;

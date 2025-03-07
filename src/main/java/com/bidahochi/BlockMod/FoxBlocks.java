@@ -45,6 +45,7 @@ public class FoxBlocks
     @EventHandler
     public void preInit(FMLPreInitializationEvent PreEvent){
         channel = NetworkRegistry.INSTANCE.newEventDrivenChannel(MODID);
+        MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
 
     }
 
@@ -93,7 +94,7 @@ public class FoxBlocks
 
         //registration os things that run things
         BlockHandler.initBlockRegister(event);
-
+        FluidHandler.initFluidRegister(event);
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         ItemHandler.initItemRegister();
         RecipeHandler.initBlockRecipes();
