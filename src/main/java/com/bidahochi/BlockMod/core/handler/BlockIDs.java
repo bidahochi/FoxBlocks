@@ -23,7 +23,7 @@ package com.bidahochi.BlockMod.core.handler;
  *
  ****************************/
 
-import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockFakeSnow;
+import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockWithMetadata.ItemBlockFakeSnow;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X1;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X3;
@@ -50,11 +50,11 @@ public enum BlockIDs
     peagravel_redrock(false, null, "Red Rock Peagravel"),
     gravel_volcanic(false, null, "Volcanic Cinder Gravel"),
     gravel_shit(false, null, "Dirty Gravel"),
-    specialDirt(false, null, "SpecialDirt"),
+    specialDirt(true, BaseItemBlock.class, "SpecialDirt"),
     peagravelBallast(false,null, "peagravelBallast"),
     peagravelWhitestone(false, null, "Peagravel Whitestone"),
     fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),
-    dirt_4(false, null, "Dirt_4"),
+    dirt_4(true, BaseItemBlock.class, "Dirt_4"),
     creamCityClay(false, null, "CreamCityClay"),
 
     //concrete
@@ -346,6 +346,20 @@ public enum BlockIDs
      * 0 Enabled the use of multipart on the block and will allow for only the base block to use Multipart
      */
     public final byte MaxMetadata;
+
+    /**
+     * Construct a BlockID that has metaData
+     * @param itemBlockClass Class
+     * @param blockName name of the block
+     * @param maxMetadata how many blocks with the same baseID should be generated for Forge Multipart
+     */
+    BlockIDs(Class<? extends ItemBlock> itemBlockClass, String blockName, int maxMetadata)
+    {
+        this.hasItemBlock = true;
+        this.itemBlockClass = itemBlockClass;
+        this.blockName = blockName;
+        this.MaxMetadata = ((byte) maxMetadata);
+    }
 
     /**
      * Construct a BlockID that has metaData
