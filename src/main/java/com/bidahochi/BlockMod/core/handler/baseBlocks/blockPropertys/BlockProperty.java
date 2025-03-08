@@ -1,6 +1,10 @@
-package com.bidahochi.BlockMod.core.handler;
+package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -24,9 +28,9 @@ public class BlockProperty
     public float lightLevel;
     public boolean blockHasSideTextures = false;
 
-    private BaseBlockSlab singleSlab;
-    private BaseBlockSlab singleSecondarySlab;
-    private BaseBlock block;
+    protected Block singleSlab;
+    protected Block singleSecondarySlab;
+    protected Block block;
 
     public BlockProperty(BlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab)
     {

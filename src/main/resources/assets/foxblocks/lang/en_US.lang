@@ -7,8 +7,8 @@ tile.Taconite.name=Taconite
 tile.Hematite.name=Hematite
 
 <!-- ## RAW ## -->
-tile.Snowy Pea Gravel.name=Snowy Pea Gravel
-tile.Pea Gravel.name=Pea Gravel
+tile.peagravelsnow.name=Snowy Pea Gravel
+tile.peagravel.name=Pea Gravel
 tile.Dirty Pea Gravel.name=Dirty Pea Gravel
 tile.Volcanic Cinder Peagravel.name=Volcanic Cinder Peagravel
 tile.Red Rock Peagravel.name=Redrock Peagravel
@@ -22,7 +22,7 @@ tile.SpecialDirt_Slab_0.name=Ungrowable Dirt Slab
 <!-- Slab -->
 tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
 
-tile.Ballasted Pea Gravel.name=Ballasted Pea Gravel
+tile.peagravelBallast.name=Ballasted Pea Gravel
 tile.Peagravel Whitestone.name=Whitestone Pea Gravel
 
 <!-- Block -->
