@@ -9,6 +9,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
@@ -805,6 +806,7 @@ public class RecipeHandler {
                         for (int i = 0; i <= block.MaxMetadata; i++)
                         {
                             GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i));
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                             GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
                         }
                     }
@@ -822,6 +824,7 @@ public class RecipeHandler {
                         for (int i = 0; i <= 7; i++)
                         {
                             GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i));
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                             GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
                         }
                     }
@@ -837,6 +840,7 @@ public class RecipeHandler {
                         for (int i = 0; i <= block.MaxMetadata - 8; i++)
                         {
                             GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i + 8));
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                             GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i + 8), "   ", " I ", " I ", 'I', new ItemStack(blockSlabTwo, 1, i));
                         }
                     }
@@ -852,8 +856,8 @@ public class RecipeHandler {
                         blockStair = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName.replace(" ", "") + "_" + i + "_Stair");
                     }
 
-
                     GameRegistry.addShapedRecipe(new ItemStack(blockStair, 4, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block.block, 1, i));
+                    GameRegistry.addShapedRecipe(new ItemStack(blockStair, 1, 0), "  ", "BX", 'B', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                 }
             }
         }

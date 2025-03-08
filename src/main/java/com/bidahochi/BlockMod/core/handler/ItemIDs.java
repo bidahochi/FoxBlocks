@@ -23,6 +23,7 @@ public enum ItemIDs {
     roadTar("roadTar", "roadTar", "roadTar"),
     bulb("bulb", "bulb", "bulb"),
     bulbLong("bulbLong", "bulblong", "bulbLong"),
+    bolsterChisel("bolsterChisel", "bolsterChisel", "bolsterChisel"),
 
     doorA("doorAitem","doorA_icon","doorAitem"),
     doorB("doorBitem","doorB_icon","doorBitem"),
