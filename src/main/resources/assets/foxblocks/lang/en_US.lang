@@ -7,13 +7,35 @@ tile.Taconite.name=Taconite
 tile.Hematite.name=Hematite
 
 <!-- ## RAW ## -->
-tile.peagravelsnow.name=Snowy Pea Gravel
-tile.peagravel.name=Pea Gravel
-tile.Dirty Pea Gravel.name=Dirty Pea Gravel
-tile.Volcanic Cinder Peagravel.name=Volcanic Cinder Peagravel
-tile.Red Rock Peagravel.name=Redrock Peagravel
-tile.Volcanic Cinder Gravel.name=Volcanic Cinder Gravel
-tile.Dirty Gravel.name=Dirty Gravel
+tile.peagravelsnow_0.name=Snowy Pea Gravel
+tile.peagravelsnow_Slab_0.name=Snowy Pea Gravel Slab
+tile.peagravelsnow_0_Stair.name=Snowy Pea Gravel Stair
+
+tile.peagravel_0.name=Pea Gravel
+tile.peagravel_Slab_0.name=Pea Gravel Slab
+tile.peagravel_0_Stair.name=Pea Gravel Stair
+
+tile.Dirty Pea Gravel_0.name=Dirty Pea Gravel
+tile.Dirty Pea Gravel_Slab_0.name=Dirty Pea Gravel Slab
+tile.Dirty Pea Gravel_0_Stair.name=Dirty Pea Gravel Stair
+
+
+tile.Volcanic Cinder Peagravel_0.name=Volcanic Cinder Peagravel
+tile.Volcanic Cinder Peagravel_Slab_0.name=Volcanic Cinder Peagravel Slab
+tile.Volcanic Cinder Peagravel_0_Stair.name=Volcanic Cinder Peagravel Stair
+
+tile.Red Rock Peagravel_0.name=Redrock Peagravel
+tile.Red Rock Peagravel_Slab_0.name=Redrock Peagravel Slab
+tile.Red Rock Peagravel_0_Stair.name=Redrock Peagravel Stair
+
+tile.Volcanic Cinder Gravel_0.name=Volcanic Cinder Gravel
+tile.Volcanic Cinder Gravel_Slab_0.name=Volcanic Cinder Gravel Slab
+tile.Volcanic Cinder Gravel_0_Stair.name=Volcanic Cinder Gravel Stair
+
+tile.Dirty Gravel_0.name=Dirty Gravel
+tile.Dirty Gravel_Slab_0.name=Dirty Gravel Slab
+tile.Dirty Gravel_0_Stair.name=Dirty Gravel Stair
+
 
 <!-- Block -->
 tile.SpecialDirt_0.name=Ungrowable Dirt
@@ -22,8 +44,13 @@ tile.SpecialDirt_Slab_0.name=Ungrowable Dirt Slab
 <!-- Slab -->
 tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
 
-tile.peagravelBallast.name=Ballasted Pea Gravel
-tile.Peagravel Whitestone.name=Whitestone Pea Gravel
+tile.peagravelBallast_0.name=Ballasted Pea Gravel
+tile.peagravelBallast_Slab_0.name=Ballasted Pea Gravel Slab
+tile.peagravelBallast_0_Stair.name=Ballasted Pea Gravel Stair
+
+tile.Peagravel Whitestone_0.name=Whitestone Pea Gravel
+tile.Peagravel Whitestone_Slab_0.name=Whitestone Pea Gravel Slab
+tile.Peagravel Whitestone_0_Stair.name=Whitestone Pea Gravel Stair
 
 <!-- Block -->
 tile.FakeSnow_0.name=Fake Snow "Block"
@@ -39,7 +66,9 @@ tile.Dirt_4_0_Stair.name=4tress Dirt Stair
 <!-- Slab -->
 tile.Dirt_4_Slab_0.name=4tress Dirt Slab
 
-tile.CreamCityClay.name=Cream City Clay
+tile.CreamCityClay_0.name=Cream City Clay
+tile.CreamCityClay_Slab_0.name=Cream City Clay Slab
+tile.CreamCityClay_0_Stair.name=Cream City Clay Stair
 
 <!-- ## CONCRETE ## -->
 tile.Concrete_0.name=Raw Concrete
