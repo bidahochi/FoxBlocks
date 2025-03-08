@@ -2,13 +2,10 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
-
-import java.util.Random;
 
 public class BaseFallingBlockSlab extends BaseBlockSlab
 {
@@ -19,44 +16,51 @@ public class BaseFallingBlockSlab extends BaseBlockSlab
         super(isDoubleSlab, blockProperty, singleSlab, blockNumberStartingIndex);
     }
 
-    public void onBlockAdded(World p_149726_1_, int p_149726_2_, int p_149726_3_, int p_149726_4_) {
-        p_149726_1_.scheduleBlockUpdate(p_149726_2_, p_149726_3_, p_149726_4_, this, this.tickRate(p_149726_1_));
+    public void onBlockAdded(World world, int p_149726_2_, int p_149726_3_, int p_149726_4_) {
+        world.scheduleBlockUpdate(p_149726_2_, p_149726_3_, p_149726_4_, this, this.tickRate(world));
     }
 
-    public void onNeighborBlockChange(World p_149695_1_, int p_149695_2_, int p_149695_3_, int p_149695_4_, Block p_149695_5_) {
-        p_149695_1_.scheduleBlockUpdate(p_149695_2_, p_149695_3_, p_149695_4_, this, this.tickRate(p_149695_1_));
+    public void onNeighborBlockChange(World world, int p_149695_2_, int p_149695_3_, int p_149695_4_, Block block) {
+        world.scheduleBlockUpdate(p_149695_2_, p_149695_3_, p_149695_4_, this, this.tickRate(world));
     }
 
-    public void updateTick(World p_149674_1_, int p_149674_2_, int p_149674_3_, int p_149674_4_, Random p_149674_5_) {
-        if (!p_149674_1_.isRemote) {
-            this.func_149830_m(p_149674_1_, p_149674_2_, p_149674_3_, p_149674_4_);
+    public void updateTick(World world, int x, int y, int z, java.util.Random p_149674_5_) {
+        if (!world.isRemote) {
+            this.func_149830_m(world, x, y, z);
         }
 
     }
 
-    private void func_149830_m(World p_149830_1_, int p_149830_2_, int p_149830_3_, int p_149830_4_) {
-        if (func_149831_e(p_149830_1_, p_149830_2_, p_149830_3_ - 1, p_149830_4_) && p_149830_3_ >= 0) {
+    private void func_149830_m(World world, int x, int y, int z) {
+        if (isNextBlockUnoccupied(world, x, y - 1, z) && y >= 0)
+        {
             byte b0 = 32;
-            if (!fallInstantly && p_149830_1_.checkChunksExist(p_149830_2_ - b0, p_149830_3_ - b0, p_149830_4_ - b0, p_149830_2_ + b0, p_149830_3_ + b0, p_149830_4_ + b0)) {
-                if (!p_149830_1_.isRemote) {
-                    EntityFallingBlock entityfallingblock = new EntityFallingBlock(p_149830_1_, (double)((float)p_149830_2_ + 0.5F), (double)((float)p_149830_3_ + 0.5F), (double)((float)p_149830_4_ + 0.5F), this, p_149830_1_.getBlockMetadata(p_149830_2_, p_149830_3_, p_149830_4_));
+            if (!fallInstantly && world.checkChunksExist(x - b0, y - b0, z - b0, x + b0, y + b0, z + b0))
+            {
+                if (!world.isRemote)
+                {
+                    EntityFallingBlock entityfallingblock = new EntityFallingBlock(world, (double)((float)x + 0.5F), (double)((float)y + 0.5F), (double)((float)z + 0.5F), this, world.getBlockMetadata(x, y, z));
                     this.func_149829_a(entityfallingblock);
-                    p_149830_1_.spawnEntityInWorld(entityfallingblock);
+                    world.spawnEntityInWorld(entityfallingblock);
                 }
-            } else {
-                p_149830_1_.setBlockToAir(p_149830_2_, p_149830_3_, p_149830_4_);
+            }
+            else
+            {
+                world.setBlockToAir(x, y, z);
 
-                while(func_149831_e(p_149830_1_, p_149830_2_, p_149830_3_ - 1, p_149830_4_) && p_149830_3_ > 0) {
-                    --p_149830_3_;
+                while(isNextBlockUnoccupied(world, x, y - 1, z) && y > 0)
+                {
+                    --y;
                 }
 
-                if (p_149830_3_ > 0) {
-                    p_149830_1_.setBlock(p_149830_2_, p_149830_3_, p_149830_4_, this);
+                if (y > 0)
+                {
+                    world.setBlock(x, y, z, this);
                 }
             }
         }
-
     }
+
 
     protected void func_149829_a(EntityFallingBlock p_149829_1_) {
     }
@@ -65,18 +69,24 @@ public class BaseFallingBlockSlab extends BaseBlockSlab
         return 2;
     }
 
-    public static boolean func_149831_e(World p_149831_0_, int p_149831_1_, int p_149831_2_, int p_149831_3_) {
-        Block block = p_149831_0_.getBlock(p_149831_1_, p_149831_2_, p_149831_3_);
-        if (block.isAir(p_149831_0_, p_149831_1_, p_149831_2_, p_149831_3_)) {
+    public static boolean isNextBlockUnoccupied(World world, int x, int y, int z) {
+        Block block = world.getBlock(x, y, z);
+        if (block.isAir(world, x, y, z))
+        {
             return true;
-        } else if (block == Blocks.fire) {
+        }
+        else if (block == Blocks.fire)
+        {
             return true;
-        } else {
+        }
+        else
+        {
             Material material = block.getMaterial();
             return material == Material.water ? true : material == Material.lava;
         }
     }
 
-    public void func_149828_a(World p_149828_1_, int p_149828_2_, int p_149828_3_, int p_149828_4_, int p_149828_5_) {
+    public void func_149828_a(World p_149828_1_, int p_149828_2_, int p_149828_3_, int p_149828_4_, int p_149828_5_) 
+    {
     }
 }
