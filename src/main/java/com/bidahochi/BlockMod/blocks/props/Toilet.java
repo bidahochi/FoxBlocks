@@ -1,7 +1,7 @@
 package com.bidahochi.BlockMod.blocks.props;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.BaseBlockSittable;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSittable;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
