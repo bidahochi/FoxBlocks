@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -791,7 +792,10 @@ public class RecipeHandler {
         // Auto Register Slab And Stair Recipes
         for (BlockIDs block : BlockIDs.values())
         {
-            if (block.MaxMetadata >= 0)
+            if (block.MaxMetadata > -1
+                    && block.hasItemBlock
+                    && (BaseItemBlock.class.equals(block.itemBlockClass) || block.itemBlockClass.getClass().isInstance(BaseItemBlock.class.getClass()))
+                    && block.block instanceof BaseBlock)
             {
                 // Slabs can only go up to 7 as metadata is used for the bottom and top sate
                 if (block.MaxMetadata < 8)
@@ -841,7 +845,7 @@ public class RecipeHandler {
                         for (int i = 0; i <= block.MaxMetadata - 8; i++)
                         {
                             GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i + 8));
-                            GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                             GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i + 8), "   ", " I ", " I ", 'I', new ItemStack(blockSlabTwo, 1, i));
                         }
                     }
