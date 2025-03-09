@@ -2,7 +2,6 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
-import com.bidahochi.BlockMod.items.BaseItems.BaseItemBucket;
 import com.bidahochi.BlockMod.items.Bucket.ItemBucketTBEA;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -32,6 +31,7 @@ public class ItemHandler {
         ItemIDs.roadTar.item=new roadTar();
         ItemIDs.bulb.item=new bulb();
         ItemIDs.bulbLong.item=new bulbLong();
+        ItemIDs.bolsterChisel.item = new bolsterChisel();
 
         ItemIDs.doorA.item = new itemDoor().setUnlocalizedName("doorA").setTextureName(FoxBlocks.MODID + ":doorA_icon");
         ItemIDs.doorB.item = new itemDoor().setUnlocalizedName("doorB").setTextureName(FoxBlocks.MODID + ":doorB_icon");
