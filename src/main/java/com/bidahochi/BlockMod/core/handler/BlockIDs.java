@@ -71,7 +71,7 @@ public enum BlockIDs
     plasteredConcrete(true, BaseItemBlock.class, "plasteredConcrete", 8),
 
     //stones
-    soapStone(false, null, "Soapstone"), // Raw Soapstone
+    soapStone(true, BaseItemBlock.class, "Soapstone"), // Raw Soapstone
     soapStoneDeco(true, BaseItemBlock.class, "Soapstone Deco", 4), // Soapstone Bricks
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
@@ -195,20 +195,20 @@ public enum BlockIDs
     //endregion Metals
 
     //region Hell
-    darkEmberStone(false, null, "Dark Ember Stone"),
-    emberStone(false,null,"Ember Stone"),
+    darkEmberStone(true,BaseItemBlock.class, "Dark Ember Stone"),
+    emberStone(true,BaseItemBlock.class,"Ember Stone"),
     //endregion Hell
 
     //additional
-    emberStoneStair(false,null,"EmberStone Stair"),
-    darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
-    soapStoneStair(false, null, "Soapstone Stair"),
+    //emberStoneStair(false,null,"EmberStone Stair"),
+    //darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
+    //soapStoneStair(false, null, "Soapstone Stair"),
     //testPane(false, null, "TestPane"),
     //testSlab(false,null,"TestSlab"),
     //testStair(false,null,"TestStair"),
-    emberStoneSlab(false,null,"EmberStone Slab"),
-    darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
-    soapStoneSlab(false, null, "Soapstone Slab"),
+    //emberStoneSlab(false,null,"EmberStone Slab"),
+    //darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
+    //soapStoneSlab(false, null, "Soapstone Slab"),
 
     //props
     breakerBox(false, null, "breakerBox"),
