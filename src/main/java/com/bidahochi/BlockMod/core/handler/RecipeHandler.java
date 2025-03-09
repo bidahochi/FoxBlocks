@@ -525,6 +525,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 16), Items.glass_bottle, Items.water_bucket, new ItemStack(ItemIDs.enrichedClay.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.woodSealant.item, 16), Items.glass_bottle, Blocks.ice, new ItemStack(ItemIDs.enrichedClay.item, 1));
         GameRegistry.addShapedRecipe(new ItemStack(ItemIDs.computerizedCircuit.item, 4), "RAI","CRC","ARI", Character.valueOf('I'), Items.iron_ingot, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item, 1), Character.valueOf('C'), new ItemStack(ItemIDs.ceramic.item, 1), Character.valueOf('R'), Items.redstone);
+        GameRegistry.addRecipe(new ItemStack(ItemIDs.bolsterChisel.item, 1), "  A", " I ", "I  ", Character.valueOf('A'), Items.iron_ingot, Character.valueOf('I'), new ItemStack(ItemIDs.ironRod.item, 1));
 
         //breakerboxes
         for (ItemStack dye1 : dyeLightGray){
