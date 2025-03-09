@@ -845,7 +845,7 @@ public class RecipeHandler {
                         for (int i = 0; i <= block.MaxMetadata - 8; i++)
                         {
                             GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 6, i), "   ", "   ", "III", 'I', new ItemStack(block.block, 1, i + 8));
-                            GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                            GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 2, i), " X", " I", 'I', new ItemStack(block.block, 1, i + 8), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                             GameRegistry.addShapedRecipe(new ItemStack(block.block, 1, i + 8), "   ", " I ", " I ", 'I', new ItemStack(blockSlabTwo, 1, i));
                         }
                     }
