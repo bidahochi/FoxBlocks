@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.core.handler;
+package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
 import com.bidahochi.BlockMod.core.util.ChairUtility;

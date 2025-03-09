@@ -1,5 +1,6 @@
-package com.bidahochi.BlockMod.core.handler;
+package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
+import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -10,7 +11,6 @@ import net.minecraft.util.IIcon;
 public class BaseBlockStair extends BlockStairs
 {
     Block ParentBlock;
-    private boolean FirstBlockHasNoIndex = false;
     public final byte Metadata;
 
     public BaseBlockStair(Block block, int metaData, BlockProperty blockProperty)

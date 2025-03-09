@@ -23,12 +23,10 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.StallParts.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.*;
-import com.bidahochi.BlockMod.blocks.fluid.BaseFluid;
 import com.bidahochi.BlockMod.blocks.lighting.*;
 import com.bidahochi.BlockMod.blocks.lumber.*;
 import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
-import com.bidahochi.BlockMod.blocks.aggregates.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.SRPBDetailsWhite1;
@@ -43,21 +41,13 @@ import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowO
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
+import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.*;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
-import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
-import com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
-import net.minecraftforge.fluids.FluidStack;
 
 import java.util.HashMap;
 
@@ -88,15 +78,56 @@ public class BlockHandler {
         BlockIDs.hematite.block = new Hematite(Material.rock);
 
         //raw
-        BlockIDs.peagravel_snow.block = new SnowyPeaGravel(Material.sand);
-        BlockIDs.peagravel.block = new PeaGravel(Material.sand);
-        BlockIDs.peagravel_shit.block = new PeaGravelDirty(Material.sand);
-        BlockIDs.peagravel_volcanic.block = new PeaGravelVolcanic(Material.rock);
-        BlockIDs.peagravel_redrock.block = new PeaGravelRedRock(Material.rock);
-        BlockIDs.gravel_volcanic.block = new GravelVolcanic(Material.rock);
-        BlockIDs.gravel_shit.block = new GravelDirty(Material.sand);
+        { // peagravel_snow
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravel_snow, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_snow", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravel_snow.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravel_snow, property);
+        }
+        { // peagravel
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravel, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_generic", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravel.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravel, property);
+        }
+        { // peagravel_shit
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravel_shit, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_dirty", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravel_shit.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravel_shit, property);
+        }
+        { // peagravel_volcanic
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravel_volcanic, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_volcanic", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravel_volcanic.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravel_volcanic, property);
+        }
+        { // peagravel_redrock
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravel_redrock, Material.rock, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_red_rock", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravel_redrock.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravel_redrock, property);
+        }
+        { // gravel_volcanic
+            BlockProperty property = new FallingBlockProperty(BlockIDs.gravel_volcanic, Material.rock, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/gravel_volcanic", foxBlocksCreativeTabRock, true);
+            BlockIDs.gravel_volcanic.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.gravel_volcanic, property);
+        }
+        { // gravel_shit
+            BlockProperty property = new FallingBlockProperty(BlockIDs.gravel_shit, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/gravel_dirty", foxBlocksCreativeTabRock, true);
+            BlockIDs.gravel_shit.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.gravel_shit, property);
 
-        //BlockIDs.specialDirt.block = new SpecialDirt(Material.ground);
+        }
         { // specialDirt
             BlockProperty property = new BlockProperty(BlockIDs.specialDirt, Material.ground, 0.5F, 0.1F,
                     SHOVEL, 0,
@@ -105,8 +136,20 @@ public class BlockHandler {
             tempBlockCache.put(BlockIDs.specialDirt, property);
         }
 
-        BlockIDs.peagravelBallast.block = new PeaGravelBallast(Material.sand);
-        BlockIDs.peagravelWhitestone.block = new PeaGravelWhitestone(Material.sand);
+        { // peagravelBallast
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravelBallast, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_tc_ballast", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravelBallast.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravelBallast, property);
+        }
+        { // peagravelWhitestone
+            BlockProperty property = new FallingBlockProperty(BlockIDs.peagravelWhitestone, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/peagravel_whitestone", foxBlocksCreativeTabRock, true);
+            BlockIDs.peagravelWhitestone.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.peagravelWhitestone, property);
+        }
 
         { // fakeSnow
             BlockProperty property = new BlockProperty(BlockIDs.fakeSnow, Material.ground, 0.5F, 0.1F,
@@ -124,7 +167,13 @@ public class BlockHandler {
             tempBlockCache.put(BlockIDs.dirt_4, property);
         }
 
-        BlockIDs.creamCityClay.block = new CreamCityClay(Material.clay);
+        { // creamCityClay
+            FallingBlockProperty property = new FallingBlockProperty(BlockIDs.creamCityClay, Material.clay, 0.6F, 0.6F,
+                    SHOVEL, 0,
+                    soundTypeGravel, 1,"aggregates/CreamCityClay", foxBlocksCreativeTabRock, true);
+            BlockIDs.creamCityClay.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.creamCityClay, property);
+        }
 
         //concretes
         { // Raw Concrete
@@ -891,7 +940,7 @@ public class BlockHandler {
             if (block.MaxMetadata > -1
                     && block.hasItemBlock
                     && (BaseItemBlock.class.equals(block.itemBlockClass) || block.itemBlockClass.getClass().isInstance(BaseItemBlock.class.getClass()))
-                    && block.block instanceof BaseBlock)
+                    && (block.block instanceof BaseBlock || block.block instanceof BaseFallingBlock))
             {
                 BlockProperty blockProperty = tempBlockCache.get(block);
                 if (blockProperty != null)
@@ -907,7 +956,14 @@ public class BlockHandler {
 
                     for(int i = 0; i < blockProperty.TotalTextureCount; i++)
                     {
-                        GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                        if (block.block instanceof BaseFallingBlock)
+                        {
+                            GameRegistry.registerBlock(new BaseFallingBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                        }
+                        else
+                        {
+                            GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                        }
                     }
                 }
             }
