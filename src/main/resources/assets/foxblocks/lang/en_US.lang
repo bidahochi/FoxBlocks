@@ -1597,6 +1597,9 @@ tile.XmasLights1_bottom_white.name=Christmas Lights (Bottom Aligned, White)
 tile.XmasLights1_top_rainbow.name=Christmas Lights (Top Aligned, Rainbow)
 tile.XmasLights1_bottom_rainbow.name=Christmas Lights (Bottom Aligned, Rainbow)
 
+
+tile.propTrailerDryvan1.name=53' Dryvan Trailer (Prop)
+
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
 item.foxblocks:GypsumDust.name=Gypsum Dust

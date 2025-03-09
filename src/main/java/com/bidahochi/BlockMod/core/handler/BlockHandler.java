@@ -790,6 +790,10 @@ public class BlockHandler {
         BlockIDs.xmasLights1_top_rainbow.block = new XmasLights1_top_rainbow(Material.circuits);
         BlockIDs.xmasLights1_bottom_rainbow.block = new XmasLights1_bottom_rainbow(Material.circuits);
 
+        BlockIDs.propTrailerDryvan1.block = new PropTrailerDryvan1(Material.wood);
+
+
+
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
         GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
@@ -922,6 +926,8 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileXmasLights1_bottom_white.class, "XmasLights1_bottom_white");
         GameRegistry.registerTileEntity(TileXmasLights1_top_rainbow.class, "XmasLights1_top_rainbow");
         GameRegistry.registerTileEntity(TileXmasLights1_bottom_rainbow.class, "XmasLights1_bottom_rainbow");
+
+        GameRegistry.registerTileEntity(TilePropTrailerDryvan1.class, "PropTrailerDryvan1");
 
 
         for (BlockIDs block : BlockIDs.values())

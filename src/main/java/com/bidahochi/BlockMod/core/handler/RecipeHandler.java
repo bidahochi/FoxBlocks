@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
 import cpw.mods.fml.common.registry.GameRegistry;

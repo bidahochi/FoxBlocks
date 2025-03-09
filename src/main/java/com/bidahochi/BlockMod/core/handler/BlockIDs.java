@@ -335,7 +335,11 @@ public enum BlockIDs
     xmasLights1_top_white(false, null, "XmasLights1_top_white"),
     xmasLights1_bottom_white(false, null, "XmasLights1_bottom_white"),
     xmasLights1_top_rainbow(false, null, "XmasLights1_top_rainbow"),
-    xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),;
+    xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),
+
+    propTrailerDryvan1(false, null, "propTrailerDryvan1"),
+
+    ;
 
     public Block block;
     public final boolean hasItemBlock;

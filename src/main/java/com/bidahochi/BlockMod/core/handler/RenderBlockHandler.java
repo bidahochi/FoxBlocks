@@ -153,6 +153,8 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileXmasLights1_top_rainbow.class, new RenderXmasLights1_top_rainbow());
         ClientRegistry.bindTileEntitySpecialRenderer(TileXmasLights1_bottom_rainbow.class, new RenderXmasLights1_bottom_rainbow());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePropTrailerDryvan1.class, new RenderPropTrailerDryvan1());
+
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
     }
 }
