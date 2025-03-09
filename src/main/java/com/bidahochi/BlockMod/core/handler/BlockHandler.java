@@ -595,7 +595,7 @@ public class BlockHandler {
                     soundTypeStone, 1,"hell/emberStone", foxBlocksCreativeTabRock, true);
             BlockIDs.emberStone.block = property.getNewBlock();
             // Do not add this as there is a older version that already handles slab and stairs for this block
-            //tempBlockCache.put(BlockIDs.emberStone, property);
+            tempBlockCache.put(BlockIDs.emberStone, property);
         }
         { // darkEmberStone
             BlockProperty property = new BlockProperty(BlockIDs.darkEmberStone, Material.rock, 3.0F, 30.0F,
@@ -603,16 +603,16 @@ public class BlockHandler {
                     soundTypeStone, 1,"hell/darkEmberStone", foxBlocksCreativeTabRock, true);
             BlockIDs.darkEmberStone.block = property.getNewBlock();
             // Do not add this as there is a older version that already handles slab and stairs for this block
-            //tempBlockCache.put(BlockIDs.darkEmberStone, property);
+            tempBlockCache.put(BlockIDs.darkEmberStone, property);
         }
 
         //additional
-        BlockIDs.emberStoneStair.block = new BaseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F, soundTypeStone,"pickaxe",2,0, foxBlocksCreativeTabRock);
-        BlockIDs.darkEmberStoneStair.block = new BaseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F, soundTypeStone, "pickaxe",2, 0, foxBlocksCreativeTabRock);
-        BlockIDs.soapStoneStair.block = new BaseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, soundTypeStone, "pickaxe", 1, 0, foxBlocksCreativeTabRock);
-        BlockIDs.emberStoneSlab.block = new BaseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F, soundTypeStone,"pickaxe",2,0,"hell/emberStone", foxBlocksCreativeTabRock);
-        BlockIDs.darkEmberStoneSlab.block = new BaseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F, soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone", foxBlocksCreativeTabRock);
-        BlockIDs.soapStoneSlab.block = new BaseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, soundTypeStone, "pickaxe", 1, 0, "stones/soapstone", foxBlocksCreativeTabRock);
+        //BlockIDs.emberStoneStair.block = new BaseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F, soundTypeStone,"pickaxe",2,0, foxBlocksCreativeTabRock);
+        //BlockIDs.darkEmberStoneStair.block = new BaseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F, soundTypeStone, "pickaxe",2, 0, foxBlocksCreativeTabRock);
+        //BlockIDs.soapStoneStair.block = new BaseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, soundTypeStone, "pickaxe", 1, 0, foxBlocksCreativeTabRock);
+        //BlockIDs.emberStoneSlab.block = new BaseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F, soundTypeStone,"pickaxe",2,0,"hell/emberStone", foxBlocksCreativeTabRock);
+        //BlockIDs.darkEmberStoneSlab.block = new BaseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F, soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone", foxBlocksCreativeTabRock);
+        //BlockIDs.soapStoneSlab.block = new BaseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, soundTypeStone, "pickaxe", 1, 0, "stones/soapstone", foxBlocksCreativeTabRock);
 
         //props
         BlockIDs.breakerBox.block = new BreakerBox(Material.iron);

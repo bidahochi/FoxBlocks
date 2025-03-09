@@ -9,12 +9,14 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLMissingMappingsEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.FMLEventChannel;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -112,7 +114,6 @@ public class FoxBlocks
         //do these even need to still exist?
         //MinecraftForge.EVENT_BUS.register(ReMappingHandler.class);
         EntityRegistry.registerModEntity(EntityChair.class, "EntityChair", 0, MODID, 80, 1, false);
-
         if (Loader.isModLoaded("ForgeMultipart"))
         {
             ForgeMultiPart.registerBlocks();
@@ -121,5 +122,11 @@ public class FoxBlocks
 
     @EventHandler
     public void PostLoad(FMLPostInitializationEvent PostLoad){
+    }
+
+    @EventHandler
+    public void missingMappings(FMLMissingMappingsEvent event)
+    {
+        MissingBlockHandler.initMissingBlock(event.get());
     }
 }
