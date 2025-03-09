@@ -1,16 +1,13 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
-import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
