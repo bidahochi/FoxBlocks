@@ -1630,4 +1630,5 @@ item.foxblocks:record_penguin.name=club penguin free membership WORKING 2010 DOW
 item.record.record_penguin.desc=put in a jukebox for free club penguin membership!!!111 working 2010
 
 item.foxblocks:bucket_of_tbea.name=Bucket of TBEA
-tile.fluid.liquid_tbea.name=Liquid TBEA
+tile.fluid.foxblocks.liquid_tbea.name=Liquid TBEA
+fluid.foxblocks.liquid_tbea=Liquid TBEA
