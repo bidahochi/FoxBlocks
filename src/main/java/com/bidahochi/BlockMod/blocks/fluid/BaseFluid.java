@@ -6,13 +6,11 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 
-import java.util.List;
 
 public class BaseFluid extends BlockFluidClassic
 {
@@ -91,5 +89,15 @@ public class BaseFluid extends BlockFluidClassic
 
     public void setFluid(Fluid fluid) {
         this.fluid = fluid;
+    }
+
+    @Override
+    public Fluid getFluid() {
+        return FluidRegistry.getFluid(fluidName);
+    }
+
+    @Override
+    public CreativeTabs getCreativeTabToDisplayOn() {
+        return null;
     }
 }

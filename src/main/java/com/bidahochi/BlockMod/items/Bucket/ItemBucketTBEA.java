@@ -18,8 +18,8 @@ public class ItemBucketTBEA extends com.bidahochi.BlockMod.items.BaseItems.BaseI
 
     @SideOnly(Side.CLIENT)
     @Override
-    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
     {
-        par3List.add("\u00a77" + EnumChatFormatting.DARK_PURPLE + "Bucket of TBEA the code monkey.");
+        list.add("\u00a77" + EnumChatFormatting.DARK_PURPLE + "Bucket of TBEA the code monkey.");
     }
 }

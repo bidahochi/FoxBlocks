@@ -2,9 +2,24 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
+import com.bidahochi.BlockMod.items.BaseItems.BaseItemBucket;
 import com.bidahochi.BlockMod.items.Bucket.ItemBucketTBEA;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBucket;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
+
+import java.lang.reflect.Constructor;
+import java.util.List;
 
 public class ItemHandler {
 
@@ -46,9 +61,8 @@ public class ItemHandler {
         { // Creates the bucket and adds the item to the bucket registry so that buckets work on it
             Block tempLiquidBlock = GameRegistry.findBlock(FoxBlocks.MODID, FluidIDs.liquid_tbea.blockName);
             ItemIDs.bucket_of_tbea.item = new ItemBucketTBEA(tempLiquidBlock, ItemIDs.bucket_of_tbea.iconName);
-            BucketHandler.INSTANCE.buckets.put(tempLiquidBlock, ItemIDs.bucket_of_tbea.item);
+            SetupFluidContainer(FluidIDs.liquid_tbea, ItemIDs.bucket_of_tbea, tempLiquidBlock);
         }
-
 
         for (ItemIDs items : ItemIDs.values()) {
             items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
@@ -57,5 +71,11 @@ public class ItemHandler {
             GameRegistry.registerItem(items.item, items.name());
 
         }
+    }
+
+    private static void SetupFluidContainer(FluidIDs fluidID, ItemIDs bucketItemID, Block tempLiquidBlock)
+    {
+        FluidContainerRegistry.registerFluidContainer(new FluidContainerRegistry.FluidContainerData(new FluidStack(FluidRegistry.getFluid(FoxBlocks.MODID + "." + fluidID.blockName), 1000), new ItemStack(bucketItemID.item), new ItemStack(Items.bucket)));
+        BucketHandler.INSTANCE.buckets.put(tempLiquidBlock, bucketItemID.item);
     }
 }
