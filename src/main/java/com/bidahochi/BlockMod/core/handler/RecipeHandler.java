@@ -3,15 +3,11 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
-import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
@@ -254,8 +250,8 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 1), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 0), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 0));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 2), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 1), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapStoneDeco.block, 2, 3), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 2), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 2));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.soapStoneStair.block, 6), "  S", " SS", "SSS", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.soapStoneSlab.block, 6), "   ", "   ", "SSS", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block));
+        //GameRegistry.addRecipe(new ItemStack(BlockIDs.soapStoneStair.block, 6), "  S", " SS", "SSS", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block));
+        //GameRegistry.addRecipe(new ItemStack(BlockIDs.soapStoneSlab.block, 6), "   ", "   ", "SSS", Character.valueOf('S'), new ItemStack(BlockIDs.soapStone.block));
 
         //other things
         for (ItemStack dyeyellow : dyeYellow){ GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.jarate.item, 1,0),  Items.water_bucket, dyeyellow);}
@@ -287,8 +283,8 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.smoothCrete.block, 4), new ItemStack(BlockIDs.Concrete.block, 1), new ItemStack(BlockIDs.Concrete.block, 1), new ItemStack(BlockIDs.Concrete.block, 1), new ItemStack(BlockIDs.Concrete.block, 1));
 
         //hariesh hell blocks
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.emberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.emberStone.block,1));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.darkEmberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.darkEmberStone.block,1));
+        //GameRegistry.addRecipe(new ItemStack(BlockIDs.emberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.emberStone.block,1));
+        //GameRegistry.addRecipe(new ItemStack(BlockIDs.darkEmberStoneStair.block,8), "E  ","EE ","EEE", Character.valueOf('E'), new ItemStack(BlockIDs.darkEmberStone.block,1));
         GameRegistry.addSmelting(BlockIDs.emberStone.block, new ItemStack(BlockIDs.darkEmberStone.block,1),1F);
 
         //tiles

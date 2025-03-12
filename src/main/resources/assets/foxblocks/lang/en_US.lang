@@ -1445,17 +1445,17 @@ tile.metalFencing_1.name=Metal Fence 2
 tile.metalFencing_2.name=Metal Fence 3
 
 <!-- ## HELL ## -->
-tile.Ember Stone.name=Ember Stone
-tile.Dark Ember Stone.name=Dark Ember Stone
+tile.Ember Stone_0.name=Ember Stone
+tile.Dark Ember Stone_0.name=Dark Ember Stone
 
 <!-- ## ADDITIONAL ## -->
 tile.Soapstone Stair.name=Raw Soapstone Stair
 tile.Soapstone Slab.name=Raw Soapstone Slab
 
-tile.EmberStone Slab.name=Ember Stone Slab
-tile.EmberStone Stair.name=Ember Stone Stair
-tile.Dark EmberStone Slab.name=Dark EmberStone Slab
-tile.Dark EmberStone Stair.name=Dark EmberStone Stair
+tile.Ember Stone_Slab_0.name=Ember Stone Slab
+tile.Ember Stone_0_Stair.name=Ember Stone Stair
+tile.Dark Ember Stone_Slab_0.name=Dark EmberStone Slab
+tile.Dark Ember Stone_0_Stair.name=Dark EmberStone Stair
 
 item.foxblocks:doorAitem.name=Office Door (Red Tint)
 item.foxblocks:doorBitem.name=Office Door (Brown Tint)
