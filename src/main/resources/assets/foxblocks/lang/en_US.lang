@@ -44,6 +44,16 @@ tile.SpecialDirt_Slab_0.name=Ungrowable Dirt Slab
 <!-- Slab -->
 tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
 
+<!-- Block -->
+tile.DeadGrass_0.name=Light Dead Grass Block
+tile.DeadGrass2_0.name=Dark Dead Grass Block
+<!-- Stairs -->
+tile.DeadGrass_Slab_0.name=Light Dead Grass Block Slab
+tile.DeadGrass2_Slab_0.name=Dark Dead Grass Block Slab
+<!-- Slab -->
+tile.DeadGrass_0_Stair.name=Light Dead Grass Block Stair
+tile.DeadGrass2_0_Stair.name=Dark Dead Grass Block Stair
+
 tile.peagravelBallast_0.name=Ballasted Pea Gravel
 tile.peagravelBallast_Slab_0.name=Ballasted Pea Gravel Slab
 tile.peagravelBallast_0_Stair.name=Ballasted Pea Gravel Stair

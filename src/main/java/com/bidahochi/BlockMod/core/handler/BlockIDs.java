@@ -51,6 +51,8 @@ public enum BlockIDs
     gravel_volcanic(true, BaseItemBlock.class, "Volcanic Cinder Gravel"),
     gravel_shit(true, BaseItemBlock.class, "Dirty Gravel"),
     specialDirt(true, BaseItemBlock.class, "SpecialDirt"),
+    deadGrass(true, BaseItemBlock.class, "DeadGrass"),
+    deadGrass2(true, BaseItemBlock.class, "DeadGrass2"),
     peagravelBallast(true, BaseItemBlock.class, "peagravelBallast"),
     peagravelWhitestone(true, BaseItemBlock.class, "Peagravel Whitestone"),
     fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),
