@@ -136,14 +136,14 @@ public class BlockHandler {
             tempBlockCache.put(BlockIDs.specialDirt, property);
         }
         { // deadGrass
-            BlockProperty property = new BlockProperty(BlockIDs.deadGrass, Material.ground, 0.5F, 0.1F,
+            BlockProperty property = new BlockProperty(BlockIDs.deadGrass, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
                     soundTypeGravel, 1,"aggregates/grasses/dead_grass", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
             BlockIDs.deadGrass.block = new DeadGrass(property.TheMaterial);
         }
         { // deadGrass2
-            BlockProperty property = new BlockProperty(BlockIDs.deadGrass2, Material.ground, 0.5F, 0.1F,
+            BlockProperty property = new BlockProperty(BlockIDs.deadGrass2, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
                     soundTypeGravel, 1,"aggregates/grasses/dead_grass2", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;

@@ -6,6 +6,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class DeadGrass2 extends Block {
 
@@ -13,7 +16,7 @@ public class DeadGrass2 extends Block {
 
     public DeadGrass2(Material p_i45394_1_) {
         super(p_i45394_1_);
-
+        setStepSound(soundTypeGrass);
         setHardness(0.5F);
         setResistance(0.1F);
         setHarvestLevel("shovel", 0);
@@ -30,5 +33,10 @@ public class DeadGrass2 extends Block {
 
     public IIcon getIcon( int side, int meta) {
         return this.textures[side];
+    }
+
+    @Override
+    public boolean canSustainPlant(IBlockAccess world, int x, int y, int z, ForgeDirection direction, IPlantable plantable) {
+        return true;
     }
 }
