@@ -5,9 +5,9 @@ import net.minecraft.block.material.Material;
 
 import static com.bidahochi.BlockMod.blocks.roadpaints.EnumRoadShapes.*;
 
-public class srpb_whiteOffset extends ScrollRoadPaintBlock
+public class SRPBWhiteOffset extends ScrollRoadPaintBlock
 {
-    public srpb_whiteOffset()
+    public SRPBWhiteOffset()
     {
         super(Material.rock);
         setBlockName("srpb_whiteOffset");
