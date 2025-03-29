@@ -36,8 +36,8 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer implements ISc
     public LinkedHashMap<EnumRoadShapes, String> shapeTextures = new LinkedHashMap<>();
     public EnumRoadShapes currentShape = EnumRoadShapes.straight;
 
-    public ScrollRoadPaintBlock(Material p_i45394_1_) {
-        super(p_i45394_1_);
+    public ScrollRoadPaintBlock(Material material) {
+        super(material);
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);

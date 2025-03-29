@@ -31,10 +31,15 @@ import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.SRPBDetailsWhite1;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBWhiteCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter2;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideStraight;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.Scrolling.srpb_whiteOffset;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
@@ -792,6 +797,7 @@ public class BlockHandler {
         BlockIDs.rpb_owd.block = new RPBWhiteOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
         //static blocks
+        BlockIDs.srpb_whiteOffset.block = new srpb_whiteOffset();
         BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);//centered yellow single
         BlockIDs.srpb_cy2.block = new SRPBYellowCenter2(Material.rock);//centered yellow double
         BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
