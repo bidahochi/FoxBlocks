@@ -330,7 +330,8 @@ public enum BlockIDs
     rpb_ows(false, null, "rpb_ows"),
     rpb_cw(false, null, "rpb_cw"),
     //static
-    srpb_cy(true, ScrollingItemBlock.class, "srpb_cy"),//center yellow
+    srpb_cy(true, ScrollingItemBlock.class, "srpb_cy"),//center yellow single
+    srpb_cy2(true, ScrollingItemBlock.class, "srpb_cy2"),//center yellow double
     srpb_dw1(true, ScrollingItemBlock.class, "srpb_dw1"),//details white 1
 
     //xmas

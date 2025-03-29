@@ -19,7 +19,7 @@ public class SRPBDetailsWhite1 extends ScrollRoadPaintBlock {
         shapeTextures.put(detail5, detail5.shortName);
         shapeTextures.put(detail6, detail6.shortName);
         shapeTextures.put(detail7, detail7.shortName);
-        shapeTextures.put(detail8, detail8.shortName);
+        //shapeTextures.put(detail8, detail8.shortName);
 
     }
 }

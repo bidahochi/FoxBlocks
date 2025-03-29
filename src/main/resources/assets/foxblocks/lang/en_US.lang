@@ -1593,6 +1593,16 @@ tile.srpb_cy.6.name=Diagonal Turn (Left) Static Roadpain (Centered, Yellow)
 tile.srpb_cy.7.name=Y Intersection Static Roadpaint (Centered, Yellow)
 tile.srpb_cy.8.name=X Intersection Static Roadpaint (Centered, Yellow)
 
+tile.srpb_cy2.0.name=Straight Static Roadpaint (Centered, Double Yellow)
+tile.srpb_cy2.1.name=Turn Static Roadpaint (Centered, Double Yellow)
+tile.srpb_cy2.2.name=3-Way Static Roadpaint (Centered, Double Yellow)
+tile.srpb_cy2.3.name=All-Way Static Roadpaint(Centered, Double Yellow)
+tile.srpb_cy2.4.name=Diagonal Static Roadpaint (Centered, Double Yellow)
+tile.srpb_cy2.5.name=Diagonal Turn (Right) Static Roadpaint (Centered, Double Yellow)
+tile.srpb_cy2.6.name=Diagonal Turn (Left) Static Roadpain (Centered, Double Yellow)
+tile.srpb_cy2.7.name=Y Intersection Static Roadpaint (Centered, Double Yellow)
+tile.srpb_cy2.8.name=X Intersection Static Roadpaint (Centered, Double Yellow)
+
 tile.srpb_dw1.0.name=Turn Arrow (Left) Static Roadpaint
 tile.srpb_dw1.1.name=Turn Arrow (Right) Static Roadpaint
 tile.srpb_dw1.2.name=Arrow (Straight) Static Roadpaint

@@ -30,10 +30,7 @@ import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.SRPBDetailsWhite1;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBWhiteCenter;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.RPBYellowCenter2;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SRPBYellowCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBWhiteOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.RPBYellowOffsetInsideDiagonal;
@@ -796,6 +793,7 @@ public class BlockHandler {
         BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
         //static blocks
         BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);//centered yellow single
+        BlockIDs.srpb_cy2.block = new SRPBYellowCenter2(Material.rock);//centered yellow double
         BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
 
         //xmas
