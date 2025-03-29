@@ -13,6 +13,8 @@ public enum EnumRoadShapes
     yIntersection("yIntersection", "y"),
     diagonalPlus("diagonalPlus", "dplus"),
 
+    diagonal2("diagonal2", "diagonal2"),
+
     //details
     detail1("detail1", "dt1"),
     detail2("detail2", "dt2"),
