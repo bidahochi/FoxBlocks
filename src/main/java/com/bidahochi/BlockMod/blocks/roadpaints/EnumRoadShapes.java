@@ -14,6 +14,7 @@ public enum EnumRoadShapes
     diagonalPlus("diagonalPlus", "dplus"),
 
     diagonal2("diagonal2", "diagonal2"),
+    turn2("turn2", "turn2"),
 
     //details
     detail1("detail1", "dt1"),

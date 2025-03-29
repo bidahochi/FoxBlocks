@@ -15,6 +15,8 @@ public class SRPBWhiteOffset extends ScrollRoadPaintBlock
         color = "white";
 
         shapeTextures.put(straight, straight.shortName);
+        shapeTextures.put(turn, turn.shortName);
+        shapeTextures.put(turn2, turn2.shortName);
         shapeTextures.put(diagonal, diagonal.shortName);
         shapeTextures.put(diagonal2, diagonal2.shortName);
     }
