@@ -1,10 +1,12 @@
-package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer;
+package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.details.Scrolling;
 
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.ScrollRoadPaintBlock;
 import net.minecraft.block.material.Material;
 
 import static com.bidahochi.BlockMod.blocks.roadpaints.EnumRoadShapes.*;
 
-public class SRPBDetailsWhite1 extends ScrollRoadPaintBlock {
+public class SRPBDetailsWhite1 extends ScrollRoadPaintBlock
+{
 
     public SRPBDetailsWhite1(Material mat) {
         super(mat);

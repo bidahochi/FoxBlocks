@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center;
+package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling;
 
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.ScrollRoadPaintBlock;
 import net.minecraft.block.material.Material;

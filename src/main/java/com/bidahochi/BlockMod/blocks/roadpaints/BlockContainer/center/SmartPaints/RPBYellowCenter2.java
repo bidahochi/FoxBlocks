@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center;
+package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints;
 
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.RoadPaintBlockCenter;
 import net.minecraft.block.material.Material;
