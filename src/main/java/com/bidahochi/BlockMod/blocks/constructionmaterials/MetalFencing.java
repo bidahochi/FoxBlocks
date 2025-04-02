@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.constructionmaterials;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseBlockPane;
+import net.minecraft.block.material.Material;
 
 public class MetalFencing extends BaseBlockPane
 {
@@ -11,5 +12,10 @@ public class MetalFencing extends BaseBlockPane
         setBlockName("metalFencing");
         amountOfSubBlocks = 3;
         setStepSound(soundTypeMetal);
+    }
+
+    @Override
+    public int getRenderType() {
+        return 18;
     }
 }
