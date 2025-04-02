@@ -20,9 +20,9 @@ public abstract class BaseBlockPane extends BlockPane
     protected int metaNum = 0;
     protected int amountOfSubBlocks = 0;
 
-    protected BaseBlockPane()
+    protected BaseBlockPane(Material material)
     {
-        super("", "", Material.glass, false);
+        super("", "", material, false);
         setHardness(0.4F);
         setStepSound(Block.soundTypeGlass);
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);

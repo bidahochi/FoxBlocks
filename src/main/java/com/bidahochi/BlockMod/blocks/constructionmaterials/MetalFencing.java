@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class MetalFencing extends BaseBlockPane
 {
     public MetalFencing() {
-        super();
+        super(net.minecraft.block.material.Material.iron);
         setBlockTextureName(FoxBlocks.MODID+":metals/metal_fence");
         setBlockName("metalFencing");
         amountOfSubBlocks = 3;
