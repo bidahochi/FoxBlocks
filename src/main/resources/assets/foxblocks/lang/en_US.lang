@@ -1489,6 +1489,8 @@ tile.Coil_centered.name=Steel Sheet Coil (Singular)
 tile.Coil_pair.name=Steel Sheet Coil (Pair)
 
 tile.toilet.name=Wall Mounted Toilet
+tile.sittingstairtile.name=Seat Stair Sitting Tile
+tile.sittingfloortile.name=Seat Floor Sitting Tile
 tile.wall_sink.name=Wall Mounted Sink (Dual Handles)
 
 <!-- ## LIGHTING ## -->

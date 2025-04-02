@@ -29,6 +29,8 @@ import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWi
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X3;
 import com.bidahochi.BlockMod.blocks.roadpaints.ScrollingItemBlock;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
+import com.bidahochi.BlockMod.items.SittingFloorTileBlock;
+import com.bidahochi.BlockMod.items.SittingStairTileBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
@@ -228,6 +230,8 @@ public enum BlockIDs
     coil_pair(false,null,"coil_pair"),
 
     toilet(false, null, "toilet"),
+    sittingStairTile(true, SittingStairTileBlock.class, "sittingstairtile"),
+    sittingFloorTile(true, SittingFloorTileBlock.class, "sittingfloortile"),
     wall_sink(false, null, "wall_sink"),
 
     //lighting

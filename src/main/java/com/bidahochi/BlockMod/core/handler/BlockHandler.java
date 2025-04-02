@@ -29,6 +29,10 @@ import com.bidahochi.BlockMod.blocks.metals.*;
 import com.bidahochi.BlockMod.blocks.essentiallymemes.*;
 import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
+import com.bidahochi.BlockMod.blocks.props.BlockContainer.SittingFloorTile;
+import com.bidahochi.BlockMod.blocks.props.BlockContainer.SittingStairTile;
+import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingFloorTile;
+import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingStairTile;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.details.Scrolling.SRPBDetailsWhite1;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBYellowCenter2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBWhiteCenter;
@@ -695,6 +699,8 @@ public class BlockHandler {
         BlockIDs.coil_pair.block = new Coil_pair(Material.iron);
 
         BlockIDs.toilet.block = new Toilet(Material.clay);
+        BlockIDs.sittingFloorTile.block = new SittingFloorTile(Material.clay);
+        BlockIDs.sittingStairTile.block = new SittingStairTile(Material.clay);
         BlockIDs.wall_sink.block = new Wall_sink(Material.clay);
 
         //lighting
@@ -825,6 +831,8 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileCoil_centered.class, "coil_centered.tile");
         GameRegistry.registerTileEntity(TileCoil_pair.class, "coil_pair.tile");
 
+        GameRegistry.registerTileEntity(TileSittingStairTile.class, "sittingstairtile.tile");
+        GameRegistry.registerTileEntity(TileSittingFloorTile.class, "sittingfloorile.tile");
         GameRegistry.registerTileEntity(TileToilet.class, "toilet.tile");
         GameRegistry.registerTileEntity(TileWall_sink.class, "wall_sink.tile");
 
