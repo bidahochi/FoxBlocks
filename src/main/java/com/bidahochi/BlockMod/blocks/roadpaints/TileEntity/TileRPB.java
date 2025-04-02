@@ -89,6 +89,12 @@ public class TileRPB extends BaseTileEntity {
         return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-2, zCoord-1, xCoord+1, yCoord, zCoord+1);
     }
 
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared()
+    {
+        return 16384.0D;
+    }
+
     @Override
     public void writeToNBT(NBTTagCompound tag)
     {
