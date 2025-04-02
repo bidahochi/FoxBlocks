@@ -39,6 +39,7 @@ import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaint
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBYellowCenter2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBYellowCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.Scrolling.SRPBYellowOffset;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBWhiteOffsetInsideStraight;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBYellowOffsetInsideDiagonal;
@@ -804,6 +805,7 @@ public class BlockHandler {
         BlockIDs.rpb_ows.block = new RPBWhiteOffsetInsideStraight(Material.rock);
         //static blocks
         BlockIDs.srpb_whiteOffset.block = new SRPBWhiteOffset();
+        BlockIDs.srpb_yellowOffset.block = new SRPBYellowOffset();
         BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);//centered yellow single
         BlockIDs.srpb_cy2.block = new SRPBYellowCenter2(Material.rock);//centered yellow double
         BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
