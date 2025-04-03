@@ -19,6 +19,12 @@ public class TileRoadCover4 extends BaseTileEntity
     }
 
     @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared()
+    {
+        return 16384.0D;
+    }
+
+    @SideOnly(Side.CLIENT)
     @Override
     public AxisAlignedBB getRenderBoundingBox()
     {

@@ -21,6 +21,12 @@ public class TileRoadCoverDynamic1X2 extends BaseTileEntity
 
     }
 
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared()
+    {
+        return 16384.0D;
+    }
+
     @Override
     public void writeToNBT(NBTTagCompound nbt)
     {
