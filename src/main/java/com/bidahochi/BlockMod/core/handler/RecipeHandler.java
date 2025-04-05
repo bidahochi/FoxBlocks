@@ -559,9 +559,7 @@ public class RecipeHandler {
         }
 
         //cage lamps
-        for (ItemStack dye : dyeLightBlue) {
-            GameRegistry.addRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), "SGS", "DGD", "SGS", Character.valueOf('S'), new ItemStack(ItemIDs.ironRod.item), Character.valueOf('D'), dye, Character.valueOf('G'), new ItemStack(ItemIDs.bulbLong.item));
-        }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), "SGS", " G ", "SGS", 'S', new ItemStack(ItemIDs.ironRod.item), 'G', new ItemStack(ItemIDs.bulbLong.item));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightWallV.block, 1),  new ItemStack(BlockIDs.neonCageLightRoof.block, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightWallH.block, 1), new ItemStack(BlockIDs.neonCageLightWallV.block, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), new ItemStack(BlockIDs.neonCageLightWallH.block, 1));

@@ -33,6 +33,7 @@ import com.bidahochi.BlockMod.blocks.props.BlockContainer.SittingFloorTile;
 import com.bidahochi.BlockMod.blocks.props.BlockContainer.SittingStairTile;
 import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingFloorTile;
 import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingStairTile;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.details.Scrolling.SRPBDetailsWhite1;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBYellowCenter2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBWhiteCenter;
@@ -808,6 +809,7 @@ public class BlockHandler {
         BlockIDs.srpb_yellowOffset.block = new SRPBYellowOffset();
         BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);//centered yellow single
         BlockIDs.srpb_cy2.block = new SRPBYellowCenter2(Material.rock);//centered yellow double
+        BlockIDs.srpb_cw.block = new SRPBWhiteCenter(Material.rock);//centered white single
         BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
 
         //xmas

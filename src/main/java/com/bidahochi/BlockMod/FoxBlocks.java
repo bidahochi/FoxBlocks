@@ -78,7 +78,7 @@ public class FoxBlocks
 
         foxBlocksCreativeTabRoadRail = new CreativeTabs("FoxBlocks - Roads 'n' Rails") {
             public Item getTabIconItem() {
-                return   Item.getItemFromBlock(BlockIDs.bridgeA_Center.block); }
+                return   Item.getItemFromBlock(BlockIDs.srpb_cy2.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Roads 'n' Rails"; }};
 
         foxBlocksCreativeTabProperProps = new CreativeTabs("FoxBlocks - Proper Props") {
