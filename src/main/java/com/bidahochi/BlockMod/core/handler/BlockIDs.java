@@ -336,6 +336,7 @@ public enum BlockIDs
     //static
     srpb_cy(true, ScrollingItemBlock.class, "srpb_cy"),//center yellow single
     srpb_cy2(true, ScrollingItemBlock.class, "srpb_cy2"),//center yellow double
+    srpb_cw(true, ScrollingItemBlock.class, "srpb_cw"),//center yellow single
     srpb_whiteOffset(true, ScrollingItemBlock.class, "srpb_whiteOffset"),
     srpb_yellowOffset(true, ScrollingItemBlock.class, "srpb_yellowOffset"),
     srpb_dw1(true, ScrollingItemBlock.class, "srpb_dw1"),//details white 1
