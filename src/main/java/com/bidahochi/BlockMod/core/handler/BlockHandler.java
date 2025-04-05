@@ -225,7 +225,7 @@ public class BlockHandler {
         { // ConcreteBrick
             BlockProperty property = new BlockProperty(BlockIDs.concreteBrick, Material.rock, 2F, 4.0F,
                     PICKAXE, 2,
-                    soundTypeStone, 6, "constructionmaterials/concretebrick/concreteBrick", foxBlocksCreativeTabRock, false);
+                    soundTypeStone, 7, "constructionmaterials/concretebrick/concreteBrick", foxBlocksCreativeTabRock, false);
             BlockIDs.concreteBrick.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.concreteBrick, property);
         }
