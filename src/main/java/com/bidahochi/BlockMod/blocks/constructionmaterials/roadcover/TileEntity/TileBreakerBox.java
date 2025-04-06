@@ -1,29 +1,23 @@
-package com.bidahochi.BlockMod.blocks.constructionmaterials;
+package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity;
 
-import com.bidahochi.BlockMod.FoxBlocks;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ResourceLocation;
-import org.lwjgl.opengl.GL11;
 
-public class TileBreakerBox2 extends TileEntity {
+public class TileBreakerBox extends TileEntity {
     public int dir=0;
 
-    public TileBreakerBox2(int dir) {
+    public TileBreakerBox(int dir) {
         super();
         this.dir = dir;
     }
 
-    public TileBreakerBox2() {}
+    public TileBreakerBox() {}
 
     @Override
-    public boolean shouldRenderInPass(int pass){
-        return pass==0;
-    }
+    public boolean shouldRenderInPass(int pass){ return pass==0; }
 
 
     @Override
@@ -56,7 +50,7 @@ public class TileBreakerBox2 extends TileEntity {
         }
     }
 
-    public TileBreakerBox2 setFacing(int direction){
+    public TileBreakerBox setFacing(int direction){
         dir=(byte) direction;
         this.markDirty();
         return this;

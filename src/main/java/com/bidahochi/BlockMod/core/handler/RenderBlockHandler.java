@@ -1,11 +1,11 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.blocks.bridgestuff.*;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.RenderBreakerBox2;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntitySpecialRenderer.RenderBreakerBox;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntitySpecialRenderer.RenderBreakerBox2;
 import com.bidahochi.BlockMod.blocks.StallParts.*;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.TileBreakerBox2;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileBreakerBox;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileBreakerBox2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntitySpecialRenderer.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;

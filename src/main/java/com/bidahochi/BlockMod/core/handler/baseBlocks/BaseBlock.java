@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -74,10 +75,12 @@ public class BaseBlock extends Block
 
     @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int meta){
+    public IIcon getIcon(int side, int meta)
+    {
         if (meta > amountOfSubBlocks - 1)
         {
-            meta = 0;
+            FoxBlocks.blockLogger.info("**WARNING MISSING BLOCK DETECTED** TELL MOD AUTHORS BlockName: " + this.getUnlocalizedName() + " META:" + meta);
+            return this.textures[0];
         }
 
         return this.textures[meta];
