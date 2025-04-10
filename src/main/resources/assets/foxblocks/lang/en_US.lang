@@ -953,6 +953,11 @@ tile.UnWrappedWood7.name=Unwrapped Lumber (Pine)
 tile.UnWrappedWood8.name=Unwrapped Lumber (Redwood)
 tile.UnWrappedWood9.name=Unwrapped Lumber (Fir)
 
+tile.PFencing_0.name=Oak Privacy Fence
+tile.PFencing_1.name=Spruce Privacy Fence
+tile.PFencing_2.name=Birch Privacy Fence
+tile.PFencing_3.name=Dark Oak Privacy Fence
+
 <!-- ## OTHER BUILDING MATS ## -->
 tile.Dry Wall_0.name=White Drywall
 tile.Dry Wall_1.name=Light Gray Drywall

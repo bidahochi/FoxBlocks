@@ -152,6 +152,8 @@ public enum BlockIDs
     unwrappedwood8(false, null, "unwrappedwood8"),
     unwrappedwood9(false, null, "unwrappedwood9"),
 
+    PFencing(true, BaseItemBlock.class, "PFencing", -1),
+
 
     //other building mats
     dryWall(true,BaseItemBlock.class,"Dry Wall", 15),

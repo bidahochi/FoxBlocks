@@ -525,6 +525,8 @@ public class BlockHandler {
         BlockIDs.unwrappedwood8.block = new UnWrappedWood8(Material.wood);
         BlockIDs.unwrappedwood9.block = new UnWrappedWood9(Material.wood);
 
+        BlockIDs.PFencing.block = new PFencing();
+
         //other building materials
         { // dryWall
             BlockProperty property = new BlockProperty(BlockIDs.dryWall, Material.clay, 2.2F, 6.5F,
