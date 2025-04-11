@@ -14,7 +14,7 @@ public abstract class BaseBlockSolidPane extends BaseBlockPane
 
     @Override
     public Block setLightOpacity(int p_149713_1_) {
-        return super.setLightOpacity(0);
+        return super.setLightOpacity(15);//how much light the block should not let through it
     }
 
     @SideOnly(Side.CLIENT)

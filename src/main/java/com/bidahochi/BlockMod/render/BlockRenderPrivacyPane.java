@@ -7,6 +7,7 @@ import net.minecraft.block.BlockStainedGlassPane;
 import net.minecraft.client.renderer.EntityRenderer;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.src.FMLRenderAccessLibrary;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.util.ForgeDirection;
@@ -66,18 +67,19 @@ public class BlockRenderPrivacyPane implements ISimpleBlockRenderingHandler
         BlockPane blockPane = (BlockPane) block;
         Tessellator tessellator = Tessellator.instance;
         tessellator.setBrightness(blockPane.getMixedBrightnessForBlock(blockAccess, x, y, z));
+        //int i1 = 16777215;
         int i1 = blockPane.colorMultiplier(blockAccess, x, y, z);
-        float f = (float)(i1 >> 16 & 255) / 255.0F;
-        float f1 = (float)(i1 >> 8 & 255) / 255.0F;
-        float f2 = (float)(i1 & 255) / 255.0F;
-        if (EntityRenderer.anaglyphEnable) {
+        float f = (float) (i1 >> 16 & 255) / 255.0F;//was i1
+        float f1 = (float) (i1 >> 8 & 255) / 255.0F;//was i1
+        float f2 = (float) (i1 & 255) / 255.0F;//was i1
+        // using >> indicates shifting the BITS of the number over by the number to the rights amount (signed right shift operator)
+        //aka if x = -4 then doing x >> 1 moves the number 1 bit over, making -2
             float f3 = (f * 30.0F + f1 * 59.0F + f2 * 11.0F) / 100.0F;
             float f4 = (f * 30.0F + f1 * 70.0F) / 100.0F;
             float f5 = (f * 30.0F + f2 * 70.0F) / 100.0F;
             f = f3;
             f1 = f4;
             f2 = f5;
-        }
 
         tessellator.setColorOpaque_F(f, f1, f2);
         boolean flag5 = blockPane instanceof BlockStainedGlassPane;
@@ -91,6 +93,7 @@ public class BlockRenderPrivacyPane implements ISimpleBlockRenderingHandler
             iicon = renderer.getBlockIconFromSideAndMetadata(blockPane, 0, j1);
             iicon1 = flag5 ? ((BlockStainedGlassPane)blockPane).func_150104_b(j1) : ((BlockPane)blockPane).func_150097_e();
         }
+        //tessellator.setBrightness(200);
 
         double d22 = (double)iicon.getMinU();
         double d0 = (double)iicon.getInterpolatedU(7.0D);
@@ -399,7 +402,7 @@ public class BlockRenderPrivacyPane implements ISimpleBlockRenderingHandler
     @Override
     public boolean shouldRender3DInInventory(int modelId)
     {
-        return true;
+        return false;
     }
 
     @Override

@@ -28,11 +28,6 @@ public abstract class BaseBlockPane extends BlockPane
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabHome);
     }
 
-    @Override
-    public Block setLightOpacity(int p_149713_1_) {
-        return super.setLightOpacity(1);
-    }
-
     @SideOnly(Side.CLIENT)
     public int getRenderBlockPass()
     {
