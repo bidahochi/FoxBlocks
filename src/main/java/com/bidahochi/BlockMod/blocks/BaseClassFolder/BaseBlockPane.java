@@ -5,12 +5,15 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPane;
+import net.minecraft.block.BlockWall;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.List;
 
@@ -32,6 +35,16 @@ public abstract class BaseBlockPane extends BlockPane
     public int getRenderBlockPass()
     {
         return 1;
+    }
+
+
+    @Override
+    public boolean canPaneConnectTo(IBlockAccess world, int x, int y, int z, ForgeDirection dir)
+    {
+        Block block = world.getBlock(x, y, z);
+
+        return this.canPaneConnectToBlock(block) || block instanceof BlockWall
+                || world.isSideSolid(x, y, z, dir.getOpposite(), false);
     }
 
     /**
