@@ -1,4 +1,4 @@
-package com.bidahochi.BlockMod.render;
+package com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers;
 
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import net.minecraft.block.Block;

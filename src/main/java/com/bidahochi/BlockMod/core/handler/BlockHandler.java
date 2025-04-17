@@ -1001,6 +1001,7 @@ public class BlockHandler {
                         else
                         {
                             GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                            GameRegistry.registerBlock(new BaseBlockWall(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_" + i + "_Wall");
                         }
                     }
                 }
