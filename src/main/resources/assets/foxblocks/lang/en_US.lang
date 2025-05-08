@@ -298,18 +298,24 @@ tile.jolietlimestone_1.name=Irregular Joliet Limestone Bricks
 tile.jolietlimestone_2.name=Large Joliet Limestone Bricks
 tile.jolietlimestone_3.name=Large Joliet Limestone Bricks (Mossy)
 tile.jolietlimestone_4.name=Large Joliet Limestone Bricks (Weathered)
+tile.jolietlimestone_5.name=Joliet Limestone Smooth Brick Block
+tile.jolietlimestone_6.name=Joliet Limestone Full Brick Block
 
 tile.jolietlimestone_0_Stair.name=Joliet Limestone Bricks Stairs
 tile.jolietlimestone_1_Stair.name=Irregular Joliet Limestone Bricks Stairs
 tile.jolietlimestone_2_Stair.name=Large Joliet Limestone Bricks Stairs
 tile.jolietlimestone_3_Stair.name=Large Joliet Limestone Bricks Stairs (Mossy)
 tile.jolietlimestone_4_Stair.name=Large Joliet Limestone Bricks Stairs (Weathered)
+tile.jolietlimestone_5_Stair.name=Joliet Limestone Smooth Brick Block Stairs
+tile.jolietlimestone_6_Stair.name=Joliet Limestone Full Brick Block Stairs
 
 tile.jolietlimestone_Slab_0.name=Joliet Limestone Bricks Slab
 tile.jolietlimestone_Slab_1.name=Irregular Joliet Limestone Bricks Slab
 tile.jolietlimestone_Slab_2.name=Large Joliet Limestone Bricks Slab
 tile.jolietlimestone_Slab_3.name=Large Joliet Limestone Bricks Slab (Mossy)
 tile.jolietlimestone_Slab_4.name=Large Joliet Limestone Bricks Slab (Weathered)
+tile.jolietlimestone_Slab_5.name=Joliet Limestone Smooth Brick Block Slab
+tile.jolietlimestone_Slab_6.name=Joliet Limestone Full Brick Block Slab
 
 tile.RedrockDeco_0.name=Redrock Cobblestone
 tile.RedrockDeco_1.name=Redrock Bricks

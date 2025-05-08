@@ -332,7 +332,7 @@ public class BlockHandler {
         { // jolietLimestone
             BlockProperty property = new BlockProperty(BlockIDs.jolietLimestone, Material.rock, 2F, 13F,
                     PICKAXE, 1,
-                    soundTypeStone, 5,"constructionmaterials/joliet/jolietlimestone", foxBlocksCreativeTabRock, false);
+                    soundTypeStone, 7,"constructionmaterials/joliet/jolietlimestone", foxBlocksCreativeTabRock, false);
             BlockIDs.jolietLimestone.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.jolietLimestone, property);
         }
