@@ -55,9 +55,11 @@ public enum BlockIDs
     specialDirt(true, BaseItemBlock.class, "SpecialDirt"),
     deadGrass(true, BaseItemBlock.class, "DeadGrass"),
     deadGrass2(true, BaseItemBlock.class, "DeadGrass2"),
+    turf(true, BaseItemBlock.class, "Turf"),
     peagravelBallast(true, BaseItemBlock.class, "peagravelBallast"),
     peagravelWhitestone(true, BaseItemBlock.class, "Peagravel Whitestone"),
     fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),
+    dirt_3(true, BaseItemBlock.class, "Dirt_3"),
     dirt_4(true, BaseItemBlock.class, "Dirt_4"),
     creamCityClay(true, BaseItemBlock.class, "CreamCityClay"),
 
@@ -68,7 +70,7 @@ public enum BlockIDs
 
     smoothCrete(true, BaseItemBlock.class, "Smoothcrete"),
 
-    concreteBrick(true, BaseItemBlock.class, "concreteBrick", 6),
+    concreteBrick(true, BaseItemBlock.class, "concreteBrick", 8),
 
     concreteFloor(true, BaseItemBlock.class, "concreteFloor", 4),
 
@@ -128,12 +130,15 @@ public enum BlockIDs
     //region lumber
     widePlank(true, BaseItemBlock.class, "widePlank", 15),
     widePlank2(true, BaseItemBlock.class, "widePlank2", 15),
-    widePlank3(true, BaseItemBlock.class, "widePlank3", 11),
+    widePlank3(true, BaseItemBlock.class, "widePlank3", 15),
+    widePlank4(true, BaseItemBlock.class, "widePlank4", 1),
+    planks1(true, BaseItemBlock.class, "planks1", 2),
     amtrak(true, BaseItemBlock.class, "amshak", 2),
     logs(true, BaseItemBlock.class, "logs", 2),
     leaves(true, BaseItemBlock.class, "leaves", 2),
-    plywood(true, BaseItemBlock.class, "plywood", 7),
+    plywood(true, BaseItemBlock.class, "plywood", 10),
     woodchips(true, BaseItemBlock.class, "woodchips"),
+
     wrappedwood1(false, null, "wrappedwood1"),
     wrappedwood2(false, null, "wrappedwood2"),
     wrappedwood3(false, null, "wrappedwood3"),
@@ -151,6 +156,9 @@ public enum BlockIDs
     unwrappedwood7(false, null, "unwrappedwood7"),
     unwrappedwood8(false, null, "unwrappedwood8"),
     unwrappedwood9(false, null, "unwrappedwood9"),
+    unwrappedwood10(false, null, "unwrappedwood10"),
+    unwrappedwood11(false, null, "unwrappedwood11"),
+    unwrappedwood12(false, null, "unwrappedwood12"),
 
     PFencing(true, BaseItemBlock.class, "PFencing", -1),
 
@@ -191,6 +199,13 @@ public enum BlockIDs
     rustBeam(true, BaseItemBlock.class, "rustBeam", 5),
     labwallDark(true, BaseItemBlock.class, "labwallDark", 3),
     labwallLight(true, BaseItemBlock.class, "labwallLight", 3),
+
+    tf_dev(true, BaseItemBlock.class, "tf_dev", 9),
+    tf_brick(true, BaseItemBlock.class, "tf_brick", 11),
+    tf_wood(true, BaseItemBlock.class, "tf_wood", 10),
+    tf_floor(true, BaseItemBlock.class, "tf_floor", 10),
+
+
     wornVent(false, null, "WornVent1"),
     wornVent2(false, null, "WornVent2"),
     scaffold(false, null, "Scaffold"),

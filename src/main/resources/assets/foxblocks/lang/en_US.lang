@@ -47,9 +47,12 @@ tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
 <!-- Block -->
 tile.DeadGrass_0.name=Light Dead Grass Block
 tile.DeadGrass2_0.name=Dark Dead Grass Block
+tile.Turf_0.name=Turf Grass Block
+
 <!-- Stairs -->
 tile.DeadGrass_Slab_0.name=Light Dead Grass Block Slab
 tile.DeadGrass2_Slab_0.name=Dark Dead Grass Block Slab
+
 <!-- Slab -->
 tile.DeadGrass_0_Stair.name=Light Dead Grass Block Stair
 tile.DeadGrass2_0_Stair.name=Dark Dead Grass Block Stair
@@ -70,6 +73,7 @@ tile.FakeSnow_Slab_0.name=Fake Snow "Slab"
 tile.FakeSnow_0_Stair.name=Fake Snow "Stair"
 
 <!-- Block -->
+tile.Dirt_3_0.name=3tress Dirt
 tile.Dirt_4_0.name=4tress Dirt
 <!-- Stairs -->
 tile.Dirt_4_0_Stair.name=4tress Dirt Stair
@@ -864,6 +868,10 @@ tile.widePlank3_8.name=Horizontal Wide Spruce Planks
 tile.widePlank3_9.name=Horizontal Wide Jungle Planks
 tile.widePlank3_10.name=Horizontal Wide Dark Oak Planks
 tile.widePlank3_11.name=Horizontal Wide Acacia Planks
+tile.widePlank3_12.name=Vertical Wide Douglas Fir Planks
+tile.widePlank3_13.name=Vertical Wide Sitka Spruce Planks
+tile.widePlank3_14.name=Horizontal Wide Douglas Fir Planks
+tile.widePlank3_15.name=Horizontal Wide Sitka Spruce Planks
 
 <!-- Stairs -->
 tile.widePlank3_0_Stair.name=Vertical Wide Oak Planks Stairs
@@ -878,6 +886,10 @@ tile.widePlank3_8_Stair.name=Horizontal Wide Spruce Planks Stairs
 tile.widePlank3_9_Stair.name=Horizontal Wide Jungle Planks Stairs
 tile.widePlank3_10_Stair.name=Horizontal Wide Dark Oak Planks Stairs
 tile.widePlank3_11_Stair.name=Horizontal Wide Acacia Planks Stairs
+tile.widePlank3_12_Stair.name=Vertical Wide Douglas Fir Planks Stairs
+tile.widePlank3_13_Stair.name=Vertical Wide Sitka Spruce Planks Stairs
+tile.widePlank3_14_Stair.name=Horizontal Wide Douglas Fir Planks Stairs
+tile.widePlank3_15_Stair.name=Horizontal Wide Sitka Spruce Planks Stairs
 
 <!-- Slab -->
 tile.widePlank3_Slab_0.name=Vertical Wide Oak Planks Slab
@@ -892,6 +904,39 @@ tile.widePlank3_2_Slab_0.name=Horizontal Wide Spruce Planks Slab
 tile.widePlank3_2_Slab_1.name=Horizontal Wide Jungle Planks Slab
 tile.widePlank3_2_Slab_2.name=Horizontal Wide Dark Oak Planks Slab
 tile.widePlank3_2_Slab_3.name=Horizontal Wide Acacia Planks Slab
+tile.widePlank3_2_Slab_4.name=Vertical Wide Douglas Fir Planks Slab
+tile.widePlank3_2_Slab_5.name=Vertical Wide Sitka Spruce Planks Slab
+tile.widePlank3_2_Slab_6.name=Horizontal Wide Douglas Fir Planks Slab
+tile.widePlank3_2_Slab_7.name=Horizontal Wide Sitka Spruce Planks Slab
+
+<!-- Block -->
+tile.widePlank4_0.name=Vertical Wide Western Red Cedar Planks
+tile.widePlank4_1.name=Horizontal Wide Western Red Cedar Planks
+
+<!-- Stairs -->
+tile.widePlank4_0_Stair.name=Vertical Wide Western Red Cedar Planks Stairs
+tile.widePlank4_1_Stair.name=Horizontal Wide Western Red Cedar Planks Stairs
+
+<!-- Slab -->
+tile.widePlank4_Slab_0.name=Vertical Wide Western Red Cedar Planks Slab
+tile.widePlank4_Slab_1.name=Horizontal Wide Western Red Cedar Planks Slab
+
+
+<!-- Block -->
+tile.planks1_0.name=Douglas Fir Planks
+tile.planks1_1.name=Sitka Spruce Planks
+tile.planks1_2.name=Western Red Cedar Planks
+
+<!-- Stairs -->
+tile.planks1_0_Stair.name=Douglas Fir Planks Stairs
+tile.planks1_1_Stair.name=Sitka Spruce Planks Stairs
+tile.planks1_2_Stair.name=Western Red Cedar Planks Stairs
+
+<!-- Slab -->
+tile.planks1_Slab_0.name=Douglas Fir Planks Slab
+tile.planks1_Slab_1.name=Sitka Spruce Planks Slab
+tile.planks1_Slab_2.name=Western Red Cedar Planks Slab
+
 
 tile.amshak_0.name=Grey Planks of the Amshack
 tile.amshak_1.name=Blue Striped Planks of the Amshack
@@ -920,6 +965,9 @@ tile.plywood_4.name=Dark Oak Plywood
 tile.plywood_5.name=Acacia Plywood
 tile.plywood_6.name=Pine Plywood
 tile.plywood_7.name=Redwood Plywood
+tile.plywood_8.name=Douglas Fir Plywood
+tile.plywood_9.name=Sitka Spruce Plywood
+tile.plywood_10.name=Western Red Cedar Plywood
 
 tile.plywood_0_Stair.name=Oak Plywood Stairs
 tile.plywood_1_Stair.name=Birch Plywood Stairs
@@ -929,6 +977,9 @@ tile.plywood_4_Stair.name=Dark Oak Plywood Stairs
 tile.plywood_5_Stair.name=Acacia Plywood Stairs
 tile.plywood_6_Stair.name=Pine Plywood Stairs
 tile.plywood_7_Stair.name=Redwood Plywood Stairs
+tile.plywood_8_Stair.name=Douglas Fir Plywood Stairs
+tile.plywood_9_Stair.name=Sitka Spruce Plywood Stairs
+tile.plywood_10_Stair.name=Western Red Cedar Plywood Stairs
 
 tile.plywood_Slab_0.name=Oak Plywood Slab
 tile.plywood_Slab_1.name=Birch Plywood Slab
@@ -938,6 +989,9 @@ tile.plywood_Slab_4.name=Dark Oak Plywood Slab
 tile.plywood_Slab_5.name=Acacia Plywood Slab
 tile.plywood_Slab_6.name=Pine Plywood Slab
 tile.plywood_Slab_7.name=Redwood Plywood Slab
+tile.plywood_2_Slab_0.name=Douglas Fir Plywood Slab
+tile.plywood_2_Slab_1.name=Sitka Spruce Plywood Slab
+tile.plywood_2_Slab_2.name=Western Red Cedar Plywood Slab
 
 tile.woodchips_0.name=Block of Woodchips
 
@@ -958,6 +1012,9 @@ tile.UnWrappedWood6.name=Unwrapped Lumber (Dark Oak)
 tile.UnWrappedWood7.name=Unwrapped Lumber (Pine)
 tile.UnWrappedWood8.name=Unwrapped Lumber (Redwood)
 tile.UnWrappedWood9.name=Unwrapped Lumber (Fir)
+tile.UnWrappedWood10.name=Unwrapped Lumber (Douglas Fir)
+tile.UnWrappedWood11.name=Unwrapped Lumber (Sitka Spruce)
+tile.UnWrappedWood12.name=Unwrapped Lumber (Western Red Cedar)
 
 tile.PFencing_0.name=Oak Privacy Fence
 tile.PFencing_1.name=Spruce Privacy Fence
@@ -1453,6 +1510,152 @@ tile.labwallDark_Slab_1.name=Dark Labwall Horizontal Framed Tile Slab
 tile.labwallDark_Slab_2.name=Dark Labwall Vertical Framed Tile Slab
 tile.labwallDark_Slab_3.name=Dark Labwall Half Tile Slab
 
+
+tile.tf_dev_0.name=TF Dev Measure Block (1)
+tile.tf_dev_1.name=TF Dev Measure Block (2)
+tile.tf_dev_2.name=TF Dev Measure Block (3)
+tile.tf_dev_3.name=TF Dev Measure Block (4)
+tile.tf_dev_4.name=TF Dev Measure Block (5)
+tile.tf_dev_5.name=TF Dev Measure Block (6)
+tile.tf_dev_6.name=TF Dev Measure Block (7)
+tile.tf_dev_7.name=TF Dev Measure Block (8)
+tile.tf_dev_8.name=TF Dev Measure Block (9)
+tile.tf_dev_9.name=TF Dev Measure Block (10)
+
+tile.tf_dev_0_Stair.name=TF Dev Measure Block (1) Stair
+tile.tf_dev_1_Stair.name=TF Dev Measure Block (2) Stair
+tile.tf_dev_2_Stair.name=TF Dev Measure Block (3) Stair
+tile.tf_dev_3_Stair.name=TF Dev Measure Block (4) Stair
+tile.tf_dev_4_Stair.name=TF Dev Measure Block (5) Stair
+tile.tf_dev_5_Stair.name=TF Dev Measure Block (6) Stair
+tile.tf_dev_6_Stair.name=TF Dev Measure Block (7) Stair
+tile.tf_dev_7_Stair.name=TF Dev Measure Block (8) Stair
+tile.tf_dev_8_Stair.name=TF Dev Measure Block (9) Stair
+tile.tf_dev_9_Stair.name=TF Dev Measure Block (10) Stair
+
+tile.tf_dev_Slab_0.name=TF Dev Measure Block (1) Slab
+tile.tf_dev_Slab_1.name=TF Dev Measure Block (2) Slab
+tile.tf_dev_Slab_2.name=TF Dev Measure Block (3) Slab
+tile.tf_dev_Slab_3.name=TF Dev Measure Block (4) Slab
+tile.tf_dev_Slab_4.name=TF Dev Measure Block (5) Slab
+tile.tf_dev_Slab_5.name=TF Dev Measure Block (6) Slab
+tile.tf_dev_Slab_6.name=TF Dev Measure Block (7) Slab
+tile.tf_dev_Slab_7.name=TF Dev Measure Block (8) Slab
+tile.tf_dev_2_Slab_0.name=TF Dev Measure Block (9) Slab
+tile.tf_dev_2_Slab_1.name=TF Dev Measure Block (10) Slab
+
+tile.tf_brick_0.name=TF Brick (Wall 1)
+tile.tf_brick_1.name=TF Brick (Wall 2)
+tile.tf_brick_2.name=TF Brick (Wall 2a)
+tile.tf_brick_3.name=TF Brick (Wall 2b)
+tile.tf_brick_4.name=TF Brick (Wall 2c)
+tile.tf_brick_5.name=TF Brick (Wall 3)
+tile.tf_brick_6.name=TF Brick (Wall 3a)
+tile.tf_brick_7.name=TF Brick (Wall 3b)
+tile.tf_brick_8.name=TF Brick (Wall 3c)
+tile.tf_brick_9.name=TF Brick (Concrete Wall 001a)
+tile.tf_brick_10.name=TF Brick (Concrete Wall 001b)
+tile.tf_brick_11.name=TF Brick (Concrete Wall 001c)
+
+tile.tf_brick_0_Stair.name=TF Brick (Wall 1) Stair
+tile.tf_brick_1_Stair.name=TF Brick (Wall 2) Stair
+tile.tf_brick_2_Stair.name=TF Brick (Wall 2a) Stair
+tile.tf_brick_3_Stair.name=TF Brick (Wall 2b) Stair
+tile.tf_brick_4_Stair.name=TF Brick (Wall 2c) Stair
+tile.tf_brick_5_Stair.name=TF Brick (Wall 3) Stair
+tile.tf_brick_6_Stair.name=TF Brick (Wall 3a) Stair
+tile.tf_brick_7_Stair.name=TF Brick (Wall 3b) Stair
+tile.tf_brick_8_Stair.name=TF Brick (Wall 3c) Stair
+tile.tf_brick_9_Stair.name=TF Brick (Concrete Wall 001a) Stair
+tile.tf_brick_10_Stair.name=TF Brick (Concrete Wall 001b) Stair
+tile.tf_brick_11_Stair.name=TF Brick (Concrete Wall 001c) Stair
+
+tile.tf_brick_Slab_0.name=TF Brick (Wall 1) Slab
+tile.tf_brick_Slab_1.name=TF Brick (Wall 2) Slab
+tile.tf_brick_Slab_2.name=TF Brick (Wall 2a) Slab
+tile.tf_brick_Slab_3.name=TF Brick (Wall 2b) Slab
+tile.tf_brick_Slab_4.name=TF Brick (Wall 2c) Slab
+tile.tf_brick_Slab_5.name=TF Brick (Wall 3) Slab
+tile.tf_brick_Slab_6.name=TF Brick (Wall 3a) Slab
+tile.tf_brick_Slab_7.name=TF Brick (Wall 3b) Slab
+tile.tf_brick_2_Slab_8.name=TF Brick (Wall 3c) Slab
+tile.tf_brick_2_Slab_9.name=TF Brick (Concrete Wall 001a) Slab
+tile.tf_brick_2_Slab_10.name=TF Brick (Concrete Wall 001b) Slab
+tile.tf_brick_2_Slab_11.name=TF Brick (Concrete Wall 001c) Slab
+
+tile.tf_wood_0.name=TF Wood (Red Beam 1)
+tile.tf_wood_1.name=TF Wood (Red Beam 1a)
+tile.tf_wood_2.name=TF Wood (Red Beam 2 Bottom)
+tile.tf_wood_3.name=TF Wood (Red Beam 2 Middle)
+tile.tf_wood_4.name=TF Wood (Red Wall 1)
+tile.tf_wood_5.name=TF Wood (Red Wall 1a)
+tile.tf_wood_6.name=TF Wood (Red Wall 2)
+tile.tf_wood_7.name=TF Wood (Red Wall 2a)
+tile.tf_wood_8.name=TF Wood (Wood Floor 1)
+tile.tf_wood_9.name=TF Wood (Wood Floor 1a)
+tile.tf_wood_10.name=TF Wood (Wood Floor 1 "WIP")
+
+tile.tf_wood_0_Stair.name=TF Wood (Red Beam 1) Stair
+tile.tf_wood_1_Stair.name=TF Wood (Red Beam 1a) Stair
+tile.tf_wood_2_Stair.name=TF Wood (Red Beam 2 Bottom) Stair
+tile.tf_wood_3_Stair.name=TF Wood (Red Beam 2 Middle) Stair
+tile.tf_wood_4_Stair.name=TF Wood (Red Wall 1) Stair
+tile.tf_wood_5_Stair.name=TF Wood (Red Wall 1a) Stair
+tile.tf_wood_6_Stair.name=TF Wood (Red Wall 2) Stair
+tile.tf_wood_7_Stair.name=TF Wood (Red Wall 2a) Stair
+tile.tf_wood_8_Stair.name=TF Wood (Wood Floor 1) Stair
+tile.tf_wood_9_Stair.name=TF Wood (Wood Floor 1a) Stair
+tile.tf_wood_10_Stair.name=TF Wood (Wood Floor 1 "WIP") Stair
+
+tile.tf_wood_Slab_0.name=TF Wood (Red Beam 1) Slab
+tile.tf_wood_Slab_1.name=TF Wood (Red Beam 1a) Slab
+tile.tf_wood_Slab_2.name=TF Wood (Red Beam 2 Bottom) Slab
+tile.tf_wood_Slab_3.name=TF Wood (Red Beam 2 Middle) Slab
+tile.tf_wood_Slab_4.name=TF Wood (Red Wall 1) Slab
+tile.tf_wood_Slab_5.name=TF Wood (Red Wall 1a) Slab
+tile.tf_wood_Slab_6.name=TF Wood (Red Wall 2) Slab
+tile.tf_wood_Slab_7.name=TF Wood (Red Wall 2a) Slab
+tile.tf_wood_2_Slab_8.name=TF Wood (Wood Floor 1) Slab
+tile.tf_wood_2_Slab_9.name=TF Wood (Wood Floor 1a) Slab
+tile.tf_wood_2_Slab_10.name=TF Wood (Wood Floor 1 "WIP") Slab
+
+tile.tf_floor_0.name=TF Metal Flooring (0)
+tile.tf_floor_1.name=TF Metal Flooring (1)
+tile.tf_floor_2.name=TF Metal Flooring (2)
+tile.tf_floor_3.name=TF Metal Flooring (3)
+tile.tf_floor_4.name=TF Metal Flooring (4)
+tile.tf_floor_5.name=TF Red Wall 3 (Bottom)
+tile.tf_floor_6.name=TF Red Wall 3 (Middle)
+tile.tf_floor_7.name=TF Red (Blue) Wall 3 (Bottom)
+tile.tf_floor_8.name=TF Red (Blue) Wall 3 (Middle)
+tile.tf_floor_9.name=TF Blue Wall 2
+tile.tf_floor_10.name=TF Blue Wall 2 (Middle)
+
+tile.tf_floor_0_Stair.name=TF Metal Flooring (0) Stair
+tile.tf_floor_1_Stair.name=TF Metal Flooring (1) Stair
+tile.tf_floor_2_Stair.name=TF Metal Flooring (2) Stair
+tile.tf_floor_3_Stair.name=TF Metal Flooring (3) Stair
+tile.tf_floor_4_Stair.name=TF Metal Flooring (4) Stair
+tile.tf_floor_5_Stair.name=TF Red Wall 3 (Bottom) Stair
+tile.tf_floor_6_Stair.name=TF Red Wall 3 (Middle) Stair
+tile.tf_floor_7_Stair.name=TF Red (Blue) Wall 3 (Bottom) Stair
+tile.tf_floor_8_Stair.name=TF Red (Blue) Wall 3 (Middle) Stair
+tile.tf_floor_9_Stair.name=TF Blue Wall 2 Stair
+tile.tf_floor_10_Stair.name=TF Blue Wall 2 (Middle) Stair
+
+tile.tf_floor_Slab_0.name=TF Metal Flooring (0) Slab
+tile.tf_floor_Slab_1.name=TF Metal Flooring (1) Slab
+tile.tf_floor_Slab_2.name=TF Metal Flooring (2) Slab
+tile.tf_floor_Slab_3.name=TF Metal Flooring (3) Slab
+tile.tf_floor_Slab_4.name=TF Metal Flooring (4) Slab
+tile.tf_floor_Slab_5.name=TF Red Wall 3 (Bottom) Slab
+tile.tf_floor_Slab_6.name=TF Red Wall 3 (Middle) Slab
+tile.tf_floor_Slab_7.name=TF Red (Blue) Wall 3 (Bottom) Slab
+tile.tf_floor_2_Slab_0.name=TF Red (Blue) Wall 3 (Middle) Slab
+tile.tf_floor_2_Slab_1.name=TF Blue Wall 2 Slab
+tile.tf_floor_2_Slab_2.name=TF Blue Wall 2 (Middle) Slab
+
+
 tile.WornVent1.name=Worn Vent (Transparent)
 tile.WornVent2.name=Worn Vent
 
@@ -1633,6 +1836,8 @@ tile.srpb_dw1.3.name=ONLY Static Roadpaint
 tile.srpb_dw1.4.name=Merge Arrow Static Roadpaint
 tile.srpb_dw1.5.name=Stop Line Static Roadpaint
 tile.srpb_dw1.6.name=Stop Line (W/ Offset Line) Static Roadpaint
+tile.srpb_dw1.7.name=Handicap Parking Static Roadpaint
+tile.srpb_dw1.8.name=Handicap Parking (Blue) Static Roadpaint
 
 tile.srpb_yellowOffset.0.name=Straight Static Roadpaint (Offset, Yellow)
 tile.srpb_yellowOffset.1.name=Outer Turn Static Roadpaint (Offset, Yellow)

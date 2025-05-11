@@ -146,16 +146,23 @@ public class BlockHandler {
         { // deadGrass
             BlockProperty property = new BlockProperty(BlockIDs.deadGrass, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
-                    soundTypeGravel, 1,"aggregates/grasses/dead_grass", foxBlocksCreativeTabRock, false);
+                    soundTypeGrass, 1,"aggregates/grasses/dead_grass", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
             BlockIDs.deadGrass.block = new DeadGrass(property.TheMaterial);
         }
         { // deadGrass2
             BlockProperty property = new BlockProperty(BlockIDs.deadGrass2, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
-                    soundTypeGravel, 1,"aggregates/grasses/dead_grass2", foxBlocksCreativeTabRock, false);
+                    soundTypeGrass, 1,"aggregates/grasses/dead_grass2", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
             BlockIDs.deadGrass2.block = new DeadGrass2(property.TheMaterial);
+        }
+        { // turf
+            BlockProperty property = new BlockProperty(BlockIDs.turf, Material.grass, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGrass, 1,"aggregates/grasses/turf", foxBlocksCreativeTabRock, false);
+            property.blockHasSideTextures = true;
+            BlockIDs.turf.block = new Turf(property.TheMaterial);
         }
 
         { // peagravelBallast
@@ -181,6 +188,13 @@ public class BlockHandler {
             tempBlockCache.put(BlockIDs.fakeSnow, property);
         }
 
+        { // dirt_3
+            BlockProperty property = new BlockProperty(BlockIDs.dirt_3, Material.sand, 0.5F, 0.1F,
+                    SHOVEL, 1,
+                    soundTypeGravel, 1,"aggregates/dirt_3", foxBlocksCreativeTab, true);
+            BlockIDs.dirt_3.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.dirt_3, property);
+        }
         { // dirt_4
             BlockProperty property = new BlockProperty(BlockIDs.dirt_4, Material.sand, 0.5F, 0.1F,
                     SHOVEL, 1,
@@ -226,7 +240,7 @@ public class BlockHandler {
         { // ConcreteBrick
             BlockProperty property = new BlockProperty(BlockIDs.concreteBrick, Material.rock, 2F, 4.0F,
                     PICKAXE, 2,
-                    soundTypeStone, 7, "constructionmaterials/concretebrick/concreteBrick", foxBlocksCreativeTabRock, false);
+                    soundTypeStone, 9, "constructionmaterials/concretebrick/concreteBrick", foxBlocksCreativeTabRock, false);
             BlockIDs.concreteBrick.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.concreteBrick, property);
         }
@@ -482,9 +496,23 @@ public class BlockHandler {
         { // WidePlank3
             BlockProperty property = new BlockProperty(BlockIDs.widePlank3, Material.wood, 2F, 5F,
                     AXE, 1,
-                    soundTypeWood, 12,"lumber/wideplank3/wideplank3", foxBlocksCreativeTabHome, false);
+                    soundTypeWood, 16,"lumber/wideplank3/wideplank3", foxBlocksCreativeTabHome, false);
             BlockIDs.widePlank3.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.widePlank3, property);
+        }
+        { // WidePlank4
+            BlockProperty property = new BlockProperty(BlockIDs.widePlank4, Material.wood, 2F, 5F,
+                    AXE, 1,
+                    soundTypeWood, 2,"lumber/wideplank4/wideplank4", foxBlocksCreativeTabHome, false);
+            BlockIDs.widePlank4.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.widePlank4, property);
+        }
+        { // planks1 regular joe schmoe aah wood moment
+            BlockProperty property = new BlockProperty(BlockIDs.planks1, Material.wood, 2F, 5F,
+                    AXE, 1,
+                    soundTypeWood, 3,"lumber/plank/planks", foxBlocksCreativeTabHome, false);
+            BlockIDs.planks1.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.planks1, property);
         }
 
         { // amtrak
@@ -501,12 +529,12 @@ public class BlockHandler {
         { // plywood
             BlockProperty property = new BlockProperty(BlockIDs.plywood, Material.wood, 1F, 3F,
                     AXE, 0,
-                    soundTypeWood, 8,"lumber/plywood/plywood", foxBlocksCreativeTabHome, false);
+                    soundTypeWood, 11,"lumber/plywood/plywood", foxBlocksCreativeTabHome, false);
             BlockIDs.plywood.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.plywood, property);
         }
-
         BlockIDs.woodchips.block = new Woodchips(Material.wood);
+
         BlockIDs.wrappedwood1.block = new WrappedWood1(Material.wood);
         BlockIDs.wrappedwood2.block = new WrappedWood2(Material.wood);
         BlockIDs.wrappedwood3.block = new WrappedWood3(Material.wood);
@@ -524,6 +552,9 @@ public class BlockHandler {
         BlockIDs.unwrappedwood7.block = new UnWrappedWood7(Material.wood);
         BlockIDs.unwrappedwood8.block = new UnWrappedWood8(Material.wood);
         BlockIDs.unwrappedwood9.block = new UnWrappedWood9(Material.wood);
+        BlockIDs.unwrappedwood10.block = new UnWrappedWood10(Material.wood);
+        BlockIDs.unwrappedwood11.block = new UnWrappedWood11(Material.wood);
+        BlockIDs.unwrappedwood12.block = new UnWrappedWood12(Material.wood);
 
         BlockIDs.PFencing.block = new PFencing();
 
@@ -652,6 +683,35 @@ public class BlockHandler {
                     soundTypeStone, 4,"constructionmaterials/labwall/labwall_light", foxBlocksCreativeTabFactory, false);
             BlockIDs.labwallLight.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.labwallLight, property);
+        }
+
+        { // tf_dev
+            BlockProperty property = new BlockProperty(BlockIDs.tf_dev, Material.iron, 6F, 20.0F,
+                    PICKAXE, 1,
+                    soundTypeMetal, 10,"constructionmaterials/teamfortress/dev_measure", foxBlocksCreativeTabFactory, false);
+            BlockIDs.tf_dev.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.tf_dev, property);
+        }
+        { // tf_brick
+            BlockProperty property = new BlockProperty(BlockIDs.tf_brick, Material.rock, 3F, 8F,
+                    PICKAXE, 1,
+                    soundTypeStone, 12,"constructionmaterials/teamfortress/tf_brick", foxBlocksCreativeTabFactory, false);
+            BlockIDs.tf_brick.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.tf_brick, property);
+        }
+        { // tf_wood
+            BlockProperty property = new BlockProperty(BlockIDs.tf_wood, Material.wood, 3F, 8F,
+                    PICKAXE, 1,
+                    soundTypeWood, 11,"constructionmaterials/teamfortress/tf_wood", foxBlocksCreativeTabFactory, false);
+            BlockIDs.tf_wood.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.tf_wood, property);
+        }
+        { // tf_floor
+            BlockProperty property = new BlockProperty(BlockIDs.tf_floor, Material.iron, 3F, 8F,
+                    PICKAXE, 1,
+                    soundTypeMetal, 11,"constructionmaterials/teamfortress/tf_floor", foxBlocksCreativeTabFactory, false);
+            BlockIDs.tf_floor.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.tf_floor, property);
         }
 
         BlockIDs.wornVent.block = new WornVent1(Material.iron);
@@ -884,6 +944,9 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileUnWrappedWood7.class, "unwrappedwood7.tile");
         GameRegistry.registerTileEntity(TileUnWrappedWood8.class, "unwrappedwood8.tile");
         GameRegistry.registerTileEntity(TileUnWrappedWood9.class, "unwrappedwood9.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood10.class, "unwrappedwood10.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood11.class, "unwrappedwood11.tile");
+        GameRegistry.registerTileEntity(TileUnWrappedWood12.class, "unwrappedwood12.tile");
 
         //overheads
         GameRegistry.registerTileEntity(TileOverhead_pole_curve_3.class, "overhead_pole_curve_3.tile");

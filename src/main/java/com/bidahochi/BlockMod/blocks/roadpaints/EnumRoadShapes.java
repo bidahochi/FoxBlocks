@@ -25,6 +25,7 @@ public enum EnumRoadShapes
     detail6("detail6", "dt6"),
     detail7("detail7", "dt7"),
     detail8("detail8", "dt8"),
+    detail9("detail9", "dt9"),
 
     ;
     public String type;
