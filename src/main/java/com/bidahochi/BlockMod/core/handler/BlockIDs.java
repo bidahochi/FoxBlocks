@@ -89,7 +89,7 @@ public enum BlockIDs
     mortarBrick(true, BaseItemBlock.class, "mortarBrick", 15),
     mortarBrick2(true, BaseItemBlock.class, "mortarBrick2", 7),
     creamCity(true, BaseItemBlock.class, "creamcity", 2),
-    jolietLimestone(true, BaseItemBlock.class, "jolietlimestone", 4), // Limestone Bricks
+    jolietLimestone(true, BaseItemBlock.class, "jolietlimestone", 6), // Limestone Bricks
     redrockDeco(true, BaseItemBlock.class, "RedrockDeco", 3), // 3
 
     // region Cobalt
