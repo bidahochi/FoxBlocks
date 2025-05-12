@@ -43,6 +43,8 @@ tile.SpecialDirt_0.name=Ungrowable Dirt
 tile.SpecialDirt_Slab_0.name=Ungrowable Dirt Slab
 <!-- Slab -->
 tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
+<!-- Wall -->
+tile.SpecialDirt_0_Wall.name=Ungrowable Dirt Wall
 
 <!-- Block -->
 tile.DeadGrass_0.name=Light Dead Grass Block
@@ -71,14 +73,22 @@ tile.FakeSnow_0.name=Fake Snow "Block"
 tile.FakeSnow_Slab_0.name=Fake Snow "Slab"
 <!-- Slab -->
 tile.FakeSnow_0_Stair.name=Fake Snow "Stair"
+<!-- Wall -->
+tile.FakeSnow_0_Wall.name=Fake Snow "Wall"
 
 <!-- Block -->
 tile.Dirt_3_0.name=3tress Dirt
 tile.Dirt_4_0.name=4tress Dirt
 <!-- Stairs -->
+tile.Dirt_3_0_Stair.name=3tress Dirt Stair
 tile.Dirt_4_0_Stair.name=4tress Dirt Stair
 <!-- Slab -->
+tile.Dirt_3_Slab_0.name=3tress Dirt Slab
 tile.Dirt_4_Slab_0.name=4tress Dirt Slab
+
+<!-- Wall -->
+tile.Dirt_3_0_Wall.name=3tress Dirt Wall
+tile.Dirt_4_0_Wall.name=4tress Dirt Wall
 
 tile.CreamCityClay_0.name=Cream City Clay
 tile.CreamCityClay_Slab_0.name=Cream City Clay Slab
@@ -202,7 +212,11 @@ tile.plasteredConcrete_8_Wall.name=Sad Lame Greyish Wall Plaster Wall
 
 
 <!-- ## STONES ## -->
-tile.Soapstone.name=Raw Soapstone
+tile.Soapstone_0.name=Raw Soapstone
+tile.Soapstone_Slab_0.name=Raw Soapstone Slab
+tile.Soapstone_0_Stair.name=Raw Soapstone Stair
+tile.Soapstone_0_Wall.name=Raw Soapstone Wall
+
 tile.Soapstone Deco_0.name=Soapstone Bricks
 tile.Soapstone Deco_1.name=Large Soapstone Bricks
 tile.Soapstone Deco_2.name=Smooth(er) Soapstone
@@ -2028,10 +2042,10 @@ tile.tf_brick_Slab_4.name=TF Brick (Wall 2c) Slab
 tile.tf_brick_Slab_5.name=TF Brick (Wall 3) Slab
 tile.tf_brick_Slab_6.name=TF Brick (Wall 3a) Slab
 tile.tf_brick_Slab_7.name=TF Brick (Wall 3b) Slab
-tile.tf_brick_2_Slab_8.name=TF Brick (Wall 3c) Slab
-tile.tf_brick_2_Slab_9.name=TF Brick (Concrete Wall 001a) Slab
-tile.tf_brick_2_Slab_10.name=TF Brick (Concrete Wall 001b) Slab
-tile.tf_brick_2_Slab_11.name=TF Brick (Concrete Wall 001c) Slab
+tile.tf_brick_2_Slab_0.name=TF Brick (Wall 3c) Slab
+tile.tf_brick_2_Slab_1.name=TF Brick (Concrete Wall 001a) Slab
+tile.tf_brick_2_Slab_2.name=TF Brick (Concrete Wall 001b) Slab
+tile.tf_brick_2_Slab_3.name=TF Brick (Concrete Wall 001c) Slab
 
 tile.tf_brick_0_Wall.name=TF Brick (Wall 1) Wall
 tile.tf_brick_1_Wall.name=TF Brick (Wall 2) Wall
@@ -2078,9 +2092,21 @@ tile.tf_wood_Slab_4.name=TF Wood (Red Wall 1) Slab
 tile.tf_wood_Slab_5.name=TF Wood (Red Wall 1a) Slab
 tile.tf_wood_Slab_6.name=TF Wood (Red Wall 2) Slab
 tile.tf_wood_Slab_7.name=TF Wood (Red Wall 2a) Slab
-tile.tf_wood_2_Slab_8.name=TF Wood (Wood Floor 1) Slab
-tile.tf_wood_2_Slab_9.name=TF Wood (Wood Floor 1a) Slab
-tile.tf_wood_2_Slab_10.name=TF Wood (Wood Floor 1 "WIP") Slab
+tile.tf_wood_2_Slab_0.name=TF Wood (Wood Floor 1) Slab
+tile.tf_wood_2_Slab_1.name=TF Wood (Wood Floor 1a) Slab
+tile.tf_wood_2_Slab_2.name=TF Wood (Wood Floor 1 "WIP") Slab
+
+tile.tf_wood_0_Wall.name=TF Wood (Red Beam 1) Wall
+tile.tf_wood_1_Wall.name=TF Wood (Red Beam 1a) Wall
+tile.tf_wood_2_Wall.name=TF Wood (Red Beam 2 Bottom) Wall
+tile.tf_wood_3_Wall.name=TF Wood (Red Beam 2 Middle) Wall
+tile.tf_wood_4_Wall.name=TF Wood (Red Wall 1) Wall
+tile.tf_wood_5_Wall.name=TF Wood (Red Wall 1a) Wall
+tile.tf_wood_6_Wall.name=TF Wood (Red Wall 2) Wall
+tile.tf_wood_7_Wall.name=TF Wood (Red Wall 2a) Wall
+tile.tf_wood_8_Wall.name=TF Wood (Wood Floor 1) Wall
+tile.tf_wood_9_Wall.name=TF Wood (Wood Floor 1a) Wall
+tile.tf_wood_10_Wall.name=TF Wood (Wood Floor 1 "WIP") Wall
 
 tile.tf_floor_0.name=TF Metal Flooring (0)
 tile.tf_floor_1.name=TF Metal Flooring (1)
@@ -2118,6 +2144,18 @@ tile.tf_floor_2_Slab_0.name=TF Red (Blue) Wall 3 (Middle) Slab
 tile.tf_floor_2_Slab_1.name=TF Blue Wall 2 Slab
 tile.tf_floor_2_Slab_2.name=TF Blue Wall 2 (Middle) Slab
 
+tile.tf_floor_0_Wall.name=TF Metal Flooring (0) Wall
+tile.tf_floor_1_Wall.name=TF Metal Flooring (1) Wall
+tile.tf_floor_2_Wall.name=TF Metal Flooring (2) Wall
+tile.tf_floor_3_Wall.name=TF Metal Flooring (3) Wall
+tile.tf_floor_4_Wall.name=TF Metal Flooring (4) Wall
+tile.tf_floor_5_Wall.name=TF Red Wall 3 (Bottom) Wall
+tile.tf_floor_6_Wall.name=TF Red Wall 3 (Middle) Wall
+tile.tf_floor_7_Wall.name=TF Red (Blue) Wall 3 (Bottom) Wall
+tile.tf_floor_8_Wall.name=TF Red (Blue) Wall 3 (Middle) Wall
+tile.tf_floor_9_Wall.name=TF Blue Wall 2 Wall
+tile.tf_floor_10_Wall.name=TF Blue Wall 2 (Middle) Wall
+
 
 tile.WornVent1.name=Worn Vent (Transparent)
 tile.WornVent2.name=Worn Vent
@@ -2133,16 +2171,16 @@ tile.metalFencing_2.name=Metal Fence 3
 
 <!-- ## HELL ## -->
 tile.Ember Stone_0.name=Ember Stone
-tile.Dark Ember Stone_0.name=Dark Ember Stone
-
-<!-- ## ADDITIONAL ## -->
-tile.Soapstone Stair.name=Raw Soapstone Stair
-tile.Soapstone Slab.name=Raw Soapstone Slab
-
 tile.Ember Stone_Slab_0.name=Ember Stone Slab
 tile.Ember Stone_0_Stair.name=Ember Stone Stair
+tile.Ember Stone_0_Wall.name=Ember Stone Wall
+
+tile.Dark Ember Stone_0.name=Dark Ember Stone
 tile.Dark Ember Stone_Slab_0.name=Dark EmberStone Slab
 tile.Dark Ember Stone_0_Stair.name=Dark EmberStone Stair
+tile.Dark Ember Stone_0_Wall.name=Dark Ember Stone Wall
+
+<!-- ## ADDITIONAL ## -->
 
 item.foxblocks:doorAitem.name=Office Door (Red Tint)
 item.foxblocks:doorBitem.name=Office Door (Brown Tint)

@@ -727,7 +727,6 @@ public class BlockHandler {
                     PICKAXE, 3,
                     soundTypeStone, 1,"hell/emberStone", foxBlocksCreativeTabRock, true);
             BlockIDs.emberStone.block = property.getNewBlock();
-            // Do not add this as there is a older version that already handles slab and stairs for this block
             tempBlockCache.put(BlockIDs.emberStone, property);
         }
         { // darkEmberStone
@@ -735,7 +734,6 @@ public class BlockHandler {
                     PICKAXE, 3,
                     soundTypeStone, 1,"hell/darkEmberStone", foxBlocksCreativeTabRock, true);
             BlockIDs.darkEmberStone.block = property.getNewBlock();
-            // Do not add this as there is a older version that already handles slab and stairs for this block
             tempBlockCache.put(BlockIDs.darkEmberStone, property);
         }
 
