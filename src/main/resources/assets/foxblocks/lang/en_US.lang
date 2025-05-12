@@ -2214,6 +2214,8 @@ tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)
 tile.neonCageLampWallH.name=Neon Cage-Light (Horizontal Wall Mounted)
 tile.ExteriorLightSquare.name=Exterior Light (Small)
 tile.ExteriorLightSquare2.name=Exterior Light (Large)
+tile.lamp2warm.name=Tube Light (Warm Lighting)
+tile.lamp2cold.name=Tube Light (Cool Lighting)
 
 <!-- ## MOD. BRIDGES ## -->
 tile.bridgeA_Center.name=Modular Bridge A (Center Post)

@@ -50,7 +50,13 @@ public class XmasLights1_top_rainbow extends BlockContainer {
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        //this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        switch(((TileXmasLights1_top_rainbow)world.getTileEntity(x,y,z)).dir){
+            case 0:{this.setBlockBounds(0.0F, 0.5F, 0.0F, 1F, 1F, 0.25F); return;}//north
+            case 1:{this.setBlockBounds(0.75F, 0.5F, 0.0F, 1F, 1F, 1F); return;}//east
+            case 2:{this.setBlockBounds(0.0F, 0.5F, 0.75F, 1F, 1F, 1F); return;}//south
+            case 3:{this.setBlockBounds(0.0F, 0.5F, 0.0F, 0.25F, 1F, 1F); return;}//west
+        }
     }
 
     @Override

@@ -47,6 +47,8 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallH.class, new RenderNeonCageLampWallH());
         ClientRegistry.bindTileEntitySpecialRenderer(TileExteriorLightSquare.class, new RenderExteriorLightSquare());
         ClientRegistry.bindTileEntitySpecialRenderer(TileExteriorLightSquare2.class, new RenderExteriorLightSquare2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileLamp2warm.class, new RenderLamp2warm());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileLamp2cold.class, new RenderLamp2cold());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Center.class, new RenderBridgeA_Center());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Top.class, new RenderBridgeA_X_Side_Top());

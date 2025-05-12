@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.lighting;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileBreakerBox2;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
@@ -19,23 +18,21 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class NeonCageLampWallH extends BlockContainer {
-    public NeonCageLampWallH(Material p_i45394_1_) {
+public class Lamp2cold extends BlockContainer {
+    public Lamp2cold(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("neonCageLampWallH");
+        setBlockName("lamp2cold");
         setHardness(2F);
         setResistance(6.0F);
-        setHarvestLevel("pickaxe", 1);
+        setHarvestLevel("pickaxe", 0);
         setStepSound(soundTypeMetal);
         setCreativeTab(FoxBlocks.foxBlocksCreativeTab);
-        //this.setBlockBounds(0.0F, 0.0F, 0.0F, 0.5F, 1F, 0.5F);
         setLightLevel(1F);
     }
-    //public AxisAlignedBB getCollisionBoundingBoxFromPool(World )
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileNeonCageLampWallH();
+        return new TileLamp2cold();
     }
 
     @Override
@@ -55,13 +52,7 @@ public class NeonCageLampWallH extends BlockContainer {
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        //this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
-        switch(((TileNeonCageLampWallH)world.getTileEntity(x,y,z)).dir){
-            case 0:{this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 0.25F); return;}//north
-            case 1:{this.setBlockBounds(0.75F, 0.0F, 0.0F, 1F, 1F, 1F); return;}//east
-            case 2:{this.setBlockBounds(0.0F, 0.0F, 0.75F, 1F, 1F, 1F); return;}//south
-            case 3:{this.setBlockBounds(0.0F, 0.0F, 0.0F, 0.25F, 1F, 1F); return;}//west
-        }
+        this.setBlockBounds(0.0F, 0.75F, 0.0F, 1F, 1F, 1F);
     }
 
     @Override
@@ -92,7 +83,7 @@ public class NeonCageLampWallH extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileNeonCageLampWallH(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileLamp2cold(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -105,6 +96,6 @@ public class NeonCageLampWallH extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":neonCageLampWallH_icon");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":lamp_cold_icon");
     }
 }

@@ -257,6 +257,8 @@ public enum BlockIDs
     neonCageLightWallH(false, null, "neonCageLightWallH"),
     ExteriorLightSquare(false, null, "ExteriorLightSquare"),
     ExteriorLightSquare2(false, null, "ExteriorLightSquare2"),
+    lamp2warm(false, null, "lamp2warm"),
+    lamp2cold(false, null, "lamp2cold"),
 
     //modular bridges
     bridgeA_Center(false, null, "bridgeA_Center"),

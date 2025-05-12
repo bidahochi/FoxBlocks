@@ -771,6 +771,8 @@ public class BlockHandler {
         BlockIDs.neonCageLightWallH.block = new NeonCageLampWallH(Material.iron);
         BlockIDs.ExteriorLightSquare.block = new ExteriorLightSquare(Material.iron);
         BlockIDs.ExteriorLightSquare2.block = new ExteriorLightSquare2(Material.iron);
+        BlockIDs.lamp2warm.block = new Lamp2warm(Material.iron);
+        BlockIDs.lamp2cold.block = new Lamp2cold(Material.iron);
 
         //modular bridge
         BlockIDs.bridgeA_Center.block = new BridgeA_Center(Material.wood);
@@ -905,6 +907,8 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TileNeonCageLampWallH.class, "neonCageLightWallH.tile");
         GameRegistry.registerTileEntity(TileExteriorLightSquare.class, "ExteriorLightSquare.tile");
         GameRegistry.registerTileEntity(TileExteriorLightSquare2.class, "ExteriorLightSquare2.tile");
+        GameRegistry.registerTileEntity(TileLamp2warm.class, "lamp2warm.tile");
+        GameRegistry.registerTileEntity(TileLamp2cold.class, "lamp2cold.tile");
 
         GameRegistry.registerTileEntity(TileBridgeA_Center.class, "bridgeA_Center.tile");
         GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top.class, "bridgeA_X_Side_Center_Top.tile");

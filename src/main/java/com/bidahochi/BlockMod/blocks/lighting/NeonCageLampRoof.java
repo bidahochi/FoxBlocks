@@ -55,7 +55,7 @@ public class NeonCageLampRoof extends BlockContainer {
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        this.setBlockBounds(0.0F, 0.75F, 0.0F, 1F, 1F, 1F);
     }
 
     /*public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
