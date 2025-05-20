@@ -95,6 +95,6 @@ public class PropTrailerDryvan1 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":/props/propTrailerDryvan1");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/propTrailerDryvan1");
     }
 }
