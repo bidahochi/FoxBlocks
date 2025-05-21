@@ -47,6 +47,8 @@ public class BaseBlockWall extends BlockWall
         return true;
     }
 
+    @Override
+    @SideOnly(Side.CLIENT)
     public int getRenderType() {
         return MC20w15aWall;
     }

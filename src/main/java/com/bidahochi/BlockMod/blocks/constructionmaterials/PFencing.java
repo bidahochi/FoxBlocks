@@ -28,6 +28,7 @@ public class PFencing extends BaseBlockPane
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     public int getRenderType() {
         return privacyPaneRenderId;//11 is fence (doesnt work), 18 is pane, 41 is stainedglasspane
         //-1 is invisible
