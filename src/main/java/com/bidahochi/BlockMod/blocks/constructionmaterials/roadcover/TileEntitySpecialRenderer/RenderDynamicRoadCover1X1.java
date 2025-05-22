@@ -42,6 +42,7 @@ public class RenderDynamicRoadCover1X1 extends TileEntitySpecialRenderer
         if (texture.contains(":"))
         {
             roadCoverTexture = texture.split(":", 5);
+            roadCoverTexture[0] = roadCoverTexture[0].toLowerCase();
         }
         else
         {
