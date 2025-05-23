@@ -144,25 +144,28 @@ public class BlockHandler {
             tempBlockCache.put(BlockIDs.specialDirt, property);
         }
         { // deadGrass
-            BlockProperty property = new BlockProperty(BlockIDs.deadGrass, Material.grass, 0.5F, 0.1F,
+            GrassBlockProperty property = new GrassBlockProperty(BlockIDs.deadGrass, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
                     soundTypeGrass, 1,"aggregates/grasses/dead_grass", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
-            BlockIDs.deadGrass.block = new DeadGrass(property.TheMaterial);
+            BlockIDs.deadGrass.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.deadGrass, property);
         }
         { // deadGrass2
-            BlockProperty property = new BlockProperty(BlockIDs.deadGrass2, Material.grass, 0.5F, 0.1F,
+            GrassBlockProperty property = new GrassBlockProperty(BlockIDs.deadGrass2, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
                     soundTypeGrass, 1,"aggregates/grasses/dead_grass2", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
-            BlockIDs.deadGrass2.block = new DeadGrass2(property.TheMaterial);
+            BlockIDs.deadGrass2.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.deadGrass2, property);
         }
         { // turf
-            BlockProperty property = new BlockProperty(BlockIDs.turf, Material.grass, 0.5F, 0.1F,
+            GrassBlockProperty property = new GrassBlockProperty(BlockIDs.turf, Material.grass, 0.5F, 0.1F,
                     SHOVEL, 0,
                     soundTypeGrass, 1,"aggregates/grasses/turf", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
-            BlockIDs.turf.block = new Turf(property.TheMaterial);
+            BlockIDs.turf.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.turf, property);
         }
 
         { // peagravelBallast
@@ -221,18 +224,18 @@ public class BlockHandler {
         }
 
         { // LayeredConcrete
-            BlockProperty property = new BlockProperty(BlockIDs.layeredConcrete, Material.rock, 2.0F, 12.5F,
+            PillarBlockProperty property = new PillarBlockProperty(BlockIDs.layeredConcrete, Material.rock, 2.0F, 12.5F,
                     PICKAXE, 1,
                     null, 1,"stones/layercrete/Layered_concrete", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
-            BlockIDs.layeredConcrete.block = new LayeredConcrete(property.TheMaterial);
-            //tempBlockCache.put(BlockIDs.layeredConcrete, property);
+            BlockIDs.layeredConcrete.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.layeredConcrete, property);
         }
 
         { // smoothCrete
             BlockProperty property = new BlockProperty(BlockIDs.smoothCrete, Material.rock, 2F, 12.5F,
                     PICKAXE, 1,
-                    soundTypeStone, 1, "stones/layercrete/Layered_concrete_0", foxBlocksCreativeTabRock, true);
+                    soundTypeStone, 1, "stones/layercrete/Layered_concrete_Top_0", foxBlocksCreativeTabRock, true);
             BlockIDs.smoothCrete.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.smoothCrete, property);
         }
@@ -737,14 +740,6 @@ public class BlockHandler {
             tempBlockCache.put(BlockIDs.darkEmberStone, property);
         }
 
-        //additional
-        //BlockIDs.emberStoneStair.block = new BaseStair(BlockIDs.emberStone.block, 0,"EmberStone Stair",2F,2F, soundTypeStone,"pickaxe",2,0, foxBlocksCreativeTabRock);
-        //BlockIDs.darkEmberStoneStair.block = new BaseStair(BlockIDs.darkEmberStone.block, 0,"Dark EmberStone Stair",2F, 2F, soundTypeStone, "pickaxe",2, 0, foxBlocksCreativeTabRock);
-        //BlockIDs.soapStoneStair.block = new BaseStair(BlockIDs.soapStone.block, 0, "Soapstone Stair", 7F, 15F, soundTypeStone, "pickaxe", 1, 0, foxBlocksCreativeTabRock);
-        //BlockIDs.emberStoneSlab.block = new BaseSlab(false, Material.rock,BlockIDs.emberStoneSlab.blockName, 2F,2F, soundTypeStone,"pickaxe",2,0,"hell/emberStone", foxBlocksCreativeTabRock);
-        //BlockIDs.darkEmberStoneSlab.block = new BaseSlab(false, Material.rock,"Dark EmberStone Slab", 2F,2F, soundTypeStone,"pickaxe",2,0,"hell/darkEmberStone", foxBlocksCreativeTabRock);
-        //BlockIDs.soapStoneSlab.block = new BaseSlab(false, Material.rock, "Soapstone Slab", 7F, 15F, soundTypeStone, "pickaxe", 1, 0, "stones/soapstone", foxBlocksCreativeTabRock);
-
         //props
         BlockIDs.breakerBox.block = new BreakerBox(Material.iron);
         BlockIDs.breakerBox2.block = new BreakerBox2(Material.iron);
@@ -1043,7 +1038,7 @@ public class BlockHandler {
             if (block.MaxMetadata > -1
                     && block.hasItemBlock
                     && (BaseItemBlock.class.equals(block.itemBlockClass) || block.itemBlockClass.getClass().isInstance(BaseItemBlock.class.getClass()))
-                    && (block.block instanceof BaseBlock || block.block instanceof BaseFallingBlock))
+                    && (block.block instanceof BaseBlock || block.block instanceof BasePillarBlock || block.block instanceof BaseFallingBlock))
             {
                 BlockProperty blockProperty = tempBlockCache.get(block);
                 if (blockProperty != null)
@@ -1066,7 +1061,11 @@ public class BlockHandler {
                         else
                         {
                             GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
-                            GameRegistry.registerBlock(new BaseBlockWall(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_" + i + "_Wall");
+
+                            if (blockProperty.IsWallBlockAllowed())
+                            {
+                                GameRegistry.registerBlock(new BaseBlockWall(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_" + i + "_Wall");
+                            }
                         }
                     }
                 }
