@@ -95,4 +95,9 @@ public class BlockProperty implements IBlockProperty
 
         return new BaseBlockSlab(true, this, singleSecondarySlab, 8);
     }
+
+    public boolean IsWallBlockAllowed()
+    {
+        return true;
+    }
 }

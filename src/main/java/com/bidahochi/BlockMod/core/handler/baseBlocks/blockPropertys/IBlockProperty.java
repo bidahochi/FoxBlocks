@@ -13,4 +13,6 @@ public interface IBlockProperty
     public Block getSecondNewSingleSlab();
 
     public Block getSecondNewDoubleSlab();
+
+    public boolean IsWallBlockAllowed();
 }
