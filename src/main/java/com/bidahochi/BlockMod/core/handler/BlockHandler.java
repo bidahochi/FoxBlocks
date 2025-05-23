@@ -221,18 +221,18 @@ public class BlockHandler {
         }
 
         { // LayeredConcrete
-            BlockProperty property = new BlockProperty(BlockIDs.layeredConcrete, Material.rock, 2.0F, 12.5F,
+            PillarBlockProperty property = new PillarBlockProperty(BlockIDs.layeredConcrete, Material.rock, 2.0F, 12.5F,
                     PICKAXE, 1,
                     null, 1,"stones/layercrete/Layered_concrete", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
-            BlockIDs.layeredConcrete.block = new LayeredConcrete(property.TheMaterial);
-            //tempBlockCache.put(BlockIDs.layeredConcrete, property);
+            BlockIDs.layeredConcrete.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.layeredConcrete, property);
         }
 
         { // smoothCrete
             BlockProperty property = new BlockProperty(BlockIDs.smoothCrete, Material.rock, 2F, 12.5F,
                     PICKAXE, 1,
-                    soundTypeStone, 1, "stones/layercrete/Layered_concrete_0", foxBlocksCreativeTabRock, true);
+                    soundTypeStone, 1, "stones/layercrete/Layered_concrete_Top_0", foxBlocksCreativeTabRock, true);
             BlockIDs.smoothCrete.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.smoothCrete, property);
         }
@@ -1043,7 +1043,7 @@ public class BlockHandler {
             if (block.MaxMetadata > -1
                     && block.hasItemBlock
                     && (BaseItemBlock.class.equals(block.itemBlockClass) || block.itemBlockClass.getClass().isInstance(BaseItemBlock.class.getClass()))
-                    && (block.block instanceof BaseBlock || block.block instanceof BaseFallingBlock))
+                    && (block.block instanceof BaseBlock || block.block instanceof BasePillarBlock || block.block instanceof BaseFallingBlock))
             {
                 BlockProperty blockProperty = tempBlockCache.get(block);
                 if (blockProperty != null)

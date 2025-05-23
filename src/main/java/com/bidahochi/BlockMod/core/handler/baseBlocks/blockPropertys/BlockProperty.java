@@ -4,6 +4,7 @@ import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockWall;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -12,7 +13,7 @@ import net.minecraft.creativetab.CreativeTabs;
 /**
  Class meant to be used for Block Initialization to quickly share block details between Block, Slab, Stair
  */
-public class BlockProperty
+public class BlockProperty implements IBlockProperty
 {
     public final Material TheMaterial;
     public final String BlockName;

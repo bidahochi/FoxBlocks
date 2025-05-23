@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.items.BaseItems;
 
         import com.bidahochi.BlockMod.FoxBlocks;
+        import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseAbstractSlab;
         import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
         import cpw.mods.fml.common.registry.GameRegistry;
         import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ public class BaseItemSlab extends ItemSlab
     {
         super(block,
                 (BlockSlab) block, // BlockIDs.searchEnum(BlockIDs.class, block.getUnlocalizedName().replace("_DoubleSlab","_Slab").replace("tile.", "").replace(" ", "")).block
-                (BaseBlockSlab) GameRegistry.findBlock(FoxBlocks.MODID, ((BaseBlockSlab)block).BaseBlockName + (block.getUnlocalizedName().contains("_2_") ? "_2_" : "_") + "DoubleSlab"), // BlockIDs.searchEnum(BlockIDs.class, block.getUnlocalizedName().replace("_Slab","_DoubleSlab").replace("tile.", "").replace(" ", "")).block
+                (BaseAbstractSlab) GameRegistry.findBlock(FoxBlocks.MODID, ((BaseAbstractSlab)block).BaseBlockName + (block.getUnlocalizedName().contains("_2_") ? "_2_" : "_") + "DoubleSlab"), // BlockIDs.searchEnum(BlockIDs.class, block.getUnlocalizedName().replace("_Slab","_DoubleSlab").replace("tile.", "").replace(" ", "")).block
                 block.getUnlocalizedName().contains("_DoubleSlab"));
         setHasSubtypes(true);
     }
