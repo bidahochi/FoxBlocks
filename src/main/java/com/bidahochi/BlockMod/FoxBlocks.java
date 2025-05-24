@@ -29,7 +29,7 @@ public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.4.1_prerelease";
+    public static final String VERSION = "1.4.2_prerelease";
     public static CreativeTabs foxBlocksCreativeTab;
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
@@ -39,6 +39,7 @@ public class FoxBlocks
     public static CreativeTabs foxBlocksCreativeTabItems;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
     public static FMLEventChannel channel;
+    public static boolean isForgeMultiPartLoaded = false;
 
     /* Foxblocks proxy files */
     @SidedProxy(clientSide = "com.bidahochi.BlockMod.core.ClientProxy", serverSide = "com.bidahochi.BlockMod.core.CommonProxy")
@@ -117,6 +118,7 @@ public class FoxBlocks
         if (Loader.isModLoaded("ForgeMultipart"))
         {
             ForgeMultiPart.registerBlocks();
+            isForgeMultiPartLoaded = true;
         }
     }
 
