@@ -220,17 +220,6 @@ public enum BlockIDs
     emberStone(true,BaseItemBlock.class,"Ember Stone"),
     //endregion Hell
 
-    //additional
-    //emberStoneStair(false,null,"EmberStone Stair"),
-    //darkEmberStoneStair(false,null,"Dark EmberStone Stair"),
-    //soapStoneStair(false, null, "Soapstone Stair"),
-    //testPane(false, null, "TestPane"),
-    //testSlab(false,null,"TestSlab"),
-    //testStair(false,null,"TestStair"),
-    //emberStoneSlab(false,null,"EmberStone Slab"),
-    //darkEmberStoneSlab(false,null,"Dark EmberStone Slab"),
-    //soapStoneSlab(false, null, "Soapstone Slab"),
-
     //props
     breakerBox(false, null, "breakerBox"),
     breakerBox2(false, null, "breakerBox2"),
