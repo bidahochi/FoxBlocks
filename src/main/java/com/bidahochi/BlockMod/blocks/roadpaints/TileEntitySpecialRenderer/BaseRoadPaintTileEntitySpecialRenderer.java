@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
@@ -63,6 +64,18 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
         {
             GL11.glTranslatef(0, 0.5f, 0);
         }
+        else if (block instanceof RoadCover0
+                || block instanceof RoadCover1
+                || block instanceof RoadCover2
+                || block instanceof RoadCover3
+                || block instanceof RoadCover4
+                || block instanceof RoadCover5
+                || block instanceof RoadCover6
+                || block instanceof RoadCoverDynamic1X1 || block instanceof RoadCoverDynamic1X2 || block instanceof RoadCoverDynamic1X3)
+        {
+            GL11.glTranslatef(0, 0.93f, 0);
+        }
+
         if (model!= null) {
             model.render(null, 0, 0, 0, 0, 0, 0.0625f);
         }
