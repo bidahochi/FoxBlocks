@@ -56,7 +56,6 @@ public class OreGenerationHandler2 implements IWorldGenerator {
         generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 8,16,40 ,15,30, BlockIDs.soapStone.block);
         generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 4,5,20 ,10,33, BlockIDs.soapStone.block);
         //generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 4,8,115 ,5,128, BlockIDs.soapStone.block);
-        //generateOre(BlockIDs.harieshHead.block, world,rand, x,z,4, 8, 15, 0, 255, BlockIDs.soapStone.block);
 
         generateOre(BlockIDs.hematite.block, world, rand, x ,z ,1, 10,140 , 5, 60, BlockIDs.taconite.block);
     }
