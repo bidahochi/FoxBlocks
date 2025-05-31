@@ -258,7 +258,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.gypsumDust.item, 8), BlockIDs.gypsum.block);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.fireBrick.block, 4), "SBS", "BAB", "SBS", Character.valueOf('S'), Blocks.sand, Character.valueOf('B'), Items.brick, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item,1));
         //for (ItemStack dyebrown : dyeBrown){ GameRegistry.addRecipe(new ItemStack(BlockIDs.brownTile.block, 2), "SSB", "   ", "   ", Character.valueOf('S'), BlockIDs.soapStone.block, Character.valueOf('B'), dyebrown); }
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.harieshHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.blockOfPlayerHead.block,1), Items.diamond_pickaxe, Items.diamond_axe, Items.diamond_hoe, Items.diamond_sword, Items.diamond_shovel);
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.blockLavaBucket.block, 1), Items.lava_bucket,Items.lava_bucket,Items.lava_bucket,Items.lava_bucket);
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 4), Items.water_bucket, Items.iron_ingot);
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 16), Items.water_bucket, new ItemStack(ItemIDs.ironSlice.item, 1));

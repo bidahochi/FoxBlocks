@@ -138,7 +138,27 @@ public class MissingBlockHandler
                     mapping.remap(block);
                 }
             }
-
+            else if (mapping.name.equals("foxblocks:-hariesh"))
+            {
+                if (GameRegistry.Type.ITEM.equals(mapping.type))
+                {
+                    Item item = GameRegistry.findItem(FoxBlocks.MODID, "blockOfPlayerHead");
+                    if (item == null)
+                    {
+                        System.out.println("ITEM NULL" + "BlockOfPlayerHead_0");
+                    }
+                    mapping.remap(item);
+                }
+                else if (GameRegistry.Type.BLOCK.equals(mapping.type))
+                {
+                    Block block = GameRegistry.findBlock(FoxBlocks.MODID, "blockOfPlayerHead");
+                    if (block == null)
+                    {
+                        System.out.println("block NULL" + "BlockOfPlayerHead_0");
+                    }
+                    mapping.remap(block);
+                }
+            }
         }
     }
 

@@ -118,7 +118,7 @@ public enum BlockIDs
     booBlox(true, BaseItemBlock.class, "BooBlox", 5),
     blockLavaBucket(false, null, "BlockOLavaBucket"),
     // THIS IS ACTUALLY RIGGS
-    harieshHead(false,BaseItemBlock.class, "-hariesh"), //why does this have itemblockmetalsiding yet is false anyway?
+    blockOfPlayerHead(true,BaseItemBlock.class, "blockOfPlayerHead"), //why does this have itemblockmetalsiding yet is false anyway?
     foxglass(false,null,"foxglass"),
     blue(true, BaseItemBlock.class,"Blue"),
     green(true, BaseItemBlock.class,"Green"),

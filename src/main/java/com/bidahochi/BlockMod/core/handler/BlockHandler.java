@@ -458,7 +458,15 @@ public class BlockHandler {
         BlockIDs.tHanos.block = new Thanos(Material.sponge);
         BlockIDs.booBlox.block = new BooBlox(Material.cloth);
         BlockIDs.blockLavaBucket.block = new BlockLavaBucket(Material.iron);
-        BlockIDs.harieshHead.block = new HarieshHead(Material.gourd);
+
+        { // blockOfPlayerHead
+            BlockProperty property = new BlockProperty(BlockIDs.blockOfPlayerHead, Material.gourd, 4.0F, 10.0F,
+                    PICKAXE, 4,
+                    soundTypeAnvil, 1,"meme/rigg_head", foxBlocksCreativeTab, true);
+            BlockIDs.blockOfPlayerHead.block = property.getNewBlock().setLightLevel(1);
+            tempBlockCache.put(BlockIDs.blockOfPlayerHead, property);
+        }
+
         BlockIDs.foxglass.block = new foxglass(Material.glass);
 
         { // blue

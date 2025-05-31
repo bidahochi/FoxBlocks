@@ -951,7 +951,12 @@ tile.BooBlox_3.name=Angry Boo 2
 tile.BooBlox_4.name=Tongue Boo 1
 tile.BooBlox_5.name=Tongue Boo 2
 tile.BlockOLavaBucket.name=Block of Lava Bucket
-tile.hariesh.name=Wuff Block
+
+tile.blockOfPlayerHead_0.name=Wuff Block
+tile.blockOfPlayerHead_0_Stair.name=Wuff Block Stairs
+tile.blockOfPlayerHead_Slab_0.name=Wuff Block Slab
+tile.blockOfPlayerHead_0_Wall.name=Wuff Block Wall
+
 tile.harieshseethrough.name=THE (Other) Fox Block
 
 tile.fofblock.name=The FoxBlock
