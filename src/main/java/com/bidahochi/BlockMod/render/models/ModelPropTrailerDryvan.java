@@ -65,13 +65,13 @@ public class ModelPropTrailerDryvan extends ModelConverter //Same as Filename
 		bodyModel[31] = new ModelRendererTurbo(this, 230, 64, textureX, textureY); // Box 76 wheel 4
 		bodyModel[32] = new ModelRendererTurbo(this, 241, 64, textureX, textureY); // Box 71 wheel 4
 		bodyModel[33] = new ModelRendererTurbo(this, 231, 59, textureX, textureY); // Box 77 wheel 4
-		bodyModel[34] = new ModelRendererTurbo(this, 19, 36, textureX, textureY); // Box 31
-		bodyModel[35] = new ModelRendererTurbo(this, 19, 61, textureX, textureY); // Box 145
-		bodyModel[36] = new ModelRendererTurbo(this, 252, 80, textureX, textureY); // Box 146
+		bodyModel[34] = new ModelRendererTurbo(this, 19, 34, textureX, textureY); // Box 31
+		bodyModel[35] = new ModelRendererTurbo(this, 19, 60, textureX, textureY); // Box 145
+		bodyModel[36] = new ModelRendererTurbo(this, 252, 78, textureX, textureY); // Box 146
 		bodyModel[37] = new ModelRendererTurbo(this, 1, 86, textureX, textureY); // Box 147
 		bodyModel[38] = new ModelRendererTurbo(this, 1, 107, textureX, textureY); // Box 148
-		bodyModel[39] = new ModelRendererTurbo(this, 229, 96, textureX, textureY); // Box 314 door swing right
-		bodyModel[40] = new ModelRendererTurbo(this, 206, 96, textureX, textureY); // Box 182 door swing left
+		bodyModel[39] = new ModelRendererTurbo(this, 229, 95, textureX, textureY); // Box 314 door swing right
+		bodyModel[40] = new ModelRendererTurbo(this, 206, 95, textureX, textureY); // Box 182 door swing left
 		bodyModel[41] = new ModelRendererTurbo(this, 220, 81, textureX, textureY); // Box 176
 		bodyModel[42] = new ModelRendererTurbo(this, 220, 81, textureX, textureY); // Box 177
 		bodyModel[43] = new ModelRendererTurbo(this, 217, 87, textureX, textureY); // Box 178
@@ -120,7 +120,7 @@ public class ModelPropTrailerDryvan extends ModelConverter //Same as Filename
 		bodyModel[86] = new ModelRendererTurbo(this, 300, 76, textureX, textureY); // Box 203
 		bodyModel[87] = new ModelRendererTurbo(this, 295, 76, textureX, textureY); // Box 204
 		bodyModel[88] = new ModelRendererTurbo(this, 295, 83, textureX, textureY); // Box 205
-		bodyModel[89] = new ModelRendererTurbo(this, 252, 105, textureX, textureY); // Box 2748 rollup door
+		bodyModel[89] = new ModelRendererTurbo(this, 252, 104, textureX, textureY); // Box 2748 rollup door
 		bodyModel[90] = new ModelRendererTurbo(this, 349, 117, textureX, textureY); // Box 2750 spare tire
 		bodyModel[91] = new ModelRendererTurbo(this, 354, 111, textureX, textureY); // Box 2751 spare tire
 		bodyModel[92] = new ModelRendererTurbo(this, 354, 111, textureX, textureY); // Box 2752 spare tire
@@ -132,11 +132,11 @@ public class ModelPropTrailerDryvan extends ModelConverter //Same as Filename
 		bodyModel[98] = new ModelRendererTurbo(this, 205, 46, textureX, textureY); // Box 102 wheel 3 cover
 		bodyModel[99] = new ModelRendererTurbo(this, 205, 46, textureX, textureY); // Box 103 wheel 4 cover
 		bodyModel[100] = new ModelRendererTurbo(this, 205, 46, textureX, textureY); // Box 104 wheel 4 cover
-		bodyModel[101] = new ModelRendererTurbo(this, 20, 10, textureX, textureY); // Box 105 glow lights
-		bodyModel[102] = new ModelRendererTurbo(this, 20, 32, textureX, textureY); // Box 106 glow lights
-		bodyModel[103] = new ModelRendererTurbo(this, 20, 32, textureX, textureY); // Box 107 glow lights
-		bodyModel[104] = new ModelRendererTurbo(this, 20, 34, textureX, textureY); // Box 106 glow lights
-		bodyModel[105] = new ModelRendererTurbo(this, 20, 34, textureX, textureY); // Box 107 glow lights
+		bodyModel[101] = new ModelRendererTurbo(this, 20, 7, textureX, textureY); // Box 105 glow lights
+		bodyModel[102] = new ModelRendererTurbo(this, 20, 29, textureX, textureY); // Box 106 glow lights
+		bodyModel[103] = new ModelRendererTurbo(this, 20, 29, textureX, textureY); // Box 107 glow lights
+		bodyModel[104] = new ModelRendererTurbo(this, 20, 31, textureX, textureY); // Box 106 glow lights
+		bodyModel[105] = new ModelRendererTurbo(this, 20, 31, textureX, textureY); // Box 107 glow lights
 		bodyModel[106] = new ModelRendererTurbo(this, 193, 54, textureX, textureY); // Box 108 hazmat plac
 		bodyModel[107] = new ModelRendererTurbo(this, 193, 54, textureX, textureY); // Box 111 hazmat placc
 		bodyModel[108] = new ModelRendererTurbo(this, 193, 54, textureX, textureY); // Box 108 hazmat plac
@@ -244,27 +244,27 @@ public class ModelPropTrailerDryvan extends ModelConverter //Same as Filename
 		bodyModel[33].addShapeBox(-1.5F, -1.5F, -1F, 3, 3, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 77 wheel 4
 		bodyModel[33].setRotationPoint(5.5F, 6F, 9F);
 
-		bodyModel[34].addBox(0F, 0F, 0F, 84, 23, 1, 0F); // Box 31
-		bodyModel[34].setRotationPoint(-64F, -22F, -10.5F);
+		bodyModel[34].addBox(0F, 0F, 0F, 84, 24, 1, 0F); // Box 31
+		bodyModel[34].setRotationPoint(-64F, -23F, -10.5F);
 
-		bodyModel[35].addBox(0F, 0F, 0F, 84, 23, 1, 0F); // Box 145
-		bodyModel[35].setRotationPoint(-64F, -22F, 9.5F);
+		bodyModel[35].addBox(0F, 0F, 0F, 84, 24, 1, 0F); // Box 145
+		bodyModel[35].setRotationPoint(-64F, -23F, 9.5F);
 
-		bodyModel[36].addBox(-19F, 0F, 0F, 19, 23, 1, 0F); // Box 146
-		bodyModel[36].setRotationPoint(-64F, -22F, -9.5F);
+		bodyModel[36].addBox(-19F, 0F, 0F, 19, 24, 1, 0F); // Box 146
+		bodyModel[36].setRotationPoint(-64F, -23F, -9.5F);
 		bodyModel[36].rotateAngleY = -1.57079633F;
 
 		bodyModel[37].addBox(0F, 0F, 0F, 83, 1, 19, 0F); // Box 147
 		bodyModel[37].setRotationPoint(-63F, 0F, -9.5F);
 
 		bodyModel[38].addBox(0F, 0F, 0F, 83, 1, 19, 0F); // Box 148
-		bodyModel[38].setRotationPoint(-63F, -22F, -9.5F);
+		bodyModel[38].setRotationPoint(-63F, -23F, -9.5F);
 
-		bodyModel[39].addBox(-0.5F, 0F, -9F, 1, 21, 10, 0F); // Box 314 door swing right
-		bodyModel[39].setRotationPoint(19.3F, -21F, 9F);
+		bodyModel[39].addBox(-0.5F, 0F, -9F, 1, 22, 10, 0F); // Box 314 door swing right
+		bodyModel[39].setRotationPoint(19.3F, -22F, 9F);
 
-		bodyModel[40].addBox(-0.5F, 0F, -1F, 1, 21, 10, 0F); // Box 182 door swing left
-		bodyModel[40].setRotationPoint(19.3F, -21F, -9F);
+		bodyModel[40].addBox(-0.5F, 0F, -1F, 1, 22, 10, 0F); // Box 182 door swing left
+		bodyModel[40].setRotationPoint(19.3F, -22F, -9F);
 
 		bodyModel[41].addShapeBox(0F, 0F, 0F, 3, 4, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F); // Box 176
 		bodyModel[41].setRotationPoint(16F, 3F, 3F);
@@ -419,8 +419,8 @@ public class ModelPropTrailerDryvan extends ModelConverter //Same as Filename
 		bodyModel[88].addShapeBox(0F, 0F, 0F, 2, 6, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F); // Box 205
 		bodyModel[88].setRotationPoint(-37F, 1F, -10F);
 
-		bodyModel[89].addBox(0F, 0F, -1F, 19, 21, 1, 0F); // Box 2748 rollup door
-		bodyModel[89].setRotationPoint(18.8F, -21F, -9.5F);
+		bodyModel[89].addBox(0F, 0F, -1F, 19, 22, 1, 0F); // Box 2748 rollup door
+		bodyModel[89].setRotationPoint(18.8F, -22F, -9.5F);
 		bodyModel[89].rotateAngleY = 1.57079633F;
 
 		bodyModel[90].addShapeBox(0F, 0F, 0.5F, 3, 2, 8, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 2750 spare tire
@@ -457,13 +457,13 @@ public class ModelPropTrailerDryvan extends ModelConverter //Same as Filename
 		bodyModel[100].setRotationPoint(5.5F, 6F, 9F);
 
 		bodyModel[101].addShapeBox(0F, 0F, 0F, 0, 1, 20, 0F,0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F); // Box 105 glow lights
-		bodyModel[101].setRotationPoint(20.01F, -22F, -10F);
+		bodyModel[101].setRotationPoint(20.01F, -23F, -10F);
 
 		bodyModel[102].addShapeBox(0F, 0F, 0F, 83, 1, 0, 0F,0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F); // Box 106 glow lights
-		bodyModel[102].setRotationPoint(-63.5F, -22F, -10.51F);
+		bodyModel[102].setRotationPoint(-63.5F, -23F, -10.51F);
 
 		bodyModel[103].addShapeBox(0F, 0F, 0F, 83, 1, 0, 0F,0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F); // Box 107 glow lights
-		bodyModel[103].setRotationPoint(-63.5F, -22F, 10.51F);
+		bodyModel[103].setRotationPoint(-63.5F, -23F, 10.51F);
 
 		bodyModel[104].addShapeBox(0F, 0F, 0F, 83, 1, 0, 0F,0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F, 0F, -0.125F, 0F); // Box 106 glow lights
 		bodyModel[104].setRotationPoint(-63.5F, 0F, -10.51F);

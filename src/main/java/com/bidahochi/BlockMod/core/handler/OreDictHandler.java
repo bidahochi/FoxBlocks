@@ -65,6 +65,12 @@ public class OreDictHandler {
         OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 15));
 
         OreDictionary.registerOre("logWood", new ItemStack(BlockIDs.logs.block));
+        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.planks1.block));
+        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank.block));
+        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank2.block));
+        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank3.block));
+        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank4.block));
+
         OreDictionary.registerOre("oreHematite", new ItemStack(BlockIDs.hematite.block));
         OreDictionary.registerOre("oreTaconite", new ItemStack(BlockIDs.taconite.block));
         OreDictionary.registerOre("oreCrushedTaconite", new ItemStack(ItemIDs.taconiteCrushed.item));

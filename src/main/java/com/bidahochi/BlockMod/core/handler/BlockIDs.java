@@ -356,6 +356,7 @@ public enum BlockIDs
     xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),
 
     propTrailerDryvan1(false, null, "propTrailerDryvan1"),
+    propTrailerDryvan1a(false, null, "propTrailerDryvan1a"),
 
     ;
 
