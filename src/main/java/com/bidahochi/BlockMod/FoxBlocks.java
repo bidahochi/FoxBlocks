@@ -3,6 +3,7 @@ package com.bidahochi.BlockMod;
 import com.bidahochi.BlockMod.core.CommonProxy;
 import com.bidahochi.BlockMod.core.handler.*;
 import com.bidahochi.BlockMod.entities.EntityChair;
+import com.bidahochi.BlockMod.init.FoxBlocksCreativeTab;
 import com.bidahochi.BlockMod.plugins.fmp.ForgeMultiPart;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -57,37 +58,37 @@ public class FoxBlocks
         //Initalize blocc tabs.
         blockLogger.info("FoxBlocks starting with it's big floofy tail");
 
-        foxBlocksCreativeTabRock = new CreativeTabs("FoxBlocks - Rock Hard") {
+        foxBlocksCreativeTabRock = new FoxBlocksCreativeTab("FoxBlocks - Rock Hard") {
             public Item getTabIconItem() {
                 return  Item.getItemFromBlock(BlockIDs.fireBrick.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Rock Hard"; }};
 
-        foxBlocksCreativeTabHome = new CreativeTabs("FoxBlocks - Happy Homes") {
+        foxBlocksCreativeTabHome = new FoxBlocksCreativeTab("FoxBlocks - Happy Homes") {
             public Item getTabIconItem() {
                 return  Item.getItemFromBlock(BlockIDs.tile2x2.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Happy Homes"; }};
 
-        foxBlocksCreativeTabFactory = new CreativeTabs("FoxBlocks - Fox Factory") {
+        foxBlocksCreativeTabFactory = new FoxBlocksCreativeTab("FoxBlocks - Fox Factory") {
             public Item getTabIconItem() {
                 return  Item.getItemFromBlock(BlockIDs.metalSiding.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Fox Factory"; }};
 
-        foxBlocksCreativeTabItems = new CreativeTabs("FoxBlocks - Obligatory Items Tab") {
+        foxBlocksCreativeTabItems = new FoxBlocksCreativeTab("FoxBlocks - Obligatory Items Tab") {
             public Item getTabIconItem() {
                 return  ItemIDs.jarate.item; }
             public String getTranslatedTabLabel() { return "FoxBlocks - Obligatory Items Tab"; }};
 
-        foxBlocksCreativeTabRoadRail = new CreativeTabs("FoxBlocks - Roads 'n' Rails") {
+        foxBlocksCreativeTabRoadRail = new FoxBlocksCreativeTab("FoxBlocks - Roads 'n' Rails") {
             public Item getTabIconItem() {
                 return   Item.getItemFromBlock(BlockIDs.srpb_cy2.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Roads 'n' Rails"; }};
 
-        foxBlocksCreativeTabProperProps = new CreativeTabs("FoxBlocks - Proper Props") {
+        foxBlocksCreativeTabProperProps = new FoxBlocksCreativeTab("FoxBlocks - Proper Props") {
             public Item getTabIconItem() {
                 return   Item.getItemFromBlock(BlockIDs.xmasLights1_top_rainbow.block); }
             public String getTranslatedTabLabel() { return "FoxBlocks - Proper Props"; }};
 
-        foxBlocksCreativeTab = new CreativeTabs("FoxBlocks - Unsorted") {
+        foxBlocksCreativeTab = new FoxBlocksCreativeTab("FoxBlocks - Unsorted") {
             public Item getTabIconItem() {
                 return  Item.getItemFromBlock(BlockIDs.tHanos.block); }
             public String getTranslatedTabLabel() {

@@ -1089,20 +1089,4 @@ public class BlockHandler {
 
         //FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
     }
-
-    //The code below is not active. Do not touch unless you know how to fix and your fix works! -hariesh
-   // public static void blockpropertyregister() {
-//
-//
-   //     for (BlockProperties blockReg : BlockProperties.values()) {
-   //         String nameOfBlock = blockReg.blockName;
-   //         Block blockOfReg = blockReg.block;
-   //         BlockProperties.valueOf(nameOfBlock).block = new LegacyBaseBlock(blockReg.material, blockReg.blockName, blockReg.hardness, blockReg.resistance, blockReg.harvestTool, blockReg.harvestLevel, blockReg.sound, blockReg.textureLocation);
-   //     }
-//
-   //     for (BlockProperties blockReg : BlockProperties.values()){
-   //         GameRegistry.registerBlock(blockReg.block, blockReg.blockName);
-   //     }
-   // }
-
 }
