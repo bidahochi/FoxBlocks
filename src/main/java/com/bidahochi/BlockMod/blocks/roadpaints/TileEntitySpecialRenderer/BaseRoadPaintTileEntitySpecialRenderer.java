@@ -71,7 +71,8 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
                 || block instanceof RoadCover4
                 || block instanceof RoadCover5
                 || block instanceof RoadCover6
-                || block instanceof RoadCoverDynamic1X1 || block instanceof RoadCoverDynamic1X2 || block instanceof RoadCoverDynamic1X3)
+                || block instanceof RoadCoverDynamic1X1 || block instanceof RoadCoverDynamic1X2 || block instanceof RoadCoverDynamic1X3
+                || block.getUnlocalizedName().contains("tcRail"))
         {
             GL11.glTranslatef(0, 0.93f, 0);
         }
