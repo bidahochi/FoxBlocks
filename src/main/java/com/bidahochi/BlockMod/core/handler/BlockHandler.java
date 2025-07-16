@@ -51,13 +51,19 @@ import com.bidahochi.BlockMod.blocks.stones.*;
 
 import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.*;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaFallingBlockProperty;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import static com.bidahochi.BlockMod.FoxBlocks.*;
 import static net.minecraft.block.Block.*;
@@ -73,7 +79,9 @@ public class BlockHandler {
          * when generating Slabs, And Stairs.
          */
         HashMap<BlockIDs, BlockProperty> tempBlockCache = new HashMap<>();
+        LinkedHashMap<Block, VanillaBlockProperty> tempVanillaBlockCache = new LinkedHashMap<Block, VanillaBlockProperty>();
         final String PICKAXE = "pickaxe";
+        final String SHEARS = "shears";
         final String SHOVEL = "shovel";
         final String AXE = "AXE";
 
@@ -886,8 +894,6 @@ public class BlockHandler {
         BlockIDs.propTrailerDryvan1.block = new PropTrailerDryvan1(Material.wood);
         BlockIDs.propTrailerDryvan1a.block = new PropTrailerDryvan1a(Material.wood);
 
-
-
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");
         GameRegistry.registerTileEntity(TileBreakerBox2.class, "breakerbox2.tile");
         GameRegistry.registerTileEntity(TileClampOnSignDerail.class, "clampOnSignDerail.tile");
@@ -1032,6 +1038,7 @@ public class BlockHandler {
         GameRegistry.registerTileEntity(TilePropTrailerDryvan1a.class, "PropTrailerDryvan1a");
 
 
+
         for (BlockIDs block : BlockIDs.values())
         {
             if (!block.hasItemBlock)
@@ -1080,6 +1087,47 @@ public class BlockHandler {
                     }
                 }
             }
+        }
+
+
+
+        tempVanillaBlockCache.put(Blocks.sand, new VanillaFallingBlockProperty(Blocks.sand, "sand", 2, SHOVEL, 0));
+        tempVanillaBlockCache.put(Blocks.gravel, new VanillaFallingBlockProperty(Blocks.gravel, "gravel", 1, SHOVEL, 0));
+        tempVanillaBlockCache.put(Blocks.hardened_clay, new VanillaBlockProperty(Blocks.hardened_clay, "hardened_clay", 1, PICKAXE, 1));
+        tempVanillaBlockCache.put(Blocks.stained_hardened_clay, new VanillaBlockProperty(Blocks.stained_hardened_clay, "hardened_clay_stained", 16, PICKAXE, 1));
+        tempVanillaBlockCache.put(Blocks.wool, new VanillaBlockProperty(Blocks.wool, "wool_colored", 16, SHEARS, 1));
+
+        for (Map.Entry<Block, VanillaBlockProperty> tempBlock : tempVanillaBlockCache.entrySet())
+        {
+            // Slabs
+            GameRegistry.registerBlock(tempBlock.getValue().getNewDoubleSlab(), com.bidahochi.BlockMod.items.BaseItems.BaseVanillaItemSlab.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_DoubleSlab");
+            GameRegistry.registerBlock(tempBlock.getValue().getNewSingleSlab(), com.bidahochi.BlockMod.items.BaseItems.BaseVanillaItemSlab.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_Slab");
+
+            if (tempBlock.getValue().TotalTextureCount > 8)
+            {
+                GameRegistry.registerBlock(tempBlock.getValue().getSecondNewDoubleSlab(), com.bidahochi.BlockMod.items.BaseItems.BaseVanillaItemSlab.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_2_DoubleSlab");
+                GameRegistry.registerBlock(tempBlock.getValue().getSecondNewSingleSlab(), com.bidahochi.BlockMod.items.BaseItems.BaseVanillaItemSlab.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_2_Slab");
+            }
+
+            // Stairs
+            for(int i = 0; i < tempBlock.getValue().TextureCount(); i++)
+            {
+                if (tempBlock.getKey() instanceof BlockFalling)
+                {
+                    GameRegistry.registerBlock(
+                            new BaseFallingBlockStair(tempBlock.getKey(), i),
+                            com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Stair");
+                }
+                else
+                {
+                    GameRegistry.registerBlock(
+                            new BaseFallingBlockStair(tempBlock.getKey(), i),
+                            com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Stair");
+
+                    GameRegistry.registerBlock(new BaseBlockWall(tempBlock.getKey(), i, tempBlock.getValue()), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Wall");
+                }
+            }
+
         }
 
         if(e.getSide().isClient())

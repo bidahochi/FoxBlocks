@@ -1,24 +1,18 @@
-package com.bidahochi.BlockMod.core.handler.baseBlocks;
+package com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions;
 
-import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
-public class BaseFallingBlockStair extends BaseBlockStair
+public class BaseVanillaFallingBlockSlab extends BaseVanillaBlockSlab
 {
     public static boolean fallInstantly;
 
-    public BaseFallingBlockStair(Block block, int metaData, BlockProperty blockProperty)
+    public BaseVanillaFallingBlockSlab(Boolean isDoubleSlab, VanillaBlockProperty blockProperty, Block singleSlab, int blockNumberStartingIndex)
     {
-        super(block, metaData, blockProperty);
-    }
-
-    public BaseFallingBlockStair(Block block, int metaData)
-    {
-        super(block, metaData);
+        super(isDoubleSlab, blockProperty, singleSlab, blockNumberStartingIndex);
     }
 
     public void onBlockAdded(World world, int p_149726_2_, int p_149726_3_, int p_149726_4_) {
@@ -64,8 +58,8 @@ public class BaseFallingBlockStair extends BaseBlockStair
                 }
             }
         }
-
     }
+
 
     protected void func_149829_a(EntityFallingBlock p_149829_1_) {
     }

@@ -9,6 +9,7 @@ import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 
 /**
  Class meant to be used for Block Initialization to quickly share block details between Block, Slab, Stair
@@ -32,6 +33,31 @@ public class BlockProperty implements IBlockProperty
     protected Block singleSlab;
     protected Block singleSecondarySlab;
     protected Block block;
+
+    public boolean isVanillaBlock = false;
+    /**
+     * Used only for converting vanilla blocks
+     * @param block
+     * @param blockResistance
+     * @param toolClass
+     * @param harvestLevel
+     * @param totalTextureCount
+     * @param texturePath
+     */
+    public BlockProperty(Block block, float blockResistance, String toolClass, int harvestLevel, int totalTextureCount, String texturePath)
+    {
+        BlockName = block.getUnlocalizedName();
+        TheMaterial = block.getMaterial();
+        BlockHardness = block.getBlockHardness(null, 0, 0, 0);
+        BlockResistance = blockResistance;
+        ToolClass = toolClass;
+        HarvestLevel = harvestLevel;
+        SoundType = block.stepSound;
+        TotalTextureCount = totalTextureCount;
+        TexturePath = FoxBlocks.MODID + ":" + texturePath;
+        CreativeTab = block.getCreativeTabToDisplayOn();
+        isVanillaBlock = true;
+    }
 
     public BlockProperty(BlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab)
     {

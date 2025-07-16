@@ -1,6 +1,8 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
+import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -38,6 +40,21 @@ public class BaseBlockWall extends BlockWall
         {
             setStepSound(blockProperty.SoundType);
         }
+        this.useNeighborBrightness = true;
+    }
+
+    public BaseBlockWall(Block block, int metaData, VanillaBlockProperty blockProperty)
+    {
+        super(block);
+        ParentBlock = block;
+        Metadata = (byte) metaData;
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabVanillaPlus);
+        setBlockName(block.getUnlocalizedName().replace("tile.", "") + "_" + Metadata + "_Wall");
+        setHardness(block.getBlockHardness(null, 0, 0, 0));
+        setBlockTextureName(blockProperty.textureName);
+        setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
+       // setResistance(blockProperty.ge);
+        setStepSound(ParentBlock.stepSound);
         this.useNeighborBrightness = true;
     }
 
