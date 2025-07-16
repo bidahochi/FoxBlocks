@@ -48,6 +48,7 @@ public class ItemHandler {
         ItemIDs.bulb.item=new bulb();
         ItemIDs.bulbLong.item=new bulbLong();
         ItemIDs.bolsterChisel.item = new bolsterChisel();
+        ItemIDs.leanDust.item = new leanDust();
 
         ItemIDs.doorA.item = new itemDoor().setUnlocalizedName("doorA").setTextureName(FoxBlocks.MODID + ":doorA_icon");
         ItemIDs.doorB.item = new itemDoor().setUnlocalizedName("doorB").setTextureName(FoxBlocks.MODID + ":doorB_icon");

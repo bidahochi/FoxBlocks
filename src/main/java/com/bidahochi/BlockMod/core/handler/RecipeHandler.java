@@ -262,6 +262,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.blockLavaBucket.block, 1), Items.lava_bucket,Items.lava_bucket,Items.lava_bucket,Items.lava_bucket);
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 4), Items.water_bucket, Items.iron_ingot);
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.rust.item, 16), Items.water_bucket, new ItemStack(ItemIDs.ironSlice.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.bucket_of_lean.item, 1), Items.water_bucket, Items.milk_bucket, new ItemStack(ItemIDs.leanDust.item), new ItemStack(ItemIDs.leanDust.item));
 
         //lightbulbs
         GameRegistry.addRecipe(new ItemStack(ItemIDs.bulb.item, 10), "   "," G "," A ",Character.valueOf('G'), Blocks.glowstone, Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item,1));
@@ -770,6 +771,10 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.xmasLights1_bottom_white.block, 2), new ItemStack(BlockIDs.xmasLights1_top_white.block, 1), new ItemStack(BlockIDs.xmasLights1_top_white.block, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.xmasLights1_top_rainbow.block, 2), new ItemStack(BlockIDs.xmasLights1_bottom_white.block, 1), new ItemStack(BlockIDs.xmasLights1_bottom_white.block, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.xmasLights1_bottom_rainbow.block, 2), new ItemStack(BlockIDs.xmasLights1_top_rainbow.block, 1), new ItemStack(BlockIDs.xmasLights1_top_rainbow.block, 1));
+
+        //turfs
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.turf.block, 4), Items.wheat_seeds, Items.wheat_seeds, Blocks.dirt, Blocks.dirt, Blocks.dirt, Blocks.dirt);
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.turfsnow.block, 8), "TTT", "TST", "TTT", 'T', new ItemStack(BlockIDs.turf.block, 1), 'S', Items.snowball);
 
         //green and blue screen blocks
         for (ItemStack dye : dyeLime) {
