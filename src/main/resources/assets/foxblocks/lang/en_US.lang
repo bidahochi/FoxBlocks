@@ -2401,3 +2401,6 @@ item.record.record_penguin.desc=put in a jukebox for free club penguin membershi
 item.foxblocks:bucket_of_tbea.name=Bucket of TBEA
 tile.fluid.foxblocks.liquid_tbea.name=Liquid TBEA
 fluid.foxblocks.liquid_tbea=Liquid TBEA
+item.foxblocks:bucket_of_lean.name=Cup of LEAN
+tile.fluid.foxblocks.liquid_lean.name=LEAN
+fluid.foxblocks.liquid_lean=LEAN

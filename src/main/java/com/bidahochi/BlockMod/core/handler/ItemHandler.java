@@ -3,6 +3,7 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.items.*;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBucket;
+import com.bidahochi.BlockMod.items.Bucket.ItemBucketLEAN;
 import com.bidahochi.BlockMod.items.Bucket.ItemBucketTBEA;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -62,6 +63,11 @@ public class ItemHandler {
             Block tempLiquidBlock = GameRegistry.findBlock(FoxBlocks.MODID, FluidIDs.liquid_tbea.blockName);
             ItemIDs.bucket_of_tbea.item = new ItemBucketTBEA(tempLiquidBlock, ItemIDs.bucket_of_tbea.iconName);
             SetupFluidContainer(FluidIDs.liquid_tbea, ItemIDs.bucket_of_tbea, tempLiquidBlock);
+        }
+        { // Creates the bucket and adds the item to the bucket registry so that buckets work on it
+            Block tempLiquidBlock = GameRegistry.findBlock(FoxBlocks.MODID, FluidIDs.liquid_lean.blockName);
+            ItemIDs.bucket_of_lean.item = new ItemBucketLEAN(tempLiquidBlock, ItemIDs.bucket_of_lean.iconName);
+            SetupFluidContainer(FluidIDs.liquid_lean, ItemIDs.bucket_of_lean, tempLiquidBlock);
         }
 
         for (ItemIDs items : ItemIDs.values()) {
