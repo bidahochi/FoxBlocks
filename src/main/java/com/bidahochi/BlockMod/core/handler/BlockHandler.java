@@ -1127,6 +1127,7 @@ public class BlockHandler
         tempVanillaBlockCache.put(Blocks.hardened_clay, new VanillaBlockProperty(Blocks.hardened_clay, "hardened_clay", 1, PICKAXE, 1));
         tempVanillaBlockCache.put(Blocks.stained_hardened_clay, new VanillaBlockProperty(Blocks.stained_hardened_clay, "hardened_clay_stained", 16, PICKAXE, 1));
         tempVanillaBlockCache.put(Blocks.wool, new VanillaBlockProperty(Blocks.wool, "wool_colored", 16, SHEARS, 1));
+        tempVanillaBlockCache.put(Blocks.stone, new VanillaBlockProperty(Blocks.stone, "stone", 1, PICKAXE, 1));
 
         for (Map.Entry<Block, VanillaBlockProperty> tempBlock : tempVanillaBlockCache.entrySet())
         {

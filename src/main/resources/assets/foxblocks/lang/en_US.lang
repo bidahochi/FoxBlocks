@@ -2248,6 +2248,19 @@ tile.Dark Ember Stone_Slab_0.name=Dark EmberStone Slab
 tile.Dark Ember Stone_0_Stair.name=Dark EmberStone Stair
 tile.Dark Ember Stone_Wall_0.name=Dark Ember Stone Wall
 
+<!-- ## Vanilla+ ## -->
+tile.stone_0_Stair.name=Stone Stair
+tile.stone_Slab_0.name=Stone Slab
+tile.stone_Wall_0.name=Stone Wall
+
+tile.sand_0_Stair.name=Sand Stair
+tile.sand_Slab_0.name=Sand Slab
+tile.sand_1_Stair.name=Red Sand Stair
+tile.sand_Slab_1.name=Red Sand Slab
+
+tile.gravel_0_Stair.name=Gravel Stair
+tile.gravel_Slab_0.name=Gravel Slab
+
 <!-- ## ADDITIONAL ## -->
 
 item.foxblocks:doorAitem.name=Office Door (Red Tint)
