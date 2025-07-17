@@ -2,11 +2,13 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BasePillarBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -865,6 +867,17 @@ public class RecipeHandler {
                     GameRegistry.addShapedRecipe(new ItemStack(blockStair, 6, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block.block, 1, i));
                     GameRegistry.addShapedRecipe(new ItemStack(blockStair, 1, 0), "  ", "BX", 'B', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                 }
+
+                if (blockRegisterReturnCache.TempBlockCache.containsKey(block) && blockRegisterReturnCache.TempBlockCache.get(block).IsWallBlockAllowed())
+                {
+                    for (int i = 0; i <= block.MaxMetadata; i++)
+                    {
+                        Block blockWall = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName + "_Wall");
+
+                        GameRegistry.addShapedRecipe(new ItemStack(blockWall, 6, i), "BBB", "BBB", "   ", 'B', new ItemStack(block.block, 1, i));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockWall, 1, i), " X", "B ", 'B', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                    }
+                }
             }
         }
 
@@ -929,8 +942,6 @@ public class RecipeHandler {
                 }
             }
 
-
-
             for (int i = 0; i <= MaxMetadata; i++)
             {
                 Block blockStair = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_" + i + "_Stair");
@@ -941,6 +952,17 @@ public class RecipeHandler {
 
                 GameRegistry.addShapedRecipe(new ItemStack(blockStair, 6, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block, 1, i));
                 GameRegistry.addShapedRecipe(new ItemStack(blockStair, 1, 0), "  ", "BX", 'B', new ItemStack(block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+            }
+
+            if (block instanceof BlockFalling == false)
+            {
+                for (int i = 0; i <= MaxMetadata; i++)
+                {
+                    Block blockWall = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_Wall");
+
+                    GameRegistry.addShapedRecipe(new ItemStack(blockWall, 6, i), "BBB", "BBB", "   ", 'B', new ItemStack(block, 1, i));
+                    GameRegistry.addShapedRecipe(new ItemStack(blockWall, 1, i), " X", "B ", 'B', new ItemStack(block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                }
             }
         }
 
