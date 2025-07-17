@@ -50,6 +50,11 @@ tile.SpecialDirt_Wall_0.name=Ungrowable Dirt Wall
 tile.DeadGrass_0.name=Light Dead Grass Block
 tile.DeadGrass2_0.name=Dark Dead Grass Block
 tile.Turf_0.name=Turf Grass Block
+tile.Turf_0_Stair.name=Turf Grass Stair
+tile.Turf_Slab_0.name=Turf Grass Slab
+tile.Turfsnow_0.name=Snowy Turf Grass Block
+tile.Turfsnow_0_Stair.name=Snowy Turf Grass Stair
+tile.Turfsnow_Slab_0.name=Snowy Turf Grass Slab
 
 <!-- Stairs -->
 tile.DeadGrass_Slab_0.name=Light Dead Grass Block Slab
@@ -2390,6 +2395,7 @@ item.foxblocks:roadTar.name=Road-Tar
 item.foxblocks:bulb.name=Lightbulb
 item.foxblocks:bulbLong.name=Tube Lightbulb
 item.foxblocks:bolsterChisel.name=Bolster Chisel
+item.foxblocks:leanDust.name=Lean Dust
 
 item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
 item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable
@@ -2401,3 +2407,6 @@ item.record.record_penguin.desc=put in a jukebox for free club penguin membershi
 item.foxblocks:bucket_of_tbea.name=Bucket of TBEA
 tile.fluid.foxblocks.liquid_tbea.name=Liquid TBEA
 fluid.foxblocks.liquid_tbea=Liquid TBEA
+item.foxblocks:bucket_of_lean.name=Cup of LEAN
+tile.fluid.foxblocks.liquid_lean.name=LEAN
+fluid.foxblocks.liquid_lean=LEAN

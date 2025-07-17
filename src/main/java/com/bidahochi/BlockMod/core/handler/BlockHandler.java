@@ -177,6 +177,14 @@ public class BlockHandler
             BlockIDs.turf.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.turf, property);
         }
+        { // turf but snowey
+            GrassBlockProperty property = new GrassBlockProperty(BlockIDs.turfsnow, Material.grass, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGrass, 1,"aggregates/grasses/turfsnow", foxBlocksCreativeTabRock, false);
+            property.blockHasSideTextures = true;
+            BlockIDs.turfsnow.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.turfsnow, property);
+        }
 
         { // peagravelBallast
             BlockProperty property = new FallingBlockProperty(BlockIDs.peagravelBallast, Material.sand, 0.5F, 0.1F,

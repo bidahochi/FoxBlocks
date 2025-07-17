@@ -24,6 +24,7 @@ public enum ItemIDs {
     bulb("bulb", "bulb", "bulb"),
     bulbLong("bulbLong", "bulblong", "bulbLong"),
     bolsterChisel("bolsterChisel", "bolsterChisel", "bolsterChisel"),
+    leanDust("leanDust", "leanDust", "leanDust"),
 
     doorA("doorAitem","doorA_icon","doorAitem"),
     doorB("doorBitem","doorB_icon","doorBitem"),
@@ -35,7 +36,8 @@ public enum ItemIDs {
     record_rodney("record_rodney", "record_rodney", "record_rodney"),
     record_penguin("record_rodney", "record_penguin", "record_penguin"),
 
-    bucket_of_tbea("bucket_of_tbea", "bucket_of_tbea","bucket_of_tbea")
+    bucket_of_tbea("bucket_of_tbea", "bucket_of_tbea","bucket_of_tbea"),
+    bucket_of_lean("bucket_of_lean", "bucket_of_lean","bucket_of_lean"),
     ;
 
     public Item item;

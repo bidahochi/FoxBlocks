@@ -56,6 +56,7 @@ public enum BlockIDs
     deadGrass(true, BaseItemBlock.class, "DeadGrass"),
     deadGrass2(true, BaseItemBlock.class, "DeadGrass2"),
     turf(true, BaseItemBlock.class, "Turf"),
+    turfsnow(true, BaseItemBlock.class, "Turfsnow"),
     peagravelBallast(true, BaseItemBlock.class, "peagravelBallast"),
     peagravelWhitestone(true, BaseItemBlock.class, "Peagravel Whitestone"),
     fakeSnow(true, ItemBlockFakeSnow.class, "FakeSnow"),

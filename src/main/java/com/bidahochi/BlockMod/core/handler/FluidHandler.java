@@ -16,6 +16,7 @@ public class FluidHandler
     public static void initFluidRegister(FMLInitializationEvent e)
     {
         buildNewFluid(FluidIDs.liquid_tbea.blockName, Material.water, foxBlocksCreativeTabFactory, "fluids/tbea/liquid_tbea");
+        buildNewFluid(FluidIDs.liquid_lean.blockName, Material.water, foxBlocksCreativeTabFactory, "fluids/lean");
     }
 
     private static void buildNewFluid(String nameOfFluid, Material material, CreativeTabs creativeTabs, String texturePath)
