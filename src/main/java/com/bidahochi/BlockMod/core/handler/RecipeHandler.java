@@ -2,6 +2,8 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BasePillarBlock;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -11,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 /***************************************
  *
@@ -66,7 +69,7 @@ public class RecipeHandler {
         return entries;
     }
 
-    public static void initBlockRecipes() {
+    public static void initBlockRecipes(BlockRegisterReturnCache blockRegisterReturnCache) {
 
         //FoxBlocks.blockLogger.info("BlockRecipe's Pre Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
 
@@ -790,7 +793,7 @@ public class RecipeHandler {
             if (block.MaxMetadata > -1
                     && block.hasItemBlock
                     && (BaseItemBlock.class.equals(block.itemBlockClass) || block.itemBlockClass.getClass().isInstance(BaseItemBlock.class.getClass()))
-                    && block.block instanceof BaseBlock)
+                    && (block.block instanceof BaseBlock || block.block instanceof BasePillarBlock))
             {
                 // Slabs can only go up to 7 as metadata is used for the bottom and top sate
                 if (block.MaxMetadata < 8)
@@ -845,9 +848,7 @@ public class RecipeHandler {
                         }
                     }
                 }
-
-
-
+                
                 for (int i = 0; i <= block.MaxMetadata; i++)
                 {
                     Block blockStair = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName + "_" + i + "_Stair");
@@ -856,9 +857,85 @@ public class RecipeHandler {
                         blockStair = GameRegistry.findBlock(FoxBlocks.MODID, block.blockName.replace(" ", "") + "_" + i + "_Stair");
                     }
 
-                    GameRegistry.addShapedRecipe(new ItemStack(blockStair, 4, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block.block, 1, i));
+                    GameRegistry.addShapedRecipe(new ItemStack(blockStair, 6, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block.block, 1, i));
                     GameRegistry.addShapedRecipe(new ItemStack(blockStair, 1, 0), "  ", "BX", 'B', new ItemStack(block.block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
                 }
+            }
+        }
+
+        // Auto Register Vanilla Converted Slab And Stair Recipes
+        for (Map.Entry<Block, VanillaBlockProperty> tempBlock : blockRegisterReturnCache.TempVanillaBlockCache.entrySet())
+        {
+            Block block = tempBlock.getKey();
+            int MaxMetadata = tempBlock.getValue().TotalTextureCount;
+            String baseBlockName = tempBlock.getValue().GetBaseBlockName();
+            
+            // Slabs can only go up to 7 as metadata is used for the bottom and top sate
+            if (MaxMetadata < 8)
+            {
+                Block blockSlab = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_Slab");
+                if (blockSlab == null)
+                {
+                    blockSlab  = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName.replace(" ", "") + "_Slab");
+                }
+
+                if (blockSlab != null)
+                {
+                    for (int i = 0; i <= MaxMetadata; i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(block, 1, i));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                        GameRegistry.addShapedRecipe(new ItemStack(block, 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
+                    }
+                }
+            }
+            else
+            {
+                Block blockSlab = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_Slab");
+                if (blockSlab == null)
+                {
+                    blockSlab  = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName.replace(" ", "") + "_Slab");
+                }
+
+                if (blockSlab != null)
+                {
+                    for (int i = 0; i <= 7; i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(block, 1, i));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                        GameRegistry.addShapedRecipe(new ItemStack(block, 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
+                    }
+                }
+
+                Block blockSlabTwo = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_2_Slab");
+                if (blockSlabTwo == null)
+                {
+                    blockSlabTwo  = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName.replace(" ", "") + "_2_Slab");
+                }
+
+                if (blockSlabTwo != null)
+                {
+                    for (int i = 0; i <= MaxMetadata - 8; i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 6, i), "   ", "   ", "III", 'I', new ItemStack(block, 1, i + 8));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 2, i), " X", " I", 'I', new ItemStack(block, 1, i + 8), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                        GameRegistry.addShapedRecipe(new ItemStack(block, 1, i + 8), "   ", " I ", " I ", 'I', new ItemStack(blockSlabTwo, 1, i));
+                    }
+                }
+            }
+
+
+
+            for (int i = 0; i <= MaxMetadata; i++)
+            {
+                Block blockStair = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_" + i + "_Stair");
+                if (blockStair == null)
+                {
+                    blockStair = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName.replace(" ", "") + "_" + i + "_Stair");
+                }
+
+                GameRegistry.addShapedRecipe(new ItemStack(blockStair, 6, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(block, 1, i));
+                GameRegistry.addShapedRecipe(new ItemStack(blockStair, 1, 0), "  ", "BX", 'B', new ItemStack(block, 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
             }
         }
 

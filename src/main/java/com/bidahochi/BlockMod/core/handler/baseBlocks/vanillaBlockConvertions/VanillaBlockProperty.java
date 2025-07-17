@@ -34,6 +34,16 @@ public class VanillaBlockProperty
         TotalTextureCount = 1;
     }
 
+    public String GetBaseBlockName()
+    {
+        if (altBlockName == null)
+        {
+            return block.getUnlocalizedName().replace("tile.", "");
+        }
+
+        return altBlockName;
+    }
+
     public void SetAltBlockName(String nameOfBlock)
     {
         altBlockName = nameOfBlock;

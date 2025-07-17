@@ -44,7 +44,7 @@ tile.SpecialDirt_Slab_0.name=Ungrowable Dirt Slab
 <!-- Slab -->
 tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
 <!-- Wall -->
-tile.SpecialDirt_0_Wall.name=Ungrowable Dirt Wall
+tile.SpecialDirt_Wall_0.name=Ungrowable Dirt Wall
 
 <!-- Block -->
 tile.DeadGrass_0.name=Light Dead Grass Block
@@ -74,7 +74,7 @@ tile.FakeSnow_Slab_0.name=Fake Snow "Slab"
 <!-- Slab -->
 tile.FakeSnow_0_Stair.name=Fake Snow "Stair"
 <!-- Wall -->
-tile.FakeSnow_0_Wall.name=Fake Snow "Wall"
+tile.FakeSnow_Wall_0.name=Fake Snow "Wall"
 
 <!-- Block -->
 tile.Dirt_3_0.name=3tress Dirt
@@ -87,8 +87,8 @@ tile.Dirt_3_Slab_0.name=3tress Dirt Slab
 tile.Dirt_4_Slab_0.name=4tress Dirt Slab
 
 <!-- Wall -->
-tile.Dirt_3_0_Wall.name=3tress Dirt Wall
-tile.Dirt_4_0_Wall.name=4tress Dirt Wall
+tile.Dirt_Wall_3_0.name=3tress Dirt Wall
+tile.Dirt_Wall_4_0.name=4tress Dirt Wall
 
 tile.CreamCityClay_0.name=Cream City Clay
 tile.CreamCityClay_Slab_0.name=Cream City Clay Slab
@@ -98,13 +98,13 @@ tile.CreamCityClay_0_Stair.name=Cream City Clay Stair
 tile.Concrete_0.name=Raw Concrete
 tile.Concrete_0_Stair.name=Raw Concrete Stairs
 tile.Concrete_Slab_0.name=Raw Concrete Slab
-tile.Concrete_0_Wall=Raw Concrete Wall
+tile.Concrete_Wall_0=Raw Concrete Wall
 
 tile.Layered Concrete_0.name=Layered Concrete
 <!-- Block -->
 tile.Smoothcrete_0.name=Smooth-Crete
 tile.Smoothcrete_0_Stair.name=Smooth-Crete Stairs
-tile.Smoothcrete_0_Wall=Smooth-Crete Wall
+tile.Smoothcrete_Wall_0=Smooth-Crete Wall
 
 <!-- Slab -->
 tile.Smoothcrete_Slab_0.name=Smooth-Crete
@@ -135,13 +135,13 @@ tile.concreteBrick_Slab_4.name=Stacked Concrete Brick Slab
 tile.concreteBrick_Slab_5.name=Blu Team Stacked Concrete Brick Slab
 tile.concreteBrick_Slab_6.name=Red Team Stacked Concrete Brick Slab
 <!-- Wall -->
-tile.concreteBrick_0_Wall.name=Blu Team Concrete Brick Wall
-tile.concreteBrick_1_Wall.name=Red Team Concrete Brick Wall
-tile.concreteBrick_2_Wall.name=Blu Team Trimmed Concrete Brick Wall
-tile.concreteBrick_3_Wall.name=Red Team Trimmed Concrete Brick Wall
-tile.concreteBrick_4_Wall.name=Stacked Concrete Brick Wall
-tile.concreteBrick_5_Wall.name=Blu Team Stacked Concrete Brick Wall
-tile.concreteBrick_6_Wall.name=Red Team Stacked Concrete Brick Wall
+tile.concreteBrick_Wall_0.name=Blu Team Concrete Brick Wall
+tile.concreteBrick_Wall_1.name=Red Team Concrete Brick Wall
+tile.concreteBrick_Wall_2.name=Blu Team Trimmed Concrete Brick Wall
+tile.concreteBrick_Wall_3.name=Red Team Trimmed Concrete Brick Wall
+tile.concreteBrick_Wall_4.name=Stacked Concrete Brick Wall
+tile.concreteBrick_Wall_5.name=Blu Team Stacked Concrete Brick Wall
+tile.concreteBrick_Wall_6.name=Red Team Stacked Concrete Brick Wall
 
 <!-- Block -->
 tile.concreteFloor_0.name=Tan Concrete Flooring
@@ -163,11 +163,11 @@ tile.concreteFloor_Slab_2.name=Red Concrete Flooring Slab
 tile.concreteFloor_Slab_3.name=Blu Concrete Flooring Slab
 tile.concreteFloor_Slab_4.name=Stale Grey Concrete Flooring Slab
 <!-- Wall -->
-tile.concreteFloor_0_Wall.name=Tan Concrete Flooring Wall
-tile.concreteFloor_1_Wall.name=Rough Concrete Flooring Wall
-tile.concreteFloor_2_Wall.name=Red Concrete Flooring Wall
-tile.concreteFloor_3_Wall.name=Blu Concrete Flooring Wall
-tile.concreteFloor_4_Wall.name=Stale Grey Concrete Flooring Wall
+tile.concreteFloor_Wall_0.name=Tan Concrete Flooring Wall
+tile.concreteFloor_Wall_1.name=Rough Concrete Flooring Wall
+tile.concreteFloor_Wall_2.name=Red Concrete Flooring Wall
+tile.concreteFloor_Wall_3.name=Blu Concrete Flooring Wall
+tile.concreteFloor_Wall_4.name=Stale Grey Concrete Flooring Wall
 
 <!-- Block -->
 tile.plasteredConcrete_0.name=Plain Wall Plaster
@@ -200,22 +200,22 @@ tile.plasteredConcrete_Slab_6.name=Thin Red Wall Plaster Slab
 tile.plasteredConcrete_Slab_7.name=Burgundy Wall Plaster Slab
 tile.plasteredConcrete_2_Slab_0.name=Sad Lame Greyish Wall Plaster Slab
 <!-- Wall -->
-tile.plasteredConcrete_0_Wall.name=Plain Wall Plaster Wall
-tile.plasteredConcrete_1_Wall.name=Blu Wall Plaster Wall
-tile.plasteredConcrete_2_Wall.name=Thick Blu Trim Wall Plaster Wall
-tile.plasteredConcrete_3_Wall.name=Thin Blu Trim Wall Plaster Wall
-tile.plasteredConcrete_4_Wall.name=Red Wall Plaster Wall
-tile.plasteredConcrete_5_Wall.name=Thick Red Trim Wall Plaster Wall
-tile.plasteredConcrete_6_Wall.name=Thin Red Wall Plaster Wall
-tile.plasteredConcrete_7_Wall.name=Burgundy Wall Plaster Wall
-tile.plasteredConcrete_8_Wall.name=Sad Lame Greyish Wall Plaster Wall
+tile.plasteredConcrete_Wall_0.name=Plain Wall Plaster Wall
+tile.plasteredConcrete_Wall_1.name=Blu Wall Plaster Wall
+tile.plasteredConcrete_Wall_2.name=Thick Blu Trim Wall Plaster Wall
+tile.plasteredConcrete_Wall_3.name=Thin Blu Trim Wall Plaster Wall
+tile.plasteredConcrete_Wall_4.name=Red Wall Plaster Wall
+tile.plasteredConcrete_Wall_5.name=Thick Red Trim Wall Plaster Wall
+tile.plasteredConcrete_Wall_6.name=Thin Red Wall Plaster Wall
+tile.plasteredConcrete_Wall_7.name=Burgundy Wall Plaster Wall
+tile.plasteredConcrete_Wall_8.name=Sad Lame Greyish Wall Plaster Wall
 
 
 <!-- ## STONES ## -->
 tile.Soapstone_0.name=Raw Soapstone
 tile.Soapstone_Slab_0.name=Raw Soapstone Slab
 tile.Soapstone_0_Stair.name=Raw Soapstone Stair
-tile.Soapstone_0_Wall.name=Raw Soapstone Wall
+tile.Soapstone_Wall_0.name=Raw Soapstone Wall
 
 tile.Soapstone Deco_0.name=Soapstone Bricks
 tile.Soapstone Deco_1.name=Large Soapstone Bricks
@@ -236,11 +236,11 @@ tile.Soapstone Deco_Slab_3.name=Coarse Soapstone Slab
 tile.Soapstone Deco_Slab_4.name=Smooth(est) Soapstone Slab
 
 <!-- Wall -->
-tile.Soapstone Deco_0_Wall.name=Soapstone Bricks Wall
-tile.Soapstone Deco_1_Wall.name=Large Soapstone Bricks Wall
-tile.Soapstone Deco_2_Wall.name=Smooth(er) Soapstone Wall
-tile.Soapstone Deco_3_Wall.name=Coarse Soapstone Wall
-tile.Soapstone Deco_4_Wall.name=Smooth(est) Soapstone Wall
+tile.Soapstone Deco_Wall_0.name=Soapstone Bricks Wall
+tile.Soapstone Deco_Wall_1.name=Large Soapstone Bricks Wall
+tile.Soapstone Deco_Wall_2.name=Smooth(er) Soapstone Wall
+tile.Soapstone Deco_Wall_3.name=Coarse Soapstone Wall
+tile.Soapstone Deco_Wall_4.name=Smooth(est) Soapstone Wall
 
 tile.Magmatic Soapstone.name= Magmatic Soapstone
 tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
@@ -253,7 +253,7 @@ tile.limestone.name=Lower Pennsylvanian Limestone
 tile.fireBrick_0.name=Firebrick Block
 tile.fireBrick_0_Stair.name=Firebrick Block Stairs
 tile.fireBrick_Slab_0.name=Firebrick Block Slab
-tile.fireBrick_0_Wall.name=Firebrick Block Wall
+tile.fireBrick_Wall_0.name=Firebrick Block Wall
 
 tile.mortarBrick_0.name=Mortar Brick (Brown)
 tile.mortarBrick_1.name=Mortar Brick (Grey 1)
@@ -307,22 +307,22 @@ tile.mortarBrick_2_Slab_6.name=Mortar Brick Slab (Orange)
 tile.mortarBrick_2_Slab_7.name=Mortar Brick Slab (Long Orange)
 
 <!-- Wall -->
-tile.mortarBrick_0_Wall.name=Mortar Brick Wall (Brown)
-tile.mortarBrick_1_Wall.name=Mortar Brick Wall (Grey 1)
-tile.mortarBrick_2_Wall.name=Mortar Brick Wall (Grey 2)
-tile.mortarBrick_3_Wall.name=Mortar Brick Wall (Seamless Brown)
-tile.mortarBrick_4_Wall.name=Mortar Brick Wall (Seamless Grey)
-tile.mortarBrick_5_Wall.name=Mortar Brick Wall (Seamless Cream)
-tile.mortarBrick_6_Wall.name=Mortar Brick Wall (Bright Mixed)
-tile.mortarBrick_7_Wall.name=Mortar Brick Wall (Dark Mixed)
-tile.mortarBrick_8_Wall.name=Mortar Brick Wall (Greyscale Mixed)
-tile.mortarBrick_9_Wall.name=Mortar Brick Wall (Deep Red-Brown)
-tile.mortarBrick_10_Wall.name=Mortar Brick Wall (Dark Red)
-tile.mortarBrick_11_Wall.name=Mortar Brick Wall (Grey 3)
-tile.mortarBrick_12_Wall.name=Mortar Brick Wall (White)
-tile.mortarBrick_13_Wall.name=Mortar Brick Wall (Pinkish)
-tile.mortarBrick_14_Wall.name=Mortar Brick Wall (Orange)
-tile.mortarBrick_15_Wall.name=Mortar Brick Wall (Long Orange)
+tile.mortarBrick_Wall_0.name=Mortar Brick Wall (Brown)
+tile.mortarBrick_Wall_1.name=Mortar Brick Wall (Grey 1)
+tile.mortarBrick_Wall_2.name=Mortar Brick Wall (Grey 2)
+tile.mortarBrick_Wall_3.name=Mortar Brick Wall (Seamless Brown)
+tile.mortarBrick_Wall_4.name=Mortar Brick Wall (Seamless Grey)
+tile.mortarBrick_Wall_5.name=Mortar Brick Wall (Seamless Cream)
+tile.mortarBrick_Wall_6.name=Mortar Brick Wall (Bright Mixed)
+tile.mortarBrick_Wall_7.name=Mortar Brick Wall (Dark Mixed)
+tile.mortarBrick_Wall_8.name=Mortar Brick Wall (Greyscale Mixed)
+tile.mortarBrick_Wall_9.name=Mortar Brick Wall (Deep Red-Brown)
+tile.mortarBrick_Wall_10.name=Mortar Brick Wall (Dark Red)
+tile.mortarBrick_Wall_11.name=Mortar Brick Wall (Grey 3)
+tile.mortarBrick_Wall_12.name=Mortar Brick Wall (White)
+tile.mortarBrick_Wall_13.name=Mortar Brick Wall (Pinkish)
+tile.mortarBrick_Wall_14.name=Mortar Brick Wall (Orange)
+tile.mortarBrick_Wall_15.name=Mortar Brick Wall (Long Orange)
 
 tile.mortarBrick2_0.name=Mortar Brick (Tan)
 tile.mortarBrick2_1.name=Mortar Brick (Rough Tan)
@@ -351,14 +351,14 @@ tile.mortarBrick2_Slab_5.name=Mortar Brick (Rough Red Mixed)
 tile.mortarBrick2_Slab_6.name=Mortar Brick (Red)
 tile.mortarBrick2_Slab_7.name=Mortar Brick (Rough Red)
 
-tile.mortarBrick2_0_Wall.name=Mortar Brick Wall (Tan)
-tile.mortarBrick2_1_Wall.name=Mortar Brick Wall (Rough Tan)
-tile.mortarBrick2_2_Wall.name=Mortar Brick Wall (Pale)
-tile.mortarBrick2_3_Wall.name=Mortar Brick Wall (Rough Pale)
-tile.mortarBrick2_4_Wall.name=Mortar Brick Wall (Red Mixed)
-tile.mortarBrick2_5_Wall.name=Mortar Brick Wall (Rough Red Mixed)
-tile.mortarBrick2_6_Wall.name=Mortar Brick Wall (Red)
-tile.mortarBrick2_7_Wall.name=Mortar Brick Wall (Rough Red)
+tile.mortarBrick2_Wall_0.name=Mortar Brick Wall (Tan)
+tile.mortarBrick2_Wall_1.name=Mortar Brick Wall (Rough Tan)
+tile.mortarBrick2_Wall_2.name=Mortar Brick Wall (Pale)
+tile.mortarBrick2_Wall_3.name=Mortar Brick Wall (Rough Pale)
+tile.mortarBrick2_Wall_4.name=Mortar Brick Wall (Red Mixed)
+tile.mortarBrick2_Wall_5.name=Mortar Brick Wall (Rough Red Mixed)
+tile.mortarBrick2_Wall_6.name=Mortar Brick Wall (Red)
+tile.mortarBrick2_Wall_7.name=Mortar Brick Wall (Rough Red)
 
 tile.creamcity_0.name=Cream City Bricks
 tile.creamcity_1.name=Dirty Cream City Bricks
@@ -372,9 +372,9 @@ tile.creamcity_Slab_0.name=Cream City Bricks Slab
 tile.creamcity_Slab_1.name=Dirty Cream City Bricks Slab
 tile.creamcity_Slab_2.name=Polluted Cream City Bricks Slab
 
-tile.creamcity_0_Wall.name=Cream City Bricks Wall
-tile.creamcity_1_Wall.name=Dirty Cream City Bricks Wall
-tile.creamcity_2_Wall.name=Polluted Cream City Bricks Wall
+tile.creamcity_Wall_0.name=Cream City Bricks Wall
+tile.creamcity_Wall_1.name=Dirty Cream City Bricks Wall
+tile.creamcity_Wall_2.name=Polluted Cream City Bricks Wall
 
 tile.jolietlimestone_0.name=Joliet Limestone Bricks
 tile.jolietlimestone_1.name=Irregular Joliet Limestone Bricks
@@ -400,13 +400,13 @@ tile.jolietlimestone_Slab_4.name=Large Joliet Limestone Bricks Slab (Weathered)
 tile.jolietlimestone_Slab_5.name=Joliet Limestone Smooth Brick Block Slab
 tile.jolietlimestone_Slab_6.name=Joliet Limestone Full Brick Block Slab
 
-tile.jolietlimestone_0_Wall.name=Joliet Limestone Bricks Wall
-tile.jolietlimestone_1_Wall.name=Irregular Joliet Limestone Bricks Wall
-tile.jolietlimestone_2_Wall.name=Large Joliet Limestone Bricks Wall
-tile.jolietlimestone_3_Wall.name=Large Joliet Limestone Bricks Wall (Mossy)
-tile.jolietlimestone_4_Wall.name=Large Joliet Limestone Bricks Wall (Weathered)
-tile.jolietlimestone_5_Wall.name=Joliet Limestone Smooth Brick Block Wall
-tile.jolietlimestone_6_Wall.name=Joliet Limestone Full Brick Block Wall
+tile.jolietlimestone_Wall_0.name=Joliet Limestone Bricks Wall
+tile.jolietlimestone_Wall_1.name=Irregular Joliet Limestone Bricks Wall
+tile.jolietlimestone_Wall_2.name=Large Joliet Limestone Bricks Wall
+tile.jolietlimestone_Wall_3.name=Large Joliet Limestone Bricks Wall (Mossy)
+tile.jolietlimestone_Wall_4.name=Large Joliet Limestone Bricks Wall (Weathered)
+tile.jolietlimestone_Wall_5.name=Joliet Limestone Smooth Brick Block Wall
+tile.jolietlimestone_Wall_6.name=Joliet Limestone Full Brick Block Wall
 
 tile.RedrockDeco_0.name=Redrock Cobblestone
 tile.RedrockDeco_1.name=Redrock Bricks
@@ -423,25 +423,25 @@ tile.RedrockDeco_Slab_1.name=Redrock Bricks Slab
 tile.RedrockDeco_Slab_2.name=Long Redrock Bricks Slab
 tile.RedrockDeco_Slab_3.name=Large Redrock Bricks Slab
 
-tile.RedrockDeco_0_Wall.name=Redrock Cobblestone Wall
-tile.RedrockDeco_1_Wall.name=Redrock Bricks Wall
-tile.RedrockDeco_2_Wall.name=Long Redrock Bricks Wall
-tile.RedrockDeco_3_Wall.name=Large Redrock Bricks Wall
+tile.RedrockDeco_Wall_0.name=Redrock Cobblestone Wall
+tile.RedrockDeco_Wall_1.name=Redrock Bricks Wall
+tile.RedrockDeco_Wall_2.name=Long Redrock Bricks Wall
+tile.RedrockDeco_Wall_3.name=Large Redrock Bricks Wall
 
 tile.cobaltBlock_0.name=Cobalt Block
 tile.cobaltBlock_0_Stair.name=Cobalt Block Stairs
 tile.cobaltBlock_Slab_0.name=Cobalt Block Slab
-tile.cobaltBlock_0_Wall.name=Cobalt Block Wall
+tile.cobaltBlock_Wall_0.name=Cobalt Block Wall
 
 tile.cobaltBrick_0.name=Small Cobalt Bricks
 tile.cobaltBrick_0_Stair.name=Small Cobalt Bricks Stairs
 tile.cobaltBrick_Slab_0.name=Small Cobalt Bricks Slab
-tile.cobaltBrick_0_Wall.name=Small Cobalt Bricks Wall
+tile.cobaltBrick_Wall_0.name=Small Cobalt Bricks Wall
 
 tile.largeCobaltBrick_0.name=Large Cobalt Bricks
 tile.largeCobaltBrick_0_Stair.name=Large Cobalt Bricks Stairs
 tile.largeCobaltBrick_Slab_0.name=Large Cobalt Bricks Slab
-tile.largeCobaltBrick_0_Wall.name=Large Cobalt Bricks Wall
+tile.largeCobaltBrick_Wall_0.name=Large Cobalt Bricks Wall
 
 
 <!-- Block -->
@@ -499,22 +499,22 @@ tile.cobaltPanel_2_Slab_6.name=Corner Cobalt Panel 4 Slab
 tile.cobaltPanel_2_Slab_7.name=Boxed-In Cobalt Panel Slab
 
 <!-- Wall -->
-tile.cobaltPanel_0_Wall.name=Horizontal Cobalt Panel Wall
-tile.cobaltPanel_1_Wall.name=Vertical Cobalt Panel Wall
-tile.cobaltPanel_2_Wall.name=Cross Cobalt Panel Wall
-tile.cobaltPanel_3_Wall.name=T Cobalt Panel 1 Wall
-tile.cobaltPanel_4_Wall.name=T Cobalt Panel 2 Wall
-tile.cobaltPanel_5_Wall.name=T Cobalt Panel 3 Wall
-tile.cobaltPanel_6_Wall.name=T Cobalt Panel 4 Wall
-tile.cobaltPanel_7_Wall.name=Edge Cobalt Panel 1 Wall
-tile.cobaltPanel_8_Wall.name=Edge Cobalt Panel 2 Wall
-tile.cobaltPanel_9_Wall.name=Edge Cobalt Panel 3 Wall
-tile.cobaltPanel_10_Wall.name=Edge Cobalt Panel 4 Wall
-tile.cobaltPanel_11_Wall.name=Corner Cobalt Panel 1 Wall
-tile.cobaltPanel_12_Wall.name=Corner Cobalt Panel 2 Wall
-tile.cobaltPanel_13_Wall.name=Corner Cobalt Panel 3 Wall
-tile.cobaltPanel_14_Wall.name=Corner Cobalt Panel 4 Wall
-tile.cobaltPanel_15_Wall.name=Boxed-In Cobalt Panel Wall
+tile.cobaltPanel_Wall_0.name=Horizontal Cobalt Panel Wall
+tile.cobaltPanel_Wall_1.name=Vertical Cobalt Panel Wall
+tile.cobaltPanel_Wall_2.name=Cross Cobalt Panel Wall
+tile.cobaltPanel_Wall_3.name=T Cobalt Panel 1 Wall
+tile.cobaltPanel_Wall_4.name=T Cobalt Panel 2 Wall
+tile.cobaltPanel_Wall_5.name=T Cobalt Panel 3 Wall
+tile.cobaltPanel_Wall_6.name=T Cobalt Panel 4 Wall
+tile.cobaltPanel_Wall_7.name=Edge Cobalt Panel 1 Wall
+tile.cobaltPanel_Wall_8.name=Edge Cobalt Panel 2 Wall
+tile.cobaltPanel_Wall_9.name=Edge Cobalt Panel 3 Wall
+tile.cobaltPanel_Wall_10.name=Edge Cobalt Panel 4 Wall
+tile.cobaltPanel_Wall_11.name=Corner Cobalt Panel 1 Wall
+tile.cobaltPanel_Wall_12.name=Corner Cobalt Panel 2 Wall
+tile.cobaltPanel_Wall_13.name=Corner Cobalt Panel 3 Wall
+tile.cobaltPanel_Wall_14.name=Corner Cobalt Panel 4 Wall
+tile.cobaltPanel_Wall_15.name=Boxed-In Cobalt Panel Wall
 
 <!-- Block -->
 tile.cobaltPanel2_0.name=End Cobalt Panel 1
@@ -544,13 +544,13 @@ tile.cobaltPanel2_Slab_5.name=Double Vertical Cobalt Panel Slab
 tile.cobaltPanel2_Slab_6.name=Borderless Cobalt Panel Slab
 
 <!-- Wall -->
-tile.cobaltPanel2_0_Wall.name=End Cobalt Panel 1 Wall
-tile.cobaltPanel2_1_Wall.name=End Cobalt Panel 2 Wall
-tile.cobaltPanel2_2_Wall.name=End Cobalt Panel 3 Wall
-tile.cobaltPanel2_3_Wall.name=End Cobalt Panel 4 Wall
-tile.cobaltPanel2_4_Wall.name=Double Horizontal Cobalt Panel Wall
-tile.cobaltPanel2_5_Wall.name=Double Vertical Cobalt Panel Wall
-tile.cobaltPanel2_6_Wall.name=Borderless Cobalt Panel Wall
+tile.cobaltPanel2_Wall_0.name=End Cobalt Panel 1 Wall
+tile.cobaltPanel2_Wall_1.name=End Cobalt Panel 2 Wall
+tile.cobaltPanel2_Wall_2.name=End Cobalt Panel 3 Wall
+tile.cobaltPanel2_Wall_3.name=End Cobalt Panel 4 Wall
+tile.cobaltPanel2_Wall_4.name=Double Horizontal Cobalt Panel Wall
+tile.cobaltPanel2_Wall_5.name=Double Vertical Cobalt Panel Wall
+tile.cobaltPanel2_Wall_6.name=Borderless Cobalt Panel Wall
 
 <!-- ## TILES ## -->
 <!-- Block -->
@@ -608,22 +608,22 @@ tile.tile4_2_Slab_6.name=Magenta 4x4 Tile Slab
 tile.tile4_2_Slab_7.name=Purple 4x4 Tile Slab
 
 <!-- Wall -->
-tile.tile4_0_Wall.name=White 4x4 Tile Wall
-tile.tile4_1_Wall.name=Light Gray 4x4 Tile Wall
-tile.tile4_2_Wall.name=Gray 4x4 Tile Wall
-tile.tile4_3_Wall.name=Black 4x4 Tile Wall
-tile.tile4_4_Wall.name=Brown 4x4 Tile Wall
-tile.tile4_5_Wall.name=Red 4x4 Tile Wall
-tile.tile4_6_Wall.name=Orange 4x4 Tile Wall
-tile.tile4_7_Wall.name=Yellow 4x4 Tile Wall
-tile.tile4_8_Wall.name=Lime 4x4 Tile Wall
-tile.tile4_9_Wall.name=Green 4x4 Tile Wall
-tile.tile4_10_Wall.name=Light Blue 4x4 Tile Wall
-tile.tile4_11_Wall.name=Blue 4x4 Tile Wall
-tile.tile4_12_Wall.name=Cyan 4x4 Tile Wall
-tile.tile4_13_Wall.name=Pink 4x4 Tile Wall
-tile.tile4_14_Wall.name=Magenta 4x4 Tile Wall
-tile.tile4_15_Wall.name=Purple 4x4 Tile Wall
+tile.tile4_Wall_0.name=White 4x4 Tile Wall
+tile.tile4_Wall_1.name=Light Gray 4x4 Tile Wall
+tile.tile4_Wall_2.name=Gray 4x4 Tile Wall
+tile.tile4_Wall_3.name=Black 4x4 Tile Wall
+tile.tile4_Wall_4.name=Brown 4x4 Tile Wall
+tile.tile4_Wall_5.name=Red 4x4 Tile Wall
+tile.tile4_Wall_6.name=Orange 4x4 Tile Wall
+tile.tile4_Wall_7.name=Yellow 4x4 Tile Wall
+tile.tile4_Wall_8.name=Lime 4x4 Tile Wall
+tile.tile4_Wall_9.name=Green 4x4 Tile Wall
+tile.tile4_Wall_10.name=Light Blue 4x4 Tile Wall
+tile.tile4_Wall_11.name=Blue 4x4 Tile Wall
+tile.tile4_Wall_12.name=Cyan 4x4 Tile Wall
+tile.tile4_Wall_13.name=Pink 4x4 Tile Wall
+tile.tile4_Wall_14.name=Magenta 4x4 Tile Wall
+tile.tile4_Wall_15.name=Purple 4x4 Tile Wall
 
 <!-- Block -->
 tile.Tile 2x2_0.name=Bone White 2x2 Tile
@@ -680,22 +680,22 @@ tile.Tile 2x2_2_Slab_6.name=Magenta Lavender 2x2 Tile Slab
 tile.Tile 2x2_2_Slab_7.name=Thanos Chin Purple 2x2 Tile Slab
 
 <!-- Wall -->
-tile.Tile 2x2_0_Wall.name=Bone White 2x2 Tile Wall
-tile.Tile 2x2_1_Wall.name=Generic Gray 2x2 Tile Wall
-tile.Tile 2x2_2_Wall.name=Darkerish Gray 2x2 Tile Wall
-tile.Tile 2x2_3_Wall.name=Ink Black 2x2 Tile Wall
-tile.Tile 2x2_4_Wall.name=Mud Brown 2x2 Tile Wall
-tile.Tile 2x2_5_Wall.name=Deep Red 2x2 Tile Wall
-tile.Tile 2x2_6_Wall.name=Dark Orange 2x2 Tile Wall
-tile.Tile 2x2_7_Wall.name=Armor Yellow 2x2 Tile Wall
-tile.Tile 2x2_8_Wall.name=Bitter Taste of Defeat and Lime 2x2 Tile Wall
-tile.Tile 2x2_9_Wall.name=Dense Forest Green 2x2 Tile Wall
-tile.Tile 2x2_10_Wall.name=Icey Light Blue 2x2 Tile Wall
-tile.Tile 2x2_11_Wall.name=A Nice Solid Blue 2x2 Tile Wall
-tile.Tile 2x2_12_Wall.name=Calming Cyan 2x2 Tile Wall
-tile.Tile 2x2_13_Wall.name=Pink Gum 2x2 Tile Wall
-tile.Tile 2x2_14_Wall.name=Magenta Lavender 2x2 Tile Wall
-tile.Tile 2x2_15_Wall.name=Thanos Chin Purple 2x2 Tile Wall
+tile.Tile 2x2_Wall_0.name=Bone White 2x2 Tile Wall
+tile.Tile 2x2_Wall_1.name=Generic Gray 2x2 Tile Wall
+tile.Tile 2x2_Wall_2.name=Darkerish Gray 2x2 Tile Wall
+tile.Tile 2x2_Wall_3.name=Ink Black 2x2 Tile Wall
+tile.Tile 2x2_Wall_4.name=Mud Brown 2x2 Tile Wall
+tile.Tile 2x2_Wall_5.name=Deep Red 2x2 Tile Wall
+tile.Tile 2x2_Wall_6.name=Dark Orange 2x2 Tile Wall
+tile.Tile 2x2_Wall_7.name=Armor Yellow 2x2 Tile Wall
+tile.Tile 2x2_Wall_8.name=Bitter Taste of Defeat and Lime 2x2 Tile Wall
+tile.Tile 2x2_Wall_9.name=Dense Forest Green 2x2 Tile Wall
+tile.Tile 2x2_Wall_10.name=Icey Light Blue 2x2 Tile Wall
+tile.Tile 2x2_Wall_11.name=A Nice Solid Blue 2x2 Tile Wall
+tile.Tile 2x2_Wall_12.name=Calming Cyan 2x2 Tile Wall
+tile.Tile 2x2_Wall_13.name=Pink Gum 2x2 Tile Wall
+tile.Tile 2x2_Wall_14.name=Magenta Lavender 2x2 Tile Wall
+tile.Tile 2x2_Wall_15.name=Thanos Chin Purple 2x2 Tile Wall
 
 <!-- Block -->
 tile.Tile 2x2 Smooth_0.name=White 2x2 Bubble Tile
@@ -752,22 +752,22 @@ tile.Tile 2x2 Smooth_2_Slab_6.name=Magenta 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_2_Slab_7.name=Purple 2x2 Bubble Tile Slab
 
 <!-- Wall -->
-tile.Tile 2x2 Smooth_0_Wall.name=White 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_1_Wall.name=Light Gray 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_2_Wall.name=Gray 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_3_Wall.name=Black 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_4_Wall.name=Brown 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_5_Wall.name=Red 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_6_Wall.name=Orange 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_7_Wall.name=Yellow 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_8_Wall.name=Lime 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_9_Wall.name=Green 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_10_Wall.name=Light Blue 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_11_Wall.name=Cyan 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_12_Wall.name=Blue 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_13_Wall.name=Pink 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_14_Wall.name=Magenta 2x2 Bubble Tile Wall
-tile.Tile 2x2 Smooth_15_Wall.name=Purple 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_0.name=White 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_1.name=Light Gray 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_2.name=Gray 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_3.name=Black 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_4.name=Brown 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_5.name=Red 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_6.name=Orange 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_7.name=Yellow 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_8.name=Lime 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_9.name=Green 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_10.name=Light Blue 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_11.name=Cyan 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_12.name=Blue 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_13.name=Pink 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_14.name=Magenta 2x2 Bubble Tile Wall
+tile.Tile 2x2 Smooth_Wall_15.name=Purple 2x2 Bubble Tile Wall
 
 <!-- Block -->
 tile.Diamond Tile_0.name=White Diamond Tile
@@ -823,22 +823,22 @@ tile.Diamond Tile_2_Slab_5.name=Pink Diamond Tile Slab
 tile.Diamond Tile_2_Slab_6.name=Magenta Diamond Tile Slab
 tile.Diamond Tile_2_Slab_7.name=Purple Diamond Tile Slab
 
-tile.Diamond Tile_0_Wall.name=White Diamond Tile Wall
-tile.Diamond Tile_1_Wall.name=Gray Diamond Tile Wall
-tile.Diamond Tile_2_Wall.name=Dark Gray Diamond Tile Wall
-tile.Diamond Tile_3_Wall.name=Black Diamond Tile Wall
-tile.Diamond Tile_4_Wall.name=Brown Diamond Tile Wall
-tile.Diamond Tile_5_Wall.name=Red Diamond Tile Wall
-tile.Diamond Tile_6_Wall.name=Orange Diamond Tile Wall
-tile.Diamond Tile_7_Wall.name=Yellow Diamond Tile Wall
-tile.Diamond Tile_8_Wall.name=Lime Diamond Tile Wall
-tile.Diamond Tile_9_Wall.name=Green Diamond Tile Wall
-tile.Diamond Tile_10_Wall.name=Light Blue Diamond Tile Wall
-tile.Diamond Tile_11_Wall.name=Blue Diamond Tile Wall
-tile.Diamond Tile_12_Wall.name=Cyan Diamond Tile Wall
-tile.Diamond Tile_13_Wall.name=Pink Diamond Tile Wall
-tile.Diamond Tile_14_Wall.name=Magenta Diamond Tile Wall
-tile.Diamond Tile_15_Wall.name=Purple Diamond Tile Wall
+tile.Diamond Tile_Wall_0.name=White Diamond Tile Wall
+tile.Diamond Tile_Wall_1.name=Gray Diamond Tile Wall
+tile.Diamond Tile_Wall_2.name=Dark Gray Diamond Tile Wall
+tile.Diamond Tile_Wall_3.name=Black Diamond Tile Wall
+tile.Diamond Tile_Wall_4.name=Brown Diamond Tile Wall
+tile.Diamond Tile_Wall_5.name=Red Diamond Tile Wall
+tile.Diamond Tile_Wall_6.name=Orange Diamond Tile Wall
+tile.Diamond Tile_Wall_7.name=Yellow Diamond Tile Wall
+tile.Diamond Tile_Wall_8.name=Lime Diamond Tile Wall
+tile.Diamond Tile_Wall_9.name=Green Diamond Tile Wall
+tile.Diamond Tile_Wall_10.name=Light Blue Diamond Tile Wall
+tile.Diamond Tile_Wall_11.name=Blue Diamond Tile Wall
+tile.Diamond Tile_Wall_12.name=Cyan Diamond Tile Wall
+tile.Diamond Tile_Wall_13.name=Pink Diamond Tile Wall
+tile.Diamond Tile_Wall_14.name=Magenta Diamond Tile Wall
+tile.Diamond Tile_Wall_15.name=Purple Diamond Tile Wall
 
 <!-- Block -->
 tile.SubTile_0.name=Sub-Terrain Tile (2x3, Borderless)
@@ -862,11 +862,11 @@ tile.SubTile_Slab_3.name=Sub-Terrain Tile Slab (2x2 Dark)
 tile.SubTile_Slab_4.name=Sub-Terrain Tile Slab (2x2 Light)
 
 <!-- Wall -->
-tile.SubTile_0_Wall.name=Sub-Terrain Tile Wall (2x3, Borderless)
-tile.SubTile_1_Wall.name=Sub-Terrain Tile Wall (2x3, Bordered)
-tile.SubTile_2_Wall.name=Sub-Terrain Tile Wall (Brick)
-tile.SubTile_3_Wall.name=Sub-Terrain Tile Wall (2x2 Dark)
-tile.SubTile_4_Wall.name=Sub-Terrain Tile Wall (2x2 Light)
+tile.SubTile_Wall_0.name=Sub-Terrain Tile Wall (2x3, Borderless)
+tile.SubTile_Wall_1.name=Sub-Terrain Tile Wall (2x3, Bordered)
+tile.SubTile_Wall_2.name=Sub-Terrain Tile Wall (Brick)
+tile.SubTile_Wall_3.name=Sub-Terrain Tile Wall (2x2 Dark)
+tile.SubTile_Wall_4.name=Sub-Terrain Tile Wall (2x2 Light)
 
 <!-- Block -->
 tile.TerrocottaTiles_0.name=White Terrocotta Tiles
@@ -923,22 +923,22 @@ tile.TerrocottaTiles_2_Slab_6.name=Magenta Terrocotta Tiles Slab
 tile.TerrocottaTiles_2_Slab_7.name=Purple Terrocotta Tiles Slab
 
 <!-- Wall -->
-tile.TerrocottaTiles_0_Wall.name=White Terrocotta Tiles Wall
-tile.TerrocottaTiles_1_Wall.name=Light Gray Terrocotta Tiles Wall
-tile.TerrocottaTiles_2_Wall.name=Gray Terrocotta Tiles Wall
-tile.TerrocottaTiles_3_Wall.name=Black Terrocotta Tiles Wall
-tile.TerrocottaTiles_4_Wall.name=Brown Terrocotta Tiles Wall
-tile.TerrocottaTiles_5_Wall.name=Red Terrocotta Tiles Wall
-tile.TerrocottaTiles_6_Wall.name=Orange Terrocotta Tiles Wall
-tile.TerrocottaTiles_7_Wall.name=Yellow Terrocotta Tiles Wall
-tile.TerrocottaTiles_8_Wall.name=Lime Terrocotta Tiles Wall
-tile.TerrocottaTiles_9_Wall.name=Green Terrocotta Tiles Wall
-tile.TerrocottaTiles_10_Wall.name=Light Blue Terrocotta Tiles Wall
-tile.TerrocottaTiles_11_Wall.name=Blue Terrocotta Tiles Wall
-tile.TerrocottaTiles_12_Wall.name=Cyan Terrocotta Tiles Wall
-tile.TerrocottaTiles_13_Wall.name=Pink Terrocotta Tiles Wall
-tile.TerrocottaTiles_14_Wall.name=Magenta Terrocotta Tiles Wall
-tile.TerrocottaTiles_15_Wall.name=Purple Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_0.name=White Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_1.name=Light Gray Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_2.name=Gray Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_3.name=Black Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_4.name=Brown Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_5.name=Red Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_6.name=Orange Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_7.name=Yellow Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_8.name=Lime Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_9.name=Green Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_10.name=Light Blue Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_11.name=Blue Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_12.name=Cyan Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_13.name=Pink Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_14.name=Magenta Terrocotta Tiles Wall
+tile.TerrocottaTiles_Wall_15.name=Purple Terrocotta Tiles Wall
 
 <!-- ## FUN ## -->
 tile.Although.name=Although...
@@ -955,7 +955,7 @@ tile.BlockOLavaBucket.name=Block of Lava Bucket
 tile.blockOfPlayerHead_0.name=Wuff Block
 tile.blockOfPlayerHead_0_Stair.name=Wuff Block Stairs
 tile.blockOfPlayerHead_Slab_0.name=Wuff Block Slab
-tile.blockOfPlayerHead_0_Wall.name=Wuff Block Wall
+tile.blockOfPlayerHead_Wall_0.name=Wuff Block Wall
 
 tile.harieshseethrough.name=THE (Other) Fox Block
 
@@ -966,11 +966,11 @@ tile.invisiblock.name=Invisiblock
 tile.Blue_0.name=Blue Screen Block
 tile.Blue_0_Stair.name=Blue Screen Stairs
 tile.Blue_Slab_0.name=Blue Screen Slab
-tile.Blue_0_Wall.name=Blue Screen Block Wall
+tile.Blue_Wall_0.name=Blue Screen Block Wall
 tile.Green_0.name=Green Screen Block
 tile.Green_0_Stair.name=Green Screen Stairs
 tile.Green_Slab_0.name=Green Screen Slab
-tile.Green_0_Wall.name=Green Screen Block Wall
+tile.Green_Wall_0.name=Green Screen Block Wall
 
 <!-- ## LUMBER ## -->
 <!-- Block -->
@@ -1028,22 +1028,22 @@ tile.widePlank_2_Slab_6.name=Vertical Wide Magenta Planking Slab
 tile.widePlank_2_Slab_7.name=Vertical Wide Purple Planking Slab
 
 <!-- Wall -->
-tile.widePlank_0_Wall.name=Vertical Wide White Planking Wall
-tile.widePlank_1_Wall.name=Vertical Wide Light Grey Planking Wall
-tile.widePlank_2_Wall.name=Vertical Wide Dark Grey Planking Wall
-tile.widePlank_3_Wall.name=Vertical Wide Black Planking Wall
-tile.widePlank_4_Wall.name=Vertical Wide Brown Planking Wall
-tile.widePlank_5_Wall.name=Vertical Wide Red Planking Wall
-tile.widePlank_6_Wall.name=Vertical Wide Orange Planking Wall
-tile.widePlank_7_Wall.name=Vertical Wide Yellow Planking Wall
-tile.widePlank_8_Wall.name=Vertical Wide Lime Planking Wall
-tile.widePlank_9_Wall.name=Vertical Wide Green Planking Wall
-tile.widePlank_10_Wall.name=Vertical Wide Light Blue Planking Wall
-tile.widePlank_11_Wall.name=Vertical Wide Blue Planking Wall
-tile.widePlank_12_Wall.name=Vertical Wide Cyan Planking Wall
-tile.widePlank_13_Wall.name=Vertical Wide Pink Planking Wall
-tile.widePlank_14_Wall.name=Vertical Wide Magenta Planking Wall
-tile.widePlank_15_Wall.name=Vertical Wide Purple Planking Wall
+tile.widePlank_Wall_0.name=Vertical Wide White Planking Wall
+tile.widePlank_Wall_1.name=Vertical Wide Light Grey Planking Wall
+tile.widePlank_Wall_2.name=Vertical Wide Dark Grey Planking Wall
+tile.widePlank_Wall_3.name=Vertical Wide Black Planking Wall
+tile.widePlank_Wall_4.name=Vertical Wide Brown Planking Wall
+tile.widePlank_Wall_5.name=Vertical Wide Red Planking Wall
+tile.widePlank_Wall_6.name=Vertical Wide Orange Planking Wall
+tile.widePlank_Wall_7.name=Vertical Wide Yellow Planking Wall
+tile.widePlank_Wall_8.name=Vertical Wide Lime Planking Wall
+tile.widePlank_Wall_9.name=Vertical Wide Green Planking Wall
+tile.widePlank_Wall_10.name=Vertical Wide Light Blue Planking Wall
+tile.widePlank_Wall_11.name=Vertical Wide Blue Planking Wall
+tile.widePlank_Wall_12.name=Vertical Wide Cyan Planking Wall
+tile.widePlank_Wall_13.name=Vertical Wide Pink Planking Wall
+tile.widePlank_Wall_14.name=Vertical Wide Magenta Planking Wall
+tile.widePlank_Wall_15.name=Vertical Wide Purple Planking Wall
 
 <!-- Block -->
 tile.widePlank2_0.name=Horizontal Wide White Planking
@@ -1100,22 +1100,22 @@ tile.widePlank2_2_Slab_6.name=Horizontal Wide Magenta Planking Slab
 tile.widePlank2_2_Slab_7.name=Horizontal Wide Purple Planking Slab
 
 <!-- Wall -->
-tile.widePlank2_0_Wall.name=Horizontal Wide White Planking Wall
-tile.widePlank2_1_Wall.name=Horizontal Wide Light Grey Planking Wall
-tile.widePlank2_2_Wall.name=Horizontal Wide Dark Grey Planking Wall
-tile.widePlank2_3_Wall.name=Horizontal Wide Black Planking Wall
-tile.widePlank2_4_Wall.name=Horizontal Wide Brown Planking Wall
-tile.widePlank2_5_Wall.name=Horizontal Wide Red Planking Wall
-tile.widePlank2_6_Wall.name=Horizontal Wide Orange Planking Wall
-tile.widePlank2_7_Wall.name=Horizontal Wide Yellow Planking Wall
-tile.widePlank2_8_Wall.name=Horizontal Wide Lime Planking Wall
-tile.widePlank2_9_Wall.name=Horizontal Wide Green Planking Wall
-tile.widePlank2_10_Wall.name=Horizontal Wide Light Blue Planking Wall
-tile.widePlank2_11_Wall.name=Horizontal Wide Blue Planking Wall
-tile.widePlank2_12_Wall.name=Horizontal Wide Cyan Planking Wall
-tile.widePlank2_13_Wall.name=Horizontal Wide Pink Planking Wall
-tile.widePlank2_14_Wall.name=Horizontal Wide Magenta Planking Wall
-tile.widePlank2_15_Wall.name=Horizontal Wide Purple Planking Wall
+tile.widePlank2_Wall_0.name=Horizontal Wide White Planking Wall
+tile.widePlank2_Wall_1.name=Horizontal Wide Light Grey Planking Wall
+tile.widePlank2_Wall_2.name=Horizontal Wide Dark Grey Planking Wall
+tile.widePlank2_Wall_3.name=Horizontal Wide Black Planking Wall
+tile.widePlank2_Wall_4.name=Horizontal Wide Brown Planking Wall
+tile.widePlank2_Wall_5.name=Horizontal Wide Red Planking Wall
+tile.widePlank2_Wall_6.name=Horizontal Wide Orange Planking Wall
+tile.widePlank2_Wall_7.name=Horizontal Wide Yellow Planking Wall
+tile.widePlank2_Wall_8.name=Horizontal Wide Lime Planking Wall
+tile.widePlank2_Wall_9.name=Horizontal Wide Green Planking Wall
+tile.widePlank2_Wall_10.name=Horizontal Wide Light Blue Planking Wall
+tile.widePlank2_Wall_11.name=Horizontal Wide Blue Planking Wall
+tile.widePlank2_Wall_12.name=Horizontal Wide Cyan Planking Wall
+tile.widePlank2_Wall_13.name=Horizontal Wide Pink Planking Wall
+tile.widePlank2_Wall_14.name=Horizontal Wide Magenta Planking Wall
+tile.widePlank2_Wall_15.name=Horizontal Wide Purple Planking Wall
 
 <!-- Block -->
 tile.widePlank3_0.name=Vertical Wide Oak Planks
@@ -1172,22 +1172,22 @@ tile.widePlank3_2_Slab_6.name=Horizontal Wide Douglas Fir Planks Slab
 tile.widePlank3_2_Slab_7.name=Horizontal Wide Sitka Spruce Planks Slab
 
 <!-- Wall -->
-tile.widePlank3_0_Wall.name=Vertical Wide Oak Planks Wall
-tile.widePlank3_1_Wall.name=Vertical Wide Birch Planks Wall
-tile.widePlank3_2_Wall.name=Vertical Wide Spruce Planks Wall
-tile.widePlank3_3_Wall.name=Vertical Wide Jungle Planks Wall
-tile.widePlank3_4_Wall.name=Vertical Wide Dark Oak Planks Wall
-tile.widePlank3_5_Wall.name=Vertical Wide Acacia Planks Wall
-tile.widePlank3_6_Wall.name=Horizontal Wide Oak Planks Wall
-tile.widePlank3_7_Wall.name=Horizontal Wide Birch Planks Wall
-tile.widePlank3_8_Wall.name=Horizontal Wide Spruce Planks Wall
-tile.widePlank3_9_Wall.name=Horizontal Wide Jungle Planks Wall
-tile.widePlank3_10_Wall.name=Horizontal Wide Dark Oak Planks Wall
-tile.widePlank3_11_Wall.name=Horizontal Wide Acacia Planks Wall
-tile.widePlank3_12_Wall.name=Vertical Wide Douglas Fir Planks Wall
-tile.widePlank3_13_Wall.name=Vertical Wide Sitka Spruce Planks Wall
-tile.widePlank3_14_Wall.name=Horizontal Wide Douglas Fir Planks Wall
-tile.widePlank3_15_Wall.name=Horizontal Wide Sitka Spruce Planks Wall
+tile.widePlank3_Wall_0.name=Vertical Wide Oak Planks Wall
+tile.widePlank3_Wall_1.name=Vertical Wide Birch Planks Wall
+tile.widePlank3_Wall_2.name=Vertical Wide Spruce Planks Wall
+tile.widePlank3_Wall_3.name=Vertical Wide Jungle Planks Wall
+tile.widePlank3_Wall_4.name=Vertical Wide Dark Oak Planks Wall
+tile.widePlank3_Wall_5.name=Vertical Wide Acacia Planks Wall
+tile.widePlank3_Wall_6.name=Horizontal Wide Oak Planks Wall
+tile.widePlank3_Wall_7.name=Horizontal Wide Birch Planks Wall
+tile.widePlank3_Wall_8.name=Horizontal Wide Spruce Planks Wall
+tile.widePlank3_Wall_9.name=Horizontal Wide Jungle Planks Wall
+tile.widePlank3_Wall_10.name=Horizontal Wide Dark Oak Planks Wall
+tile.widePlank3_Wall_11.name=Horizontal Wide Acacia Planks Wall
+tile.widePlank3_Wall_12.name=Vertical Wide Douglas Fir Planks Wall
+tile.widePlank3_Wall_13.name=Vertical Wide Sitka Spruce Planks Wall
+tile.widePlank3_Wall_14.name=Horizontal Wide Douglas Fir Planks Wall
+tile.widePlank3_Wall_15.name=Horizontal Wide Sitka Spruce Planks Wall
 
 
 <!-- Block -->
@@ -1203,8 +1203,8 @@ tile.widePlank4_Slab_0.name=Vertical Wide Western Red Cedar Planks Slab
 tile.widePlank4_Slab_1.name=Horizontal Wide Western Red Cedar Planks Slab
 
 <!-- Wall -->
-tile.widePlank4_0_Wall.name=Vertical Wide Western Red Cedar Planks Wall
-tile.widePlank4_1_Wall.name=Horizontal Wide Western Red Cedar Planks Wall
+tile.widePlank4_Wall_0.name=Vertical Wide Western Red Cedar Planks Wall
+tile.widePlank4_Wall_1.name=Horizontal Wide Western Red Cedar Planks Wall
 
 <!-- Block -->
 tile.planks1_0.name=Douglas Fir Planks
@@ -1222,9 +1222,9 @@ tile.planks1_Slab_1.name=Sitka Spruce Planks Slab
 tile.planks1_Slab_2.name=Western Red Cedar Planks Slab
 
 <!-- Wall -->
-tile.planks1_0_Wall.name=Douglas Fir Planks Wall
-tile.planks1_1_Wall.name=Sitka Spruce Planks Wall
-tile.planks1_2_Wall.name=Western Red Cedar Planks Wall
+tile.planks1_Wall_0.name=Douglas Fir Planks Wall
+tile.planks1_Wall_1.name=Sitka Spruce Planks Wall
+tile.planks1_Wall_2.name=Western Red Cedar Planks Wall
 
 <!-- Block -->
 tile.amshak_0.name=Grey Planks of the Amshack
@@ -1242,9 +1242,9 @@ tile.amshak_Slab_1.name=Blue Striped Slab Planks of the Amshack
 tile.amshak_Slab_2.name=Red Striped Slab Planks of the Amshack
 
 <!-- Wall -->
-tile.amshak_0_Wall.name=Grey Planks of the Amshack Wall
-tile.amshak_1_Wall.name=Blue Striped Planks of the Amshack Wall
-tile.amshak_2_Wall.name=Red Striped Planks of the Amshack Wall
+tile.amshak_Wall_0.name=Grey Planks of the Amshack Wall
+tile.amshak_Wall_1.name=Blue Striped Planks of the Amshack Wall
+tile.amshak_Wall_2.name=Red Striped Planks of the Amshack Wall
 
 tile.logs_0.name=Douglas Fir Log
 tile.logs_1.name=Sitka Spruce Log
@@ -1289,17 +1289,17 @@ tile.plywood_2_Slab_0.name=Douglas Fir Plywood Slab
 tile.plywood_2_Slab_1.name=Sitka Spruce Plywood Slab
 tile.plywood_2_Slab_2.name=Western Red Cedar Plywood Slab
 
-tile.plywood_0_Wall.name=Oak Plywood Wall
-tile.plywood_1_Wall.name=Birch Plywood Wall
-tile.plywood_2_Wall.name=Spruce Plywood Wall
-tile.plywood_3_Wall.name=Jungle Plywood Wall
-tile.plywood_4_Wall.name=Dark Oak Plywood Wall
-tile.plywood_5_Wall.name=Acacia Plywood Wall
-tile.plywood_6_Wall.name=Pine Plywood Wall
-tile.plywood_7_Wall.name=Redwood Plywood Wall
-tile.plywood_8_Wall.name=Douglas Fir Plywood Wall
-tile.plywood_9_Wall.name=Sitka Spruce Plywood Wall
-tile.plywood_10_Wall.name=Western Red Cedar Plywood Wall
+tile.plywood_Wall_0.name=Oak Plywood Wall
+tile.plywood_Wall_1.name=Birch Plywood Wall
+tile.plywood_Wall_2.name=Spruce Plywood Wall
+tile.plywood_Wall_3.name=Jungle Plywood Wall
+tile.plywood_Wall_4.name=Dark Oak Plywood Wall
+tile.plywood_Wall_5.name=Acacia Plywood Wall
+tile.plywood_Wall_6.name=Pine Plywood Wall
+tile.plywood_Wall_7.name=Redwood Plywood Wall
+tile.plywood_Wall_8.name=Douglas Fir Plywood Wall
+tile.plywood_Wall_9.name=Sitka Spruce Plywood Wall
+tile.plywood_Wall_10.name=Western Red Cedar Plywood Wall
 
 tile.woodchips_0.name=Block of Woodchips
 
@@ -1381,27 +1381,27 @@ tile.Dry Wall_2_Slab_5.name=Pink Drywall Slab
 tile.Dry Wall_2_Slab_6.name=Magenta Drywall Slab
 tile.Dry Wall_2_Slab_7.name=Purple Drywall Slab
 
-tile.Dry Wall_0_Wall.name=White Drywall Wall
-tile.Dry Wall_1_Wall.name=Light Gray Drywall Wall
-tile.Dry Wall_2_Wall.name=Gray Drywall Wall
-tile.Dry Wall_3_Wall.name=Black Drywall Wall
-tile.Dry Wall_4_Wall.name=Brown Drywall Wall
-tile.Dry Wall_5_Wall.name=Red Drywall Wall
-tile.Dry Wall_6_Wall.name=Orange Drywall Wall
-tile.Dry Wall_7_Wall.name=Yellow Drywall Wall
-tile.Dry Wall_8_Wall.name=Lime Drywall Wall
-tile.Dry Wall_9_Wall.name=Green Drywall Wall
-tile.Dry Wall_10_Wall.name=Light Blue Drywall Wall
-tile.Dry Wall_11_Wall.name=Blue Drywall Wall
-tile.Dry Wall_12_Wall.name=Cyan Drywall Wall
-tile.Dry Wall_13_Wall.name=Pink Drywall Wall
-tile.Dry Wall_14_Wall.name=Magenta Drywall Wall
-tile.Dry Wall_15_Wall.name=Purple Drywall Wall
+tile.Dry Wall_Wall_0.name=White Drywall Wall
+tile.Dry Wall_Wall_1.name=Light Gray Drywall Wall
+tile.Dry Wall_Wall_2.name=Gray Drywall Wall
+tile.Dry Wall_Wall_3.name=Black Drywall Wall
+tile.Dry Wall_Wall_4.name=Brown Drywall Wall
+tile.Dry Wall_Wall_5.name=Red Drywall Wall
+tile.Dry Wall_Wall_6.name=Orange Drywall Wall
+tile.Dry Wall_Wall_7.name=Yellow Drywall Wall
+tile.Dry Wall_Wall_8.name=Lime Drywall Wall
+tile.Dry Wall_Wall_9.name=Green Drywall Wall
+tile.Dry Wall_Wall_10.name=Light Blue Drywall Wall
+tile.Dry Wall_Wall_11.name=Blue Drywall Wall
+tile.Dry Wall_Wall_12.name=Cyan Drywall Wall
+tile.Dry Wall_Wall_13.name=Pink Drywall Wall
+tile.Dry Wall_Wall_14.name=Magenta Drywall Wall
+tile.Dry Wall_Wall_15.name=Purple Drywall Wall
 
 tile.unfinishedDrywall_0.name=Unfinished Drywall
 tile.unfinishedDrywall_0_Stair.name=Unfinished Drywall Stairs
 tile.unfinishedDrywall_Slab_0.name=Unfinished Drywall Slab
-tile.unfinishedDrywall_0_Wall.name=Unfinished Drywall Wall
+tile.unfinishedDrywall_Wall_0.name=Unfinished Drywall Wall
 
 
 tile.wallPaper_0.name=Cherry Wallpaper
@@ -1455,22 +1455,22 @@ tile.wallPaper_2_Slab_5.name=Seafoam Column Wallpaper Slab
 tile.wallPaper_2_Slab_6.name=Wavy Wallpaper Slab
 tile.wallPaper_2_Slab_7.name=Ender Wallpaper Slab
 
-tile.wallPaper_0_Wall.name=Cherry Wallpaper Wall
-tile.wallPaper_1_Wall.name=Broccoli Wallpaper Wall
-tile.wallPaper_2_Wall.name=Apple Wallpaper Wall
-tile.wallPaper_3_Wall.name=Leopard Print Wallpaper Wall
-tile.wallPaper_4_Wall.name=Alpine Wallpaper Wall
-tile.wallPaper_5_Wall.name=Speckled Wallpaper Wall
-tile.wallPaper_6_Wall.name=Red Rivet Wallpaper Wall
-tile.wallPaper_7_Wall.name=Yellow Stripe Wallpaper Wall
-tile.wallPaper_8_Wall.name=Green Weave Wallpaper Wall
-tile.wallPaper_9_Wall.name=Blue Dot Wallpaper Wall
-tile.wallPaper_10_Wall.name=Pastel Stripe Wallpaper Wall
-tile.wallPaper_11_Wall.name=Gray Square Wallpaper Wall
-tile.wallPaper_12_Wall.name=Jarate Wallpaper Wall
-tile.wallPaper_13_Wall.name=Seafoam Column Wallpaper Wall
-tile.wallPaper_14_Wall.name=Wavy Wallpaper Wall
-tile.wallPaper_15_Wall.name=Ender Wallpaper Wall
+tile.wallPaper_Wall_0.name=Cherry Wallpaper Wall
+tile.wallPaper_Wall_1.name=Broccoli Wallpaper Wall
+tile.wallPaper_Wall_2.name=Apple Wallpaper Wall
+tile.wallPaper_Wall_3.name=Leopard Print Wallpaper Wall
+tile.wallPaper_Wall_4.name=Alpine Wallpaper Wall
+tile.wallPaper_Wall_5.name=Speckled Wallpaper Wall
+tile.wallPaper_Wall_6.name=Red Rivet Wallpaper Wall
+tile.wallPaper_Wall_7.name=Yellow Stripe Wallpaper Wall
+tile.wallPaper_Wall_8.name=Green Weave Wallpaper Wall
+tile.wallPaper_Wall_9.name=Blue Dot Wallpaper Wall
+tile.wallPaper_Wall_10.name=Pastel Stripe Wallpaper Wall
+tile.wallPaper_Wall_11.name=Gray Square Wallpaper Wall
+tile.wallPaper_Wall_12.name=Jarate Wallpaper Wall
+tile.wallPaper_Wall_13.name=Seafoam Column Wallpaper Wall
+tile.wallPaper_Wall_14.name=Wavy Wallpaper Wall
+tile.wallPaper_Wall_15.name=Ender Wallpaper Wall
 
 tile.Fiber Glass_0.name=Vertical Contained Fiberglass
 tile.Fiber Glass_1.name=Horizontal Contained Fiberglass
@@ -1484,9 +1484,9 @@ tile.Fiber Glass_Slab_0.name=Vertical Contained Fiberglass Slab
 tile.Fiber Glass_Slab_1.name=Horizontal Contained Fiberglass Slab
 tile.Fiber Glass_Slab_2.name=Fiberglass Insulation Slab
 
-tile.Fiber Glass_0_Wall.name=Vertical Contained Fiberglass Wall
-tile.Fiber Glass_1_Wall.name=Horizontal Contained Fiberglass Wall
-tile.Fiber Glass_2_Wall.name=Fiberglass Insulation Wall
+tile.Fiber Glass_Wall_0.name=Vertical Contained Fiberglass Wall
+tile.Fiber Glass_Wall_1.name=Horizontal Contained Fiberglass Wall
+tile.Fiber Glass_Wall_2.name=Fiberglass Insulation Wall
 
 tile.OriginStuff_0.name=Origin Cobblestone
 tile.OriginStuff_1.name=Origin Mossy Cobblestone
@@ -1500,9 +1500,9 @@ tile.OriginStuff_Slab_0.name=Origin Cobblestone Slab
 tile.OriginStuff_Slab_1.name=Origin Mossy Cobblestone Slab
 tile.OriginStuff_Slab_2.name=Origin Brick Slab
 
-tile.OriginStuff_0_Wall.name=Origin Cobblestone Wall
-tile.OriginStuff_1_Wall.name=Origin Mossy Cobblestone Wall
-tile.OriginStuff_2_Wall.name=Origin Brick Wall
+tile.OriginStuff_Wall_0.name=Origin Cobblestone Wall
+tile.OriginStuff_Wall_1.name=Origin Mossy Cobblestone Wall
+tile.OriginStuff_Wall_2.name=Origin Brick Wall
 
 tile.ClassicWool_0.name=White Classic Wool
 tile.ClassicWool_1.name=Light Grey Classic Wool
@@ -1576,20 +1576,20 @@ tile.tarmac_2_Slab_3.name=Red Tarmac Road Slab
 tile.tarmac_2_Slab_4.name=White Tarmac Road Slab
 tile.tarmac_2_Slab_5.name=Yellow Tarmac Road Slab
 
-tile.tarmac_0_Wall.name=Tarmac Road Wall
-tile.tarmac_1_Wall.name=Fine Tarmac Road Wall
-tile.tarmac_2_Wall.name=Dark Tarmac Road Wall
-tile.tarmac_3_Wall.name=Light Tarmac Road Wall
-tile.tarmac_4_Wall.name=Grey Concrete Road Wall
-tile.tarmac_5_Wall.name=Pale Concrete Wall
-tile.tarmac_6_Wall.name=Pale Tarmac Road Wall
-tile.tarmac_7_Wall.name=Mud (Dry) Road Wall
-tile.tarmac_8_Wall.name=Mud (Wet) Road Wall
-tile.tarmac_9_Wall.name=Blue Tarmac Road Wall
-tile.tarmac_10_Wall.name=Green Tarmac Road Wall
-tile.tarmac_11_Wall.name=Red Tarmac Road Wall
-tile.tarmac_12_Wall.name=White Tarmac Road Wall
-tile.tarmac_13_Wall.name=Yellow Tarmac Road Wall
+tile.tarmac_Wall_0.name=Tarmac Road Wall
+tile.tarmac_Wall_1.name=Fine Tarmac Road Wall
+tile.tarmac_Wall_2.name=Dark Tarmac Road Wall
+tile.tarmac_Wall_3.name=Light Tarmac Road Wall
+tile.tarmac_Wall_4.name=Grey Concrete Road Wall
+tile.tarmac_Wall_5.name=Pale Concrete Wall
+tile.tarmac_Wall_6.name=Pale Tarmac Road Wall
+tile.tarmac_Wall_7.name=Mud (Dry) Road Wall
+tile.tarmac_Wall_8.name=Mud (Wet) Road Wall
+tile.tarmac_Wall_9.name=Blue Tarmac Road Wall
+tile.tarmac_Wall_10.name=Green Tarmac Road Wall
+tile.tarmac_Wall_11.name=Red Tarmac Road Wall
+tile.tarmac_Wall_12.name=White Tarmac Road Wall
+tile.tarmac_Wall_13.name=Yellow Tarmac Road Wall
 
 tile.roadcover_dynamic_1x1_0.name=Dynamic 1x1 Roadcover
 tile.roadcover_dynamic_1x2_0.name=Dynamic 1x2 Roadcover
@@ -1655,22 +1655,22 @@ tile.Metal Siding_2_Slab_5.name=Pink Vertical Sheet Metal Siding Slab
 tile.Metal Siding_2_Slab_6.name=Magenta Vertical Sheet Metal Siding Slab
 tile.Metal Siding_2_Slab_7.name=Purple Vertical Sheet Metal Siding Slab
 
-tile.Metal Siding_0_Wall.name=Black Vertical Sheet Metal Siding Wall
-tile.Metal Siding_1_Wall.name=Grey Vertical Sheet Metal Siding Wall
-tile.Metal Siding_2_Wall.name=Light Grey Vertical Sheet Metal Siding Wall
-tile.Metal Siding_3_Wall.name=White Vertical Sheet Metal Siding Wall
-tile.Metal Siding_4_Wall.name=Brown Vertical Sheet Metal Siding Wall
-tile.Metal Siding_5_Wall.name=Red Vertical Sheet Metal Siding Wall
-tile.Metal Siding_6_Wall.name=Orange Vertical Sheet Metal Siding Wall
-tile.Metal Siding_7_Wall.name=Yellow Vertical Sheet Metal Siding Wall
-tile.Metal Siding_8_Wall.name=Lime Vertical Sheet Metal Siding Wall
-tile.Metal Siding_9_Wall.name=Green Vertical Sheet Metal Siding Wall
-tile.Metal Siding_10_Wall.name=Light Blue Vertical Sheet Metal Siding Wall
-tile.Metal Siding_11_Wall.name=Blue Vertical Sheet Metal Siding Wall
-tile.Metal Siding_12_Wall.name=Cyan Vertical Sheet Metal Siding Wall
-tile.Metal Siding_13_Wall.name=Pink Vertical Sheet Metal Siding Wall
-tile.Metal Siding_14_Wall.name=Magenta Vertical Sheet Metal Siding Wall
-tile.Metal Siding_15_Wall.name=Purple Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_0.name=Black Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_1.name=Grey Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_2.name=Light Grey Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_3.name=White Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_4.name=Brown Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_5.name=Red Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_6.name=Orange Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_7.name=Yellow Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_8.name=Lime Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_9.name=Green Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_10.name=Light Blue Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_11.name=Blue Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_12.name=Cyan Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_13.name=Pink Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_14.name=Magenta Vertical Sheet Metal Siding Wall
+tile.Metal Siding_Wall_15.name=Purple Vertical Sheet Metal Siding Wall
 
 tile.Metal Siding2_0.name=Black Horizontal Sheet Metal Siding
 tile.Metal Siding2_1.name=Grey Horizontal Sheet Metal Siding
@@ -1723,22 +1723,22 @@ tile.Metal Siding2_2_Slab_5.name=Pink Horizontal Sheet Metal Siding Slab
 tile.Metal Siding2_2_Slab_6.name=Magenta Horizontal Sheet Metal Siding Slab
 tile.Metal Siding2_2_Slab_7.name=Purple Horizontal Sheet Metal Siding Slab
 
-tile.Metal Siding2_0_Wall.name=Black Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_1_Wall.name=Grey Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_2_Wall.name=Light Grey Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_3_Wall.name=White Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_4_Wall.name=Brown Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_5_Wall.name=Red Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_6_Wall.name=Orange Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_7_Wall.name=Yellow Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_8_Wall.name=Lime Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_9_Wall.name=Green Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_10_Wall.name=Light Blue Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_11_Wall.name=Blue Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_12_Wall.name=Cyan Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_13_Wall.name=Pink Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_14_Wall.name=Magenta Horizontal Sheet Metal Siding Wall
-tile.Metal Siding2_15_Wall.name=Purple Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_0.name=Black Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_1.name=Grey Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_2.name=Light Grey Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_3.name=White Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_4.name=Brown Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_5.name=Red Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_6.name=Orange Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_7.name=Yellow Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_8.name=Lime Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_9.name=Green Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_10.name=Light Blue Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_11.name=Blue Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_12.name=Cyan Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_13.name=Pink Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_14.name=Magenta Horizontal Sheet Metal Siding Wall
+tile.Metal Siding2_Wall_15.name=Purple Horizontal Sheet Metal Siding Wall
 
 tile.pannelBlack_0.name=Black Panel
 tile.pannelBlack_1.name=Black Panel Bottom
@@ -1791,22 +1791,22 @@ tile.pannelBlack_2_Slab_5.name=Black Panel Right Bottom Slab
 tile.pannelBlack_2_Slab_6.name=Black Panel Right Top Slab
 tile.pannelBlack_2_Slab_7.name=Black Panel Edgeless Slab
 
-tile.pannelBlack_0_Wall.name=Black Panel Wall
-tile.pannelBlack_1_Wall.name=Black Panel Bottom Wall
-tile.pannelBlack_2_Wall.name=Black Panel Top Wall
-tile.pannelBlack_3_Wall.name=Black Panel Vertical Wall
-tile.pannelBlack_4_Wall.name=Black Panel Vertical Left Wall
-tile.pannelBlack_5_Wall.name=Black Panel Vertical Right Wall
-tile.pannelBlack_6_Wall.name=Black Panel Horizontal Wall
-tile.pannelBlack_7_Wall.name=Black Panel Horizontal Top Wall
-tile.pannelBlack_8_Wall.name=Black Panel Horizontal Bottom Wall
-tile.pannelBlack_9_Wall.name=Black Panel Left Wall
-tile.pannelBlack_10_Wall.name=Black Panel Right Wall
-tile.pannelBlack_11_Wall.name=Black Panel Left Bottom Wall
-tile.pannelBlack_12_Wall.name=Black Panel Left Top Wall
-tile.pannelBlack_13_Wall.name=Black Panel Right Bottom Wall
-tile.pannelBlack_14_Wall.name=Black Panel Right Top Wall
-tile.pannelBlack_15_Wall.name=Black Panel Edgeless Wall
+tile.pannelBlack_Wall_0.name=Black Panel Wall
+tile.pannelBlack_Wall_1.name=Black Panel Bottom Wall
+tile.pannelBlack_Wall_2.name=Black Panel Top Wall
+tile.pannelBlack_Wall_3.name=Black Panel Vertical Wall
+tile.pannelBlack_Wall_4.name=Black Panel Vertical Left Wall
+tile.pannelBlack_Wall_5.name=Black Panel Vertical Right Wall
+tile.pannelBlack_Wall_6.name=Black Panel Horizontal Wall
+tile.pannelBlack_Wall_7.name=Black Panel Horizontal Top Wall
+tile.pannelBlack_Wall_8.name=Black Panel Horizontal Bottom Wall
+tile.pannelBlack_Wall_9.name=Black Panel Left Wall
+tile.pannelBlack_Wall_10.name=Black Panel Right Wall
+tile.pannelBlack_Wall_11.name=Black Panel Left Bottom Wall
+tile.pannelBlack_Wall_12.name=Black Panel Left Top Wall
+tile.pannelBlack_Wall_13.name=Black Panel Right Bottom Wall
+tile.pannelBlack_Wall_14.name=Black Panel Right Top Wall
+tile.pannelBlack_Wall_15.name=Black Panel Edgeless Wall
 
 tile.pannelWhite_0.name=White Panel
 tile.pannelWhite_1.name=White Panel Bottom
@@ -1859,22 +1859,22 @@ tile.pannelWhite_2_Slab_5.name=White Panel Right Bottom Slab
 tile.pannelWhite_2_Slab_6.name=White Panel Right Top Slab
 tile.pannelWhite_2_Slab_7.name=White Panel Edgeless Slab
 
-tile.pannelWhite_0_Wall.name=White Panel Wall
-tile.pannelWhite_1_Wall.name=White Panel Bottom Wall
-tile.pannelWhite_2_Wall.name=White Panel Top Wall
-tile.pannelWhite_3_Wall.name=White Panel Vertical Wall
-tile.pannelWhite_4_Wall.name=White Panel Vertical Left Wall
-tile.pannelWhite_5_Wall.name=White Panel Vertical Right Wall
-tile.pannelWhite_6_Wall.name=White Panel Horizontal Wall
-tile.pannelWhite_7_Wall.name=White Panel Horizontal Top Wall
-tile.pannelWhite_8_Wall.name=White Panel Horizontal Bottom Wall
-tile.pannelWhite_9_Wall.name=White Panel Left Wall
-tile.pannelWhite_10_Wall.name=White Panel Right Wall
-tile.pannelWhite_11_Wall.name=White Panel Left Bottom Wall
-tile.pannelWhite_12_Wall.name=White Panel Left Top Wall
-tile.pannelWhite_13_Wall.name=White Panel Right Bottom Wall
-tile.pannelWhite_14_Wall.name=White Panel Right Top Wall
-tile.pannelWhite_15_Wall.name=White Panel Edgeless Wall
+tile.pannelWhite_Wall_0.name=White Panel Wall
+tile.pannelWhite_Wall_1.name=White Panel Bottom Wall
+tile.pannelWhite_Wall_2.name=White Panel Top Wall
+tile.pannelWhite_Wall_3.name=White Panel Vertical Wall
+tile.pannelWhite_Wall_4.name=White Panel Vertical Left Wall
+tile.pannelWhite_Wall_5.name=White Panel Vertical Right Wall
+tile.pannelWhite_Wall_6.name=White Panel Horizontal Wall
+tile.pannelWhite_Wall_7.name=White Panel Horizontal Top Wall
+tile.pannelWhite_Wall_8.name=White Panel Horizontal Bottom Wall
+tile.pannelWhite_Wall_9.name=White Panel Left Wall
+tile.pannelWhite_Wall_10.name=White Panel Right Wall
+tile.pannelWhite_Wall_11.name=White Panel Left Bottom Wall
+tile.pannelWhite_Wall_12.name=White Panel Left Top Wall
+tile.pannelWhite_Wall_13.name=White Panel Right Bottom Wall
+tile.pannelWhite_Wall_14.name=White Panel Right Top Wall
+tile.pannelWhite_Wall_15.name=White Panel Edgeless Wall
 
 tile.pannelExtra_0.name=Black 2x2 Panel
 tile.pannelExtra_1.name=White 2x2 Panel
@@ -1894,11 +1894,11 @@ tile.pannelExtra_Slab_2.name=Yellow Backpanel Slab
 tile.pannelExtra_Slab_3.name=White Backpanel Slab
 tile.pannelExtra_Slab_4.name=Reddish Backpanel Slab
 
-tile.pannelExtra_0_Wall.name=Black 2x2 Panel Wall
-tile.pannelExtra_1_Wall.name=White 2x2 Panel Wall
-tile.pannelExtra_2_Wall.name=Yellow Backpanel Wall
-tile.pannelExtra_3_Wall.name=White Backpanel Wall
-tile.pannelExtra_4_Wall.name=Reddish Backpanel Wall
+tile.pannelExtra_Wall_0.name=Black 2x2 Panel Wall
+tile.pannelExtra_Wall_1.name=White 2x2 Panel Wall
+tile.pannelExtra_Wall_2.name=Yellow Backpanel Wall
+tile.pannelExtra_Wall_3.name=White Backpanel Wall
+tile.pannelExtra_Wall_4.name=Reddish Backpanel Wall
 
 tile.rustBeam_0.name=Yellow Horizontal Rusty Beam
 tile.rustBeam_1.name=Yellow Vertical Rusty Beam
@@ -1921,12 +1921,12 @@ tile.rustBeam_Slab_3.name=Blue Vertical Rusty Beam Slab
 tile.rustBeam_Slab_4.name=Red Horizontal Rusty Beam Slab
 tile.rustBeam_Slab_5.name=Red Vertical Rusty Beam Slab
 
-tile.rustBeam_0_Wall.name=Yellow Horizontal Rusty Beam Wall
-tile.rustBeam_1_Wall.name=Yellow Vertical Rusty Beam Wall
-tile.rustBeam_2_Wall.name=Blue Horizontal Rusty Beam Wall
-tile.rustBeam_3_Wall.name=Blue Vertical Rusty Beam Wall
-tile.rustBeam_4_Wall.name=Red Horizontal Rusty Beam Wall
-tile.rustBeam_5_Wall.name=Red Vertical Rusty Beam Wall
+tile.rustBeam_Wall_0.name=Yellow Horizontal Rusty Beam Wall
+tile.rustBeam_Wall_1.name=Yellow Vertical Rusty Beam Wall
+tile.rustBeam_Wall_2.name=Blue Horizontal Rusty Beam Wall
+tile.rustBeam_Wall_3.name=Blue Vertical Rusty Beam Wall
+tile.rustBeam_Wall_4.name=Red Horizontal Rusty Beam Wall
+tile.rustBeam_Wall_5.name=Red Vertical Rusty Beam Wall
 
 tile.labwallLight_0.name=Light Labwall Tile
 tile.labwallLight_1.name=Light Labwall Double Tile
@@ -1943,10 +1943,10 @@ tile.labwallLight_Slab_1.name=Light Labwall Double Tile Slab
 tile.labwallLight_Slab_2.name=Light Labwall Tripple Tile Slab
 tile.labwallLight_Slab_3.name=Light Labwall Sextuple Tile Slab
 
-tile.labwallLight_0_Wall.name=Light Labwall Tile Wall
-tile.labwallLight_1_Wall.name=Light Labwall Double Tile Wall
-tile.labwallLight_2_Wall.name=Light Labwall Tripple Tile Wall
-tile.labwallLight_3_Wall.name=Light Labwall Sextuple Tile Wall
+tile.labwallLight_Wall_0.name=Light Labwall Tile Wall
+tile.labwallLight_Wall_1.name=Light Labwall Double Tile Wall
+tile.labwallLight_Wall_2.name=Light Labwall Tripple Tile Wall
+tile.labwallLight_Wall_3.name=Light Labwall Sextuple Tile Wall
 
 tile.labwallDark_0.name=Dark Labwall Tile
 tile.labwallDark_1.name=Dark Labwall Horizontal Framed Tile
@@ -1963,10 +1963,10 @@ tile.labwallDark_Slab_1.name=Dark Labwall Horizontal Framed Tile Slab
 tile.labwallDark_Slab_2.name=Dark Labwall Vertical Framed Tile Slab
 tile.labwallDark_Slab_3.name=Dark Labwall Half Tile Slab
 
-tile.labwallDark_0_Wall.name=Dark Labwall Tile Wall
-tile.labwallDark_1_Wall.name=Dark Labwall Horizontal Framed Tile Wall
-tile.labwallDark_2_Wall.name=Dark Labwall Vertical Framed Tile Wall
-tile.labwallDark_3_Wall.name=Dark Labwall Half Tile Wall
+tile.labwallDark_Wall_0.name=Dark Labwall Tile Wall
+tile.labwallDark_Wall_1.name=Dark Labwall Horizontal Framed Tile Wall
+tile.labwallDark_Wall_2.name=Dark Labwall Vertical Framed Tile Wall
+tile.labwallDark_Wall_3.name=Dark Labwall Half Tile Wall
 
 
 tile.tf_dev_0.name=TF Dev Measure Block (1)
@@ -2002,16 +2002,16 @@ tile.tf_dev_Slab_7.name=TF Dev Measure Block (8) Slab
 tile.tf_dev_2_Slab_0.name=TF Dev Measure Block (9) Slab
 tile.tf_dev_2_Slab_1.name=TF Dev Measure Block (10) Slab
 
-tile.tf_dev_0_Wall.name=TF Dev Measure Block (1) Wall
-tile.tf_dev_1_Wall.name=TF Dev Measure Block (2) Wall
-tile.tf_dev_2_Wall.name=TF Dev Measure Block (3) Wall
-tile.tf_dev_3_Wall.name=TF Dev Measure Block (4) Wall
-tile.tf_dev_4_Wall.name=TF Dev Measure Block (5) Wall
-tile.tf_dev_5_Wall.name=TF Dev Measure Block (6) Wall
-tile.tf_dev_6_Wall.name=TF Dev Measure Block (7) Wall
-tile.tf_dev_7_Wall.name=TF Dev Measure Block (8) Wall
-tile.tf_dev_8_Wall.name=TF Dev Measure Block (9) Wall
-tile.tf_dev_9_Wall.name=TF Dev Measure Block (10) Wall
+tile.tf_dev_Wall_0.name=TF Dev Measure Block (1) Wall
+tile.tf_dev_Wall_1.name=TF Dev Measure Block (2) Wall
+tile.tf_dev_Wall_2.name=TF Dev Measure Block (3) Wall
+tile.tf_dev_Wall_3.name=TF Dev Measure Block (4) Wall
+tile.tf_dev_Wall_4.name=TF Dev Measure Block (5) Wall
+tile.tf_dev_Wall_5.name=TF Dev Measure Block (6) Wall
+tile.tf_dev_Wall_6.name=TF Dev Measure Block (7) Wall
+tile.tf_dev_Wall_7.name=TF Dev Measure Block (8) Wall
+tile.tf_dev_Wall_8.name=TF Dev Measure Block (9) Wall
+tile.tf_dev_Wall_9.name=TF Dev Measure Block (10) Wall
 
 tile.tf_brick_0.name=TF Brick (Wall 1)
 tile.tf_brick_1.name=TF Brick (Wall 2)
@@ -2052,18 +2052,18 @@ tile.tf_brick_2_Slab_1.name=TF Brick (Concrete Wall 001a) Slab
 tile.tf_brick_2_Slab_2.name=TF Brick (Concrete Wall 001b) Slab
 tile.tf_brick_2_Slab_3.name=TF Brick (Concrete Wall 001c) Slab
 
-tile.tf_brick_0_Wall.name=TF Brick (Wall 1) Wall
-tile.tf_brick_1_Wall.name=TF Brick (Wall 2) Wall
-tile.tf_brick_2_Wall.name=TF Brick (Wall 2a) Wall
-tile.tf_brick_3_Wall.name=TF Brick (Wall 2b) Wall
-tile.tf_brick_4_Wall.name=TF Brick (Wall 2c) Wall
-tile.tf_brick_5_Wall.name=TF Brick (Wall 3) Wall
-tile.tf_brick_6_Wall.name=TF Brick (Wall 3a) Wall
-tile.tf_brick_7_Wall.name=TF Brick (Wall 3b) Wall
-tile.tf_brick_8_Wall.name=TF Brick (Wall 3c) Wall
-tile.tf_brick_9_Wall.name=TF Brick (Concrete Wall 001a) Wall
-tile.tf_brick_10_Wall.name=TF Brick (Concrete Wall 001b) Wall
-tile.tf_brick_11_Wall.name=TF Brick (Concrete Wall 001c) Wall
+tile.tf_brick_Wall_0.name=TF Brick (Wall 1) Wall
+tile.tf_brick_Wall_1.name=TF Brick (Wall 2) Wall
+tile.tf_brick_Wall_2.name=TF Brick (Wall 2a) Wall
+tile.tf_brick_Wall_3.name=TF Brick (Wall 2b) Wall
+tile.tf_brick_Wall_4.name=TF Brick (Wall 2c) Wall
+tile.tf_brick_Wall_5.name=TF Brick (Wall 3) Wall
+tile.tf_brick_Wall_6.name=TF Brick (Wall 3a) Wall
+tile.tf_brick_Wall_7.name=TF Brick (Wall 3b) Wall
+tile.tf_brick_Wall_8.name=TF Brick (Wall 3c) Wall
+tile.tf_brick_Wall_9.name=TF Brick (Concrete Wall 001a) Wall
+tile.tf_brick_Wall_10.name=TF Brick (Concrete Wall 001b) Wall
+tile.tf_brick_Wall_11.name=TF Brick (Concrete Wall 001c) Wall
 
 tile.tf_wood_0.name=TF Wood (Red Beam 1)
 tile.tf_wood_1.name=TF Wood (Red Beam 1a)
@@ -2101,17 +2101,17 @@ tile.tf_wood_2_Slab_0.name=TF Wood (Wood Floor 1) Slab
 tile.tf_wood_2_Slab_1.name=TF Wood (Wood Floor 1a) Slab
 tile.tf_wood_2_Slab_2.name=TF Wood (Wood Floor 1 "WIP") Slab
 
-tile.tf_wood_0_Wall.name=TF Wood (Red Beam 1) Wall
-tile.tf_wood_1_Wall.name=TF Wood (Red Beam 1a) Wall
-tile.tf_wood_2_Wall.name=TF Wood (Red Beam 2 Bottom) Wall
-tile.tf_wood_3_Wall.name=TF Wood (Red Beam 2 Middle) Wall
-tile.tf_wood_4_Wall.name=TF Wood (Red Wall 1) Wall
-tile.tf_wood_5_Wall.name=TF Wood (Red Wall 1a) Wall
-tile.tf_wood_6_Wall.name=TF Wood (Red Wall 2) Wall
-tile.tf_wood_7_Wall.name=TF Wood (Red Wall 2a) Wall
-tile.tf_wood_8_Wall.name=TF Wood (Wood Floor 1) Wall
-tile.tf_wood_9_Wall.name=TF Wood (Wood Floor 1a) Wall
-tile.tf_wood_10_Wall.name=TF Wood (Wood Floor 1 "WIP") Wall
+tile.tf_wood_Wall_0.name=TF Wood (Red Beam 1) Wall
+tile.tf_wood_Wall_1.name=TF Wood (Red Beam 1a) Wall
+tile.tf_wood_Wall_2.name=TF Wood (Red Beam 2 Bottom) Wall
+tile.tf_wood_Wall_3.name=TF Wood (Red Beam 2 Middle) Wall
+tile.tf_wood_Wall_4.name=TF Wood (Red Wall 1) Wall
+tile.tf_wood_Wall_5.name=TF Wood (Red Wall 1a) Wall
+tile.tf_wood_Wall_6.name=TF Wood (Red Wall 2) Wall
+tile.tf_wood_Wall_7.name=TF Wood (Red Wall 2a) Wall
+tile.tf_wood_Wall_8.name=TF Wood (Wood Floor 1) Wall
+tile.tf_wood_Wall_9.name=TF Wood (Wood Floor 1a) Wall
+tile.tf_wood_Wall_10.name=TF Wood (Wood Floor 1 "WIP") Wall
 
 tile.tf_floor_0.name=TF Metal Flooring (0)
 tile.tf_floor_1.name=TF Metal Flooring (1)
@@ -2149,17 +2149,17 @@ tile.tf_floor_2_Slab_0.name=TF Red (Blue) Wall 3 (Middle) Slab
 tile.tf_floor_2_Slab_1.name=TF Blue Wall 2 Slab
 tile.tf_floor_2_Slab_2.name=TF Blue Wall 2 (Middle) Slab
 
-tile.tf_floor_0_Wall.name=TF Metal Flooring (0) Wall
-tile.tf_floor_1_Wall.name=TF Metal Flooring (1) Wall
-tile.tf_floor_2_Wall.name=TF Metal Flooring (2) Wall
-tile.tf_floor_3_Wall.name=TF Metal Flooring (3) Wall
-tile.tf_floor_4_Wall.name=TF Metal Flooring (4) Wall
-tile.tf_floor_5_Wall.name=TF Red Wall 3 (Bottom) Wall
-tile.tf_floor_6_Wall.name=TF Red Wall 3 (Middle) Wall
-tile.tf_floor_7_Wall.name=TF Red (Blue) Wall 3 (Bottom) Wall
-tile.tf_floor_8_Wall.name=TF Red (Blue) Wall 3 (Middle) Wall
-tile.tf_floor_9_Wall.name=TF Blue Wall 2 Wall
-tile.tf_floor_10_Wall.name=TF Blue Wall 2 (Middle) Wall
+tile.tf_floor_Wall_0.name=TF Metal Flooring (0) Wall
+tile.tf_floor_Wall_1.name=TF Metal Flooring (1) Wall
+tile.tf_floor_Wall_2.name=TF Metal Flooring (2) Wall
+tile.tf_floor_Wall_3.name=TF Metal Flooring (3) Wall
+tile.tf_floor_Wall_4.name=TF Metal Flooring (4) Wall
+tile.tf_floor_Wall_5.name=TF Red Wall 3 (Bottom) Wall
+tile.tf_floor_Wall_6.name=TF Red Wall 3 (Middle) Wall
+tile.tf_floor_Wall_7.name=TF Red (Blue) Wall 3 (Bottom) Wall
+tile.tf_floor_Wall_8.name=TF Red (Blue) Wall 3 (Middle) Wall
+tile.tf_floor_Wall_9.name=TF Blue Wall 2 Wall
+tile.tf_floor_Wall_10.name=TF Blue Wall 2 (Middle) Wall
 
 
 tile.WornVent1.name=Worn Vent (Transparent)
@@ -2178,12 +2178,12 @@ tile.metalFencing_2.name=Metal Fence 3
 tile.Ember Stone_0.name=Ember Stone
 tile.Ember Stone_Slab_0.name=Ember Stone Slab
 tile.Ember Stone_0_Stair.name=Ember Stone Stair
-tile.Ember Stone_0_Wall.name=Ember Stone Wall
+tile.Ember Stone_Wall_0.name=Ember Stone Wall
 
 tile.Dark Ember Stone_0.name=Dark Ember Stone
 tile.Dark Ember Stone_Slab_0.name=Dark EmberStone Slab
 tile.Dark Ember Stone_0_Stair.name=Dark EmberStone Stair
-tile.Dark Ember Stone_0_Wall.name=Dark Ember Stone Wall
+tile.Dark Ember Stone_Wall_0.name=Dark Ember Stone Wall
 
 <!-- ## ADDITIONAL ## -->
 

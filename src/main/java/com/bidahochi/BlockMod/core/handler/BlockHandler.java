@@ -68,22 +68,24 @@ import java.util.Map;
 import static com.bidahochi.BlockMod.FoxBlocks.*;
 import static net.minecraft.block.Block.*;
 
-public class BlockHandler {
+public class BlockHandler
+{
+    /**
+     * This HashMap is used to temporary hold block data
+     * that is only needed for block Registration
+     * when generating Slabs, And Stairs.
+     */
+    private HashMap<BlockIDs, BlockProperty> tempBlockCache = new HashMap<>();
+    private LinkedHashMap<Block, VanillaBlockProperty> tempVanillaBlockCache = new LinkedHashMap<Block, VanillaBlockProperty>();
 
-    public static void initBlockRegister(FMLInitializationEvent e)
+    final String PICKAXE = "pickaxe";
+    final String SHEARS = "shears";
+    final String SHOVEL = "shovel";
+    final String AXE = "AXE";
+
+    public BlockRegisterReturnCache initBlockRegister(FMLInitializationEvent e)
     {
         //FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
-        /**
-         * This HashMap is used to temporary hold block data
-         * that is only needed for block Registration
-         * when generating Slabs, And Stairs.
-         */
-        HashMap<BlockIDs, BlockProperty> tempBlockCache = new HashMap<>();
-        LinkedHashMap<Block, VanillaBlockProperty> tempVanillaBlockCache = new LinkedHashMap<Block, VanillaBlockProperty>();
-        final String PICKAXE = "pickaxe";
-        final String SHEARS = "shears";
-        final String SHOVEL = "shovel";
-        final String AXE = "AXE";
 
         //ores
         BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
@@ -1078,12 +1080,12 @@ public class BlockHandler {
                         else
                         {
                             GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
-
-                            if (blockProperty.IsWallBlockAllowed())
-                            {
-                                GameRegistry.registerBlock(new BaseBlockWall(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_" + i + "_Wall");
-                            }
                         }
+                    }
+
+                    if (blockProperty.IsWallBlockAllowed())
+                    {
+                        GameRegistry.registerBlock(new BaseBlockWall(block.block, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_Wall");
                     }
                 }
             }
@@ -1124,8 +1126,13 @@ public class BlockHandler {
                             new BaseFallingBlockStair(tempBlock.getKey(), i),
                             com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Stair");
 
-                    GameRegistry.registerBlock(new BaseBlockWall(tempBlock.getKey(), i, tempBlock.getValue()), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Wall");
+
                 }
+            }
+
+            if (tempBlock.getKey() instanceof BlockFalling == false)
+            {
+                GameRegistry.registerBlock(new BaseBlockWall(tempBlock.getKey(), tempBlock.getValue().TextureCount(), tempBlock.getValue()), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_Wall");
             }
 
         }
@@ -1136,5 +1143,7 @@ public class BlockHandler {
         }
 
         //FoxBlocks.blockLogger.info("BlockRegister Post Init at com.bidahochi.BlockMod.core.handler.blockHandler");
+
+        return new BlockRegisterReturnCache(tempBlockCache, tempVanillaBlockCache);
     }
 }

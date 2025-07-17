@@ -17,7 +17,6 @@ import cpw.mods.fml.common.network.FMLEventChannel;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -106,11 +105,12 @@ public class FoxBlocks
         };
 
         //registration os things that run things
-        BlockHandler.initBlockRegister(event);
+        BlockHandler blockHandler = new BlockHandler();
+        BlockRegisterReturnCache blockRegisterReturnCache = blockHandler.initBlockRegister(event);
         FluidHandler.initFluidRegister(event);
         //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
         ItemHandler.initItemRegister();
-        RecipeHandler.initBlockRecipes();
+        RecipeHandler.initBlockRecipes(blockRegisterReturnCache);
         OreDictHandler.registerOreDict();
 
         GameRegistry.registerWorldGenerator(new OreGenerationHandler(), 0);

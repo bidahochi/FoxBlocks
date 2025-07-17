@@ -23,15 +23,16 @@ import static com.bidahochi.BlockMod.core.handler.RenderBlockHandler.MC20w15aWal
 public class BaseBlockWall extends BlockWall
 {
     Block ParentBlock;
-    public final byte Metadata;
+    public final byte AmountOfSubBlocks;
+    
 
-    public BaseBlockWall(Block block, int metaData, BlockProperty blockProperty)
+    public BaseBlockWall(Block block, BlockProperty blockProperty)
     {
         super(block);
         ParentBlock = block;
-        Metadata = (byte) metaData;
+        AmountOfSubBlocks = (byte) blockProperty.TotalTextureCount;
         setCreativeTab(blockProperty.CreativeTab);
-        setBlockName(blockProperty.BlockName + "_" + Metadata + "_Wall");
+        setBlockName(blockProperty.BlockName + "_Wall");
         setHardness(blockProperty.BlockHardness);
         setBlockTextureName(blockProperty.TexturePath);
         setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
@@ -43,13 +44,13 @@ public class BaseBlockWall extends BlockWall
         this.useNeighborBrightness = true;
     }
 
-    public BaseBlockWall(Block block, int metaData, VanillaBlockProperty blockProperty)
+    public BaseBlockWall(Block block, int amountOfSubBlocks, VanillaBlockProperty blockProperty)
     {
         super(block);
         ParentBlock = block;
-        Metadata = (byte) metaData;
+        AmountOfSubBlocks = (byte) amountOfSubBlocks;
         setCreativeTab(FoxBlocks.foxBlocksCreativeTabVanillaPlus);
-        setBlockName(block.getUnlocalizedName().replace("tile.", "") + "_" + Metadata + "_Wall");
+        setBlockName(block.getUnlocalizedName().replace("tile.", "") + "_Wall");
         setHardness(block.getBlockHardness(null, 0, 0, 0));
         setBlockTextureName(blockProperty.textureName);
         setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
@@ -104,12 +105,16 @@ public class BaseBlockWall extends BlockWall
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return ParentBlock.getIcon(side, Metadata);
+        return ParentBlock.getIcon(side, meta);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void getSubBlocks(Item p_getSubBlocks_1_, CreativeTabs p_getSubBlocks_2_, List p_getSubBlocks_3_) {
-        p_getSubBlocks_3_.add(new ItemStack(p_getSubBlocks_1_, 1, 0));
+    public void getSubBlocks(Item item, CreativeTabs creativeTabs, List list)
+    {
+        for (int i = 0; i < AmountOfSubBlocks; ++i)
+        {
+            list.add(new ItemStack(item, 1,  i));
+        }
     }
 }
