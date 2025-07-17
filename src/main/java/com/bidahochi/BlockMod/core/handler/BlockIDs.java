@@ -211,8 +211,8 @@ public enum BlockIDs
     wornVent2(false, null, "WornVent2"),
     scaffold(false, null, "Scaffold"),
     scaffold2(false, null, "Scaffold2"),
-    classicMetals(false, null, "ClassicIron"),
-    classicGold(false, null, "ClassicGold"),
+    classicMetals(BaseItemBlock.class, "ClassicIron", 1),
+    classicGold(BaseItemBlock.class, "ClassicGold", 1),
     metalFencing(true, BaseItemBlock.class, "metalFencing", -1),
     //endregion Metals
 

@@ -627,7 +627,13 @@ public class BlockHandler
             tempBlockCache.put(BlockIDs.originStuff, property);
         }
 
-        BlockIDs.classicwool.block = new ClassicWool(Material.cloth);
+        { // classicwool
+            BlockProperty property = new BlockProperty(BlockIDs.classicwool, Material.cloth, 0.8F, 0.8F,
+                    SHEARS, 1,
+                    soundTypeCloth, 16,"constructionmaterials/classicwool/classicwool", foxBlocksCreativeTabHome, false);
+            BlockIDs.classicwool.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.classicwool, property);
+        }
 
         BlockIDs.glassAssorted.block = new GlassAssorted(Material.glass);
         BlockIDs.glassAssortedPane.block = new GlassAssortedPane();
@@ -747,8 +753,23 @@ public class BlockHandler
         BlockIDs.wornVent2.block = new WornVent2(Material.iron);
         BlockIDs.scaffold.block = new Scaffold(Material.iron);
         BlockIDs.scaffold2.block = new Scaffold2(Material.iron);
-        BlockIDs.classicMetals.block = new ClassicMetals(Material.iron);
-        BlockIDs.classicGold.block = new ClassicGold(Material.iron);
+
+        { // classicMetals
+            BlockProperty property = new PillarBlockProperty(BlockIDs.classicMetals, Material.iron, 5.0F, 10.0F,
+                    PICKAXE, 5,
+                    soundTypeMetal, 1,"metals/classicmetals/classicmetals", foxBlocksCreativeTabRock, false);
+            BlockIDs.classicMetals.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.classicMetals, property);
+        }
+
+        { // classicGold
+            BlockProperty property = new PillarBlockProperty(BlockIDs.classicGold, Material.iron, 5.0F, 10.0F,
+                    PICKAXE, 1,
+                    soundTypeMetal, 1,"metals/classicmetals/classicmetals2", foxBlocksCreativeTabRock, false);
+            BlockIDs.classicGold.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.classicGold, property);
+        }
+
         BlockIDs.metalFencing.block = new MetalFencing();
 
         { // emberStone

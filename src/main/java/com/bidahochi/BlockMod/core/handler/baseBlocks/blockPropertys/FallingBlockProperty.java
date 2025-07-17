@@ -68,4 +68,10 @@ public class FallingBlockProperty extends BlockProperty
 
         return new BaseFallingBlockSlab(true, this, singleSecondarySlab, 8);
     }
+
+    @Override
+    public boolean IsWallBlockAllowed()
+    {
+        return false;
+    }
 }
