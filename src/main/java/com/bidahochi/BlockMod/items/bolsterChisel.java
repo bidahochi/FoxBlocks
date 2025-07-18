@@ -32,6 +32,7 @@ public class bolsterChisel extends Item
     @Override
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
     {
-        par3List.add("\u00a77" + EnumChatFormatting.GRAY + "Used to cut FoxBlocks Blocks into Slabs & Stairs");
+        par3List.add("\u00a77" + EnumChatFormatting.GRAY + "Used to Cut FoxBlocks Blocks");
+        par3List.add("\u00a77" + EnumChatFormatting.GRAY + "into Slabs, Stairs, & Walls");
     }
 }
