@@ -34,7 +34,7 @@ import com.bidahochi.BlockMod.items.SittingStairTileBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 
-public enum BlockIDs
+public enum BlockIDs implements IFoxBlockIDs
 {
     //ores
     bauxiteOre(false,null, "Bauxite"),
@@ -421,5 +421,30 @@ public enum BlockIDs
             }
         }
         return null;
+    }
+
+    @Override
+    public Block GetBlock() {
+        return this.block;
+    }
+
+    @Override
+    public boolean hasItemBlock() {
+        return this.hasItemBlock;
+    }
+
+    @Override
+    public Class getItemBlockClass() {
+        return this.itemBlockClass;
+    }
+
+    @Override
+    public byte GetMaxMetaData() {
+        return this.MaxMetadata;
+    }
+
+    @Override
+    public String GetBlockName() {
+        return this.blockName;
     }
 }

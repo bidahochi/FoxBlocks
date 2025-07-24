@@ -1072,21 +1072,21 @@ public class BlockHandler
 
         for (BlockIDs block : BlockIDs.values())
         {
-            if (!block.hasItemBlock)
+            if (!block.hasItemBlock())
             {
-                System.out.println(block.blockName);
-                GameRegistry.registerBlock(block.block, block.blockName);
+                System.out.println(block.GetBlockName());
+                GameRegistry.registerBlock(block.GetBlock(), block.GetBlockName());
             }
             else
             {
-                System.out.println(block.blockName);
-                GameRegistry.registerBlock(block.block, block.itemBlockClass, block.blockName);
+                System.out.println(block.GetBlockName());
+                GameRegistry.registerBlock(block.GetBlock(), block.getItemBlockClass(), block.GetBlockName());
             }
 
-            if (block.MaxMetadata > -1
+            if (block.GetMaxMetaData() > -1
                     && block.hasItemBlock
-                    && (BaseItemBlock.class.equals(block.itemBlockClass) || block.itemBlockClass.getClass().isInstance(BaseItemBlock.class.getClass()))
-                    && (block.block instanceof BaseBlock || block.block instanceof BasePillarBlock || block.block instanceof BaseFallingBlock))
+                    && (BaseItemBlock.class.equals(block.getItemBlockClass()) || block.getItemBlockClass().getClass().isInstance(BaseItemBlock.class.getClass()))
+                    && (block.GetBlock() instanceof BaseBlock || block.GetBlock() instanceof BasePillarBlock || block.GetBlock() instanceof BaseFallingBlock))
             {
                 BlockProperty blockProperty = tempBlockCache.get(block);
                 if (blockProperty != null)
@@ -1102,19 +1102,19 @@ public class BlockHandler
 
                     for(int i = 0; i < blockProperty.TotalTextureCount; i++)
                     {
-                        if (block.block instanceof BaseFallingBlock)
+                        if (block.GetBlock() instanceof BaseFallingBlock)
                         {
-                            GameRegistry.registerBlock(new BaseFallingBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                            GameRegistry.registerBlock(new BaseFallingBlockStair(block.GetBlock(), i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
                         }
                         else
                         {
-                            GameRegistry.registerBlock(new BaseBlockStair(block.block, i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
+                            GameRegistry.registerBlock(new BaseBlockStair(block.GetBlock(), i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
                         }
                     }
 
                     if (blockProperty.IsWallBlockAllowed())
                     {
-                        GameRegistry.registerBlock(new BaseBlockWall(block.block, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_Wall");
+                        GameRegistry.registerBlock(new BaseBlockWall(block.GetBlock(), blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_Wall");
                     }
                 }
             }
