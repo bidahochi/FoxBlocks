@@ -167,6 +167,7 @@ public enum BlockIDs implements IFoxBlockIDs
     //other building mats
     dryWall(true,BaseItemBlock.class,"Dry Wall", 15),
     wallPaper(true, BaseItemBlock.class,"wallPaper", 15),
+    wallPaperBackrooms(true, BaseItemBlock.class, "wallPaperBackrooms", 1),
     unfinishedDrywall(true, BaseItemBlock.class,"unfinishedDrywall"),
     fiberGlass(true, BaseItemBlock.class, "Fiber Glass", 2),
 

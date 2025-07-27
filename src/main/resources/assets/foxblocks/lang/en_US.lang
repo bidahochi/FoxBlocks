@@ -1425,6 +1425,8 @@ tile.wallPaper_12.name=Jarate Wallpaper
 tile.wallPaper_13.name=Seafoam Column Wallpaper
 tile.wallPaper_14.name=Wavy Wallpaper
 tile.wallPaper_15.name=Ender Wallpaper
+tile.wallPaperBackrooms_0.name=Backrooms Wallpaper (Up)
+tile.wallPaperBackrooms_1.name=Backrooms Wallpaper (Down)
 
 tile.wallPaper_0_Stair.name=Cherry Wallpaper Stairs
 tile.wallPaper_1_Stair.name=Broccoli Wallpaper Stairs
@@ -1442,6 +1444,8 @@ tile.wallPaper_12_Stair.name=Jarate Wallpaper Stairs
 tile.wallPaper_13_Stair.name=Seafoam Column Wallpaper Stairs
 tile.wallPaper_14_Stair.name=Wavy Wallpaper Stairs
 tile.wallPaper_15_Stair.name=Ender Wallpaper Stairs
+tile.wallPaperBackrooms_0_Stair.name=Backrooms Wallpaper (Up) Stairs
+tile.wallPaperBackrooms_1_Stair.name=Backrooms Wallpaper (Down) Stairs
 
 tile.wallPaper_Slab_0.name=Cherry Wallpaper Slab
 tile.wallPaper_Slab_1.name=Broccoli Wallpaper Slab
@@ -1459,6 +1463,8 @@ tile.wallPaper_2_Slab_4.name=Jarate Wallpaper Slab
 tile.wallPaper_2_Slab_5.name=Seafoam Column Wallpaper Slab
 tile.wallPaper_2_Slab_6.name=Wavy Wallpaper Slab
 tile.wallPaper_2_Slab_7.name=Ender Wallpaper Slab
+tile.wallPaperBackrooms_Slab_0.name=Backrooms Wallpaper (Up) Slab
+tile.wallPaperBackrooms_Slab_1.name=Backrooms Wallpaper (Down) Slab
 
 tile.wallPaper_Wall_0.name=Cherry Wallpaper Wall
 tile.wallPaper_Wall_1.name=Broccoli Wallpaper Wall
@@ -1476,6 +1482,8 @@ tile.wallPaper_Wall_12.name=Jarate Wallpaper Wall
 tile.wallPaper_Wall_13.name=Seafoam Column Wallpaper Wall
 tile.wallPaper_Wall_14.name=Wavy Wallpaper Wall
 tile.wallPaper_Wall_15.name=Ender Wallpaper Wall
+tile.wallPaperBackrooms_Wall_0.name=Backrooms Wallpaper (Up) Wall
+tile.wallPaperBackrooms_Wall_1.name=Backrooms Wallpaper (Down) Wall
 
 tile.Fiber Glass_0.name=Vertical Contained Fiberglass
 tile.Fiber Glass_1.name=Horizontal Contained Fiberglass
