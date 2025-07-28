@@ -4,6 +4,7 @@ import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BasePillarBlock;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.IBlockProperty;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -969,5 +970,91 @@ public class RecipeHandler {
 
         FoxBlocks.blockLogger.info("Hi Dad!");
         //FoxBlocks.blockLogger.info("BlockRecipe Post Init at com.bidahochi.BlockMod.core.handler.recipeHandler");
+    }
+
+    public static void initExternalModBlockRecipes(IBlockProperty iBlockProperty, IFoxBlockIDs foxBlockID)
+    {
+        if (foxBlockID.GetMaxMetaData() > -1
+                && foxBlockID.hasItemBlock()
+                && (BaseItemBlock.class.equals(foxBlockID.getItemBlockClass()) || foxBlockID.getItemBlockClass().getClass().isInstance(BaseItemBlock.class.getClass()))
+                && (foxBlockID.GetBlock() instanceof BaseBlock || foxBlockID.GetBlock() instanceof BasePillarBlock))
+        {
+            // Slabs can only go up to 7 as metadata is used for the bottom and top sate
+            if (foxBlockID.GetMaxMetaData() < 8)
+            {
+                Block blockSlab = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName() + "_Slab");
+                if (blockSlab == null)
+                {
+                    blockSlab  = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName().replace(" ", "") + "_Slab");
+                }
+
+                if (blockSlab != null)
+                {
+                    for (int i = 0; i <= foxBlockID.GetMaxMetaData(); i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(foxBlockID.GetBlock() , 1, i));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(foxBlockID.GetBlock() , 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                        GameRegistry.addShapedRecipe(new ItemStack(foxBlockID.GetBlock() , 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
+                    }
+                }
+            }
+            else
+            {
+                Block blockSlab = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName() + "_Slab");
+                if (blockSlab == null)
+                {
+                    blockSlab  = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName() .replace(" ", "") + "_Slab");
+                }
+
+                if (blockSlab != null)
+                {
+                    for (int i = 0; i <= 7; i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 6, i), "   ", "   ", "III", 'I', new ItemStack(foxBlockID.GetBlock(), 1, i));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlab, 2, i), " X", " I", 'I', new ItemStack(foxBlockID.GetBlock(), 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                        GameRegistry.addShapedRecipe(new ItemStack(foxBlockID.GetBlock(), 1, i), "   ", " I ", " I ", 'I', new ItemStack(blockSlab, 1, i));
+                    }
+                }
+
+                Block blockSlabTwo = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName() + "_2_Slab");
+                if (blockSlabTwo == null)
+                {
+                    blockSlabTwo  = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName().replace(" ", "") + "_2_Slab");
+                }
+
+                if (blockSlabTwo != null)
+                {
+                    for (int i = 0; i <= foxBlockID.GetMaxMetaData() - 8; i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 6, i), "   ", "   ", "III", 'I', new ItemStack(foxBlockID.GetBlock(), 1, i + 8));
+                        GameRegistry.addShapedRecipe(new ItemStack(blockSlabTwo, 2, i), " X", " I", 'I', new ItemStack(foxBlockID.GetBlock(), 1, i + 8), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                        GameRegistry.addShapedRecipe(new ItemStack(foxBlockID.GetBlock(), 1, i + 8), "   ", " I ", " I ", 'I', new ItemStack(blockSlabTwo, 1, i));
+                    }
+                }
+            }
+
+            for (int i = 0; i <= foxBlockID.GetMaxMetaData(); i++)
+            {
+                Block blockStair = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName() + "_" + i + "_Stair");
+                if (blockStair == null)
+                {
+                    blockStair = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName().replace(" ", "") + "_" + i + "_Stair");
+                }
+
+                GameRegistry.addShapedRecipe(new ItemStack(blockStair, 6, 0), "B  ", "BB ", "BBB", 'B', new ItemStack(foxBlockID.GetBlock(), 1, i));
+                GameRegistry.addShapedRecipe(new ItemStack(blockStair, 1, 0), "  ", "BX", 'B', new ItemStack(foxBlockID.GetBlock(), 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+            }
+
+            if (iBlockProperty.IsWallBlockAllowed())
+            {
+                for (int i = 0; i <= foxBlockID.GetMaxMetaData(); i++)
+                {
+                    Block blockWall = GameRegistry.findBlock(FoxBlocks.MODID, foxBlockID.GetBlockName() + "_Wall");
+
+                    GameRegistry.addShapedRecipe(new ItemStack(blockWall, 6, i), "BBB", "BBB", "   ", 'B', new ItemStack(foxBlockID.GetBlock(), 1, i));
+                    GameRegistry.addShapedRecipe(new ItemStack(blockWall, 1, i), " X", "B ", 'B', new ItemStack(foxBlockID.GetBlock(), 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                }
+            }
+        }
     }
 }

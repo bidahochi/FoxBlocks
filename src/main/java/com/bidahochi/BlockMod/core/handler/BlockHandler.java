@@ -1070,7 +1070,7 @@ public class BlockHandler
 
 
 
-        for (BlockIDs block : BlockIDs.values())
+        for (IFoxBlockIDs block : BlockIDs.values())
         {
             if (!block.hasItemBlock())
             {
@@ -1084,7 +1084,7 @@ public class BlockHandler
             }
 
             if (block.GetMaxMetaData() > -1
-                    && block.hasItemBlock
+                    && block.hasItemBlock()
                     && (BaseItemBlock.class.equals(block.getItemBlockClass()) || block.getItemBlockClass().getClass().isInstance(BaseItemBlock.class.getClass()))
                     && (block.GetBlock() instanceof BaseBlock || block.GetBlock() instanceof BasePillarBlock || block.GetBlock() instanceof BaseFallingBlock))
             {
@@ -1119,8 +1119,6 @@ public class BlockHandler
                 }
             }
         }
-
-
 
         tempVanillaBlockCache.put(Blocks.sand, new VanillaFallingBlockProperty(Blocks.sand, "sand", 2, SHOVEL, 0));
         tempVanillaBlockCache.put(Blocks.gravel, new VanillaFallingBlockProperty(Blocks.gravel, "gravel", 1, SHOVEL, 0));
