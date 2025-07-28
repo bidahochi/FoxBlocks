@@ -603,6 +603,14 @@ public class BlockHandler
             tempBlockCache.put(BlockIDs.wallPaper, property);
         }
 
+        { // wallPaperBackrooms
+            BlockProperty property = new BlockProperty(BlockIDs.wallPaperBackrooms, Material.cloth, 0.5F, 0.25F,
+                    PICKAXE, 1,
+                    soundTypeCloth, 2,"constructionmaterials/wallpapers/wallpaperBackrooms", foxBlocksCreativeTabHome, false);
+            BlockIDs.wallPaperBackrooms.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.wallPaperBackrooms, property);
+        }
+
         { // unfinishedDrywall
             BlockProperty property = new BlockProperty(BlockIDs.unfinishedDrywall, Material.clay, 2.2F, 6.5F,
                     PICKAXE, 1,

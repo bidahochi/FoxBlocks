@@ -185,13 +185,16 @@ public class RecipeHandler {
         {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.dryWall.block, 8,4), "AAA", "AEA", "AAA", Character.valueOf('A'), BlockIDs.unfinishedDrywall.block, Character.valueOf('E'), dyebrown);
         }
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,0), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.redstone);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,1), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Blocks.leaves);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,2), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.apple);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,4), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), new ItemStack(Blocks.grass,1,2));
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,12), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), ItemIDs.jarate.item);
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 4,15), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.ender_pearl);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 8,0), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.redstone);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 8,1), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Blocks.leaves);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 8,2), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.apple);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 8,4), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), new ItemStack(Blocks.grass,1,2));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 8,12), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), ItemIDs.jarate.item);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaper.block, 8,15), "AAA", "AEA", "AAA", Character.valueOf('A'), Items.paper, Character.valueOf('E'), Items.ender_pearl);
         GameRegistry.addRecipe(new ItemStack(BlockIDs.unfinishedDrywall.block, 4), "BBA", "BBA", "AAA", Character.valueOf('B'), ItemIDs.gypsumDust.item, Character.valueOf('A'), Items.paper);
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.wallPaperBackrooms.block, 8,0), "AAA", "AEA", "AAA", 'A', Items.paper, 'E', Items.bone);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.wallPaperBackrooms.block, 4,0), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 1), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 1), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 1), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.wallPaperBackrooms.block, 4,1), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 0), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 0), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 0), new ItemStack(BlockIDs.wallPaperBackrooms.block, 1, 0));
 
         //aggregates
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.peagravel.block, 1), Blocks.gravel);
