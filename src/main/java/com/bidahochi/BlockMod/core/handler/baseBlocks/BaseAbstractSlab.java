@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
+import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,6 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -24,6 +26,11 @@ public abstract class BaseAbstractSlab extends BlockSlab
     public IIcon[] textures;
     private BaseAbstractSlab singleSlab;
     protected byte amountOfSubBlocks = 0;
+
+    public String ResourceFolderName()
+    {
+        return textureName.split(":")[0];
+    }
     /*
     This is used to identify where a block should start for textures
      */
@@ -64,7 +71,7 @@ public abstract class BaseAbstractSlab extends BlockSlab
 
         setTickRandomly(false);
         setHardness(blockProperty.BlockHardness);
-        setBlockTextureName(blockProperty.TexturePath);
+        setBlockTextureName(blockProperty.getFullTexturePath());
 
         if (blockProperty.lightLevel > 0f)
         {
@@ -147,7 +154,7 @@ public abstract class BaseAbstractSlab extends BlockSlab
 
     private Block GetSingleBlock()
     {
-        return GameRegistry.findBlock(FoxBlocks.MODID, BaseBlockName + (getUnlocalizedName().contains("_2_") ? "_2_Slab" : "_Slab"));
+        return GameRegistry.findBlock(GameRegistry.findUniqueIdentifierFor(this).modId, BaseBlockName + (getUnlocalizedName().contains("_2_") ? "_2_Slab" : "_Slab"));
     }
 
     @Override

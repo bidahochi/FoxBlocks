@@ -14,4 +14,5 @@ public interface IFoxBlockIDs
 
     String GetBlockName();
 
+    IFoxBlockIDs[] GetAll();
 }

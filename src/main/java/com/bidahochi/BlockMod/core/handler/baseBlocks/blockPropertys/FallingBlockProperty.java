@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlockSlab;
@@ -11,12 +12,12 @@ import net.minecraft.init.Blocks;
 
 public class FallingBlockProperty extends BlockProperty
 {
-    public FallingBlockProperty(BlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab)
+    public FallingBlockProperty(IFoxBlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab)
     {
         super(block, material, blockHardness, blockResistance, toolClass, harvestLevel, soundType, totalTextureCount, texturePath, creativeTab);
     }
 
-    public FallingBlockProperty(BlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab, boolean firstBlockHasNoIndex)
+    public FallingBlockProperty(IFoxBlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab, boolean firstBlockHasNoIndex)
     {
         super(block, material, blockHardness, blockResistance, toolClass, harvestLevel, soundType, totalTextureCount, texturePath, creativeTab, firstBlockHasNoIndex);
     }

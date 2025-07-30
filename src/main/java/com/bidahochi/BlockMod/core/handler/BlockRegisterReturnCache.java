@@ -9,10 +9,10 @@ import java.util.LinkedHashMap;
 
 public class BlockRegisterReturnCache
 {
-    public HashMap<BlockIDs, BlockProperty> TempBlockCache = new HashMap<>();
+    public HashMap<IFoxBlockIDs, BlockProperty> TempBlockCache = new HashMap<>();
     public LinkedHashMap<Block, VanillaBlockProperty> TempVanillaBlockCache = new LinkedHashMap<Block, VanillaBlockProperty>();
 
-    public BlockRegisterReturnCache(HashMap<BlockIDs, BlockProperty> tempBlockCache, LinkedHashMap<Block, VanillaBlockProperty> tempVanillaBlockCache)
+    public BlockRegisterReturnCache(HashMap<IFoxBlockIDs, BlockProperty> tempBlockCache, LinkedHashMap<Block, VanillaBlockProperty> tempVanillaBlockCache)
     {
         TempBlockCache = tempBlockCache;
         TempVanillaBlockCache = tempVanillaBlockCache;

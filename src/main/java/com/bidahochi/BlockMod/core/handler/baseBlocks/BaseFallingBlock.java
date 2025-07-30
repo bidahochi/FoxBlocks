@@ -26,7 +26,7 @@ public class BaseFallingBlock extends BlockFalling
         setCreativeTab(blockProperty.CreativeTab);
         setBlockName(blockProperty.BlockName);
         setHardness(blockProperty.BlockHardness);
-        setBlockTextureName(blockProperty.TexturePath);
+        setBlockTextureName(blockProperty.getFullTexturePath());
         setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
         setResistance(blockProperty.BlockResistance);
         if (blockProperty.SoundType != null)

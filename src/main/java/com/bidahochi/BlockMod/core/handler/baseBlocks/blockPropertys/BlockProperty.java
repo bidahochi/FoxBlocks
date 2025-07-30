@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
+import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockWall;
@@ -16,6 +17,12 @@ import net.minecraft.init.Blocks;
  */
 public class BlockProperty implements IBlockProperty
 {
+    private String ResourceFolderName = FoxBlocks.MODID;
+
+    public String getResourceFolderName() {
+        return ResourceFolderName;
+    }
+
     public final Material TheMaterial;
     public final String BlockName;
     public final float BlockHardness;
@@ -23,7 +30,7 @@ public class BlockProperty implements IBlockProperty
     public final String ToolClass;
     public final int HarvestLevel;
     public final Block.SoundType SoundType;
-    public final String TexturePath;
+    private final String TexturePath;
     public final CreativeTabs CreativeTab;
     public final int TotalTextureCount;
     public boolean FirstBlockHasNoIndex = false;
@@ -54,14 +61,14 @@ public class BlockProperty implements IBlockProperty
         HarvestLevel = harvestLevel;
         SoundType = block.stepSound;
         TotalTextureCount = totalTextureCount;
-        TexturePath = FoxBlocks.MODID + ":" + texturePath;
+        TexturePath = texturePath;
         CreativeTab = block.getCreativeTabToDisplayOn();
         isVanillaBlock = true;
     }
 
-    public BlockProperty(BlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab)
+    public BlockProperty(IFoxBlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab)
     {
-        BlockName = block.blockName;
+        BlockName = block.GetBlockName();
         TheMaterial = material;
         BlockHardness = blockHardness;
         BlockResistance = blockResistance;
@@ -69,14 +76,27 @@ public class BlockProperty implements IBlockProperty
         HarvestLevel = harvestLevel;
         SoundType = soundType;
         TotalTextureCount = totalTextureCount;
-        TexturePath = FoxBlocks.MODID + ":" + texturePath;
+        TexturePath = texturePath;
         CreativeTab = creativeTab;
     }
 
-    public BlockProperty(BlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab, boolean firstBlockHasNoIndex)
+    public BlockProperty(IFoxBlockIDs block, Material material, float blockHardness, float blockResistance, String toolClass, int harvestLevel, Block.SoundType soundType, int totalTextureCount, String texturePath, CreativeTabs creativeTab, boolean firstBlockHasNoIndex)
     {
         this (block, material, blockHardness, blockResistance, toolClass, harvestLevel, soundType, totalTextureCount, texturePath, creativeTab);
         FirstBlockHasNoIndex = firstBlockHasNoIndex;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public void setResourceFolderName(String resourceFolderName)
+    {
+        ResourceFolderName = resourceFolderName;
+    }
+
+    public String getFullTexturePath()
+    {
+         return ResourceFolderName + ":" + TexturePath;
     }
 
     public Block getNewBlock()

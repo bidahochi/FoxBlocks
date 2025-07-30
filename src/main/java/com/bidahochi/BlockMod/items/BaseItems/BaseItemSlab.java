@@ -14,7 +14,7 @@ public class BaseItemSlab extends ItemSlab
     {
         super(block,
                 (BlockSlab) block, // BlockIDs.searchEnum(BlockIDs.class, block.getUnlocalizedName().replace("_DoubleSlab","_Slab").replace("tile.", "").replace(" ", "")).block
-                (BaseAbstractSlab) GameRegistry.findBlock(FoxBlocks.MODID, ((BaseAbstractSlab)block).BaseBlockName + (block.getUnlocalizedName().contains("_2_") ? "_2_" : "_") + "DoubleSlab"), // BlockIDs.searchEnum(BlockIDs.class, block.getUnlocalizedName().replace("_Slab","_DoubleSlab").replace("tile.", "").replace(" ", "")).block
+                (BaseAbstractSlab) GameRegistry.findBlock(((BaseAbstractSlab) block).ResourceFolderName(), ((BaseAbstractSlab)block).BaseBlockName + (block.getUnlocalizedName().contains("_2_") ? "_2_" : "_") + "DoubleSlab"), // BlockIDs.searchEnum(BlockIDs.class, block.getUnlocalizedName().replace("_Slab","_DoubleSlab").replace("tile.", "").replace(" ", "")).block
                 block.getUnlocalizedName().contains("_DoubleSlab"));
         setHasSubtypes(true);
     }
