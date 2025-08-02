@@ -23,6 +23,8 @@ public class BlockProperty implements IBlockProperty
         return ResourceFolderName;
     }
 
+    public boolean is1XTileAllowed = false;
+
     public final Material TheMaterial;
     public final String BlockName;
     public final float BlockHardness;
@@ -145,5 +147,10 @@ public class BlockProperty implements IBlockProperty
     public boolean IsWallBlockAllowed()
     {
         return true;
+    }
+
+    public boolean Is1XTileAllowed()
+    {
+        return is1XTileAllowed;
     }
 }

@@ -57,8 +57,19 @@ public class SimpleBlockIDGroupRegister
                     {
                         GameRegistry.registerBlock(new BaseBlockWall(block.GetBlock(), blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemWallBlock.class, blockProperty.BlockName + "_Wall");
                     }
+
+                    if (blockProperty.Is1XTileAllowed())
+                    {
+                        GameRegistry.registerBlock(new BaseBlock1XTile(blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock.class, blockProperty.BlockName + "_1XTile");
+                    }
                 }
             }
         }
     }
+
+    public void RegisterIFoxBlockIDRecipes(IFoxBlockIDs[] blockIDs, HashMap<IFoxBlockIDs, BlockProperty> tempBlockCache)
+    {
+
+    }
+
 }

@@ -38,6 +38,7 @@ public class FoxBlocks
     public static CreativeTabs foxBlocksCreativeTabProperProps;
     public static CreativeTabs foxBlocksCreativeTabItems;
     public static CreativeTabs foxBlocksCreativeTabVanillaPlus;
+    public static CreativeTabs foxBlocksCreativeTabExtraBlockShapes;
     public static Logger blockLogger = LogManager.getLogger("FoxBlocks");
     public static FMLEventChannel channel;
     public static boolean isForgeMultiPartLoaded = false;
@@ -101,6 +102,14 @@ public class FoxBlocks
                 return  ItemIDs.bucket_of_tbea.item; }
             public String getTranslatedTabLabel() {
                 return "FoxBlocks - Vanilla+";
+            }
+        };
+
+        foxBlocksCreativeTabExtraBlockShapes = new FoxBlocksCreativeTab("FoxBlocks - Blocks+") {
+            public Item getTabIconItem() {
+                return  Item.getItemFromBlock(BlockIDs.dryWall.block); }
+            public String getTranslatedTabLabel() {
+                return "FoxBlocks - Blocks+";
             }
         };
 
