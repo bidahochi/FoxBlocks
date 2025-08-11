@@ -128,7 +128,7 @@ public class BaseVanillaBlockSlab extends BlockSlab
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return ParentBlock.getIcon(side, meta);
+        return ParentBlock.getIcon(side, meta & 7);
     }
 
     @Override
