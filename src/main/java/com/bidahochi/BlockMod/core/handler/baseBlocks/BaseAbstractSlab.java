@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.BaseClassFolder.IScrollingSlabToVerticalSlabBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -21,7 +22,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Random;
 
-public abstract class BaseAbstractSlab extends BlockSlab
+public abstract class BaseAbstractSlab extends BlockSlab implements IScrollingSlabToVerticalSlabBlock
 {
     public IIcon[] textures;
     private BaseAbstractSlab singleSlab;
@@ -37,6 +38,12 @@ public abstract class BaseAbstractSlab extends BlockSlab
     public final byte BlockNumberStartingIndex;
     protected boolean FirstBlockHasNoIndex = false;
     public final String BaseBlockName;
+
+    @Override
+    public String GetBaseBlockName()
+    {
+        return BaseBlockName;
+    }
 
     public BaseAbstractSlab(Boolean isDoubleSlab, BlockProperty blockProperty, Block singleSlab, int blockNumberStartingIndex)
     {

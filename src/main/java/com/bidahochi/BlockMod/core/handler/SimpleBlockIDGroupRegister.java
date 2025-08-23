@@ -60,7 +60,15 @@ public class SimpleBlockIDGroupRegister
 
                     if (blockProperty.Is1XTileAllowed())
                     {
-                        GameRegistry.registerBlock(new BaseBlock1XTile(blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock.class, blockProperty.BlockName + "_1XTile");
+                        String blockName = blockProperty.IfExistsGetBlockOverrideName(blockProperty.TileKey);
+                        if (blockName.equals("@~NO~@"))
+                        {
+                            GameRegistry.registerBlock(new BaseBlock1XTile(blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockProperty.BlockName + "_1XTile");
+                        }
+                        else
+                        {
+                            GameRegistry.registerBlock(new BaseBlock1XTile(blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockName);
+                        }
                     }
                 }
             }

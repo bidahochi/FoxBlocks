@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.BaseClassFolder.IScrollingSlabToVerticalSlabBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseAbstractSlab;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -21,7 +22,7 @@ import java.util.List;
 
 import static com.bidahochi.BlockMod.FoxBlocks.foxBlocksCreativeTabVanillaPlus;
 
-public class BaseVanillaBlockSlab extends BlockSlab
+public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToVerticalSlabBlock
 {
     public Block ParentBlock;
     private BaseVanillaBlockSlab singleSlab;

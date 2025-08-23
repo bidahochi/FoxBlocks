@@ -1,22 +1,40 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockWall;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  Class meant to be used for Block Initialization to quickly share block details between Block, Slab, Stair
  */
 public class BlockProperty implements IBlockProperty
 {
+    public final String TileKey = "Tile";
+
+    /**
+     * Used to handle a block that was previously under a different register name that is being converted
+     * to register and all block modifications under foxblocks without having to use the block remapper
+     * which can cause issues.
+     */
+    public Map<String, String> blockRegisterNameOverrides = new HashMap<>();
+
+    public String IfExistsGetBlockOverrideName(String blockKey)
+    {
+        if (blockRegisterNameOverrides.containsKey(blockKey))
+        {
+            return blockRegisterNameOverrides.get(blockKey);
+        }
+
+        return "@~NO~@";
+    }
+
     private String ResourceFolderName = FoxBlocks.MODID;
 
     public String getResourceFolderName() {
