@@ -1076,7 +1076,7 @@ public class BlockHandler
         GameRegistry.registerTileEntity(TilePropTrailerDryvan1.class, "PropTrailerDryvan1");
         GameRegistry.registerTileEntity(TilePropTrailerDryvan1a.class, "PropTrailerDryvan1a");
 
-        new SimpleBlockIDGroupRegister().RegisterIFoxBlockIDs(BlockIDs.values(), tempBlockCache);
+        new SimpleBlockIDGroupRegister(FoxBlocks.MODID).RegisterIFoxBlockIDs(BlockIDs.values(), tempBlockCache);
 
         tempVanillaBlockCache.put(Blocks.sand, new VanillaFallingBlockProperty(Blocks.sand, "sand", 2, SHOVEL, 0));
         tempVanillaBlockCache.put(Blocks.gravel, new VanillaFallingBlockProperty(Blocks.gravel, "gravel", 1, SHOVEL, 0));
