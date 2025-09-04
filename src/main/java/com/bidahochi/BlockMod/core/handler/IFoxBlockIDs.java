@@ -13,6 +13,4 @@ public interface IFoxBlockIDs
     byte GetMaxMetaData();
 
     String GetBlockName();
-
-    IFoxBlockIDs[] GetAll();
 }

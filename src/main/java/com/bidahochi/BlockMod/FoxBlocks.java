@@ -136,7 +136,7 @@ public class FoxBlocks
         EntityRegistry.registerModEntity(EntityChair.class, "EntityChair", 0, MODID, 80, 1, false);
         if (Loader.isModLoaded("ForgeMultipart"))
         {
-            ForgeMultiPart.registerBlocks();
+            ForgeMultiPart.registerBlocks(BlockIDs.values());
             isForgeMultiPartLoaded = true;
         }
     }

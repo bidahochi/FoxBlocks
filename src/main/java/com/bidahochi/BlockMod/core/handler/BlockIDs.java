@@ -448,7 +448,4 @@ public enum BlockIDs implements IFoxBlockIDs
     public String GetBlockName() {
         return this.blockName;
     }
-
-    @Override
-    public IFoxBlockIDs[] GetAll() { return values(); };
 }
