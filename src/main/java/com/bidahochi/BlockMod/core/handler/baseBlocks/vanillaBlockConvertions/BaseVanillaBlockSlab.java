@@ -28,6 +28,7 @@ public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToV
     private BaseVanillaBlockSlab singleSlab;
     private byte amountOfSubBlocks = 0;
 
+    public final byte BlockNumberStartingIndex;
     private String altBlockName;
 
     public String GetBaseBlockName()
@@ -44,6 +45,7 @@ public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToV
     {
         super(singleSlab != null, blockProperty.block.getMaterial());
         this.singleSlab = (BaseVanillaBlockSlab)singleSlab;
+        BlockNumberStartingIndex = (byte) blockNumberStartingIndex;
         ParentBlock = blockProperty.block;
         if (blockNumberStartingIndex == 0)
         {
@@ -129,7 +131,7 @@ public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToV
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return ParentBlock.getIcon(side, meta & 7);
+        return ParentBlock.getIcon(side, (meta & 7) + BlockNumberStartingIndex);
     }
 
     @Override
