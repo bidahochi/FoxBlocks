@@ -1109,7 +1109,6 @@ public class BlockHandler
                 else
                 {
                     GameRegistry.registerBlock(
-                            new BaseFallingBlockStair(tempBlock.getKey(), i),
                             new BaseBlockStair(tempBlock.getKey(), i),
                             com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Stair");
 
