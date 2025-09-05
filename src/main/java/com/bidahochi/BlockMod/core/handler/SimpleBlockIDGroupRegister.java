@@ -101,6 +101,26 @@ public class SimpleBlockIDGroupRegister
                     && (BaseItemBlock.class.equals(block.getItemBlockClass()) || block.getItemBlockClass().getClass().isInstance(BaseItemBlock.class.getClass()))
                     && (block.GetBlock() instanceof BaseBlock || block.GetBlock() instanceof BasePillarBlock || block.GetBlock() instanceof BaseFallingBlock))
             {
+                BlockProperty blockProperty = tempBlockCache.get(block);
+                if (blockProperty != null && blockProperty.Is1XTileAllowed())
+                {
+                    String blockName = blockProperty.IfExistsGetBlockOverrideName(blockProperty.TileKey);
+                    Block block1XTile;
+                    if (blockName.equals("@~NO~@"))
+                    {
+                        block1XTile = GameRegistry.findBlock(MODID, block.GetBlockName() + "_1XTile");
+                    }
+                    else
+                    {
+                        block1XTile = GameRegistry.findBlock(MODID, blockName);
+                    }
+
+                    for (int i = 0; i <= block.GetMaxMetaData(); i++)
+                    {
+                        GameRegistry.addShapedRecipe(new ItemStack(block1XTile, 16, i), "IX", "  ", 'I', new ItemStack(block.GetBlock(), 1, i), 'X', new ItemStack(ItemIDs.bolsterChisel.item, 1, 0));
+                    }
+                }
+
                 // Slabs can only go up to 7 as metadata is used for the bottom and top sate
                 if (block.GetMaxMetaData() < 8)
                 {
