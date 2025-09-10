@@ -2,13 +2,13 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlock;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlockSlab;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.init.Blocks;
+import net.minecraft.world.World;
 
 public class FallingBlockProperty extends BlockProperty
 {
@@ -68,6 +68,20 @@ public class FallingBlockProperty extends BlockProperty
         }
 
         return new BaseFallingBlockSlab(true, this, singleSecondarySlab, 8);
+    }
+
+    @Override
+    public Block getBlockStair(int metadata)
+    {
+        return new BaseFallingBlockStair(block, metadata, this);
+    }
+
+    @Override
+    public Block getNewBlock1XTile()
+    {
+        tile1X = new BaseFallingBlock1XTile(this);
+
+        return tile1X;
     }
 
     @Override

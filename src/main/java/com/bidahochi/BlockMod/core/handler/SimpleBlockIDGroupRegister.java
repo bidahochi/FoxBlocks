@@ -54,14 +54,7 @@ public class SimpleBlockIDGroupRegister
 
                     for(int i = 0; i < blockProperty.TotalTextureCount; i++)
                     {
-                        if (block.GetBlock() instanceof BaseFallingBlock)
-                        {
-                            GameRegistry.registerBlock(new BaseFallingBlockStair(block.GetBlock(), i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
-                        }
-                        else
-                        {
-                            GameRegistry.registerBlock(new BaseBlockStair(block.GetBlock(), i, blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
-                        }
+                        GameRegistry.registerBlock(blockProperty.getBlockStair(i), com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, blockProperty.BlockName + "_" + i + "_Stair");
                     }
 
                     if (blockProperty.IsWallBlockAllowed())
@@ -74,11 +67,11 @@ public class SimpleBlockIDGroupRegister
                         String blockName = blockProperty.IfExistsGetBlockOverrideName(blockProperty.TileKey);
                         if (blockName.equals("@~NO~@"))
                         {
-                            GameRegistry.registerBlock(new BaseBlock1XTile(blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockProperty.BlockName + "_1XTile");
+                            GameRegistry.registerBlock(blockProperty.getNewBlock1XTile(), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockProperty.BlockName + "_1XTile");
                         }
                         else
                         {
-                            GameRegistry.registerBlock(new BaseBlock1XTile(blockProperty), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockName);
+                            GameRegistry.registerBlock(blockProperty.getNewBlock1XTile(), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockName);
                         }
                     }
                 }

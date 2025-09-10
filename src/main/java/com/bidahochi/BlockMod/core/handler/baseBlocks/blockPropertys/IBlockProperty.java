@@ -14,6 +14,10 @@ public interface IBlockProperty
 
     public Block getSecondNewDoubleSlab();
 
+    public Block getBlockStair(int metadata);
+
+    public Block getNewBlock1XTile();
+
     public boolean IsWallBlockAllowed();
 
     /**

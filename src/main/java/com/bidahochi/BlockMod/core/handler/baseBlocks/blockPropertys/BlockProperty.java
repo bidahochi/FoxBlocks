@@ -3,7 +3,9 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock1XTile;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockStair;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -59,7 +61,9 @@ public class BlockProperty implements IBlockProperty
 
     protected Block singleSlab;
     protected Block singleSecondarySlab;
+
     protected Block block;
+    protected Block tile1X;
 
     public boolean isVanillaBlock = false;
     /**
@@ -121,7 +125,7 @@ public class BlockProperty implements IBlockProperty
 
     public Block getNewBlock()
     {
-        block = new BaseBlock(this);
+        block = block == null ? new BaseBlock(this) : block;
         return block;
     }
 
@@ -160,6 +164,18 @@ public class BlockProperty implements IBlockProperty
         }
 
         return new BaseBlockSlab(true, this, singleSecondarySlab, 8);
+    }
+
+    public Block getBlockStair(int metadata)
+    {
+        return new BaseBlockStair(block, metadata, this);
+    }
+
+    public Block getNewBlock1XTile()
+    {
+        tile1X = new BaseBlock1XTile(this);
+
+        return tile1X;
     }
 
     public boolean IsWallBlockAllowed()
