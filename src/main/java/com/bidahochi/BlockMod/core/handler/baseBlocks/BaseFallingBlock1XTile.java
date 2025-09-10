@@ -7,7 +7,10 @@ import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
-public class BaseFallingBlock1XTile extends BaseBlock1XTile{
+public class BaseFallingBlock1XTile extends BaseBlock1XTile
+{
+    public static boolean fallInstantly;
+
     public BaseFallingBlock1XTile(BlockProperty blockProperty)
     {
         super(blockProperty);
@@ -34,7 +37,7 @@ public class BaseFallingBlock1XTile extends BaseBlock1XTile{
         if (isNextBlockUnoccupied(world, x, y - 1, z) && y >= 0)
         {
             byte b0 = 32;
-            if (!false && world.checkChunksExist(x - b0, y - b0, z - b0, x + b0, y + b0, z + b0))
+            if (!fallInstantly && world.checkChunksExist(x - b0, y - b0, z - b0, x + b0, y + b0, z + b0))
             {
                 if (!world.isRemote)
                 {
