@@ -19,7 +19,6 @@ package com.bidahochi.BlockMod.core.handler;
  *
  */
 
-import com.bidahochi.BlockMod.FoxBlocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 

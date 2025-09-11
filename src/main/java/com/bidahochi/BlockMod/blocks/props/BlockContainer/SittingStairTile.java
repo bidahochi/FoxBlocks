@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.props.BlockContainer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingFloorTile;
 import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingStairTile;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSittable;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;

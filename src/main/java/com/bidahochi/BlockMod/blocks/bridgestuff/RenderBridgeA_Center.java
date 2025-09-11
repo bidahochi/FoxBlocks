@@ -1,9 +1,7 @@
 package com.bidahochi.BlockMod.blocks.bridgestuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.props.TileClampOnSignDerail;
 import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeCenterA;
-import com.bidahochi.BlockMod.render.models.ModelClampOnRailSign;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

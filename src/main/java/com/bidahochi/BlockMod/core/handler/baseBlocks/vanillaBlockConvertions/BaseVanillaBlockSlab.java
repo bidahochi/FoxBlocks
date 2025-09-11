@@ -2,14 +2,11 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.IScrollingSlabToVerticalSlabBlock;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseAbstractSlab;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -19,8 +16,6 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
 import java.util.List;
-
-import static com.bidahochi.BlockMod.FoxBlocks.foxBlocksCreativeTabVanillaPlus;
 
 public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToVerticalSlabBlock
 {

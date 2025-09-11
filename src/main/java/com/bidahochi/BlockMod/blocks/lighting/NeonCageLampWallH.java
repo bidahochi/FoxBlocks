@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.lighting;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileBreakerBox2;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;

@@ -1,6 +1,5 @@
 package com.bidahochi.BlockMod.core.handler;
 
-import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;

@@ -2,7 +2,6 @@ package com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockConta
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileRoadCoverDynamic1X1;
-import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.TileRoadCoverDynamic1X1;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;

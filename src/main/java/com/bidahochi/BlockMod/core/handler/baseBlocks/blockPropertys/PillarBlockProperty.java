@@ -1,9 +1,6 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BasePillarBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BasePillarBlockSlab;
 import net.minecraft.block.Block;

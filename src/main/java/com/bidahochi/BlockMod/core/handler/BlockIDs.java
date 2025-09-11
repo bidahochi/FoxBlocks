@@ -123,7 +123,7 @@ public enum BlockIDs implements IFoxBlockIDs
     foxglass(false,null,"foxglass"),
     blue(true, BaseItemBlock.class,"Blue"),
     green(true, BaseItemBlock.class,"Green"),
-    fofblock(false, null, "fofblock"),
+    fofblock(true, BaseItemBlock.class, "fofblock"),
     pingascube(false, null ,"pingascube"),
     invisiblock(false, null, "invisiblock"),
     //endregion fun

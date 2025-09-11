@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.bridgestuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.blocks.props.TileClampOnSignDerail;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;

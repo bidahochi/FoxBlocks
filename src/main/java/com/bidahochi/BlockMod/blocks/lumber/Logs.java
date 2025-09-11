@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.lumber;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockLog;
@@ -13,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
 import java.util.List;
-import java.util.Random;
 
 public class Logs extends BlockLog
 {

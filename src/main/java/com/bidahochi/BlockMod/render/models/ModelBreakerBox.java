@@ -11,7 +11,6 @@ package com.bidahochi.BlockMod.render.models; //Path where the model is located
 
 import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.ModelRendererTurbo;
-import net.minecraft.entity.Entity;
 
 public class ModelBreakerBox extends ModelConverter//Same as Filename
 {

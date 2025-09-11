@@ -53,7 +53,6 @@ import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaFallingBlockProperty;
-import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -83,17 +82,62 @@ public class BlockHandler
     final String SHOVEL = "shovel";
     final String AXE = "AXE";
 
+    final String SWORD = "sword";
+    final String HOE = "hoe";
+
     public BlockRegisterReturnCache initBlockRegister(FMLInitializationEvent e)
     {
         //FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
         //ores
-        BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
-        BlockIDs.cobaltOre.block = new CobaltOre(Material.rock);
-        BlockIDs.aragoniteOre.block = new AragoniteOre(Material.rock);
-        BlockIDs.gypsum.block = new Gypsum(Material.rock);
-        BlockIDs.taconite.block = new Taconite(Material.rock);
-        BlockIDs.hematite.block = new Hematite(Material.rock);
+        { // bauxiteOre
+            BlockProperty property = new BlockProperty(BlockIDs.bauxiteOre, Material.rock, 3.5F, 6.0F,
+                    PICKAXE, 1,
+                    soundTypeStone, 1,"stones/bauxite_ore", foxBlocksCreativeTabRock, true);
+            BlockIDs.bauxiteOre.block = property.getNewBlock();
+        }
+
+        { // cobaltOre
+            BlockProperty property = new BlockProperty(BlockIDs.cobaltOre, Material.rock, 3.8F, 6.5F,
+                    PICKAXE, 2,
+                    soundTypeStone, 1,"stones/cobalt_ore", foxBlocksCreativeTabRock, true);
+            BlockIDs.cobaltOre.block = property.getNewBlock();
+        }
+
+        { // aragoniteOre
+            BlockProperty property = new BlockProperty(BlockIDs.aragoniteOre, Material.rock, 2.0F, 1.5F,
+                    PICKAXE, 2,
+                    soundTypePiston, 1,"stones/aragonite_ore", foxBlocksCreativeTabRock, true);
+            BlockIDs.aragoniteOre.block = property.getNewBlock();
+        }
+
+        { // gypsum
+            BlockProperty property = new BlockProperty(BlockIDs.gypsum, Material.rock, 1.0F, 2.0F,
+                    PICKAXE, 1,
+                    soundTypeStone, 1,"stones/rawgypsum", foxBlocksCreativeTabRock, true);
+            BlockIDs.gypsum.block = property.getNewBlock();
+        }
+
+        { // taconite
+            BlockProperty property = new BlockProperty(BlockIDs.taconite, Material.rock, 3F, 4.0F,
+                    PICKAXE, 1,
+                    soundTypeStone, 1,"stones/taconite_ore", foxBlocksCreativeTabRock, true);
+            BlockIDs.taconite.block = property.getNewBlock();
+        }
+
+        { // hematite
+            BlockProperty property = new BlockProperty(BlockIDs.hematite, Material.rock, 3F, 5.0F,
+                    PICKAXE, 1,
+                    soundTypePiston, 1,"stones/hematite_ore", foxBlocksCreativeTabRock, true);
+            BlockIDs.hematite.block = property.getNewBlock();
+        }
+
+        //BlockIDs.bauxiteOre.block = new BauxiteOre(Material.rock);
+        //BlockIDs.cobaltOre.block = new CobaltOre(Material.rock);
+        //BlockIDs.aragoniteOre.block = new AragoniteOre(Material.rock);
+        //BlockIDs.gypsum.block = new Gypsum(Material.rock);
+        //BlockIDs.taconite.block = new Taconite(Material.rock);
+        //BlockIDs.hematite.block = new Hematite(Material.rock);
 
         //raw
         { // peagravel_snow
@@ -471,11 +515,37 @@ public class BlockHandler
         }
 
         //fun
-        BlockIDs.although.block = new Although(Material.clay);
-        BlockIDs.testblock.block = new TestBlock(Material.iron);
-        BlockIDs.tHanos.block = new Thanos(Material.sponge);
-        BlockIDs.booBlox.block = new BooBlox(Material.cloth);
-        BlockIDs.blockLavaBucket.block = new BlockLavaBucket(Material.iron);
+        { // although
+            BlockProperty property = new BlockProperty(BlockIDs.although, Material.clay, 25.0F, 30.0F,
+                    HOE, 3,
+                    soundTypeCloth, 1,"although", foxBlocksCreativeTab, true);
+            BlockIDs.although.block = property.getNewBlock().setLightLevel(1.5F);
+        }
+
+        { // testblock
+            BlockIDs.testblock.block = new TestBlock(Material.iron);
+        }
+
+        { // tHanos
+            BlockProperty property = new BlockProperty(BlockIDs.tHanos, Material.sponge, 1.0F, 69.0F,
+                    SHOVEL, 2,
+                    soundTypeCloth, 1,"thanos", foxBlocksCreativeTab, true);
+            BlockIDs.tHanos.block = property.getNewBlock();
+        }
+
+        { // booBlox
+            BlockProperty property = new BlockProperty(BlockIDs.booBlox, Material.cloth, 2.0F, 2.0F,
+                    SWORD, 2,
+                    soundTypeCloth, 6,"meme/booblox", foxBlocksCreativeTab, false);
+            BlockIDs.booBlox.block = property.getNewBlock();
+        }
+
+        { // blockLavaBucket
+            BlockProperty property = new BlockProperty(BlockIDs.blockLavaBucket, Material.iron, 1F, 5.0F,
+                    PICKAXE, 2,
+                    soundTypeStone, 1,"metals/block_o_lava_bucket", foxBlocksCreativeTab, true);
+            BlockIDs.blockLavaBucket.block = property.getNewBlock().setLightLevel(3F);
+        }
 
         { // blockOfPlayerHead
             BlockProperty property = new BlockProperty(BlockIDs.blockOfPlayerHead, Material.gourd, 4.0F, 10.0F,
@@ -503,7 +573,14 @@ public class BlockHandler
             tempBlockCache.put(BlockIDs.green, property);
         }
 
-        BlockIDs.fofblock.block = new Fofblock(Material.cake);
+        { // fofblock
+            BlockProperty property = new BlockProperty(BlockIDs.fofblock, Material.cake, 4F, 10F,
+                    PICKAXE, 4,
+                    soundTypeLadder, 1,"meme/fof", foxBlocksCreativeTab, false);
+            BlockIDs.fofblock.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.fofblock, property);
+        }
+
         BlockIDs.pingascube.block = new Pingascube(Material.glass);
         BlockIDs.invisiblock.block = new Invisiblock(Material.wood);
 
@@ -562,7 +639,14 @@ public class BlockHandler
             BlockIDs.plywood.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.plywood, property);
         }
-        BlockIDs.woodchips.block = new Woodchips(Material.wood);
+
+        { // woodchips
+            BlockProperty property = new FallingBlockProperty(BlockIDs.woodchips, Material.wood, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeSand, 1,"lumber/woodchips", foxBlocksCreativeTab, false);
+            BlockIDs.woodchips.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.woodchips, property);
+        }
 
         BlockIDs.wrappedwood1.block = new WrappedWood1(Material.wood);
         BlockIDs.wrappedwood2.block = new WrappedWood2(Material.wood);

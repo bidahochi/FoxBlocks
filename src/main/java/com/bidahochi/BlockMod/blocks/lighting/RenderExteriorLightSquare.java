@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.lighting;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.ModelNeonCageLight;
 import com.bidahochi.BlockMod.render.models.Modelexterior_light_square;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;

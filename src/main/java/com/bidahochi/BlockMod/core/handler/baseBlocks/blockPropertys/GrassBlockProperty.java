@@ -1,10 +1,7 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockGrass;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlockSlab;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BasePillarBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

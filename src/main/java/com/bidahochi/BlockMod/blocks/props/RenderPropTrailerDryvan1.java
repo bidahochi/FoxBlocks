@@ -2,7 +2,6 @@ package com.bidahochi.BlockMod.blocks.props;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.render.models.ModelPropTrailerDryvan;
-import com.bidahochi.BlockMod.render.models.Modelwall_sink;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import com.bidahochi.BlockMod.utils.FBMultiPartHelper;
 import cpw.mods.fml.relauncher.Side;

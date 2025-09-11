@@ -2,7 +2,6 @@ package com.bidahochi.BlockMod.blocks.props;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.render.models.xmas.ModelXmasLights1_bottom;
-import com.bidahochi.BlockMod.render.models.xmas.ModelXmasLights1_top;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

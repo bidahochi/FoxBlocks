@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.bridgestuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeCenterA;
 import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeSideA_Top;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;

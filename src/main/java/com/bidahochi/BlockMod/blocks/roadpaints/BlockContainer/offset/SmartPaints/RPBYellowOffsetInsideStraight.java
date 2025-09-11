@@ -1,6 +1,5 @@
 package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints;
 
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.RoadPaintBlockOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.RoadPaintBlockOffsetInsideStraight;
 import net.minecraft.block.material.Material;
 

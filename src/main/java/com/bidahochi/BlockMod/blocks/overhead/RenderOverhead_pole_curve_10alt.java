@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.overhead;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.Overheads.Modelwpole_10_curve;
 import com.bidahochi.BlockMod.render.models.Overheads.Modelwpole_10_curve2;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;

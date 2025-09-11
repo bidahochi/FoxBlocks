@@ -1,9 +1,7 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks;
 
-import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.IScrollingSlabToVerticalSlabBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
-import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,7 +14,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 import java.util.List;

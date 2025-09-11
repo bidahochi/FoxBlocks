@@ -13,7 +13,6 @@ import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.ModelRendererTurbo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
-import org.lwjgl.opengl.GL11;
 
 public class ModelXmasLights1_top extends ModelConverter //Same as Filename
 {

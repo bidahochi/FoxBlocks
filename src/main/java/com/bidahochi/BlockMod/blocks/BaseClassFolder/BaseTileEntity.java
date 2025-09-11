@@ -7,7 +7,7 @@ import net.minecraft.tileentity.TileEntity;
 
 public class BaseTileEntity extends TileEntity
 {
-    public int dir=0;
+    public int dir = 0;
 
     public BaseTileEntity(int dir)
     {

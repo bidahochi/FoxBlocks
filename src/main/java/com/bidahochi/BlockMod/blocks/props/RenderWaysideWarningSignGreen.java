@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.blocks.props;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.ModelClampOnRailSign;
 import com.bidahochi.BlockMod.render.models.ModelWaysideSign;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;

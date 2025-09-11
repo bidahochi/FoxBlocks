@@ -1,14 +1,10 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.item.EntityFallingBlock;
-import net.minecraft.init.Blocks;
-import net.minecraft.world.World;
 
 public class FallingBlockProperty extends BlockProperty
 {

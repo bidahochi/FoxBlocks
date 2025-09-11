@@ -2,7 +2,6 @@ package com.bidahochi.BlockMod.biome;
 
 import java.util.Random;
 import net.minecraft.block.BlockFlower;
-import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;

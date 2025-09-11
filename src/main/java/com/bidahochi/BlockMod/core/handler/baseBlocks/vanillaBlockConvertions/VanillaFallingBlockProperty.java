@@ -1,6 +1,5 @@
 package com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions;
 
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseFallingBlockSlab;
 import net.minecraft.block.Block;
 
 public class VanillaFallingBlockProperty extends VanillaBlockProperty

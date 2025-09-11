@@ -1,6 +1,5 @@
 package com.bidahochi.BlockMod;
 
-import com.bidahochi.BlockMod.items.record_piss2;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.BlockJukebox;
 import net.minecraft.client.renderer.texture.IIconRegister;
