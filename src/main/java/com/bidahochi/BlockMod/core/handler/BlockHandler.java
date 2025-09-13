@@ -290,6 +290,7 @@ public class BlockHandler
                     PICKAXE, 1,
                     null, 1,"stones/layercrete/Layered_concrete", foxBlocksCreativeTabRock, false);
             property.blockHasSideTextures = true;
+            property.isFenceBlockAllowed = true;
             BlockIDs.layeredConcrete.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.layeredConcrete, property);
         }
@@ -1195,8 +1196,6 @@ public class BlockHandler
                     GameRegistry.registerBlock(
                             new BaseBlockStair(tempBlock.getKey(), i),
                             com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock.class, tempBlock.getKey().getUnlocalizedName().replace("tile.", "") + "_" + i + "_Stair");
-
-
                 }
             }
 

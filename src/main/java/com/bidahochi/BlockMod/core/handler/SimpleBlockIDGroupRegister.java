@@ -73,6 +73,20 @@ public class SimpleBlockIDGroupRegister
                             GameRegistry.registerBlock(blockProperty.getNewBlock1XTile(), com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock_1XTile.class, blockName);
                         }
                     }
+
+                    if (blockProperty.isFenceBlockAllowed())
+                    {
+                        String blockName = blockProperty.IfExistsGetBlockOverrideName(blockProperty.FenceKey);
+
+                        if (blockName.equals("@~NO~@"))
+                        {
+                            GameRegistry.registerBlock(blockProperty.getNewFenceBLock(), com.bidahochi.BlockMod.items.BaseItems.BaseItemFenceBlock.class, blockProperty.BlockName + "_Fence");
+                        }
+                        else
+                        {
+                            GameRegistry.registerBlock(blockProperty.getNewFenceBLock(), com.bidahochi.BlockMod.items.BaseItems.BaseItemFenceBlock.class, blockName);
+                        }
+                    }
                 }
             }
         }

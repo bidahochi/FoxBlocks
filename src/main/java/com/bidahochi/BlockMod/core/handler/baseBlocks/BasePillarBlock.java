@@ -15,6 +15,7 @@ public class BasePillarBlock extends BaseAbstractBlock
         super(blockProperty);
     }
 
+    @Override
     public void registerBlockIcons(IIconRegister reg)
     {
         texturesTopSideBottom = new IIcon[amountOfSubBlocks * 3];

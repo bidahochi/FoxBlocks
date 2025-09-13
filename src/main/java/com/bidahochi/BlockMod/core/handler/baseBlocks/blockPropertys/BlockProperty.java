@@ -2,10 +2,7 @@ package com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlock1XTile;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSlab;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockStair;
+import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -19,6 +16,7 @@ import java.util.Map;
 public class BlockProperty implements IBlockProperty
 {
     public final String TileKey = "Tile";
+    public final String FenceKey = "Fence";
 
     /**
      * Used to handle a block that was previously under a different register name that is being converted
@@ -45,6 +43,8 @@ public class BlockProperty implements IBlockProperty
 
     public boolean is1XTileAllowed = false;
 
+    public boolean isFenceBlockAllowed = false;
+
     public final Material TheMaterial;
     public final String BlockName;
     public final float BlockHardness;
@@ -54,6 +54,7 @@ public class BlockProperty implements IBlockProperty
     public final Block.SoundType SoundType;
     private final String TexturePath;
     public final CreativeTabs CreativeTab;
+
     public final int TotalTextureCount;
     public boolean FirstBlockHasNoIndex = false;
     public float lightLevel;
@@ -64,6 +65,8 @@ public class BlockProperty implements IBlockProperty
 
     protected Block block;
     protected Block tile1X;
+
+    protected Block fenceBlock;
 
     public boolean isVanillaBlock = false;
     /**
@@ -125,7 +128,8 @@ public class BlockProperty implements IBlockProperty
 
     public Block getNewBlock()
     {
-        block = block == null ? new BaseBlock(this) : block;
+        block = new BaseBlock(this);
+
         return block;
     }
 
@@ -173,9 +177,27 @@ public class BlockProperty implements IBlockProperty
 
     public Block getNewBlock1XTile()
     {
-        tile1X = new BaseBlock1XTile(this);
+        if (tile1X == null)
+        {
+            tile1X = new BaseBlock1XTile(this);
+        }
 
         return tile1X;
+    }
+
+    public Block getNewFenceBLock()
+    {
+        if (fenceBlock == null)
+        {
+            fenceBlock = new BaseBlockFence(block, this);
+        }
+
+        return fenceBlock;
+    }
+
+    public boolean isFenceBlockAllowed()
+    {
+        return isFenceBlockAllowed;
     }
 
     public boolean IsWallBlockAllowed()
