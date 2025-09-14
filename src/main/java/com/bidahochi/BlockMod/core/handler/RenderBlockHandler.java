@@ -11,6 +11,7 @@ import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RoadPaintBlockRenderer;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderMC20w15aWall;
+import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderMinecraftFenceWithMetadata;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderPrivacyPane;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -20,6 +21,9 @@ public class RenderBlockHandler {
     public static int scaffoldRenderId = RenderingRegistry.getNextAvailableRenderId();
     public static int privacyPaneRenderId = RenderingRegistry.getNextAvailableRenderId();
     public static int MC20w15aWall = RenderingRegistry.getNextAvailableRenderId();
+
+    public static int MinecraftFenceAbstractionLayer = RenderingRegistry.getNextAvailableRenderId();
+
     public static void initializeCustomModels() {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new RenderBreakerBox());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox2.class, new RenderBreakerBox2());
@@ -164,6 +168,7 @@ public class RenderBlockHandler {
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
         RenderingRegistry.registerBlockHandler(privacyPaneRenderId, new BlockRenderPrivacyPane(privacyPaneRenderId));
         RenderingRegistry.registerBlockHandler(MC20w15aWall, new BlockRenderMC20w15aWall(MC20w15aWall));
+        RenderingRegistry.registerBlockHandler(MinecraftFenceAbstractionLayer, new BlockRenderMinecraftFenceWithMetadata(MinecraftFenceAbstractionLayer));
 
     }
 }

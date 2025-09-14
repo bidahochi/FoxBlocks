@@ -12,6 +12,8 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
+import static com.bidahochi.BlockMod.core.handler.RenderBlockHandler.MinecraftFenceAbstractionLayer;
+
 public class BaseBlockFence extends net.minecraft.block.BlockFence
 {
     Block ParentBlock;
@@ -51,6 +53,7 @@ public class BaseBlockFence extends net.minecraft.block.BlockFence
     @Override
     public int getRenderType()
     {
-        return 11;
+        // This is being overwritten sense metadata does not work in the inventory for Fences
+        return MinecraftFenceAbstractionLayer;
     }
 }
