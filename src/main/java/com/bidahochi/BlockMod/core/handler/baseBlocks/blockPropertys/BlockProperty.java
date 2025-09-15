@@ -53,7 +53,7 @@ public class BlockProperty implements IBlockProperty
     public final int HarvestLevel;
     public final Block.SoundType SoundType;
     private final String TexturePath;
-    public final CreativeTabs CreativeTab;
+    private final CreativeTabs CreativeTab;
 
     public final int TotalTextureCount;
     public boolean FirstBlockHasNoIndex = false;
@@ -131,6 +131,31 @@ public class BlockProperty implements IBlockProperty
         block = new BaseBlock(this);
 
         return block;
+    }
+
+    public CreativeTabs getCreativeTab()
+    {
+        return CreativeTab;
+    }
+
+    public CreativeTabs getSlabCreativeTab()
+    {
+        return CreativeTab;
+    }
+
+    public CreativeTabs getStairCreativeTab()
+    {
+        return CreativeTab;
+    }
+
+    public CreativeTabs getFenceCreativeTab()
+    {
+        return CreativeTab;
+    }
+
+    public CreativeTabs getExtraBlocksCreativeTab()
+    {
+        return CreativeTab;
     }
 
     public Block getNewSingleSlab()

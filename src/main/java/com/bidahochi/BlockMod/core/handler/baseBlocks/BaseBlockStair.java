@@ -19,7 +19,7 @@ public class BaseBlockStair extends BlockStairs
         super(block, 3);
         ParentBlock = block;
         Metadata = (byte) metaData;
-        setCreativeTab(blockProperty.CreativeTab);
+        setCreativeTab(blockProperty.getStairCreativeTab());
         setBlockName(blockProperty.BlockName + "_" + Metadata + "_Stair");
         setHardness(blockProperty.BlockHardness);
         setBlockTextureName(blockProperty.getFullTexturePath());

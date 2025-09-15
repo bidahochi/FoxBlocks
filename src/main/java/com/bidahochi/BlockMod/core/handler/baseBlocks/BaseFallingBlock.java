@@ -23,7 +23,7 @@ public class BaseFallingBlock extends BlockFalling
     public BaseFallingBlock(BlockProperty blockProperty)
     {
         super(blockProperty.TheMaterial);
-        setCreativeTab(blockProperty.CreativeTab);
+        setCreativeTab(blockProperty.getCreativeTab());
         setBlockName(blockProperty.BlockName);
         setHardness(blockProperty.BlockHardness);
         setBlockTextureName(blockProperty.getFullTexturePath());

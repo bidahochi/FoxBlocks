@@ -22,7 +22,7 @@ public abstract class BaseAbstractBlock extends Block
     public BaseAbstractBlock(BlockProperty blockProperty)
     {
         super(blockProperty.TheMaterial);
-        setCreativeTab(blockProperty.CreativeTab);
+        setCreativeTab(blockProperty.getCreativeTab());
         setBlockName(blockProperty.BlockName);
         setHardness(blockProperty.BlockHardness);
         setBlockTextureName(blockProperty.getFullTexturePath());

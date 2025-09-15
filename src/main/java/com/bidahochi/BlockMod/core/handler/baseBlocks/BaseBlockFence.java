@@ -5,7 +5,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
@@ -24,7 +23,7 @@ public class BaseBlockFence extends net.minecraft.block.BlockFence
         super("", blockProperty.TheMaterial);
         ParentBlock = block;
         AmountOfSubBlocks = (byte) blockProperty.TotalTextureCount;
-        setCreativeTab(blockProperty.CreativeTab);
+        setCreativeTab(blockProperty.getFenceCreativeTab());
         setBlockName(blockProperty.BlockName + "_Fence");
         setHarvestLevel(blockProperty.ToolClass, blockProperty.HarvestLevel);
         setResistance(blockProperty.BlockResistance);

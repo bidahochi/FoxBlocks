@@ -93,7 +93,7 @@ public abstract class BaseAbstractSlab extends BlockSlab implements IScrollingSl
 
         if (isDoubleSlab() == false)
         {
-            setCreativeTab(blockProperty.CreativeTab);
+            setCreativeTab(blockProperty.getSlabCreativeTab());
         }
         useNeighborBrightness = true;
 

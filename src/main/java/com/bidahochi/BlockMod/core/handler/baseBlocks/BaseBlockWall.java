@@ -31,7 +31,7 @@ public class BaseBlockWall extends BlockWall
         super(block);
         ParentBlock = block;
         AmountOfSubBlocks = (byte) blockProperty.TotalTextureCount;
-        setCreativeTab(blockProperty.CreativeTab);
+        setCreativeTab(blockProperty.getFenceCreativeTab());
         setBlockName(blockProperty.BlockName + "_Wall");
         setHardness(blockProperty.BlockHardness);
         setBlockTextureName(blockProperty.getFullTexturePath());
