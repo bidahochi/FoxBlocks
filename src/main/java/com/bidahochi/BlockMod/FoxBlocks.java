@@ -19,9 +19,12 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.launchwrapper.Launch;
 import net.minecraftforge.common.MinecraftForge;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.File;
 
 
 @Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME, dependencies = "after:ForgeMultipart")
@@ -43,6 +46,7 @@ public class FoxBlocks
     public static FMLEventChannel channel;
     public static boolean isForgeMultiPartLoaded = false;
 
+    public static File configDirectory;
     /* Foxblocks proxy files */
     @SidedProxy(clientSide = "com.bidahochi.BlockMod.core.ClientProxy", serverSide = "com.bidahochi.BlockMod.core.CommonProxy")
     public static CommonProxy proxy;
@@ -51,7 +55,8 @@ public class FoxBlocks
     public void preInit(FMLPreInitializationEvent PreEvent){
         channel = NetworkRegistry.INSTANCE.newEventDrivenChannel(MODID);
         MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
-
+        configDirectory = PreEvent.getModConfigurationDirectory();
+        ConfigHandler.init(new File(PreEvent.getModConfigurationDirectory(), NAME + ".cfg"));
     }
 
     @EventHandler

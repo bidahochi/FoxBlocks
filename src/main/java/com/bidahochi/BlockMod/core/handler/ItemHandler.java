@@ -61,12 +61,13 @@ public class ItemHandler {
             SetupFluidContainer(FluidIDs.liquid_lean, ItemIDs.bucket_of_lean, tempLiquidBlock);
         }
 
-        for (ItemIDs items : ItemIDs.values()) {
-            items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
-
-            items.item.setUnlocalizedName(FoxBlocks.MODID + ":" + items.itemName);
-            GameRegistry.registerItem(items.item, items.name());
-
+        for (ItemIDs items : ItemIDs.values())
+        {
+            if ((items.sanitizeItem && ConfigHandler.SanitizeMod) == false ) {
+                items.item.setCreativeTab(FoxBlocks.foxBlocksCreativeTabItems);
+                items.item.setUnlocalizedName(FoxBlocks.MODID + ":" + items.itemName);
+                GameRegistry.registerItem(items.item, items.name());
+            }
         }
     }
 

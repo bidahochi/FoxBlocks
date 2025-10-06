@@ -45,9 +45,19 @@ public enum ItemIDs {
     public String iconName;
     public String itemName;
 
+    public boolean sanitizeItem;
+
     ItemIDs(String itemClassName, String iconName, String itemName) {
         this.className = itemClassName;
 		this.iconName = iconName;
 		this.itemName = itemName;
+        sanitizeItem = false;
+    }
+
+    ItemIDs(String itemClassName, String iconName, String itemName, boolean sanitizeItem) {
+        this.className = itemClassName;
+        this.iconName = iconName;
+        this.itemName = itemName;
+        this.sanitizeItem = sanitizeItem;
     }
 }
