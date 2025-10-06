@@ -122,6 +122,8 @@ tile.concreteBrick_3.name=Red Team Trimmed Concrete Brick
 tile.concreteBrick_4.name=Stacked Concrete Brick
 tile.concreteBrick_5.name=Blu Team Stacked Concrete Brick
 tile.concreteBrick_6.name=Red Team Stacked Concrete Brick
+tile.concreteBrick_7.name=Blu Team Full Trim Concrete Brick
+tile.concreteBrick_8.name=Red Team Full Trim Concrete Brick
 
 <!-- Stairs -->
 tile.concreteBrick_0_Stair.name=Blu Team Concrete Brick Stairs
@@ -131,6 +133,8 @@ tile.concreteBrick_3_Stair.name=Red Team Trimmed Concrete Brick Stairs
 tile.concreteBrick_4_Stair.name=Stacked Concrete Brick Stairs
 tile.concreteBrick_5_Stair.name=Blu Team Stacked Concrete Brick Stairs
 tile.concreteBrick_6_Stair.name=Red Team Stacked Concrete Brick Stairs
+tile.concreteBrick_7_Stair.name=Blu Team Full Trim Concrete Brick Stairs
+tile.concreteBrick_8_Stair.name=Red Team Full Trim Concrete Brick Stairs
 <!-- Slab -->
 tile.concreteBrick_Slab_0.name=Blu Team Concrete Brick Slab
 tile.concreteBrick_Slab_1.name=Red Team Concrete Brick Slab
@@ -139,6 +143,8 @@ tile.concreteBrick_Slab_3.name=Red Team Trimmed Concrete Brick Slab
 tile.concreteBrick_Slab_4.name=Stacked Concrete Brick Slab
 tile.concreteBrick_Slab_5.name=Blu Team Stacked Concrete Brick Slab
 tile.concreteBrick_Slab_6.name=Red Team Stacked Concrete Brick Slab
+tile.concreteBrick_Slab_7.name=Blu Team Full Trim Concrete Brick Slab
+tile.concreteBrick_2_Slab_0.name=Red Team Full Trim Concrete Brick Slab
 <!-- Wall -->
 tile.concreteBrick_Wall_0.name=Blu Team Concrete Brick Wall
 tile.concreteBrick_Wall_1.name=Red Team Concrete Brick Wall
@@ -147,6 +153,8 @@ tile.concreteBrick_Wall_3.name=Red Team Trimmed Concrete Brick Wall
 tile.concreteBrick_Wall_4.name=Stacked Concrete Brick Wall
 tile.concreteBrick_Wall_5.name=Blu Team Stacked Concrete Brick Wall
 tile.concreteBrick_Wall_6.name=Red Team Stacked Concrete Brick Wall
+tile.concreteBrick_Wall_7.name=Blu Team Full Trim Concrete Brick Wall
+tile.concreteBrick_Wall_8.name=Red Team Full Trim Concrete Brick Wall
 
 <!-- Block -->
 tile.concreteFloor_0.name=Tan Concrete Flooring
