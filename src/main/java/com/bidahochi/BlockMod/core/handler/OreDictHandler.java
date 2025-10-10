@@ -32,11 +32,13 @@ public class OreDictHandler {
         //OreDictionary.registerOre("oreCobalt", new ItemStack(BlockIDs.cobaltOre.block) );//bUt ItS nOt BaLaNcEd EnOuGh To HaVe
         OreDictionary.registerOre("gravel", new ItemStack(BlockIDs.peagravel.block) );
         OreDictionary.registerOre("oreEmerald", new ItemStack(BlockIDs.soapStoneEmerald.block));
-        OreDictionary.registerOre("stone", new ItemStack(BlockIDs.soapStone.block));
+        //OreDictionary.registerOre("stone", new ItemStack(BlockIDs.soapStone.block)); //honestly breaks more than it fixes. dont enable, future me
         OreDictionary.registerOre("cropNetherWart", new ItemStack(BlockIDs.blockOfPlayerHead.block));
         OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.Concrete.block));
         OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.layeredConcrete.block));
         OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.smoothCrete.block));
+        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.concreteBrick.block));
+        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.concreteFloor.block));
         OreDictionary.registerOre("gypsumDust", new ItemStack(ItemIDs.gypsumDust.item));
         OreDictionary.registerOre("ceramic", new ItemStack(ItemIDs.ceramic.item));
         OreDictionary.registerOre("oreVietnam", new ItemStack(BlockIDs.tHanos.block));
