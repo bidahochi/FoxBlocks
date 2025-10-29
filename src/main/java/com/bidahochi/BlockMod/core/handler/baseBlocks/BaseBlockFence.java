@@ -50,6 +50,7 @@ public class BaseBlockFence extends net.minecraft.block.BlockFence
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     public int getRenderType()
     {
         // This is being overwritten sense metadata does not work in the inventory for Fences
