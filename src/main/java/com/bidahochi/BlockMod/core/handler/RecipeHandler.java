@@ -970,7 +970,7 @@ public class RecipeHandler {
                 }
             }
 
-            for (int i = 0; i <= MaxMetadata; i++)
+            for (int i = 0; i < MaxMetadata; i++)
             {
                 Block blockStair = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_" + i + "_Stair");
                 if (blockStair == null)
@@ -984,7 +984,7 @@ public class RecipeHandler {
 
             if (block instanceof BlockFalling == false)
             {
-                for (int i = 0; i <= MaxMetadata; i++)
+                for (int i = 0; i < MaxMetadata; i++)
                 {
                     Block blockWall = GameRegistry.findBlock(FoxBlocks.MODID, baseBlockName + "_Wall");
 
