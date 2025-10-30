@@ -16,9 +16,10 @@ public class MissingBlockHandler
     {
         for (FMLMissingMappingsEvent.MissingMapping mapping : events)
         {
-            System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
+
             if (mapping.name.equals("foxblocks:EmberStone Stair"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "Ember Stone_0_Stair");
@@ -34,6 +35,7 @@ public class MissingBlockHandler
             }
             else if (mapping.name.equals("foxblocks:Dark EmberStone Stair"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "Dark Ember Stone_0_Stair");
@@ -55,6 +57,7 @@ public class MissingBlockHandler
             }
             else if (mapping.name.equals("foxblocks:Soapstone Stair"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "Soapstone_0_Stair");
@@ -66,6 +69,7 @@ public class MissingBlockHandler
                 }
                 else if (GameRegistry.Type.BLOCK.equals(mapping.type))
                 {
+                    System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                     Block block = GameRegistry.findBlock(FoxBlocks.MODID, "Soapstone_0_Stair");
                     if (block == null)
                     {
@@ -76,6 +80,7 @@ public class MissingBlockHandler
             }
             else if (mapping.name.equals("foxblocks:EmberStone Slab"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "Ember Stone_Slab");
@@ -87,6 +92,7 @@ public class MissingBlockHandler
                 }
                 else if (GameRegistry.Type.BLOCK.equals(mapping.type))
                 {
+                    System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                     Block block = GameRegistry.findBlock(FoxBlocks.MODID, "Ember Stone_Slab");
                     if (block == null)
                     {
@@ -97,6 +103,7 @@ public class MissingBlockHandler
             }
             else if (mapping.name.equals("foxblocks:Dark EmberStone Slab"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "Dark Ember Stone_Slab");
@@ -119,6 +126,7 @@ public class MissingBlockHandler
             }
             else if (mapping.name.equals("foxblocks:Soapstone Slab"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "Soapstone_Slab");
@@ -140,6 +148,7 @@ public class MissingBlockHandler
             }
             else if (mapping.name.equals("foxblocks:-hariesh"))
             {
+                System.out.println("Missing Block Detected: Attempting Remapping of: " + mapping.name);
                 if (GameRegistry.Type.ITEM.equals(mapping.type))
                 {
                     Item item = GameRegistry.findItem(FoxBlocks.MODID, "blockOfPlayerHead");
