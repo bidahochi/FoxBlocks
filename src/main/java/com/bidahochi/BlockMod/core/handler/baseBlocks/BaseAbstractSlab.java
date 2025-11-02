@@ -130,7 +130,12 @@ public abstract class BaseAbstractSlab extends BlockSlab implements IScrollingSl
     @Override
     public Item getItemDropped(int par1, Random par2Random, int par3)
     {
-        return Item.getItemFromBlock(singleSlab == null ? this : singleSlab);
+        return Item.getItemFromBlock(singleSlab == null ? this : GetSingleBlock());
+    }
+
+    public int quantityDropped(Random p_149745_1_)
+    {
+        return isDoubleSlab() ? 2 : 1;
     }
 
     protected ItemStack createStackedBlock(int stacked)
