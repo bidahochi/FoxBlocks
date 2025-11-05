@@ -106,6 +106,10 @@ tile.Concrete_Slab_0.name=Raw Concrete Slab
 tile.Concrete_Wall_0=Raw Concrete Wall
 
 tile.Layered Concrete_0.name=Layered Concrete
+tile.Layered Concrete_Slab_0.name=Layered Concrete Slab
+tile.Layered Concrete_0_Stair.name=Layered Concrete Stairs
+tile.Layered Concrete_Wall_0.name=Layered Concrete Wall
+
 <!-- Block -->
 tile.Smoothcrete_0.name=Smooth-Crete
 tile.Smoothcrete_0_Stair.name=Smooth-Crete Stairs
@@ -973,6 +977,9 @@ tile.blockOfPlayerHead_Wall_0.name=Wuff Block Wall
 tile.harieshseethrough.name=THE (Other) Fox Block
 
 tile.fofblock_0.name=The FoxBlock
+tile.fofblock_0_Stair.name=The FoxBlock
+tile.fofblock_Slab_0.name=The FoxBlock
+
 tile.pingascube.name=Robotnik Pingascube
 tile.invisiblock.name=Invisiblock
 
