@@ -26,6 +26,7 @@ public enum ItemIDs {
     bolsterChisel("bolsterChisel", "bolsterChisel", "bolsterChisel"),
     leanDust("leanDust", "leanDust", "leanDust"),
     straps("straps", "straps", "straps"),
+    rainbontrium("rainbontrium", "rainbontrium", "rainbontrium"),
 
     doorA("doorAitem","doorA_icon","doorAitem"),
     doorB("doorBitem","doorB_icon","doorBitem"),

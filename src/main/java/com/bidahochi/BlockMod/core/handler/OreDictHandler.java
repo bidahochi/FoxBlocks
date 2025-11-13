@@ -46,6 +46,7 @@ public class OreDictHandler {
         OreDictionary.registerOre("rodIron", new ItemStack(ItemIDs.ironRod.item));
         OreDictionary.registerOre("plateIron", new ItemStack(ItemIDs.ironSlice.item));
         OreDictionary.registerOre("circuitBasic", new ItemStack(ItemIDs.computerizedCircuit.item));
+        OreDictionary.registerOre("ingotRainbontrium", new ItemStack(ItemIDs.rainbontrium.item));
 
         OreDictionary.registerOre("drywallUnfinished", new ItemStack(BlockIDs.unfinishedDrywall.block));
         OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 0));
@@ -76,7 +77,6 @@ public class OreDictHandler {
         OreDictionary.registerOre("oreTaconite", new ItemStack(BlockIDs.taconite.block));
         OreDictionary.registerOre("oreCrushedTaconite", new ItemStack(ItemIDs.taconiteCrushed.item));
         OreDictionary.registerOre("dustTaconite", new ItemStack(ItemIDs.taconitePellets.item));
-        //OreDictionary.registerOre("ingotIron", new ItemStack(ItemIDs.bulb.item));//for testing
 
         //FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 

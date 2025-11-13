@@ -40,6 +40,7 @@ public class ItemHandler {
         ItemIDs.bolsterChisel.item = new bolsterChisel();
         ItemIDs.leanDust.item = new leanDust();
         ItemIDs.straps.item = new straps();
+        ItemIDs.rainbontrium.item = new rainbontrium();
 
         ItemIDs.doorA.item = new itemDoor().setUnlocalizedName("doorA").setTextureName(FoxBlocks.MODID + ":doorA_icon");
         ItemIDs.doorB.item = new itemDoor().setUnlocalizedName("doorB").setTextureName(FoxBlocks.MODID + ":doorB_icon");
