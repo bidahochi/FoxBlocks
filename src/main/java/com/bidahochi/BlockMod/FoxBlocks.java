@@ -51,18 +51,14 @@ public class FoxBlocks
     @SidedProxy(clientSide = "com.bidahochi.BlockMod.core.ClientProxy", serverSide = "com.bidahochi.BlockMod.core.CommonProxy")
     public static CommonProxy proxy;
 
+    private static BlockRegisterReturnCache blockRegisterReturnCache;
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent PreEvent){
         channel = NetworkRegistry.INSTANCE.newEventDrivenChannel(MODID);
         MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
         configDirectory = PreEvent.getModConfigurationDirectory();
         ConfigHandler.init(new File(PreEvent.getModConfigurationDirectory(), NAME + ".cfg"));
-    }
-
-    @EventHandler
-    public void init(FMLInitializationEvent event) {
-        //Initalize blocc tabs.
-        blockLogger.info("FoxBlocks starting with it's big floofy tail");
 
         foxBlocksCreativeTabRock = new FoxBlocksCreativeTab("FoxBlocks - Rock Hard") {
             public Item getTabIconItem() {
@@ -99,7 +95,7 @@ public class FoxBlocks
                 return  Item.getItemFromBlock(BlockIDs.tHanos.block); }
             public String getTranslatedTabLabel() {
                 return "FoxBlocks - Unsorted";
-                }
+            }
         };
 
         foxBlocksCreativeTabVanillaPlus = new FoxBlocksCreativeTab("FoxBlocks - Vanilla+") {
@@ -118,14 +114,17 @@ public class FoxBlocks
             }
         };
 
-        //registration os things that run things
         BlockHandler blockHandler = new BlockHandler();
-        BlockRegisterReturnCache blockRegisterReturnCache = blockHandler.initBlockRegister(event);
-        FluidHandler.initFluidRegister(event);
-        //blockHandler.blockpropertyregister(); //this is the enum registering (ask -hariesh for info)
+        blockRegisterReturnCache = blockHandler.initBlockRegister(PreEvent);
+        FluidHandler.initFluidRegister(PreEvent);
         ItemHandler.initItemRegister();
-        RecipeHandler.initBlockRecipes(blockRegisterReturnCache);
         OreDictHandler.registerOreDict();
+    }
+
+    @EventHandler
+    public void init(FMLInitializationEvent event) {
+        //Initalize blocc tabs.
+        blockLogger.info("FoxBlocks starting with it's big floofy tail");
 
         GameRegistry.registerWorldGenerator(new OreGenerationHandler(), 0);
         GameRegistry.registerWorldGenerator(new OreGenerationHandler2(), 10);
@@ -144,10 +143,14 @@ public class FoxBlocks
             ForgeMultiPart.registerBlocks(BlockIDs.values());
             isForgeMultiPartLoaded = true;
         }
+
     }
 
     @EventHandler
-    public void PostLoad(FMLPostInitializationEvent PostLoad){
+    public void PostLoad(FMLPostInitializationEvent PostLoad)
+    {
+        RecipeHandler.initBlockRecipes(blockRegisterReturnCache);
+        blockRegisterReturnCache = null;
     }
 
     @EventHandler

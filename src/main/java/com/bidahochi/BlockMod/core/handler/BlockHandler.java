@@ -54,6 +54,7 @@ import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaFallingBlockProperty;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFalling;
@@ -85,7 +86,7 @@ public class BlockHandler
     final String SWORD = "sword";
     final String HOE = "hoe";
 
-    public BlockRegisterReturnCache initBlockRegister(FMLInitializationEvent e)
+    public BlockRegisterReturnCache initBlockRegister(FMLPreInitializationEvent e)
     {
         //FoxBlocks.blockLogger.info("BlockRegister Pre Init at com.bidahochi.BlockMod.core.handler.blockHandler");
 
