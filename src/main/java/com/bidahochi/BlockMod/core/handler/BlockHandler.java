@@ -901,6 +901,8 @@ public class BlockHandler
         BlockIDs.sittingStairTile.block = new SittingStairTile(Material.clay);
         BlockIDs.wall_sink.block = new Wall_sink(Material.clay);
 
+        BlockIDs.soda_machine.block = new Soda_machine(Material.iron);
+
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
@@ -1036,6 +1038,8 @@ public class BlockHandler
         GameRegistry.registerTileEntity(TileSittingFloorTile.class, "sittingfloorile.tile");
         GameRegistry.registerTileEntity(TileToilet.class, "toilet.tile");
         GameRegistry.registerTileEntity(TileWall_sink.class, "wall_sink.tile");
+
+        GameRegistry.registerTileEntity(TileSoda_machine.class, "soda_machine.tile");
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");

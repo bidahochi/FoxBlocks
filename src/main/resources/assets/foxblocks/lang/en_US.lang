@@ -2420,6 +2420,8 @@ tile.sittingstairtile.name=Seat Stair Sitting Tile
 tile.sittingfloortile.name=Seat Floor Sitting Tile
 tile.wall_sink.name=Wall Mounted Sink (Dual Handles)
 
+tile.soda_machine.name=Soda Machine
+
 <!-- ## LIGHTING ## -->
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)

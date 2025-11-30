@@ -678,6 +678,15 @@ public class RecipeHandler {
             }
         }
 
+        //toilet & sink
+        for (ItemStack dye: dyeWhite) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.toilet.block, 1), "P D", "PWP", "MP ", 'P', ItemIDs.ceramic.item, 'W', Items.water_bucket, 'M', ItemIDs.enrichedClay.item, 'D', dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.wall_sink.block, 1), "CDC", "CBC", "   ", 'C', ItemIDs.ceramic.item, 'D', dye, 'B', Items.water_bucket);
+        }
+        //sodaaaaa
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.soda_machine.block,1), "PPP", "BCB","PPP", 'P', new ItemStack(ItemIDs.ironSlice.item), 'B', Items.glass_bottle, 'C', ItemIDs.computerizedCircuit.item);
+
+
         //cage lamps
         GameRegistry.addRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), "SGS", " G ", "SGS", 'S', new ItemStack(ItemIDs.ironRod.item), 'G', new ItemStack(ItemIDs.bulbLong.item));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.neonCageLightWallV.block, 1),  new ItemStack(BlockIDs.neonCageLightRoof.block, 1));
@@ -688,6 +697,7 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.ExteriorLightSquare2.block, 1), new ItemStack(ItemIDs.ironSlice.item, 1), new ItemStack(ItemIDs.bulb.item, 1), new ItemStack(ItemIDs.ironSlice.item, 1));
 
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.fakeSnow.block, 4), Blocks.snow, Blocks.snow, Blocks.snow, Blocks.snow);
+
 
         //wall plaster
         GameRegistry.addRecipe(new ItemStack(BlockIDs.plasteredConcrete.block, 8, 0), "GAG", "AQA", "GAG", Character.valueOf('G'), new ItemStack(ItemIDs.gypsumDust.item), Character.valueOf('A'), new ItemStack(ItemIDs.aragoniteClump.item), Character.valueOf('Q'), new ItemStack(ItemIDs.quicklime.item));

@@ -242,6 +242,8 @@ public enum BlockIDs implements IFoxBlockIDs
     sittingFloorTile(true, SittingFloorTileBlock.class, "sittingfloortile"),
     wall_sink(false, null, "wall_sink"),
 
+    soda_machine(false, null, "soda_machine"),
+
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
     neonCageLightWallV(false, null, "neonCageLightWallV"),
