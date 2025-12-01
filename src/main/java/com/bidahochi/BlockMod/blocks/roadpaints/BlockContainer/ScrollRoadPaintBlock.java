@@ -63,9 +63,15 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer implements ISc
         return true;
     }
 
+    @Override
+    public boolean getBlocksMovement(IBlockAccess p_149655_1_, int p_149655_2_, int p_149655_3_, int p_149655_4_)
+    {
+        return true;
+    }
+
     @Override //entity collision, this doesn't need changing, but needs inclusion
     public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {
-        return AxisAlignedBB.getBoundingBox((double) x + this.minX, (double) y + this.minY, (double) z + this.minZ, (double) x + this.maxX, (double) y + this.maxY, (double) z + this.maxZ);
+        return null;
     }
 
     @Override //actual collision stuff you change
