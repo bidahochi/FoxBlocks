@@ -192,7 +192,7 @@ public class BlockHandler
 
         }
         { // specialDirt
-            BlockProperty property = new BlockProperty(BlockIDs.specialDirt, Material.ground, 0.5F, 0.1F,
+            BlockProperty property = new GrassBlockProperty(BlockIDs.specialDirt, Material.ground, 0.5F, 0.1F,
                     SHOVEL, 0,
                     soundTypeGravel, 1,"aggregates/specialDirt", foxBlocksCreativeTab, true);
             BlockIDs.specialDirt.block = property.getNewBlock();
