@@ -686,6 +686,10 @@ public class RecipeHandler {
         //sodaaaaa
         GameRegistry.addRecipe(new ItemStack(BlockIDs.soda_machine.block,1), "PPP", "BCB","PPP", 'P', new ItemStack(ItemIDs.ironSlice.item), 'B', Items.glass_bottle, 'C', ItemIDs.computerizedCircuit.item);
 
+        //straps
+        for (ItemStack dye: dyeGreen) {
+            GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.straps.item, 4), Items.string, Items.string, dye);
+        }
 
         //cage lamps
         GameRegistry.addRecipe(new ItemStack(BlockIDs.neonCageLightRoof.block, 1), "SGS", " G ", "SGS", 'S', new ItemStack(ItemIDs.ironRod.item), 'G', new ItemStack(ItemIDs.bulbLong.item));
