@@ -53,6 +53,7 @@ public enum BlockIDs implements IFoxBlockIDs
     gravel_volcanic(true, BaseItemBlock.class, "Volcanic Cinder Gravel"),
     gravel_shit(true, BaseItemBlock.class, "Dirty Gravel"),
     specialDirt(true, BaseItemBlock.class, "SpecialDirt"),
+    slightlyGrowableGrass(true, BaseItemBlock.class, "SlightlyGrowableGrass"),
     deadGrass(true, BaseItemBlock.class, "DeadGrass"),
     deadGrass2(true, BaseItemBlock.class, "DeadGrass2"),
     turf(true, BaseItemBlock.class, "Turf"),

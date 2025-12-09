@@ -191,12 +191,20 @@ public class BlockHandler
             tempBlockCache.put(BlockIDs.gravel_shit, property);
 
         }
+        byte specialDirtCount = 1;
         { // specialDirt
-            BlockProperty property = new GrassBlockProperty(BlockIDs.specialDirt, Material.ground, 0.5F, 0.1F,
+            BlockProperty property = new BlockProperty(BlockIDs.specialDirt, Material.ground, 0.5F, 0.1F,
                     SHOVEL, 0,
-                    soundTypeGravel, 1,"aggregates/specialDirt", foxBlocksCreativeTab, true);
+                    soundTypeGravel, 1,"aggregates/specialDirt", foxBlocksCreativeTab);
             BlockIDs.specialDirt.block = property.getNewBlock();
             tempBlockCache.put(BlockIDs.specialDirt, property);
+        }
+        { // slightlyGrowableGrass
+            BlockProperty property = new GrassBlockProperty(BlockIDs.slightlyGrowableGrass, Material.ground, 0.5F, 0.1F,
+                    SHOVEL, 0,
+                    soundTypeGrass, specialDirtCount,"aggregates/dirt/specialDirt", foxBlocksCreativeTab);
+            BlockIDs.slightlyGrowableGrass.block = property.getNewBlock();
+            // This does not need to be added to the list since specialDirt already does this
         }
         { // deadGrass
             GrassBlockProperty property = new GrassBlockProperty(BlockIDs.deadGrass, Material.grass, 0.5F, 0.1F,

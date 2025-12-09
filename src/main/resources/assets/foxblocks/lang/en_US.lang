@@ -47,6 +47,7 @@ tile.SpecialDirt_0_Stair.name=Ungrowable Dirt Stair
 tile.SpecialDirt_Wall_0.name=Ungrowable Dirt Wall
 
 <!-- Block -->
+tile.SlightlyGrowableGrass_0.name=Slightly Growable Dirt
 tile.DeadGrass_0.name=Light Dead Grass Block
 tile.DeadGrass2_0.name=Dark Dead Grass Block
 tile.Turf_0.name=Turf Grass Block
