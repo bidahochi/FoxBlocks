@@ -176,4 +176,10 @@ public class TileRPB extends BaseTileEntity {
     {
         texture2 =  new ResourceLocation(FoxBlocks.MODID, "textures/blocks/roadpaints/" + nameOfTexture);
     }
+
+    @Override
+    public boolean canUpdate()
+    {
+        return false;
+    }
 }
