@@ -22,6 +22,8 @@ package com.bidahochi.BlockMod.core.handler;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
+import static net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE;
+
 public class OreDictHandler {
 
     public static void registerOreDict() {
@@ -34,11 +36,13 @@ public class OreDictHandler {
         OreDictionary.registerOre("oreEmerald", new ItemStack(BlockIDs.soapStoneEmerald.block));
         //OreDictionary.registerOre("stone", new ItemStack(BlockIDs.soapStone.block)); //honestly breaks more than it fixes. dont enable, future me
         OreDictionary.registerOre("cropNetherWart", new ItemStack(BlockIDs.blockOfPlayerHead.block));
-        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.Concrete.block));
-        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.layeredConcrete.block));
-        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.smoothCrete.block));
-        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.concreteBrick.block));
-        OreDictionary.registerOre("concrete", new ItemStack(BlockIDs.concreteFloor.block));
+
+        registerAllMeta("concrete", BlockIDs.Concrete);
+        registerAllMeta("concrete", BlockIDs.layeredConcrete);
+        registerAllMeta("concrete", BlockIDs.smoothCrete);
+        registerAllMeta("concrete", BlockIDs.concreteBrick);
+        registerAllMeta("concrete", BlockIDs.concreteFloor);
+
         OreDictionary.registerOre("gypsumDust", new ItemStack(ItemIDs.gypsumDust.item));
         OreDictionary.registerOre("ceramic", new ItemStack(ItemIDs.ceramic.item));
         OreDictionary.registerOre("oreVietnam", new ItemStack(BlockIDs.tHanos.block));
@@ -80,5 +84,10 @@ public class OreDictHandler {
 
         //FoxBlocks.blockLogger.info("oreDict compatibility Post Init at com.bidahochi.BlockMod.core.handler.oreDictHandler");
 
+    }
+
+    private static void registerAllMeta(String name, IFoxBlockIDs blockID)
+    {
+        OreDictionary.registerOre(name, new ItemStack(blockID.GetBlock(), 1, WILDCARD_VALUE));
     }
 }
