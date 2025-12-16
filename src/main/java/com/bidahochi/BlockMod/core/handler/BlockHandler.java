@@ -120,9 +120,10 @@ public class BlockHandler
         }
 
         { // taconite
-            BlockProperty property = new BlockProperty(BlockIDs.taconite, Material.rock, 3F, 4.0F,
+            OreBlockProperty property = new OreBlockProperty(BlockIDs.taconite, Material.rock, 3F, 4.0F,
                     PICKAXE, 1,
-                    soundTypeStone, 1,"stones/taconite_ore", foxBlocksCreativeTabRock, true);
+                    soundTypeStone, 1,"stones/taconite_ore", foxBlocksCreativeTabRock);
+            property.itemDropOverride = ItemIDs.taconiteCrushed;
             BlockIDs.taconite.block = property.getNewBlock();
         }
 
