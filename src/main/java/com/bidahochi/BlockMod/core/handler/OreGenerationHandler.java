@@ -64,7 +64,7 @@ public class OreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.jolietLimestoneRaw.block, world, rand, x ,z ,5, 12, 8, 40, 70, Blocks.stone);
 
         generateOre(BlockIDs.limestone.block, world, rand, x ,z ,15, 30, 6, 40, 150, Blocks.stone);
-        generateOre(BlockIDs.taconite.block, world, rand, x ,z ,15, 55, 1, 1, 60, Blocks.stone);
+        generateOreWithRandom(BlockIDs.taconite.block, world, rand, x ,z ,15, 55, 1, 1, 60, Blocks.stone, 4);
         //generateOre(BlockIDs.hematite.block, world, rand, x ,z ,1, 10, 3, 25, 128, Blocks.stone);
 
         generateOre(Blocks.sand, world, rand, x, z, 9, 15, 4, 36, 77, Blocks.stone);
@@ -81,12 +81,30 @@ public class OreGenerationHandler implements IWorldGenerator {
         //generateOre(BlockIDs.soapStoneMagmatic.block, world, rand, x, z, 1, 3, 45, 4, 123, BlockIDs.soapStone.block);
     }
 
-    public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block generateIn) {
+    public void generateOreWithRandom(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int attemptsPerChunk, int minY, int maxY, Block generateIn, int trueChance)
+    {
         int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);
         int heightRange = maxY - minY;
         WorldGenMinable gen = new WorldGenMinable(block, veinSize, generateIn);
 
-        for (int i = 0 ; i < chance; i++) {
+        for (int i = 0 ; i < attemptsPerChunk; i++)
+        {
+            if (random.nextInt(trueChance) == 0)
+            {
+                int xRand = chunkX * 16 + random.nextInt(16);
+                int yRand = random.nextInt(heightRange) + minY;
+                int zRand = chunkZ * 16 + random.nextInt(16);
+                gen.generate(world, random, xRand, yRand, zRand);
+            }
+        }
+    }
+
+    public void generateOre(Block block, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int attemptsPerChunk, int minY, int maxY, Block generateIn) {
+        int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize);
+        int heightRange = maxY - minY;
+        WorldGenMinable gen = new WorldGenMinable(block, veinSize, generateIn);
+
+        for (int i = 0 ; i < attemptsPerChunk; i++) {
             int xRand = chunkX * 16 + random.nextInt(16);
             int yRand = random.nextInt(heightRange) + minY;
             int zRand = chunkZ * 16 + random.nextInt(16);
