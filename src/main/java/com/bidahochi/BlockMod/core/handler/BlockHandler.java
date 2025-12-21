@@ -992,7 +992,7 @@ public class BlockHandler
         BlockIDs.doorB.block = new baseDoor(Material.wood).setBlockName("doorB").setHardness(3F).setStepSound(Block.soundTypeWood).setBlockTextureName(FoxBlocks.MODID+":door_b").setCreativeTab(foxBlocksCreativeTabHome);
         BlockIDs.doorC.block = new baseDoor(Material.wood).setBlockName("doorC").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_c").setCreativeTab(foxBlocksCreativeTabHome);
         BlockIDs.doorD.block = new baseDoor(Material.wood).setBlockName("doorD").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_d").setCreativeTab(foxBlocksCreativeTabHome);
-        BlockIDs.doorE.block = new baseDoor(Material.wood).setBlockName("doorD").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_e").setCreativeTab(foxBlocksCreativeTabHome);
+        BlockIDs.doorE.block = new baseDoor(Material.wood).setBlockName("doorE").setHardness(3F).setStepSound(Block.soundTypeMetal).setBlockTextureName(FoxBlocks.MODID+":door_e").setCreativeTab(foxBlocksCreativeTabHome);
 
         //modular stall parts
         BlockIDs.stallPart_T.block = new StallPart_T(Material.iron);
