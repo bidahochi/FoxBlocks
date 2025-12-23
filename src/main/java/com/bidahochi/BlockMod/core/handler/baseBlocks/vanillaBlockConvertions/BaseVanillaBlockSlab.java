@@ -16,6 +16,7 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Random;
 
 public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToVerticalSlabBlock
 {
@@ -122,6 +123,11 @@ public class BaseVanillaBlockSlab extends BlockSlab implements IScrollingSlabToV
         return GameRegistry.findBlock(FoxBlocks.MODID,  GetBaseBlockName() + (getUnlocalizedName().contains("_2_") ? "_2_Slab" : "_Slab"));
     }
 
+    @Override
+    public Item getItemDropped(int par1, Random par2Random, int par3)
+    {
+        return Item.getItemFromBlock(singleSlab == null ? this : GetSingleBlock());
+    }
 
     @Override
     @SideOnly(Side.CLIENT)
