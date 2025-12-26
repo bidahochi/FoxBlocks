@@ -15,6 +15,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.List;
 
@@ -105,5 +106,15 @@ public class BridgeA_Center extends BlockContainer {
         texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":props/ModBridgeA");
     }
 
+    @Override
+    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side)
+    {
+        switch (side)
+        {
+            case UP:
+                return true;
+        }
 
+        return super.isSideSolid(world, x, y, z, side);
+    }
 }
