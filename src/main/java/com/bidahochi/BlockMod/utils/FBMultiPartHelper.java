@@ -3,7 +3,6 @@ package com.bidahochi.BlockMod.utils;
 import codechicken.multipart.BlockMultipart;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.IBlockAccess;
 
 public class FBMultiPartHelper
 {

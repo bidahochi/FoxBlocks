@@ -1,7 +1,6 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.IScrollRoadPaintBlock;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.ScrollRoadPaintBlock;
 import com.bidahochi.BlockMod.network.PacketRPBSelect;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;

@@ -2,7 +2,6 @@ package com.bidahochi.BlockMod.plugins.fmp;
 
 import codechicken.microblock.BlockMicroMaterial;
 import codechicken.microblock.MicroMaterialRegistry;
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemSlab;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemStairBlock;

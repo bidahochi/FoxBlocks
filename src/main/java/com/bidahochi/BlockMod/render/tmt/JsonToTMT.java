@@ -56,24 +56,35 @@ public class JsonToTMT {
 		int d = get(depth, obj, idef);
 		//Eternal edit: changed the switch to if statements because java6 cant switch on a string.
 		String s = obj.get("type").getAsString();
-		if (s.equals("box") || s.equals("cube") || s.equals("s")){
-			model.addBox(x, y, z, w, h, d, get(expansion, obj, def));
-		} else if (s.equals("shapebox") || s.equals("sbox") || s.equals("sb")){
-			model.addShapeBox(x, y, z, w, h, d, get(scale, obj, def),
-					get("x0", obj, def), get("y0", obj, def), get("z0", obj, def),
-					get("x1", obj, def), get("y1", obj, def), get("z1", obj, def),
-					get("x2", obj, def), get("y2", obj, def), get("z2", obj, def),
-					get("x3", obj, def), get("y3", obj, def), get("z3", obj, def),
-					get("x4", obj, def), get("y4", obj, def), get("z4", obj, def),
-					get("x5", obj, def), get("y5", obj, def), get("z5", obj, def),
-					get("x6", obj, def), get("y6", obj, def), get("z6", obj, def),
-					get("x7", obj, def), get("y7", obj, def), get("z7", obj, def)
-			);
-		} else if (s.equals("cylinder") || s.equals("c")){
-			model.addCylinder(x, y, z, get(radius, obj, 1f), get(length, obj, 1f), get(segments, obj, 16), get(basescale, obj, 1f), get(topscale, obj, 1f), get(direction, obj, 4));
-		} else if (s.equals("cone") || s.equals("cn")){
-			model.addCone(x, y, z, get(radius, obj, 1f), get(length, obj, 1f), get(segments, obj, 12), get(basescale, obj, 1f), get(direction, obj, 4));
-		}
+        switch (s) {
+            case "box":
+            case "cube":
+            case "s":
+                model.addBox(x, y, z, w, h, d, get(expansion, obj, def));
+                break;
+            case "shapebox":
+            case "sbox":
+            case "sb":
+                model.addShapeBox(x, y, z, w, h, d, get(scale, obj, def),
+                        get("x0", obj, def), get("y0", obj, def), get("z0", obj, def),
+                        get("x1", obj, def), get("y1", obj, def), get("z1", obj, def),
+                        get("x2", obj, def), get("y2", obj, def), get("z2", obj, def),
+                        get("x3", obj, def), get("y3", obj, def), get("z3", obj, def),
+                        get("x4", obj, def), get("y4", obj, def), get("z4", obj, def),
+                        get("x5", obj, def), get("y5", obj, def), get("z5", obj, def),
+                        get("x6", obj, def), get("y6", obj, def), get("z6", obj, def),
+                        get("x7", obj, def), get("y7", obj, def), get("z7", obj, def)
+                );
+                break;
+            case "cylinder":
+            case "c":
+                model.addCylinder(x, y, z, get(radius, obj, 1f), get(length, obj, 1f), get(segments, obj, 16), get(basescale, obj, 1f), get(topscale, obj, 1f), get(direction, obj, 4));
+                break;
+            case "cone":
+            case "cn":
+                model.addCone(x, y, z, get(radius, obj, 1f), get(length, obj, 1f), get(segments, obj, 12), get(basescale, obj, 1f), get(direction, obj, 4));
+                break;
+        }
 		/* import unavailable: net.fexcraft.mod.lib.util.json.JsonUtil;
 		model.rotorder = JsonUtil.getIfExists(obj, oldrot, model.rotorder);
 		model.mirror = JsonUtil.getIfExists(obj, mirror, false);
