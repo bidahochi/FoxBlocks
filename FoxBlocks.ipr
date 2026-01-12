@@ -10,9 +10,9 @@
       <entry name="!?*.groovy" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel>
-      <module name="com.bidahochi.foxblocks.FoxBlocks.api" target="1.7" />
-      <module name="com.bidahochi.foxblocks.FoxBlocks.main" target="1.7" />
-      <module name="com.bidahochi.foxblocks.FoxBlocks.test" target="1.7" />
+      <module name="com.bidahochi.foxblocks.FoxBlocks.api" target="1.8" />
+      <module name="com.bidahochi.foxblocks.FoxBlocks.main" target="1.8" />
+      <module name="com.bidahochi.foxblocks.FoxBlocks.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="CopyrightManager" default="" />

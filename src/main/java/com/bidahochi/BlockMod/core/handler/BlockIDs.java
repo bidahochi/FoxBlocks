@@ -83,7 +83,7 @@ public enum BlockIDs implements IFoxBlockIDs
     soapStoneDeco(true, BaseItemBlock.class, "Soapstone Deco", 4), // Soapstone Bricks
     soapStoneMagmatic(false, null, "Magmatic Soapstone"),
     soapStoneEmerald(false, null, "Emerald Soapstone Ore"),
-    redrock(false, null, "Redrock"),
+    redrock(true, BaseItemBlock.class, "Redrock"),
 
     jolietLimestoneRaw(false, null, "jolietlimestoneraw"),
     limestone(false, null, "limestone"),

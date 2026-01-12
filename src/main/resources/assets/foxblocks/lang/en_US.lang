@@ -262,7 +262,10 @@ tile.Soapstone Deco_Wall_4.name=Smooth(est) Soapstone Wall
 
 tile.Magmatic Soapstone.name= Magmatic Soapstone
 tile.Emerald Soapstone Ore.name= Emerald Soapstone Ore
-tile.Redrock.name=Redrock
+tile.Redrock_0.name=Redrock
+tile.Redrock_0_Stair.name=Redrock Stairs
+tile.Redrock_Slab_0.name=Redrock Slab
+tile.Redrock_Wall_0.name=Redrock Wall
 
 tile.jolietlimestoneraw.name=Niagaran Dolomite (Joliet Limestone)
 tile.limestone.name=Lower Pennsylvanian Limestone
