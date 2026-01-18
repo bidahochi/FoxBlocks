@@ -2,20 +2,51 @@ package com.bidahochi.BlockMod.blocks.roadpaints.TileEntity;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
+import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer.*;
 import com.bidahochi.BlockMod.render.models.ModelRPBOffsetExtendedDiagonal;
 import com.bidahochi.BlockMod.render.models.Modelrpb_full;
 import com.bidahochi.BlockMod.render.models.Modelrpb_full_diag;
 import com.bidahochi.BlockMod.render.tmt.ModelConverter;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
+import com.bidahochi.BlockMod.utils.FBMultiPartHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ResourceLocation;
+import org.lwjgl.opengl.GL11;
 
-public class TileRPB extends BaseTileEntity {
+public class TileRPB extends BaseTileEntity
+{
+
+    public final float evaluateYOffset()
+    {
+
+        Block block = worldObj.getBlock(xCoord,yCoord-1, zCoord);
+        if((block instanceof BlockSlab && block.isNormalCube() == false)
+                || (FoxBlocks.isForgeMultiPartLoaded && FBMultiPartHelper.BlockInstanceOfBlockMultipart(block) && FBMultiPartHelper.isBlockSolid(block, this) == false))
+        {
+            return 0.5F;
+        }
+        else if (block instanceof RoadCover0
+                || block instanceof RoadCover1
+                || block instanceof RoadCover2
+                || block instanceof RoadCover3
+                || block instanceof RoadCover4
+                || block instanceof RoadCover5
+                || block instanceof RoadCover6
+                || block instanceof RoadCoverDynamic1X1 || block instanceof RoadCoverDynamic1X2 || block instanceof RoadCoverDynamic1X3
+                || block.getUnlocalizedName().contains("tcRail"))
+        {
+            return 0.93F;
+        }
+
+        return 0;
+    }
 
     public String color;
     public String shape;
@@ -130,8 +161,10 @@ public class TileRPB extends BaseTileEntity {
         return dir;
     }
 
-    public void getTextureAndModel(TileEntity tile) {
-        if (tile instanceof TileRPB) {
+    public void getTextureAndModel(TileEntity tile)
+    {
+        if (tile instanceof TileRPB)
+        {
             String color = ((TileRPB) tile).color;
             String lineOffset = ((TileRPB) tile).offset;
             String shape = ((TileRPB) tile).shape;

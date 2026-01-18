@@ -59,25 +59,8 @@ public class BaseRoadPaintTileEntitySpecialRenderer extends TileEntitySpecialRen
                 break;
             }
         }
-        Block block = tileEntity.getWorldObj().getBlock(tileEntity.xCoord,tileEntity.yCoord-1,tileEntity.zCoord);
 
-        if((block instanceof BlockSlab && block.isNormalCube() == false)
-            || (FoxBlocks.isForgeMultiPartLoaded && FBMultiPartHelper.BlockInstanceOfBlockMultipart(block) && FBMultiPartHelper.isBlockSolid(block, tileEntity) == false))
-        {
-            GL11.glTranslatef(0, 0.5f, 0);
-        }
-        else if (block instanceof RoadCover0
-                || block instanceof RoadCover1
-                || block instanceof RoadCover2
-                || block instanceof RoadCover3
-                || block instanceof RoadCover4
-                || block instanceof RoadCover5
-                || block instanceof RoadCover6
-                || block instanceof RoadCoverDynamic1X1 || block instanceof RoadCoverDynamic1X2 || block instanceof RoadCoverDynamic1X3
-                || block.getUnlocalizedName().contains("tcRail"))
-        {
-            GL11.glTranslatef(0, 0.93f, 0);
-        }
+        GL11.glTranslatef(0, ((TileRPB) tileEntity).evaluateYOffset(), 0);
 
         if (model!= null) {
             model.render(null, 0, 0, 0, 0, 0, 0.0625f);
