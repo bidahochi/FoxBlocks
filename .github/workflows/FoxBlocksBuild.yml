@@ -87,6 +87,6 @@ jobs:
             
             ⚠ **Note:** If this is a pre-release. It is intended for testing and **does not guarantee stability or completeness**.
           files: |
-            build/libs/FoxBlocks-${{ steps.version.outputs.version }}*.jar
+            build/libs/foxblocks-${{ steps.version.outputs.version }}*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
