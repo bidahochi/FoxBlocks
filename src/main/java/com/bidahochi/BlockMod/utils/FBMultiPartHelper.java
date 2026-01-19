@@ -23,6 +23,12 @@ public class FBMultiPartHelper
             return true;
         }
         TileMultipart tileMultipart = BlockMultipart$.MODULE$.getTile(tile.getWorldObj(), tile.xCoord, tile.yCoord - 1, tile.zCoord);
+
+        if (tileMultipart == null)
+        {
+            return true;
+        }
+
         return tileMultipart.isSolid(2) && tileMultipart.isSolid(3) || tileMultipart.isSolid(4) && tileMultipart.isSolid(5);
     }
 }
