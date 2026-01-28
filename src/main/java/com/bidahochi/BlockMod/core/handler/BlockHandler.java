@@ -922,12 +922,17 @@ public class BlockHandler
 
         //modular bridge
         BlockIDs.bridgeA_Center.block = new BridgeA_Center(Material.wood);
+        BlockIDs.bridgeA_CenterDiag.block = new BridgeA_CenterDiag(Material.wood);
         BlockIDs.bridgeA_X_Side_Top.block = new BridgeA_X_Side_top(Material.wood);
+        BlockIDs.bridgeA_X_Side_TopDiag.block = new BridgeA_X_Side_topDiag(Material.wood);
         BlockIDs.bridgeA_X_Side_Bottom.block = new BridgeA_X_Side_Bottom(Material.wood);
-        BlockIDs.bridgeA_X_Side_Top2.block = new BridgeA_X_Side_Top2(Material.wood);
-        BlockIDs.bridgeA_X_Side_Bottom2.block = new BridgeA_X_Side_Bottom2(Material.wood);
+        BlockIDs.bridgeA_X_Side_BottomDiag.block = new BridgeA_X_Side_BottomDiag(Material.wood);
+        BlockIDs.bridgeA_X_Side_Top2.block = new BridgeA_X_Side_Top5x(Material.wood);
+        BlockIDs.bridgeA_X_Side_Bottom2.block = new BridgeA_X_Side_Bottom5x(Material.wood);
         BlockIDs.bridgeA_Side_Top.block = new BridgeA_Side_Top(Material.wood);
+        BlockIDs.bridgeA_Side_TopDiag.block = new BridgeA_Side_TopDiag(Material.wood);
         BlockIDs.bridgeA_Side_Bottom.block = new BridgeA_Side_Bottom(Material.wood);
+        BlockIDs.bridgeA_Side_BottomDiag.block = new BridgeA_Side_BottomDiag(Material.wood);
 
         //overhead wires
         BlockIDs.overhead_pole_curve_3.block = new Overhead_pole_curve_3(Material.wood);
@@ -1058,12 +1063,17 @@ public class BlockHandler
         GameRegistry.registerTileEntity(TileLamp2cold.class, "lamp2cold.tile");
 
         GameRegistry.registerTileEntity(TileBridgeA_Center.class, "bridgeA_Center.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_CenterDiag.class, "bridgeA_CenterDiag.tile");
         GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top.class, "bridgeA_X_Side_Center_Top.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_TopDiag.class, "bridgeA_X_Side_Center_TopDiag.tile");
         GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Bottom.class, "bridgeA_X_Side_Center_Bottom.tile");
-        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top2.class, "bridgeA_X_Side_Center_Top2.tile");
-        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Bottom2.class, "bridgeA_X_Side_Center_Bottom2.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_BottomDiag.class, "bridgeA_X_Side_Center_BottomDiag.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Top5x.class, "bridgeA_X_Side_Center_Top2.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_X_Side_Center_Bottom5x.class, "bridgeA_X_Side_Center_Bottom2.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Top.class, "bridgeA_Side_Top.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_Side_TopDiag.class, "bridgeA_Side_TopDiag.tile");
         GameRegistry.registerTileEntity(TileBridgeA_Side_Bottom.class, "bridgeA_Side_Bottom.tile");
+        GameRegistry.registerTileEntity(TileBridgeA_Side_BottomDiag.class, "bridgeA_Side_BottomDiag.tile");
 
         GameRegistry.registerTileEntity(TileRoadCoverDynamic1X1.class, "roadcoverdyanmic1X1.tile");
         GameRegistry.registerTileEntity(TileRoadCoverDynamic1X2.class, "roadcoverdyanmic1X2.tile");

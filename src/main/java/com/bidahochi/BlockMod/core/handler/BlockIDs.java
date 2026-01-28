@@ -256,12 +256,17 @@ public enum BlockIDs implements IFoxBlockIDs
 
     //modular bridges
     bridgeA_Center(false, null, "bridgeA_Center"),
+    bridgeA_CenterDiag(false, null, "bridgeA_CenterDiag"),
     bridgeA_X_Side_Top(false, null, "bridgeA_X_Side_Top"),
+    bridgeA_X_Side_TopDiag(false, null, "bridgeA_X_Side_TopDiag"),
     bridgeA_X_Side_Bottom(false, null, "bridgeA_X_Side_Bottom"),
+    bridgeA_X_Side_BottomDiag(false, null, "bridgeA_X_Side_BottomDiag"),
     bridgeA_X_Side_Top2(false, null, "bridgeA_X_Side_Top2"),
     bridgeA_X_Side_Bottom2(false, null, "bridgeA_X_Side_Bottom2"),
     bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
+    bridgeA_Side_TopDiag(false, null, "bridgeA_Side_TopDiag"),
     bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
+    bridgeA_Side_BottomDiag(false, null, "bridgeA_Side_BottomDiag"),
 
     //overhead wires
     overhead_pole_curve_3(false, null, "overhead_pole_curve_3"),

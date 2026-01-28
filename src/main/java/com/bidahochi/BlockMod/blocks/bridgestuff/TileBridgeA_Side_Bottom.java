@@ -24,4 +24,8 @@ public class TileBridgeA_Side_Bottom extends BaseTileEntity
     {
         return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-5, zCoord-1, xCoord + 2, yCoord + 4, zCoord + 2);
     }
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
+    }
 }

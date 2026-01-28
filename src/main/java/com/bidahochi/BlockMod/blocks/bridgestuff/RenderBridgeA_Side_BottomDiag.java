@@ -1,7 +1,7 @@
 package com.bidahochi.BlockMod.blocks.bridgestuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeASide_Bottom;
+import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeASide_Bottom_Diag;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -11,20 +11,20 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
-    public class RenderBridgeA_Side_Bottom extends TileEntitySpecialRenderer {
+    public class RenderBridgeA_Side_BottomDiag extends TileEntitySpecialRenderer {
         private ResourceLocation texture = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/bridgestuff/BridgeASideBottom.png");
-        private ModelbridgeASide_Bottom model = new ModelbridgeASide_Bottom();
+        private ModelbridgeASide_Bottom_Diag model = new ModelbridgeASide_Bottom_Diag();
 
         @Override
         public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
-            if(!(tileEntity instanceof TileBridgeA_Side_Bottom)){return;}
+            if(!(tileEntity instanceof TileBridgeA_Side_BottomDiag)){return;}
             GL11.glPushMatrix();
             Tessellator.bindTexture(texture);
             //GL11.glTranslated(x + 0.25, y - 0.33, z + 0.45);
             GL11.glTranslated(x + 0.5, y + 0.62, z + 0.5);
             GL11.glRotatef(180F, 1F, 0F, 0F);
             GL11.glRotatef(90F, 0F, 1F, 0F);
-            int dir = ((TileBridgeA_Side_Bottom)tileEntity).dir;
+            int dir = ((TileBridgeA_Side_BottomDiag)tileEntity).dir;
             //System.out.println(dir);
             switch(dir) {
                 case 0:{//west // north

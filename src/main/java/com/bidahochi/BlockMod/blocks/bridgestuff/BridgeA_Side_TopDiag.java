@@ -15,13 +15,14 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.List;
 
-public class BridgeA_X_Side_top extends BlockContainer {
-    public BridgeA_X_Side_top(Material p_i45394_1_) {
+public class BridgeA_Side_TopDiag extends BlockContainer {
+    public BridgeA_Side_TopDiag(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("bridgeA_X_Side_Top");
+        setBlockName("bridgeA_Side_TopDiag");
         setHardness(2F);
         setResistance(6.0F);
         setHarvestLevel("axe", 1);
@@ -33,7 +34,7 @@ public class BridgeA_X_Side_top extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileBridgeA_X_Side_Center_Top();
+        return new TileBridgeA_Side_TopDiag();
     }
 
     @Override
@@ -56,14 +57,14 @@ public class BridgeA_X_Side_top extends BlockContainer {
         this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
     }
 
-    @Override
+    /*@Override
     public void addCollisionBoxesToList(World p_149743_1_, int p_149743_2_, int p_149743_3_, int p_149743_4_, AxisAlignedBB p_149743_5_, List p_149743_6_, Entity p_149743_7_)
-    { }
-    /*@Override //this doesn't need changing but it needs inclusion
+    { }*/
+    @Override //this doesn't need changing but it needs inclusion
     public void addCollisionBoxesToList(World world, int x, int y, int z, AxisAlignedBB hitboxSelf, List hitboxesOther, Entity collidingEntity) {
         this.setBlockBoundsBasedOnState(world, x, y, z);
         super.addCollisionBoxesToList(world, x, y, z, hitboxSelf, hitboxesOther, collidingEntity);
-    }*/
+    }
 
     @Override
     public boolean hasTileEntity(int metadata) {
@@ -89,7 +90,7 @@ public class BridgeA_X_Side_top extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileBridgeA_X_Side_Center_Top(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileBridgeA_Side_TopDiag(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -103,6 +104,18 @@ public class BridgeA_X_Side_top extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":props/ModBridgeA");
+    }
+
+    @Override
+    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side)
+    {
+        switch (side)
+        {
+            case UP:
+                return true;
+        }
+
+        return super.isSideSolid(world, x, y, z, side);
     }
 
 

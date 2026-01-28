@@ -6,22 +6,24 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.AxisAlignedBB;
 
-public class TileBridgeA_X_Side_Center_Bottom2 extends BaseTileEntity
+public class TileBridgeA_Side_TopDiag extends BaseTileEntity
 {
-    public TileBridgeA_X_Side_Center_Bottom2(int dir)
+    public TileBridgeA_Side_TopDiag(int dir)
     {
         super(dir);
     }
 
-    public TileBridgeA_X_Side_Center_Bottom2()
-    {
-
-    }
+    public TileBridgeA_Side_TopDiag()
+    { }
 
     @SideOnly(Side.CLIENT)
     @Override
     public AxisAlignedBB getRenderBoundingBox()
     {
-        return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-5, zCoord-1, xCoord + 6, yCoord + 1, zCoord + 1);
+        return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-5, zCoord-1, xCoord + 2, yCoord + 4, zCoord + 2);
+    }
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
     }
 }

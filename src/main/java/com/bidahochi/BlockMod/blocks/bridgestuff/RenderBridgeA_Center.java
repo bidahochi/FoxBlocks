@@ -1,7 +1,7 @@
 package com.bidahochi.BlockMod.blocks.bridgestuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeCenterA;
+import com.bidahochi.BlockMod.render.models.BridgePrototype.ModelbridgeACenter;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,7 +13,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
     public class RenderBridgeA_Center extends TileEntitySpecialRenderer {
         private ResourceLocation texture = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/bridgestuff/BridgeACenter.png");
-        private ModelbridgeCenterA model = new ModelbridgeCenterA();
+        private ModelbridgeACenter model = new ModelbridgeACenter();
 
         @Override
         public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {

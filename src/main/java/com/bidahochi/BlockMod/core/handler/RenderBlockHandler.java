@@ -53,12 +53,17 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileLamp2cold.class, new RenderLamp2cold());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Center.class, new RenderBridgeA_Center());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_CenterDiag.class, new RenderBridgeA_CenterDiag());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Top.class, new RenderBridgeA_X_Side_Top());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_TopDiag.class, new RenderBridgeA_X_Side_TopDiag());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Bottom.class, new RenderBridgeA_X_Side_Bottom());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Top2.class, new RenderBridgeA_X_Side_Top2());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Bottom2.class, new RenderBridgeA_X_Side_Bottom2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_BottomDiag.class, new RenderBridgeA_X_Side_BottomDiag());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Top5x.class, new RenderBridgeA_X_Side_Top5x());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_X_Side_Center_Bottom5x.class, new RenderBridgeA_X_Side_Bottom5x());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_Top.class, new RenderBridgeA_Side_Top());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_TopDiag.class, new RenderBridgeA_Side_TopDiag());
         ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_Bottom.class, new RenderBridgeA_Side_Bottom());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBridgeA_Side_BottomDiag.class, new RenderBridgeA_Side_BottomDiag());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCoverDynamic1X1.class, new RenderDynamicRoadCover1X1());
         ClientRegistry.bindTileEntitySpecialRenderer(TileRoadCoverDynamic1X2.class, new RenderDynamicRoadCover1X2());

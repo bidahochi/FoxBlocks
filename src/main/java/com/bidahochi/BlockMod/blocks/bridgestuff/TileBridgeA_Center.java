@@ -14,14 +14,16 @@ public class TileBridgeA_Center extends BaseTileEntity
     }
 
     public TileBridgeA_Center()
-    {
-
-    }
+    { }
 
     @SideOnly(Side.CLIENT)
     @Override
     public AxisAlignedBB getRenderBoundingBox()
     {
         return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord-5, zCoord-1, xCoord + 1, yCoord + 1, zCoord + 1);
+    }
+    @SideOnly(Side.CLIENT)
+    public double getMaxRenderDistanceSquared() {
+        return 16384.0D;
     }
 }

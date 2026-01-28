@@ -18,10 +18,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class BridgeA_X_Side_top extends BlockContainer {
-    public BridgeA_X_Side_top(Material p_i45394_1_) {
+public class BridgeA_X_Side_Bottom5x extends BlockContainer {
+    public BridgeA_X_Side_Bottom5x(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("bridgeA_X_Side_Top");
+        setBlockName("bridgeA_X_Side_Bottom2");
         setHardness(2F);
         setResistance(6.0F);
         setHarvestLevel("axe", 1);
@@ -33,7 +33,7 @@ public class BridgeA_X_Side_top extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileBridgeA_X_Side_Center_Top();
+        return new TileBridgeA_X_Side_Center_Bottom5x();
     }
 
     @Override
@@ -89,7 +89,7 @@ public class BridgeA_X_Side_top extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileBridgeA_X_Side_Center_Top(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileBridgeA_X_Side_Center_Bottom5x(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;

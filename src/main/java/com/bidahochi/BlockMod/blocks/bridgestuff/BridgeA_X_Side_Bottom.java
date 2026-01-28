@@ -56,14 +56,14 @@ public class BridgeA_X_Side_Bottom extends BlockContainer {
         this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
     }
 
-    /*@Override
+    @Override
     public void addCollisionBoxesToList(World p_149743_1_, int p_149743_2_, int p_149743_3_, int p_149743_4_, AxisAlignedBB p_149743_5_, List p_149743_6_, Entity p_149743_7_)
-    { }*/
-    @Override //this doesn't need changing but it needs inclusion
+    { }
+    /*@Override //this doesn't need changing but it needs inclusion
     public void addCollisionBoxesToList(World world, int x, int y, int z, AxisAlignedBB hitboxSelf, List hitboxesOther, Entity collidingEntity) {
         this.setBlockBoundsBasedOnState(world, x, y, z);
         super.addCollisionBoxesToList(world, x, y, z, hitboxSelf, hitboxesOther, collidingEntity);
-    }
+    }*/
 
     @Override
     public boolean hasTileEntity(int metadata) {
