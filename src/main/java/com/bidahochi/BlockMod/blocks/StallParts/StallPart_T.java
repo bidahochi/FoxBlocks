@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.StallParts;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
@@ -18,7 +19,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class StallPart_T extends BlockContainer {
+public class StallPart_T extends BlockContainer implements IFoxBlocksScrollingBlock {
     public StallPart_T(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("stallPart_T");
@@ -98,5 +99,11 @@ public class StallPart_T extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/stallPartsT");
+    }
+
+    @Override
+    public int getScrollListID()
+    {
+        return 3;
     }
 }

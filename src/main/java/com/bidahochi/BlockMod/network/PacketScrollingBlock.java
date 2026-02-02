@@ -85,6 +85,19 @@ public class PacketScrollingBlock implements IFoxBlocksPacket
                     entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
                 }
                 break;
+                case 3:
+                    LinkedList<Block> list = new LinkedList<>();
+                    list.add(BlockIDs.stallPart_T.GetBlock());
+                    list.add(BlockIDs.stallPart_Straight.GetBlock());
+                    list.add(BlockIDs.stallPart_Edge1.GetBlock());
+                    list.add(BlockIDs.stallPart_Edge2.GetBlock());
+                    list.add(BlockIDs.stallPart_TB.GetBlock());
+                    list.add(BlockIDs.stallPart_StraightB.GetBlock());
+                    list.add(BlockIDs.stallPart_Edge1B.GetBlock());
+                    list.add(BlockIDs.stallPart_Edge2B.GetBlock());
+
+                    entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
+                break;
             }
 
 

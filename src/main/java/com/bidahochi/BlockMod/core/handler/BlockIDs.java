@@ -334,14 +334,14 @@ public enum BlockIDs implements IFoxBlockIDs
     doorE(true, null, "doorEblock", -1),//stall door
 
     //modular stall parts
-    stallPart_T(false, null, "stallPart_T"),
-    stallPart_Straight(false, null, "stallPart_Straight"),
-    stallPart_Edge1(false, null, "stallPart_Edge1"),
-    stallPart_Edge2(false, null, "stallPart_Edge2"),
-    stallPart_TB(false, null, "stallPart_TB"),
-    stallPart_StraightB(false, null, "stallPart_StraightB"),
-    stallPart_Edge1B(false, null, "stallPart_Edge1B"),
-    stallPart_Edge2B(false, null, "stallPart_Edge2B"),
+    stallPart_T(ItemBlockScrolling.class, "stallPart_T"),
+    stallPart_Straight(ItemBlockScrolling.class, "stallPart_Straight"),
+    stallPart_Edge1(ItemBlockScrolling.class, "stallPart_Edge1"),
+    stallPart_Edge2(ItemBlockScrolling.class, "stallPart_Edge2"),
+    stallPart_TB(ItemBlockScrolling.class, "stallPart_TB"),
+    stallPart_StraightB(ItemBlockScrolling.class, "stallPart_StraightB"),
+    stallPart_Edge1B(ItemBlockScrolling.class, "stallPart_Edge1B"),
+    stallPart_Edge2B(ItemBlockScrolling.class, "stallPart_Edge2B"),
 
     //roadpaints
     //dynamic

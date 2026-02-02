@@ -34,6 +34,8 @@ public class ItemBlockScrolling extends ItemBlock {
                 return "Bridge Side Pieces";
             case 2:
                 return "Bridge X Pieces";
+            case 3:
+                return "Bathroom Stall Parts";
             default:
                 return "Blocks";
         }
