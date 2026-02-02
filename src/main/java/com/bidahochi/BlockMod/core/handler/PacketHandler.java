@@ -3,6 +3,7 @@ package com.bidahochi.BlockMod.core.handler;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.network.IFoxBlocksPacket;
 import com.bidahochi.BlockMod.network.PacketRPBSelect;
+import com.bidahochi.BlockMod.network.PacketScrollingBlock;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.network.FMLNetworkEvent;
 import cpw.mods.fml.common.network.internal.FMLProxyPacket;
@@ -24,6 +25,7 @@ public class PacketHandler {
     static {
         packetCarrier = new ArrayList<Class>();
         packetCarrier.add(PacketRPBSelect.class);
+        packetCarrier.add(PacketScrollingBlock.class);
     }
 
     @SubscribeEvent

@@ -17,8 +17,9 @@ package com.bidahochi.BlockMod.core.handler;
  *  Any Questions feel free to DM me or Ping Me in discord!
  ********************/
 
-import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.bridgestuff.BlockContainer.*;
+import com.bidahochi.BlockMod.blocks.bridgestuff.tileEntity.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.*;
 import com.bidahochi.BlockMod.blocks.StallParts.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.BlockContainer.*;

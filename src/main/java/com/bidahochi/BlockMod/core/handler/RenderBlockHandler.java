@@ -1,7 +1,8 @@
 package com.bidahochi.BlockMod.core.handler;
 
-import com.bidahochi.BlockMod.blocks.bridgestuff.*;
 import com.bidahochi.BlockMod.blocks.StallParts.*;
+import com.bidahochi.BlockMod.blocks.bridgestuff.TileEntitySpecialRenderer.*;
+import com.bidahochi.BlockMod.blocks.bridgestuff.tileEntity.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntitySpecialRenderer.*;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.TileEntity.*;
 import com.bidahochi.BlockMod.blocks.lighting.*;

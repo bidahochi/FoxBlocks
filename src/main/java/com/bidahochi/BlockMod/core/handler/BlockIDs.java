@@ -24,6 +24,7 @@ package com.bidahochi.BlockMod.core.handler;
  ****************************/
 
 import com.bidahochi.BlockMod.blocks.aggregates.ItemBlockWithMetadata.ItemBlockFakeSnow;
+import com.bidahochi.BlockMod.blocks.ItemBlockScrolling;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X1;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X2;
 import com.bidahochi.BlockMod.blocks.constructionmaterials.roadcover.ItemBlockWithMetadata.ItemRoadCoverDynamic1X3;
@@ -255,18 +256,18 @@ public enum BlockIDs implements IFoxBlockIDs
     lamp2cold(false, null, "lamp2cold"),
 
     //modular bridges
-    bridgeA_Center(false, null, "bridgeA_Center"),
-    bridgeA_CenterDiag(false, null, "bridgeA_CenterDiag"),
-    bridgeA_X_Side_Top(false, null, "bridgeA_X_Side_Top"),
-    bridgeA_X_Side_TopDiag(false, null, "bridgeA_X_Side_TopDiag"),
-    bridgeA_X_Side_Bottom(false, null, "bridgeA_X_Side_Bottom"),
-    bridgeA_X_Side_BottomDiag(false, null, "bridgeA_X_Side_BottomDiag"),
-    bridgeA_X_Side_Top2(false, null, "bridgeA_X_Side_Top2"),
-    bridgeA_X_Side_Bottom2(false, null, "bridgeA_X_Side_Bottom2"),
-    bridgeA_Side_Top(false, null, "bridgeA_Side_Top"),
-    bridgeA_Side_TopDiag(false, null, "bridgeA_Side_TopDiag"),
-    bridgeA_Side_Bottom(false, null, "bridgeA_Side_Bottom"),
-    bridgeA_Side_BottomDiag(false, null, "bridgeA_Side_BottomDiag"),
+    bridgeA_Center(ItemBlockScrolling.class, "bridgeA_Center"),
+    bridgeA_CenterDiag(ItemBlockScrolling.class, "bridgeA_CenterDiag"),
+    bridgeA_X_Side_Top(ItemBlockScrolling.class, "bridgeA_X_Side_Top"),
+    bridgeA_X_Side_TopDiag(ItemBlockScrolling.class, "bridgeA_X_Side_TopDiag"),
+    bridgeA_X_Side_Bottom(ItemBlockScrolling.class, "bridgeA_X_Side_Bottom"),
+    bridgeA_X_Side_BottomDiag(ItemBlockScrolling.class, "bridgeA_X_Side_BottomDiag"),
+    bridgeA_X_Side_Top2(ItemBlockScrolling.class, "bridgeA_X_Side_Top2"),
+    bridgeA_X_Side_Bottom2(ItemBlockScrolling.class, "bridgeA_X_Side_Bottom2"),
+    bridgeA_Side_Top(ItemBlockScrolling.class, "bridgeA_Side_Top"),
+    bridgeA_Side_TopDiag(ItemBlockScrolling.class, "bridgeA_Side_TopDiag"),
+    bridgeA_Side_Bottom(ItemBlockScrolling.class, "bridgeA_Side_Bottom"),
+    bridgeA_Side_BottomDiag(ItemBlockScrolling.class, "bridgeA_Side_BottomDiag"),
 
     //overhead wires
     overhead_pole_curve_3(false, null, "overhead_pole_curve_3"),
@@ -417,6 +418,13 @@ public enum BlockIDs implements IFoxBlockIDs
      */
     BlockIDs(boolean hasItemBlock, Class<? extends ItemBlock> itemBlockClass, String blockName) {
         this.hasItemBlock = hasItemBlock;
+        this.itemBlockClass = itemBlockClass;
+        this.blockName = blockName;
+        this.MaxMetadata = 0;
+    }
+
+    BlockIDs(Class<? extends ItemBlock> itemBlockClass, String blockName) {
+        this.hasItemBlock = true;
         this.itemBlockClass = itemBlockClass;
         this.blockName = blockName;
         this.MaxMetadata = 0;
