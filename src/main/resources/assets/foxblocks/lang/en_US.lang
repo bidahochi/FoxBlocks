@@ -117,7 +117,7 @@ tile.Smoothcrete_0_Stair.name=Smooth-Crete Stairs
 tile.Smoothcrete_Wall_0=Smooth-Crete Wall
 
 <!-- Slab -->
-tile.Smoothcrete_Slab_0.name=Smooth-Crete
+tile.Smoothcrete_Slab_0.name=Smooth-Crete Slab
 
 <!-- Block -->
 tile.concreteBrick_0.name=Blu Team Concrete Brick
@@ -762,7 +762,7 @@ tile.Tile 2x2 Smooth_Slab_3.name=Black 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_Slab_4.name=Brown 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_Slab_5.name=Red 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_Slab_6.name=Orange 2x2 Bubble Tile Slab
-tile.Tile 2x2 Smooth_Slab_7.name=Yellow 2x2 Bubble Tile SlabSlab
+tile.Tile 2x2 Smooth_Slab_7.name=Yellow 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_2_Slab_0.name=Lime 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_2_Slab_1.name=Green 2x2 Bubble Tile Slab
 tile.Tile 2x2 Smooth_2_Slab_2.name=Light Blue 2x2 Bubble Tile Slab
