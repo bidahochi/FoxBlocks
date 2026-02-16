@@ -1,5 +1,5 @@
 # FoxBlocks Mod License v1.0
-Copyright Bidahochi 2020-2024
+Copyright Bidahochi 2020-2026
 
 
 ## Distribution
@@ -15,7 +15,7 @@ Copyright Bidahochi 2020-2024
 - You CAN use the mod in any modpack, credit is not required but it is appreciated :)
 - You CAN use the mod on a multiplayer server (public or otherwise), and earn revenue as you desire from server usage fees, donations, sold services, and the likes (As long as the revenue gained is not against Minecraft's EULA).
 - You CAN create and publish videos/blogs/screenshots/maps/ect that contain FoxBlocks assets, and can earn revenue from such adventures (As long as the revenue gained is not against Minecraft's EULA). Credit is not required but it is appreciated :)
-- You CAN create and publish texturepacks/resourcepacks that CANNOT contain FoxBlocks assets, and can earn revenue from such adventures (As long as the revenue gained is not against Minecraft's EULA). Credit is required (Just post a link back to the original source).
+- You CAN create and publish texturepacks/resourcepacks for FoxBlocks that CANNOT contain original FoxBlocks assets, and can earn revenue from such adventures (As long as the revenue gained is not against Minecraft's EULA). Credit is required (Just post a link back to the original source).
 
 ## Warranty & Liability
 - Bidahochi, or any of the contributors to the FoxBlocks project, are not responsible for any damage, corruption, explosions, melted computers, angry reactions, or any other bad things that may occur due to usage of this mod or its parts.
