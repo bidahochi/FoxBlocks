@@ -6,9 +6,11 @@
 -Forge Multiblock Support
 -Vast array of building blocks such as bricks, planks, Aperture Science brand Panels, sheet metals, tiles, the list goes on
 -Slightly less vast array of decorative props such as fancy industrial lamps, a toilet, steel coils, railroad signage, ect
--Extra Vast array of railroad related modular props such as Overhead Wires (for traincraft), modular bridge pillar parts, ect
+-Extra Vast array of railroad related modular props such as Overhead Wires (for FoxTC), modular bridge pillar parts, ect
 -Some various other little funnies
 
+### Extending a special thank you to Fureniku, author of Furenikus Roads/Flenix Roads, for letting us use their road block textures.
+You can find them here -> https://www.curseforge.com/minecraft/mc-mods/furenikusroads
 
 ## the rest of this README is currently under construction
 
