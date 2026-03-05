@@ -825,6 +825,24 @@ public class RecipeHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietLimestone.block, 8, 5), new ItemStack(BlockIDs.jolietLimestoneRaw.block), new ItemStack(BlockIDs.jolietLimestoneRaw.block), new ItemStack(BlockIDs.jolietLimestoneRaw.block), new ItemStack(BlockIDs.jolietLimestoneRaw.block), new ItemStack(ItemIDs.bolsterChisel.item));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietLimestone.block, 4, 6), new ItemStack(BlockIDs.jolietLimestone.block, 1, 5), new ItemStack(BlockIDs.jolietLimestone.block, 1, 5), new ItemStack(BlockIDs.jolietLimestone.block, 1, 5), new ItemStack(BlockIDs.jolietLimestone.block, 1, 5), new ItemStack(ItemIDs.bolsterChisel.item));
 
+        //joliet brickrap
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietBrickrap.block, 4, 0), new ItemStack(BlockIDs.jolietLimestone.block, 1, 0), new ItemStack(BlockIDs.jolietLimestone.block, 1, 0), new ItemStack(BlockIDs.jolietLimestone.block, 1, 1), new ItemStack(BlockIDs.jolietLimestone.block, 1, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietBrickrap.block, 2, 1), new ItemStack(BlockIDs.jolietBrickrap.block, 1, 0), new ItemStack(BlockIDs.jolietBrickrap.block, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietBrickrap.block, 2, 2), new ItemStack(BlockIDs.jolietBrickrap.block, 1, 1), new ItemStack(BlockIDs.jolietBrickrap.block, 1, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.jolietBrickrap.block, 2, 0), new ItemStack(BlockIDs.jolietBrickrap.block, 1, 2), new ItemStack(BlockIDs.jolietBrickrap.block, 1, 2));
+
+        //redrock brickrap
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.redrockBrickrap.block, 4, 0), new ItemStack(BlockIDs.redrockDeco.block, 1, 1), new ItemStack(BlockIDs.redrockDeco.block, 1, 1), new ItemStack(BlockIDs.redrockDeco.block, 1, 2), new ItemStack(BlockIDs.redrockDeco.block, 1, 2));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.redrockBrickrap.block, 2, 1), new ItemStack(BlockIDs.redrockBrickrap.block, 1, 0), new ItemStack(BlockIDs.redrockBrickrap.block, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.redrockBrickrap.block, 2, 2), new ItemStack(BlockIDs.redrockBrickrap.block, 1, 1), new ItemStack(BlockIDs.redrockBrickrap.block, 1, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.redrockBrickrap.block, 2, 0), new ItemStack(BlockIDs.redrockBrickrap.block, 1, 2), new ItemStack(BlockIDs.redrockBrickrap.block, 1, 2));
+
+        //soapstone brickrap
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapstoneBrickrap.block, 4, 0), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 1), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 1), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 0), new ItemStack(BlockIDs.soapStoneDeco.block, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapstoneBrickrap.block, 2, 1), new ItemStack(BlockIDs.soapstoneBrickrap.block, 1, 0), new ItemStack(BlockIDs.soapstoneBrickrap.block, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapstoneBrickrap.block, 2, 2), new ItemStack(BlockIDs.soapstoneBrickrap.block, 1, 1), new ItemStack(BlockIDs.soapstoneBrickrap.block, 1, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.soapstoneBrickrap.block, 2, 0), new ItemStack(BlockIDs.soapstoneBrickrap.block, 1, 2), new ItemStack(BlockIDs.soapstoneBrickrap.block, 1, 2));
+
         //road stuff
         GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.roadTar.item, 8), new ItemStack(Blocks.gravel), new ItemStack(BlockIDs.Concrete.block),new ItemStack(Blocks.sand),new ItemStack(Items.coal));
 

@@ -435,6 +435,30 @@ public class BlockHandler
             tempBlockCache.put(BlockIDs.redrockDeco, property);
         }
 
+        { // jolietBrickrap
+            BlockProperty property = new BlockProperty(BlockIDs.jolietBrickrap, Material.rock, 2F, 13F,
+                    PICKAXE, 1,
+                    soundTypeStone, 3,"constructionmaterials/brickrap/joliet_brickrap", foxBlocksCreativeTabRock, false);
+            BlockIDs.jolietBrickrap.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.jolietBrickrap, property);
+        }
+
+        { // redrockBrickrap
+            BlockProperty property = new BlockProperty(BlockIDs.redrockBrickrap, Material.rock, 2F, 13F,
+                    PICKAXE, 1,
+                    soundTypeStone, 3,"constructionmaterials/brickrap/redrock_brickrap", foxBlocksCreativeTabRock, false);
+            BlockIDs.redrockBrickrap.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.redrockBrickrap, property);
+        }
+
+        { // soapstoneBrickrap
+            BlockProperty property = new BlockProperty(BlockIDs.soapstoneBrickrap, Material.rock, 2F, 13F,
+                    PICKAXE, 1,
+                    soundTypeStone, 3,"constructionmaterials/brickrap/soapstone_brickrap", foxBlocksCreativeTabRock, false);
+            BlockIDs.soapstoneBrickrap.block = property.getNewBlock();
+            tempBlockCache.put(BlockIDs.soapstoneBrickrap, property);
+        }
+
         { // cobaltBlock
             BlockProperty property = new BlockProperty(BlockIDs.cobaltBlock, Material.rock, 10F, 8.5F,
                     PICKAXE, 1,

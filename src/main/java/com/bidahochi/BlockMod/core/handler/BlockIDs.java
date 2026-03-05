@@ -97,6 +97,10 @@ public enum BlockIDs implements IFoxBlockIDs
     jolietLimestone(true, BaseItemBlock.class, "jolietlimestone", 6), // Limestone Bricks
     redrockDeco(true, BaseItemBlock.class, "RedrockDeco", 3), // 3
 
+    jolietBrickrap(true, BaseItemBlock.class, "jolietBrickrap", 2),
+    redrockBrickrap(true, BaseItemBlock.class, "redrockBrickrap", 2),
+    soapstoneBrickrap(true, BaseItemBlock.class, "soapstoneBrickrap", 2),
+
     // region Cobalt
     cobaltBlock(true,BaseItemBlock.class,"cobaltBlock"),
     cobaltPanel(true, BaseItemBlock.class,"cobaltPanel", 15), // ?

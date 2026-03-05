@@ -449,6 +449,54 @@ tile.RedrockDeco_Wall_1.name=Redrock Bricks Wall
 tile.RedrockDeco_Wall_2.name=Long Redrock Bricks Wall
 tile.RedrockDeco_Wall_3.name=Large Redrock Bricks Wall
 
+tile.jolietBrickrap_0.name=Joliet Brickrap
+tile.jolietBrickrap_1.name=Joliet Brickrap (Short)
+tile.jolietBrickrap_2.name=Joliet Brickrap (Long)
+
+tile.jolietBrickrap_0_Stair.name=Joliet Brickrap Stairs
+tile.jolietBrickrap_1_Stair.name=Joliet Brickrap (Short) Stairs
+tile.jolietBrickrap_2_Stair.name=Joliet Brickrap (Long) Stairs
+
+tile.jolietBrickrap_Slab_0.name=Joliet Brickrap Slab
+tile.jolietBrickrap_Slab_1.name=Joliet Brickrap (Short) Slab
+tile.jolietBrickrap_Slab_2.name=Joliet Brickrap (Long) Slab
+
+tile.jolietBrickrap_Wall_0.name=Joliet Brickrap Wall
+tile.jolietBrickrap_Wall_1.name=Joliet Brickrap (Short) Wall
+tile.jolietBrickrap_Wall_2.name=Joliet Brickrap (Long) Wall
+
+tile.redrockBrickrap_0.name=Redrock Brickrap
+tile.redrockBrickrap_1.name=Redrock Brickrap (Short)
+tile.redrockBrickrap_2.name=Redrock Brickrap (Long)
+
+tile.redrockBrickrap_0_Stair.name=Redrock Brickrap Stairs
+tile.redrockBrickrap_1_Stair.name=Redrock Brickrap (Short) Stairs
+tile.redrockBrickrap_2_Stair.name=Redrock Brickrap (Long) Stairs
+
+tile.redrockBrickrap_Slab_0.name=Redrock Brickrap Slab
+tile.redrockBrickrap_Slab_1.name=Redrock Brickrap (Short) Slab
+tile.redrockBrickrap_Slab_2.name=Redrock Brickrap (Long) Slab
+
+tile.redrockBrickrap_Wall_0.name=Redrock Brickrap Wall
+tile.redrockBrickrap_Wall_1.name=Redrock Brickrap (Short) Wall
+tile.redrockBrickrap_Wall_2.name=Redrock Brickrap (Long) Wall
+
+tile.soapstoneBrickrap_0.name=Soapstone Brickrap
+tile.soapstoneBrickrap_1.name=Soapstone Brickrap (Short)
+tile.soapstoneBrickrap_2.name=Soapstone Brickrap (Long)
+
+tile.soapstoneBrickrap_0_Stair.name=Soapstone Brickrap Stairs
+tile.soapstoneBrickrap_1_Stair.name=Soapstone Brickrap (Short) Stairs
+tile.soapstoneBrickrap_2_Stair.name=Soapstone Brickrap (Long) Stairs
+
+tile.soapstoneBrickrap_Slab_0.name=Soapstone Brickrap Slab
+tile.soapstoneBrickrap_Slab_1.name=Soapstone Brickrap (Short) Slab
+tile.soapstoneBrickrap_Slab_2.name=Soapstone Brickrap (Long) Slab
+
+tile.soapstoneBrickrap_Wall_0.name=Soapstone Brickrap Wall
+tile.soapstoneBrickrap_Wall_1.name=Soapstone Brickrap (Short) Wall
+tile.soapstoneBrickrap_Wall_2.name=Soapstone Brickrap (Long) Wall
+
 tile.cobaltBlock_0.name=Cobalt Block
 tile.cobaltBlock_0_Stair.name=Cobalt Block Stairs
 tile.cobaltBlock_Slab_0.name=Cobalt Block Slab
