@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.props.BlockContainer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingFloorTile;
+import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingBlock;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSittable;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
@@ -20,7 +21,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class SittingFloorTile extends BaseBlockSittable
+public class SittingFloorTile extends BaseBlockSittable implements IFoxBlocksScrollingBlock
 {
     public SittingFloorTile(Material material)
     {
@@ -98,5 +99,11 @@ public class SittingFloorTile extends BaseBlockSittable
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":sittingFloorTile");
+    }
+
+    @Override
+    public int getScrollListID()
+    {
+        return 4;
     }
 }
