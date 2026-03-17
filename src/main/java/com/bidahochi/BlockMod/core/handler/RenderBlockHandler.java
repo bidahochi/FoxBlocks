@@ -11,6 +11,7 @@ import com.bidahochi.BlockMod.blocks.overhead.*;
 import com.bidahochi.BlockMod.blocks.props.*;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RoadPaintBlockRenderer;
+import com.bidahochi.BlockMod.blocks.streetStuff.*;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderMC20w15aWall;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderMinecraftFenceWithMetadata;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderPrivacyPane;
@@ -44,6 +45,12 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWall_sink.class, new RenderWall_sink());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileSoda_machine.class, new RenderSoda_machine());
+
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop_pole.class, new RenderSign_stop_pole());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePole.class, new RenderPole());
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePoleDiag.class, new RenderPoleDiag());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallV.class, new RenderNeonCageLampWallV());

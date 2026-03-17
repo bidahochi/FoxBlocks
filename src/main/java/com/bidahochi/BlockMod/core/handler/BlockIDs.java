@@ -250,6 +250,12 @@ public enum BlockIDs implements IFoxBlockIDs
 
     soda_machine(false, null, "soda_machine"),
 
+    //street stuff
+    sign_stop_pole(false, null, "sign_stop_pole"),
+
+    pole(false, null, "pole"),
+    poleDiag(false, null, "poleDiag"),
+
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
     neonCageLightWallV(false, null, "neonCageLightWallV"),

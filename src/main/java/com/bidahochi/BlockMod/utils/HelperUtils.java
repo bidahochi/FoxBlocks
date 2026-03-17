@@ -1,5 +1,9 @@
 package com.bidahochi.BlockMod.utils;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFence;
+import net.minecraft.world.World;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -46,5 +50,16 @@ public class HelperUtils
             }
         }
         return null;
+    }
+
+    public static boolean isFence(World worldObj, int x, int y, int z, Block block) {
+        int damage = block.getDamageValue(worldObj, x, y, z);
+        return block instanceof BlockFence
+                || (block.getUnlocalizedName().equalsIgnoreCase("tile.immersiveEngineering.metalDecoration") && damage == 0)
+                || (block.getUnlocalizedName().equalsIgnoreCase("tile.immersiveEngineering.woodenDecoration") && damage == 1)
+                || block.getUnlocalizedName().equalsIgnoreCase("tile.blockCarpentersBarrier")
+                || block.getUnlocalizedName().equalsIgnoreCase("tile.railcraft.post.metal")
+                || block.getUnlocalizedName().equalsIgnoreCase("tile.railcraft.post.metal.platform")
+                || (block.getUnlocalizedName().equalsIgnoreCase("tile.railcraft.post")) && (damage == 0 || damage == 2 || damage == 4 || damage == 6);
     }
 }

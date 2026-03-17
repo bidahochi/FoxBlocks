@@ -50,6 +50,7 @@ import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.Scrolling.
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.blocks.stones.*;
 
+import com.bidahochi.BlockMod.blocks.streetStuff.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
@@ -936,6 +937,12 @@ public class BlockHandler
 
         BlockIDs.soda_machine.block = new Soda_machine(Material.iron);
 
+        //street stuff
+        BlockIDs.sign_stop_pole.block = new Sign_stop_pole(Material.iron);
+
+        BlockIDs.pole.block = new Pole(Material.iron);
+        BlockIDs.poleDiag.block = new PoleDiag(Material.iron);
+
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
@@ -1078,6 +1085,12 @@ public class BlockHandler
         GameRegistry.registerTileEntity(TileWall_sink.class, "wall_sink.tile");
 
         GameRegistry.registerTileEntity(TileSoda_machine.class, "soda_machine.tile");
+
+        //street stuff
+        GameRegistry.registerTileEntity(TileSign_stop_pole.class, "sign_stop_pole");
+
+        GameRegistry.registerTileEntity(TilePole.class, "pole");
+        GameRegistry.registerTileEntity(TilePoleDiag.class, "poleDiag");
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");
