@@ -255,6 +255,10 @@ public enum BlockIDs implements IFoxBlockIDs
 
     pole(false, null, "pole"),
     poleDiag(false, null, "poleDiag"),
+    poleTransition(false, null, "poleTransition"),
+    poleTransitionDiag(false, null, "poleTransitionDiag"),
+    poleHorizontal(false, null, "poleHorizontal"),
+    poleHorizontalDiag(false, null, "poleHorizontalDiag"),
 
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),

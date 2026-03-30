@@ -12,7 +12,7 @@ import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
     public class RenderWall_sink extends TileEntitySpecialRenderer {
-        private ResourceLocation texture2 = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/wall_sink_dual_handle.png");
+        private ResourceLocation texture2 = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/props/wall_sink_dual_handle.png");
         private Modelwall_sink model = new Modelwall_sink();
 
         @Override

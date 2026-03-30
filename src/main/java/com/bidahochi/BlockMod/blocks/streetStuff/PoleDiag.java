@@ -102,6 +102,6 @@ public class PoleDiag extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":pole_vertical");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/pole_vertical_d");
     }
 }

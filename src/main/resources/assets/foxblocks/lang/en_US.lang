@@ -2479,6 +2479,10 @@ tile.sign_stop_pole.name=Stop Sign (Auto Aligned)
 
 tile.pole.name=Pole (Vertical)
 tile.poleDiag.name=Diagonal Pole (Vertical)
+tile.poleTransition.name=Pole (Vertical-Horizontal Transition)
+tile.poleTransitionDiag.name=Diagonal Pole (Vertical-Horizontal Transition)
+tile.poleHorizontal.name=Pole (Horizontal)
+tile.poleHorizontalDiag.name=Diagonal Pole (Horizontal)
 
 <!-- ## LIGHTING ## -->
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)

@@ -942,6 +942,10 @@ public class BlockHandler
 
         BlockIDs.pole.block = new Pole(Material.iron);
         BlockIDs.poleDiag.block = new PoleDiag(Material.iron);
+        BlockIDs.poleTransition.block = new PoleTransition(Material.iron);
+        BlockIDs.poleTransitionDiag.block = new PoleTransitionDiag(Material.iron);
+        BlockIDs.poleHorizontal.block = new PoleHorizontal(Material.iron);
+        BlockIDs.poleHorizontalDiag.block = new PoleHorizontalDiag(Material.iron);
 
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
@@ -1091,6 +1095,11 @@ public class BlockHandler
 
         GameRegistry.registerTileEntity(TilePole.class, "pole");
         GameRegistry.registerTileEntity(TilePoleDiag.class, "poleDiag");
+        GameRegistry.registerTileEntity(TilePoleTransition.class, "poleTransition");
+        GameRegistry.registerTileEntity(TilePoleTransitionDiag.class, "poleTransitionDiag");
+        GameRegistry.registerTileEntity(TilePoleHorizontal.class, "poleHorizontal");
+        GameRegistry.registerTileEntity(TilePoleHorizontalDiag.class, "poleHorizontalDiag");
+
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
         GameRegistry.registerTileEntity(TileNeonCageLampWallV.class, "neonCageLightWallV.tile");

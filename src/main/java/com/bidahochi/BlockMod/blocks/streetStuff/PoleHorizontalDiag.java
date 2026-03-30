@@ -18,10 +18,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class Pole extends BlockContainer {
-    public Pole(Material p_i45394_1_) {
+public class PoleHorizontalDiag extends BlockContainer {
+    public PoleHorizontalDiag(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("pole");
+        setBlockName("poleHorizontalDiag");
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
@@ -31,7 +31,7 @@ public class Pole extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TilePole();
+        return new TilePoleHorizontalDiag();
     }
 
     @Override
@@ -51,13 +51,13 @@ public class Pole extends BlockContainer {
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        this.setBlockBounds(0.4F, 0F, 0.4F, 0.6F, 1F, 0.6F);
-        /*switch(((TilePole)world.getTileEntity(x,y,z)).dir){
+        this.setBlockBounds(0.0F, 0.75F, 0F, 1F, 1F, 1F);
+        /*switch(((TilePoleHorizontalDiag)world.getTileEntity(x,y,z)).dir){
             //each number is a face, when north 0 is left and 1 is right
-            case 0:{this.setBlockBounds(0.4F, 0F, 0.4F, 0.6F, 1F, 0.6F); return;}//north
-            case 1:{this.setBlockBounds(0.75F, 0.5F, 0.0F, 1F, 1F, 1F); return;}//east
-            case 2:{this.setBlockBounds(0.0F, 0.5F, 0.75F, 1F, 1F, 1F); return;}//south
-            case 3:{this.setBlockBounds(0.0F, 0.5F, 0.0F, 0.25F, 1F, 1F); return;}//west
+            case 0:{this.setBlockBounds(0.4F, 0.75F, 0F, 0.6F, 1F, 1F); return;}//north
+            case 1:{this.setBlockBounds(0F, 0.75F, 0.4F, 1F, 1F, 0.6F); return;}//east
+            case 2:{this.setBlockBounds(0.4F, 0.75F, 0F, 0.6F, 1F, 1F); return;}//south
+            case 3:{this.setBlockBounds(0F, 0.75F, 0.4F, 1F, 1F, 0.6F); return;}//west
         }*/
     }
 
@@ -89,7 +89,7 @@ public class Pole extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TilePole(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TilePoleHorizontalDiag(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -102,6 +102,6 @@ public class Pole extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/pole_vertical");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/pole_horizontal_d");
     }
 }

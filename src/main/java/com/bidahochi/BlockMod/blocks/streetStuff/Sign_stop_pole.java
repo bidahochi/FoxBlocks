@@ -108,6 +108,6 @@ public class Sign_stop_pole extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":sign_stop");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/sign_stop_icon");
     }
 }

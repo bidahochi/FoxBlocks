@@ -95,6 +95,6 @@ public class Soda_machine extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":soda_machine");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/soda_machine");
     }
 }

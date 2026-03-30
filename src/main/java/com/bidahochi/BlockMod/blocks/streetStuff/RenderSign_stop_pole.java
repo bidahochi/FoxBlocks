@@ -65,8 +65,12 @@ import org.lwjgl.opengl.GL11;
             if (block instanceof BlockWall) {
                 GL11.glTranslatef(0.25f,0,0);
             }
-            if (block instanceof Pole) {//foxblock pole parts mwahaha
+            if (block instanceof Pole || block instanceof PoleHorizontal || block instanceof PoleTransition) {//foxblock pole parts mwahaha
                 GL11.glTranslatef(0.435f,0,0);
+            }
+            if (block instanceof PoleDiag || block instanceof PoleTransitionDiag || block instanceof PoleHorizontalDiag) {//diagonal poles
+                GL11.glRotated(45,0,1,0);
+                GL11.glTranslatef(0.14f,0f,0.705f);
             }
 
             model.render(null, 0, 0, 0, 0, 0, 0.0625f);

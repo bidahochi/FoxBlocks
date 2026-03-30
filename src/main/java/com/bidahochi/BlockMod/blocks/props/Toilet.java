@@ -93,6 +93,6 @@ public class Toilet extends BaseBlockSittable
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":toilet");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/toilet");
     }
 }

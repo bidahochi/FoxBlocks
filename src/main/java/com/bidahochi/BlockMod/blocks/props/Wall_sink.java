@@ -95,6 +95,6 @@ public class Wall_sink extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":sink");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/sink");
     }
 }
