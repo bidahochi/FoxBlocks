@@ -18,10 +18,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class PoleTransitionDiag extends BlockContainer {
-    public PoleTransitionDiag(Material p_i45394_1_) {
+public class TrafLight_3v_nb extends BlockContainer {
+    public TrafLight_3v_nb(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("poleTransitionDiag");
+        setBlockName("trafLight_3v_nb");
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
@@ -31,7 +31,7 @@ public class PoleTransitionDiag extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TilePoleTransitionDiag();
+        return new TileTrafLight_3v_nb();
     }
 
     @Override
@@ -51,14 +51,20 @@ public class PoleTransitionDiag extends BlockContainer {
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        this.setBlockBounds(0.4F, 0F, 0.4F, 0.6F, 1F, 0.6F);
-        /*switch(((TilePoleTransitionDiag)world.getTileEntity(x,y,z)).dir){
+        //this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        switch(((TileTrafLight_3v_nb)world.getTileEntity(x,y,z)).dir){
             //each number is a face, when north 0 is left and 1 is right
-            case 0:{this.setBlockBounds(0.4F, 0F, 0.4F, 0.6F, 1F, 0.6F); return;}//north
-            case 1:{this.setBlockBounds(0.75F, 0.5F, 0.0F, 1F, 1F, 1F); return;}//east
-            case 2:{this.setBlockBounds(0.0F, 0.5F, 0.75F, 1F, 1F, 1F); return;}//south
-            case 3:{this.setBlockBounds(0.0F, 0.5F, 0.0F, 0.25F, 1F, 1F); return;}//west
-        }*/
+            //east face 0,
+            // bottom face 0,
+            // south face 0,
+            // west face 1,
+            // top face 1,
+            // north face 1
+            case 0:{this.setBlockBounds(0.25F, 0.5F, -0.50F, 0.75F, 1F, 0.25F); return;}//north
+            case 1:{this.setBlockBounds(0.75F, 0.5F, 0.25F, 1.5F, 1F, 0.75F); return;}//east
+            case 2:{this.setBlockBounds(0.25F, 0.5F, 0.75F, 0.75F, 1F, 1.5F); return;}//south
+            case 3:{this.setBlockBounds(-0.50F, 0.5F, 0.25F, 0.25F, 1F, 0.75F); return;}//west
+        }
     }
 
     @Override
@@ -89,7 +95,7 @@ public class PoleTransitionDiag extends BlockContainer {
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TilePoleTransitionDiag(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileTrafLight_3v_nb(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -102,6 +108,6 @@ public class PoleTransitionDiag extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/pole_transition_d");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/trafLight_3v_nb_black_icon");
     }
 }

@@ -940,6 +940,9 @@ public class BlockHandler
         //street stuff
         BlockIDs.sign_stop_pole.block = new Sign_stop_pole(Material.iron);
 
+        BlockIDs.trafLight_3v_nb.block = new TrafLight_3v_nb(Material.iron);
+        BlockIDs.trafLight_3v.block = new TrafLight_3v(Material.iron);
+
         BlockIDs.pole.block = new Pole(Material.iron);
         BlockIDs.poleDiag.block = new PoleDiag(Material.iron);
         BlockIDs.poleTransition.block = new PoleTransition(Material.iron);
@@ -1092,6 +1095,9 @@ public class BlockHandler
 
         //street stuff
         GameRegistry.registerTileEntity(TileSign_stop_pole.class, "sign_stop_pole");
+
+        GameRegistry.registerTileEntity(TileTrafLight_3v_nb.class, "traflight_3v_nb");
+        GameRegistry.registerTileEntity(TileTrafLight_3v.class, "traflight_3v");
 
         GameRegistry.registerTileEntity(TilePole.class, "pole");
         GameRegistry.registerTileEntity(TilePoleDiag.class, "poleDiag");

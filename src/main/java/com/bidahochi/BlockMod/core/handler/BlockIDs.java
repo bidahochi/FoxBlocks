@@ -253,6 +253,9 @@ public enum BlockIDs implements IFoxBlockIDs
     //street stuff
     sign_stop_pole(false, null, "sign_stop_pole"),
 
+    trafLight_3v_nb(false, null, "trafLight_3v_nb"),
+    trafLight_3v(false, null, "trafLight_3v"),
+
     pole(false, null, "pole"),
     poleDiag(false, null, "poleDiag"),
     poleTransition(false, null, "poleTransition"),

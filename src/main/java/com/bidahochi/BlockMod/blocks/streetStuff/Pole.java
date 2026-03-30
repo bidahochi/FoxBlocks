@@ -26,7 +26,7 @@ public class Pole extends BlockContainer {
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeMetal);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
     @Override

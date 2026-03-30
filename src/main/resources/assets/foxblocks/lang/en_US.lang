@@ -2477,6 +2477,9 @@ tile.soda_machine.name=Soda Machine
 <!-- ## STREET STUFF ## -->
 tile.sign_stop_pole.name=Stop Sign (Auto Aligned)
 
+tile.trafLight_3v_nb.name=Traffic Light (3 Lights Vertical, no Border, Black)
+tile.trafLight_3v.name=Traffic Light (3 Lights Vertical, Border, Black)
+
 tile.pole.name=Pole (Vertical)
 tile.poleDiag.name=Diagonal Pole (Vertical)
 tile.poleTransition.name=Pole (Vertical-Horizontal Transition)
