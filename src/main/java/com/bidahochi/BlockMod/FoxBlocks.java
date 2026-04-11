@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod;
 
 import com.bidahochi.BlockMod.core.CommonProxy;
 import com.bidahochi.BlockMod.core.handler.*;
+import com.bidahochi.BlockMod.core.register.ScrollBlockRegistry;
 import com.bidahochi.BlockMod.entities.EntityChair;
 import com.bidahochi.BlockMod.init.FoxBlocksCreativeTab;
 import com.bidahochi.BlockMod.plugins.fmp.ForgeMultiPart;
@@ -17,6 +18,7 @@ import cpw.mods.fml.common.network.FMLEventChannel;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +26,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+import java.util.LinkedList;
 
 
 @Mod(modid = FoxBlocks.MODID, version = FoxBlocks.VERSION, name = FoxBlocks.NAME, dependencies = "after:ForgeMultipart")
@@ -150,6 +153,43 @@ public class FoxBlocks
     {
         RecipeHandler.initBlockRecipes(blockRegisterReturnCache);
         blockRegisterReturnCache = null;
+
+        ScrollBlockRegistry.register(0, ScrollBlockRegistry.of(
+                BlockIDs.bridgeA_Center.GetBlock(),
+                BlockIDs.bridgeA_CenterDiag.GetBlock()
+        ));
+
+        ScrollBlockRegistry.register(1, ScrollBlockRegistry.of(
+                BlockIDs.bridgeA_Side_Bottom.GetBlock(),
+                BlockIDs.bridgeA_Side_BottomDiag.GetBlock(),
+                BlockIDs.bridgeA_Side_Top.GetBlock(),
+                BlockIDs.bridgeA_Side_TopDiag.GetBlock()
+        ));
+
+        ScrollBlockRegistry.register(2, ScrollBlockRegistry.of(
+                BlockIDs.bridgeA_X_Side_Bottom.GetBlock(),
+                BlockIDs.bridgeA_X_Side_Bottom2.GetBlock(),
+                BlockIDs.bridgeA_X_Side_BottomDiag.GetBlock(),
+                BlockIDs.bridgeA_X_Side_Top.GetBlock(),
+                BlockIDs.bridgeA_X_Side_Top2.GetBlock(),
+                BlockIDs.bridgeA_X_Side_TopDiag.GetBlock()
+        ));
+
+        ScrollBlockRegistry.register(3, ScrollBlockRegistry.of(
+                BlockIDs.stallPart_T.GetBlock(),
+                BlockIDs.stallPart_Straight.GetBlock(),
+                BlockIDs.stallPart_Edge1.GetBlock(),
+                BlockIDs.stallPart_Edge2.GetBlock(),
+                BlockIDs.stallPart_TB.GetBlock(),
+                BlockIDs.stallPart_StraightB.GetBlock(),
+                BlockIDs.stallPart_Edge1B.GetBlock(),
+                BlockIDs.stallPart_Edge2B.GetBlock()
+        ));
+
+        ScrollBlockRegistry.register(4, ScrollBlockRegistry.of(
+                BlockIDs.sittingFloorTile.GetBlock(),
+                BlockIDs.sittingStairTile.GetBlock()
+        ));
     }
 
     @EventHandler

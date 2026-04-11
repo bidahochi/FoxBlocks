@@ -6,6 +6,7 @@ import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.IScrollRoadPaintB
 import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingBlock;
 import com.bidahochi.BlockMod.core.handler.BlockIDs;
 import com.bidahochi.BlockMod.core.handler.IFoxBlockIDs;
+import com.bidahochi.BlockMod.core.register.ScrollBlockRegistry;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufInputStream;
 import net.minecraft.block.Block;
@@ -50,66 +51,9 @@ public class PacketScrollingBlock implements IFoxBlocksPacket
         if (block instanceof IFoxBlocksScrollingBlock)
         {
             IFoxBlocksScrollingBlock theBlock = (IFoxBlocksScrollingBlock)block;
-            switch (theBlock.getScrollListID())
-            {
-                case 0:
-                {
-                    LinkedList<Block> list = new LinkedList<>();
-                    list.add(BlockIDs.bridgeA_Center.GetBlock());
-                    list.add(BlockIDs.bridgeA_CenterDiag.GetBlock());
 
-                    entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
-                }
-                break;
-                case 1:
-                {
-                    LinkedList<Block> list = new LinkedList<>();
-                    list.add(BlockIDs.bridgeA_Side_Bottom.GetBlock());
-                    list.add(BlockIDs.bridgeA_Side_BottomDiag.GetBlock());
-                    list.add(BlockIDs.bridgeA_Side_Top.GetBlock());
-                    list.add(BlockIDs.bridgeA_Side_TopDiag.GetBlock());
-
-                    entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
-                }
-                break;
-                case 2:
-                {
-                    LinkedList<Block> list = new LinkedList<>();
-                    list.add(BlockIDs.bridgeA_X_Side_Bottom.GetBlock());
-                    list.add(BlockIDs.bridgeA_X_Side_Bottom2.GetBlock());
-                    list.add(BlockIDs.bridgeA_X_Side_BottomDiag.GetBlock());
-                    list.add(BlockIDs.bridgeA_X_Side_Top.GetBlock());
-                    list.add(BlockIDs.bridgeA_X_Side_Top2.GetBlock());
-                    list.add(BlockIDs.bridgeA_X_Side_TopDiag.GetBlock());
-
-                    entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
-                }
-                break;
-                case 3: {
-                    LinkedList<Block> list = new LinkedList<>();
-                    list.add(BlockIDs.stallPart_T.GetBlock());
-                    list.add(BlockIDs.stallPart_Straight.GetBlock());
-                    list.add(BlockIDs.stallPart_Edge1.GetBlock());
-                    list.add(BlockIDs.stallPart_Edge2.GetBlock());
-                    list.add(BlockIDs.stallPart_TB.GetBlock());
-                    list.add(BlockIDs.stallPart_StraightB.GetBlock());
-                    list.add(BlockIDs.stallPart_Edge1B.GetBlock());
-                    list.add(BlockIDs.stallPart_Edge2B.GetBlock());
-
-                    entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
-                }
-                break;
-                case 4:
-                {
-                    LinkedList<Block> list = new LinkedList<>();
-                    list.add(BlockIDs.sittingFloorTile.GetBlock());
-                    list.add(BlockIDs.sittingStairTile.GetBlock());
-                    entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
-                }
-                break;
-            }
-
-
+            LinkedList<Block> list = ScrollBlockRegistry.get(theBlock.getScrollListID());
+            entityPlayer.inventory.setInventorySlotContents(slot, new ItemStack(shift(list, list.indexOf(block), incDmg), itemStack.stackSize));
         }
     }
 
