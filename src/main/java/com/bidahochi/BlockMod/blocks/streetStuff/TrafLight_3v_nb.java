@@ -1,10 +1,9 @@
-package com.bidahochi.BlockMod.blocks.props;
+package com.bidahochi.BlockMod.blocks.streetStuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.baseBlocks.BaseBlockSittable;
-import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -19,22 +18,25 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class Toilet extends BaseBlockSittable
-{
-    public Toilet(Material material) {
-        super(material);
-        setBlockName("toilet");
+public class TrafLight_3v_nb extends BlockContainer {
+    public TrafLight_3v_nb(Material p_i45394_1_) {
+        super(p_i45394_1_);
+        setBlockName("trafLight_3v_nb");
         setHardness(2F);
         setResistance(4.0F);
-        setHarvestLevel("pickaxe", 2);
-        setStepSound(soundTypeStone);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
-        setSeatPos(new Vec3f[]{new Vec3f(0,0.375,0)});
+        setHarvestLevel("pickaxe", 1);
+        setStepSound(soundTypeMetal);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileToilet();
+        return new TileTrafLight_3v_nb();
+    }
+
+    @Override
+    public TileEntity createTileEntity(World world, int meta) {
+        return createNewTileEntity(world, meta);
     }
 
     @Override
@@ -49,7 +51,20 @@ public class Toilet extends BaseBlockSittable
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        //this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        switch(((TileTrafLight_3v_nb)world.getTileEntity(x,y,z)).dir){
+            //each number is a face, when north 0 is left and 1 is right
+            //east face 0,
+            // bottom face 0,
+            // south face 0,
+            // west face 1,
+            // top face 1,
+            // north face 1
+            case 0:{this.setBlockBounds(0.25F, 0.5F, -0.50F, 0.75F, 1F, 0.25F); return;}//north
+            case 1:{this.setBlockBounds(0.75F, 0.5F, 0.25F, 1.5F, 1F, 0.75F); return;}//east
+            case 2:{this.setBlockBounds(0.25F, 0.5F, 0.75F, 0.75F, 1F, 1.5F); return;}//south
+            case 3:{this.setBlockBounds(-0.50F, 0.5F, 0.25F, 0.25F, 1F, 0.75F); return;}//west
+        }
     }
 
     @Override
@@ -80,7 +95,7 @@ public class Toilet extends BaseBlockSittable
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TileToilet(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileTrafLight_3v_nb(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -93,6 +108,6 @@ public class Toilet extends BaseBlockSittable
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":props/toilet");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/trafLight_3v_nb_black_icon");
     }
 }

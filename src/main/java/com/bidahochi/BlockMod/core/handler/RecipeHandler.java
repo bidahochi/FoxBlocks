@@ -984,6 +984,17 @@ public class RecipeHandler extends AbstractRecipeHandler{
         GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.glassAssortedPane.block, 16, 2), "GGG", "GGG", "   ", 'G', new ItemStack(BlockIDs.glassAssorted.block, 1, 2));
         GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.glassAssortedPane.block, 16, 3), "GGG", "GGG", "   ", 'G', new ItemStack(BlockIDs.glassAssorted.block, 1, 3));
 
+        //street stuff poles n signs n whatnot
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.pole.block, 2), " R ", " R ", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleDiag.block, 1), new ItemStack(BlockIDs.pole.block, 1));
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.poleHorizontal.block, 2), "   ", "RRR", "   ", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleHorizontalDiag.block, 1), new ItemStack(BlockIDs.poleHorizontal.block, 1));
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.poleTransition.block, 2), "RRR", " R ", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleTransitionDiag.block, 1), new ItemStack(BlockIDs.poleTransition.block, 1));
+        for (ItemStack dye : dyeRed) {
+            GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.sign_stop_pole.block, 1), " S ", "SDS", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1), 'S', new ItemStack(ItemIDs.ironSlice.item, 1), 'D', dye);
+        }
+
         new SimpleBlockIDGroupRegister(FoxBlocks.MODID).RegisterIFoxBlockIDRecipes(BlockIDs.values(), blockRegisterReturnCache.TempBlockCache);
 
         // Auto Register Vanilla Converted Slab And Stair Recipes

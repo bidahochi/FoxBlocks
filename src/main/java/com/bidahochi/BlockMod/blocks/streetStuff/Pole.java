@@ -26,7 +26,7 @@ public class Pole extends BlockContainer {
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
         setStepSound(soundTypeMetal);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
+        setCreativeTab(FoxBlocks.foxBlocksCreativeTabRoadRail);
     }
 
     @Override
@@ -102,6 +102,6 @@ public class Pole extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":pole_vertical");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/pole_vertical");
     }
 }
