@@ -57,7 +57,7 @@ import java.util.Map;
  *
  ****************************/
 
-public class RecipeHandler {
+public class RecipeHandler extends AbstractRecipeHandler{
 
     private static ArrayList<ItemStack> multiNameOreDict(String ... names){
         ArrayList<ItemStack> entries = new ArrayList<ItemStack>();
