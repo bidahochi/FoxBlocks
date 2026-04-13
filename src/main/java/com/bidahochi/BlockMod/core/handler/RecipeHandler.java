@@ -987,13 +987,20 @@ public class RecipeHandler extends AbstractRecipeHandler{
         //street stuff poles n signs n whatnot
         GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.pole.block, 2), " R ", " R ", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleDiag.block, 1), new ItemStack(BlockIDs.pole.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.pole.block, 1), new ItemStack(BlockIDs.poleDiag.block, 1));
         GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.poleHorizontal.block, 2), "   ", "RRR", "   ", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleHorizontalDiag.block, 1), new ItemStack(BlockIDs.poleHorizontal.block, 1));
-        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.poleTransition.block, 2), "RRR", " R ", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleHorizontal.block, 1), new ItemStack(BlockIDs.poleHorizontalDiag.block, 1));
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.poleTransition.block, 2), "RRR", "  R", "  R", 'R', new ItemStack(ItemIDs.ironRod.item, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleTransitionDiag.block, 1), new ItemStack(BlockIDs.poleTransition.block, 1));
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.poleTransition.block, 1), new ItemStack(BlockIDs.poleTransitionDiag.block, 1));
         for (ItemStack dye : dyeRed) {
             GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.sign_stop_pole.block, 1), " S ", "SDS", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1), 'S', new ItemStack(ItemIDs.ironSlice.item, 1), 'D', dye);
         }
+        for (ItemStack dye : dyeBlack) {
+            GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.trafLight_3v_nb.block, 2), " B ", "DBP", " B ", 'B', new ItemStack(ItemIDs.bulb.item, 1), 'P', new ItemStack(ItemIDs.ironSlice.item, 1), 'D', dye);
+        }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.trafLight_3v.block, 2), new ItemStack(BlockIDs.trafLight_3v_nb.block, 1), new ItemStack(BlockIDs.trafLight_3v_nb.block, 1));
 
         new SimpleBlockIDGroupRegister(FoxBlocks.MODID).RegisterIFoxBlockIDRecipes(BlockIDs.values(), blockRegisterReturnCache.TempBlockCache);
 
