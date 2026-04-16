@@ -368,11 +368,15 @@ public enum BlockIDs implements IFoxBlockIDs
     rpb_oys(false, null, "rpb_oys"),
     rpb_owd(false, null, "rpb_owd"), //offset yellow diagonal
     rpb_ows(false, null, "rpb_ows"),
-    rpb_cw(false, null, "rpb_cw"),
+    rpb_cw(false, null, "rpb_cw"),//center white single
+    rpb_cw2(false, null, "rpb_cw2"),//center white double
     //static
     srpb_cy(true, ScrollingItemBlock.class, "srpb_cy"),//center yellow single
     srpb_cy2(true, ScrollingItemBlock.class, "srpb_cy2"),//center yellow double
-    srpb_cw(true, ScrollingItemBlock.class, "srpb_cw"),//center yellow single
+    srpb_cysd(true, ScrollingItemBlock.class, "srpb_cysd"),//center yellow singledoubles
+    srpb_cw(true, ScrollingItemBlock.class, "srpb_cw"),//center white single
+    srpb_cw2(true, ScrollingItemBlock.class, "srpb_cw2"),//center white double
+    srpb_cwsd(true, ScrollingItemBlock.class, "srpb_cwsd"),//center white singledoubles
     srpb_whiteOffset(true, ScrollingItemBlock.class, "srpb_whiteOffset"),
     srpb_yellowOffset(true, ScrollingItemBlock.class, "srpb_yellowOffset"),
     srpb_dw1(true, ScrollingItemBlock.class, "srpb_dw1"),//details white 1

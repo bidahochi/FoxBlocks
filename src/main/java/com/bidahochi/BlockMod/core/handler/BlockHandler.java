@@ -34,13 +34,12 @@ import com.bidahochi.BlockMod.blocks.props.BlockContainer.SittingFloorTile;
 import com.bidahochi.BlockMod.blocks.props.BlockContainer.SittingStairTile;
 import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingFloorTile;
 import com.bidahochi.BlockMod.blocks.props.TileEntity.TileSittingStairTile;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBWhiteCenter;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.*;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBWhiteCenter2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.details.Scrolling.SRPBDetailsWhite1;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBYellowCenter2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBYellowCenter2;
-import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.Scrolling.SRPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.Scrolling.SRPBYellowOffset;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBWhiteOffsetInsideStraight;
@@ -1052,6 +1051,7 @@ public class BlockHandler
         BlockIDs.rpb_cy.block = new RPBYellowCenter(Material.rock);//centered yellow single
         BlockIDs.rpb_cy2.block = new RPBYellowCenter2(Material.rock);//centered yellow double
         BlockIDs.rpb_cw.block = new RPBWhiteCenter(Material.rock);//centered white single
+        BlockIDs.rpb_cw2.block = new RPBWhiteCenter2(Material.rock);//centered white double
         BlockIDs.rpb_oyd.block = new RPBYellowOffsetInsideDiagonal(Material.rock);
         BlockIDs.rpb_oys.block = new RPBYellowOffsetInsideStraight(Material.rock);
         BlockIDs.rpb_owd.block = new RPBWhiteOffsetInsideDiagonal(Material.rock);
@@ -1061,7 +1061,10 @@ public class BlockHandler
         BlockIDs.srpb_yellowOffset.block = new SRPBYellowOffset();
         BlockIDs.srpb_cy.block = new SRPBYellowCenter(Material.rock);//centered yellow single
         BlockIDs.srpb_cy2.block = new SRPBYellowCenter2(Material.rock);//centered yellow double
+        BlockIDs.srpb_cysd.block = new SRPBYellowSingleDoubles(Material.rock);//centered yellow singledoubles
         BlockIDs.srpb_cw.block = new SRPBWhiteCenter(Material.rock);//centered white single
+        BlockIDs.srpb_cw2.block = new SRPBWhiteCenter2(Material.rock);//centered white double
+        BlockIDs.srpb_cwsd.block = new SRPBWhiteSingleDoubles(Material.rock);//centered white singledoubles
         BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
 
         //xmas
