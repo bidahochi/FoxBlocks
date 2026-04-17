@@ -2603,7 +2603,7 @@ tile.srpb_cy2.2.name=3-Way Static Roadpaint (Centered, Double Yellow)
 tile.srpb_cy2.3.name=All-Way Static Roadpaint(Centered, Double Yellow)
 tile.srpb_cy2.4.name=Diagonal Static Roadpaint (Centered, Double Yellow)
 tile.srpb_cy2.5.name=Diagonal Turn (Right) Static Roadpaint (Centered, Double Yellow)
-tile.srpb_cy2.6.name=Diagonal Turn (Left) Static Roadpain (Centered, Double Yellow)
+tile.srpb_cy2.6.name=Diagonal Turn (Left) Static Roadpaint (Centered, Double Yellow)
 tile.srpb_cy2.7.name=Y Intersection Static Roadpaint (Centered, Double Yellow)
 tile.srpb_cy2.8.name=X Intersection Static Roadpaint (Centered, Double Yellow)
 
