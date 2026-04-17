@@ -2648,12 +2648,21 @@ tile.srpb_cysd.7.name=Diagonal Right Turn Center-Offset Roadpaint (Right Adjuste
 tile.srpb_dw1.0.name=Turn Arrow (Left) Static Roadpaint
 tile.srpb_dw1.1.name=Turn Arrow (Right) Static Roadpaint
 tile.srpb_dw1.2.name=Arrow (Straight) Static Roadpaint
-tile.srpb_dw1.3.name=ONLY Static Roadpaint
+tile.srpb_dw1.3.name="ONLY" Static Roadpaint
 tile.srpb_dw1.4.name=Merge Arrow Static Roadpaint
 tile.srpb_dw1.5.name=Stop Line Static Roadpaint
 tile.srpb_dw1.6.name=Stop Line (W/ Offset Line) Static Roadpaint
 tile.srpb_dw1.7.name=Handicap Parking Static Roadpaint
 tile.srpb_dw1.8.name=Handicap Parking (Blue) Static Roadpaint
+
+tile.srpb_dw2.0.name=Turn Arrow (Left Diagonal) Static Roadpaint
+tile.srpb_dw2.1.name=Turn Arrow (Right Diagonal) Static Roadpaint
+tile.srpb_dw2.2.name=Manhole Cover Static Roadpaint
+tile.srpb_dw2.3.name="BUS" Static Roadpaint
+tile.srpb_dw2.4.name="PED" Static Roadpaint
+tile.srpb_dw2.5.name="RR" Static Roadpaint
+tile.srpb_dw2.6.name="XING" Static Roadpaint
+tile.srpb_dw2.7.name=Railroad Crossing X (Half) Static Roadpaint
 
 tile.srpb_yellowOffset.0.name=Straight Static Roadpaint (Offset, Yellow)
 tile.srpb_yellowOffset.1.name=Outer Turn Static Roadpaint (Offset, Yellow)

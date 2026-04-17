@@ -40,6 +40,7 @@ import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.details.Scrolling
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBWhiteCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBYellowCenter;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.center.SmartPaints.RPBYellowCenter2;
+import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.details.Scrolling.SRPBDetailsWhite2;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.Scrolling.SRPBYellowOffset;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBWhiteOffsetInsideDiagonal;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.offset.SmartPaints.RPBWhiteOffsetInsideStraight;
@@ -1066,6 +1067,7 @@ public class BlockHandler
         BlockIDs.srpb_cw2.block = new SRPBWhiteCenter2(Material.rock);//centered white double
         BlockIDs.srpb_cwsd.block = new SRPBWhiteSingleDoubles(Material.rock);//centered white singledoubles
         BlockIDs.srpb_dw1.block = new SRPBDetailsWhite1(Material.rock);//details white 1
+        BlockIDs.srpb_dw2.block = new SRPBDetailsWhite2(Material.rock);//details white 2
 
         //xmas
         BlockIDs.xmasLights1_top_white.block = new XmasLights1_top_white(Material.circuits);

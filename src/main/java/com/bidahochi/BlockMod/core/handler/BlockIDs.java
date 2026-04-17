@@ -380,6 +380,7 @@ public enum BlockIDs implements IFoxBlockIDs
     srpb_whiteOffset(true, ScrollingItemBlock.class, "srpb_whiteOffset"),
     srpb_yellowOffset(true, ScrollingItemBlock.class, "srpb_yellowOffset"),
     srpb_dw1(true, ScrollingItemBlock.class, "srpb_dw1"),//details white 1
+    srpb_dw2(true, ScrollingItemBlock.class, "srpb_dw2"),//details white 2
 
     //xmas
     xmasLights1_top_white(false, null, "XmasLights1_top_white"),
