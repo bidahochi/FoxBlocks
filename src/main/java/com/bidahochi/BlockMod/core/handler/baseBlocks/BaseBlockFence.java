@@ -56,4 +56,8 @@ public class BaseBlockFence extends net.minecraft.block.BlockFence
         // This is being overwritten sense metadata does not work in the inventory for Fences
         return MinecraftFenceAbstractionLayer;
     }
+
+    public int damageDropped(int meta) {
+        return meta;
+    }
 }
