@@ -51,6 +51,9 @@ import org.lwjgl.opengl.GL11;
             {
                 GL11.glTranslatef(0, 0.5f, 0);
             }
+            else if(block.getUnlocalizedName().contains("tcRail")){
+                GL11.glTranslatef(0, 0.95f, 0);
+            }
             model.render(null, 0, 0, 0, 0, 0, 0.0625f);
             GL11.glPopMatrix();
         }
