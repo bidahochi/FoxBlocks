@@ -41,7 +41,20 @@ public abstract class BaseRoadPaintBlockContainer extends BlockContainer {
     }
 
     @Override
-    public TileEntity createNewTileEntity(World world, int meta) {
+    public boolean canPlaceBlockAt(World world, int x, int y, int z) {
+        Block blockBelow = world.getBlock(x, y - 1, z);
+
+        // Prevent stacking road paint blocks on top of road paint blocks.
+        if (blockBelow instanceof ScrollRoadPaintBlock || blockBelow instanceof BaseRoadPaintBlockContainer) {
+            return false;
+        }
+
+        return super.canPlaceBlockAt(world, x, y, z);
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World world, int meta)
+    {
         return new TileRPB();
     }
 
