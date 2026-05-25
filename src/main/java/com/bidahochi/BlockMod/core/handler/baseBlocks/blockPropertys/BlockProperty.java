@@ -45,6 +45,18 @@ public class BlockProperty implements IBlockProperty
 
     public boolean isFenceBlockAllowed = false;
 
+    private boolean isMetadataScrollPermitted = false;
+
+    public boolean isMetadataScrollPermitted()
+    {
+        return isMetadataScrollPermitted;
+    }
+
+    public void setMetadataScrollPermitted()
+    {
+        isMetadataScrollPermitted = true;
+    }
+
     public final Material TheMaterial;
     public final String BlockName;
     public final float BlockHardness;

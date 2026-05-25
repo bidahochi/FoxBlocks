@@ -70,12 +70,12 @@ public class OreDictHandler {
         OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 14));
         OreDictionary.registerOre("drywallFinished", new ItemStack(BlockIDs.dryWall.block, 15));
 
-        OreDictionary.registerOre("logWood", new ItemStack(BlockIDs.logs.block));
-        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.planks1.block));
-        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank.block));
-        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank2.block));
-        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank3.block));
-        OreDictionary.registerOre("plankWood", new ItemStack(BlockIDs.widePlank4.block));
+        registerAllMeta("logWood", BlockIDs.logs);
+        registerAllMeta("plankWood", BlockIDs.planks1);
+        registerAllMeta("plankWood", BlockIDs.widePlank);
+        registerAllMeta("plankWood", BlockIDs.widePlank2);
+        registerAllMeta("plankWood", BlockIDs.widePlank3);
+        registerAllMeta("plankWood", BlockIDs.widePlank4);
 
         OreDictionary.registerOre("oreHematite", new ItemStack(BlockIDs.hematite.block));
         OreDictionary.registerOre("oreTaconite", new ItemStack(BlockIDs.taconite.block));
@@ -86,6 +86,11 @@ public class OreDictHandler {
 
     }
 
+    /**
+     * Only should register if WILDCARE if all are of the same type.
+     * @param name
+     * @param blockID
+     */
     private static void registerAllMeta(String name, IFoxBlockIDs blockID)
     {
         OreDictionary.registerOre(name, new ItemStack(blockID.GetBlock(), 1, WILDCARD_VALUE));

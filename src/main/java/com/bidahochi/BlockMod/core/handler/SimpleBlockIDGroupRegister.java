@@ -2,12 +2,14 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.core.handler.baseBlocks.*;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.blockPropertys.BlockProperty;
+import com.bidahochi.BlockMod.core.register.ScrollBlockRegistry;
 import com.bidahochi.BlockMod.items.BaseItems.BaseItemBlock;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class SimpleBlockIDGroupRegister
 {
@@ -86,6 +88,12 @@ public class SimpleBlockIDGroupRegister
                         {
                             GameRegistry.registerBlock(blockProperty.getNewFenceBLock(), com.bidahochi.BlockMod.items.BaseItems.BaseItemFenceBlock.class, blockName);
                         }
+                    }
+
+
+                    if (blockProperty.isMetadataScrollPermitted())
+                    {
+                        ScrollBlockRegistry.register(block, "");
                     }
                 }
             }
