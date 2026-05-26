@@ -27,12 +27,10 @@ public class SimpleBlockIDGroupRegister
         {
             if (!block.hasItemBlock())
             {
-                System.out.println(block.GetBlockName());
                 GameRegistry.registerBlock(block.GetBlock(), block.GetBlockName());
             }
             else
             {
-                System.out.println(block.GetBlockName());
                 GameRegistry.registerBlock(block.GetBlock(), block.getItemBlockClass(), block.GetBlockName());
             }
 
