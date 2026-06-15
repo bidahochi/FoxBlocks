@@ -21,6 +21,8 @@ public enum ItemIDs {
     taconitePellets("taconitePellets", "taconitePellets", "taconitePellets"),
     quicklime("quicklime","quicklime_1","quicklime"),
     roadTar("roadTar", "roadTar", "roadTar"),
+    paintCompound("paintCompound", "roadTar", "paintCompound"),
+    roadPaintApplicator("roadPaintApplicator", "bolsterchisel", "roadPaintApplicator"),
     bulb("bulb", "bulb", "bulb"),
     bulbLong("bulbLong", "bulblong", "bulbLong"),
     bolsterChisel("bolsterChisel", "bolsterChisel", "bolsterChisel"),

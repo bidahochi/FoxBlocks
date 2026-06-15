@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer;
 
 import com.bidahochi.BlockMod.blocks.roadpaints.RoadDirections;
+import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintPlacement;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import net.minecraft.block.Block;
@@ -28,6 +29,7 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
                 ((RoadPaintBlockOffsetInsideStraight) temp).updateTile(world, (int) (x + offsets.xCoord), (int) (y + offsets.yCoord), (int) (z + offsets.zCoord), entity);
             }
         }
+        markPaintUpdates(world, x, y, z, blocks);
     }
 
     @Override
@@ -36,6 +38,9 @@ public class RoadPaintBlockOffsetInsideStraight extends BaseRoadPaintBlockContai
         for (int i = -1; i < 2; i++) { //x
             for (int j = -1; j < 2; j++) { //y
                 for (int k = -1; k < 2; k++) { //z
+                    if (RoadPaintPlacement.isStackingAllowed() && j != 0) {
+                        continue;
+                    }
                     if (i == 0 || k == 0) {
                         if (world.getBlock(x + i, y + j, z + k) instanceof RoadPaintBlockOffsetInsideStraight) {
                             blocks.add(new Vec3f(i, j, k));

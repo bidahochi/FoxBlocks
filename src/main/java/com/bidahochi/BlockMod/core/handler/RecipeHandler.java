@@ -95,6 +95,21 @@ public class RecipeHandler extends AbstractRecipeHandler{
         ArrayList<ItemStack> log = OreDictionary.getOres("logWood");
         ArrayList<ItemStack> plank = OreDictionary.getOres("plankWood");
 
+        GameRegistry.addShapedRecipe(new ItemStack(ItemIDs.roadPaintApplicator.item),
+                "SCS", "RBR", " R ",
+                'S', ItemIDs.ironSlice.item,
+                'C', ItemIDs.computerizedCircuit.item,
+                'R', ItemIDs.ironRod.item,
+                'B', Items.bucket);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.roadTar.item, 4),
+                Items.coal, Items.coal, Items.slime_ball);
+        for (ItemStack white : dyeWhite) {
+            for (ItemStack yellow : dyeYellow) {
+                GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.paintCompound.item),
+                        white, yellow, ItemIDs.enrichedClay.item);
+            }
+        }
+
         //Wallpapers and Drywalls
         for (ItemStack dyeblack : dyeBlack) {
             //GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.metalSiding.block, 1,0),  Blocks.iron_block, dyeblack); -keep this

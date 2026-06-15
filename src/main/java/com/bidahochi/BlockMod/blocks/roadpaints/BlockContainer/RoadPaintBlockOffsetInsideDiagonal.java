@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer;
 
 import com.bidahochi.BlockMod.blocks.roadpaints.RoadDirections;
+import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintPlacement;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import net.minecraft.block.material.Material;
@@ -20,6 +21,7 @@ public class RoadPaintBlockOffsetInsideDiagonal extends BaseRoadPaintBlockContai
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
         world.setTileEntity(x, y, z, new TileRPB(getDir(entity), color, "diagonal_extended", offset));
         updateTile(world, x, y, z, entity);
+        markPaintForUpdate(world, x, y, z);
     }
 
     @Override
@@ -28,6 +30,9 @@ public class RoadPaintBlockOffsetInsideDiagonal extends BaseRoadPaintBlockContai
         for (int i = -1; i < 2; i++) { //x
             for (int j = -1; j < 2; j++) { //y
                 for (int k = -1; k < 2; k++) { //z
+                    if (RoadPaintPlacement.isStackingAllowed() && j != 0) {
+                        continue;
+                    }
                     if (world.getBlock(x + i, y + j, z + k) instanceof RoadPaintBlockOffsetInsideDiagonal) {
                         blocks.add(new Vec3f(i, j, k));
                     }

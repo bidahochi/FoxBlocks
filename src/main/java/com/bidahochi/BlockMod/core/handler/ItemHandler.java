@@ -35,6 +35,8 @@ public class ItemHandler {
         ItemIDs.taconitePellets.item = new taconitePellets();
         ItemIDs.quicklime.item = new quicklime();
         ItemIDs.roadTar.item=new roadTar();
+        ItemIDs.paintCompound.item = new PaintCompound();
+        ItemIDs.roadPaintApplicator.item = new ItemRoadPaintApplicator();
         ItemIDs.bulb.item=new bulb();
         ItemIDs.bulbLong.item=new bulbLong();
         ItemIDs.bolsterChisel.item = new bolsterChisel();

@@ -3,6 +3,7 @@ package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer;
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.roadpaints.EnumRoadShapes;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
+import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintPlacement;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -58,7 +59,7 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer implements ISc
         Block blockBelow = world.getBlock(x, y - 1, z);
 
         // Prevent stacking road paint blocks on top of road paint blocks.
-        if (blockBelow instanceof ScrollRoadPaintBlock || blockBelow instanceof BaseRoadPaintBlockContainer) {
+        if (RoadPaintPlacement.isRoadPaint(blockBelow) && !RoadPaintPlacement.isStackingAllowed()) {
             return false;
         }
 
@@ -117,6 +118,9 @@ public abstract class ScrollRoadPaintBlock extends BlockContainer implements ISc
                 }
             }
             world.setTileEntity(x, y, z, new TileRPB(dir, color, shape, offset, stack));
+        }
+        if (!world.isRemote) {
+            world.markBlockForUpdate(x, y, z);
         }
     }
 

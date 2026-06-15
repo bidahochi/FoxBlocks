@@ -4,6 +4,8 @@ import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.network.IFoxBlocksPacket;
 import com.bidahochi.BlockMod.network.PacketRPBSelect;
 import com.bidahochi.BlockMod.network.PacketScrollingBlock;
+import com.bidahochi.BlockMod.network.PacketRoadPaintApplicatorRefill;
+import com.bidahochi.BlockMod.network.PacketRoadPaintApplicatorSettings;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.network.FMLNetworkEvent;
 import cpw.mods.fml.common.network.internal.FMLProxyPacket;
@@ -26,6 +28,8 @@ public class PacketHandler {
         packetCarrier = new ArrayList<Class>();
         packetCarrier.add(PacketRPBSelect.class);
         packetCarrier.add(PacketScrollingBlock.class);
+        packetCarrier.add(PacketRoadPaintApplicatorSettings.class);
+        packetCarrier.add(PacketRoadPaintApplicatorRefill.class);
     }
 
     @SubscribeEvent

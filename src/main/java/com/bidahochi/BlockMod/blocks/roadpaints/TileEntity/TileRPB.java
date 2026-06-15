@@ -18,34 +18,55 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.util.ForgeDirection;
 import org.lwjgl.opengl.GL11;
+
+import static net.minecraftforge.common.util.ForgeDirection.UP;
 
 public class TileRPB extends BaseTileEntity
 {
+    private boolean heightOverrideEnabled;
+    private int heightOverrideSixteenths;
 
     public final float evaluateYOffset()
     {
+        if (heightOverrideEnabled) {
+            return heightOverrideSixteenths / 16.0F;
+        }
 
         Block block = worldObj.getBlock(xCoord,yCoord-1, zCoord);
-        if((block instanceof BlockSlab && block.isNormalCube() == false)
+        if (isRoadCoverOrTrack(block))
+        {
+            return 0.93F;
+        }
+        else if((block instanceof BlockSlab && block.isSideSolid(worldObj, xCoord,yCoord-1, zCoord, UP) == false || block.isNormalCube() == false)
                 || (FoxBlocks.isForgeMultiPartLoaded && FBMultiPartHelper.BlockInstanceOfBlockMultipart(block) && FBMultiPartHelper.isBlockSolid(block, this) == false))
         {
             return 0.5F;
         }
-        else if (block instanceof RoadCover0
+
+        return 0;
+    }
+
+    private boolean isRoadCoverOrTrack(Block block) {
+        if (block instanceof RoadCover0
                 || block instanceof RoadCover1
                 || block instanceof RoadCover2
                 || block instanceof RoadCover3
                 || block instanceof RoadCover4
                 || block instanceof RoadCover5
                 || block instanceof RoadCover6
-                || block instanceof RoadCoverDynamic1X1 || block instanceof RoadCoverDynamic1X2 || block instanceof RoadCoverDynamic1X3
-                || block.getUnlocalizedName().contains("tcRail"))
-        {
-            return 0.93F;
+                || block instanceof RoadCoverDynamic1X1
+                || block instanceof RoadCoverDynamic1X2
+                || block instanceof RoadCoverDynamic1X3) {
+            return true;
         }
 
-        return 0;
+        String className = block.getClass().getSimpleName().toLowerCase();
+        String blockName = block.getUnlocalizedName().toLowerCase();
+        return className.contains("roadcover")
+                || blockName.contains("roadcover")
+                || blockName.contains("tcrail");
     }
 
     public String color;
@@ -81,6 +102,7 @@ public class TileRPB extends BaseTileEntity
         this.offset = offset;
         this.blockMetadata = stack.getItemDamage();
         getTextureAndModel(this);
+        this.markDirty();
     }
 
     public TileRPB(int dir, String color, String shape, String offset) {
@@ -108,6 +130,7 @@ public class TileRPB extends BaseTileEntity
         this.shape = shape;
         this.offset = offset;
         getTextureAndModel(this);
+        this.markDirty();
     }
 
     public TileRPB() {
@@ -140,6 +163,8 @@ public class TileRPB extends BaseTileEntity
         if (offset!= null) {
             tag.setString("offset", offset);
         }
+        tag.setBoolean("heightOverrideEnabled", heightOverrideEnabled);
+        tag.setInteger("heightOverrideSixteenths", heightOverrideSixteenths);
     }
 
     @Override
@@ -150,6 +175,8 @@ public class TileRPB extends BaseTileEntity
         color = tag.getString("color");
         shape = tag.getString("shape");
         offset = tag.getString("offset");
+        heightOverrideEnabled = tag.getBoolean("heightOverrideEnabled");
+        heightOverrideSixteenths = Math.max(0, Math.min(16, tag.getInteger("heightOverrideSixteenths")));
         getTextureAndModel(this);
         if(worldObj != null && worldObj.isRemote)
         {
@@ -159,6 +186,17 @@ public class TileRPB extends BaseTileEntity
 
     public int getDir() {
         return dir;
+    }
+
+    public void setDirection(int direction) {
+        this.dir = direction & 3;
+        markDirty();
+    }
+
+    public void setHeightOverride(int sixteenths) {
+        heightOverrideEnabled = sixteenths >= 0;
+        heightOverrideSixteenths = Math.max(0, Math.min(16, sixteenths));
+        markDirty();
     }
 
     public void getTextureAndModel(TileEntity tile)

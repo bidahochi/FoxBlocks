@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
+import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintPlacement;
 import com.bidahochi.BlockMod.render.tmt.Vec3f;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -45,7 +46,7 @@ public abstract class BaseRoadPaintBlockContainer extends BlockContainer {
         Block blockBelow = world.getBlock(x, y - 1, z);
 
         // Prevent stacking road paint blocks on top of road paint blocks.
-        if (blockBelow instanceof ScrollRoadPaintBlock || blockBelow instanceof BaseRoadPaintBlockContainer) {
+        if (RoadPaintPlacement.isRoadPaint(blockBelow) && !RoadPaintPlacement.isStackingAllowed()) {
             return false;
         }
 
@@ -96,6 +97,27 @@ public abstract class BaseRoadPaintBlockContainer extends BlockContainer {
             }
         }
         updateTile(world, x, y, z, entity);
+        markPaintUpdates(world, x, y, z, blocks);
+    }
+
+    protected final void markPaintUpdates(World world, int x, int y, int z, LinkedList<Vec3f> blocks) {
+        if (world.isRemote) {
+            return;
+        }
+
+        world.markBlockForUpdate(x, y, z);
+        for (Vec3f offset : blocks) {
+            world.markBlockForUpdate(
+                    (int) (x + offset.xCoord),
+                    (int) (y + offset.yCoord),
+                    (int) (z + offset.zCoord));
+        }
+    }
+
+    protected final void markPaintForUpdate(World world, int x, int y, int z) {
+        if (!world.isRemote) {
+            world.markBlockForUpdate(x, y, z);
+        }
     }
 
     public LinkedList<Vec3f> getSurrounding(World world, int x, int y, int z) {
@@ -103,6 +125,9 @@ public abstract class BaseRoadPaintBlockContainer extends BlockContainer {
         for (int i = -1; i < 2; i++) { //x
             for (int j = -1; j < 2; j++) { //y
                 for (int k = -1; k < 2; k++) { //z
+                    if (RoadPaintPlacement.isStackingAllowed() && j != 0) {
+                        continue;
+                    }
                     if (world.getBlock(x + i, y + j, z + k) instanceof BaseRoadPaintBlockContainer) {
                         blocks.add(new Vec3f(i, j, k));
                     }

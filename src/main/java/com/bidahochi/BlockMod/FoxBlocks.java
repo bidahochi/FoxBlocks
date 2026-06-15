@@ -6,6 +6,7 @@ import com.bidahochi.BlockMod.core.register.ScrollBlockRegistry;
 import com.bidahochi.BlockMod.entities.EntityChair;
 import com.bidahochi.BlockMod.init.FoxBlocksCreativeTab;
 import com.bidahochi.BlockMod.plugins.fmp.ForgeMultiPart;
+import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintCatalog;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -120,6 +121,7 @@ public class FoxBlocks
         blockRegisterReturnCache = blockHandler.initBlockRegister(PreEvent);
         FluidHandler.initFluidRegister(PreEvent);
         ItemHandler.initItemRegister();
+        RoadPaintCatalog.initialize();
         OreDictHandler.registerOreDict();
     }
 
