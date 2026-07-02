@@ -37,7 +37,7 @@ public class ItemBlockScrolling extends ItemBlock {
             case 3:
                 return "Bathroom Stall Parts";
             case 4:
-                return "Between Elevation Settings";
+                return "Elevation Settings";
             case 5://poles
                 return "Pole Variations";
             case 6://street signs
