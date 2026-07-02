@@ -204,7 +204,9 @@ public class FoxBlocks
 
         ScrollBlockRegistry.register(6, ScrollBlockRegistry.of(
                 BlockIDs.sign_stop_pole.GetBlock(),
-                BlockIDs.sign_stop2_pole.GetBlock()
+                BlockIDs.sign_stop2_pole.GetBlock(),
+                BlockIDs.sign_stop_allway.GetBlock(),
+                BlockIDs.sign_stop2_allway.GetBlock()
         ));
 
         ScrollBlockRegistry.register(7, ScrollBlockRegistry.of(

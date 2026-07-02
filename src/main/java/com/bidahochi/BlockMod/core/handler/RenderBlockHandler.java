@@ -51,6 +51,8 @@ public class RenderBlockHandler {
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop_pole.class, new RenderSign_stop_pole());
         ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop2_pole.class, new RenderSign_stop2_pole());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop_allway.class, new RenderSign_stop_allway());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop2_allway.class, new RenderSign_stop2_allway());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileTrafLight_3v_nb.class, new RenderTrafLight_3v_nb());
         ClientRegistry.bindTileEntitySpecialRenderer(TileTrafLight_3v_nb_diag.class, new RenderTrafLight_3v_nb_diag());

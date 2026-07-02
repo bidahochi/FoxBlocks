@@ -2479,6 +2479,8 @@ tile.soda_machine.name=Soda Machine
 <!-- ## STREET STUFF ## -->
 tile.sign_stop_pole.name=Stop Sign
 tile.sign_stop2_pole.name=Diagonal Stop Sign
+tile.sign_stop_pole_allway.name=Stop Sign (All Way)
+tile.sign_stop2_pole_allway.name=Diagonal Stop Sign (All Way)
 
 tile.trafLight_3v_nb.name=Traffic Light (3 Lights Vertical, no Border, Black)
 tile.trafLight_3v_nb_diag.name=Diagonal Traffic Light (3 Lights Vertical, no Border, Black)

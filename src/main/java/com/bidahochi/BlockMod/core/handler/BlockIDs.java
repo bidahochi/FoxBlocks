@@ -255,6 +255,8 @@ public enum BlockIDs implements IFoxBlockIDs
     //street stuff
     sign_stop_pole(ItemBlockScrolling.class, "sign_stop_pole"),
     sign_stop2_pole(ItemBlockScrolling.class, "sign_stop2_pole"),
+    sign_stop_allway(ItemBlockScrolling.class, "sign_stop_allway"),
+    sign_stop2_allway(ItemBlockScrolling.class, "sign_stop2_allway"),
 
     trafLight_3v_nb(ItemBlockScrolling.class, "trafLight_3v_nb"),
     trafLight_3v_nb_diag(ItemBlockScrolling.class, "trafLight_3v_nb_diag"),
