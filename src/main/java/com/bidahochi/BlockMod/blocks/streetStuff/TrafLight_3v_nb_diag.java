@@ -19,10 +19,10 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class PoleHorizontalDiag extends BlockContainer implements IFoxBlocksScrollingBlock {
-    public PoleHorizontalDiag(Material p_i45394_1_) {
+public class TrafLight_3v_nb_diag extends BlockContainer implements IFoxBlocksScrollingBlock {
+    public TrafLight_3v_nb_diag(Material p_i45394_1_) {
         super(p_i45394_1_);
-        setBlockName("poleHorizontalDiag");
+        setBlockName("trafLight_3v_nb_diag");
         setHardness(2F);
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 1);
@@ -32,7 +32,7 @@ public class PoleHorizontalDiag extends BlockContainer implements IFoxBlocksScro
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TilePoleHorizontalDiag();
+        return new TileTrafLight_3v_nb_diag();
     }
 
     @Override
@@ -52,14 +52,20 @@ public class PoleHorizontalDiag extends BlockContainer implements IFoxBlocksScro
 
     @Override //actual collision stuff you change
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        this.setBlockBounds(0.0F, 0.75F, 0F, 1F, 1F, 1F);
-        /*switch(((TilePoleHorizontalDiag)world.getTileEntity(x,y,z)).dir){
+        //this.setBlockBounds(0.0F, 0.0F, 0.0F, 1F, 1F, 1F);
+        switch(((TileTrafLight_3v_nb_diag)world.getTileEntity(x,y,z)).dir){
             //each number is a face, when north 0 is left and 1 is right
-            case 0:{this.setBlockBounds(0.4F, 0.75F, 0F, 0.6F, 1F, 1F); return;}//north
-            case 1:{this.setBlockBounds(0F, 0.75F, 0.4F, 1F, 1F, 0.6F); return;}//east
-            case 2:{this.setBlockBounds(0.4F, 0.75F, 0F, 0.6F, 1F, 1F); return;}//south
-            case 3:{this.setBlockBounds(0F, 0.75F, 0.4F, 1F, 1F, 0.6F); return;}//west
-        }*/
+            //east face 0,
+            // bottom face 0,
+            // south face 0,
+            // west face 1,
+            // top face 1,
+            // north face 1
+            case 0:{this.setBlockBounds(0.25F, 0.5F, -0.50F, 0.75F, 1F, 0.25F); return;}//north
+            case 1:{this.setBlockBounds(0.75F, 0.5F, 0.25F, 1.5F, 1F, 0.75F); return;}//east
+            case 2:{this.setBlockBounds(0.25F, 0.5F, 0.75F, 0.75F, 1F, 1.5F); return;}//south
+            case 3:{this.setBlockBounds(-0.50F, 0.5F, 0.25F, 0.25F, 1F, 0.75F); return;}//west
+        }
     }
 
     @Override
@@ -90,7 +96,7 @@ public class PoleHorizontalDiag extends BlockContainer implements IFoxBlocksScro
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack){
         super.onBlockPlacedBy(world, x, y, z, entity, stack);
         //force tile spawn manually and override any existing tile at the space
-        world.setTileEntity(x,y,z, new TilePoleHorizontalDiag(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
+        world.setTileEntity(x,y,z, new TileTrafLight_3v_nb_diag(MathHelper.floor_double((entity.rotationYaw / 90.0F) + 2.5D) & 3));
     }
 
     private IIcon texture;
@@ -103,12 +109,12 @@ public class PoleHorizontalDiag extends BlockContainer implements IFoxBlocksScro
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/pole_horizontal_d");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/trafLight_3v_nb_black_icon_diag");
     }
 
     @Override
     public int getScrollListID()
     {
-        return 5;
+        return 7;
     }
 }

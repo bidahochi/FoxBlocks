@@ -927,6 +927,8 @@ public class BlockHandler
         BlockIDs.waysideWarningSignYellow.block = new WaysideWarningSignYellow(Material.iron);
         BlockIDs.waysideWarningSignYellowRed.block = new WaysideWarningSignYellowRed(Material.iron);
 
+        BlockIDs.clearancecone1.block = new ClearanceCone1(Material.clay);
+
         BlockIDs.coil_centered.block = new Coil_centered(Material.iron);
         BlockIDs.coil_pair.block = new Coil_pair(Material.iron);
 
@@ -939,9 +941,12 @@ public class BlockHandler
 
         //street stuff
         BlockIDs.sign_stop_pole.block = new Sign_stop_pole(Material.iron);
+        BlockIDs.sign_stop2_pole.block = new Sign_stop2_pole(Material.iron);
 
         BlockIDs.trafLight_3v_nb.block = new TrafLight_3v_nb(Material.iron);
+        BlockIDs.trafLight_3v_nb_diag.block = new TrafLight_3v_nb_diag(Material.iron);
         BlockIDs.trafLight_3v.block = new TrafLight_3v(Material.iron);
+        BlockIDs.trafLight_3v_diag.block = new TrafLight_3v_diag(Material.iron);
 
         BlockIDs.pole.block = new Pole(Material.iron);
         BlockIDs.poleDiag.block = new PoleDiag(Material.iron);
@@ -1088,6 +1093,8 @@ public class BlockHandler
         GameRegistry.registerTileEntity(TileWaysideWarningSignYellow.class, "waysideWarningSignYellow.tile");
         GameRegistry.registerTileEntity(TileWaysideWarningSignYellowRed.class, "waysideWarningSignYellowRed.tile");
 
+        GameRegistry.registerTileEntity(TileClearanceCone1.class, "clearancecone1.tile");
+
         GameRegistry.registerTileEntity(TileCoil_centered.class, "coil_centered.tile");
         GameRegistry.registerTileEntity(TileCoil_pair.class, "coil_pair.tile");
 
@@ -1100,9 +1107,12 @@ public class BlockHandler
 
         //street stuff
         GameRegistry.registerTileEntity(TileSign_stop_pole.class, "sign_stop_pole");
+        GameRegistry.registerTileEntity(TileSign_stop2_pole.class, "sign_stop2_pole");
 
         GameRegistry.registerTileEntity(TileTrafLight_3v_nb.class, "traflight_3v_nb");
+        GameRegistry.registerTileEntity(TileTrafLight_3v_nb_diag.class, "traflight_3v_nb_diag");
         GameRegistry.registerTileEntity(TileTrafLight_3v.class, "traflight_3v");
+        GameRegistry.registerTileEntity(TileTrafLight_3v_diag.class, "traflight_3v_diag");
 
         GameRegistry.registerTileEntity(TilePole.class, "pole");
         GameRegistry.registerTileEntity(TilePoleDiag.class, "poleDiag");

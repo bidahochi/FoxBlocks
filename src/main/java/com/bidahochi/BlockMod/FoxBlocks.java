@@ -192,6 +192,27 @@ public class FoxBlocks
                 BlockIDs.sittingFloorTile.GetBlock(),
                 BlockIDs.sittingStairTile.GetBlock()
         ));
+
+        ScrollBlockRegistry.register(5, ScrollBlockRegistry.of(
+                BlockIDs.pole.GetBlock(),
+                BlockIDs.poleDiag.GetBlock(),
+                BlockIDs.poleHorizontal.GetBlock(),
+                BlockIDs.poleHorizontalDiag.GetBlock(),
+                BlockIDs.poleTransition.GetBlock(),
+                BlockIDs.poleTransitionDiag.GetBlock()
+        ));
+
+        ScrollBlockRegistry.register(6, ScrollBlockRegistry.of(
+                BlockIDs.sign_stop_pole.GetBlock(),
+                BlockIDs.sign_stop2_pole.GetBlock()
+        ));
+
+        ScrollBlockRegistry.register(7, ScrollBlockRegistry.of(
+                BlockIDs.trafLight_3v.GetBlock(),
+                BlockIDs.trafLight_3v_diag.GetBlock(),
+                BlockIDs.trafLight_3v_nb.GetBlock(),
+                BlockIDs.trafLight_3v_nb_diag.GetBlock()
+        ));
     }
 
     @EventHandler

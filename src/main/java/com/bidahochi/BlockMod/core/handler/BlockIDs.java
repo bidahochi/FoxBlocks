@@ -240,6 +240,8 @@ public enum BlockIDs implements IFoxBlockIDs
     waysideWarningSignYellow(false, null, "waysideWarningSignYellow"),
     waysideWarningSignYellowRed(false, null, "waysideWarningSignYellowRed"),
 
+    clearancecone1(false, null, "clearancecone1"),
+
     coil_centered(false, null, "Coil_centered"),
     coil_pair(false,null,"coil_pair"),
 
@@ -251,17 +253,20 @@ public enum BlockIDs implements IFoxBlockIDs
     soda_machine(false, null, "soda_machine"),
 
     //street stuff
-    sign_stop_pole(false, null, "sign_stop_pole"),
+    sign_stop_pole(ItemBlockScrolling.class, "sign_stop_pole"),
+    sign_stop2_pole(ItemBlockScrolling.class, "sign_stop2_pole"),
 
-    trafLight_3v_nb(false, null, "trafLight_3v_nb"),
-    trafLight_3v(false, null, "trafLight_3v"),
+    trafLight_3v_nb(ItemBlockScrolling.class, "trafLight_3v_nb"),
+    trafLight_3v_nb_diag(ItemBlockScrolling.class, "trafLight_3v_nb_diag"),
+    trafLight_3v(ItemBlockScrolling.class, "trafLight_3v"),
+    trafLight_3v_diag(ItemBlockScrolling.class, "trafLight_3v_diag"),
 
-    pole(false, null, "pole"),
-    poleDiag(false, null, "poleDiag"),
-    poleTransition(false, null, "poleTransition"),
-    poleTransitionDiag(false, null, "poleTransitionDiag"),
-    poleHorizontal(false, null, "poleHorizontal"),
-    poleHorizontalDiag(false, null, "poleHorizontalDiag"),
+    pole(ItemBlockScrolling.class, "pole"),
+    poleDiag(ItemBlockScrolling.class, "poleDiag"),
+    poleTransition(ItemBlockScrolling.class, "poleTransition"),
+    poleTransitionDiag(ItemBlockScrolling.class, "poleTransitionDiag"),
+    poleHorizontal(ItemBlockScrolling.class, "poleHorizontal"),
+    poleHorizontalDiag(ItemBlockScrolling.class, "poleHorizontalDiag"),
 
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),

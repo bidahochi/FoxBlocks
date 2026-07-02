@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.streetStuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
@@ -18,7 +19,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class TrafLight_3v extends BlockContainer {
+public class TrafLight_3v extends BlockContainer implements IFoxBlocksScrollingBlock {
     public TrafLight_3v(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("trafLight_3v");
@@ -109,5 +110,11 @@ public class TrafLight_3v extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/trafLight_3v_black_icon");
+    }
+
+    @Override
+    public int getScrollListID()
+    {
+        return 7;
     }
 }

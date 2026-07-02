@@ -38,6 +38,12 @@ public class ItemBlockScrolling extends ItemBlock {
                 return "Bathroom Stall Parts";
             case 4:
                 return "Between Elevation Settings";
+            case 5://poles
+                return "Pole Variations";
+            case 6://street signs
+                return "Street Sign Variations";
+            case 7://traf lights
+                return "Traffic Light Variations";
             default:
                 return "Blocks";
         }

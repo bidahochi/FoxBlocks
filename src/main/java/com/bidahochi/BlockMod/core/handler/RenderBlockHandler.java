@@ -38,6 +38,8 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignYellow.class, new RenderWaysideWarningSignYellow());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWaysideWarningSignYellowRed.class, new RenderWaysideWarningSignYellowRed());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileClearanceCone1.class, new RenderClearanceCone1());
+
         ClientRegistry.bindTileEntitySpecialRenderer(TileCoil_centered.class, new RenderCoil_centered());
         ClientRegistry.bindTileEntitySpecialRenderer(TileCoil_pair.class, new RenderCoil_pair());
 
@@ -48,9 +50,12 @@ public class RenderBlockHandler {
 
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop_pole.class, new RenderSign_stop_pole());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop2_pole.class, new RenderSign_stop2_pole());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileTrafLight_3v_nb.class, new RenderTrafLight_3v_nb());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileTrafLight_3v_nb_diag.class, new RenderTrafLight_3v_nb_diag());
         ClientRegistry.bindTileEntitySpecialRenderer(TileTrafLight_3v.class, new RenderTrafLight_3v());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileTrafLight_3v_diag.class, new RenderTrafLight_3v_diag());
 
         ClientRegistry.bindTileEntitySpecialRenderer(TilePole.class, new RenderPole());
         ClientRegistry.bindTileEntitySpecialRenderer(TilePoleDiag.class, new RenderPoleDiag());

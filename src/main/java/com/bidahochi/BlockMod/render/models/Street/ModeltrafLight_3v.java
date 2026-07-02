@@ -34,9 +34,9 @@ public class ModeltrafLight_3v extends ModelConverter //Same as Filename
 	private void initbodyModel_1()
 	{
 		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 1
-		bodyModel[1] = new ModelRendererTurbo(this, 15, -1, textureX, textureY); // Box 2 RED
-		bodyModel[2] = new ModelRendererTurbo(this, 15, 2, textureX, textureY); // Box 3 YELLOW
-		bodyModel[3] = new ModelRendererTurbo(this, 15, 5, textureX, textureY); // Box 4 GREEN
+		bodyModel[1] = new ModelRendererTurbo(this, 15, -1, textureX, textureY, "lamp"); // Box 2 RED
+		bodyModel[2] = new ModelRendererTurbo(this, 15, 2, textureX, textureY, "lamp"); // Box 3 YELLOW
+		bodyModel[3] = new ModelRendererTurbo(this, 15, 5, textureX, textureY, "lamp"); // Box 4 GREEN
 		bodyModel[4] = new ModelRendererTurbo(this, 10, 3, textureX, textureY); // Box 20
 		bodyModel[5] = new ModelRendererTurbo(this, 20, 1, textureX, textureY, "cull"); // Box 21 CULL
 		bodyModel[6] = new ModelRendererTurbo(this, 20, 1, textureX, textureY, "cull"); // Box 22 CULL

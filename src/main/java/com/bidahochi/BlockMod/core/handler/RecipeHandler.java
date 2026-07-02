@@ -693,6 +693,11 @@ public class RecipeHandler extends AbstractRecipeHandler{
             }
         }
 
+        //clearance cone
+        for (ItemStack dye: dyeOrange) {
+            GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.clearancecone1.block, 2), " D ", " R ", " P ", 'D', dye, 'R', new ItemStack(ItemIDs.ironRod.item), 'P', new ItemStack(ItemIDs.ironSlice.item));
+        }
+
         //toilet & sink
         for (ItemStack dye: dyeWhite) {
             GameRegistry.addRecipe(new ItemStack(BlockIDs.toilet.block, 1), "P D", "PWP", "MP ", 'P', ItemIDs.ceramic.item, 'W', Items.water_bucket, 'M', ItemIDs.enrichedClay.item, 'D', dye);
@@ -1012,10 +1017,14 @@ public class RecipeHandler extends AbstractRecipeHandler{
         for (ItemStack dye : dyeRed) {
             GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.sign_stop_pole.block, 1), " S ", "SDS", " R ", 'R', new ItemStack(ItemIDs.ironRod.item, 1), 'S', new ItemStack(ItemIDs.ironSlice.item, 1), 'D', dye);
         }
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.sign_stop2_pole.block, 1), new ItemStack(BlockIDs.sign_stop_pole.block));//stopsign conversion
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.sign_stop_pole.block, 1), new ItemStack(BlockIDs.sign_stop2_pole.block));//stopsign conversion
         for (ItemStack dye : dyeBlack) {
             GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.trafLight_3v_nb.block, 2), " B ", "DBP", " B ", 'B', new ItemStack(ItemIDs.bulb.item, 1), 'P', new ItemStack(ItemIDs.ironSlice.item, 1), 'D', dye);
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.trafLight_3v.block, 2), new ItemStack(BlockIDs.trafLight_3v_nb.block, 1), new ItemStack(BlockIDs.trafLight_3v_nb.block, 1));
+
+
 
         new SimpleBlockIDGroupRegister(FoxBlocks.MODID).RegisterIFoxBlockIDRecipes(BlockIDs.values(), blockRegisterReturnCache.TempBlockCache);
 

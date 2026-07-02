@@ -2464,6 +2464,8 @@ tile.waysideWarningSignRed.name=Wayside Warning Sign (Red)
 tile.waysideWarningSignYellow.name=Wayside Warning Sign (Yellow)
 tile.waysideWarningSignYellowRed.name=Wayside Warning Sign (Yellow over Red)
 
+tile.clearancecone1.name=RR Clearance Cone (Style 1)
+
 tile.Coil_centered.name=Steel Sheet Coil (Singular)
 tile.Coil_pair.name=Steel Sheet Coil (Pair)
 
@@ -2475,10 +2477,13 @@ tile.wall_sink.name=Wall Mounted Sink (Dual Handles)
 tile.soda_machine.name=Soda Machine
 
 <!-- ## STREET STUFF ## -->
-tile.sign_stop_pole.name=Stop Sign (Auto Aligned)
+tile.sign_stop_pole.name=Stop Sign
+tile.sign_stop2_pole.name=Diagonal Stop Sign
 
 tile.trafLight_3v_nb.name=Traffic Light (3 Lights Vertical, no Border, Black)
+tile.trafLight_3v_nb_diag.name=Diagonal Traffic Light (3 Lights Vertical, no Border, Black)
 tile.trafLight_3v.name=Traffic Light (3 Lights Vertical, Border, Black)
+tile.trafLight_3v_diag.name=Diagonal Traffic Light (3 Lights Vertical, Border, Black)
 
 tile.pole.name=Pole (Vertical)
 tile.poleDiag.name=Diagonal Pole (Vertical)
@@ -2705,6 +2710,7 @@ item.foxblocks:taconitePellets.name=Taconite Pellets
 item.foxblocks:quicklime.name=Quicklime
 item.foxblocks:roadTar.name=Road-Tar
 item.foxblocks:paintCompound.name=Paint Compound
+
 item.foxblocks:roadPaintApplicator.name=Roadpaint Applicator
 message.roadPaintApplicator.empty=The roadpaint applicator is empty.
 gui.foxblocks.roadPaintApplicator.title=Roadpaint Applicator
@@ -2734,6 +2740,7 @@ gui.foxblocks.roadPaintApplicator.loadCompound=Load Paint Compound (+256)
 gui.foxblocks.roadPaintApplicator.done=Done
 gui.foxblocks.roadPaintApplicator.compoundAvailable=Paint Compound available: %d
 gui.foxblocks.roadPaintApplicator.hud.selected=Selected Paint: %s
+
 item.foxblocks:bulb.name=Lightbulb
 item.foxblocks:bulbLong.name=Tube Lightbulb
 item.foxblocks:bolsterChisel.name=Bolster Chisel

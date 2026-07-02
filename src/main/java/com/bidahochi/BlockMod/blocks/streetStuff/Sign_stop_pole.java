@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.streetStuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
@@ -18,7 +19,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class Sign_stop_pole extends BlockContainer {
+public class Sign_stop_pole extends BlockContainer implements IFoxBlocksScrollingBlock {
     public Sign_stop_pole(Material p_i45394_1_) {
         super(p_i45394_1_);
         setBlockName("sign_stop_pole");
@@ -109,5 +110,11 @@ public class Sign_stop_pole extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         texture = iconRegister.registerIcon(FoxBlocks.MODID + ":streetstuff/sign_stop_icon");
+    }
+
+    @Override
+    public int getScrollListID()
+    {
+        return 6;
     }
 }
