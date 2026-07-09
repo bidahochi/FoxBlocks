@@ -33,11 +33,11 @@ public class soapStoneMagmatic extends Block {
 
     @Override
     public void harvestBlock(World world, EntityPlayer player, int x, int y, int z, int meta) {
-        boolean silkTouch = canSilkHarvest(world, player, x, y, z, meta) && EnchantmentHelper.getSilkTouchModifier(player);
+        boolean silkTouchPickaxe = isHeldItemPickaxe(player) && canSilkHarvest(world, player, x, y, z, meta) && EnchantmentHelper.getSilkTouchModifier(player);
 
         super.harvestBlock(world, player, x, y, z, meta);
 
-        if (!world.isRemote && !silkTouch && isHeldItemPickaxe(player)) {
+        if (!world.isRemote && !silkTouchPickaxe) {
             world.setBlock(x, y, z, Blocks.flowing_lava, 0, 3);
         }
     }
