@@ -2474,6 +2474,8 @@ tile.sittingstairtile.name=Seat Stair Sitting Tile
 tile.sittingfloortile.name=Seat Floor Sitting Tile
 tile.wall_sink.name=Wall Mounted Sink (Dual Handles)
 
+tile.gagglecam.name=Gaggle Safety Inc. Flex LPR Camera
+
 tile.soda_machine.name=Soda Machine
 
 <!-- ## STREET STUFF ## -->

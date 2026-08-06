@@ -250,6 +250,8 @@ public enum BlockIDs implements IFoxBlockIDs
     sittingFloorTile(true, SittingFloorTileBlock.class, "sittingfloortile"),
     wall_sink(false, null, "wall_sink"),
 
+    gagglecam(false, null, "GaggleCam"),
+
     soda_machine(false, null, "soda_machine"),
 
     //street stuff

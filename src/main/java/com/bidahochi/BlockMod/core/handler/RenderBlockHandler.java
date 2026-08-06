@@ -46,6 +46,8 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileToilet.class, new RenderToilet());
         ClientRegistry.bindTileEntitySpecialRenderer(TileWall_sink.class, new RenderWall_sink());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileGaggleCam.class, new RenderGaggleCam());
+
         ClientRegistry.bindTileEntitySpecialRenderer(TileSoda_machine.class, new RenderSoda_machine());
 
 
