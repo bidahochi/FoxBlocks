@@ -35,4 +35,10 @@ public class bolsterChisel extends Item
         par3List.add("\u00a77" + EnumChatFormatting.GRAY + "Used to Cut FoxBlocks Blocks");
         par3List.add("\u00a77" + EnumChatFormatting.GRAY + "into Slabs, Stairs, & Walls");
     }
+
+    @SideOnly(Side.CLIENT)
+    public boolean isFull3D()
+    {
+        return true;
+    }
 }

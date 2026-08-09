@@ -5,6 +5,8 @@ import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintCatalog;
 import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintPlacement;
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.ScrollRoadPaintBlock;
 import com.bidahochi.BlockMod.blocks.roadpaints.TileEntity.TileRPB;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -34,7 +36,7 @@ public class ItemRoadPaintApplicator extends Item {
 
     public ItemRoadPaintApplicator() {
         setMaxStackSize(1);
-        setTextureName(FoxBlocks.MODID + ":bolsterchisel");
+        setTextureName(FoxBlocks.MODID + ":roadpaintapplicator");
     }
 
     private static NBTTagCompound getTag(ItemStack stack) {
@@ -266,5 +268,11 @@ public class ItemRoadPaintApplicator extends Item {
         lines.add("Surface Height: " + getHeightOverrideName(heightOverride));
         lines.add("Mode: " + (isLayered(stack) ? "Layered" : "Protected"));
         lines.add("Right-click air to configure");
+    }
+
+    @SideOnly(Side.CLIENT)
+    public boolean isFull3D()
+    {
+        return true;
     }
 }
