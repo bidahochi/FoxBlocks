@@ -272,6 +272,15 @@ public enum BlockIDs implements IFoxBlockIDs
     poleHorizontal(ItemBlockScrolling.class, "poleHorizontal"),
     poleHorizontalDiag(ItemBlockScrolling.class, "poleHorizontalDiag"),
 
+    hwyBarrier(ItemBlockScrolling.class, "hwyBarrier"),
+    hwyBarrier2(ItemBlockScrolling.class, "hwyBarrier2"),
+    hwyBarrierDiag(ItemBlockScrolling.class, "hwyBarrierDiag"),
+    hwyBarrier2Diag(ItemBlockScrolling.class, "hwyBarrier2Diag"),
+    hwyBarrierTransL(ItemBlockScrolling.class, "hwyBarrierTransL"),
+    hwyBarrierTransR(ItemBlockScrolling.class, "hwyBarrierTransR"),
+    hwyBarrierTransL2(ItemBlockScrolling.class, "hwyBarrierTransL2"),
+    hwyBarrierTransR2(ItemBlockScrolling.class, "hwyBarrierTransR2"),
+
     //lighting
     neonCageLightRoof(false, null, "neonCageLightRoof"),
     neonCageLightWallV(false, null, "neonCageLightWallV"),

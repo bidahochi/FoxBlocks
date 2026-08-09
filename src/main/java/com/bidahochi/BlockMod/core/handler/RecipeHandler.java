@@ -1024,6 +1024,8 @@ public class RecipeHandler extends AbstractRecipeHandler{
         }
         GameRegistry.addShapelessRecipe(new ItemStack(BlockIDs.trafLight_3v.block, 2), new ItemStack(BlockIDs.trafLight_3v_nb.block, 1), new ItemStack(BlockIDs.trafLight_3v_nb.block, 1));
 
+        //hwy barrier default, all other blocks accessible from scroll grouping
+        GameRegistry.addShapedRecipe(new ItemStack(BlockIDs.hwyBarrier.block, 4), "   ", "BBB", "BBB", 'B', new ItemStack(GameRegistry.findBlock("foxblocks", "Smoothcrete_Slab"), 1, 0));
 
 
         new SimpleBlockIDGroupRegister(FoxBlocks.MODID).RegisterIFoxBlockIDRecipes(BlockIDs.values(), blockRegisterReturnCache.TempBlockCache);

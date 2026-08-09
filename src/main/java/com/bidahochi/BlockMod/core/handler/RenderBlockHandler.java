@@ -68,6 +68,16 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TilePoleHorizontal.class, new RenderPoleHorizontal());
         ClientRegistry.bindTileEntitySpecialRenderer(TilePoleHorizontalDiag.class, new RenderPoleHorizontalDiag());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrier.class, new RenderHwyBarrier());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrier2.class, new RenderHwyBarrier2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrierDiag.class, new RenderHwyBarrierDiag());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrier2Diag.class, new RenderHwyBarrier2Diag());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrierTransL.class, new RenderHwyBarrierTransL());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrierTransR.class, new RenderHwyBarrierTransR());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrierTransL2.class, new RenderHwyBarrierTransL2());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileHwyBarrierTransR2.class, new RenderHwyBarrierTransR2());
+
+
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampRoof.class, new RenderNeonCageLampRoof());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallV.class, new RenderNeonCageLampWallV());
         ClientRegistry.bindTileEntitySpecialRenderer(TileNeonCageLampWallH.class, new RenderNeonCageLampWallH());

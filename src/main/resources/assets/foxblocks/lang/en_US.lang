@@ -2496,6 +2496,15 @@ tile.poleTransitionDiag.name=Diagonal Pole (Vertical-Horizontal Transition)
 tile.poleHorizontal.name=Pole (Horizontal)
 tile.poleHorizontalDiag.name=Diagonal Pole (Horizontal)
 
+tile.hwyBarrier.name=Smooth-Crete Highway Barrier
+tile.hwyBarrier2.name=Smooth-Crete Highway Barrier (With Devider Lines)
+tile.hwyBarrierDiag.name=Smooth-Crete Diagonal Highway Barrier
+tile.hwyBarrier2Diag.name=Smooth-Crete Diagonal Highway Barrier (With Devider Lines)
+tile.hwyBarrierTransL.name=Smooth-Crete Transition Highway Barrier Left
+tile.hwyBarrierTransR.name=Smooth-Crete Transition Highway Barrier Right
+tile.hwyBarrierTransL2.name=Smooth-Crete Transition Highway Barrier Left (With Devider Lines)
+tile.hwyBarrierTransR2.name=Smooth-Crete Transition Highway Barrier Right (With Devider Lines)
+
 <!-- ## LIGHTING ## -->
 tile.neonCageLampRoof.name=Neon Cage-Light (Roof Mounted)
 tile.neonCageLampWallV.name=Neon Cage-Light (Vertical Wall Mounted)

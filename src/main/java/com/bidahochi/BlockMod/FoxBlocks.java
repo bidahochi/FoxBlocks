@@ -215,6 +215,17 @@ public class FoxBlocks
                 BlockIDs.trafLight_3v_nb.GetBlock(),
                 BlockIDs.trafLight_3v_nb_diag.GetBlock()
         ));
+
+        ScrollBlockRegistry.register(8, ScrollBlockRegistry.of(
+                BlockIDs.hwyBarrier.GetBlock(),
+                BlockIDs.hwyBarrier2.GetBlock(),
+                BlockIDs.hwyBarrierDiag.GetBlock(),
+                BlockIDs.hwyBarrier2Diag.GetBlock(),
+                BlockIDs.hwyBarrierTransL.GetBlock(),
+                BlockIDs.hwyBarrierTransR.GetBlock(),
+                BlockIDs.hwyBarrierTransL2.GetBlock(),
+                BlockIDs.hwyBarrierTransR2.GetBlock()
+        ));
     }
 
     @EventHandler

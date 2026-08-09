@@ -44,6 +44,8 @@ public class ItemBlockScrolling extends ItemBlock {
                 return "Street Sign Variations";
             case 7://traf lights
                 return "Traffic Light Variations";
+            case 8://hwy barriers
+                return "Barrier Shape Variations";
             default:
                 return "Blocks";
         }

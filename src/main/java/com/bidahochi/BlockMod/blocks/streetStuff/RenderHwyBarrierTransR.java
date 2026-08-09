@@ -1,8 +1,7 @@
-package com.bidahochi.BlockMod.blocks.props;
+package com.bidahochi.BlockMod.blocks.streetStuff;
 
 import com.bidahochi.BlockMod.FoxBlocks;
-import com.bidahochi.BlockMod.core.handler.BlockIDs;
-import com.bidahochi.BlockMod.render.models.Modelgagglecam;
+import com.bidahochi.BlockMod.render.models.Street.Modelhwy_barrier_transR;
 import com.bidahochi.BlockMod.render.tmt.Tessellator;
 import com.bidahochi.BlockMod.utils.FBMultiPartHelper;
 import cpw.mods.fml.relauncher.Side;
@@ -15,19 +14,20 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
-    public class RenderGaggleCam extends TileEntitySpecialRenderer {
-        private ResourceLocation texture2 = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/props/gaggle_camera.png");
-        private Modelgagglecam model = new Modelgagglecam();
+    public class RenderHwyBarrierTransR extends TileEntitySpecialRenderer {
+        private ResourceLocation texture2 = new ResourceLocation(FoxBlocks.MODID, "textures/blocks/streetstuff/hwy_barrier_transR.png");
+        private Modelhwy_barrier_transR model = new Modelhwy_barrier_transR();
 
         @Override
         public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
-            if(!(tileEntity instanceof TileGaggleCam)){return;}
+            if(!(tileEntity instanceof TileHwyBarrierTransR)){return;}
             GL11.glPushMatrix();
             Tessellator.bindTexture(texture2);
-            GL11.glTranslated(x + 0.5, y + 0.62, z + 0.5);
+            GL11.glTranslated(x + 0.5, y + 0.625, z + 0.5);
             GL11.glRotatef(180F, 1F, 0F, 0F);
             GL11.glRotatef(90F, 0F, 1F, 0F);
-            int dir = ((TileGaggleCam)tileEntity).dir;
+            GL11.glRotatef(180F, 0F, 1F, 0F);
+            int dir = ((TileHwyBarrierTransR)tileEntity).dir;
             switch(dir) {
                 case 0:{//west // north
                     GL11.glRotated(180,0,1,0);
@@ -47,7 +47,6 @@ import org.lwjgl.opengl.GL11;
                     break;
                 }
             }
-
             Block block = tileEntity.getWorldObj().getBlock(tileEntity.xCoord,tileEntity.yCoord-1,tileEntity.zCoord);
             if((block instanceof BlockSlab || FoxBlocks.isForgeMultiPartLoaded && FBMultiPartHelper.BlockInstanceOfBlockMultipart(block)) && !block.isNormalCube())
             {

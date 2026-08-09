@@ -959,6 +959,15 @@ public class BlockHandler
         BlockIDs.poleHorizontal.block = new PoleHorizontal(Material.iron);
         BlockIDs.poleHorizontalDiag.block = new PoleHorizontalDiag(Material.iron);
 
+        BlockIDs.hwyBarrier.block = new HwyBarrier(Material.rock);
+        BlockIDs.hwyBarrier2.block = new HwyBarrier2(Material.rock);
+        BlockIDs.hwyBarrierDiag.block = new HwyBarrierDiag(Material.rock);
+        BlockIDs.hwyBarrier2Diag.block = new HwyBarrier2Diag(Material.rock);
+        BlockIDs.hwyBarrierTransL.block = new HwyBarrierTransL(Material.rock);
+        BlockIDs.hwyBarrierTransR.block = new HwyBarrierTransR(Material.rock);
+        BlockIDs.hwyBarrierTransL2.block = new HwyBarrierTransL2(Material.rock);
+        BlockIDs.hwyBarrierTransR2.block = new HwyBarrierTransR2(Material.rock);
+
         //lighting
         BlockIDs.neonCageLightRoof.block = new NeonCageLampRoof(Material.iron);
         BlockIDs.neonCageLightWallV.block = new NeonCageLampWallV(Material.iron);
@@ -1128,6 +1137,15 @@ public class BlockHandler
         GameRegistry.registerTileEntity(TilePoleTransitionDiag.class, "poleTransitionDiag");
         GameRegistry.registerTileEntity(TilePoleHorizontal.class, "poleHorizontal");
         GameRegistry.registerTileEntity(TilePoleHorizontalDiag.class, "poleHorizontalDiag");
+
+        GameRegistry.registerTileEntity(TileHwyBarrier.class, "hwyBarrier");
+        GameRegistry.registerTileEntity(TileHwyBarrier2.class, "hwyBarrier2");
+        GameRegistry.registerTileEntity(TileHwyBarrierDiag.class, "hwyBarrierDiag");
+        GameRegistry.registerTileEntity(TileHwyBarrier2Diag.class, "hwyBarrier2Diag");
+        GameRegistry.registerTileEntity(TileHwyBarrierTransL.class, "hwyBarrierTransL");
+        GameRegistry.registerTileEntity(TileHwyBarrierTransR.class, "hwyBarrierTransR");
+        GameRegistry.registerTileEntity(TileHwyBarrierTransL2.class, "hwyBarrierTransL2");
+        GameRegistry.registerTileEntity(TileHwyBarrierTransR2.class, "hwyBarrierTransR2");
 
 
         GameRegistry.registerTileEntity(TileNeonCageLampRoof.class, "neonCageLightRoof.tile");
