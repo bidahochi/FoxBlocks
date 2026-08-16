@@ -14,6 +14,7 @@ import com.bidahochi.BlockMod.blocks.roadpaints.TileEntitySpecialRenderer.RoadPa
 import com.bidahochi.BlockMod.blocks.streetStuff.*;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderMC20w15aWall;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderMinecraftFenceWithMetadata;
+import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderPatternedPane;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderPrivacyPane;
 import com.bidahochi.BlockMod.render.SimpleBlockRenderingHandlers.BlockRenderScaffolds;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -25,6 +26,9 @@ public class RenderBlockHandler {
     public static int MC20w15aWall = RenderingRegistry.getNextAvailableRenderId();
 
     public static int MinecraftFenceAbstractionLayer = RenderingRegistry.getNextAvailableRenderId();
+
+    /** Rendering identifier for patterned panes that require continuous UV mapping. */
+    public static final int PATTERNED_PANE_RENDER_ID = RenderingRegistry.getNextAvailableRenderId();
 
     public static void initializeCustomModels() {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBreakerBox.class, new RenderBreakerBox());
@@ -208,6 +212,10 @@ public class RenderBlockHandler {
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));
         RenderingRegistry.registerBlockHandler(privacyPaneRenderId, new BlockRenderPrivacyPane(privacyPaneRenderId));
+        RenderingRegistry.registerBlockHandler(
+                PATTERNED_PANE_RENDER_ID,
+                new BlockRenderPatternedPane(PATTERNED_PANE_RENDER_ID)
+        );
         RenderingRegistry.registerBlockHandler(MC20w15aWall, new BlockRenderMC20w15aWall(MC20w15aWall));
         RenderingRegistry.registerBlockHandler(MinecraftFenceAbstractionLayer, new BlockRenderMinecraftFenceWithMetadata(MinecraftFenceAbstractionLayer));
 
