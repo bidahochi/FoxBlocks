@@ -9,6 +9,6 @@ public class GlassAssortedPane extends BaseBlockPane
         super(net.minecraft.block.material.Material.glass);
         setBlockTextureName(FoxBlocks.MODID+":constructionmaterials/glass/assortedGlass");
         setBlockName("glassAssortedPane");
-        amountOfSubBlocks = 4;
+        amountOfSubBlocks = 8;
     }
 }

@@ -181,7 +181,7 @@ public enum BlockIDs implements IFoxBlockIDs
 
     classicwool(true, BaseItemBlock.class, "Classic Wool", 15),
 
-    glassAssorted(true, BaseItemBlock.class, "glassAssorted", 3),
+    glassAssorted(true, BaseItemBlock.class, "glassAssorted", 7),
     glassAssortedPane(true, BaseItemBlock.class, "glassAssortedPane", -1),
 
     //region Roads
