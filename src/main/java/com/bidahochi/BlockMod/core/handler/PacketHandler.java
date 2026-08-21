@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
 import com.bidahochi.BlockMod.network.IFoxBlocksPacket;
+import com.bidahochi.BlockMod.network.PacketConfigureConfigurablePropItem;
 import com.bidahochi.BlockMod.network.PacketRPBSelect;
 import com.bidahochi.BlockMod.network.PacketScrollingBlock;
 import com.bidahochi.BlockMod.network.PacketRoadPaintApplicatorRefill;
@@ -30,6 +31,7 @@ public class PacketHandler {
         packetCarrier.add(PacketScrollingBlock.class);
         packetCarrier.add(PacketRoadPaintApplicatorSettings.class);
         packetCarrier.add(PacketRoadPaintApplicatorRefill.class);
+        packetCarrier.add(PacketConfigureConfigurablePropItem.class);
     }
 
     @SubscribeEvent

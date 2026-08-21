@@ -1,5 +1,6 @@
 package com.bidahochi.BlockMod;
 
+import com.bidahochi.BlockMod.blocks.props.configurable.ConfigurablePropSystem;
 import com.bidahochi.BlockMod.core.CommonProxy;
 import com.bidahochi.BlockMod.core.handler.*;
 import com.bidahochi.BlockMod.core.register.ScrollBlockRegistry;
@@ -36,6 +37,8 @@ public class FoxBlocks
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
     public static final String VERSION = "1.5.3";
+    @Mod.Instance(FoxBlocks.MODID)
+    public static FoxBlocks instance;
     public static CreativeTabs foxBlocksCreativeTab;
     public static CreativeTabs foxBlocksCreativeTabRock;
     public static CreativeTabs foxBlocksCreativeTabHome;
@@ -117,6 +120,7 @@ public class FoxBlocks
             }
         };
 
+        ConfigurablePropSystem.preInit();
         BlockHandler blockHandler = new BlockHandler();
         blockRegisterReturnCache = blockHandler.initBlockRegister(PreEvent);
         FluidHandler.initFluidRegister(PreEvent);
@@ -134,6 +138,8 @@ public class FoxBlocks
         GameRegistry.registerWorldGenerator(new OreGenerationHandler2(), 10);
 
         proxy.registerMouseEventHandler();
+        ConfigurablePropSystem.init();
+        proxy.registerConfigurablePropRenderers();
         //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0,255,15,7,13).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null), 7);
         //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneEmerald.block, 0, 200, 25, 2,10).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);
         //GameRegistry.registerWorldGenerator(new OreGen(BlockIDs.soapStoneMagmatic.block, 0, 200, 25, 5,2).setFiller(BlockIDs.soapStone.block).setBiomes(null).setHeightOffset(0).setDimensions(null),7);

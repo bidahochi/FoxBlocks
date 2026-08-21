@@ -252,8 +252,6 @@ public enum BlockIDs implements IFoxBlockIDs
 
     gagglecam(false, null, "GaggleCam"),
 
-    soda_machine(false, null, "soda_machine"),
-
     //street stuff
     sign_stop_pole(ItemBlockScrolling.class, "sign_stop_pole"),
     sign_stop2_pole(ItemBlockScrolling.class, "sign_stop2_pole"),
@@ -406,7 +404,6 @@ public enum BlockIDs implements IFoxBlockIDs
     xmasLights1_top_rainbow(false, null, "XmasLights1_top_rainbow"),
     xmasLights1_bottom_rainbow(false, null, "XmasLights1_bottom_rainbow"),
 
-    propTrailerDryvan1(false, null, "propTrailerDryvan1"),
     propTrailerDryvan1a(false, null, "propTrailerDryvan1a"),
 
     ;

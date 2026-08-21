@@ -1,40 +1,32 @@
 package com.bidahochi.BlockMod.blocks.props;
 
 
-import com.bidahochi.BlockMod.blocks.BaseClassFolder.BaseTileEntity;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.util.AxisAlignedBB;
+import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.DryvanTrailer53Prop;
+import com.bidahochi.BlockMod.blocks.props.configurable.tile.LegacyConfigurablePropTile;
 
-public class TilePropTrailerDryvan1 extends BaseTileEntity
+/** Loads historical dryvan tiles through the shared configurable-prop runtime. */
+public class TilePropTrailerDryvan1 extends LegacyConfigurablePropTile
 {
+    /**
+     * Creates a converted tile using the historical quarter-turn direction.
+     *
+     * @param dir clockwise quarter turns from the legacy block orientation
+     */
     public TilePropTrailerDryvan1(int dir)
     {
-        super(dir);
+        super(DryvanTrailer53Prop.ID, DryvanTrailer53Prop.SKIN, dir);
     }
 
+    /** Creates an empty tile for Minecraft deserialization. */
     public TilePropTrailerDryvan1()
     {
-
+        super(DryvanTrailer53Prop.ID, DryvanTrailer53Prop.SKIN);
     }
-    @SideOnly(Side.CLIENT)
+
+    /** {@inheritDoc} */
     @Override
-    public AxisAlignedBB getRenderBoundingBox()
+    public double getMaxRenderDistanceSquared()
     {
-        //z is n/s, x is e/w. first set of coords are negative, 2nd set are positive.
-        if (dir==0){// north
-            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord-2, xCoord+1, yCoord+2, zCoord+5);
-        }else if(dir==1){//east
-            return AxisAlignedBB.getBoundingBox(xCoord-5, yCoord, zCoord-1, xCoord+2, yCoord+2, zCoord+1);
-        }else if(dir==2){//south
-            return AxisAlignedBB.getBoundingBox(xCoord-1, yCoord, zCoord-5, xCoord+1, yCoord+2, zCoord+2);
-        }else{//west
-            return AxisAlignedBB.getBoundingBox(xCoord-5, yCoord, zCoord-1, xCoord+5, yCoord+2, zCoord+1);
-        }
-    }
-
-    @SideOnly(Side.CLIENT)
-    public double getMaxRenderDistanceSquared() {
         return 16384.0D;
     }
 }

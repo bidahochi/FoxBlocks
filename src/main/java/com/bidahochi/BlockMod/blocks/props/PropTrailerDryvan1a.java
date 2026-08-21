@@ -26,7 +26,6 @@ public class PropTrailerDryvan1a extends BlockContainer {
         setResistance(4.0F);
         setHarvestLevel("pickaxe", 0);
         setStepSound(soundTypeWood);
-        setCreativeTab(FoxBlocks.foxBlocksCreativeTabProperProps);
     }
 
     @Override

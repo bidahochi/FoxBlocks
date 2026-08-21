@@ -52,7 +52,7 @@ public class RenderBlockHandler {
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileGaggleCam.class, new RenderGaggleCam());
 
-        ClientRegistry.bindTileEntitySpecialRenderer(TileSoda_machine.class, new RenderSoda_machine());
+        // Legacy soda tiles inherit the shared configurable-prop renderer.
 
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileSign_stop_pole.class, new RenderSign_stop_pole());
@@ -207,7 +207,7 @@ public class RenderBlockHandler {
         ClientRegistry.bindTileEntitySpecialRenderer(TileXmasLights1_top_rainbow.class, new RenderXmasLights1_top_rainbow());
         ClientRegistry.bindTileEntitySpecialRenderer(TileXmasLights1_bottom_rainbow.class, new RenderXmasLights1_bottom_rainbow());
 
-        ClientRegistry.bindTileEntitySpecialRenderer(TilePropTrailerDryvan1.class, new RenderPropTrailerDryvan1());
+        // The alternate legacy dryvan block retains its dedicated renderer.
         ClientRegistry.bindTileEntitySpecialRenderer(TilePropTrailerDryvan1a.class, new RenderPropTrailerDryvan1a());
 
         RenderingRegistry.registerBlockHandler(scaffoldRenderId, new BlockRenderScaffolds(scaffoldRenderId));

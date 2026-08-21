@@ -1,6 +1,8 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.SodaMachineProp;
+import com.bidahochi.BlockMod.blocks.props.configurable.definition.ConfigurablePropRegistry;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -704,7 +706,18 @@ public class RecipeHandler extends AbstractRecipeHandler{
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wall_sink.block, 1), "CDC", "CBC", "   ", 'C', ItemIDs.ceramic.item, 'D', dye, 'B', Items.water_bucket);
         }
         //sodaaaaa
-        GameRegistry.addRecipe(new ItemStack(BlockIDs.soda_machine.block,1), "PPP", "BCB","PPP", 'P', new ItemStack(ItemIDs.ironSlice.item), 'B', Items.glass_bottle, 'C', ItemIDs.computerizedCircuit.item);
+        GameRegistry.addRecipe(
+                new ItemStack(ConfigurablePropRegistry.getBlock(SodaMachineProp.ID), 1),
+                "PPP",
+                "BCB",
+                "PPP",
+                'P',
+                new ItemStack(ItemIDs.ironSlice.item),
+                'B',
+                Items.glass_bottle,
+                'C',
+                ItemIDs.computerizedCircuit.item
+        );
 
         //straps
         for (ItemStack dye: dyeGreen) {

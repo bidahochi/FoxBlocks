@@ -939,8 +939,6 @@ public class BlockHandler
 
         BlockIDs.gagglecam.block = new GaggleCam(Material.iron);
 
-        BlockIDs.soda_machine.block = new Soda_machine(Material.iron);
-
         //street stuff
         BlockIDs.sign_stop_pole.block = new Sign_stop_pole(Material.iron);
         BlockIDs.sign_stop2_pole.block = new Sign_stop2_pole(Material.iron);
@@ -1093,7 +1091,6 @@ public class BlockHandler
         BlockIDs.xmasLights1_top_rainbow.block = new XmasLights1_top_rainbow(Material.circuits);
         BlockIDs.xmasLights1_bottom_rainbow.block = new XmasLights1_bottom_rainbow(Material.circuits);
 
-        BlockIDs.propTrailerDryvan1.block = new PropTrailerDryvan1(Material.wood);
         BlockIDs.propTrailerDryvan1a.block = new PropTrailerDryvan1a(Material.wood);
 
         GameRegistry.registerTileEntity(TileBreakerBox.class, "breakerbox.tile");

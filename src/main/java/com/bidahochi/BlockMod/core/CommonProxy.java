@@ -15,4 +15,7 @@ public class CommonProxy {
 
     public void openRoadPaintApplicatorGui(EntityPlayer player) {
     }
+
+    public void registerConfigurablePropRenderers() {
+    }
 }
