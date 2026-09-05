@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.blocks.props.configurable.height;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.roadpaints.RoadPaintPlacement;
 import com.bidahochi.BlockMod.blocks.props.configurable.definition.ConfigurablePropDefinition;
 import com.bidahochi.BlockMod.utils.FBMultiPartHelper;
 import net.minecraft.block.Block;
@@ -46,26 +47,41 @@ public final class ConfigurablePropHeightHelper
 
         int supportY = y - 1;
         Block supportBlock = world.getBlock(x, supportY, z);
+        int ignoredRoadPaintCells = 0;
+        while (supportY >= 0 && RoadPaintPlacement.isRoadPaint(supportBlock))
+        {
+            ignoredRoadPaintCells++;
+            supportY--;
+            supportBlock = supportY >= 0 ? world.getBlock(x, supportY, z) : null;
+        }
         if (supportBlock == null)
         {
             return 0.0D;
         }
+        double roadPaintCorrection = -ignoredRoadPaintCells;
         if (isRoadCoverOrRail(supportBlock))
         {
-            return definition.getAutoHeightRoadCoverRailOffset();
+            return roadPaintCorrection - definition.getAutoHeightRoadCoverRailOffset();
         }
-        if (isSlabOrNonSolidMultipart(world, supportBlock, x, supportY, z))
+        if (supportBlock instanceof BlockSlab && supportBlock.isNormalCube() == false)
         {
-            return definition.getAutoHeightSlabOffset();
+            boolean topSlab = (world.getBlockMetadata(x, supportY, z) & 8) != 0;
+            return topSlab
+                    ? roadPaintCorrection
+                    : roadPaintCorrection - definition.getAutoHeightSlabOffset();
         }
-        return 0.0D;
+        if (isNonSolidMultipart(world, supportBlock, x, supportY, z))
+        {
+            return roadPaintCorrection - definition.getAutoHeightSlabOffset();
+        }
+        return roadPaintCorrection;
     }
 
     /**
-     * Detects supports whose occupied top surface is half a block above their
-     * block origin, including Forge Multipart containers.
+     * Detects Forge Multipart supports that use the definition's partial-height
+     * correction. Slabs are handled separately so upper slabs remain unshifted.
      */
-    private static boolean isSlabOrNonSolidMultipart(
+    private static boolean isNonSolidMultipart(
             World world,
             Block supportBlock,
             int supportX,
@@ -73,10 +89,6 @@ public final class ConfigurablePropHeightHelper
             int supportZ
     )
     {
-        if (supportBlock instanceof BlockSlab && supportBlock.isNormalCube() == false)
-        {
-            return true;
-        }
         if (FoxBlocks.isForgeMultiPartLoaded == false
                 || FBMultiPartHelper.BlockInstanceOfBlockMultipart(supportBlock) == false)
         {
