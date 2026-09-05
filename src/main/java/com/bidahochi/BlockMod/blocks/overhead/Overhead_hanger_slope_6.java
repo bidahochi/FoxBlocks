@@ -95,7 +95,7 @@ public class Overhead_hanger_slope_6 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/sl_h");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/sl_h6");
     }
 
 

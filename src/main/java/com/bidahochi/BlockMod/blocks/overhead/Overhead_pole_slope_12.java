@@ -95,7 +95,7 @@ public class Overhead_pole_slope_12 extends BlockContainer {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/sl_p");
+        texture = iconRegister.registerIcon(FoxBlocks.MODID+ ":overheadlines/icons/sl_p12");
     }
 
 
