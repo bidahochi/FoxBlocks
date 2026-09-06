@@ -26,12 +26,9 @@ public final class Fridge70sProp implements IConfigurablePropContentEntry
                     PROFILE,
                     TEXTURE_ROOT + "fridge_70s_texture_{skin}.png"
             )
-                    .defaultSkin("coolmint")
-                    .skin("coolmint_noised")
-                    .skin("girlyblue")
-                    .skin("girlyblue_noised")
-                    .skin("newbeige")
-                    .skin("newbeige_noised");
+            .defaultSkin("coolmint")
+            .skin("girlyblue")
+            .skin("newbeige");
 
     private final ConfigurablePropCatalogEntry entry = new ConfigurablePropCatalogEntry(
             "configurableProp70sFridge",
