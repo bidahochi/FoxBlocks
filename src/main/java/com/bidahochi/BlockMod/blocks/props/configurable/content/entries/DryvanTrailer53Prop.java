@@ -18,16 +18,26 @@ public final class DryvanTrailer53Prop implements IConfigurablePropContentEntry
     /** Stable default skin ID shared with converted legacy tiles. */
     public static final String SKIN = PROFILE;
     private static final String MODEL = "dryvan_trailer_53ft";
+    private static final String TEXTURE_ROOT =
+            "textures/blocks/props/configurable/other/dryvan/";
+
     private static final ConfigurablePropSkinCatalog SKINS =
-            ConfigurablePropContentHelper.singleSkinCatalog(
+            ConfigurablePropContentHelper.skinCatalog(
                     PROFILE,
-                    "textures/blocks/props/53ft_dryvan_2.png"
-            );
+                    TEXTURE_ROOT + "53ft_dryvan_{skin}.png"
+            )
+                    .defaultSkin("2")
+                    .skin("dotc2")
+                    .skin("fernrock")
+                    .skin("interstate")
+                    .skin("pxo")
+                    .skin("aml")
+                    .skin("aml2");
 
     private final ConfigurablePropCatalogEntry entry = new ConfigurablePropCatalogEntry(
             "propTrailerDryvan1",
             "propTrailerDryvan1",
-            "props/propTrailerDryvan1",
+            "props/configurable/other/dryvan/propTrailerDryvan1",
             createDefinition(ID)
     );
 

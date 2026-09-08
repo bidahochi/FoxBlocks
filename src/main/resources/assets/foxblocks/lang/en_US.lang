@@ -2731,7 +2731,21 @@ item.foxblocks:taconitePellets.name=Taconite Pellets
 item.foxblocks:quicklime.name=Quicklime
 item.foxblocks:roadTar.name=Road-Tar
 item.foxblocks:paintCompound.name=Paint Compound
+item.foxblocks:bulb.name=Lightbulb
+item.foxblocks:bulbLong.name=Tube Lightbulb
+item.foxblocks:bolsterChisel.name=Bolster Chisel
+item.foxblocks:leanDust.name=Lean Dust
+item.foxblocks:straps.name=Straps
+item.foxblocks:rainbontrium.name=Rainbontrium Alloy
 
+item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
+item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable
+item.foxblocks:record_rodney.name=Empties East
+item.record.record_rodney.desc=What a stupid fuckin operation
+item.foxblocks:record_penguin.name=club penguin free membership WORKING 2010 DOWNLOAD NOW FREE NO DOWNLOAD
+item.record.record_penguin.desc=put in a jukebox for free club penguin membership!!!111 working 2010
+
+<!-- ## ROADPAINT APPLICATOR & GUI ## -->
 item.foxblocks:roadPaintApplicator.name=Roadpaint Applicator
 message.roadPaintApplicator.empty=The roadpaint applicator is empty.
 gui.foxblocks.roadPaintApplicator.title=Roadpaint Applicator
@@ -2764,16 +2778,27 @@ gui.foxblocks.roadPaintApplicator.hud.selected=Selected Paint: %s
 
 <!-- ## FURNITURE ## -->
 tile.configurableProp70sFridge.name=70's Fridge
-tile.configurablePropDryvanTrailer53.name=53' Dryvan Trailer
+container.foxblocks.fridge_70s=Fridge
+container.foxblocks.fridge_70s.freezer=Freezer
 skin.foxblocks.fridge_70s_coolmint=Cool Mint 70's Fridge
 skin.foxblocks.fridge_70s_girlyblue=Girly Blue 70's Fridge
 skin.foxblocks.fridge_70s_newbeige=New Beige 70's Fridge
-skin.foxblocks.dryvan_trailer_53ft=53' Dryvan Trailer
-skin.foxblocks.soda_machine=Soda Machine
-container.foxblocks.fridge_70s=Fridge
-container.foxblocks.fridge_70s.freezer=Freezer
+
+tile.configurablePropDryvanTrailer53.name=53' Dryvan Trailer
 container.foxblocks.dryvan_trailer_53ft=53' Dryvan Trailer
+skin.foxblocks.dryvan_trailer_53ft=53' Dryvan Trailer
+skin.foxblocks.dryvan_trailer_53ft_2=Generic
+skin.foxblocks.dryvan_trailer_53ft_dotc2=Generic (DOT C2 Stripes)
+skin.foxblocks.dryvan_trailer_53ft_fernrock=Fernrock Foods of Washaska
+skin.foxblocks.dryvan_trailer_53ft_interstate=Interstate Trucking
+skin.foxblocks.dryvan_trailer_pxo53ft_=PXO Company
+skin.foxblocks.dryvan_trailer_53ft_aml=Alaska Marine Lines
+skin.foxblocks.dryvan_trailer_53ft_aml2=Alaska Marine Lines (Filthy)
+skin.foxblocks.soda_machine=Soda Machine
+
 container.foxblocks.soda_machine=Soda Machine
+
+<!-- ## FURNITURE  PROP GUI ## -->
 gui.foxblocks.propAppearance.title=Prop Appearance
 gui.foxblocks.propAppearance.selected=Selected: %s
 gui.foxblocks.propAppearance.page=Page: %d/%d
@@ -2836,20 +2861,8 @@ tooltip.foxblocks.configurableProp.heightManual=Off
 tooltip.foxblocks.configurableProp.flip=Model flip
 tooltip.foxblocks.configurableProp.normal=Normal
 tooltip.foxblocks.configurableProp.flipped=Mirrored
-item.foxblocks:bulb.name=Lightbulb
-item.foxblocks:bulbLong.name=Tube Lightbulb
-item.foxblocks:bolsterChisel.name=Bolster Chisel
-item.foxblocks:leanDust.name=Lean Dust
-item.foxblocks:straps.name=Straps
-item.foxblocks:rainbontrium.name=Rainbontrium Alloy
 
-item.foxblocks:record_piss.name=Mario Pissing Off a Brown Mushroom
-item.record.record_piss.desc=mario_pissing_off_a_brown_mushroom_suicidal_turd.piss.relatable
-item.foxblocks:record_rodney.name=Empties East
-item.record.record_rodney.desc=What a stupid fuckin operation
-item.foxblocks:record_penguin.name=club penguin free membership WORKING 2010 DOWNLOAD NOW FREE NO DOWNLOAD
-item.record.record_penguin.desc=put in a jukebox for free club penguin membership!!!111 working 2010
-
+<!-- ## FLUIDS ## -->
 item.foxblocks:bucket_of_tbea.name=Bucket of TBEA
 tile.fluid.foxblocks.liquid_tbea.name=Liquid TBEA
 fluid.foxblocks.liquid_tbea=Liquid TBEA
