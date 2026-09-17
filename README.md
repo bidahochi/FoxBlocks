@@ -1,6 +1,8 @@
-![FOXBLOCKS Logo](https://images2.imgbox.com/db/e4/LPn08etl_o.png)
+![FOXBLOCKS Logo](https://coyoteindustries.neocities.org/imagery/foxblocks.png)
 # FOXBLOCKS - Blockstuff?, Items?, Props? You want it? It's yours my friend!
-## FoxBlocks is a Minecraft Mod that, like the many mods along side it, adds a trainload of decorative building blocks- bricks, planks, tarmac, and so much more. Did I mention the mod also adds a whole set of Props to help build with? The set of modular bridge parts for railroad bridges? Maybe even the Traincraft compatible modular overhead wires? Maybe even the work in progress "smart" road paints or modular bathroom stall wall parts? This mod has a little bit of everything, from the generic to the specific!
+## FoxBlocks is a Minecraft Mod that, like the many mods along side it, adds a trainload of decorative building blocks- bricks, planks, tarmac, and so much more. 
+Did I mention the mod also adds a whole set of Props to help build with? The set of modular bridge parts for railroad bridges? Maybe even the Traincraft compatible modular overhead wires? 
+Maybe even the "smart" road paints or modular bathroom stall wall parts? This mod has a little bit of everything, from the generic to the specific!
 
 ### Some of the mods highlights:
 -Forge Multiblock Support
@@ -13,6 +15,3 @@
 You can find them here -> https://www.curseforge.com/minecraft/mc-mods/furenikusroads
 
 ## the rest of this README is currently under construction
-
-![construction](https://images2.imgbox.com/02/a0/szgiHCPq_o.gif)
-![construction2](https://images2.imgbox.com/dd/78/y64hF3qd_o.gif)
