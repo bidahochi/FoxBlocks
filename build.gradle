@@ -43,9 +43,27 @@ repositories {
     maven {
         url = "http://maven.cil.li/"
     }
+    ivy {
+        name 'TraincraftReleases'
+        url 'https://github.com/bidahochi/Traincraft-5/releases/download'
+        layout 'pattern', {
+            artifact 'v[revision]/[artifact]-[revision]-[classifier].[ext]'
+        }
+    }
+}
+
+// Use the published API by default; -PtcDevJar overrides it for local TC development.
+def tcDevJar = project.hasProperty('tcDevJar') ? file(project.property('tcDevJar')) : null
+if (tcDevJar != null && !tcDevJar.isFile()) {
+    throw new GradleException("Traincraft development jar does not exist: ${tcDevJar}")
 }
 
 dependencies {
+    if (tcDevJar != null) {
+        compile files(tcDevJar)
+    } else {
+        compile 'traincraft:Fox-Traincraft:3.2.1.4:dev@jar'
+    }
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
