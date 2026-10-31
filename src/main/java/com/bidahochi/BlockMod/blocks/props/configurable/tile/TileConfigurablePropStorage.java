@@ -241,6 +241,12 @@ public class TileConfigurablePropStorage extends TileConfigurablePropController
         return 64;
     }
 
+    @Override
+    public boolean isUseableByPlayer(EntityPlayer player)
+    {
+        return super.isUseableByPlayer(player);
+    }
+
     /** {@inheritDoc} */
     @Override
     public void openInventory()
