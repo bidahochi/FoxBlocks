@@ -1,6 +1,8 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.DryvanTrailer53Prop;
+import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.Fridge70sProp;
 import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.SodaMachineProp;
 import com.bidahochi.BlockMod.blocks.props.configurable.definition.ConfigurablePropRegistry;
 import com.bidahochi.BlockMod.core.handler.baseBlocks.vanillaBlockConvertions.VanillaBlockProperty;
@@ -706,18 +708,13 @@ public class RecipeHandler extends AbstractRecipeHandler{
             GameRegistry.addRecipe(new ItemStack(BlockIDs.wall_sink.block, 1), "CDC", "CBC", "   ", 'C', ItemIDs.ceramic.item, 'D', dye, 'B', Items.water_bucket);
         }
         //sodaaaaa
-        GameRegistry.addRecipe(
-                new ItemStack(ConfigurablePropRegistry.getBlock(SodaMachineProp.ID), 1),
-                "PPP",
-                "BCB",
-                "PPP",
-                'P',
-                new ItemStack(ItemIDs.ironSlice.item),
-                'B',
-                Items.glass_bottle,
-                'C',
-                ItemIDs.computerizedCircuit.item
-        );
+        GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(SodaMachineProp.ID), 1), "PPP", "BCB", "PPP", 'P', new ItemStack(ItemIDs.ironSlice.item), 'B', Items.glass_bottle, 'C', ItemIDs.computerizedCircuit.item);
+        //fridge
+        GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(Fridge70sProp.ID), 1), "SCS", "S S, SIS", 'S', new ItemStack(ItemIDs.ironSlice.item), 'C', new ItemStack(ItemIDs.ceramic.item), 'I', Blocks.ice);
+
+        //53 ft dryvan
+        //GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(DryvanTrailer53Prop.ID), 1), "");
+        GameRegistry.addShapelessRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(DryvanTrailer53Prop.ID), 1), new ItemStack(BlockIDs.propTrailerDryvan1a.block));//conversion recipe from old offset to new
 
         //straps
         for (ItemStack dye: dyeGreen) {

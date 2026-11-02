@@ -15,7 +15,7 @@ import com.bidahochi.BlockMod.common.rotation.RotationSnap;
 public final class Fridge70sProp implements IConfigurablePropContentEntry
 {
 
-    private static final String ID = "foxblocks:fridge_70s";
+    public static final String ID = "foxblocks:fridge_70s";
     private static final String PROFILE = ID;
     private static final String MODEL = "fridge_70s_tall";
     private static final String TEXTURE_ROOT =
