@@ -107,7 +107,7 @@ public class RecipeHandler extends AbstractRecipeHandler{
                 Items.coal, Items.coal, Items.slime_ball);
         for (ItemStack white : dyeWhite) {
             for (ItemStack yellow : dyeYellow) {
-                GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.paintCompound.item),
+                GameRegistry.addShapelessRecipe(new ItemStack(ItemIDs.paintCompound.item, 4),
                         white, yellow, ItemIDs.enrichedClay.item);
             }
         }
@@ -806,6 +806,12 @@ public class RecipeHandler extends AbstractRecipeHandler{
             GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 2), "GDG", "GGG", "GGG", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
             GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 3), "GGG", "GGG", "GDG", Character.valueOf('G'), new ItemStack(Blocks.glass), Character.valueOf('D'), dye);
         }
+        for (ItemStack dye : dyeWhite) {
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 4), "GDG", "GGG", "GGG", 'G', new ItemStack(Blocks.glass), 'D', dye);
+            GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 5), "GGG", "GGG", "GDG", 'G', new ItemStack(Blocks.glass), 'D', dye);
+        }
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 6), "G G", "GGG", "GGG", 'G', new ItemStack(Blocks.glass));
+        GameRegistry.addRecipe(new ItemStack(BlockIDs.glassAssorted.block, 8, 7), "GGG", "GGG", "G G", 'G', new ItemStack(Blocks.glass));
 
         //wide vanilla planks wide planks
         GameRegistry.addRecipe(new ItemStack(BlockIDs.widePlank3.block, 3, 0), " P ", " PW", " P ", Character.valueOf('P'), new ItemStack(Blocks.planks, 1, 0), Character.valueOf('W'), new ItemStack(ItemIDs.woodSealant.item, 1));

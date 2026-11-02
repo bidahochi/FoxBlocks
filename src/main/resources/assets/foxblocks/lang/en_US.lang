@@ -2710,7 +2710,7 @@ tile.XmasLights1_bottom_rainbow.name=Christmas Lights (Bottom Aligned, Rainbow)
 
 
 tile.propTrailerDryvan1.name=53' Dryvan Trailer (Prop)
-tile.propTrailerDryvan1a.name=53' Dryvan Trailer (Prop, Offset)
+tile.propTrailerDryvan1a.name=(Deprecated) 53' Dryvan Trailer (Prop, Offset)
 
 <!-- ## ITEMS & OTHER MISC LIKE THAT ## -->
 item.foxblocks:Jarate!.name=Bottle of Jar-Based Karate
@@ -2791,7 +2791,7 @@ skin.foxblocks.dryvan_trailer_53ft_2=Generic
 skin.foxblocks.dryvan_trailer_53ft_dotc2=Generic (DOT C2 Stripes)
 skin.foxblocks.dryvan_trailer_53ft_fernrock=Fernrock Foods of Washaska
 skin.foxblocks.dryvan_trailer_53ft_interstate=Interstate Trucking
-skin.foxblocks.dryvan_trailer_pxo53ft_=PXO Company
+skin.foxblocks.dryvan_trailer_53ft_pxo=PXO Company
 skin.foxblocks.dryvan_trailer_53ft_aml=Alaska Marine Lines
 skin.foxblocks.dryvan_trailer_53ft_aml2=Alaska Marine Lines (Filthy)
 skin.foxblocks.soda_machine=Soda Machine

@@ -14,6 +14,6 @@ public class PaintCompound extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        itemIcon = iconRegister.registerIcon(FoxBlocks.MODID + ":roadTar");
+        itemIcon = iconRegister.registerIcon(FoxBlocks.MODID + ":paint");//yup thats paint
     }
 }
