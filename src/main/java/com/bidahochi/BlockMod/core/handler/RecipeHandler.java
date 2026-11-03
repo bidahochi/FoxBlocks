@@ -710,7 +710,7 @@ public class RecipeHandler extends AbstractRecipeHandler{
         //sodaaaaa
         GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(SodaMachineProp.ID), 1), "PPP", "BCB", "PPP", 'P', new ItemStack(ItemIDs.ironSlice.item), 'B', Items.glass_bottle, 'C', ItemIDs.computerizedCircuit.item);
         //fridge
-        GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(Fridge70sProp.ID), 1), "SCS", "S S, SIS", 'S', new ItemStack(ItemIDs.ironSlice.item), 'C', new ItemStack(ItemIDs.ceramic.item), 'I', Blocks.ice);
+        GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(Fridge70sProp.ID), 1), "SCS", "S S", "SIS", 'S', new ItemStack(ItemIDs.ironSlice.item), 'C', new ItemStack(ItemIDs.ceramic.item), 'I', Blocks.ice);
 
         //53 ft dryvan
         //GameRegistry.addRecipe(new ItemStack(ConfigurablePropRegistry.getBlock(DryvanTrailer53Prop.ID), 1), "");
