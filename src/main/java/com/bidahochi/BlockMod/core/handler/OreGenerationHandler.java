@@ -59,7 +59,7 @@ public class OreGenerationHandler implements IWorldGenerator {
         generateOre(BlockIDs.soapStone.block, world, rand, x, z, 40, 75, 1, 20, 80, Blocks.stone);
         generateOre(BlockIDs.gypsum.block, world, rand, x, z, 6, 15, 10, 55, 70, Blocks.stone);
         //generateOre(BlockIDs.soapStoneEmerald.block, world, rand, x, z, 4,8,25 ,5,128, BlockIDs.soapStone.block);
-        generateOre(BlockIDs.aragoniteOre.block, world, rand, x, z, 4, 8, 1, 1, 40, Blocks.stone);
+        generateOre(BlockIDs.aragoniteOre.block, world, rand, x, z, 7, 14, 1, 1, 40, Blocks.stone);
         generateOre(BlockIDs.creamCityClay.block, world, rand, x, z, 2, 8, 8, 60, 80, Blocks.sand);
         generateOre(BlockIDs.jolietLimestoneRaw.block, world, rand, x ,z ,5, 12, 8, 40, 70, Blocks.stone);
 
@@ -70,7 +70,7 @@ public class OreGenerationHandler implements IWorldGenerator {
         generateOre(Blocks.sand, world, rand, x, z, 9, 15, 4, 36, 77, Blocks.stone);
         generateOre(BlockIDs.pingascube.block, world, rand, x, z, 1, 3, 3, 4, 20, Blocks.stone);
 
-        generateOre(BlockIDs.redrock.block, world, rand, x ,z, 10, 28, 5, 20, 128, Blocks.hardened_clay);
+        generateOre(BlockIDs.redrock.block, world, rand, x ,z, 15, 28, 5, 20, 128, Blocks.hardened_clay);
 
     }
 
