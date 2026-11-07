@@ -36,7 +36,7 @@ public class FoxBlocks
 {
     public static final String MODID = "foxblocks";
     public static final String NAME = "FoxBlocks";
-    public static final String VERSION = "1.5.3.2";
+    public static final String VERSION = "1.5.4";
     @Mod.Instance(FoxBlocks.MODID)
     public static FoxBlocks instance;
     public static CreativeTabs foxBlocksCreativeTab;
