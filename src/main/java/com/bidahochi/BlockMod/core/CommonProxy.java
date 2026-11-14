@@ -18,4 +18,8 @@ public class CommonProxy {
 
     public void registerConfigurablePropRenderers() {
     }
+
+    public void registerDisplayFrameRenderer()
+    {
+    }
 }

@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod;
 
 import com.bidahochi.BlockMod.blocks.props.configurable.ConfigurablePropSystem;
+import com.bidahochi.BlockMod.blocks.displayframe.BlockDisplayFrame;
 import com.bidahochi.BlockMod.core.CommonProxy;
 import com.bidahochi.BlockMod.core.handler.*;
 import com.bidahochi.BlockMod.core.register.ScrollBlockRegistry;
@@ -121,6 +122,8 @@ public class FoxBlocks
         };
 
         ConfigurablePropSystem.preInit();
+        BlockDisplayFrame.register();
+        proxy.registerDisplayFrameRenderer();
         BlockHandler blockHandler = new BlockHandler();
         blockRegisterReturnCache = blockHandler.initBlockRegister(PreEvent);
         FluidHandler.initFluidRegister(PreEvent);

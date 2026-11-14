@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core;
 
 import com.bidahochi.BlockMod.blocks.props.configurable.client.ClientConfigurablePropRendering;
+import com.bidahochi.BlockMod.blocks.displayframe.client.DisplayFrameRenderer;
 import com.bidahochi.BlockMod.blocks.roadpaints.gui.GuiRoadPaintApplicator;
 import com.bidahochi.BlockMod.core.handler.RoadPaintApplicatorHud;
 import net.minecraft.client.Minecraft;
@@ -23,5 +24,11 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void registerConfigurablePropRenderers() {
         ClientConfigurablePropRendering.register();
+    }
+
+    @Override
+    public void registerDisplayFrameRenderer()
+    {
+        DisplayFrameRenderer.register();
     }
 }

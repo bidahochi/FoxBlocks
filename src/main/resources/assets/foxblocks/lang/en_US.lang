@@ -2869,3 +2869,10 @@ fluid.foxblocks.liquid_tbea=Liquid TBEA
 item.foxblocks:bucket_of_lean.name=Cup of LEAN
 tile.fluid.foxblocks.liquid_lean.name=LEAN
 fluid.foxblocks.liquid_lean=LEAN
+
+tile.display_frame.name=Display Frame
+tile.display_frame.item_only.name=Display Frame (Item Only)
+tile.display_frame.flat.name=Display Frame (Flat 2D)
+tile.display_frame.labeled.name=Display Frame (Labeled)
+tile.display_frame.labeled_item_only.name=Display Frame (Labeled Item Only)
+tile.display_frame.scroll=Shift + scroll to switch display modes

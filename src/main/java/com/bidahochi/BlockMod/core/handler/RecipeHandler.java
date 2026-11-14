@@ -1,6 +1,7 @@
 package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.FoxBlocks;
+import com.bidahochi.BlockMod.blocks.displayframe.BlockDisplayFrame;
 import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.DryvanTrailer53Prop;
 import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.Fridge70sProp;
 import com.bidahochi.BlockMod.blocks.props.configurable.content.entries.SodaMachineProp;
@@ -98,6 +99,12 @@ public class RecipeHandler extends AbstractRecipeHandler{
         ArrayList<ItemStack> plateIron = OreDictionary.getOres("plateIron");
         ArrayList<ItemStack> log = OreDictionary.getOres("logWood");
         ArrayList<ItemStack> plank = OreDictionary.getOres("plankWood");
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockDisplayFrame.instance),
+                " S ", "SLS", " S ",
+                'S', Items.stick,
+                'L', Items.leather);
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockDisplayFrame.instance), Items.item_frame);
 
         GameRegistry.addShapedRecipe(new ItemStack(ItemIDs.roadPaintApplicator.item),
                 "SCS", "RBR", " R ",

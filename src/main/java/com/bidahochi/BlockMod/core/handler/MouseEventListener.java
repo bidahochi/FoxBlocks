@@ -2,6 +2,7 @@ package com.bidahochi.BlockMod.core.handler;
 
 import com.bidahochi.BlockMod.blocks.roadpaints.BlockContainer.IScrollRoadPaintBlock;
 import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingBlock;
+import com.bidahochi.BlockMod.blocks.scrolling.IFoxBlocksScrollingItem;
 import com.bidahochi.BlockMod.network.PacketRPBSelect;
 import com.bidahochi.BlockMod.network.PacketScrollingBlock;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -21,9 +22,12 @@ public class MouseEventListener {
      */
 
     public long lastScroll = 0;
+
+    /** Routes sneak-scroll on supported held items without changing the selected hotbar slot. */
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
-    public void onMouseEvent(MouseEvent event) {
+    public void onMouseEvent(MouseEvent event)
+    {
         // We only want to process wheel events
         if (event.button < 0 && event.dwheel != 0)
         {
@@ -31,9 +35,14 @@ public class MouseEventListener {
             if (entityPlayer != null && entityPlayer.isSneaking())
             {
                 ItemStack itemStack = entityPlayer.getHeldItem();
-                if (itemStack != null && itemStack.getItem() instanceof ItemBlock)
+                if (itemStack != null)
                 {
-                    Block block = Block.getBlockFromItem(itemStack.getItem());
+                    boolean scrollItem = itemStack.getItem() instanceof IFoxBlocksScrollingItem;
+                    Block block = null;
+                    if (scrollItem == false && itemStack.getItem() instanceof ItemBlock)
+                    {
+                        block = Block.getBlockFromItem(itemStack.getItem());
+                    }
                     if (block instanceof IScrollRoadPaintBlock)
                     {
                         if (System.currentTimeMillis() - lastScroll < 300)
@@ -46,15 +55,18 @@ public class MouseEventListener {
                         event.setCanceled(true);
                     }
 
-                    if (block instanceof IFoxBlocksScrollingBlock)
+                    if (scrollItem || block instanceof IFoxBlocksScrollingBlock)
                     {
                         if (System.currentTimeMillis() - lastScroll < 300)
-                        { //limit how fast you can scroll through the items
+                        {
                             event.setCanceled(true);
                             return;
                         }
 
-                        PacketHandler.sendPacketToServer(new PacketScrollingBlock(entityPlayer.inventory.currentItem, event.dwheel > 0));
+                        int selectedSlot = entityPlayer.inventory.currentItem;
+                        boolean forward = event.dwheel > 0;
+                        PacketScrollingBlock packet = new PacketScrollingBlock(selectedSlot, forward);
+                        PacketHandler.sendPacketToServer(packet);
 
                         lastScroll = System.currentTimeMillis();
                         event.setCanceled(true);
