@@ -40,7 +40,7 @@ public final class DisplayFramePreviews
     private static final int SECTION_SIZE = 16;
     private static final int CAPACITY = 512;
     private static final int PREVIEWS_PER_FRAME = 4;
-    private static final int LABEL_CAPACITY = 64;
+    private static final int LABEL_CAPACITY = 256;
     private static final int LABELS_PER_FRAME = 2;
     private static final Pattern LABEL_WHITESPACE = Pattern.compile("[\\p{Z}\\s\\p{Cntrl}]+", Pattern.UNICODE_CHARACTER_CLASS);
     private final Map<StackKey, Preview> cache = new HashMap<>();
