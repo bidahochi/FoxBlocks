@@ -14,8 +14,10 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StringUtils;
+import net.minecraft.world.ChunkCoordIntPair;
 import net.minecraft.world.ChunkPosition;
 import net.minecraftforge.client.event.TextureStitchEvent;
+import net.minecraftforge.event.world.ChunkEvent;
 import net.minecraftforge.event.world.WorldEvent;
 import org.apache.logging.log4j.Level;
 import org.lwjgl.opengl.GL11;
@@ -26,6 +28,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -47,8 +50,12 @@ public final class DisplayFramePreviews
     private final Map<StackKey, Preview> cache = new HashMap<>();
     private final Queue<Preview> pending = new ArrayDeque<>();
     private final List<PreviewSprite> slots = new ArrayList<>(CAPACITY);
+    private final ChunkReferences previewReferences = new ChunkReferences();
+    private final Queue<Integer> freePreviewSlots = new ArrayDeque<>();
     private final Map<String, Label> labels = new HashMap<>();
+    private final ChunkReferences labelReferences = new ChunkReferences();
     private final Queue<Label> pendingLabels = new ArrayDeque<>();
+    private final Queue<Integer> freeLabelSlots = new ArrayDeque<>();
     private final List<PreviewSprite> labelAtlasSlots = new ArrayList<>(LABEL_ATLAS_SLOT_COUNT);
     private final DisplayFrameThumbnail thumbnail = new DisplayFrameThumbnail();
     private final DisplayFrameBlockMesh blockMesh = new DisplayFrameBlockMesh();
@@ -59,6 +66,8 @@ public final class DisplayFramePreviews
     private int nextLabelSprite;
     private int labelStripHeight;
     private int labelsPerSlot;
+    private boolean previewCacheFull;
+    private boolean labelCacheFull;
     private boolean atlasReady;
 
     /** Reserves preview slots in each newly stitched terrain atlas. */
@@ -101,14 +110,33 @@ public final class DisplayFramePreviews
         }
     }
 
+    /** Releases the preview and label references held by an unloaded client chunk. */
+    @SubscribeEvent
+    public synchronized void onChunkUnload(ChunkEvent.Unload event)
+    {
+        if (event.world.isRemote == false)
+        {
+            return;
+        }
+        ChunkCoordIntPair chunk = event.getChunk().getChunkCoordIntPair();
+        previewReferences.release(chunk);
+        labelReferences.release(chunk);
+    }
+
     private void clearPreviews()
     {
         cache.clear();
         pending.clear();
+        previewReferences.clear();
+        freePreviewSlots.clear();
         nextSprite = 0;
+        previewCacheFull = false;
         labels.clear();
+        labelReferences.clear();
         pendingLabels.clear();
+        freeLabelSlots.clear();
         nextLabelSprite = 0;
+        labelCacheFull = false;
     }
 
     /** Allows chunk builds to request previews once the terrain atlas is ready. */
@@ -151,12 +179,15 @@ public final class DisplayFramePreviews
         {
             if (cache.size() >= 2 * CAPACITY)
             {
+                previewCacheFull = true;
                 return fallback;
             }
             preview = new Preview(stack.copy(), flat);
             cache.put(new StackKey(preview.stack, flat), preview);
             pending.add(preview);
+            previewReferences.unused++;
         }
+        previewReferences.record(x, z, preview);
         if (preview.complete == false)
         {
             preview.sections.add(sectionAt(x, y, z));
@@ -200,12 +231,15 @@ public final class DisplayFramePreviews
         {
             if (labels.size() >= labelAtlasSlots.size() * labelsPerSlot)
             {
+                labelCacheFull = true;
                 return null;
             }
             label = new Label(name);
             labels.put(name, label);
             pendingLabels.add(label);
+            labelReferences.unused++;
         }
+        labelReferences.record(x, z, label);
         if (label.complete == false)
         {
             label.sections.add(sectionAt(x, y, z));
@@ -229,6 +263,12 @@ public final class DisplayFramePreviews
         if (event.phase != TickEvent.Phase.END || minecraft.theWorld == null)
         {
             return;
+        }
+        if (reclaimUnusedEntries())
+        {
+            // Discard old meshes before any upload can overwrite a slot they sampled.
+            // Rebuilding also retries labels that were refused while the cache was full.
+            minecraft.renderGlobal.loadRenderers();
         }
         Set<ChunkPosition> sections = null;
         for (int i = 0; i < PREVIEWS_PER_FRAME; i++)
@@ -274,6 +314,33 @@ public final class DisplayFramePreviews
         }
     }
 
+    /** Makes room when a full cache still holds entries from unloaded chunks. */
+    private synchronized boolean reclaimUnusedEntries()
+    {
+        boolean reclaimLabels = labelCacheFull && labelReferences.unused > 0;
+        boolean reclaimPreviews = previewCacheFull && previewReferences.unused > 0;
+        if (reclaimLabels)
+        {
+            labelReferences.reclaim(labels.values().iterator(), pendingLabels, freeLabelSlots);
+            labelCacheFull = false;
+        }
+        if (reclaimPreviews)
+        {
+            previewReferences.reclaim(cache.values().iterator(), pending, freePreviewSlots);
+            for (Preview preview : cache.values())
+            {
+                if (preview.waitingForSlot)
+                {
+                    preview.complete = false;
+                    preview.waitingForSlot = false;
+                    pending.add(preview);
+                }
+            }
+            previewCacheFull = false;
+        }
+        return reclaimLabels || reclaimPreviews;
+    }
+
     /** Rasterizes a bounded number of labels and queues rebuilds only for successful uploads. */
     private synchronized Set<ChunkPosition> buildPendingLabels(Minecraft minecraft, Set<ChunkPosition> sections)
     {
@@ -309,8 +376,10 @@ public final class DisplayFramePreviews
             {
                 return null;
             }
-            int slotIndex = nextLabelSprite / labelsPerSlot;
-            int stripIndex = nextLabelSprite % labelsPerSlot;
+            Integer recycledIndex = freeLabelSlots.peek();
+            int atlasIndex = recycledIndex == null ? nextLabelSprite : recycledIndex;
+            int slotIndex = atlasIndex / labelsPerSlot;
+            int stripIndex = atlasIndex % labelsPerSlot;
             PreviewSprite slot = labelAtlasSlots.get(slotIndex);
             int stripTop = stripIndex * labelStripHeight;
             uploadPixels(minecraft, slot, pixels, labelStripHeight, stripTop);
@@ -320,7 +389,15 @@ public final class DisplayFramePreviews
             float topV = slot.getInterpolatedV((stripTop + 0.5) * atlasUnitsPerPixel);
             double labelBottom = stripTop + DisplayFrameThumbnail.LABEL_HEIGHT - 0.5;
             float bottomV = slot.getInterpolatedV(labelBottom * atlasUnitsPerPixel);
-            nextLabelSprite++;
+            if (recycledIndex == null)
+            {
+                nextLabelSprite++;
+            }
+            else
+            {
+                freeLabelSlots.remove();
+            }
+            label.atlasIndex = atlasIndex;
             return new LabelSprite(slot.getMinU(), slot.getMaxU(), topV, bottomV);
         }
         catch (RuntimeException ex)
@@ -353,8 +430,15 @@ public final class DisplayFramePreviews
                         Item.itemRegistry.getNameForObject(stack.getItem()));
             }
         }
-        if (nextSprite >= slots.size())
+        Integer recycledIndex = freePreviewSlots.peek();
+        int atlasIndex = recycledIndex == null ? nextSprite : recycledIndex;
+        if (atlasIndex >= slots.size())
         {
+            synchronized (this)
+            {
+                previewCacheFull = true;
+                preview.waitingForSlot = true;
+            }
             return null;
         }
         try
@@ -364,10 +448,18 @@ public final class DisplayFramePreviews
             {
                 return null;
             }
-            PreviewSprite sprite = slots.get(nextSprite);
+            PreviewSprite sprite = slots.get(atlasIndex);
             uploadPixels(minecraft, sprite, pixels, SIZE, 0);
             sprite.outline = preview.flat ? null : DisplayFrameIconOutline.fromPixels(pixels, SIZE);
-            nextSprite++;
+            if (recycledIndex == null)
+            {
+                nextSprite++;
+            }
+            else
+            {
+                freePreviewSlots.remove();
+            }
+            preview.atlasIndex = atlasIndex;
             return new Appearance(sprite, null);
         }
         catch (RuntimeException ex)
@@ -414,7 +506,79 @@ public final class DisplayFramePreviews
         }
     }
 
-    private static final class Label
+    private abstract static class CacheEntry
+    {
+        private int chunkReferences;
+        protected int atlasIndex = -1;
+    }
+
+    /** Tracks the loaded chunks whose meshes can still refer to cache entries. */
+    private static final class ChunkReferences
+    {
+        private final Map<ChunkCoordIntPair, Set<CacheEntry>> byChunk = new HashMap<>();
+        private int unused;
+
+        private void record(int x, int z, CacheEntry entry)
+        {
+            int chunkX = Math.floorDiv(x, SECTION_SIZE);
+            int chunkZ = Math.floorDiv(z, SECTION_SIZE);
+            ChunkCoordIntPair chunk = new ChunkCoordIntPair(chunkX, chunkZ);
+            Set<CacheEntry> references = byChunk.computeIfAbsent(chunk, key -> new HashSet<>());
+            if (references.add(entry))
+            {
+                if (entry.chunkReferences == 0)
+                {
+                    unused--;
+                }
+                entry.chunkReferences++;
+            }
+        }
+
+        private void release(ChunkCoordIntPair chunk)
+        {
+            Set<CacheEntry> references = byChunk.remove(chunk);
+            if (references == null)
+            {
+                return;
+            }
+            for (CacheEntry entry : references)
+            {
+                entry.chunkReferences--;
+                if (entry.chunkReferences == 0)
+                {
+                    unused++;
+                }
+            }
+        }
+
+        /** Retires unused cache entries. Their slots can be overwritten after old meshes are discarded. */
+        private void reclaim(Iterator<? extends CacheEntry> entries,
+                             Queue<? extends CacheEntry> queued, Queue<Integer> freeSlots)
+        {
+            queued.removeIf(entry -> ((CacheEntry) entry).chunkReferences == 0);
+            while (entries.hasNext())
+            {
+                CacheEntry entry = entries.next();
+                if (entry.chunkReferences == 0)
+                {
+                    if (entry.atlasIndex >= 0)
+                    {
+                        freeSlots.add(entry.atlasIndex);
+                    }
+                    entries.remove();
+                }
+            }
+            unused = 0;
+        }
+
+        private void clear()
+        {
+            byChunk.clear();
+            unused = 0;
+        }
+    }
+
+    private static final class Label extends CacheEntry
     {
         private final String name;
         private final Set<ChunkPosition> sections = new HashSet<>();
@@ -439,12 +603,13 @@ public final class DisplayFramePreviews
         }
     }
 
-    private static final class Preview
+    private static final class Preview extends CacheEntry
     {
         private final ItemStack stack;
         private final boolean flat;
         private final Set<ChunkPosition> sections = new HashSet<>();
         private boolean complete;
+        private boolean waitingForSlot;
         private Appearance appearance;
 
         private Preview(ItemStack stack, boolean flat)
