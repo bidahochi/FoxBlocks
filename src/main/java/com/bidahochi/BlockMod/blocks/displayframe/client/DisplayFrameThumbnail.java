@@ -52,7 +52,7 @@ public final class DisplayFrameThumbnail
      */
     public int[] capture(Minecraft minecraft, ItemStack stack)
     {
-        return itemCapture.capture(16, () ->
+        return itemCapture.capture(16, SIZE, () ->
         {
             RenderHelper.enableGUIStandardItemLighting();
             TextureManager textures = minecraft.getTextureManager();
@@ -98,17 +98,17 @@ public final class DisplayFrameThumbnail
         return lastSpace > 0 ? prefix.substring(0, lastSpace) : prefix;
     }
 
-    /** Rasterizes a fitted label into the top of a square atlas slot, using the client's font. */
-    public int[] captureLabel(FontRenderer font, List<String> lines)
+    /** Rasterizes a fitted label into a strip, padding the text above and below for mipmaps. */
+    public int[] captureLabel(FontRenderer font, List<String> lines, int stripHeight)
     {
         if (labelCapture == null)
         {
             labelCapture = new PixelCapture(LABEL_WIDTH);
         }
-        return labelCapture.capture(LABEL_WIDTH, () ->
+        return labelCapture.capture(LABEL_WIDTH, stripHeight, () ->
         {
             GL11.glDisable(GL11.GL_LIGHTING);
-            Gui.drawRect(0, 0, LABEL_WIDTH, LABEL_HEIGHT, LABEL_BACKGROUND);
+            Gui.drawRect(0, 0, LABEL_WIDTH, stripHeight, LABEL_BACKGROUND);
             int lineTop = (LABEL_HEIGHT - lines.size() * font.FONT_HEIGHT) / 2;
             for (String line : lines)
             {
@@ -131,8 +131,8 @@ public final class DisplayFrameThumbnail
             readback = BufferUtils.createByteBuffer(size * size * 4);
         }
 
-        /** Draws into the reusable framebuffer and restores the caller's graphics state. */
-        private int[] capture(int drawingSize, Runnable draw)
+        /** Captures the requested rows from the top of the framebuffer and restores graphics state. */
+        private int[] capture(int drawingSize, int rows, Runnable draw)
         {
             if (OpenGlHelper.isFramebufferEnabled() == false)
             {
@@ -190,8 +190,8 @@ public final class DisplayFrameThumbnail
                 GL11.glPixelStorei(GL11.GL_PACK_SKIP_PIXELS, 0);
                 GL11.glPixelStorei(GL11.GL_PACK_SKIP_ROWS, 0);
                 readback.clear();
-                GL11.glReadPixels(0, 0, size, size, GL11.GL_RGBA, GL11.GL_UNSIGNED_BYTE, readback);
-                return toAtlasPixels();
+                GL11.glReadPixels(0, size - rows, size, rows, GL11.GL_RGBA, GL11.GL_UNSIGNED_BYTE, readback);
+                return toAtlasPixels(rows);
             }
             finally
             {
@@ -210,16 +210,16 @@ public final class DisplayFrameThumbnail
             }
         }
 
-        private int[] toAtlasPixels()
+        private int[] toAtlasPixels(int rows)
         {
-            int[] pixels = new int[size * size];
+            int[] pixels = new int[size * rows];
             boolean visible = false;
-            for (int y = 0; y < size; y++)
+            for (int y = 0; y < rows; y++)
             {
                 for (int x = 0; x < size; x++)
                 {
                     // OpenGL returns rows bottom-up in RGBA order. The atlas expects top-down ARGB.
-                    int byteOffset = ((size - 1 - y) * size + x) * 4;
+                    int byteOffset = ((rows - 1 - y) * size + x) * 4;
                     int red = Byte.toUnsignedInt(readback.get(byteOffset));
                     int green = Byte.toUnsignedInt(readback.get(byteOffset + 1));
                     int blue = Byte.toUnsignedInt(readback.get(byteOffset + 2));

@@ -40,7 +40,8 @@ public final class DisplayFramePreviews
     private static final int SECTION_SIZE = 16;
     private static final int CAPACITY = 512;
     private static final int PREVIEWS_PER_FRAME = 4;
-    private static final int LABEL_CAPACITY = 256;
+    private static final int LABEL_ATLAS_SLOT_COUNT = 128;
+    private static final int MINIMUM_LABEL_STRIP_HEIGHT = 32;
     private static final int LABELS_PER_FRAME = 2;
     private static final Pattern LABEL_WHITESPACE = Pattern.compile("[\\p{Z}\\s\\p{Cntrl}]+", Pattern.UNICODE_CHARACTER_CLASS);
     private final Map<StackKey, Preview> cache = new HashMap<>();
@@ -48,7 +49,7 @@ public final class DisplayFramePreviews
     private final List<PreviewSprite> slots = new ArrayList<>(CAPACITY);
     private final Map<String, Label> labels = new HashMap<>();
     private final Queue<Label> pendingLabels = new ArrayDeque<>();
-    private final List<PreviewSprite> labelSlots = new ArrayList<>(LABEL_CAPACITY);
+    private final List<PreviewSprite> labelAtlasSlots = new ArrayList<>(LABEL_ATLAS_SLOT_COUNT);
     private final DisplayFrameThumbnail thumbnail = new DisplayFrameThumbnail();
     private final DisplayFrameBlockMesh blockMesh = new DisplayFrameBlockMesh();
     private TextureMap atlas;
@@ -56,6 +57,8 @@ public final class DisplayFramePreviews
     private Appearance fallback;
     private int nextSprite;
     private int nextLabelSprite;
+    private int labelStripHeight;
+    private int labelsPerSlot;
     private boolean atlasReady;
 
     /** Reserves preview slots in each newly stitched terrain atlas. */
@@ -70,7 +73,7 @@ public final class DisplayFramePreviews
         atlas = event.map;
         clearPreviews();
         slots.clear();
-        labelSlots.clear();
+        labelAtlasSlots.clear();
         placeholder = atlas.registerIcon("foxblocks:although");
         fallback = new Appearance(placeholder, null);
         for (int i = 0; i < CAPACITY; i++)
@@ -79,12 +82,12 @@ public final class DisplayFramePreviews
             atlas.setTextureEntry(slot.getIconName(), slot);
             slots.add(slot);
         }
-        for (int index = 0; index < LABEL_CAPACITY; index++)
+        for (int index = 0; index < LABEL_ATLAS_SLOT_COUNT; index++)
         {
             String name = "foxblocks:display_frame_label_" + index;
             PreviewSprite slot = new PreviewSprite(name, DisplayFrameThumbnail.LABEL_WIDTH);
             atlas.setTextureEntry(name, slot);
-            labelSlots.add(slot);
+            labelAtlasSlots.add(slot);
         }
     }
 
@@ -114,6 +117,10 @@ public final class DisplayFramePreviews
     {
         if (event.map == atlas)
         {
+            // A strip boundary must land on a whole texel at every uploaded mip level.
+            int mipmapAlignment = 1 << labelAtlasSlots.get(0).mipmaps;
+            labelStripHeight = Math.max(MINIMUM_LABEL_STRIP_HEIGHT, mipmapAlignment);
+            labelsPerSlot = DisplayFrameThumbnail.LABEL_WIDTH / labelStripHeight;
             atlasReady = true;
         }
     }
@@ -161,7 +168,7 @@ public final class DisplayFramePreviews
      * Reuses labels by their client-local display name. A null result leaves the frame without text
      * while the label is pending or when no label slot is available.
      */
-    public synchronized IIcon getLabel(ItemStack stack, int x, int y, int z)
+    public synchronized LabelSprite getLabel(ItemStack stack, int x, int y, int z)
     {
         if (atlasReady == false)
         {
@@ -191,7 +198,7 @@ public final class DisplayFramePreviews
         Label label = labels.get(name);
         if (label == null)
         {
-            if (labels.size() >= labelSlots.size())
+            if (labels.size() >= labelAtlasSlots.size() * labelsPerSlot)
             {
                 return null;
             }
@@ -292,20 +299,29 @@ public final class DisplayFramePreviews
         return sections;
     }
 
-    private IIcon buildLabel(Minecraft minecraft, Label label)
+    private LabelSprite buildLabel(Minecraft minecraft, Label label)
     {
         try
         {
             List<String> lines = DisplayFrameThumbnail.fitLabel(minecraft.fontRenderer, label.name);
-            int[] pixels = thumbnail.captureLabel(minecraft.fontRenderer, lines);
+            int[] pixels = thumbnail.captureLabel(minecraft.fontRenderer, lines, labelStripHeight);
             if (pixels == null)
             {
                 return null;
             }
-            PreviewSprite sprite = labelSlots.get(nextLabelSprite);
-            uploadSprite(minecraft, sprite, pixels, false);
+            int slotIndex = nextLabelSprite / labelsPerSlot;
+            int stripIndex = nextLabelSprite % labelsPerSlot;
+            PreviewSprite slot = labelAtlasSlots.get(slotIndex);
+            int stripTop = stripIndex * labelStripHeight;
+            uploadPixels(minecraft, slot, pixels, labelStripHeight, stripTop);
+
+            // Keep the UVs inside the strip and leave padding below the sampled rows.
+            double atlasUnitsPerPixel = 16.0 / DisplayFrameThumbnail.LABEL_WIDTH;
+            float topV = slot.getInterpolatedV((stripTop + 0.5) * atlasUnitsPerPixel);
+            double labelBottom = stripTop + DisplayFrameThumbnail.LABEL_HEIGHT - 0.5;
+            float bottomV = slot.getInterpolatedV(labelBottom * atlasUnitsPerPixel);
             nextLabelSprite++;
-            return sprite;
+            return new LabelSprite(slot.getMinU(), slot.getMaxU(), topV, bottomV);
         }
         catch (RuntimeException ex)
         {
@@ -349,7 +365,8 @@ public final class DisplayFramePreviews
                 return null;
             }
             PreviewSprite sprite = slots.get(nextSprite);
-            uploadSprite(minecraft, sprite, pixels, preview.flat == false);
+            uploadPixels(minecraft, sprite, pixels, SIZE, 0);
+            sprite.outline = preview.flat ? null : DisplayFrameIconOutline.fromPixels(pixels, SIZE);
             nextSprite++;
             return new Appearance(sprite, null);
         }
@@ -361,18 +378,39 @@ public final class DisplayFramePreviews
         }
     }
 
-    /** Uploads the pixels to a reserved terrain slot and restores the prior texture binding. */
-    private static void uploadSprite(Minecraft minecraft, PreviewSprite sprite, int[] pixels, boolean withOutline)
+    /** Uploads a rectangle inside a reserved terrain sprite and restores the prior texture binding. */
+    private static void uploadPixels(Minecraft minecraft, PreviewSprite sprite, int[] pixels, int height, int top)
     {
         GL11.glPushAttrib(GL11.GL_TEXTURE_BIT);
         try
         {
             minecraft.getTextureManager().bindTexture(TextureMap.locationBlocksTexture);
-            sprite.upload(pixels, withOutline);
+            sprite.upload(pixels, height, top);
         }
         finally
         {
             GL11.glPopAttrib();
+        }
+    }
+
+    /** Texture coordinates for one label within the shared terrain atlas. */
+    public static final class LabelSprite
+    {
+        /** Left edge of the label. */
+        public final float leftU;
+        /** Right edge of the label. */
+        public final float rightU;
+        /** Top edge of the label. */
+        public final float topV;
+        /** Bottom edge of the label. */
+        public final float bottomV;
+
+        private LabelSprite(float leftU, float rightU, float topV, float bottomV)
+        {
+            this.leftU = leftU;
+            this.rightU = rightU;
+            this.topV = topV;
+            this.bottomV = bottomV;
         }
     }
 
@@ -381,7 +419,7 @@ public final class DisplayFramePreviews
         private final String name;
         private final Set<ChunkPosition> sections = new HashSet<>();
         private boolean complete;
-        private IIcon sprite;
+        private LabelSprite sprite;
 
         private Label(String name)
         {
@@ -491,13 +529,13 @@ public final class DisplayFramePreviews
             setFramesTextureData(new ArrayList<>(Collections.singletonList(generated)));
         }
 
-        private void upload(int[] pixels, boolean withOutline)
+        private void upload(int[] pixels, int height, int top)
         {
             int[][] data = new int[mipmaps + 1][];
             data[0] = pixels;
             int[][] generated = TextureUtil.generateMipmapData(mipmaps, size, data);
-            TextureUtil.uploadTextureMipmap(generated, size, size, getOriginX(), getOriginY(), false, false);
-            outline = withOutline ? DisplayFrameIconOutline.fromPixels(pixels, size) : null;
+            int atlasY = getOriginY() + top;
+            TextureUtil.uploadTextureMipmap(generated, size, height, getOriginX(), atlasY, false, false);
         }
     }
 

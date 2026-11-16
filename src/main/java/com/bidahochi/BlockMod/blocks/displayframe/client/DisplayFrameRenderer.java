@@ -102,7 +102,7 @@ public final class DisplayFrameRenderer implements ISimpleBlockRenderingHandler
         {
             if (frame.isLabeled())
             {
-                IIcon label = previews.getLabel(stack, x, y, z);
+                DisplayFramePreviews.LabelSprite label = previews.getLabel(stack, x, y, z);
                 if (label != null)
                 {
                     drawLabel(tessellator, facing, centerX, centerY, centerZ, label);
@@ -130,14 +130,12 @@ public final class DisplayFrameRenderer implements ISimpleBlockRenderingHandler
 
     /** Draws the nameplate in the frame's orientation using the occupied rows of the atlas sprite. */
     private static void drawLabel(Tessellator tessellator, Orientation facing,
-                                  double centerX, double centerY, double centerZ, IIcon label)
+                                  double centerX, double centerY, double centerZ, DisplayFramePreviews.LabelSprite label)
     {
         setItemShade(tessellator, facing.normal);
-        double labelRows = 16.0 * DisplayFrameThumbnail.LABEL_HEIGHT / DisplayFrameThumbnail.LABEL_WIDTH;
-        float bottomV = label.getInterpolatedV(labelRows);
         quad(tessellator, facing.normal, facing.right, facing.up, centerX, centerY, centerZ,
                 -LABEL_HALF_WIDTH, LABEL_BOTTOM, LABEL_HALF_WIDTH, LABEL_TOP, LABEL_DEPTH,
-                label.getMinU(), label.getMaxU(), label.getMinV(), bottomV);
+                label.leftU, label.rightU, label.topV, label.bottomV);
     }
 
     /** Draws the empty frame model for inventories and held items. */
